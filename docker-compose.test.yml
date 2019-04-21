@@ -1,0 +1,27 @@
+version: '3.7'
+
+# it's implied you'd pretty much only run this file with override included:
+# docker-compose -f docker-compose.yml -f docker-compose.override.yml -f docker-compose.test.yml <command>
+services:
+  app:
+    build:
+      target: base
+    environment:
+      NODE_ENV: staging
+    links:
+      - mailhog
+
+  e2e:
+    build:
+      context: ./e2e/
+    network_mode: host
+    volumes:
+      - ./e2e/cypress/videos/:/test/cypress/videos/
+      - ./e2e/cypress/screenshots/:/test/cypress/screenshots/
+    tty: true
+
+  mailhog:
+    image: mailhog/mailhog
+    ports:
+      - 1025:1025
+      - 8025:8025

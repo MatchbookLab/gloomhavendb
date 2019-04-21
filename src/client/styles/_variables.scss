@@ -1,0 +1,42 @@
+$text: #333;
+
+// $super-mario: 1400px+;
+$mario-width: 1400px;
+$luigi-width: 1080px; // Chrome scrollbar?
+$peach-width: 780px;
+$toad-width: 540px;
+
+$max-width: $mario-width;
+
+// grid overrides
+
+$xs: 'toad';
+$sm: 'peach';
+$md: 'luigi';
+$lg: 'mario';
+$default: '';
+
+$gutter-width: 20px;
+$outer-margin: 20px;
+
+// ` / 1px` to remove units
+$width-xs: $toad-width / 1px;
+$width-sm: $peach-width / 1px;
+$width-md: $luigi-width / 1px;
+$width-lg: $mario-width / 1px;
+
+$viewport-xs: #{$width-xs}px;
+$viewport-sm: #{$width-sm}px;
+$viewport-md: #{$width-md}px;
+$viewport-lg: #{$width-lg}px;
+
+$defaultQuery: default;
+
+$sizes: #{$default}, #{$lg}, #{$md}, #{$sm}, #{$xs};
+$queries: (
+  #{$default}: default,
+  #{$lg}: #{$viewport-lg},
+  #{$md}: #{$viewport-md},
+  #{$sm}: #{$viewport-sm},
+  #{$xs}: #{$viewport-xs}
+); // end grid overrides

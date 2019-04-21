@@ -1,0 +1,20 @@
+version: '3.7'
+
+services:
+  app:
+    build:
+      target: base
+    ports:
+      - 3000:3000
+      - 4200:4200
+    volumes:
+      - /app/node_modules/
+      - ./:/app/
+    tty: true
+    environment:
+      NODE_ENV: docker
+    command: yarn start:dev
+
+  database:
+    ports:
+      - 5432:5432

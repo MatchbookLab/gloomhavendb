@@ -1,0 +1,14 @@
+.idea
+node_modules
+dist
+coverage
+e2e/cypress/screenshots
+e2e/cypress/videos
+docker-compose.no-cdn.yml
+docker-compose.override.yml
+docker-compose.production.yml
+docker-compose.staging.yml
+docker-compose.test.yml
+docker-compose.yml
+.gitlab-ci.yml
+scratch

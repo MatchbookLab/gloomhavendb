@@ -1,0 +1,22 @@
+version: '3.7'
+
+services:
+  app:
+    build:
+      context: ./
+    links:
+      - database
+    ports:
+      - 3000:3000
+    environment:
+      DOCKER: yep
+      TZ: America/Los_Angeles
+
+  database:
+    image: postgres
+    # TODO volumes
+    environment:
+      POSTGRES_DB: ${DATABASE_DATABASE}
+      POSTGRES_USER: ${DATABASE_USERNAME}
+      POSTGRES_PASSWORD: ${DATABASE_PASSWORD}
+      TZ: America/Los_Angeles

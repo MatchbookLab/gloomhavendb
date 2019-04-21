@@ -1,0 +1,82 @@
+@import '~normalize.css';
+@import 'styles/grid';
+@import 'styles/variables';
+@import 'styles/mixins';
+@import 'styles/forms';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: $text;
+
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 30px;
+}
+
+// Breakpoint Helper (for dev only)
+// --------------------------------
+.breakpoint-helper {
+  display: none;
+  //display: block;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  padding: 5px 10px;
+  border-radius: 0 4px 0 0;
+  z-index: 1001;
+  font-size: 24px;
+
+  @include breakpoint(super-mario) {
+    background: yellow;
+    color: black;
+
+    span::before {
+      content: 'Super Mario';
+    }
+  }
+  @include breakpoint(mario) {
+    background: red;
+    color: white;
+
+    span::before {
+      content: 'Mario';
+    }
+  }
+  @include breakpoint(luigi) {
+    background: green;
+    color: white;
+
+    span::before {
+      content: 'Luigi';
+    }
+  }
+  @include breakpoint(peach) {
+    background: pink;
+    color: black;
+
+    span::before {
+      content: 'Peach';
+    }
+  }
+  @include breakpoint(toad) {
+    background: white;
+    color: black;
+
+    span::before {
+      content: 'Toad';
+    }
+  }
+}

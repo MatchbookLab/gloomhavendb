@@ -1,0 +1,94 @@
+@import 'variables';
+
+@mixin breakpoint($point) {
+  @if ($point == super-mario) {
+    @media (min-width: $mario-width) {
+      @content;
+    }
+  } @else if ($point == mario) {
+    @media (max-width: $mario-width) {
+      @content;
+    }
+  } @else if ($point == luigi) {
+    @media (max-width: $luigi-width) {
+      @content;
+    }
+  } @else if ($point == peach) {
+    @media (max-width: $peach-width) {
+      @content;
+    }
+  } @else if ($point == toad) {
+    @media (max-width: $toad-width) {
+      @content;
+    }
+  } @else {
+    @media (max-width: $point) {
+      @content;
+    }
+  }
+}
+
+%container {
+  display: block;
+  max-width: $max-width + 40px;
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+
+  @include breakpoint(380px) {
+    padding: 0 20px;
+  }
+}
+
+@mixin container() {
+  //@extend %container;
+  display: block;
+  max-width: $max-width + 40px;
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+
+  @include breakpoint(380px) {
+    padding: 0 20px;
+  }
+}
+
+%vertical-filler {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  > .fill-vertical-space {
+    flex-grow: 1;
+  }
+}
+
+%hide-super-mario {
+  @include breakpoint(super-mario) {
+    display: none;
+  }
+}
+
+%hide-mario {
+  @include breakpoint(mario) {
+    display: none;
+  }
+}
+
+%hide-luigi {
+  @include breakpoint(luigi) {
+    display: none;
+  }
+}
+
+%hide-peach {
+  @include breakpoint(peach) {
+    display: none;
+  }
+}
+
+%hide-toad {
+  @include breakpoint(toad) {
+    display: none;
+  }
+}

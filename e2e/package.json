@@ -1,0 +1,25 @@
+{
+  "name": "gloomhavendb-e2e",
+  "version": "1.0.0",
+  "author": "CWSpear <cameron@matchbooklab.com>",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "test": "cypress run",
+    "test:dev": "cypress open"
+  },
+  "dependencies": {
+    "@cypress/webpack-preprocessor": "^4.0.3",
+    "@types/node": "^11.11.6",
+    "cypress": "^3.2.0",
+    "ts-loader": "^5.3.3",
+    "typescript": "^3.3.4000",
+    "webpack": "^4.29.6"
+  },
+  "devDependencies": {
+    "@types/mocha": "^5.2.6",
+    "clipboardy": "^1.2.3",
+    "cypress-mailhog": "^1.1.0"
+  }
+}

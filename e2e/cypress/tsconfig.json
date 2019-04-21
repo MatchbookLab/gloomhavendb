@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "outDir": "../out-tsc/app",
+    "module": "commonjs",
+    "target": "es5",
+    "baseUrl": "../node_modules",
+    "types": [
+      "cypress",
+      "mocha",
+      "node"
+    ]
+  },
+  "include": [
+    "**/*.ts"
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "testFiles": "**/*.e2e.ts",
+  "viewportHeight": 1000,
+  "mailHogUrl": "http://localhost:8025"
+}
+
