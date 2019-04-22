@@ -1,10 +1,10 @@
-import XRay from 'x-ray';
-import fs from 'fs';
+import * as XRay from 'x-ray';
+import * as fs from 'fs';
 
 import * as _ from 'lodash';
-import { Slot } from '../constants/slot';
-import { Limit } from '../constants/limit';
-import { Item } from '../models/item';
+import { Limit } from '../../shared/constants/limit';
+import { Slot } from '../../shared/constants/slot';
+import { Item } from '../../shared/entities/item';
 
 const x: XRay.Instance = XRay();
 
@@ -47,7 +47,7 @@ const URL_BASE = 'https://old.reddit.com/r/Gloomhaven/wiki/items/item_';
       );
 
       const item: Item = {
-        id: itemNo,
+        number: itemNo,
         cardNo: null,
         name: _.last(result.name.split(' — ')) || null,
         slot: determineSlot(result) || null,
@@ -68,7 +68,7 @@ const URL_BASE = 'https://old.reddit.com/r/Gloomhaven/wiki/items/item_';
     }),
   );
 
-  items = _.sortBy(items, item => item.id);
+  items = _.sortBy(items, item => item.number);
 
   await fs.promises.writeFile('./dump/items.json', JSON.stringify(items, null, 2), { encoding: 'utf-8' });
 })().catch(err => console.error(err));

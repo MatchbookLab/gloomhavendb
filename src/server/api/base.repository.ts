@@ -1,6 +1,6 @@
 import { BadRequestException, NotFoundException } from '@nestjs/common';
 import { omit, pick, startCase } from 'lodash';
-import { DeepPartial, FindManyOptions, FindOneOptions, ObjectLiteral, Repository } from 'typeorm';
+import { DeepPartial, FindManyOptions, FindOneOptions, ObjectLiteral, Repository, SaveOptions } from 'typeorm';
 import { Props } from '../util/props';
 
 interface EntityWithId extends ObjectLiteral {
@@ -57,17 +57,17 @@ export abstract class BaseRepository<Entity extends EntityWithId> extends Reposi
     return result;
   }
 
-  async saveNew(entity: Entity): Promise<Entity> {
+  async saveNew(entity: Entity, options?: SaveOptions): Promise<Entity> {
     if (entity.id) {
       throw new BadRequestException('Cannot save a new entity with an ID');
     }
 
-    const savedEntity = await this.save(entity);
+    const savedEntity = await this.save(entity, options);
 
     return this.smartFindOne(savedEntity.id);
   }
 
-  async saveExisting(id: string | number, entity: Entity) {
+  async saveExisting(id: string | number, entity: Entity, options?: SaveOptions) {
     const exists = await this.findOne(id, { loadEagerRelations: false });
 
     if (!exists) {
@@ -75,15 +75,15 @@ export abstract class BaseRepository<Entity extends EntityWithId> extends Reposi
     }
 
     entity.id = +id;
-    await this.save(entity, { reload: false });
+    await this.save(entity, { ...options, reload: false });
 
     return this.smartFindOne(id);
   }
 
-  async deleteAndReturn(id: string | number, options: BetterFindOneOptions<Entity> = {}) {
-    const result = await this.smartFindOneOrFail(id, options);
+  async deleteAndReturn(id: string | number) {
+    const result = await this.smartFindOneOrFail(id);
 
-    await this.delete(+id);
+    await this.remove(result);
 
     return result;
   }

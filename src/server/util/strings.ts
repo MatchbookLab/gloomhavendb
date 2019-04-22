@@ -11,6 +11,14 @@ export function nil2na(strings: TemplateStringsArray, ...keys: any[]): string {
   return convertNil(strings, keys, 'N/A');
 }
 
+export function trimLines(str: string): string {
+  return str
+    .split('\n')
+    .map(s => s.trim())
+    .join('\n')
+    .trim();
+}
+
 function convertNil(strings: TemplateStringsArray, keys: any[], defaultVal = ''): string {
   return strings
     .map((str, i) => {

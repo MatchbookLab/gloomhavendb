@@ -34,7 +34,7 @@ export class SecretShopComponent implements OnInit, AfterViewInit {
     slot: null,
     search: '',
     price: 100,
-    sort: 'id',
+    sort: 'number',
   };
 
   maxPrice: number;
@@ -105,7 +105,7 @@ export class SecretShopComponent implements OnInit, AfterViewInit {
       150,
     ];
 
-    this.shopItems = filter(items, item => includes(itemIds, item.id));
+    this.shopItems = filter(items, item => includes(itemIds, item.number));
 
     this.filters.price = this.maxPrice = maxBy(this.shopItems, item => item.price).price;
     this.minPrice = minBy(this.shopItems, item => item.price).price;

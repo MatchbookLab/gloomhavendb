@@ -4,7 +4,7 @@ import { Class } from '../shared/entities/class';
 
 export const classes: Class[] = [
   {
-    id: 1,
+    number: 1,
     name: 'Brute',
     race: Race.Inox,
     alias: ClassAlias.Brute,

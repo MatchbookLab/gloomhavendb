@@ -19,7 +19,7 @@ type Number =
   | '17'
   | '18';
 
-export interface MapGrid {
+export class MapGrid {
   X: Letter;
   Y: Number;
 }

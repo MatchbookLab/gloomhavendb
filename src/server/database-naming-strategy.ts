@@ -1,9 +1,17 @@
+import * as pluralize from 'pluralize';
 import { DefaultNamingStrategy, NamingStrategyInterface, Table } from 'typeorm';
-import { snakeCase } from 'typeorm/util/StringUtils';
+import { startCase, snakeCase } from 'lodash';
 
 export class DatabaseNamingStrategy extends DefaultNamingStrategy implements NamingStrategyInterface {
   tableName(className: string, customName: string): string {
-    return customName ? snakeCase(customName) : snakeCase(className);
+    if (customName) {
+      return customName;
+    }
+
+    const parts = startCase(className).split(' ');
+    const lastIndex = parts.length - 1;
+    parts[lastIndex] = pluralize(parts[lastIndex]);
+    return snakeCase(parts.join(' '));
   }
 
   columnName(propertyName: string, customName: string, embeddedPrefixes: string[]): string {
@@ -17,25 +25,25 @@ export class DatabaseNamingStrategy extends DefaultNamingStrategy implements Nam
   primaryKeyName(tableOrName: Table | string, columnNames: string[]): string {
     const tableName: string = getTableName(tableOrName);
 
-    return `PK_${tableName}.${columnNames.join('_')}`;
+    return `PK_${tableName}.${columnNames.join('+')}`;
   }
 
   uniqueConstraintName(tableOrName: Table | string, columnNames: string[]): string {
     const tableName: string = getTableName(tableOrName);
 
-    return `UQ_${tableName}.${columnNames.join('_')}`;
+    return `UQ_${tableName}.${columnNames.join('+')}`;
   }
 
   foreignKeyName(tableOrName: Table | string, columnNames: string[]): string {
     const tableName: string = getTableName(tableOrName);
 
-    return `FK_${tableName}.${columnNames.join('_')}`;
+    return `FK_${tableName}.${columnNames.join('+')}`;
   }
 
   indexName(tableOrName: Table | string, columnNames: string[], where?: string): string {
     const tableName: string = getTableName(tableOrName);
 
-    return `IDX_${tableName}.${columnNames.join('_')}`;
+    return `IDX_${tableName}.${columnNames.join('+')}`;
   }
 
   joinColumnName(relationName: string, referencedColumnName: string): string {
@@ -55,7 +63,7 @@ export class DatabaseNamingStrategy extends DefaultNamingStrategy implements Nam
     return snakeCase(tableName + '_' + (columnName ? columnName : propertyName));
   }
 
-  classTableInheritanceParentColumnName(parentTableName: any, parentTableIdPropertyName: any): string {
+  cclassTableInheritanceParentColumnName(parentTableName: any, parentTableIdPropertyName: any): string {
     return snakeCase(parentTableName + '_' + parentTableIdPropertyName);
   }
 }

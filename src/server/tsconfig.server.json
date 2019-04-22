@@ -21,6 +21,8 @@
     "../shared"
   ],
   "exclude": [
+    "../cli",
+    "../client",
     "**/*.spec.ts",
     "**/*.helper.ts"
   ]

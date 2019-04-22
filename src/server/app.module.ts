@@ -4,8 +4,24 @@ import { AngularUniversalModule } from '@nestjs/ng-universal';
 import { PassportModule } from '@nestjs/passport';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { join } from 'path';
+import { BattleGoal } from '../shared/entities/battle-goal';
+import { Class } from '../shared/entities/class';
+import {
+  Event,
+  EventChoice,
+  EventCondition,
+  EventOutcome,
+  EventOutcomeEffect,
+  EventRequirement,
+} from '../shared/entities/event';
+import { Item } from '../shared/entities/item';
+import { PersonalGoals } from '../shared/entities/personal-goals';
+import { RandomScenario } from '../shared/entities/random-scenario';
 import { Role } from '../shared/entities/role';
+import { Scenario } from '../shared/entities/scenario';
 import { User } from '../shared/entities/user';
+import { EventController } from './api/event/event.controller';
+import { ItemController } from './api/item/item.controller';
 
 import { repositories } from './api/repositories';
 import { UserController } from './api/user/user.controller';
@@ -53,7 +69,22 @@ const angularUniversal = DEVELOPMENT_MODE
       synchronize: true,
       logging: false,
       namingStrategy: new DatabaseNamingStrategy(),
-      entities: [Role, User],
+      entities: [
+        BattleGoal,
+        Class,
+        Event,
+        EventChoice,
+        EventOutcome,
+        EventCondition,
+        EventOutcomeEffect,
+        EventRequirement,
+        Item,
+        PersonalGoals,
+        RandomScenario,
+        Role,
+        Scenario,
+        User,
+      ],
     }),
 
     PassportModule.register({ defaultStrategy: 'jwt' }),
@@ -64,7 +95,7 @@ const angularUniversal = DEVELOPMENT_MODE
       },
     }),
   ],
-  controllers: [UserController],
+  controllers: [EventController, ItemController, UserController],
   providers: [
     ...repositories,
     {

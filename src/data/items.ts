@@ -5,7 +5,7 @@ import { Item } from '../shared/entities/item';
 
 export const items: Item[] = [
   {
-    id: 1,
+    number: 1,
     cardNo: null,
     name: 'Boots of Striding',
     slot: Slot.Legs,
@@ -21,7 +21,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 2,
+    number: 2,
     cardNo: null,
     name: 'Winged Shoes',
     slot: Slot.Legs,
@@ -37,7 +37,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 3,
+    number: 3,
     cardNo: null,
     name: 'Hide Armor',
     slot: Slot.Body,
@@ -53,7 +53,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 4,
+    number: 4,
     cardNo: null,
     name: 'Leather Armor',
     slot: Slot.Body,
@@ -69,7 +69,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 5,
+    number: 5,
     cardNo: null,
     name: 'Cloak of Invisibility',
     slot: Slot.Body,
@@ -85,7 +85,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 6,
+    number: 6,
     cardNo: null,
     name: 'Eagle-Eye Goggles',
     slot: Slot.Head,
@@ -101,7 +101,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 7,
+    number: 7,
     cardNo: null,
     name: 'Iron Helmet',
     slot: Slot.Head,
@@ -117,7 +117,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 8,
+    number: 8,
     cardNo: null,
     name: 'Heater Shield',
     slot: Slot.OneHand,
@@ -133,7 +133,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 9,
+    number: 9,
     cardNo: null,
     name: 'Piercing Bow',
     slot: Slot.TwoHands,
@@ -149,7 +149,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 10,
+    number: 10,
     cardNo: null,
     name: 'War Hammer',
     slot: Slot.TwoHands,
@@ -165,7 +165,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 11,
+    number: 11,
     cardNo: null,
     name: 'Poison Dagger',
     slot: Slot.OneHand,
@@ -181,7 +181,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 12,
+    number: 12,
     cardNo: null,
     name: 'Minor Healing Potion',
     slot: Slot.SmallItem,
@@ -197,7 +197,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 13,
+    number: 13,
     cardNo: null,
     name: 'Minor Stamina Potion',
     slot: Slot.SmallItem,
@@ -213,7 +213,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 14,
+    number: 14,
     cardNo: null,
     name: 'Minor Power Potion',
     slot: Slot.SmallItem,
@@ -229,7 +229,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 15,
+    number: 15,
     cardNo: null,
     name: 'Boots of Speed',
     slot: Slot.Legs,
@@ -246,7 +246,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 16,
+    number: 16,
     cardNo: null,
     name: 'Cloak of Pockets',
     slot: Slot.Body,
@@ -262,7 +262,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 17,
+    number: 17,
     cardNo: null,
     name: 'Empowering Talisman',
     slot: Slot.Head,
@@ -278,7 +278,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 18,
+    number: 18,
     cardNo: null,
     name: 'Battle-Axe',
     slot: Slot.OneHand,
@@ -295,7 +295,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 19,
+    number: 19,
     cardNo: null,
     name: 'Weighted Net',
     slot: Slot.TwoHands,
@@ -311,7 +311,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 20,
+    number: 20,
     cardNo: null,
     name: 'Minor Mana Potion',
     slot: Slot.SmallItem,
@@ -327,7 +327,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 21,
+    number: 21,
     cardNo: null,
     name: 'Stun Powder',
     slot: Slot.SmallItem,
@@ -343,7 +343,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 22,
+    number: 22,
     cardNo: null,
     name: 'Heavy Greaves',
     slot: Slot.Legs,
@@ -359,7 +359,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 23,
+    number: 23,
     cardNo: null,
     name: 'Chainmail',
     slot: Slot.Body,
@@ -375,7 +375,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 24,
+    number: 24,
     cardNo: null,
     name: 'Amulet of Life',
     slot: Slot.Head,
@@ -391,7 +391,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 25,
+    number: 25,
     cardNo: null,
     name: 'Jagged Sword',
     slot: Slot.OneHand,
@@ -407,7 +407,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 26,
+    number: 26,
     cardNo: null,
     name: 'Long Spear',
     slot: Slot.TwoHands,
@@ -423,7 +423,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 27,
+    number: 27,
     cardNo: null,
     name: 'Major Healing Potion',
     slot: Slot.SmallItem,
@@ -439,7 +439,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 28,
+    number: 28,
     cardNo: null,
     name: 'Moon Earring',
     slot: Slot.SmallItem,
@@ -455,7 +455,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 29,
+    number: 29,
     cardNo: null,
     name: 'Comfortable Shoes',
     slot: Slot.Legs,
@@ -471,7 +471,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 30,
+    number: 30,
     cardNo: null,
     name: 'Studded Leather',
     slot: Slot.Body,
@@ -487,7 +487,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 31,
+    number: 31,
     cardNo: null,
     name: 'Hawk Helm',
     slot: Slot.Head,
@@ -503,7 +503,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 32,
+    number: 32,
     cardNo: null,
     name: 'Tower Shield',
     slot: Slot.OneHand,
@@ -519,7 +519,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 33,
+    number: 33,
     cardNo: null,
     name: 'Volatile Bomb',
     slot: Slot.OneHand,
@@ -536,7 +536,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 34,
+    number: 34,
     cardNo: null,
     name: 'Major Stamina Potion',
     slot: Slot.SmallItem,
@@ -552,7 +552,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 35,
+    number: 35,
     cardNo: null,
     name: 'Falcon Figurine',
     slot: Slot.SmallItem,
@@ -568,7 +568,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 36,
+    number: 36,
     cardNo: null,
     name: 'Boots of Dashing',
     slot: Slot.Legs,
@@ -584,7 +584,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 37,
+    number: 37,
     cardNo: null,
     name: 'Robes of Evocation',
     slot: Slot.Body,
@@ -600,7 +600,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 38,
+    number: 38,
     cardNo: null,
     name: 'Heavy Basinet',
     slot: Slot.Head,
@@ -616,7 +616,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 39,
+    number: 39,
     cardNo: null,
     name: 'Hooked Chain',
     slot: Slot.TwoHands,
@@ -632,7 +632,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 40,
+    number: 40,
     cardNo: null,
     name: 'Versatile Dagger',
     slot: Slot.OneHand,
@@ -649,7 +649,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 41,
+    number: 41,
     cardNo: null,
     name: 'Major Power Potion',
     slot: Slot.SmallItem,
@@ -665,7 +665,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 42,
+    number: 42,
     cardNo: null,
     name: 'Ring of Haste',
     slot: Slot.SmallItem,
@@ -682,7 +682,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 43,
+    number: 43,
     cardNo: null,
     name: 'Boots of Quickness',
     slot: Slot.Legs,
@@ -699,7 +699,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 44,
+    number: 44,
     cardNo: null,
     name: 'Splintmail',
     slot: Slot.Body,
@@ -715,7 +715,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 45,
+    number: 45,
     cardNo: null,
     name: 'Pendant of Dark Pacts',
     slot: Slot.Head,
@@ -731,7 +731,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 46,
+    number: 46,
     cardNo: null,
     name: 'Spiked Shield',
     slot: Slot.OneHand,
@@ -747,7 +747,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 47,
+    number: 47,
     cardNo: null,
     name: 'Reaping Scythe',
     slot: Slot.TwoHands,
@@ -764,7 +764,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 48,
+    number: 48,
     cardNo: null,
     name: 'Major Mana Potion',
     slot: Slot.SmallItem,
@@ -780,7 +780,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 49,
+    number: 49,
     cardNo: null,
     name: 'Sun Earring',
     slot: Slot.SmallItem,
@@ -796,7 +796,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 50,
+    number: 50,
     cardNo: null,
     name: 'Steel Sabatons',
     slot: Slot.Legs,
@@ -812,7 +812,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 51,
+    number: 51,
     cardNo: null,
     name: 'Shadow Armor',
     slot: Slot.Body,
@@ -828,7 +828,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 52,
+    number: 52,
     cardNo: null,
     name: 'Protective Charm',
     slot: Slot.Head,
@@ -844,7 +844,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 53,
+    number: 53,
     cardNo: null,
     name: 'Black Knife',
     slot: Slot.OneHand,
@@ -860,7 +860,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 54,
+    number: 54,
     cardNo: null,
     name: 'Staff of Eminence',
     slot: Slot.TwoHands,
@@ -876,7 +876,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 55,
+    number: 55,
     cardNo: null,
     name: 'Super Healing Potion',
     slot: Slot.SmallItem,
@@ -892,7 +892,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 56,
+    number: 56,
     cardNo: null,
     name: 'Ring of Brutality',
     slot: Slot.SmallItem,
@@ -908,7 +908,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 57,
+    number: 57,
     cardNo: null,
     name: 'Serene Sandals',
     slot: Slot.Legs,
@@ -924,7 +924,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 58,
+    number: 58,
     cardNo: null,
     name: 'Cloak of Phasing',
     slot: Slot.Body,
@@ -940,7 +940,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 59,
+    number: 59,
     cardNo: null,
     name: 'Telescopic Lens',
     slot: Slot.Head,
@@ -956,7 +956,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 60,
+    number: 60,
     cardNo: null,
     name: 'Unstable Explosives',
     slot: Slot.OneHand,
@@ -973,7 +973,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 61,
+    number: 61,
     cardNo: null,
     name: 'Wall Shield',
     slot: Slot.TwoHands,
@@ -989,7 +989,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 62,
+    number: 62,
     cardNo: null,
     name: 'Doom Powder',
     slot: Slot.SmallItem,
@@ -1005,7 +1005,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 63,
+    number: 63,
     cardNo: null,
     name: 'Lucky Eye',
     slot: Slot.SmallItem,
@@ -1021,7 +1021,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 64,
+    number: 64,
     cardNo: null,
     name: 'Boots of Sprinting',
     slot: Slot.Legs,
@@ -1037,7 +1037,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 65,
+    number: 65,
     cardNo: null,
     name: 'Platemail',
     slot: Slot.Body,
@@ -1053,7 +1053,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 66,
+    number: 66,
     cardNo: null,
     name: 'Mask of Terror',
     slot: Slot.Head,
@@ -1069,7 +1069,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 67,
+    number: 67,
     cardNo: null,
     name: 'Balanced Blade',
     slot: Slot.OneHand,
@@ -1085,7 +1085,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 68,
+    number: 68,
     cardNo: null,
     name: 'Halberd',
     slot: Slot.TwoHands,
@@ -1101,7 +1101,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 69,
+    number: 69,
     cardNo: null,
     name: 'Star Earring',
     slot: Slot.SmallItem,
@@ -1118,7 +1118,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 70,
+    number: 70,
     cardNo: null,
     name: 'Second Chance Ring',
     slot: Slot.SmallItem,
@@ -1135,7 +1135,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 71,
+    number: 71,
     cardNo: null,
     name: 'Boots of Levitation',
     slot: Slot.Legs,
@@ -1151,7 +1151,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 72,
+    number: 72,
     cardNo: null,
     name: 'Boots of Happiness',
     slot: Slot.Legs,
@@ -1167,7 +1167,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 73,
+    number: 73,
     cardNo: null,
     name: 'Blinking Cape',
     slot: Slot.Body,
@@ -1183,7 +1183,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 74,
+    number: 74,
     cardNo: null,
     name: 'Swordedge Armor',
     slot: Slot.Body,
@@ -1199,7 +1199,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 75,
+    number: 75,
     cardNo: null,
     name: 'Circlet of Elements',
     slot: Slot.Head,
@@ -1215,7 +1215,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 76,
+    number: 76,
     cardNo: null,
     name: 'Chain Hood',
     slot: Slot.Head,
@@ -1231,7 +1231,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 77,
+    number: 77,
     cardNo: null,
     name: 'Frigid Blade',
     slot: Slot.OneHand,
@@ -1247,7 +1247,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 78,
+    number: 78,
     cardNo: null,
     name: 'Storm Blade',
     slot: Slot.OneHand,
@@ -1263,7 +1263,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 79,
+    number: 79,
     cardNo: null,
     name: 'Inferno Blade',
     slot: Slot.OneHand,
@@ -1279,7 +1279,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 80,
+    number: 80,
     cardNo: null,
     name: 'Tremor Blade',
     slot: Slot.OneHand,
@@ -1295,7 +1295,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 81,
+    number: 81,
     cardNo: null,
     name: 'Brilliant Blade',
     slot: Slot.OneHand,
@@ -1311,7 +1311,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 82,
+    number: 82,
     cardNo: null,
     name: 'Night Blade',
     slot: Slot.OneHand,
@@ -1327,7 +1327,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 83,
+    number: 83,
     cardNo: null,
     name: 'Wand of Frost',
     slot: Slot.OneHand,
@@ -1343,7 +1343,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 84,
+    number: 84,
     cardNo: null,
     name: 'Wand of Storms',
     slot: Slot.OneHand,
@@ -1359,7 +1359,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 85,
+    number: 85,
     cardNo: null,
     name: 'Wand of Infernos',
     slot: Slot.OneHand,
@@ -1375,7 +1375,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 86,
+    number: 86,
     cardNo: null,
     name: 'Wand of Tremors',
     slot: Slot.OneHand,
@@ -1391,7 +1391,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 87,
+    number: 87,
     cardNo: null,
     name: 'Wand of Brilliance',
     slot: Slot.OneHand,
@@ -1407,7 +1407,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 88,
+    number: 88,
     cardNo: null,
     name: 'Wand of Darkness',
     slot: Slot.OneHand,
@@ -1423,7 +1423,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 89,
+    number: 89,
     cardNo: null,
     name: 'Minor Cure Potion',
     slot: Slot.SmallItem,
@@ -1439,7 +1439,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 90,
+    number: 90,
     cardNo: null,
     name: 'Major Cure Potion',
     slot: Slot.SmallItem,
@@ -1455,7 +1455,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 91,
+    number: 91,
     cardNo: null,
     name: 'Steel Ring',
     slot: Slot.SmallItem,
@@ -1471,7 +1471,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 92,
+    number: 92,
     cardNo: null,
     name: 'Dampening Ring',
     slot: Slot.SmallItem,
@@ -1487,7 +1487,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 93,
+    number: 93,
     cardNo: null,
     name: 'Scroll of Power',
     slot: Slot.SmallItem,
@@ -1503,7 +1503,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 94,
+    number: 94,
     cardNo: null,
     name: 'Scroll of Healing',
     slot: Slot.SmallItem,
@@ -1519,7 +1519,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 95,
+    number: 95,
     cardNo: null,
     name: 'Scroll of Stamina',
     slot: Slot.SmallItem,
@@ -1535,7 +1535,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 96,
+    number: 96,
     cardNo: null,
     name: 'Rocket Boots',
     slot: Slot.Legs,
@@ -1552,7 +1552,7 @@ export const items: Item[] = [
     // source: 'Scenario #66 (Treasure #36)',
   },
   {
-    id: 97,
+    number: 97,
     cardNo: null,
     name: 'Endurance Footwraps',
     slot: Slot.Legs,
@@ -1569,7 +1569,7 @@ export const items: Item[] = [
     // source: 'Scenario #38 (Treasure #29)',
   },
   {
-    id: 98,
+    number: 98,
     cardNo: null,
     name: 'Drakescale Boots',
     slot: Slot.Legs,
@@ -1586,7 +1586,7 @@ export const items: Item[] = [
     // source: 'Scenario #43 (Treasure #35)',
   },
   {
-    id: 99,
+    number: 99,
     cardNo: null,
     name: 'Magma Waders',
     slot: Slot.Legs,
@@ -1604,7 +1604,7 @@ export const items: Item[] = [
     // source: 'Scenario #63 (Treasure #12)',
   },
   {
-    id: 100,
+    number: 100,
     cardNo: null,
     name: 'Robes of Summoning',
     slot: Slot.Body,
@@ -1621,7 +1621,7 @@ export const items: Item[] = [
     // source: 'Scenario #31 (Treasure #69)',
   },
   {
-    id: 101,
+    number: 101,
     cardNo: null,
     name: 'Second Skin',
     slot: Slot.Body,
@@ -1638,7 +1638,7 @@ export const items: Item[] = [
     // source: 'Scenario #06 (Treasure #50)',
   },
   {
-    id: 102,
+    number: 102,
     cardNo: null,
     name: 'Sacrificial Robes',
     slot: Slot.Body,
@@ -1655,7 +1655,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 103,
+    number: 103,
     cardNo: null,
     name: 'Drakescale Armor',
     slot: Slot.Body,
@@ -1672,7 +1672,7 @@ export const items: Item[] = [
     // source: 'Scenario #34 (Treasure #23)',
   },
   {
-    id: 104,
+    number: 104,
     cardNo: null,
     name: 'Steam Armor',
     slot: Slot.Body,
@@ -1689,7 +1689,7 @@ export const items: Item[] = [
     // source: 'Scenario #40 (Treasure #47)',
   },
   {
-    id: 105,
+    number: 105,
     cardNo: null,
     name: 'Flea-Bitten Shawl',
     slot: Slot.Body,
@@ -1706,7 +1706,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 106,
+    number: 106,
     cardNo: null,
     name: 'Necklace of Teeth',
     slot: Slot.Head,
@@ -1722,7 +1722,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 107,
+    number: 107,
     cardNo: null,
     name: 'Horned Helm',
     slot: Slot.Head,
@@ -1739,7 +1739,7 @@ export const items: Item[] = [
     // source: 'Scenario #03 (Treasure #65)',
   },
   {
-    id: 108,
+    number: 108,
     cardNo: null,
     name: 'Drakescale Helm',
     slot: Slot.Head,
@@ -1756,7 +1756,7 @@ export const items: Item[] = [
     // source: 'Scenario #25 (Treasure #58)',
   },
   {
-    id: 109,
+    number: 109,
     cardNo: null,
     name: "Thief's Hood",
     slot: Slot.Head,
@@ -1773,7 +1773,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 110,
+    number: 110,
     cardNo: null,
     name: 'Helm of the Mountain',
     slot: Slot.Head,
@@ -1790,7 +1790,7 @@ export const items: Item[] = [
     // source: 'Scenario #82 (Treasure #62)',
   },
   {
-    id: 111,
+    number: 111,
     cardNo: null,
     name: 'Wave Crest',
     slot: Slot.Head,
@@ -1807,7 +1807,7 @@ export const items: Item[] = [
     // source: 'Scenario #64 (Treasure #09)',
   },
   {
-    id: 112,
+    number: 112,
     cardNo: null,
     name: 'Ancient Drill',
     slot: Slot.TwoHands,
@@ -1823,7 +1823,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 113,
+    number: 113,
     cardNo: null,
     name: 'Skullbane Axe',
     slot: Slot.TwoHands,
@@ -1842,7 +1842,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 114,
+    number: 114,
     cardNo: null,
     name: 'Staff of Xorn',
     slot: Slot.TwoHands,
@@ -1858,7 +1858,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 115,
+    number: 115,
     cardNo: null,
     name: 'Mountain Hammer',
     slot: Slot.TwoHands,
@@ -1875,7 +1875,7 @@ export const items: Item[] = [
     // source: 'Scenario #82 (Treasure #62)',
   },
   {
-    id: 116,
+    number: 116,
     cardNo: null,
     name: 'Fueled Falchion',
     slot: Slot.OneHand,
@@ -1892,7 +1892,7 @@ export const items: Item[] = [
     // source: 'Scenario #23 (Treasure #72)',
   },
   {
-    id: 117,
+    number: 117,
     cardNo: null,
     name: 'Bloody Axe',
     slot: Slot.OneHand,
@@ -1909,7 +1909,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 118,
+    number: 118,
     cardNo: null,
     name: 'Staff of Elements',
     slot: Slot.TwoHands,
@@ -1926,7 +1926,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 119,
+    number: 119,
     cardNo: null,
     name: 'Skull of Hatred',
     slot: Slot.OneHand,
@@ -1942,7 +1942,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 120,
+    number: 120,
     cardNo: null,
     name: 'Staff of Summoning',
     slot: Slot.TwoHands,
@@ -1959,7 +1959,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 121,
+    number: 121,
     cardNo: null,
     name: 'Orb of Dawn',
     slot: Slot.OneHand,
@@ -1975,7 +1975,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 122,
+    number: 122,
     cardNo: null,
     name: 'Orb of Twilight',
     slot: Slot.OneHand,
@@ -1992,7 +1992,7 @@ export const items: Item[] = [
     // source: 'Scenario #89 (Treasure #27)',
   },
   {
-    id: 123,
+    number: 123,
     cardNo: null,
     name: 'Ring of Skulls',
     slot: Slot.SmallItem,
@@ -2009,7 +2009,7 @@ export const items: Item[] = [
     // source: 'Scenario #04 (Treasure #38)',
   },
   {
-    id: 124,
+    number: 124,
     cardNo: null,
     name: 'Doomed Compass',
     slot: Slot.SmallItem,
@@ -2027,7 +2027,7 @@ export const items: Item[] = [
     // source: 'Scenario #93 (Treasure #54)',
   },
   {
-    id: 125,
+    number: 125,
     cardNo: null,
     name: 'Curious Gear',
     slot: Slot.SmallItem,
@@ -2044,7 +2044,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 126,
+    number: 126,
     cardNo: null,
     name: 'Remote Spider',
     slot: Slot.SmallItem,
@@ -2061,7 +2061,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 127,
+    number: 127,
     cardNo: null,
     name: 'Giant Remote Spider',
     slot: Slot.SmallItem,
@@ -2078,7 +2078,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 128,
+    number: 128,
     cardNo: null,
     name: 'Black Censer',
     slot: Slot.SmallItem,
@@ -2094,7 +2094,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 129,
+    number: 129,
     cardNo: null,
     name: 'Black Card',
     slot: Slot.SmallItem,
@@ -2111,7 +2111,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 130,
+    number: 130,
     cardNo: null,
     name: 'Helix Ring',
     slot: Slot.SmallItem,
@@ -2128,7 +2128,7 @@ export const items: Item[] = [
     // source: 'Scenario #81 (Treasure #68)',
   },
   {
-    id: 131,
+    number: 131,
     cardNo: null,
     name: 'Heart of the Betrayer',
     slot: Slot.SmallItem,
@@ -2146,7 +2146,7 @@ export const items: Item[] = [
     // source: 'Scenario #79 (Treasure #52)',
   },
   {
-    id: 132,
+    number: 132,
     cardNo: null,
     name: 'Power Core',
     slot: Slot.SmallItem,
@@ -2162,7 +2162,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 133,
+    number: 133,
     cardNo: null,
     name: 'Resonant Crystal',
     slot: Slot.SmallItem,
@@ -2178,7 +2178,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 134,
+    number: 134,
     cardNo: null,
     name: 'Imposing Blade',
     slot: Slot.OneHand,
@@ -2194,7 +2194,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 135,
+    number: 135,
     cardNo: null,
     name: 'Focusing Ray',
     slot: Slot.OneHand,
@@ -2210,7 +2210,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 136,
+    number: 136,
     cardNo: null,
     name: 'Volatile Elixir',
     slot: Slot.SmallItem,
@@ -2227,7 +2227,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 137,
+    number: 137,
     cardNo: null,
     name: 'Silent Stiletto',
     slot: Slot.OneHand,
@@ -2243,7 +2243,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 138,
+    number: 138,
     cardNo: null,
     name: 'Stone Charm',
     slot: Slot.Head,
@@ -2260,7 +2260,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 139,
+    number: 139,
     cardNo: null,
     name: 'Psychic Knife',
     slot: Slot.OneHand,
@@ -2276,7 +2276,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 140,
+    number: 140,
     cardNo: null,
     name: 'Sun Shield',
     slot: Slot.OneHand,
@@ -2292,7 +2292,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 141,
+    number: 141,
     cardNo: null,
     name: 'Utility Belt',
     slot: Slot.SmallItem,
@@ -2308,7 +2308,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 142,
+    number: 142,
     cardNo: null,
     name: 'Phasing Idol',
     slot: Slot.SmallItem,
@@ -2324,7 +2324,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 143,
+    number: 143,
     cardNo: null,
     name: 'Smoke Elixir',
     slot: Slot.SmallItem,
@@ -2340,7 +2340,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 144,
+    number: 144,
     cardNo: null,
     name: 'Pendant of the Plague',
     slot: Slot.Head,
@@ -2356,7 +2356,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 145,
+    number: 145,
     cardNo: null,
     name: 'Mask of Death',
     slot: Slot.Head,
@@ -2372,7 +2372,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 146,
+    number: 146,
     cardNo: null,
     name: 'Master’s Lute',
     slot: Slot.TwoHands,
@@ -2388,7 +2388,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 147,
+    number: 147,
     cardNo: null,
     name: 'Cloak of the Hunter',
     slot: Slot.Body,
@@ -2404,7 +2404,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 148,
+    number: 148,
     cardNo: null,
     name: 'Doctor’s Coat',
     slot: Slot.Body,
@@ -2420,7 +2420,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 149,
+    number: 149,
     cardNo: null,
     name: 'Elemental Boots',
     slot: Slot.Legs,
@@ -2436,7 +2436,7 @@ export const items: Item[] = [
     verified: false,
   },
   {
-    id: 150,
+    number: 150,
     cardNo: null,
     name: 'Staff of Command',
     slot: Slot.TwoHands,
