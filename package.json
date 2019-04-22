@@ -33,7 +33,8 @@
     "e2e:dev": "(cd e2e && npm run test:dev)",
     "format": "prettier --list-different --write \"{src,e2e}/**/*.{ts,html,scss}\"",
     "format:quick": "pretty-quick --staged --pattern \"{src,e2e}/**/*.{ts,html,scss}\"",
-    "format:ci": "prettier --check \"{src,e2e}/**/*.{ts,html,scss}\""
+    "format:ci": "prettier --check \"{src,e2e}/**/*.{ts,html,scss}\"",
+    "cli:sdk": "ts-node -P src/cli/tsconfig.json src/cli/sdk-generator.ts"
   },
   "private": true,
   "dependencies": {
@@ -83,6 +84,7 @@
     "pluralize": "^7.0.0",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^6.4.0",
+    "ts-morph": "^2.0.1",
     "tsconfig-paths-webpack-plugin": "^3.2.0",
     "typeorm": "^0.2.16",
     "zone.js": "^0.9.0"

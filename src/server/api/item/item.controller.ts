@@ -1,6 +1,8 @@
-import { Body, Controller, Delete, Get, Param, Post, Put } from '@nestjs/common';
+import { Body, Controller, Delete, Get, Param, Post, Put, Query } from '@nestjs/common';
+import { In } from 'typeorm';
 import { items } from '../../../data/items';
 import { Item } from '../../../shared/entities/item';
+import { BetterFindManyOptions } from '../base.repository';
 import { ItemRepository } from './item.repository';
 import { sortBy } from 'lodash';
 
@@ -11,30 +13,37 @@ export class ItemController {
   }
 
   @Get()
-  async getItems() {
-    return sortBy(await this.itemRepo.smartFind(), 'number');
+  async getItems(@Query('numbers') numberList?: string | (string | number)[]): Promise<Item[]> {
+    const options: BetterFindManyOptions<Item> = { order: { number: 'ASC' } };
+
+    if (numberList) {
+      const idArray: number[] = (Array.isArray(numberList) ? numberList : numberList.split(',')).map(id => +id);
+      options.where = { number: In(idArray) };
+    }
+
+    return await this.itemRepo.smartFind(options);
   }
 
   @Get(':id')
-  async findItem(@Param('id') id: string) {
+  async findItem(@Param('id') id: string | number): Promise<Item> {
     return this.itemRepo.smartFindOneOrFail(id);
   }
 
   @Post()
-  async createItem(@Body() item: Item) {
+  async createItem(@Body() item: Item): Promise<Item> {
     item = this.itemRepo.scrub(item);
     return await this.itemRepo.saveNew(item);
   }
 
-  @Put(':id')
-  async updateItem(@Param('id') id: string, @Body() item: Item) {
+  @Put(':cardNo')
+  async updateItem(@Param('cardNo') cardNo: string | number, @Body() item: Item): Promise<Item> {
     item = this.itemRepo.scrub(item);
-    return await this.itemRepo.saveExisting(id, item);
+    return await this.itemRepo.saveExisting(cardNo, item);
   }
 
-  @Delete(':id')
-  async deleteItem(@Param('id') id: string) {
-    return await this.itemRepo.deleteAndReturn(id);
+  @Delete(':cardNo')
+  async deleteItem(@Param('cardNo') cardNo: string | number): Promise<Item> {
+    return await this.itemRepo.deleteAndReturn(cardNo);
   }
 
   private async seed() {

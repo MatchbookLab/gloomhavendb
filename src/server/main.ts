@@ -14,6 +14,7 @@ import 'zone.js/dist/zone-node';
 
 import { AppModule } from './app.module';
 import { HOSTNAME, PRODUCTION_MODE, PROTOCOL, STAGING_MODE } from './environment';
+import { EntityNotFoundErrorFilter } from './filters/entity-not-found.filter';
 import { QueryFailedErrorFilter } from './filters/query-failed-error.filter';
 import { TransformInterceptor } from './interceptors/transform.interceptor';
 
@@ -81,6 +82,7 @@ export async function bootstrap(): Promise<NestExpressApplication> {
   app.useGlobalPipes(new ValidationPipe());
   app.setGlobalPrefix('api');
   app.useGlobalFilters(new QueryFailedErrorFilter());
+  app.useGlobalFilters(new EntityNotFoundErrorFilter());
 
   if (!PRODUCTION_MODE && !STAGING_MODE) {
     app.enableCors();
