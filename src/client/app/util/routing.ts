@@ -12,4 +12,5 @@ export interface BetterRoute extends Route {
 export enum RoutePath {
   HOME = '',
   LOGIN = 'login',
+  SECRET_SHOP = 'secret-shop',
 }

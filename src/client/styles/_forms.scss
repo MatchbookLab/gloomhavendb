@@ -1,2 +1,21 @@
 @import 'variables';
 @import 'mixins';
+
+input[type='text'],
+input[type='tel'],
+input[type='email'],
+textarea {
+  border: 2px solid #ccc;
+  padding: 4px 6px;
+}
+
+.control-group {
+  display: flex;
+  align-items: center;
+
+  .control-addon {
+    height: 100%;
+    padding: 0 5px;
+    //background: #ccc;
+  }
+}

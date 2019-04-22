@@ -1,5 +1,12 @@
 @import 'variables';
 
+@mixin button($color, $suffix: '') {
+  .btn#{$suffix} {
+    background: $color;
+    border: darken($color, 20%);
+  }
+}
+
 @mixin breakpoint($point) {
   @if ($point == super-mario) {
     @media (min-width: $mario-width) {

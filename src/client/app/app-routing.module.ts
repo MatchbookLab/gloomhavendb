@@ -3,6 +3,7 @@ import { PreloadAllModules, RouterModule } from '@angular/router';
 import { HomeComponent } from './+home/home.component';
 import { LoginComponent } from './+login/login.component';
 import { NotFoundComponent } from './+not-found/not-found.component';
+import { SecretShopComponent } from './+secret-shop/secret-shop.component';
 
 import { BetterRoute, RoutePath } from './util/routing';
 
@@ -14,6 +15,14 @@ const routes: BetterRoute[] = [
     pathMatch: 'full',
     data: {
       title: '',
+    },
+  },
+  {
+    path: RoutePath.SECRET_SHOP,
+    component: SecretShopComponent,
+    // loadChildren: './+secret-shop/secret-shop.module#SecretShopModule',
+    data: {
+      title: 'Secret Shop',
     },
   },
   {

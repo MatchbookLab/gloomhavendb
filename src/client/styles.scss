@@ -23,13 +23,27 @@ body {
 
   font-size: 18px;
   font-weight: 300;
-  line-height: 30px;
+  line-height: 26px;
 }
+
+// buttons
+.btn {
+  padding: 8px 10px;
+  outline: none;
+
+  & + & {
+    margin-left: 8px;
+  }
+}
+
+@include button(#eee);
+@include button(#4b8cf5, '-secondary');
 
 // Breakpoint Helper (for dev only)
 // --------------------------------
 .breakpoint-helper {
   display: none;
+
   //display: block;
   position: fixed;
   left: 0;
