@@ -2,6 +2,7 @@ import { enableProdMode } from '@angular/core';
 import { ValidationPipe } from '@nestjs/common';
 import { NestFactory } from '@nestjs/core';
 import { ExpressAdapter, NestExpressApplication } from '@nestjs/platform-express';
+import { SwaggerModule, DocumentBuilder } from '@nestjs/swagger';
 
 import * as compression from 'compression';
 import * as express from 'express';
@@ -13,7 +14,7 @@ import 'reflect-metadata';
 import 'zone.js/dist/zone-node';
 
 import { AppModule } from './app.module';
-import { HOSTNAME, PRODUCTION_MODE, PROTOCOL, STAGING_MODE } from './environment';
+import { DEVELOPMENT_MODE, HOSTNAME, PRODUCTION_MODE, PROTOCOL, STAGING_MODE } from './environment';
 import { EntityNotFoundErrorFilter } from './filters/entity-not-found.filter';
 import { QueryFailedErrorFilter } from './filters/query-failed-error.filter';
 import { TransformInterceptor } from './interceptors/transform.interceptor';
@@ -84,13 +85,23 @@ export async function bootstrap(): Promise<NestExpressApplication> {
   app.useGlobalFilters(new QueryFailedErrorFilter());
   app.useGlobalFilters(new EntityNotFoundErrorFilter());
 
-  if (!PRODUCTION_MODE && !STAGING_MODE) {
+  const options = new DocumentBuilder()
+    .setTitle('Gloomhaven DB API')
+    .setDescription('Public-ish API for the Gloomhaven DB API')
+    .setVersion('0.1')
+    .setBasePath('api')
+    .build();
+
+  const document = SwaggerModule.createDocument(app, options);
+  SwaggerModule.setup('swagger', app, document);
+
+  if (DEVELOPMENT_MODE) {
     app.enableCors();
   }
 
   await app.listen(3000);
 
-  if (!PRODUCTION_MODE && !STAGING_MODE) {
+  if (DEVELOPMENT_MODE) {
     if (module.hot) {
       module.hot.accept();
       module.hot.dispose(() => app.close());

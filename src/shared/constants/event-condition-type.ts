@@ -4,6 +4,6 @@ export enum EventConditionType {
   PayItem = 'Pay Item',
   ReputationAbove = 'Reputation Above',
   ReputationBelow = 'Reputation Below',
-  ClassesPresent = 'Classes Present',
+  ClassPresent = 'Class Present',
   Otherwise = 'Otherwise',
 }

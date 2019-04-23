@@ -1,4 +1,5 @@
 import { Body, Controller, Delete, Get, Param, Post, Put } from '@nestjs/common';
+import { ApiImplicitBody, ApiImplicitParam, ApiOkResponse } from '@nestjs/swagger';
 import { events } from '../../../data/events';
 import { EventType } from '../../../shared/constants/event-type';
 import { Event } from '../../../shared/entities/event';
@@ -13,26 +14,36 @@ export class EventController {
   /////////////////
 
   @Get('road')
-  async getRoadEvents(): Promise<(Event)[]> {
+  @ApiOkResponse({ description: 'All of the Road Events.', type: [Event] })
+  async getRoadEvents(): Promise<Event[]> {
     return this.getEvents(EventType.Road);
   }
 
   @Get('road/:cardNo')
+  @ApiImplicitParam({ name: 'cardNo', description: 'The event card number.' })
+  @ApiOkResponse({ description: 'The Road Event with the card number used.', type: Event })
   async findRoadEvent(@Param('cardNo') number: string | number): Promise<Event> {
     return this.findEvent(EventType.Road, number);
   }
 
   @Post('road')
+  @ApiImplicitBody({ name: 'event', type: Event, description: 'The Road Event to create.', required: true })
+  @ApiOkResponse({ description: 'The Road Event that was created.', type: Event })
   async createRoadEvent(@Body() event: Event): Promise<Event> {
     return this.createEvent(EventType.Road, event);
   }
 
   @Put('road/:cardNo')
+  @ApiImplicitParam({ name: 'cardNo', description: 'The event card number.' })
+  @ApiImplicitBody({ name: 'event', type: Event, description: 'The Road Event to update.', required: true })
+  @ApiOkResponse({ description: 'The Road Event that was updated.', type: Event })
   async updateRoadEvent(@Param('cardNo') number: string | number, @Body() event: Event): Promise<Event> {
     return this.updateEvent(EventType.Road, number, event);
   }
 
   @Delete('road/:cardNo')
+  @ApiImplicitParam({ name: 'cardNo', description: 'The event card number.' })
+  @ApiOkResponse({ description: 'The Road Event that was deleted.', type: Event })
   async deleteRoadEvent(@Param('cardNo') number: string | number): Promise<Event> {
     return this.deleteEvent(EventType.Road, number);
   }
@@ -42,26 +53,36 @@ export class EventController {
   /////////////////
 
   @Get('city')
+  @ApiOkResponse({ description: 'All of the City Events.', type: [Event] })
   async getCityEvents(): Promise<(Event)[]> {
     return this.getEvents(EventType.City);
   }
 
   @Get('city/:cardNo')
+  @ApiImplicitParam({ name: 'cardNo', description: 'The event card number.' })
+  @ApiOkResponse({ description: 'The City Event with the card number used.', type: Event })
   async findCityEvent(@Param('cardNo') number: string | number): Promise<Event> {
     return this.findEvent(EventType.City, number);
   }
 
   @Post('city')
+  @ApiImplicitBody({ name: 'event', type: Event, description: 'The City Event to create.', required: true })
+  @ApiOkResponse({ description: 'The City Event that was created.', type: Event })
   async createCityEvent(@Body() event: Event): Promise<Event> {
     return this.createEvent(EventType.City, event);
   }
 
   @Put('city/:cardNo')
+  @ApiImplicitParam({ name: 'cardNo', description: 'The event card number.' })
+  @ApiImplicitBody({ name: 'event', type: Event, description: 'The City Event to update.', required: true })
+  @ApiOkResponse({ description: 'The City Event that was updated.', type: Event })
   async updateCityEvent(@Param('cardNo') number: string | number, @Body() event: Event): Promise<Event> {
     return this.updateEvent(EventType.City, number, event);
   }
 
   @Delete('city/:cardNo')
+  @ApiImplicitParam({ name: 'cardNo', description: 'The event card number.' })
+  @ApiOkResponse({ description: 'The City Event that was deleted.', type: Event })
   async deleteCityEvent(@Param('cardNo') number: string | number): Promise<Event> {
     return this.deleteEvent(EventType.City, number);
   }
