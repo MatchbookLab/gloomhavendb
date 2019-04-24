@@ -1,5 +1,6 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { EventController } from './event.controller';
+import { EventRepository } from './event.repository';
 
 describe('Event Controller', () => {
   let controller: EventController;
@@ -7,6 +8,12 @@ describe('Event Controller', () => {
   beforeEach(async () => {
     const module: TestingModule = await Test.createTestingModule({
       controllers: [EventController],
+      providers: [
+        {
+          provide: EventRepository,
+          useValue: {},
+        },
+      ],
     }).compile();
 
     controller = module.get<EventController>(EventController);

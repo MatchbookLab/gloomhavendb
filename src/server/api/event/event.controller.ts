@@ -1,4 +1,5 @@
-import { Body, Controller, Delete, Get, Param, Post, Put } from '@nestjs/common';
+import { Body, Controller, Delete, Get, Param, Post, Put, UseGuards } from '@nestjs/common';
+import { AuthGuard } from '@nestjs/passport';
 import { ApiImplicitBody, ApiImplicitParam, ApiOkResponse } from '@nestjs/swagger';
 import { events } from '../../../data/events';
 import { EventType } from '../../../shared/constants/event-type';
@@ -27,6 +28,7 @@ export class EventController {
   }
 
   @Post('road')
+  @UseGuards(AuthGuard())
   @ApiImplicitBody({ name: 'event', type: Event, description: 'The Road Event to create.', required: true })
   @ApiOkResponse({ description: 'The Road Event that was created.', type: Event })
   async createRoadEvent(@Body() event: Event): Promise<Event> {
@@ -34,6 +36,7 @@ export class EventController {
   }
 
   @Put('road/:cardNo')
+  @UseGuards(AuthGuard())
   @ApiImplicitParam({ name: 'cardNo', description: 'The event card number.' })
   @ApiImplicitBody({ name: 'event', type: Event, description: 'The Road Event to update.', required: true })
   @ApiOkResponse({ description: 'The Road Event that was updated.', type: Event })
@@ -42,6 +45,7 @@ export class EventController {
   }
 
   @Delete('road/:cardNo')
+  @UseGuards(AuthGuard())
   @ApiImplicitParam({ name: 'cardNo', description: 'The event card number.' })
   @ApiOkResponse({ description: 'The Road Event that was deleted.', type: Event })
   async deleteRoadEvent(@Param('cardNo') number: string | number): Promise<Event> {
@@ -66,6 +70,7 @@ export class EventController {
   }
 
   @Post('city')
+  @UseGuards(AuthGuard())
   @ApiImplicitBody({ name: 'event', type: Event, description: 'The City Event to create.', required: true })
   @ApiOkResponse({ description: 'The City Event that was created.', type: Event })
   async createCityEvent(@Body() event: Event): Promise<Event> {
@@ -73,6 +78,7 @@ export class EventController {
   }
 
   @Put('city/:cardNo')
+  @UseGuards(AuthGuard())
   @ApiImplicitParam({ name: 'cardNo', description: 'The event card number.' })
   @ApiImplicitBody({ name: 'event', type: Event, description: 'The City Event to update.', required: true })
   @ApiOkResponse({ description: 'The City Event that was updated.', type: Event })
@@ -81,6 +87,7 @@ export class EventController {
   }
 
   @Delete('city/:cardNo')
+  @UseGuards(AuthGuard())
   @ApiImplicitParam({ name: 'cardNo', description: 'The event card number.' })
   @ApiOkResponse({ description: 'The City Event that was deleted.', type: Event })
   async deleteCityEvent(@Param('cardNo') number: string | number): Promise<Event> {

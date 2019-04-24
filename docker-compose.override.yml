@@ -12,8 +12,8 @@ services:
       - ./:/app/
     tty: true
     environment:
-      NODE_ENV: docker
-    command: yarn start:dev
+      NODE_ENV: development
+    command: npm run start:dev
 
   database:
     ports:

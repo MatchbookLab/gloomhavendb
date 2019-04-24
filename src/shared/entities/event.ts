@@ -248,7 +248,6 @@ export class Event {
   @IsNotEmpty()
   @ValidateNested()
   optionB: EventChoice;
-  // image of the entire front
 
   @Column()
   @ApiModelProperty({
@@ -258,7 +257,7 @@ export class Event {
   })
   @IsNotEmpty()
   @IsString()
-  imageUrl: string;
+  imageUrl: string; // image of the entire front
 
   @Column({ default: false })
   @ApiModelProperty({

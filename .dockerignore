@@ -2,9 +2,9 @@
 node_modules
 dist
 coverage
+src/coverage
 e2e/cypress/screenshots
 e2e/cypress/videos
-docker-compose.no-cdn.yml
 docker-compose.override.yml
 docker-compose.production.yml
 docker-compose.staging.yml

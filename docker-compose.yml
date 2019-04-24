@@ -2,6 +2,7 @@ version: '3.7'
 
 services:
   app:
+    image: ${DOCKER_HOSTNAME}/gloomhavendb/app:${DOCKER_TAG}
     build:
       context: ./
     links:

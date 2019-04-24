@@ -1,10 +1,10 @@
-import { Body, Controller, Delete, Get, Param, Post, Put, Query } from '@nestjs/common';
+import { Body, Controller, Delete, Get, Param, Post, Put, Query, UseGuards } from '@nestjs/common';
+import { AuthGuard } from '@nestjs/passport';
 import { In } from 'typeorm';
 import { items } from '../../../data/items';
 import { Item } from '../../../shared/entities/item';
 import { BetterFindManyOptions } from '../base.repository';
 import { ItemRepository } from './item.repository';
-import { sortBy } from 'lodash';
 
 @Controller('items')
 export class ItemController {
@@ -30,18 +30,21 @@ export class ItemController {
   }
 
   @Post()
+  @UseGuards(AuthGuard())
   async createItem(@Body() item: Item): Promise<Item> {
     item = this.itemRepo.scrub(item);
     return await this.itemRepo.saveNew(item);
   }
 
   @Put(':cardNo')
+  @UseGuards(AuthGuard())
   async updateItem(@Param('cardNo') cardNo: string | number, @Body() item: Item): Promise<Item> {
     item = this.itemRepo.scrub(item);
     return await this.itemRepo.saveExisting(cardNo, item);
   }
 
   @Delete(':cardNo')
+  @UseGuards(AuthGuard())
   async deleteItem(@Param('cardNo') cardNo: string | number): Promise<Item> {
     return await this.itemRepo.deleteAndReturn(cardNo);
   }

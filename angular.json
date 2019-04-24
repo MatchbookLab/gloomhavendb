@@ -71,8 +71,8 @@
             "sourceMap": false,
             "fileReplacements": [
               {
-                "replace": "client/environments/environment.ts",
-                "with": "client/environments/environment.prod.ts"
+                "replace": "src/client/environments/environment.ts",
+                "with": "src/client/environments/environment.prod.ts"
               }
             ]
           }

@@ -1,22 +1,34 @@
-import {
-  AfterViewInit,
-  ChangeDetectorRef,
-  Component,
-  ElementRef,
-  HostBinding,
-  HostListener,
-  OnInit,
-  ViewChild,
-} from '@angular/core';
-import { filter, includes, maxBy, minBy, sortBy } from 'lodash';
-import { items } from '../../../data/items';
+import { animate, style, transition, trigger } from '@angular/animations';
+import { AfterViewInit, Component, ElementRef, HostBinding, HostListener, OnInit, ViewChild } from '@angular/core';
+import { filter, maxBy, minBy, sortBy } from 'lodash';
+import { GloomhavenDB } from '../../../sdk/generated/gloomhavendb.sdk';
 import { Slot } from '../../../shared/constants/slot';
 import { Item } from '../../../shared/entities/item';
+import { ScrollingService } from '../services/scrolling/scrolling.service';
 
 @Component({
   selector: 'gdb-not-found',
   templateUrl: './secret-shop.component.html',
   styleUrls: ['./secret-shop.component.scss'],
+  animations: [
+    trigger('slideInOut', [
+      transition(':enter', [
+        style({ transform: 'translateY(-30%)', opacity: 0, overflow: 'hidden' }),
+        animate('274ms ease-in-out', style({ transform: '*', opacity: '*', overflow: '*' })),
+      ]),
+      transition(
+        ':leave',
+        animate('274ms ease-in-out', style({ transform: 'translateY(-30%)', opacity: 0, overflow: 'hidden' })),
+      ),
+    ]),
+    trigger('fadeInOut', [
+      transition(':enter', [
+        style({ opacity: 0, overflow: 'hidden' }),
+        animate('350ms ease-in-out', style({ opacity: '*', overflow: '*' })),
+      ]),
+      transition(':leave', animate('350ms ease-in-out', style({ opacity: 0, overflow: 'hidden' }))),
+    ]),
+  ],
 })
 export class SecretShopComponent implements OnInit, AfterViewInit {
   @ViewChild('header') header: ElementRef<HTMLDivElement>;
@@ -24,6 +36,8 @@ export class SecretShopComponent implements OnInit, AfterViewInit {
   Slot = Slot;
   shopItems: Item[];
   shownItems: Item[];
+
+  enlargedItem: Item = null;
 
   filters: {
     slot: Slot;
@@ -43,7 +57,9 @@ export class SecretShopComponent implements OnInit, AfterViewInit {
   @HostBinding('style.paddingTop')
   headerHeight: string = '130px';
 
-  ngOnInit() {
+  constructor(private scrollingService: ScrollingService) {}
+
+  async ngOnInit() {
     const itemIds = [
       1,
       2,
@@ -105,7 +121,7 @@ export class SecretShopComponent implements OnInit, AfterViewInit {
       150,
     ];
 
-    this.shopItems = filter(items, item => includes(itemIds, item.number));
+    this.shopItems = await new GloomhavenDB().getItems(itemIds);
 
     this.filters.price = this.maxPrice = maxBy(this.shopItems, item => item.price).price;
     this.minPrice = minBy(this.shopItems, item => item.price).price;
@@ -114,7 +130,6 @@ export class SecretShopComponent implements OnInit, AfterViewInit {
   }
 
   ngAfterViewInit() {
-    console.log(this.header.nativeElement, this.header.nativeElement.offsetHeight);
     setTimeout(() => this.adjustHeaderHeight());
   }
 
@@ -124,6 +139,7 @@ export class SecretShopComponent implements OnInit, AfterViewInit {
   }
 
   setSlot(slot?: Slot) {
+    console.log(slot);
     this.filters.slot = slot || null;
     this.filter();
   }
@@ -141,6 +157,17 @@ export class SecretShopComponent implements OnInit, AfterViewInit {
   setSort(sort?: keyof Item) {
     this.filters.sort = sort;
     this.shownItems = sortBy(this.shownItems, item => item[this.filters.sort]);
+  }
+
+  @HostListener('document:keydown.escape')
+  enlargeItem(item: Item) {
+    this.enlargedItem = item;
+
+    if (item) {
+      this.scrollingService.lock();
+    } else {
+      this.scrollingService.unlock();
+    }
   }
 
   private filter() {

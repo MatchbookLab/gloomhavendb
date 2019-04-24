@@ -1,0 +1,133 @@
+image: docker.matchbooklab.com/ci
+
+##########
+# STAGES #
+##########
+
+stages:
+  - test
+  - build
+  - e2e
+  - push
+  - deploy
+  - cleanup
+
+
+########
+# TEST #
+########
+
+test:
+  stage: test
+  variables:
+    DOCKER_TAG: $CI_COMMIT_REF_SLUG
+  script:
+    # run this on the runner host
+    - eval $(dmport -i "$RUNNER_MACHINE_CONFIG")
+    # whatever is built here will be cached for build stage
+    - echo "DOCKER_TAG -> $DOCKER_TAG"
+    - docker-compose -f docker-compose.yml -f docker-compose.test.yml build --pull app
+    - docker-compose -f docker-compose.yml -f docker-compose.test.yml run --rm app npm run format:ci
+    - docker-compose -f docker-compose.yml -f docker-compose.test.yml run --rm app npm run test
+
+
+#########
+# BUILD #
+#########
+
+build:app:
+  stage: build
+  variables:
+    DOCKER_TAG: $CI_COMMIT_REF_SLUG
+  script:
+    # run this on the runner host
+    - eval $(dmport -i "$RUNNER_MACHINE_CONFIG")
+    - echo "DOCKER_TAG -> $DOCKER_TAG"
+    - docker-compose -f docker-compose.yml -f docker-compose.production.yml build --pull
+
+
+build:e2e:
+  stage: build
+  variables:
+    DOCKER_TAG: $CI_COMMIT_REF_SLUG
+  script:
+    # run this on the runner host
+    - eval $(dmport -i "$RUNNER_MACHINE_CONFIG")
+    - echo "DOCKER_TAG -> $DOCKER_TAG"
+    - docker-compose -f docker-compose.yml -f docker-compose.test.yml build --pull e2e
+    - docker-compose -f docker-compose.yml -f docker-compose.test.yml build --pull mailhog
+
+e2e:
+  stage: e2e
+  variables:
+    DOCKER_TAG: $CI_COMMIT_REF_SLUG
+  before_script:
+    # run this on the runner host
+    - eval $(dmport -i "$RUNNER_MACHINE_CONFIG")
+    - echo "DOCKER_TAG -> $DOCKER_TAG"
+    - docker-compose -f docker-compose.yml -f docker-compose.test.yml up -d app database mailhog
+    - sleep 3s
+    - docker-compose -f docker-compose.yml -f docker-compose.test.yml logs app mailhog
+  script:
+    # run this on the runner host
+    - eval $(dmport -i "$RUNNER_MACHINE_CONFIG")
+    - echo "DOCKER_TAG -> $DOCKER_TAG"
+    - docker-compose -f docker-compose.yml -f docker-compose.test.yml run --rm e2e npm test -- --browser chrome
+  after_script:
+    # run this on the runner host
+    - eval $(dmport -i "$RUNNER_MACHINE_CONFIG")
+    - echo "DOCKER_TAG -> $DOCKER_TAG"
+    # one last log in case of failure
+    - docker-compose -f docker-compose.yml -f docker-compose.test.yml logs app mailhog
+    # this should remove all of the containers running
+    - docker-compose -f docker-compose.yml -f docker-compose.test.yml down -v
+
+########
+# PUSH #
+########
+
+push:
+  stage: push
+  only:
+    - master
+  variables:
+    DOCKER_TAG: $CI_COMMIT_REF_SLUG
+  script:
+    # run this on the runner host
+    - eval $(dmport -i "$RUNNER_MACHINE_CONFIG")
+    - echo "DOCKER_TAG -> $DOCKER_TAG"
+    - docker-compose -f docker-compose.yml -f docker-compose.production.yml push
+
+
+##########
+# DEPLOY #
+##########
+
+deploy:
+  stage: deploy
+  only:
+    - master
+  variables:
+    DOCKER_TAG: $CI_COMMIT_REF_SLUG
+  script:
+    # run this on the production host
+    - eval $(dmport -i "$PANDORA_MACHINE_CONFIG")
+    - echo "DOCKER_TAG -> $DOCKER_TAG"
+    - docker-compose -f docker-compose.yml -f docker-compose.production.yml pull
+    - docker-compose -f docker-compose.yml -f docker-compose.production.yml up -d
+
+
+###########
+# CLEANUP #
+###########
+
+cleanup:
+  stage: cleanup
+  variables:
+    GIT_STRATEGY: none
+  only:
+    - master
+  script:
+    # run this on the production host
+    - eval $(dmport -i "$PANDORA_MACHINE_CONFIG")
+    - docker system prune -af

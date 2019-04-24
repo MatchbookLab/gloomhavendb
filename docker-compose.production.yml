@@ -1,0 +1,19 @@
+version: '3.7'
+
+services:
+  app:
+    restart: unless-stopped
+    networks:
+      - proxy
+    environment:
+      NODE_ENV: production
+      VIRTUAL_HOST: www.${HOSTNAME},${HOSTNAME}
+      VIRTUAL_PORT: 3000
+      LETSENCRYPT_HOST: www.${HOSTNAME},${HOSTNAME}
+      LETSENCRYPT_EMAIL: ${LETSENCRYPT_EMAIL}
+
+networks:
+  proxy:
+    external:
+      name: ${EXTERNAL_PROXY}
+
