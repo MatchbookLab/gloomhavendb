@@ -30,6 +30,8 @@ COPY --from=base /app/ ./
 RUN npm run build:prod
 RUN npm prune --production
 
+# so the COPY below doesn't fail if we don't have a .env
+RUN touch ./.env
 
 #########
 # FINAL #
