@@ -8,9 +8,9 @@ services:
       - proxy
     environment:
       NODE_ENV: production
-      VIRTUAL_HOST: www.${HOSTNAME},${HOSTNAME}
+      VIRTUAL_HOST: ${HOSTNAME}
       VIRTUAL_PORT: 3000
-      LETSENCRYPT_HOST: www.${HOSTNAME},${HOSTNAME}
+      LETSENCRYPT_HOST: ${HOSTNAME}
       LETSENCRYPT_EMAIL: ${LETSENCRYPT_EMAIL}
 
 networks:
