@@ -170,7 +170,7 @@ export class SecretShopComponent implements OnInit, AfterViewInit {
     }
   }
 
-  private filter() {
+  filter() {
     const filteredItems = filter(this.shopItems, item => {
       if (!(!this.filters.slot || item.slot === this.filters.slot)) {
         return false;
