@@ -4,6 +4,7 @@ services:
   app:
     restart: unless-stopped
     networks:
+      - default
       - proxy
     environment:
       NODE_ENV: production
@@ -13,6 +14,7 @@ services:
       LETSENCRYPT_EMAIL: ${LETSENCRYPT_EMAIL}
 
 networks:
+  default:
   proxy:
     external:
       name: ${EXTERNAL_PROXY}
