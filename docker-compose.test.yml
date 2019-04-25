@@ -6,6 +6,8 @@ services:
   app:
     build:
       target: base
+    ports:
+      - 4200:3000
     environment:
       NODE_ENV: staging
     links:
