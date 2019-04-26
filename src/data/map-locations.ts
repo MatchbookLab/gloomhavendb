@@ -15,6 +15,7 @@ export interface MapLocation {
 }
 
 export const MAP_URL = '/assets/cards/world-map/gloomhaven-map.png';
+export const MAP_SIZE = 6600;
 
 // scale: 0.79
 export const mapLocations: MapLocation[] = [
