@@ -7,7 +7,7 @@ import { Item } from '../../../shared/entities/item';
 import { ScrollingService } from '../services/scrolling/scrolling.service';
 
 @Component({
-  selector: 'gdb-not-found',
+  selector: 'gdb-secret-shop',
   templateUrl: './secret-shop.component.html',
   styleUrls: ['./secret-shop.component.scss'],
   animations: [

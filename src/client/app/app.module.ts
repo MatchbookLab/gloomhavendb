@@ -7,6 +7,7 @@ import { ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
 import { HomeModule } from './+home/home.module';
 import { LoginModule } from './+login/login.module';
 import { NotFoundModule } from './+not-found/not-found.module';
+import { SecretMapModule } from './+secret-map/secret-map.module';
 import { SecretShopModule } from './+secret-shop/secret-shop.module';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -26,6 +27,7 @@ import { AppComponent } from './app.component';
     LoginModule,
     NotFoundModule,
     SecretShopModule,
+    SecretMapModule,
   ],
   declarations: [AppComponent],
   providers: [

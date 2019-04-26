@@ -10,7 +10,7 @@ export abstract class BaseControlValueAccessor<ControlModel = any, InternalModel
   propagateTouched = () => {};
 
   ngOnDestroy() {
-    this.destroyed$.next(false);
+    this.destroyed$.next(true);
     this.destroyed$.complete();
   }
 
