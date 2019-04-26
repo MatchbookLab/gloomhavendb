@@ -1,34 +1,17 @@
+interface Position {
+  top: number;
+  left: number;
+}
+
 export interface MapLocation {
   id: number;
   name: string;
   imageUrl: string;
-  transparent?: boolean;
-  width?: number;
-  height?: number;
-  position: {
-    top: number;
-    left: number;
-  };
-  number?: {
-    absolute: {
-      top: number;
-      left: number;
-    };
-    relative: {
-      top: number;
-      left: number;
-    };
-  };
-  checkbox?: {
-    absolute: {
-      top: number;
-      left: number;
-    };
-    relative: {
-      top: number;
-      left: number;
-    };
-  };
+  width: number;
+  height: number;
+  position: Position;
+  number: Position;
+  checkbox: Position;
 }
 
 export const MAP_URL = '/assets/cards/world-map/gloomhaven-map.png';
@@ -43,26 +26,13 @@ export const mapLocations: MapLocation[] = [
       left: 45.1,
       top: 41.225,
     },
-    transparent: false,
     number: {
-      absolute: {
-        left: 426,
-        top: 435,
-      },
-      relative: {
-        left: 172,
-        top: 109,
-      },
+      left: 172,
+      top: 109,
     },
     checkbox: {
-      absolute: {
-        left: 308,
-        top: 388,
-      },
-      relative: {
-        left: 108,
-        top: 169,
-      },
+      left: 108,
+      top: 169,
     },
     width: 347,
     height: 260,
@@ -75,26 +45,13 @@ export const mapLocations: MapLocation[] = [
       left: 49.25,
       top: 40.725,
     },
-    transparent: false,
     number: {
-      absolute: {
-        left: 607,
-        top: 455,
-      },
-      relative: {
-        left: 79,
-        top: 161,
-      },
+      left: 79,
+      top: 161,
     },
     checkbox: {
-      absolute: {
-        left: 330,
-        top: 302,
-      },
-      relative: {
-        left: 130,
-        top: 83,
-      },
+      left: 130,
+      top: 83,
     },
     width: 358,
     height: 241,
@@ -107,26 +64,13 @@ export const mapLocations: MapLocation[] = [
       left: 13.95,
       top: 42.85,
     },
-    transparent: false,
     number: {
-      absolute: {
-        left: 417,
-        top: 589,
-      },
-      relative: {
-        left: 79,
-        top: 155,
-      },
+      left: 79,
+      top: 155,
     },
     checkbox: {
-      absolute: {
-        left: 348,
-        top: 313,
-      },
-      relative: {
-        left: 148,
-        top: 95,
-      },
+      left: 148,
+      top: 95,
     },
     width: 428,
     height: 282,
@@ -139,26 +83,13 @@ export const mapLocations: MapLocation[] = [
       left: 45.625,
       top: 32.65,
     },
-    transparent: false,
     number: {
-      absolute: {
-        left: 509,
-        top: 508,
-      },
-      relative: {
-        left: 331,
-        top: 169,
-      },
+      left: 331,
+      top: 169,
     },
     checkbox: {
-      absolute: {
-        left: 300,
-        top: 432,
-      },
-      relative: {
-        left: 101,
-        top: 214,
-      },
+      left: 101,
+      top: 214,
     },
     width: 420,
     height: 299,
@@ -171,26 +102,13 @@ export const mapLocations: MapLocation[] = [
       left: 26.825,
       top: 28.95,
     },
-    transparent: false,
     number: {
-      absolute: {
-        left: 415,
-        top: 449,
-      },
-      relative: {
-        left: 199,
-        top: 82,
-      },
+      left: 199,
+      top: 82,
     },
     checkbox: {
-      absolute: {
-        left: 311,
-        top: 479,
-      },
-      relative: {
-        left: 111,
-        top: 229,
-      },
+      left: 111,
+      top: 229,
     },
     width: 347,
     height: 311,
@@ -203,26 +121,13 @@ export const mapLocations: MapLocation[] = [
       left: 41.9,
       top: 38.425,
     },
-    transparent: false,
     number: {
-      absolute: {
-        left: 404,
-        top: 608,
-      },
-      relative: {
-        left: 290,
-        top: 125,
-      },
+      left: 290,
+      top: 125,
     },
     checkbox: {
-      absolute: {
-        left: 299,
-        top: 384,
-      },
-      relative: {
-        left: 99,
-        top: 167,
-      },
+      left: 99,
+      top: 167,
     },
     width: 371,
     height: 258,
@@ -235,26 +140,13 @@ export const mapLocations: MapLocation[] = [
       left: 54.975,
       top: 23.35,
     },
-    transparent: false,
     number: {
-      absolute: {
-        left: 499,
-        top: 647,
-      },
-      relative: {
-        left: 162,
-        top: 91,
-      },
+      left: 162,
+      top: 91,
     },
     checkbox: {
-      absolute: {
-        left: 301,
-        top: 423,
-      },
-      relative: {
-        left: 101,
-        top: 205,
-      },
+      left: 101,
+      top: 205,
     },
     width: 352,
     height: 289,
@@ -267,26 +159,13 @@ export const mapLocations: MapLocation[] = [
       left: 79.85,
       top: 21.825,
     },
-    transparent: false,
     number: {
-      absolute: {
-        left: 247,
-        top: 634,
-      },
-      relative: {
-        left: 139,
-        top: 179,
-      },
+      left: 139,
+      top: 179,
     },
     checkbox: {
-      absolute: {
-        left: 295,
-        top: 291,
-      },
-      relative: {
-        left: 95,
-        top: 73,
-      },
+      left: 95,
+      top: 73,
     },
     width: 304,
     height: 258,
@@ -299,26 +178,13 @@ export const mapLocations: MapLocation[] = [
       left: 10.05,
       top: 65.4,
     },
-    transparent: false,
     number: {
-      absolute: {
-        left: 301,
-        top: 368,
-      },
-      relative: {
-        left: 101,
-        top: 151,
-      },
+      left: 101,
+      top: 151,
     },
     checkbox: {
-      absolute: {
-        left: 336,
-        top: 444,
-      },
-      relative: {
-        left: 136,
-        top: 226,
-      },
+      left: 136,
+      top: 226,
     },
     width: 384,
     height: 331,
@@ -331,26 +197,13 @@ export const mapLocations: MapLocation[] = [
       left: 29.625,
       top: 26.425,
     },
-    transparent: false,
     number: {
-      absolute: {
-        left: 381,
-        top: 299,
-      },
-      relative: {
-        left: 181,
-        top: 82,
-      },
+      left: 181,
+      top: 82,
     },
     checkbox: {
-      absolute: {
-        left: 284,
-        top: 433,
-      },
-      relative: {
-        left: 84,
-        top: 216,
-      },
+      left: 84,
+      top: 216,
     },
     width: 362,
     height: 303,
@@ -363,26 +216,13 @@ export const mapLocations: MapLocation[] = [
       left: 72.75,
       top: 18.975,
     },
-    transparent: false,
     number: {
-      absolute: {
-        left: 337,
-        top: 360,
-      },
-      relative: {
-        left: 137,
-        top: 142,
-      },
+      left: 137,
+      top: 142,
     },
     checkbox: {
-      absolute: {
-        left: 368,
-        top: 284,
-      },
-      relative: {
-        left: 168,
-        top: 66,
-      },
+      left: 168,
+      top: 66,
     },
     width: 347,
     height: 297,
@@ -395,26 +235,13 @@ export const mapLocations: MapLocation[] = [
       left: 72.75,
       top: 18.95,
     },
-    transparent: false,
     number: {
-      absolute: {
-        left: 419,
-        top: 345,
-      },
-      relative: {
-        left: 219,
-        top: 127,
-      },
+      left: 219,
+      top: 127,
     },
     checkbox: {
-      absolute: {
-        left: 426,
-        top: 282,
-      },
-      relative: {
-        left: 226,
-        top: 64,
-      },
+      left: 226,
+      top: 64,
     },
     width: 347,
     height: 297,
@@ -427,26 +254,13 @@ export const mapLocations: MapLocation[] = [
       left: 17.4,
       top: 76.775,
     },
-    transparent: false,
     number: {
-      absolute: {
-        left: 328,
-        top: 307,
-      },
-      relative: {
-        left: 128,
-        top: 89,
-      },
+      left: 128,
+      top: 89,
     },
     checkbox: {
-      absolute: {
-        left: 310,
-        top: 445,
-      },
-      relative: {
-        left: 110,
-        top: 227,
-      },
+      left: 110,
+      top: 227,
     },
     width: 393,
     height: 330,
@@ -459,26 +273,13 @@ export const mapLocations: MapLocation[] = [
       left: 45.125,
       top: 22.925,
     },
-    transparent: false,
     number: {
-      absolute: {
-        left: 349,
-        top: 310,
-      },
-      relative: {
-        left: 150,
-        top: 93,
-      },
+      left: 150,
+      top: 93,
     },
     checkbox: {
-      absolute: {
-        left: 299,
-        top: 415,
-      },
-      relative: {
-        left: 99,
-        top: 198,
-      },
+      left: 99,
+      top: 198,
     },
     width: 340,
     height: 289,
@@ -491,26 +292,13 @@ export const mapLocations: MapLocation[] = [
       left: 48.7,
       top: 20.75,
     },
-    transparent: false,
     number: {
-      absolute: {
-        left: 416,
-        top: 303,
-      },
-      relative: {
-        left: 217,
-        top: 85,
-      },
+      left: 217,
+      top: 85,
     },
     checkbox: {
-      absolute: {
-        left: 299,
-        top: 458,
-      },
-      relative: {
-        left: 100,
-        top: 240,
-      },
+      left: 100,
+      top: 240,
     },
     width: 383,
     height: 334,
@@ -523,26 +311,13 @@ export const mapLocations: MapLocation[] = [
       left: 26.95,
       top: 22.525,
     },
-    transparent: false,
     number: {
-      absolute: {
-        left: 394,
-        top: 304,
-      },
-      relative: {
-        left: 194,
-        top: 86,
-      },
+      left: 194,
+      top: 86,
     },
     checkbox: {
-      absolute: {
-        left: 288,
-        top: 410,
-      },
-      relative: {
-        left: 88,
-        top: 191,
-      },
+      left: 88,
+      top: 191,
     },
     width: 324,
     height: 286,
@@ -555,26 +330,13 @@ export const mapLocations: MapLocation[] = [
       left: 80.575,
       top: 56.175,
     },
-    transparent: false,
     number: {
-      absolute: {
-        left: 292,
-        top: 446,
-      },
-      relative: {
-        left: 91,
-        top: 228,
-      },
+      left: 91,
+      top: 228,
     },
     checkbox: {
-      absolute: {
-        left: 401,
-        top: 575,
-      },
-      relative: {
-        left: 200,
-        top: 357,
-      },
+      left: 200,
+      top: 357,
     },
     width: 460,
     height: 445,
@@ -587,26 +349,13 @@ export const mapLocations: MapLocation[] = [
       left: 65.025,
       top: 23.975,
     },
-    transparent: false,
     number: {
-      absolute: {
-        left: 355,
-        top: 366,
-      },
-      relative: {
-        left: 155,
-        top: 148,
-      },
+      left: 155,
+      top: 148,
     },
     checkbox: {
-      absolute: {
-        left: 300,
-        top: 287,
-      },
-      relative: {
-        left: 100,
-        top: 69,
-      },
+      left: 100,
+      top: 69,
     },
     width: 371,
     height: 225,
@@ -619,26 +368,13 @@ export const mapLocations: MapLocation[] = [
       left: 32.925,
       top: 68.725,
     },
-    transparent: false,
     number: {
-      absolute: {
-        left: 429,
-        top: 318,
-      },
-      relative: {
-        left: 137,
-        top: 98,
-      },
+      left: 137,
+      top: 98,
     },
     checkbox: {
-      absolute: {
-        left: 306,
-        top: 466,
-      },
-      relative: {
-        left: 107,
-        top: 248,
-      },
+      left: 107,
+      top: 248,
     },
     width: 361,
     height: 329,
@@ -651,26 +387,13 @@ export const mapLocations: MapLocation[] = [
       left: 56.3,
       top: 44.05,
     },
-    transparent: false,
     number: {
-      absolute: {
-        left: 472,
-        top: 308,
-      },
-      relative: {
-        left: 271,
-        top: 90,
-      },
+      left: 271,
+      top: 90,
     },
     checkbox: {
-      absolute: {
-        left: 309,
-        top: 430,
-      },
-      relative: {
-        left: 109,
-        top: 212,
-      },
+      left: 109,
+      top: 212,
     },
     width: 404,
     height: 308,
@@ -683,26 +406,13 @@ export const mapLocations: MapLocation[] = [
       left: 32.575,
       top: 25.525,
     },
-    transparent: false,
     number: {
-      absolute: {
-        left: 280,
-        top: 307,
-      },
-      relative: {
-        left: 80,
-        top: 89,
-      },
+      left: 80,
+      top: 89,
     },
     checkbox: {
-      absolute: {
-        left: 325,
-        top: 422,
-      },
-      relative: {
-        left: 124,
-        top: 204,
-      },
+      left: 124,
+      top: 204,
     },
     width: 366,
     height: 286,
@@ -715,26 +425,13 @@ export const mapLocations: MapLocation[] = [
       left: 38.05,
       top: 60,
     },
-    transparent: false,
     number: {
-      absolute: {
-        left: 309,
-        top: 308,
-      },
-      relative: {
-        left: 109,
-        top: 90,
-      },
+      left: 109,
+      top: 90,
     },
     checkbox: {
-      absolute: {
-        left: 306,
-        top: 429,
-      },
-      relative: {
-        left: 107,
-        top: 212,
-      },
+      left: 107,
+      top: 212,
     },
     width: 396,
     height: 304,
@@ -747,26 +444,13 @@ export const mapLocations: MapLocation[] = [
       left: 69.875,
       top: 23.275,
     },
-    transparent: false,
     number: {
-      absolute: {
-        left: 279,
-        top: 291,
-      },
-      relative: {
-        left: 79,
-        top: 74,
-      },
+      left: 79,
+      top: 74,
     },
     checkbox: {
-      absolute: {
-        left: 298,
-        top: 404,
-      },
-      relative: {
-        left: 98,
-        top: 186,
-      },
+      left: 98,
+      top: 186,
     },
     width: 305,
     height: 262,
@@ -779,26 +463,13 @@ export const mapLocations: MapLocation[] = [
       left: 23.65,
       top: 23.175,
     },
-    transparent: false,
     number: {
-      absolute: {
-        left: 418,
-        top: 308,
-      },
-      relative: {
-        left: 218,
-        top: 90,
-      },
+      left: 218,
+      top: 90,
     },
     checkbox: {
-      absolute: {
-        left: 291,
-        top: 447,
-      },
-      relative: {
-        left: 90,
-        top: 228,
-      },
+      left: 90,
+      top: 228,
     },
     width: 313,
     height: 326,
@@ -811,26 +482,13 @@ export const mapLocations: MapLocation[] = [
       left: 19.85,
       top: 17.725,
     },
-    transparent: false,
     number: {
-      absolute: {
-        left: 368,
-        top: 344,
-      },
-      relative: {
-        left: 168,
-        top: 126,
-      },
+      left: 168,
+      top: 126,
     },
     checkbox: {
-      absolute: {
-        left: 316,
-        top: 473,
-      },
-      relative: {
-        left: 116,
-        top: 254,
-      },
+      left: 116,
+      top: 254,
     },
     width: 369,
     height: 354,
@@ -843,26 +501,13 @@ export const mapLocations: MapLocation[] = [
       left: 70,
       top: 26.025,
     },
-    transparent: false,
     number: {
-      absolute: {
-        left: 274,
-        top: 304,
-      },
-      relative: {
-        left: 74,
-        top: 86,
-      },
+      left: 74,
+      top: 86,
     },
     checkbox: {
-      absolute: {
-        left: 302,
-        top: 393,
-      },
-      relative: {
-        left: 102,
-        top: 175,
-      },
+      left: 102,
+      top: 175,
     },
     width: 336,
     height: 252,
@@ -875,26 +520,13 @@ export const mapLocations: MapLocation[] = [
       left: 27.775,
       top: 32.075,
     },
-    transparent: false,
     number: {
-      absolute: {
-        left: 279,
-        top: 315,
-      },
-      relative: {
-        left: 80,
-        top: 96,
-      },
+      left: 80,
+      top: 96,
     },
     checkbox: {
-      absolute: {
-        left: 316,
-        top: 332,
-      },
-      relative: {
-        left: 116,
-        top: 113,
-      },
+      left: 116,
+      top: 113,
     },
     width: 341,
     height: 195,
@@ -907,26 +539,13 @@ export const mapLocations: MapLocation[] = [
       left: 17.35,
       top: 33.35,
     },
-    transparent: false,
     number: {
-      absolute: {
-        left: 278,
-        top: 315,
-      },
-      relative: {
-        left: 78,
-        top: 97,
-      },
+      left: 78,
+      top: 97,
     },
     checkbox: {
-      absolute: {
-        left: 303,
-        top: 412,
-      },
-      relative: {
-        left: 103,
-        top: 194,
-      },
+      left: 103,
+      top: 194,
     },
     width: 396,
     height: 280,
@@ -939,26 +558,13 @@ export const mapLocations: MapLocation[] = [
       left: 13.275,
       top: 33.8,
     },
-    transparent: false,
     number: {
-      absolute: {
-        left: 460,
-        top: 303,
-      },
-      relative: {
-        left: 261,
-        top: 84,
-      },
+      left: 261,
+      top: 84,
     },
     checkbox: {
-      absolute: {
-        left: 299,
-        top: 435,
-      },
-      relative: {
-        left: 100,
-        top: 217,
-      },
+      left: 100,
+      top: 217,
     },
     width: 384,
     height: 298,
@@ -971,26 +577,13 @@ export const mapLocations: MapLocation[] = [
       left: 69.525,
       top: 72.5,
     },
-    transparent: false,
     number: {
-      absolute: {
-        left: 298,
-        top: 328,
-      },
-      relative: {
-        left: 98,
-        top: 111,
-      },
+      left: 98,
+      top: 111,
     },
     checkbox: {
-      absolute: {
-        left: 320,
-        top: 414,
-      },
-      relative: {
-        left: 120,
-        top: 197,
-      },
+      left: 120,
+      top: 197,
     },
     width: 413,
     height: 287,
@@ -1003,26 +596,13 @@ export const mapLocations: MapLocation[] = [
       left: 72.8,
       top: 14.175,
     },
-    transparent: false,
     number: {
-      absolute: {
-        left: 348,
-        top: 301,
-      },
-      relative: {
-        left: 148,
-        top: 83,
-      },
+      left: 148,
+      top: 83,
     },
     checkbox: {
-      absolute: {
-        left: 292,
-        top: 413,
-      },
-      relative: {
-        left: 92,
-        top: 195,
-      },
+      left: 92,
+      top: 195,
     },
     width: 312,
     height: 276,
@@ -1035,26 +615,13 @@ export const mapLocations: MapLocation[] = [
       left: 51.8,
       top: 63.05,
     },
-    transparent: false,
     number: {
-      absolute: {
-        left: 289,
-        top: 314,
-      },
-      relative: {
-        left: 89,
-        top: 96,
-      },
+      left: 89,
+      top: 96,
     },
     checkbox: {
-      absolute: {
-        left: 319,
-        top: 406,
-      },
-      relative: {
-        left: 119,
-        top: 188,
-      },
+      left: 119,
+      top: 188,
     },
     width: 350,
     height: 275,
@@ -1067,26 +634,13 @@ export const mapLocations: MapLocation[] = [
       left: 29.025,
       top: 15.325,
     },
-    transparent: false,
     number: {
-      absolute: {
-        left: 432,
-        top: 429,
-      },
-      relative: {
-        left: 232,
-        top: 211,
-      },
+      left: 232,
+      top: 211,
     },
     checkbox: {
-      absolute: {
-        left: 290,
-        top: 314,
-      },
-      relative: {
-        left: 90,
-        top: 96,
-      },
+      left: 90,
+      top: 96,
     },
     width: 330,
     height: 297,
@@ -1099,26 +653,13 @@ export const mapLocations: MapLocation[] = [
       left: 16.2,
       top: 14.525,
     },
-    transparent: false,
     number: {
-      absolute: {
-        left: 286,
-        top: 389,
-      },
-      relative: {
-        left: 86,
-        top: 170,
-      },
+      left: 86,
+      top: 170,
     },
     checkbox: {
-      absolute: {
-        left: 310,
-        top: 438,
-      },
-      relative: {
-        left: 110,
-        top: 220,
-      },
+      left: 110,
+      top: 220,
     },
     width: 365,
     height: 310,
@@ -1131,26 +672,13 @@ export const mapLocations: MapLocation[] = [
       left: 64.125,
       top: 14.825,
     },
-    transparent: false,
     number: {
-      absolute: {
-        left: 364,
-        top: 332,
-      },
-      relative: {
-        left: 164,
-        top: 114,
-      },
+      left: 164,
+      top: 114,
     },
     checkbox: {
-      absolute: {
-        left: 424,
-        top: 474,
-      },
-      relative: {
-        left: 224,
-        top: 256,
-      },
+      left: 224,
+      top: 256,
     },
     width: 392,
     height: 350,
@@ -1163,26 +691,13 @@ export const mapLocations: MapLocation[] = [
       left: 64.125,
       top: 14.85,
     },
-    transparent: false,
     number: {
-      absolute: {
-        left: 402,
-        top: 441,
-      },
-      relative: {
-        left: 203,
-        top: 224,
-      },
+      left: 203,
+      top: 224,
     },
     checkbox: {
-      absolute: {
-        left: 474,
-        top: 472,
-      },
-      relative: {
-        left: 274,
-        top: 254,
-      },
+      left: 274,
+      top: 254,
     },
     width: 392,
     height: 350,
@@ -1195,26 +710,13 @@ export const mapLocations: MapLocation[] = [
       left: 81.525,
       top: 39.775,
     },
-    transparent: false,
     number: {
-      absolute: {
-        left: 293,
-        top: 324,
-      },
-      relative: {
-        left: 93,
-        top: 106,
-      },
+      left: 93,
+      top: 106,
     },
     checkbox: {
-      absolute: {
-        left: 325,
-        top: 409,
-      },
-      relative: {
-        left: 124,
-        top: 191,
-      },
+      left: 124,
+      top: 191,
     },
     width: 457,
     height: 280,
@@ -1227,26 +729,13 @@ export const mapLocations: MapLocation[] = [
       left: 10.425,
       top: 42.525,
     },
-    transparent: false,
     number: {
-      absolute: {
-        left: 304,
-        top: 337,
-      },
-      relative: {
-        left: 104,
-        top: 119,
-      },
+      left: 104,
+      top: 119,
     },
     checkbox: {
-      absolute: {
-        left: 307,
-        top: 452,
-      },
-      relative: {
-        left: 107,
-        top: 234,
-      },
+      left: 107,
+      top: 234,
     },
     width: 325,
     height: 327,
@@ -1259,26 +748,13 @@ export const mapLocations: MapLocation[] = [
       left: 47.6,
       top: 17.325,
     },
-    transparent: false,
     number: {
-      absolute: {
-        left: 331,
-        top: 364,
-      },
-      relative: {
-        left: 131,
-        top: 146,
-      },
+      left: 131,
+      top: 146,
     },
     checkbox: {
-      absolute: {
-        left: 297,
-        top: 407,
-      },
-      relative: {
-        left: 97,
-        top: 189,
-      },
+      left: 97,
+      top: 189,
     },
     width: 388,
     height: 275,
@@ -1291,26 +767,13 @@ export const mapLocations: MapLocation[] = [
       left: 54.275,
       top: 35.825,
     },
-    transparent: false,
     number: {
-      absolute: {
-        left: 311,
-        top: 372,
-      },
-      relative: {
-        left: 111,
-        top: 154,
-      },
+      left: 111,
+      top: 154,
     },
     checkbox: {
-      absolute: {
-        left: 284,
-        top: 427,
-      },
-      relative: {
-        left: 84,
-        top: 209,
-      },
+      left: 84,
+      top: 209,
     },
     width: 370,
     height: 281,
@@ -1323,26 +786,13 @@ export const mapLocations: MapLocation[] = [
       left: 58.35,
       top: 35.65,
     },
-    transparent: false,
     number: {
-      absolute: {
-        left: 275,
-        top: 325,
-      },
-      relative: {
-        left: 76,
-        top: 106,
-      },
+      left: 76,
+      top: 106,
     },
     checkbox: {
-      absolute: {
-        left: 310,
-        top: 392,
-      },
-      relative: {
-        left: 111,
-        top: 173,
-      },
+      left: 111,
+      top: 173,
     },
     width: 366,
     height: 254,
@@ -1355,26 +805,13 @@ export const mapLocations: MapLocation[] = [
       left: 18.65,
       top: 22.925,
     },
-    transparent: false,
     number: {
-      absolute: {
-        left: 509,
-        top: 389,
-      },
-      relative: {
-        left: 309,
-        top: 171,
-      },
+      left: 309,
+      top: 171,
     },
     checkbox: {
-      absolute: {
-        left: 329,
-        top: 455,
-      },
-      relative: {
-        left: 129,
-        top: 238,
-      },
+      left: 129,
+      top: 238,
     },
     width: 405,
     height: 327,
@@ -1387,26 +824,13 @@ export const mapLocations: MapLocation[] = [
       left: 14.325,
       top: 31,
     },
-    transparent: false,
     number: {
-      absolute: {
-        left: 464,
-        top: 337,
-      },
-      relative: {
-        left: 264,
-        top: 120,
-      },
+      left: 264,
+      top: 120,
     },
     checkbox: {
-      absolute: {
-        left: 305,
-        top: 308,
-      },
-      relative: {
-        left: 105,
-        top: 91,
-      },
+      left: 105,
+      top: 91,
     },
     width: 339,
     height: 258,
@@ -1419,26 +843,13 @@ export const mapLocations: MapLocation[] = [
       left: 14.975,
       top: 38.325,
     },
-    transparent: false,
     number: {
-      absolute: {
-        left: 288,
-        top: 363,
-      },
-      relative: {
-        left: 88,
-        top: 145,
-      },
+      left: 88,
+      top: 145,
     },
     checkbox: {
-      absolute: {
-        left: 343,
-        top: 313,
-      },
-      relative: {
-        left: 143,
-        top: 95,
-      },
+      left: 143,
+      top: 95,
     },
     width: 430,
     height: 312,
@@ -1451,26 +862,13 @@ export const mapLocations: MapLocation[] = [
       left: 39.675,
       top: 66.825,
     },
-    transparent: false,
     number: {
-      absolute: {
-        left: 437,
-        top: 380,
-      },
-      relative: {
-        left: 237,
-        top: 162,
-      },
+      left: 237,
+      top: 162,
     },
     checkbox: {
-      absolute: {
-        left: 309,
-        top: 441,
-      },
-      relative: {
-        left: 109,
-        top: 223,
-      },
+      left: 109,
+      top: 223,
     },
     width: 334,
     height: 329,
@@ -1483,26 +881,13 @@ export const mapLocations: MapLocation[] = [
       left: 47.45,
       top: 13,
     },
-    transparent: false,
     number: {
-      absolute: {
-        left: 473,
-        top: 443,
-      },
-      relative: {
-        left: 273,
-        top: 225,
-      },
+      left: 273,
+      top: 225,
     },
     checkbox: {
-      absolute: {
-        left: 295,
-        top: 495,
-      },
-      relative: {
-        left: 95,
-        top: 277,
-      },
+      left: 95,
+      top: 277,
     },
     width: 365,
     height: 361,
@@ -1515,26 +900,13 @@ export const mapLocations: MapLocation[] = [
       left: 81.975,
       top: 42.95,
     },
-    transparent: false,
     number: {
-      absolute: {
-        left: 457,
-        top: 319,
-      },
-      relative: {
-        left: 257,
-        top: 100,
-      },
+      left: 257,
+      top: 100,
     },
     checkbox: {
-      absolute: {
-        left: 314,
-        top: 487,
-      },
-      relative: {
-        left: 114,
-        top: 269,
-      },
+      left: 114,
+      top: 269,
     },
     width: 447,
     height: 371,
@@ -1547,26 +919,13 @@ export const mapLocations: MapLocation[] = [
       left: 5.65,
       top: 33.95,
     },
-    transparent: false,
     number: {
-      absolute: {
-        left: 325,
-        top: 320,
-      },
-      relative: {
-        left: 125,
-        top: 101,
-      },
+      left: 125,
+      top: 101,
     },
     checkbox: {
-      absolute: {
-        left: 320,
-        top: 460,
-      },
-      relative: {
-        left: 120,
-        top: 241,
-      },
+      left: 120,
+      top: 241,
     },
     width: 378,
     height: 333,
@@ -1579,26 +938,13 @@ export const mapLocations: MapLocation[] = [
       left: 33.1,
       top: 73.275,
     },
-    transparent: false,
     number: {
-      absolute: {
-        left: 367,
-        top: 299,
-      },
-      relative: {
-        left: 167,
-        top: 81,
-      },
+      left: 167,
+      top: 81,
     },
     checkbox: {
-      absolute: {
-        left: 325,
-        top: 441,
-      },
-      relative: {
-        left: 125,
-        top: 223,
-      },
+      left: 125,
+      top: 223,
     },
     width: 371,
     height: 307,
@@ -1611,26 +957,13 @@ export const mapLocations: MapLocation[] = [
       left: 75.6,
       top: 19,
     },
-    transparent: false,
     number: {
-      absolute: {
-        left: 359,
-        top: 409,
-      },
-      relative: {
-        left: 159,
-        top: 192,
-      },
+      left: 159,
+      top: 192,
     },
     checkbox: {
-      absolute: {
-        left: 292,
-        top: 471,
-      },
-      relative: {
-        left: 92,
-        top: 253,
-      },
+      left: 92,
+      top: 253,
     },
     width: 331,
     height: 326,
@@ -1643,26 +976,13 @@ export const mapLocations: MapLocation[] = [
       left: 68.7,
       top: 14.45,
     },
-    transparent: false,
     number: {
-      absolute: {
-        left: 335,
-        top: 342,
-      },
-      relative: {
-        left: 135,
-        top: 124,
-      },
+      left: 135,
+      top: 124,
     },
     checkbox: {
-      absolute: {
-        left: 287,
-        top: 415,
-      },
-      relative: {
-        left: 88,
-        top: 196,
-      },
+      left: 88,
+      top: 196,
     },
     width: 286,
     height: 285,
@@ -1675,26 +995,13 @@ export const mapLocations: MapLocation[] = [
       left: 62.425,
       top: 24.675,
     },
-    transparent: false,
     number: {
-      absolute: {
-        left: 430,
-        top: 394,
-      },
-      relative: {
-        left: 230,
-        top: 176,
-      },
+      left: 230,
+      top: 176,
     },
     checkbox: {
-      absolute: {
-        left: 288,
-        top: 312,
-      },
-      relative: {
-        left: 89,
-        top: 94,
-      },
+      left: 89,
+      top: 94,
     },
     width: 314,
     height: 246,
@@ -1707,26 +1014,13 @@ export const mapLocations: MapLocation[] = [
       left: 49.375,
       top: 35.025,
     },
-    transparent: false,
     number: {
-      absolute: {
-        left: 284,
-        top: 357,
-      },
-      relative: {
-        left: 83,
-        top: 139,
-      },
+      left: 83,
+      top: 139,
     },
     checkbox: {
-      absolute: {
-        left: 297,
-        top: 392,
-      },
-      relative: {
-        left: 97,
-        top: 174,
-      },
+      left: 97,
+      top: 174,
     },
     width: 348,
     height: 265,
@@ -1739,26 +1033,13 @@ export const mapLocations: MapLocation[] = [
       left: 38.5,
       top: 26.25,
     },
-    transparent: false,
     number: {
-      absolute: {
-        left: 281,
-        top: 411,
-      },
-      relative: {
-        left: 82,
-        top: 193,
-      },
+      left: 82,
+      top: 193,
     },
     checkbox: {
-      absolute: {
-        left: 314,
-        top: 487,
-      },
-      relative: {
-        left: 115,
-        top: 269,
-      },
+      left: 115,
+      top: 269,
     },
     width: 335,
     height: 348,
@@ -1771,26 +1052,13 @@ export const mapLocations: MapLocation[] = [
       left: 21.625,
       top: 42.575,
     },
-    transparent: false,
     number: {
-      absolute: {
-        left: 299,
-        top: 310,
-      },
-      relative: {
-        left: 100,
-        top: 92,
-      },
+      left: 100,
+      top: 92,
     },
     checkbox: {
-      absolute: {
-        left: 301,
-        top: 422,
-      },
-      relative: {
-        left: 101,
-        top: 204,
-      },
+      left: 101,
+      top: 204,
     },
     width: 335,
     height: 293,
@@ -1803,26 +1071,13 @@ export const mapLocations: MapLocation[] = [
       left: 17.925,
       top: 43.9,
     },
-    transparent: false,
     number: {
-      absolute: {
-        left: 416,
-        top: 310,
-      },
-      relative: {
-        left: 217,
-        top: 92,
-      },
+      left: 217,
+      top: 92,
     },
     checkbox: {
-      absolute: {
-        left: 310,
-        top: 441,
-      },
-      relative: {
-        left: 110,
-        top: 223,
-      },
+      left: 110,
+      top: 223,
     },
     width: 347,
     height: 311,
@@ -1835,26 +1090,13 @@ export const mapLocations: MapLocation[] = [
       left: 62.775,
       top: 27.075,
     },
-    transparent: false,
     number: {
-      absolute: {
-        left: 499,
-        top: 388,
-      },
-      relative: {
-        left: 299,
-        top: 169,
-      },
+      left: 299,
+      top: 169,
     },
     checkbox: {
-      absolute: {
-        left: 421,
-        top: 429,
-      },
-      relative: {
-        left: 221,
-        top: 211,
-      },
+      left: 221,
+      top: 211,
     },
     width: 446,
     height: 290,
@@ -1867,26 +1109,13 @@ export const mapLocations: MapLocation[] = [
       left: 68.85,
       top: 31.65,
     },
-    transparent: false,
     number: {
-      absolute: {
-        left: 310,
-        top: 299,
-      },
-      relative: {
-        left: 110,
-        top: 80,
-      },
+      left: 110,
+      top: 80,
     },
     checkbox: {
-      absolute: {
-        left: 304,
-        top: 364,
-      },
-      relative: {
-        left: 104,
-        top: 145,
-      },
+      left: 104,
+      top: 145,
     },
     width: 333,
     height: 225,
@@ -1899,26 +1128,13 @@ export const mapLocations: MapLocation[] = [
       left: 4.624999999999995,
       top: 39.07499999999994,
     },
-    transparent: false,
     number: {
-      absolute: {
-        left: 285,
-        top: 358,
-      },
-      relative: {
-        left: 86,
-        top: 140,
-      },
+      left: 86,
+      top: 140,
     },
     checkbox: {
-      absolute: {
-        left: 329,
-        top: 467,
-      },
-      relative: {
-        left: 129,
-        top: 249,
-      },
+      left: 129,
+      top: 249,
     },
     width: 387,
     height: 338,
@@ -1931,26 +1147,13 @@ export const mapLocations: MapLocation[] = [
       left: 68.6,
       top: 17.95,
     },
-    transparent: false,
     number: {
-      absolute: {
-        left: 340,
-        top: 329,
-      },
-      relative: {
-        left: 140,
-        top: 111,
-      },
+      left: 140,
+      top: 111,
     },
     checkbox: {
-      absolute: {
-        left: 291,
-        top: 389,
-      },
-      relative: {
-        left: 91,
-        top: 171,
-      },
+      left: 91,
+      top: 171,
     },
     width: 311,
     height: 261,
@@ -1963,26 +1166,13 @@ export const mapLocations: MapLocation[] = [
       left: 53.3,
       top: 72.825,
     },
-    transparent: false,
     number: {
-      absolute: {
-        left: 337,
-        top: 304,
-      },
-      relative: {
-        left: 137,
-        top: 86,
-      },
+      left: 137,
+      top: 86,
     },
     checkbox: {
-      absolute: {
-        left: 303,
-        top: 432,
-      },
-      relative: {
-        left: 102,
-        top: 214,
-      },
+      left: 102,
+      top: 214,
     },
     width: 377,
     height: 294,
@@ -1995,26 +1185,13 @@ export const mapLocations: MapLocation[] = [
       left: 54.275,
       top: 76.025,
     },
-    transparent: false,
     number: {
-      absolute: {
-        left: 294,
-        top: 293,
-      },
-      relative: {
-        left: 95,
-        top: 75,
-      },
+      left: 95,
+      top: 75,
     },
     checkbox: {
-      absolute: {
-        left: 316,
-        top: 414,
-      },
-      relative: {
-        left: 116,
-        top: 196,
-      },
+      left: 116,
+      top: 196,
     },
     width: 327,
     height: 289,
@@ -2027,26 +1204,13 @@ export const mapLocations: MapLocation[] = [
       left: 6.325,
       top: 71.7,
     },
-    transparent: false,
     number: {
-      absolute: {
-        left: 294,
-        top: 359,
-      },
-      relative: {
-        left: 94,
-        top: 141,
-      },
+      left: 94,
+      top: 141,
     },
     checkbox: {
-      absolute: {
-        left: 343,
-        top: 493,
-      },
-      relative: {
-        left: 143,
-        top: 275,
-      },
+      left: 143,
+      top: 275,
     },
     width: 380,
     height: 363,
@@ -2059,26 +1223,13 @@ export const mapLocations: MapLocation[] = [
       left: 75.775,
       top: 57.1,
     },
-    transparent: false,
     number: {
-      absolute: {
-        left: 323,
-        top: 301,
-      },
-      relative: {
-        left: 124,
-        top: 83,
-      },
+      left: 124,
+      top: 83,
     },
     checkbox: {
-      absolute: {
-        left: 302,
-        top: 452,
-      },
-      relative: {
-        left: 103,
-        top: 234,
-      },
+      left: 103,
+      top: 234,
     },
     width: 380,
     height: 327,
@@ -2091,26 +1242,13 @@ export const mapLocations: MapLocation[] = [
       left: 23.05,
       top: 66.4,
     },
-    transparent: false,
     number: {
-      absolute: {
-        left: 450,
-        top: 314,
-      },
-      relative: {
-        left: 251,
-        top: 96,
-      },
+      left: 251,
+      top: 96,
     },
     checkbox: {
-      absolute: {
-        left: 360,
-        top: 477,
-      },
-      relative: {
-        left: 160,
-        top: 259,
-      },
+      left: 160,
+      top: 259,
     },
     width: 405,
     height: 356,
@@ -2123,26 +1261,13 @@ export const mapLocations: MapLocation[] = [
       left: 64.625,
       top: 41.075,
     },
-    transparent: false,
     number: {
-      absolute: {
-        left: 295,
-        top: 375,
-      },
-      relative: {
-        left: 95,
-        top: 157,
-      },
+      left: 95,
+      top: 157,
     },
     checkbox: {
-      absolute: {
-        left: 344,
-        top: 412,
-      },
-      relative: {
-        left: 144,
-        top: 194,
-      },
+      left: 144,
+      top: 194,
     },
     width: 409,
     height: 294,
@@ -2155,26 +1280,13 @@ export const mapLocations: MapLocation[] = [
       left: 9.55,
       top: 59.475,
     },
-    transparent: false,
     number: {
-      absolute: {
-        left: 312,
-        top: 328,
-      },
-      relative: {
-        left: 112,
-        top: 110,
-      },
+      left: 112,
+      top: 110,
     },
     checkbox: {
-      absolute: {
-        left: 313,
-        top: 425,
-      },
-      relative: {
-        left: 114,
-        top: 207,
-      },
+      left: 114,
+      top: 207,
     },
     width: 370,
     height: 307,
@@ -2187,26 +1299,13 @@ export const mapLocations: MapLocation[] = [
       left: 39.2,
       top: 72.825,
     },
-    transparent: false,
     number: {
-      absolute: {
-        left: 287,
-        top: 452,
-      },
-      relative: {
-        left: 88,
-        top: 234,
-      },
+      left: 88,
+      top: 234,
     },
     checkbox: {
-      absolute: {
-        left: 309,
-        top: 519,
-      },
-      relative: {
-        left: 109,
-        top: 301,
-      },
+      left: 109,
+      top: 301,
     },
     width: 336,
     height: 404,
@@ -2219,26 +1318,13 @@ export const mapLocations: MapLocation[] = [
       left: 36.475,
       top: 35.675,
     },
-    transparent: false,
     number: {
-      absolute: {
-        left: 301,
-        top: 406,
-      },
-      relative: {
-        left: 101,
-        top: 188,
-      },
+      left: 101,
+      top: 188,
     },
     checkbox: {
-      absolute: {
-        left: 299,
-        top: 468,
-      },
-      relative: {
-        left: 99,
-        top: 250,
-      },
+      left: 99,
+      top: 250,
     },
     width: 432,
     height: 341,
@@ -2251,26 +1337,13 @@ export const mapLocations: MapLocation[] = [
       left: 76.075,
       top: 51.575,
     },
-    transparent: false,
     number: {
-      absolute: {
-        left: 440,
-        top: 398,
-      },
-      relative: {
-        left: 240,
-        top: 180,
-      },
+      left: 240,
+      top: 180,
     },
     checkbox: {
-      absolute: {
-        left: 494,
-        top: 337,
-      },
-      relative: {
-        left: 293,
-        top: 119,
-      },
+      left: 293,
+      top: 119,
     },
     width: 572,
     height: 518,
@@ -2283,26 +1356,13 @@ export const mapLocations: MapLocation[] = [
       left: 26.45,
       top: 62.5,
     },
-    transparent: false,
     number: {
-      absolute: {
-        left: 332,
-        top: 326,
-      },
-      relative: {
-        left: 132,
-        top: 109,
-      },
+      left: 132,
+      top: 109,
     },
     checkbox: {
-      absolute: {
-        left: 337,
-        top: 433,
-      },
-      relative: {
-        left: 137,
-        top: 216,
-      },
+      left: 137,
+      top: 216,
     },
     width: 451,
     height: 303,
@@ -2315,26 +1375,13 @@ export const mapLocations: MapLocation[] = [
       left: 51.475,
       top: 44.4,
     },
-    transparent: false,
     number: {
-      absolute: {
-        left: 452,
-        top: 353,
-      },
-      relative: {
-        left: 252,
-        top: 136,
-      },
+      left: 252,
+      top: 136,
     },
     checkbox: {
-      absolute: {
-        left: 311,
-        top: 407,
-      },
-      relative: {
-        left: 111,
-        top: 189,
-      },
+      left: 111,
+      top: 189,
     },
     width: 348,
     height: 278,
@@ -2347,26 +1394,13 @@ export const mapLocations: MapLocation[] = [
       left: 25.875,
       top: 72.925,
     },
-    transparent: false,
     number: {
-      absolute: {
-        left: 370,
-        top: 326,
-      },
-      relative: {
-        left: 169,
-        top: 108,
-      },
+      left: 169,
+      top: 108,
     },
     checkbox: {
-      absolute: {
-        left: 309,
-        top: 491,
-      },
-      relative: {
-        left: 109,
-        top: 273,
-      },
+      left: 109,
+      top: 273,
     },
     width: 392,
     height: 376,
@@ -2379,26 +1413,13 @@ export const mapLocations: MapLocation[] = [
       left: 64.3,
       top: 50.825,
     },
-    transparent: false,
     number: {
-      absolute: {
-        left: 282,
-        top: 327,
-      },
-      relative: {
-        left: 82,
-        top: 109,
-      },
+      left: 82,
+      top: 109,
     },
     checkbox: {
-      absolute: {
-        left: 353,
-        top: 453,
-      },
-      relative: {
-        left: 153,
-        top: 235,
-      },
+      left: 153,
+      top: 235,
     },
     width: 452,
     height: 320,
@@ -2411,26 +1432,13 @@ export const mapLocations: MapLocation[] = [
       left: 57.75,
       top: 41.275,
     },
-    transparent: false,
     number: {
-      absolute: {
-        left: 279,
-        top: 322,
-      },
-      relative: {
-        left: 79,
-        top: 105,
-      },
+      left: 79,
+      top: 105,
     },
     checkbox: {
-      absolute: {
-        left: 297,
-        top: 372,
-      },
-      relative: {
-        left: 97,
-        top: 155,
-      },
+      left: 97,
+      top: 155,
     },
     width: 383,
     height: 239,
@@ -2443,26 +1451,13 @@ export const mapLocations: MapLocation[] = [
       left: 16.95,
       top: 66,
     },
-    transparent: false,
     number: {
-      absolute: {
-        left: 284,
-        top: 354,
-      },
-      relative: {
-        left: 84,
-        top: 137,
-      },
+      left: 84,
+      top: 137,
     },
     checkbox: {
-      absolute: {
-        left: 321,
-        top: 425,
-      },
-      relative: {
-        left: 121,
-        top: 208,
-      },
+      left: 121,
+      top: 208,
     },
     width: 405,
     height: 296,
@@ -2475,26 +1470,13 @@ export const mapLocations: MapLocation[] = [
       left: 75.6,
       top: 15.5,
     },
-    transparent: false,
     number: {
-      absolute: {
-        left: 375,
-        top: 376,
-      },
-      relative: {
-        left: 175,
-        top: 158,
-      },
+      left: 175,
+      top: 158,
     },
     checkbox: {
-      absolute: {
-        left: 290,
-        top: 439,
-      },
-      relative: {
-        left: 90,
-        top: 222,
-      },
+      left: 90,
+      top: 222,
     },
     width: 327,
     height: 306,
@@ -2507,26 +1489,13 @@ export const mapLocations: MapLocation[] = [
       left: 62.225,
       top: 18.2,
     },
-    transparent: false,
     number: {
-      absolute: {
-        left: 287,
-        top: 337,
-      },
-      relative: {
-        left: 86,
-        top: 119,
-      },
+      left: 86,
+      top: 119,
     },
     checkbox: {
-      absolute: {
-        left: 304,
-        top: 367,
-      },
-      relative: {
-        left: 103,
-        top: 150,
-      },
+      left: 103,
+      top: 150,
     },
     width: 316,
     height: 230,
@@ -2539,26 +1508,13 @@ export const mapLocations: MapLocation[] = [
       left: 57.15,
       top: 57.7,
     },
-    transparent: false,
     number: {
-      absolute: {
-        left: 290,
-        top: 317,
-      },
-      relative: {
-        left: 90,
-        top: 99,
-      },
+      left: 90,
+      top: 99,
     },
     checkbox: {
-      absolute: {
-        left: 317,
-        top: 377,
-      },
-      relative: {
-        left: 116,
-        top: 159,
-      },
+      left: 116,
+      top: 159,
     },
     width: 328,
     height: 243,
@@ -2571,26 +1527,13 @@ export const mapLocations: MapLocation[] = [
       left: 5.275,
       top: 62.025,
     },
-    transparent: false,
     number: {
-      absolute: {
-        left: 290,
-        top: 332,
-      },
-      relative: {
-        left: 90,
-        top: 114,
-      },
+      left: 90,
+      top: 114,
     },
     checkbox: {
-      absolute: {
-        left: 306,
-        top: 440,
-      },
-      relative: {
-        left: 106,
-        top: 221,
-      },
+      left: 106,
+      top: 221,
     },
     width: 326,
     height: 319,
@@ -2603,26 +1546,13 @@ export const mapLocations: MapLocation[] = [
       left: 8.725,
       top: 29.35,
     },
-    transparent: false,
     number: {
-      absolute: {
-        left: 301,
-        top: 337,
-      },
-      relative: {
-        left: 101,
-        top: 119,
-      },
+      left: 101,
+      top: 119,
     },
     checkbox: {
-      absolute: {
-        left: 304,
-        top: 452,
-      },
-      relative: {
-        left: 104,
-        top: 234,
-      },
+      left: 104,
+      top: 234,
     },
     width: 387,
     height: 316,
@@ -2635,26 +1565,13 @@ export const mapLocations: MapLocation[] = [
       left: 28.775,
       top: 70.25,
     },
-    transparent: false,
     number: {
-      absolute: {
-        left: 279,
-        top: 416,
-      },
-      relative: {
-        left: 79,
-        top: 198,
-      },
+      left: 79,
+      top: 198,
     },
     checkbox: {
-      absolute: {
-        left: 318,
-        top: 463,
-      },
-      relative: {
-        left: 119,
-        top: 245,
-      },
+      left: 119,
+      top: 245,
     },
     width: 382,
     height: 332,
@@ -2667,26 +1584,13 @@ export const mapLocations: MapLocation[] = [
       left: 65.85,
       top: 22.15,
     },
-    transparent: false,
     number: {
-      absolute: {
-        left: 425,
-        top: 304,
-      },
-      relative: {
-        left: 225,
-        top: 85,
-      },
+      left: 225,
+      top: 85,
     },
     checkbox: {
-      absolute: {
-        left: 287,
-        top: 345,
-      },
-      relative: {
-        left: 88,
-        top: 126,
-      },
+      left: 88,
+      top: 126,
     },
     width: 377,
     height: 199,
@@ -2699,26 +1603,13 @@ export const mapLocations: MapLocation[] = [
       left: 55.775,
       top: 28.7,
     },
-    transparent: false,
     number: {
-      absolute: {
-        left: 293,
-        top: 320,
-      },
-      relative: {
-        left: 94,
-        top: 102,
-      },
+      left: 94,
+      top: 102,
     },
     checkbox: {
-      absolute: {
-        left: 305,
-        top: 374,
-      },
-      relative: {
-        left: 105,
-        top: 157,
-      },
+      left: 105,
+      top: 157,
     },
     width: 356,
     height: 244,
@@ -2731,26 +1622,13 @@ export const mapLocations: MapLocation[] = [
       left: 17.6,
       top: 70.525,
     },
-    transparent: false,
     number: {
-      absolute: {
-        left: 291,
-        top: 316,
-      },
-      relative: {
-        left: 91,
-        top: 98,
-      },
+      left: 91,
+      top: 98,
     },
     checkbox: {
-      absolute: {
-        left: 336,
-        top: 405,
-      },
-      relative: {
-        left: 136,
-        top: 187,
-      },
+      left: 136,
+      top: 187,
     },
     width: 361,
     height: 276,
@@ -2763,26 +1641,13 @@ export const mapLocations: MapLocation[] = [
       left: 67.1,
       top: 29.025,
     },
-    transparent: false,
     number: {
-      absolute: {
-        left: 466,
-        top: 301,
-      },
-      relative: {
-        left: 266,
-        top: 83,
-      },
+      left: 266,
+      top: 83,
     },
     checkbox: {
-      absolute: {
-        left: 296,
-        top: 372,
-      },
-      relative: {
-        left: 96,
-        top: 154,
-      },
+      left: 96,
+      top: 154,
     },
     width: 346,
     height: 232,
@@ -2795,26 +1660,13 @@ export const mapLocations: MapLocation[] = [
       left: 43.55,
       top: 52.675,
     },
-    transparent: false,
     number: {
-      absolute: {
-        left: 304,
-        top: 309,
-      },
-      relative: {
-        left: 104,
-        top: 91,
-      },
+      left: 104,
+      top: 91,
     },
     checkbox: {
-      absolute: {
-        left: 314,
-        top: 425,
-      },
-      relative: {
-        left: 114,
-        top: 207,
-      },
+      left: 114,
+      top: 207,
     },
     width: 369,
     height: 303,
@@ -2827,26 +1679,13 @@ export const mapLocations: MapLocation[] = [
       left: 74.45,
       top: 26.05,
     },
-    transparent: false,
     number: {
-      absolute: {
-        left: 285,
-        top: 318,
-      },
-      relative: {
-        left: 85,
-        top: 100,
-      },
+      left: 85,
+      top: 100,
     },
     checkbox: {
-      absolute: {
-        left: 324,
-        top: 407,
-      },
-      relative: {
-        left: 124,
-        top: 189,
-      },
+      left: 124,
+      top: 189,
     },
     width: 369,
     height: 279,
@@ -2859,26 +1698,13 @@ export const mapLocations: MapLocation[] = [
       left: 76.025,
       top: 22.675,
     },
-    transparent: false,
     number: {
-      absolute: {
-        left: 324,
-        top: 334,
-      },
-      relative: {
-        left: 124,
-        top: 116,
-      },
+      left: 124,
+      top: 116,
     },
     checkbox: {
-      absolute: {
-        left: 284,
-        top: 285,
-      },
-      relative: {
-        left: 84,
-        top: 67,
-      },
+      left: 84,
+      top: 67,
     },
     width: 333,
     height: 208,
@@ -2891,26 +1717,13 @@ export const mapLocations: MapLocation[] = [
       left: 32.8,
       top: 55.7,
     },
-    transparent: false,
     number: {
-      absolute: {
-        left: 288,
-        top: 419,
-      },
-      relative: {
-        left: 87,
-        top: 201,
-      },
+      left: 87,
+      top: 201,
     },
     checkbox: {
-      absolute: {
-        left: 336,
-        top: 463,
-      },
-      relative: {
-        left: 135,
-        top: 245,
-      },
+      left: 135,
+      top: 245,
     },
     width: 388,
     height: 339,
@@ -2923,26 +1736,13 @@ export const mapLocations: MapLocation[] = [
       left: 9.8,
       top: 33.05,
     },
-    transparent: false,
     number: {
-      absolute: {
-        left: 287,
-        top: 307,
-      },
-      relative: {
-        left: 86,
-        top: 90,
-      },
+      left: 86,
+      top: 90,
     },
     checkbox: {
-      absolute: {
-        left: 335,
-        top: 394,
-      },
-      relative: {
-        left: 135,
-        top: 177,
-      },
+      left: 135,
+      top: 177,
     },
     width: 341,
     height: 265,
@@ -2955,26 +1755,13 @@ export const mapLocations: MapLocation[] = [
       left: 63.525,
       top: 21.225,
     },
-    transparent: false,
     number: {
-      absolute: {
-        left: 342,
-        top: 317,
-      },
-      relative: {
-        left: 142,
-        top: 99,
-      },
+      left: 142,
+      top: 99,
     },
     checkbox: {
-      absolute: {
-        left: 296,
-        top: 355,
-      },
-      relative: {
-        left: 96,
-        top: 136,
-      },
+      left: 96,
+      top: 136,
     },
     width: 345,
     height: 217,
@@ -2987,26 +1774,13 @@ export const mapLocations: MapLocation[] = [
       left: 76.675,
       top: 71.95,
     },
-    transparent: false,
     number: {
-      absolute: {
-        left: 410,
-        top: 316,
-      },
-      relative: {
-        left: 210,
-        top: 98,
-      },
+      left: 210,
+      top: 98,
     },
     checkbox: {
-      absolute: {
-        left: 450,
-        top: 479,
-      },
-      relative: {
-        left: 250,
-        top: 261,
-      },
+      left: 250,
+      top: 261,
     },
     width: 491,
     height: 441,
@@ -3019,26 +1793,13 @@ export const mapLocations: MapLocation[] = [
       left: 53.1,
       top: 38.925,
     },
-    transparent: false,
     number: {
-      absolute: {
-        left: 295,
-        top: 333,
-      },
-      relative: {
-        left: 95,
-        top: 116,
-      },
+      left: 95,
+      top: 116,
     },
     checkbox: {
-      absolute: {
-        left: 291,
-        top: 285,
-      },
-      relative: {
-        left: 91,
-        top: 67,
-      },
+      left: 91,
+      top: 67,
     },
     width: 326,
     height: 244,
@@ -3051,26 +1812,13 @@ export const mapLocations: MapLocation[] = [
       left: 56.125,
       top: 38.825,
     },
-    transparent: false,
     number: {
-      absolute: {
-        left: 345,
-        top: 318,
-      },
-      relative: {
-        left: 145,
-        top: 100,
-      },
+      left: 145,
+      top: 100,
     },
     checkbox: {
-      absolute: {
-        left: 296,
-        top: 421,
-      },
-      relative: {
-        left: 96,
-        top: 203,
-      },
+      left: 96,
+      top: 203,
     },
     width: 315,
     height: 279,

@@ -1,20 +1,12 @@
 import { style } from '@angular/animations';
 import { Component, HostBinding, HostListener, OnInit } from '@angular/core';
 import * as _ from 'lodash';
-import { Observable } from 'rxjs';
 import { MAP_URL, MapLocation, mapLocations } from '../../../data/map-locations';
 
-enum Key {
-  Up = 'ArrowUp',
-  Down = 'ArrowDown',
-  Left = 'ArrowLeft',
-  Right = 'ArrowRight',
-  Space = ' ',
-}
-
-interface PositionAdjustment {
-  direction: 'left' | 'top';
-  amount: number;
+interface OurMapLocation extends MapLocation {
+  available?: boolean;
+  inaccessible?: boolean;
+  completed?: boolean;
 }
 
 @Component({
@@ -25,115 +17,278 @@ interface PositionAdjustment {
 export class SecretMapComponent implements OnInit {
   @HostBinding('style.backgroundImage')
   backgroundUrl = `url('${MAP_URL}')`;
-  stickers: MapLocation[];
-  focusedSticker: MapLocation;
-  currentPositions$: Observable<MapLocation[]>;
-
-  constructor() {}
-
-  private _index = 0;
-
-  get index(): number {
-    return this._index;
-  }
-
-  set index(value: number) {
-    this._index = value;
-    this.focusedSticker = this.stickers[this.index];
-  }
+  stickers: OurMapLocation[];
+  focusedSticker: OurMapLocation;
 
   async ngOnInit() {
-    // const stickers: string = localStorage.getItem('stickers');
-    // this.stickers = stickers ? JSON.parse(stickers) : mapLocations;
-    // this.stickers.forEach(sticker => (sticker.transparent = false));
-
     this.stickers = mapLocations;
 
-    // this.index = _.findIndex(this.stickers, sticker => !sticker.checkbox);
-    //
-    // console.log(this.index);
-    // setTimeout(() => {
-    //   window.scrollTo({
-    //     left: this.focusedSticker.position.left * 66 - 200,
-    //     top: this.focusedSticker.position.top * 66 - 200,
-    //   });
-    // });
+    const onTheBoard: Partial<OurMapLocation>[] = [
+      {
+        id: 1,
+        completed: true,
+        available: true,
+        inaccessible: false,
+      },
+      {
+        id: 2,
+        completed: true,
+        available: true,
+        inaccessible: false,
+      },
+      {
+        id: 3,
+        completed: true,
+        available: true,
+        inaccessible: false,
+      },
+      {
+        id: 4,
+        completed: true,
+        available: true,
+        inaccessible: false,
+      },
+      {
+        id: 5,
+        completed: true,
+        available: true,
+        inaccessible: false,
+      },
+      {
+        id: 6,
+        completed: true,
+        available: true,
+        inaccessible: false,
+      },
+      {
+        id: 7,
+        completed: true,
+        available: true,
+        inaccessible: false,
+      },
+      {
+        id: 8,
+        completed: true,
+        available: true,
+        inaccessible: false,
+      },
+      {
+        id: 9,
+        completed: false,
+        available: false,
+        inaccessible: true,
+      },
+      {
+        id: 10,
+        completed: true,
+        available: true,
+        inaccessible: false,
+      },
+      {
+        id: 13,
+        completed: true,
+        available: true,
+        inaccessible: false,
+      },
+      {
+        id: 14,
+        completed: true,
+        available: true,
+        inaccessible: false,
+      },
+      {
+        id: 15,
+        completed: true,
+        available: true,
+        inaccessible: false,
+      },
+      {
+        id: 18,
+        completed: true,
+        available: true,
+        inaccessible: false,
+      },
+      {
+        id: 19,
+        completed: true,
+        available: true,
+        inaccessible: false,
+      },
+      {
+        id: 20,
+        completed: true,
+        available: true,
+        inaccessible: false,
+      },
+      {
+        id: 21,
+        completed: true,
+        available: true,
+        inaccessible: false,
+      },
+      {
+        id: 22,
+        completed: true,
+        available: true,
+        inaccessible: false,
+      },
+      {
+        id: 23,
+        completed: true,
+        available: true,
+        inaccessible: false,
+      },
+      {
+        id: 26,
+        completed: true,
+        available: true,
+        inaccessible: false,
+      },
+      {
+        id: 27,
+        completed: true,
+        available: true,
+        inaccessible: false,
+      },
+      {
+        id: 28,
+        completed: false,
+        available: true,
+        inaccessible: false,
+      },
+      {
+        id: 31,
+        completed: true,
+        available: true,
+        inaccessible: false,
+      },
+      {
+        id: 35,
+        completed: false,
+        available: false,
+        inaccessible: true,
+      },
+      {
+        id: 36,
+        completed: false,
+        available: false,
+        inaccessible: true,
+      },
+      {
+        id: 37,
+        completed: true,
+        available: true,
+        inaccessible: false,
+      },
+      {
+        id: 38,
+        completed: false,
+        available: true,
+        inaccessible: false,
+      },
+      {
+        id: 43,
+        completed: true,
+        available: true,
+        inaccessible: false,
+      },
+      {
+        id: 46,
+        completed: false,
+        available: true,
+        inaccessible: false,
+      },
+      {
+        id: 51,
+        completed: false,
+        available: false,
+        inaccessible: true,
+      },
+      {
+        id: 52,
+        completed: true,
+        available: true,
+        inaccessible: false,
+      },
+      {
+        id: 53,
+        completed: true,
+        available: true,
+        inaccessible: false,
+      },
+      {
+        id: 54,
+        completed: true,
+        available: true,
+        inaccessible: false,
+      },
+      {
+        id: 68,
+        completed: true,
+        available: true,
+        inaccessible: false,
+      },
+      {
+        id: 70,
+        completed: true,
+        available: true,
+        inaccessible: false,
+      },
+      {
+        id: 72,
+        completed: false,
+        available: true,
+        inaccessible: false,
+      },
+      {
+        id: 76,
+        completed: false,
+        available: true,
+        inaccessible: false,
+      },
+      {
+        id: 81,
+        completed: true,
+        available: true,
+        inaccessible: false,
+      },
+      {
+        id: 82,
+        completed: true,
+        available: true,
+        inaccessible: false,
+      },
+      {
+        id: 83,
+        completed: false,
+        available: true,
+        inaccessible: false,
+      },
+      {
+        id: 93,
+        completed: true,
+        available: true,
+        inaccessible: false,
+      },
+    ];
 
-    // this.currentPositions$ = fromEvent(document, 'keydown').pipe(
-    //   filter(() => !!this.focusedSticker),
-    //   filter((event: KeyboardEvent) => _.includes(Object.values(Key), event.key)),
-    //   tap(() => event.preventDefault()),
-    //   tap(
-    //     (event: KeyboardEvent) =>
-    //       event.key === Key.Space && (this.focusedSticker.transparent = !this.focusedSticker.transparent),
-    //   ),
-    //   filter((event: KeyboardEvent) => event.key !== Key.Space),
-    //   map((event: KeyboardEvent) => this.convertKeyboardEventToPositionAdjustment(event)),
-    //   tap(
-    //     (adjustment: PositionAdjustment) =>
-    //       (this.focusedSticker.position[adjustment.direction] =
-    //         Math.round(1000 * (this.focusedSticker.position[adjustment.direction] + adjustment.amount)) / 1000),
-    //   ),
-    //   tap(() => localStorage.setItem('stickers', JSON.stringify(this.stickers))),
-    //   map(() => this.stickers),
-    // );
+    _.forEach(this.stickers, sticker => _.assign(sticker, _.find(onTheBoard, { id: sticker.id })));
   }
 
-  stickerClick(sticker: MapLocation, event: MouseEvent) {
-    return;
+  stickerClick(sticker: OurMapLocation) {
+    this.focusedSticker = sticker;
+  }
 
-    if (sticker.id !== this.focusedSticker.id) {
-      return;
-    }
+  numberClick(sticker: OurMapLocation) {
+    sticker.available = !sticker.available;
+  }
 
-    sticker.checkbox = {
-      absolute: {
-        left: event.clientX,
-        top: event.clientY,
-      },
-      relative: {
-        left: event.offsetX,
-        top: event.offsetY,
-      },
-    };
-
-    const img: HTMLImageElement = <HTMLImageElement>event.target;
-    sticker.width = img.width;
-    sticker.height = img.height;
-
-    localStorage.setItem('stickers', JSON.stringify(this.stickers));
-
-    this.index++;
-
-    console.log(this.focusedSticker.position.left * 66, this.focusedSticker.position.top * 66);
-    window.scrollTo({
-      left: this.focusedSticker.position.left * 66 - 200,
-      top: this.focusedSticker.position.top * 66 - 200,
-    });
-
-    return;
-
-    // if (this.focusedSticker) {
-    //   this.focusedSticker.transparent = false;
-    // }
-    // this.focusedSticker = sticker;
+  checkboxClick(sticker: OurMapLocation) {
+    sticker.completed = !sticker.completed;
   }
 
   @HostListener('document:keydown.escape')
-  defocusSticker() {
-    // if (this.focusedSticker) {
-    //   this.focusedSticker.transparent = false;
-    //   this.focusedSticker = null;
-    // }
-  }
-
-  convertKeyboardEventToPositionAdjustment(event: KeyboardEvent): PositionAdjustment {
-    const amount = (event.shiftKey ? 0.25 : 0.025) * (event.key === Key.Up || event.key === Key.Left ? -1 : 1);
-    const direction: 'left' | 'top' = event.key === Key.Right || event.key === Key.Left ? 'left' : 'top';
-
-    return {
-      direction,
-      amount,
-    };
+  defocusStickers() {
+    this.focusedSticker = null;
   }
 }
