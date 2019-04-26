@@ -20,7 +20,7 @@ export const MAP_URL = '/assets/cards/world-map/gloomhaven-map.png';
 export const mapLocations: MapLocation[] = [
   {
     id: 1,
-    imageUrl: '/assets/cards/world-map/1-alt.png',
+    imageUrl: '/assets/cards/world-map/cropped/1.png',
     name: 'Black Barrow',
     position: {
       left: 45.1,
@@ -39,7 +39,7 @@ export const mapLocations: MapLocation[] = [
   },
   {
     id: 2,
-    imageUrl: '/assets/cards/world-map/2-alt.png',
+    imageUrl: '/assets/cards/world-map/cropped/2.png',
     name: 'Barrow Lair',
     position: {
       left: 49.25,
@@ -58,7 +58,7 @@ export const mapLocations: MapLocation[] = [
   },
   {
     id: 3,
-    imageUrl: '/assets/cards/world-map/3.png',
+    imageUrl: '/assets/cards/world-map/cropped/3.png',
     name: 'Inox Encampment',
     position: {
       left: 13.95,
@@ -77,7 +77,7 @@ export const mapLocations: MapLocation[] = [
   },
   {
     id: 4,
-    imageUrl: '/assets/cards/world-map/4.png',
+    imageUrl: '/assets/cards/world-map/cropped/4.png',
     name: 'Crypt of the Damned',
     position: {
       left: 45.625,
@@ -96,7 +96,7 @@ export const mapLocations: MapLocation[] = [
   },
   {
     id: 5,
-    imageUrl: '/assets/cards/world-map/5.png',
+    imageUrl: '/assets/cards/world-map/cropped/5.png',
     name: 'Ruinous Crypt',
     position: {
       left: 26.825,
@@ -115,7 +115,7 @@ export const mapLocations: MapLocation[] = [
   },
   {
     id: 6,
-    imageUrl: '/assets/cards/world-map/6.png',
+    imageUrl: '/assets/cards/world-map/cropped/6.png',
     name: 'Decaying Crypt',
     position: {
       left: 41.9,
@@ -134,7 +134,7 @@ export const mapLocations: MapLocation[] = [
   },
   {
     id: 7,
-    imageUrl: '/assets/cards/world-map/7.png',
+    imageUrl: '/assets/cards/world-map/cropped/7.png',
     name: 'Vibrant Grotto',
     position: {
       left: 54.975,
@@ -153,7 +153,7 @@ export const mapLocations: MapLocation[] = [
   },
   {
     id: 8,
-    imageUrl: '/assets/cards/world-map/8.png',
+    imageUrl: '/assets/cards/world-map/cropped/8.png',
     name: 'Gloomhaven Warehouse',
     position: {
       left: 79.85,
@@ -172,7 +172,7 @@ export const mapLocations: MapLocation[] = [
   },
   {
     id: 9,
-    imageUrl: '/assets/cards/world-map/9.png',
+    imageUrl: '/assets/cards/world-map/cropped/9.png',
     name: 'Diamond Mine',
     position: {
       left: 10.05,
@@ -191,7 +191,7 @@ export const mapLocations: MapLocation[] = [
   },
   {
     id: 10,
-    imageUrl: '/assets/cards/world-map/10.png',
+    imageUrl: '/assets/cards/world-map/cropped/10.png',
     name: 'Plane of Elemental Power',
     position: {
       left: 29.625,
@@ -210,7 +210,7 @@ export const mapLocations: MapLocation[] = [
   },
   {
     id: 11,
-    imageUrl: '/assets/cards/world-map/11-12.png',
+    imageUrl: '/assets/cards/world-map/cropped/11-12.png',
     name: 'Gloomhaven Square A',
     position: {
       left: 72.75,
@@ -229,7 +229,7 @@ export const mapLocations: MapLocation[] = [
   },
   {
     id: 12,
-    imageUrl: '/assets/cards/world-map/11-12.png',
+    imageUrl: '/assets/cards/world-map/cropped/11-12.png',
     name: 'Gloomhaven Square B',
     position: {
       left: 72.75,
@@ -248,7 +248,7 @@ export const mapLocations: MapLocation[] = [
   },
   {
     id: 13,
-    imageUrl: '/assets/cards/world-map/13.png',
+    imageUrl: '/assets/cards/world-map/cropped/13.png',
     name: 'Temple of the Seer',
     position: {
       left: 17.4,
@@ -267,7 +267,7 @@ export const mapLocations: MapLocation[] = [
   },
   {
     id: 14,
-    imageUrl: '/assets/cards/world-map/14.png',
+    imageUrl: '/assets/cards/world-map/cropped/14.png',
     name: 'Frozen Hollow',
     position: {
       left: 45.125,
@@ -286,7 +286,7 @@ export const mapLocations: MapLocation[] = [
   },
   {
     id: 15,
-    imageUrl: '/assets/cards/world-map/15.png',
+    imageUrl: '/assets/cards/world-map/cropped/15.png',
     name: 'Shrine of Strength',
     position: {
       left: 48.7,
@@ -305,7 +305,7 @@ export const mapLocations: MapLocation[] = [
   },
   {
     id: 16,
-    imageUrl: '/assets/cards/world-map/16.png',
+    imageUrl: '/assets/cards/world-map/cropped/16.png',
     name: 'Mountain Pass',
     position: {
       left: 26.95,
@@ -324,7 +324,7 @@ export const mapLocations: MapLocation[] = [
   },
   {
     id: 17,
-    imageUrl: '/assets/cards/world-map/17.png',
+    imageUrl: '/assets/cards/world-map/cropped/17.png',
     name: 'Lost Island',
     position: {
       left: 80.575,
@@ -343,7 +343,7 @@ export const mapLocations: MapLocation[] = [
   },
   {
     id: 18,
-    imageUrl: '/assets/cards/world-map/18.png',
+    imageUrl: '/assets/cards/world-map/cropped/18.png',
     name: 'Abandoned Sewers',
     position: {
       left: 65.025,
@@ -362,7 +362,7 @@ export const mapLocations: MapLocation[] = [
   },
   {
     id: 19,
-    imageUrl: '/assets/cards/world-map/19.png',
+    imageUrl: '/assets/cards/world-map/cropped/19.png',
     name: 'Forgotten Crypt',
     position: {
       left: 32.925,
@@ -381,7 +381,7 @@ export const mapLocations: MapLocation[] = [
   },
   {
     id: 20,
-    imageUrl: '/assets/cards/world-map/20.png',
+    imageUrl: '/assets/cards/world-map/cropped/20.png',
     name: "Necromancer's Sanctum",
     position: {
       left: 56.3,
@@ -400,7 +400,7 @@ export const mapLocations: MapLocation[] = [
   },
   {
     id: 21,
-    imageUrl: '/assets/cards/world-map/21.png',
+    imageUrl: '/assets/cards/world-map/cropped/21.png',
     name: 'Infernal Throne',
     position: {
       left: 32.575,
@@ -419,7 +419,7 @@ export const mapLocations: MapLocation[] = [
   },
   {
     id: 22,
-    imageUrl: '/assets/cards/world-map/22.png',
+    imageUrl: '/assets/cards/world-map/cropped/22.png',
     name: 'Temple of the Elements',
     position: {
       left: 38.05,
@@ -438,7 +438,7 @@ export const mapLocations: MapLocation[] = [
   },
   {
     id: 23,
-    imageUrl: '/assets/cards/world-map/23.png',
+    imageUrl: '/assets/cards/world-map/cropped/23.png',
     name: 'Deep Ruins',
     position: {
       left: 69.875,
@@ -457,7 +457,7 @@ export const mapLocations: MapLocation[] = [
   },
   {
     id: 24,
-    imageUrl: '/assets/cards/world-map/24.png',
+    imageUrl: '/assets/cards/world-map/cropped/24.png',
     name: 'Echo Chamber',
     position: {
       left: 23.65,
@@ -476,7 +476,7 @@ export const mapLocations: MapLocation[] = [
   },
   {
     id: 25,
-    imageUrl: '/assets/cards/world-map/25.png',
+    imageUrl: '/assets/cards/world-map/cropped/25.png',
     name: 'Icecrag Ascent',
     position: {
       left: 19.85,
@@ -495,7 +495,7 @@ export const mapLocations: MapLocation[] = [
   },
   {
     id: 26,
-    imageUrl: '/assets/cards/world-map/26.png',
+    imageUrl: '/assets/cards/world-map/cropped/26.png',
     name: 'Ancient Cistern',
     position: {
       left: 70,
@@ -514,7 +514,7 @@ export const mapLocations: MapLocation[] = [
   },
   {
     id: 27,
-    imageUrl: '/assets/cards/world-map/27.png',
+    imageUrl: '/assets/cards/world-map/cropped/27.png',
     name: 'Ruinous Rift',
     position: {
       left: 27.775,
@@ -533,7 +533,7 @@ export const mapLocations: MapLocation[] = [
   },
   {
     id: 28,
-    imageUrl: '/assets/cards/world-map/28.png',
+    imageUrl: '/assets/cards/world-map/cropped/28.png',
     name: 'Outer Ritual Chamber',
     position: {
       left: 17.35,
@@ -552,7 +552,7 @@ export const mapLocations: MapLocation[] = [
   },
   {
     id: 29,
-    imageUrl: '/assets/cards/world-map/29.png',
+    imageUrl: '/assets/cards/world-map/cropped/29.png',
     name: 'Sanctuary of Gloom',
     position: {
       left: 13.275,
@@ -571,7 +571,7 @@ export const mapLocations: MapLocation[] = [
   },
   {
     id: 30,
-    imageUrl: '/assets/cards/world-map/30.png',
+    imageUrl: '/assets/cards/world-map/cropped/30.png',
     name: 'Shrine of the Depths',
     position: {
       left: 69.525,
@@ -590,7 +590,7 @@ export const mapLocations: MapLocation[] = [
   },
   {
     id: 31,
-    imageUrl: '/assets/cards/world-map/31.png',
+    imageUrl: '/assets/cards/world-map/cropped/31.png',
     name: 'Plane of Night',
     position: {
       left: 72.8,
@@ -609,7 +609,7 @@ export const mapLocations: MapLocation[] = [
   },
   {
     id: 32,
-    imageUrl: '/assets/cards/world-map/32.png',
+    imageUrl: '/assets/cards/world-map/cropped/32.png',
     name: 'Decrepit Wood',
     position: {
       left: 51.8,
@@ -628,7 +628,7 @@ export const mapLocations: MapLocation[] = [
   },
   {
     id: 33,
-    imageUrl: '/assets/cards/world-map/33.png',
+    imageUrl: '/assets/cards/world-map/cropped/33.png',
     name: 'Savvas Armory',
     position: {
       left: 29.025,
@@ -647,7 +647,7 @@ export const mapLocations: MapLocation[] = [
   },
   {
     id: 34,
-    imageUrl: '/assets/cards/world-map/34.png',
+    imageUrl: '/assets/cards/world-map/cropped/34.png',
     name: 'Scorched Summit',
     position: {
       left: 16.2,
@@ -666,7 +666,7 @@ export const mapLocations: MapLocation[] = [
   },
   {
     id: 35,
-    imageUrl: '/assets/cards/world-map/35-36.png',
+    imageUrl: '/assets/cards/world-map/cropped/35-36.png',
     name: 'Gloomhaven Battlements A',
     position: {
       left: 64.125,
@@ -685,7 +685,7 @@ export const mapLocations: MapLocation[] = [
   },
   {
     id: 36,
-    imageUrl: '/assets/cards/world-map/35-36.png',
+    imageUrl: '/assets/cards/world-map/cropped/35-36.png',
     name: 'Gloomhaven Battlements B',
     position: {
       left: 64.125,
@@ -704,7 +704,7 @@ export const mapLocations: MapLocation[] = [
   },
   {
     id: 37,
-    imageUrl: '/assets/cards/world-map/37.png',
+    imageUrl: '/assets/cards/world-map/cropped/37.png',
     name: 'Doom Trench',
     position: {
       left: 81.525,
@@ -723,7 +723,7 @@ export const mapLocations: MapLocation[] = [
   },
   {
     id: 38,
-    imageUrl: '/assets/cards/world-map/38.png',
+    imageUrl: '/assets/cards/world-map/cropped/38.png',
     name: 'Slave Pens',
     position: {
       left: 10.425,
@@ -742,7 +742,7 @@ export const mapLocations: MapLocation[] = [
   },
   {
     id: 39,
-    imageUrl: '/assets/cards/world-map/39.png',
+    imageUrl: '/assets/cards/world-map/cropped/39.png',
     name: 'Treacherous Divide',
     position: {
       left: 47.6,
@@ -761,7 +761,7 @@ export const mapLocations: MapLocation[] = [
   },
   {
     id: 40,
-    imageUrl: '/assets/cards/world-map/40.png',
+    imageUrl: '/assets/cards/world-map/cropped/40.png',
     name: 'Ancient Defense Network',
     position: {
       left: 54.275,
@@ -780,7 +780,7 @@ export const mapLocations: MapLocation[] = [
   },
   {
     id: 41,
-    imageUrl: '/assets/cards/world-map/41.png',
+    imageUrl: '/assets/cards/world-map/cropped/41.png',
     name: 'Timeworn Tomb',
     position: {
       left: 58.35,
@@ -799,7 +799,7 @@ export const mapLocations: MapLocation[] = [
   },
   {
     id: 42,
-    imageUrl: '/assets/cards/world-map/42.png',
+    imageUrl: '/assets/cards/world-map/cropped/42.png',
     name: 'Realm of the Voice',
     position: {
       left: 18.65,
@@ -818,7 +818,7 @@ export const mapLocations: MapLocation[] = [
   },
   {
     id: 43,
-    imageUrl: '/assets/cards/world-map/43.png',
+    imageUrl: '/assets/cards/world-map/cropped/43.png',
     name: 'Drake Nest',
     position: {
       left: 14.325,
@@ -837,7 +837,7 @@ export const mapLocations: MapLocation[] = [
   },
   {
     id: 44,
-    imageUrl: '/assets/cards/world-map/44.png',
+    imageUrl: '/assets/cards/world-map/cropped/44.png',
     name: 'Tribal Assault',
     position: {
       left: 14.975,
@@ -856,7 +856,7 @@ export const mapLocations: MapLocation[] = [
   },
   {
     id: 45,
-    imageUrl: '/assets/cards/world-map/45.png',
+    imageUrl: '/assets/cards/world-map/cropped/45.png',
     name: 'Rebel Swamp',
     position: {
       left: 39.675,
@@ -875,7 +875,7 @@ export const mapLocations: MapLocation[] = [
   },
   {
     id: 46,
-    imageUrl: '/assets/cards/world-map/46.png',
+    imageUrl: '/assets/cards/world-map/cropped/46.png',
     name: 'Nightmare Peak',
     position: {
       left: 47.45,
@@ -894,7 +894,7 @@ export const mapLocations: MapLocation[] = [
   },
   {
     id: 47,
-    imageUrl: '/assets/cards/world-map/47.png',
+    imageUrl: '/assets/cards/world-map/cropped/47.png',
     name: 'Lair of the Unseeing Eye',
     position: {
       left: 81.975,
@@ -913,7 +913,7 @@ export const mapLocations: MapLocation[] = [
   },
   {
     id: 48,
-    imageUrl: '/assets/cards/world-map/48.png',
+    imageUrl: '/assets/cards/world-map/cropped/48.png',
     name: 'Shadow Weald',
     position: {
       left: 5.65,
@@ -932,7 +932,7 @@ export const mapLocations: MapLocation[] = [
   },
   {
     id: 49,
-    imageUrl: '/assets/cards/world-map/49.png',
+    imageUrl: '/assets/cards/world-map/cropped/49.png',
     name: "Rebel's Stand",
     position: {
       left: 33.1,
@@ -951,7 +951,7 @@ export const mapLocations: MapLocation[] = [
   },
   {
     id: 50,
-    imageUrl: '/assets/cards/world-map/50.png',
+    imageUrl: '/assets/cards/world-map/cropped/50.png',
     name: 'Ghost Fortress',
     position: {
       left: 75.6,
@@ -970,7 +970,7 @@ export const mapLocations: MapLocation[] = [
   },
   {
     id: 51,
-    imageUrl: '/assets/cards/world-map/51.png',
+    imageUrl: '/assets/cards/world-map/cropped/51.png',
     name: 'The Void',
     position: {
       left: 68.7,
@@ -989,7 +989,7 @@ export const mapLocations: MapLocation[] = [
   },
   {
     id: 52,
-    imageUrl: '/assets/cards/world-map/52.png',
+    imageUrl: '/assets/cards/world-map/cropped/52.png',
     name: 'Noxious Cellar',
     position: {
       left: 62.425,
@@ -1008,7 +1008,7 @@ export const mapLocations: MapLocation[] = [
   },
   {
     id: 53,
-    imageUrl: '/assets/cards/world-map/53.png',
+    imageUrl: '/assets/cards/world-map/cropped/53.png',
     name: 'Crypt Basement',
     position: {
       left: 49.375,
@@ -1027,7 +1027,7 @@ export const mapLocations: MapLocation[] = [
   },
   {
     id: 54,
-    imageUrl: '/assets/cards/world-map/54.png',
+    imageUrl: '/assets/cards/world-map/cropped/54.png',
     name: 'Palace of Ice',
     position: {
       left: 38.5,
@@ -1046,7 +1046,7 @@ export const mapLocations: MapLocation[] = [
   },
   {
     id: 55,
-    imageUrl: '/assets/cards/world-map/55.png',
+    imageUrl: '/assets/cards/world-map/cropped/55.png',
     name: 'Foggy Thicket',
     position: {
       left: 21.625,
@@ -1065,7 +1065,7 @@ export const mapLocations: MapLocation[] = [
   },
   {
     id: 56,
-    imageUrl: '/assets/cards/world-map/56.png',
+    imageUrl: '/assets/cards/world-map/cropped/56.png',
     name: "Bandit's Wood",
     position: {
       left: 17.925,
@@ -1084,7 +1084,7 @@ export const mapLocations: MapLocation[] = [
   },
   {
     id: 57,
-    imageUrl: '/assets/cards/world-map/57.png',
+    imageUrl: '/assets/cards/world-map/cropped/57.png',
     name: 'Investigation',
     position: {
       left: 62.775,
@@ -1103,7 +1103,7 @@ export const mapLocations: MapLocation[] = [
   },
   {
     id: 58,
-    imageUrl: '/assets/cards/world-map/58.png',
+    imageUrl: '/assets/cards/world-map/cropped/58.png',
     name: 'Bloody Shack',
     position: {
       left: 68.85,
@@ -1122,7 +1122,7 @@ export const mapLocations: MapLocation[] = [
   },
   {
     id: 59,
-    imageUrl: '/assets/cards/world-map/59.png',
+    imageUrl: '/assets/cards/world-map/cropped/59.png',
     name: 'Forgotten Grove',
     position: {
       left: 4.624999999999995,
@@ -1141,7 +1141,7 @@ export const mapLocations: MapLocation[] = [
   },
   {
     id: 60,
-    imageUrl: '/assets/cards/world-map/60.png',
+    imageUrl: '/assets/cards/world-map/cropped/60.png',
     name: 'Alchemy Lab',
     position: {
       left: 68.6,
@@ -1160,7 +1160,7 @@ export const mapLocations: MapLocation[] = [
   },
   {
     id: 61,
-    imageUrl: '/assets/cards/world-map/61.png',
+    imageUrl: '/assets/cards/world-map/cropped/61.png',
     name: 'Fading Lighthouse',
     position: {
       left: 53.3,
@@ -1179,7 +1179,7 @@ export const mapLocations: MapLocation[] = [
   },
   {
     id: 62,
-    imageUrl: '/assets/cards/world-map/62.png',
+    imageUrl: '/assets/cards/world-map/cropped/62.png',
     name: 'Pit of Souls',
     position: {
       left: 54.275,
@@ -1198,7 +1198,7 @@ export const mapLocations: MapLocation[] = [
   },
   {
     id: 63,
-    imageUrl: '/assets/cards/world-map/63.png',
+    imageUrl: '/assets/cards/world-map/cropped/63.png',
     name: 'Magma Pit',
     position: {
       left: 6.325,
@@ -1217,7 +1217,7 @@ export const mapLocations: MapLocation[] = [
   },
   {
     id: 64,
-    imageUrl: '/assets/cards/world-map/64.png',
+    imageUrl: '/assets/cards/world-map/cropped/64.png',
     name: 'Underwater Lagoon',
     position: {
       left: 75.775,
@@ -1236,7 +1236,7 @@ export const mapLocations: MapLocation[] = [
   },
   {
     id: 65,
-    imageUrl: '/assets/cards/world-map/65.png',
+    imageUrl: '/assets/cards/world-map/cropped/65.png',
     name: 'Sulfur Mine',
     position: {
       left: 23.05,
@@ -1255,7 +1255,7 @@ export const mapLocations: MapLocation[] = [
   },
   {
     id: 66,
-    imageUrl: '/assets/cards/world-map/66.png',
+    imageUrl: '/assets/cards/world-map/cropped/66.png',
     name: 'Clockwork Cove',
     position: {
       left: 64.625,
@@ -1274,7 +1274,7 @@ export const mapLocations: MapLocation[] = [
   },
   {
     id: 67,
-    imageUrl: '/assets/cards/world-map/67.png',
+    imageUrl: '/assets/cards/world-map/cropped/67.png',
     name: 'Arcane Library',
     position: {
       left: 9.55,
@@ -1293,7 +1293,7 @@ export const mapLocations: MapLocation[] = [
   },
   {
     id: 68,
-    imageUrl: '/assets/cards/world-map/68.png',
+    imageUrl: '/assets/cards/world-map/cropped/68.png',
     name: 'Toxic Moor',
     position: {
       left: 39.2,
@@ -1312,7 +1312,7 @@ export const mapLocations: MapLocation[] = [
   },
   {
     id: 69,
-    imageUrl: '/assets/cards/world-map/69.png',
+    imageUrl: '/assets/cards/world-map/cropped/69.png',
     name: 'Well of the Unfortunate',
     position: {
       left: 36.475,
@@ -1331,7 +1331,7 @@ export const mapLocations: MapLocation[] = [
   },
   {
     id: 70,
-    imageUrl: '/assets/cards/world-map/70.png',
+    imageUrl: '/assets/cards/world-map/cropped/70.png',
     name: 'Chained Isle',
     position: {
       left: 76.075,
@@ -1350,7 +1350,7 @@ export const mapLocations: MapLocation[] = [
   },
   {
     id: 71,
-    imageUrl: '/assets/cards/world-map/71.png',
+    imageUrl: '/assets/cards/world-map/cropped/71.png',
     name: 'Windswept Highlands',
     position: {
       left: 26.45,
@@ -1369,7 +1369,7 @@ export const mapLocations: MapLocation[] = [
   },
   {
     id: 72,
-    imageUrl: '/assets/cards/world-map/72.png',
+    imageUrl: '/assets/cards/world-map/cropped/72.png',
     name: 'Oozing Grove',
     position: {
       left: 51.475,
@@ -1388,7 +1388,7 @@ export const mapLocations: MapLocation[] = [
   },
   {
     id: 73,
-    imageUrl: '/assets/cards/world-map/73.png',
+    imageUrl: '/assets/cards/world-map/cropped/73.png',
     name: 'Rockslide Ridge',
     position: {
       left: 25.875,
@@ -1407,7 +1407,7 @@ export const mapLocations: MapLocation[] = [
   },
   {
     id: 74,
-    imageUrl: '/assets/cards/world-map/74.png',
+    imageUrl: '/assets/cards/world-map/cropped/74.png',
     name: 'Merchant Ship',
     position: {
       left: 64.3,
@@ -1426,7 +1426,7 @@ export const mapLocations: MapLocation[] = [
   },
   {
     id: 75,
-    imageUrl: '/assets/cards/world-map/75.png',
+    imageUrl: '/assets/cards/world-map/cropped/75.png',
     name: 'Overgrown Graveyard',
     position: {
       left: 57.75,
@@ -1445,7 +1445,7 @@ export const mapLocations: MapLocation[] = [
   },
   {
     id: 76,
-    imageUrl: '/assets/cards/world-map/76.png',
+    imageUrl: '/assets/cards/world-map/cropped/76.png',
     name: 'Harrower Hive',
     position: {
       left: 16.95,
@@ -1464,7 +1464,7 @@ export const mapLocations: MapLocation[] = [
   },
   {
     id: 77,
-    imageUrl: '/assets/cards/world-map/77.png',
+    imageUrl: '/assets/cards/world-map/cropped/77.png',
     name: 'Vault of Secrets',
     position: {
       left: 75.6,
@@ -1483,7 +1483,7 @@ export const mapLocations: MapLocation[] = [
   },
   {
     id: 78,
-    imageUrl: '/assets/cards/world-map/78.png',
+    imageUrl: '/assets/cards/world-map/cropped/78.png',
     name: 'Sacrifice Pit',
     position: {
       left: 62.225,
@@ -1502,7 +1502,7 @@ export const mapLocations: MapLocation[] = [
   },
   {
     id: 79,
-    imageUrl: '/assets/cards/world-map/79.png',
+    imageUrl: '/assets/cards/world-map/cropped/79.png',
     name: 'Lost Temple',
     position: {
       left: 57.15,
@@ -1521,7 +1521,7 @@ export const mapLocations: MapLocation[] = [
   },
   {
     id: 80,
-    imageUrl: '/assets/cards/world-map/80.png',
+    imageUrl: '/assets/cards/world-map/cropped/80.png',
     name: 'Vigil Keep',
     position: {
       left: 5.275,
@@ -1540,7 +1540,7 @@ export const mapLocations: MapLocation[] = [
   },
   {
     id: 81,
-    imageUrl: '/assets/cards/world-map/81.png',
+    imageUrl: '/assets/cards/world-map/cropped/81.png',
     name: 'Temple of the Eclipse',
     position: {
       left: 8.725,
@@ -1559,7 +1559,7 @@ export const mapLocations: MapLocation[] = [
   },
   {
     id: 82,
-    imageUrl: '/assets/cards/world-map/82.png',
+    imageUrl: '/assets/cards/world-map/cropped/82.png',
     name: 'Burning Mountain',
     position: {
       left: 28.775,
@@ -1578,7 +1578,7 @@ export const mapLocations: MapLocation[] = [
   },
   {
     id: 83,
-    imageUrl: '/assets/cards/world-map/83.png',
+    imageUrl: '/assets/cards/world-map/cropped/83.png',
     name: 'Shadows Within',
     position: {
       left: 65.85,
@@ -1597,7 +1597,7 @@ export const mapLocations: MapLocation[] = [
   },
   {
     id: 84,
-    imageUrl: '/assets/cards/world-map/84.png',
+    imageUrl: '/assets/cards/world-map/cropped/84.png',
     name: 'Crystalline Cave',
     position: {
       left: 55.775,
@@ -1616,7 +1616,7 @@ export const mapLocations: MapLocation[] = [
   },
   {
     id: 85,
-    imageUrl: '/assets/cards/world-map/85.png',
+    imageUrl: '/assets/cards/world-map/cropped/85.png',
     name: 'Sun Temple',
     position: {
       left: 17.6,
@@ -1635,7 +1635,7 @@ export const mapLocations: MapLocation[] = [
   },
   {
     id: 86,
-    imageUrl: '/assets/cards/world-map/86.png',
+    imageUrl: '/assets/cards/world-map/cropped/86.png',
     name: 'Harried Village',
     position: {
       left: 67.1,
@@ -1654,7 +1654,7 @@ export const mapLocations: MapLocation[] = [
   },
   {
     id: 87,
-    imageUrl: '/assets/cards/world-map/87.png',
+    imageUrl: '/assets/cards/world-map/cropped/87.png',
     name: 'Corrupted Cove',
     position: {
       left: 43.55,
@@ -1673,7 +1673,7 @@ export const mapLocations: MapLocation[] = [
   },
   {
     id: 88,
-    imageUrl: '/assets/cards/world-map/88.png',
+    imageUrl: '/assets/cards/world-map/cropped/88.png',
     name: 'Plane of Water',
     position: {
       left: 74.45,
@@ -1692,7 +1692,7 @@ export const mapLocations: MapLocation[] = [
   },
   {
     id: 89,
-    imageUrl: '/assets/cards/world-map/89.png',
+    imageUrl: '/assets/cards/world-map/cropped/89.png',
     name: 'Syndicate Hideout',
     position: {
       left: 76.025,
@@ -1711,7 +1711,7 @@ export const mapLocations: MapLocation[] = [
   },
   {
     id: 90,
-    imageUrl: '/assets/cards/world-map/90.png',
+    imageUrl: '/assets/cards/world-map/cropped/90.png',
     name: 'Demonic Rift',
     position: {
       left: 32.8,
@@ -1730,7 +1730,7 @@ export const mapLocations: MapLocation[] = [
   },
   {
     id: 91,
-    imageUrl: '/assets/cards/world-map/91.png',
+    imageUrl: '/assets/cards/world-map/cropped/91.png',
     name: 'Wild Melee',
     position: {
       left: 9.8,
@@ -1749,7 +1749,7 @@ export const mapLocations: MapLocation[] = [
   },
   {
     id: 92,
-    imageUrl: '/assets/cards/world-map/92.png',
+    imageUrl: '/assets/cards/world-map/cropped/92.png',
     name: 'Back Alley Brawl',
     position: {
       left: 63.525,
@@ -1768,7 +1768,7 @@ export const mapLocations: MapLocation[] = [
   },
   {
     id: 93,
-    imageUrl: '/assets/cards/world-map/93.png',
+    imageUrl: '/assets/cards/world-map/cropped/93.png',
     name: 'Sunken Vessel',
     position: {
       left: 76.675,
@@ -1787,7 +1787,7 @@ export const mapLocations: MapLocation[] = [
   },
   {
     id: 94,
-    imageUrl: '/assets/cards/world-map/94.png',
+    imageUrl: '/assets/cards/world-map/cropped/94.png',
     name: 'Vermling Nest',
     position: {
       left: 53.1,
@@ -1806,7 +1806,7 @@ export const mapLocations: MapLocation[] = [
   },
   {
     id: 95,
-    imageUrl: '/assets/cards/world-map/95.png',
+    imageUrl: '/assets/cards/world-map/cropped/95.png',
     name: 'Payment Due',
     position: {
       left: 56.125,
