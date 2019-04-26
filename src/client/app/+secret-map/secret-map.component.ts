@@ -1,6 +1,8 @@
 import { Component, HostBinding, HostListener, OnInit } from '@angular/core';
 import * as _ from 'lodash';
-import { MAP_URL, MAP_SIZE, MapLocation, mapLocations } from '../../../data/map-locations';
+import { mapLocations } from '../../../data/map-locations';
+import { MAP_SIZE, MAP_URL } from '../../../shared/constants/map';
+import { MapLocation } from '../../../shared/entities/map-location';
 
 interface OurMapLocation extends MapLocation {
   available?: boolean;
@@ -41,254 +43,254 @@ export class SecretMapComponent implements OnInit {
 
     const onTheBoard: Partial<OurMapLocation>[] = [
       {
-        id: 1,
+        number: 1,
         completed: true,
         available: true,
         inaccessible: false,
       },
       {
-        id: 2,
+        number: 2,
         completed: true,
         available: true,
         inaccessible: false,
       },
       {
-        id: 3,
+        number: 3,
         completed: true,
         available: true,
         inaccessible: false,
       },
       {
-        id: 4,
+        number: 4,
         completed: true,
         available: true,
         inaccessible: false,
       },
       {
-        id: 5,
+        number: 5,
         completed: true,
         available: true,
         inaccessible: false,
       },
       {
-        id: 6,
+        number: 6,
         completed: true,
         available: true,
         inaccessible: false,
       },
       {
-        id: 7,
+        number: 7,
         completed: true,
         available: true,
         inaccessible: false,
       },
       {
-        id: 8,
+        number: 8,
         completed: true,
         available: true,
         inaccessible: false,
       },
       {
-        id: 9,
+        number: 9,
         completed: false,
         available: true,
         inaccessible: true,
       },
       {
-        id: 10,
+        number: 10,
         completed: true,
         available: true,
         inaccessible: false,
       },
       {
-        id: 13,
+        number: 13,
         completed: true,
         available: true,
         inaccessible: false,
       },
       {
-        id: 14,
+        number: 14,
         completed: true,
         available: true,
         inaccessible: false,
       },
       {
-        id: 15,
+        number: 15,
         completed: true,
         available: true,
         inaccessible: false,
       },
       {
-        id: 18,
+        number: 18,
         completed: true,
         available: true,
         inaccessible: false,
       },
       {
-        id: 19,
+        number: 19,
         completed: true,
         available: true,
         inaccessible: false,
       },
       {
-        id: 20,
+        number: 20,
         completed: true,
         available: true,
         inaccessible: false,
       },
       {
-        id: 21,
+        number: 21,
         completed: true,
         available: true,
         inaccessible: false,
       },
       {
-        id: 22,
+        number: 22,
         completed: true,
         available: true,
         inaccessible: false,
       },
       {
-        id: 23,
+        number: 23,
         completed: true,
         available: true,
         inaccessible: false,
       },
       {
-        id: 26,
+        number: 26,
         completed: true,
         available: true,
         inaccessible: false,
       },
       {
-        id: 27,
+        number: 27,
         completed: true,
         available: true,
         inaccessible: false,
       },
       {
-        id: 28,
+        number: 28,
         completed: false,
         available: true,
         inaccessible: false,
       },
       {
-        id: 31,
+        number: 31,
         completed: true,
         available: true,
         inaccessible: false,
       },
       {
-        id: 35,
-        completed: false,
-        available: true,
-        inaccessible: true,
-      },
-      {
-        id: 36,
+        number: 35,
         completed: false,
         available: true,
         inaccessible: true,
       },
       {
-        id: 37,
-        completed: true,
-        available: true,
-        inaccessible: false,
-      },
-      {
-        id: 38,
-        completed: false,
-        available: true,
-        inaccessible: false,
-      },
-      {
-        id: 43,
-        completed: true,
-        available: true,
-        inaccessible: false,
-      },
-      {
-        id: 46,
-        completed: false,
-        available: true,
-        inaccessible: false,
-      },
-      {
-        id: 51,
+        number: 36,
         completed: false,
         available: true,
         inaccessible: true,
       },
       {
-        id: 52,
+        number: 37,
         completed: true,
         available: true,
         inaccessible: false,
       },
       {
-        id: 53,
-        completed: true,
-        available: true,
-        inaccessible: false,
-      },
-      {
-        id: 54,
-        completed: true,
-        available: true,
-        inaccessible: false,
-      },
-      {
-        id: 68,
-        completed: true,
-        available: true,
-        inaccessible: false,
-      },
-      {
-        id: 70,
-        completed: true,
-        available: true,
-        inaccessible: false,
-      },
-      {
-        id: 72,
+        number: 38,
         completed: false,
         available: true,
         inaccessible: false,
       },
       {
-        id: 76,
-        completed: false,
-        available: true,
-        inaccessible: false,
-      },
-      {
-        id: 81,
+        number: 43,
         completed: true,
         available: true,
         inaccessible: false,
       },
       {
-        id: 82,
-        completed: true,
-        available: true,
-        inaccessible: false,
-      },
-      {
-        id: 83,
+        number: 46,
         completed: false,
         available: true,
         inaccessible: false,
       },
       {
-        id: 93,
+        number: 51,
+        completed: false,
+        available: true,
+        inaccessible: true,
+      },
+      {
+        number: 52,
+        completed: true,
+        available: true,
+        inaccessible: false,
+      },
+      {
+        number: 53,
+        completed: true,
+        available: true,
+        inaccessible: false,
+      },
+      {
+        number: 54,
+        completed: true,
+        available: true,
+        inaccessible: false,
+      },
+      {
+        number: 68,
+        completed: true,
+        available: true,
+        inaccessible: false,
+      },
+      {
+        number: 70,
+        completed: true,
+        available: true,
+        inaccessible: false,
+      },
+      {
+        number: 72,
+        completed: false,
+        available: true,
+        inaccessible: false,
+      },
+      {
+        number: 76,
+        completed: false,
+        available: true,
+        inaccessible: false,
+      },
+      {
+        number: 81,
+        completed: true,
+        available: true,
+        inaccessible: false,
+      },
+      {
+        number: 82,
+        completed: true,
+        available: true,
+        inaccessible: false,
+      },
+      {
+        number: 83,
+        completed: false,
+        available: true,
+        inaccessible: false,
+      },
+      {
+        number: 93,
         completed: true,
         available: true,
         inaccessible: false,
       },
     ];
 
-    _.forEach(this.stickers, sticker => _.assign(sticker, _.find(onTheBoard, { id: sticker.id })));
+    _.forEach(this.stickers, sticker => _.assign(sticker, _.find(onTheBoard, { number: sticker.number })));
   }
 
   stickerClick(sticker: OurMapLocation) {

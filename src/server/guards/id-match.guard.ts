@@ -10,7 +10,7 @@ export class IdMatchGuard implements CanActivate {
     if (
       'id' in (request.body || {}) &&
       'id' in (request.params || {}) &&
-      +request.body.number !== +request.params.number
+      +request.body.relativeNumberPosition !== +request.params.relativeNumberPosition
     ) {
       throw new HttpException(
         'Cannot complete this request with a resource with an ID that does not match the ID in the URL',

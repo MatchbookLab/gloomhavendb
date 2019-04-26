@@ -1,37 +1,20 @@
-interface Position {
-  top: number;
-  left: number;
-}
-
-export interface MapLocation {
-  id: number;
-  name: string;
-  imageUrl: string;
-  width: number;
-  height: number;
-  position: Position;
-  number: Position;
-  checkbox: Position;
-}
-
-export const MAP_URL = '/assets/cards/world-map/gloomhaven-map.png';
-export const MAP_SIZE = 6600;
+import { MapLocation } from '../shared/entities/map-location';
 
 // scale: 0.79
 export const mapLocations: MapLocation[] = [
   {
-    id: 1,
+    number: 1,
     imageUrl: '/assets/cards/world-map/cropped/1.png',
     name: 'Black Barrow',
-    position: {
+    mapPosition: {
       left: 45.1,
       top: 41.225,
     },
-    number: {
+    relativeNumberPosition: {
       left: 172,
       top: 109,
     },
-    checkbox: {
+    relativeCheckboxPosition: {
       left: 108,
       top: 169,
     },
@@ -39,18 +22,18 @@ export const mapLocations: MapLocation[] = [
     height: 260,
   },
   {
-    id: 2,
+    number: 2,
     imageUrl: '/assets/cards/world-map/cropped/2.png',
     name: 'Barrow Lair',
-    position: {
+    mapPosition: {
       left: 49.25,
       top: 40.725,
     },
-    number: {
+    relativeNumberPosition: {
       left: 79,
       top: 161,
     },
-    checkbox: {
+    relativeCheckboxPosition: {
       left: 130,
       top: 83,
     },
@@ -58,18 +41,18 @@ export const mapLocations: MapLocation[] = [
     height: 241,
   },
   {
-    id: 3,
+    number: 3,
     imageUrl: '/assets/cards/world-map/cropped/3.png',
     name: 'Inox Encampment',
-    position: {
+    mapPosition: {
       left: 13.95,
       top: 42.85,
     },
-    number: {
+    relativeNumberPosition: {
       left: 79,
       top: 155,
     },
-    checkbox: {
+    relativeCheckboxPosition: {
       left: 148,
       top: 95,
     },
@@ -77,18 +60,18 @@ export const mapLocations: MapLocation[] = [
     height: 282,
   },
   {
-    id: 4,
+    number: 4,
     imageUrl: '/assets/cards/world-map/cropped/4.png',
     name: 'Crypt of the Damned',
-    position: {
+    mapPosition: {
       left: 45.625,
       top: 32.65,
     },
-    number: {
+    relativeNumberPosition: {
       left: 331,
       top: 169,
     },
-    checkbox: {
+    relativeCheckboxPosition: {
       left: 101,
       top: 214,
     },
@@ -96,18 +79,18 @@ export const mapLocations: MapLocation[] = [
     height: 299,
   },
   {
-    id: 5,
+    number: 5,
     imageUrl: '/assets/cards/world-map/cropped/5.png',
     name: 'Ruinous Crypt',
-    position: {
+    mapPosition: {
       left: 26.825,
       top: 28.95,
     },
-    number: {
+    relativeNumberPosition: {
       left: 199,
       top: 82,
     },
-    checkbox: {
+    relativeCheckboxPosition: {
       left: 111,
       top: 229,
     },
@@ -115,18 +98,18 @@ export const mapLocations: MapLocation[] = [
     height: 311,
   },
   {
-    id: 6,
+    number: 6,
     imageUrl: '/assets/cards/world-map/cropped/6.png',
     name: 'Decaying Crypt',
-    position: {
+    mapPosition: {
       left: 41.9,
       top: 38.425,
     },
-    number: {
+    relativeNumberPosition: {
       left: 290,
       top: 125,
     },
-    checkbox: {
+    relativeCheckboxPosition: {
       left: 99,
       top: 167,
     },
@@ -134,18 +117,18 @@ export const mapLocations: MapLocation[] = [
     height: 258,
   },
   {
-    id: 7,
+    number: 7,
     imageUrl: '/assets/cards/world-map/cropped/7.png',
     name: 'Vibrant Grotto',
-    position: {
+    mapPosition: {
       left: 54.975,
       top: 23.35,
     },
-    number: {
+    relativeNumberPosition: {
       left: 162,
       top: 91,
     },
-    checkbox: {
+    relativeCheckboxPosition: {
       left: 101,
       top: 205,
     },
@@ -153,18 +136,18 @@ export const mapLocations: MapLocation[] = [
     height: 289,
   },
   {
-    id: 8,
+    number: 8,
     imageUrl: '/assets/cards/world-map/cropped/8.png',
     name: 'Gloomhaven Warehouse',
-    position: {
+    mapPosition: {
       left: 79.85,
       top: 21.825,
     },
-    number: {
+    relativeNumberPosition: {
       left: 139,
       top: 179,
     },
-    checkbox: {
+    relativeCheckboxPosition: {
       left: 95,
       top: 73,
     },
@@ -172,18 +155,18 @@ export const mapLocations: MapLocation[] = [
     height: 258,
   },
   {
-    id: 9,
+    number: 9,
     imageUrl: '/assets/cards/world-map/cropped/9.png',
     name: 'Diamond Mine',
-    position: {
+    mapPosition: {
       left: 10.05,
       top: 65.4,
     },
-    number: {
+    relativeNumberPosition: {
       left: 101,
       top: 151,
     },
-    checkbox: {
+    relativeCheckboxPosition: {
       left: 136,
       top: 226,
     },
@@ -191,18 +174,18 @@ export const mapLocations: MapLocation[] = [
     height: 331,
   },
   {
-    id: 10,
+    number: 10,
     imageUrl: '/assets/cards/world-map/cropped/10.png',
     name: 'Plane of Elemental Power',
-    position: {
+    mapPosition: {
       left: 29.625,
       top: 26.425,
     },
-    number: {
+    relativeNumberPosition: {
       left: 181,
       top: 82,
     },
-    checkbox: {
+    relativeCheckboxPosition: {
       left: 84,
       top: 216,
     },
@@ -210,18 +193,18 @@ export const mapLocations: MapLocation[] = [
     height: 303,
   },
   {
-    id: 11,
+    number: 11,
     imageUrl: '/assets/cards/world-map/cropped/11-12.png',
     name: 'Gloomhaven Square A',
-    position: {
+    mapPosition: {
       left: 72.75,
       top: 18.975,
     },
-    number: {
+    relativeNumberPosition: {
       left: 137,
       top: 142,
     },
-    checkbox: {
+    relativeCheckboxPosition: {
       left: 168,
       top: 66,
     },
@@ -229,18 +212,18 @@ export const mapLocations: MapLocation[] = [
     height: 297,
   },
   {
-    id: 12,
+    number: 12,
     imageUrl: '/assets/cards/world-map/cropped/11-12.png',
     name: 'Gloomhaven Square B',
-    position: {
+    mapPosition: {
       left: 72.75,
       top: 18.95,
     },
-    number: {
+    relativeNumberPosition: {
       left: 219,
       top: 127,
     },
-    checkbox: {
+    relativeCheckboxPosition: {
       left: 226,
       top: 64,
     },
@@ -248,18 +231,18 @@ export const mapLocations: MapLocation[] = [
     height: 297,
   },
   {
-    id: 13,
+    number: 13,
     imageUrl: '/assets/cards/world-map/cropped/13.png',
     name: 'Temple of the Seer',
-    position: {
+    mapPosition: {
       left: 17.4,
       top: 76.775,
     },
-    number: {
+    relativeNumberPosition: {
       left: 128,
       top: 89,
     },
-    checkbox: {
+    relativeCheckboxPosition: {
       left: 110,
       top: 227,
     },
@@ -267,18 +250,18 @@ export const mapLocations: MapLocation[] = [
     height: 330,
   },
   {
-    id: 14,
+    number: 14,
     imageUrl: '/assets/cards/world-map/cropped/14.png',
     name: 'Frozen Hollow',
-    position: {
+    mapPosition: {
       left: 45.125,
       top: 22.925,
     },
-    number: {
+    relativeNumberPosition: {
       left: 150,
       top: 93,
     },
-    checkbox: {
+    relativeCheckboxPosition: {
       left: 99,
       top: 198,
     },
@@ -286,18 +269,18 @@ export const mapLocations: MapLocation[] = [
     height: 289,
   },
   {
-    id: 15,
+    number: 15,
     imageUrl: '/assets/cards/world-map/cropped/15.png',
     name: 'Shrine of Strength',
-    position: {
+    mapPosition: {
       left: 48.7,
       top: 20.75,
     },
-    number: {
+    relativeNumberPosition: {
       left: 217,
       top: 85,
     },
-    checkbox: {
+    relativeCheckboxPosition: {
       left: 100,
       top: 240,
     },
@@ -305,18 +288,18 @@ export const mapLocations: MapLocation[] = [
     height: 334,
   },
   {
-    id: 16,
+    number: 16,
     imageUrl: '/assets/cards/world-map/cropped/16.png',
     name: 'Mountain Pass',
-    position: {
+    mapPosition: {
       left: 26.95,
       top: 22.525,
     },
-    number: {
+    relativeNumberPosition: {
       left: 194,
       top: 86,
     },
-    checkbox: {
+    relativeCheckboxPosition: {
       left: 88,
       top: 191,
     },
@@ -324,18 +307,18 @@ export const mapLocations: MapLocation[] = [
     height: 286,
   },
   {
-    id: 17,
+    number: 17,
     imageUrl: '/assets/cards/world-map/cropped/17.png',
     name: 'Lost Island',
-    position: {
+    mapPosition: {
       left: 80.575,
       top: 56.175,
     },
-    number: {
+    relativeNumberPosition: {
       left: 91,
       top: 228,
     },
-    checkbox: {
+    relativeCheckboxPosition: {
       left: 200,
       top: 357,
     },
@@ -343,18 +326,18 @@ export const mapLocations: MapLocation[] = [
     height: 445,
   },
   {
-    id: 18,
+    number: 18,
     imageUrl: '/assets/cards/world-map/cropped/18.png',
     name: 'Abandoned Sewers',
-    position: {
+    mapPosition: {
       left: 65.025,
       top: 23.975,
     },
-    number: {
+    relativeNumberPosition: {
       left: 155,
       top: 148,
     },
-    checkbox: {
+    relativeCheckboxPosition: {
       left: 100,
       top: 69,
     },
@@ -362,18 +345,18 @@ export const mapLocations: MapLocation[] = [
     height: 225,
   },
   {
-    id: 19,
+    number: 19,
     imageUrl: '/assets/cards/world-map/cropped/19.png',
     name: 'Forgotten Crypt',
-    position: {
+    mapPosition: {
       left: 32.925,
       top: 68.725,
     },
-    number: {
+    relativeNumberPosition: {
       left: 137,
       top: 98,
     },
-    checkbox: {
+    relativeCheckboxPosition: {
       left: 107,
       top: 248,
     },
@@ -381,18 +364,18 @@ export const mapLocations: MapLocation[] = [
     height: 329,
   },
   {
-    id: 20,
+    number: 20,
     imageUrl: '/assets/cards/world-map/cropped/20.png',
     name: "Necromancer's Sanctum",
-    position: {
+    mapPosition: {
       left: 56.3,
       top: 44.05,
     },
-    number: {
+    relativeNumberPosition: {
       left: 271,
       top: 90,
     },
-    checkbox: {
+    relativeCheckboxPosition: {
       left: 109,
       top: 212,
     },
@@ -400,18 +383,18 @@ export const mapLocations: MapLocation[] = [
     height: 308,
   },
   {
-    id: 21,
+    number: 21,
     imageUrl: '/assets/cards/world-map/cropped/21.png',
     name: 'Infernal Throne',
-    position: {
+    mapPosition: {
       left: 32.575,
       top: 25.525,
     },
-    number: {
+    relativeNumberPosition: {
       left: 80,
       top: 89,
     },
-    checkbox: {
+    relativeCheckboxPosition: {
       left: 124,
       top: 204,
     },
@@ -419,18 +402,18 @@ export const mapLocations: MapLocation[] = [
     height: 286,
   },
   {
-    id: 22,
+    number: 22,
     imageUrl: '/assets/cards/world-map/cropped/22.png',
     name: 'Temple of the Elements',
-    position: {
+    mapPosition: {
       left: 38.05,
       top: 60,
     },
-    number: {
+    relativeNumberPosition: {
       left: 109,
       top: 90,
     },
-    checkbox: {
+    relativeCheckboxPosition: {
       left: 107,
       top: 212,
     },
@@ -438,18 +421,18 @@ export const mapLocations: MapLocation[] = [
     height: 304,
   },
   {
-    id: 23,
+    number: 23,
     imageUrl: '/assets/cards/world-map/cropped/23.png',
     name: 'Deep Ruins',
-    position: {
+    mapPosition: {
       left: 69.875,
       top: 23.275,
     },
-    number: {
+    relativeNumberPosition: {
       left: 79,
       top: 74,
     },
-    checkbox: {
+    relativeCheckboxPosition: {
       left: 98,
       top: 186,
     },
@@ -457,18 +440,18 @@ export const mapLocations: MapLocation[] = [
     height: 262,
   },
   {
-    id: 24,
+    number: 24,
     imageUrl: '/assets/cards/world-map/cropped/24.png',
     name: 'Echo Chamber',
-    position: {
+    mapPosition: {
       left: 23.65,
       top: 23.175,
     },
-    number: {
+    relativeNumberPosition: {
       left: 218,
       top: 90,
     },
-    checkbox: {
+    relativeCheckboxPosition: {
       left: 90,
       top: 228,
     },
@@ -476,18 +459,18 @@ export const mapLocations: MapLocation[] = [
     height: 326,
   },
   {
-    id: 25,
+    number: 25,
     imageUrl: '/assets/cards/world-map/cropped/25.png',
     name: 'Icecrag Ascent',
-    position: {
+    mapPosition: {
       left: 19.85,
       top: 17.725,
     },
-    number: {
+    relativeNumberPosition: {
       left: 168,
       top: 126,
     },
-    checkbox: {
+    relativeCheckboxPosition: {
       left: 116,
       top: 254,
     },
@@ -495,18 +478,18 @@ export const mapLocations: MapLocation[] = [
     height: 354,
   },
   {
-    id: 26,
+    number: 26,
     imageUrl: '/assets/cards/world-map/cropped/26.png',
     name: 'Ancient Cistern',
-    position: {
+    mapPosition: {
       left: 70,
       top: 26.025,
     },
-    number: {
+    relativeNumberPosition: {
       left: 74,
       top: 86,
     },
-    checkbox: {
+    relativeCheckboxPosition: {
       left: 102,
       top: 175,
     },
@@ -514,18 +497,18 @@ export const mapLocations: MapLocation[] = [
     height: 252,
   },
   {
-    id: 27,
+    number: 27,
     imageUrl: '/assets/cards/world-map/cropped/27.png',
     name: 'Ruinous Rift',
-    position: {
+    mapPosition: {
       left: 27.775,
       top: 32.075,
     },
-    number: {
+    relativeNumberPosition: {
       left: 80,
       top: 96,
     },
-    checkbox: {
+    relativeCheckboxPosition: {
       left: 116,
       top: 113,
     },
@@ -533,18 +516,18 @@ export const mapLocations: MapLocation[] = [
     height: 195,
   },
   {
-    id: 28,
+    number: 28,
     imageUrl: '/assets/cards/world-map/cropped/28.png',
     name: 'Outer Ritual Chamber',
-    position: {
+    mapPosition: {
       left: 17.35,
       top: 33.35,
     },
-    number: {
+    relativeNumberPosition: {
       left: 78,
       top: 97,
     },
-    checkbox: {
+    relativeCheckboxPosition: {
       left: 103,
       top: 194,
     },
@@ -552,18 +535,18 @@ export const mapLocations: MapLocation[] = [
     height: 280,
   },
   {
-    id: 29,
+    number: 29,
     imageUrl: '/assets/cards/world-map/cropped/29.png',
     name: 'Sanctuary of Gloom',
-    position: {
+    mapPosition: {
       left: 13.275,
       top: 33.8,
     },
-    number: {
+    relativeNumberPosition: {
       left: 261,
       top: 84,
     },
-    checkbox: {
+    relativeCheckboxPosition: {
       left: 100,
       top: 217,
     },
@@ -571,18 +554,18 @@ export const mapLocations: MapLocation[] = [
     height: 298,
   },
   {
-    id: 30,
+    number: 30,
     imageUrl: '/assets/cards/world-map/cropped/30.png',
     name: 'Shrine of the Depths',
-    position: {
+    mapPosition: {
       left: 69.525,
       top: 72.5,
     },
-    number: {
+    relativeNumberPosition: {
       left: 98,
       top: 111,
     },
-    checkbox: {
+    relativeCheckboxPosition: {
       left: 120,
       top: 197,
     },
@@ -590,18 +573,18 @@ export const mapLocations: MapLocation[] = [
     height: 287,
   },
   {
-    id: 31,
+    number: 31,
     imageUrl: '/assets/cards/world-map/cropped/31.png',
     name: 'Plane of Night',
-    position: {
+    mapPosition: {
       left: 72.8,
       top: 14.175,
     },
-    number: {
+    relativeNumberPosition: {
       left: 148,
       top: 83,
     },
-    checkbox: {
+    relativeCheckboxPosition: {
       left: 92,
       top: 195,
     },
@@ -609,18 +592,18 @@ export const mapLocations: MapLocation[] = [
     height: 276,
   },
   {
-    id: 32,
+    number: 32,
     imageUrl: '/assets/cards/world-map/cropped/32.png',
     name: 'Decrepit Wood',
-    position: {
+    mapPosition: {
       left: 51.8,
       top: 63.05,
     },
-    number: {
+    relativeNumberPosition: {
       left: 89,
       top: 96,
     },
-    checkbox: {
+    relativeCheckboxPosition: {
       left: 119,
       top: 188,
     },
@@ -628,18 +611,18 @@ export const mapLocations: MapLocation[] = [
     height: 275,
   },
   {
-    id: 33,
+    number: 33,
     imageUrl: '/assets/cards/world-map/cropped/33.png',
     name: 'Savvas Armory',
-    position: {
+    mapPosition: {
       left: 29.025,
       top: 15.325,
     },
-    number: {
+    relativeNumberPosition: {
       left: 232,
       top: 211,
     },
-    checkbox: {
+    relativeCheckboxPosition: {
       left: 90,
       top: 96,
     },
@@ -647,18 +630,18 @@ export const mapLocations: MapLocation[] = [
     height: 297,
   },
   {
-    id: 34,
+    number: 34,
     imageUrl: '/assets/cards/world-map/cropped/34.png',
     name: 'Scorched Summit',
-    position: {
+    mapPosition: {
       left: 16.2,
       top: 14.525,
     },
-    number: {
+    relativeNumberPosition: {
       left: 86,
       top: 170,
     },
-    checkbox: {
+    relativeCheckboxPosition: {
       left: 110,
       top: 220,
     },
@@ -666,18 +649,18 @@ export const mapLocations: MapLocation[] = [
     height: 310,
   },
   {
-    id: 35,
+    number: 35,
     imageUrl: '/assets/cards/world-map/cropped/35-36.png',
     name: 'Gloomhaven Battlements A',
-    position: {
+    mapPosition: {
       left: 64.125,
       top: 14.825,
     },
-    number: {
+    relativeNumberPosition: {
       left: 164,
       top: 114,
     },
-    checkbox: {
+    relativeCheckboxPosition: {
       left: 224,
       top: 256,
     },
@@ -685,18 +668,18 @@ export const mapLocations: MapLocation[] = [
     height: 350,
   },
   {
-    id: 36,
+    number: 36,
     imageUrl: '/assets/cards/world-map/cropped/35-36.png',
     name: 'Gloomhaven Battlements B',
-    position: {
+    mapPosition: {
       left: 64.125,
       top: 14.85,
     },
-    number: {
+    relativeNumberPosition: {
       left: 203,
       top: 224,
     },
-    checkbox: {
+    relativeCheckboxPosition: {
       left: 274,
       top: 254,
     },
@@ -704,18 +687,18 @@ export const mapLocations: MapLocation[] = [
     height: 350,
   },
   {
-    id: 37,
+    number: 37,
     imageUrl: '/assets/cards/world-map/cropped/37.png',
     name: 'Doom Trench',
-    position: {
+    mapPosition: {
       left: 81.525,
       top: 39.775,
     },
-    number: {
+    relativeNumberPosition: {
       left: 93,
       top: 106,
     },
-    checkbox: {
+    relativeCheckboxPosition: {
       left: 124,
       top: 191,
     },
@@ -723,18 +706,18 @@ export const mapLocations: MapLocation[] = [
     height: 280,
   },
   {
-    id: 38,
+    number: 38,
     imageUrl: '/assets/cards/world-map/cropped/38.png',
     name: 'Slave Pens',
-    position: {
+    mapPosition: {
       left: 10.425,
       top: 42.525,
     },
-    number: {
+    relativeNumberPosition: {
       left: 104,
       top: 119,
     },
-    checkbox: {
+    relativeCheckboxPosition: {
       left: 107,
       top: 234,
     },
@@ -742,18 +725,18 @@ export const mapLocations: MapLocation[] = [
     height: 327,
   },
   {
-    id: 39,
+    number: 39,
     imageUrl: '/assets/cards/world-map/cropped/39.png',
     name: 'Treacherous Divide',
-    position: {
+    mapPosition: {
       left: 47.6,
       top: 17.325,
     },
-    number: {
+    relativeNumberPosition: {
       left: 131,
       top: 146,
     },
-    checkbox: {
+    relativeCheckboxPosition: {
       left: 97,
       top: 189,
     },
@@ -761,18 +744,18 @@ export const mapLocations: MapLocation[] = [
     height: 275,
   },
   {
-    id: 40,
+    number: 40,
     imageUrl: '/assets/cards/world-map/cropped/40.png',
     name: 'Ancient Defense Network',
-    position: {
+    mapPosition: {
       left: 54.275,
       top: 35.825,
     },
-    number: {
+    relativeNumberPosition: {
       left: 111,
       top: 154,
     },
-    checkbox: {
+    relativeCheckboxPosition: {
       left: 84,
       top: 209,
     },
@@ -780,18 +763,18 @@ export const mapLocations: MapLocation[] = [
     height: 281,
   },
   {
-    id: 41,
+    number: 41,
     imageUrl: '/assets/cards/world-map/cropped/41.png',
     name: 'Timeworn Tomb',
-    position: {
+    mapPosition: {
       left: 58.35,
       top: 35.65,
     },
-    number: {
+    relativeNumberPosition: {
       left: 76,
       top: 106,
     },
-    checkbox: {
+    relativeCheckboxPosition: {
       left: 111,
       top: 173,
     },
@@ -799,18 +782,18 @@ export const mapLocations: MapLocation[] = [
     height: 254,
   },
   {
-    id: 42,
+    number: 42,
     imageUrl: '/assets/cards/world-map/cropped/42.png',
     name: 'Realm of the Voice',
-    position: {
+    mapPosition: {
       left: 18.65,
       top: 22.925,
     },
-    number: {
+    relativeNumberPosition: {
       left: 309,
       top: 171,
     },
-    checkbox: {
+    relativeCheckboxPosition: {
       left: 129,
       top: 238,
     },
@@ -818,18 +801,18 @@ export const mapLocations: MapLocation[] = [
     height: 327,
   },
   {
-    id: 43,
+    number: 43,
     imageUrl: '/assets/cards/world-map/cropped/43.png',
     name: 'Drake Nest',
-    position: {
+    mapPosition: {
       left: 14.325,
       top: 31,
     },
-    number: {
+    relativeNumberPosition: {
       left: 264,
       top: 120,
     },
-    checkbox: {
+    relativeCheckboxPosition: {
       left: 105,
       top: 91,
     },
@@ -837,18 +820,18 @@ export const mapLocations: MapLocation[] = [
     height: 258,
   },
   {
-    id: 44,
+    number: 44,
     imageUrl: '/assets/cards/world-map/cropped/44.png',
     name: 'Tribal Assault',
-    position: {
+    mapPosition: {
       left: 14.975,
       top: 38.325,
     },
-    number: {
+    relativeNumberPosition: {
       left: 88,
       top: 145,
     },
-    checkbox: {
+    relativeCheckboxPosition: {
       left: 143,
       top: 95,
     },
@@ -856,18 +839,18 @@ export const mapLocations: MapLocation[] = [
     height: 312,
   },
   {
-    id: 45,
+    number: 45,
     imageUrl: '/assets/cards/world-map/cropped/45.png',
     name: 'Rebel Swamp',
-    position: {
+    mapPosition: {
       left: 39.675,
       top: 66.825,
     },
-    number: {
+    relativeNumberPosition: {
       left: 237,
       top: 162,
     },
-    checkbox: {
+    relativeCheckboxPosition: {
       left: 109,
       top: 223,
     },
@@ -875,18 +858,18 @@ export const mapLocations: MapLocation[] = [
     height: 329,
   },
   {
-    id: 46,
+    number: 46,
     imageUrl: '/assets/cards/world-map/cropped/46.png',
     name: 'Nightmare Peak',
-    position: {
+    mapPosition: {
       left: 47.45,
       top: 13,
     },
-    number: {
+    relativeNumberPosition: {
       left: 273,
       top: 225,
     },
-    checkbox: {
+    relativeCheckboxPosition: {
       left: 95,
       top: 277,
     },
@@ -894,18 +877,18 @@ export const mapLocations: MapLocation[] = [
     height: 361,
   },
   {
-    id: 47,
+    number: 47,
     imageUrl: '/assets/cards/world-map/cropped/47.png',
     name: 'Lair of the Unseeing Eye',
-    position: {
+    mapPosition: {
       left: 81.975,
       top: 42.95,
     },
-    number: {
+    relativeNumberPosition: {
       left: 257,
       top: 100,
     },
-    checkbox: {
+    relativeCheckboxPosition: {
       left: 114,
       top: 269,
     },
@@ -913,18 +896,18 @@ export const mapLocations: MapLocation[] = [
     height: 371,
   },
   {
-    id: 48,
+    number: 48,
     imageUrl: '/assets/cards/world-map/cropped/48.png',
     name: 'Shadow Weald',
-    position: {
+    mapPosition: {
       left: 5.65,
       top: 33.95,
     },
-    number: {
+    relativeNumberPosition: {
       left: 125,
       top: 101,
     },
-    checkbox: {
+    relativeCheckboxPosition: {
       left: 120,
       top: 241,
     },
@@ -932,18 +915,18 @@ export const mapLocations: MapLocation[] = [
     height: 333,
   },
   {
-    id: 49,
+    number: 49,
     imageUrl: '/assets/cards/world-map/cropped/49.png',
     name: "Rebel's Stand",
-    position: {
+    mapPosition: {
       left: 33.1,
       top: 73.275,
     },
-    number: {
+    relativeNumberPosition: {
       left: 167,
       top: 81,
     },
-    checkbox: {
+    relativeCheckboxPosition: {
       left: 125,
       top: 223,
     },
@@ -951,18 +934,18 @@ export const mapLocations: MapLocation[] = [
     height: 307,
   },
   {
-    id: 50,
+    number: 50,
     imageUrl: '/assets/cards/world-map/cropped/50.png',
     name: 'Ghost Fortress',
-    position: {
+    mapPosition: {
       left: 75.6,
       top: 19,
     },
-    number: {
+    relativeNumberPosition: {
       left: 159,
       top: 192,
     },
-    checkbox: {
+    relativeCheckboxPosition: {
       left: 92,
       top: 253,
     },
@@ -970,18 +953,18 @@ export const mapLocations: MapLocation[] = [
     height: 326,
   },
   {
-    id: 51,
+    number: 51,
     imageUrl: '/assets/cards/world-map/cropped/51.png',
     name: 'The Void',
-    position: {
+    mapPosition: {
       left: 68.7,
       top: 14.45,
     },
-    number: {
+    relativeNumberPosition: {
       left: 135,
       top: 124,
     },
-    checkbox: {
+    relativeCheckboxPosition: {
       left: 88,
       top: 196,
     },
@@ -989,18 +972,18 @@ export const mapLocations: MapLocation[] = [
     height: 285,
   },
   {
-    id: 52,
+    number: 52,
     imageUrl: '/assets/cards/world-map/cropped/52.png',
     name: 'Noxious Cellar',
-    position: {
+    mapPosition: {
       left: 62.425,
       top: 24.675,
     },
-    number: {
+    relativeNumberPosition: {
       left: 230,
       top: 176,
     },
-    checkbox: {
+    relativeCheckboxPosition: {
       left: 89,
       top: 94,
     },
@@ -1008,18 +991,18 @@ export const mapLocations: MapLocation[] = [
     height: 246,
   },
   {
-    id: 53,
+    number: 53,
     imageUrl: '/assets/cards/world-map/cropped/53.png',
     name: 'Crypt Basement',
-    position: {
+    mapPosition: {
       left: 49.375,
       top: 35.025,
     },
-    number: {
+    relativeNumberPosition: {
       left: 83,
       top: 139,
     },
-    checkbox: {
+    relativeCheckboxPosition: {
       left: 97,
       top: 174,
     },
@@ -1027,18 +1010,18 @@ export const mapLocations: MapLocation[] = [
     height: 265,
   },
   {
-    id: 54,
+    number: 54,
     imageUrl: '/assets/cards/world-map/cropped/54.png',
     name: 'Palace of Ice',
-    position: {
+    mapPosition: {
       left: 38.5,
       top: 26.25,
     },
-    number: {
+    relativeNumberPosition: {
       left: 82,
       top: 193,
     },
-    checkbox: {
+    relativeCheckboxPosition: {
       left: 115,
       top: 269,
     },
@@ -1046,18 +1029,18 @@ export const mapLocations: MapLocation[] = [
     height: 348,
   },
   {
-    id: 55,
+    number: 55,
     imageUrl: '/assets/cards/world-map/cropped/55.png',
     name: 'Foggy Thicket',
-    position: {
+    mapPosition: {
       left: 21.625,
       top: 42.575,
     },
-    number: {
+    relativeNumberPosition: {
       left: 100,
       top: 92,
     },
-    checkbox: {
+    relativeCheckboxPosition: {
       left: 101,
       top: 204,
     },
@@ -1065,18 +1048,18 @@ export const mapLocations: MapLocation[] = [
     height: 293,
   },
   {
-    id: 56,
+    number: 56,
     imageUrl: '/assets/cards/world-map/cropped/56.png',
     name: "Bandit's Wood",
-    position: {
+    mapPosition: {
       left: 17.925,
       top: 43.9,
     },
-    number: {
+    relativeNumberPosition: {
       left: 217,
       top: 92,
     },
-    checkbox: {
+    relativeCheckboxPosition: {
       left: 110,
       top: 223,
     },
@@ -1084,18 +1067,18 @@ export const mapLocations: MapLocation[] = [
     height: 311,
   },
   {
-    id: 57,
+    number: 57,
     imageUrl: '/assets/cards/world-map/cropped/57.png',
     name: 'Investigation',
-    position: {
+    mapPosition: {
       left: 62.775,
       top: 27.075,
     },
-    number: {
+    relativeNumberPosition: {
       left: 299,
       top: 169,
     },
-    checkbox: {
+    relativeCheckboxPosition: {
       left: 221,
       top: 211,
     },
@@ -1103,18 +1086,18 @@ export const mapLocations: MapLocation[] = [
     height: 290,
   },
   {
-    id: 58,
+    number: 58,
     imageUrl: '/assets/cards/world-map/cropped/58.png',
     name: 'Bloody Shack',
-    position: {
+    mapPosition: {
       left: 68.85,
       top: 31.65,
     },
-    number: {
+    relativeNumberPosition: {
       left: 110,
       top: 80,
     },
-    checkbox: {
+    relativeCheckboxPosition: {
       left: 104,
       top: 145,
     },
@@ -1122,18 +1105,18 @@ export const mapLocations: MapLocation[] = [
     height: 225,
   },
   {
-    id: 59,
+    number: 59,
     imageUrl: '/assets/cards/world-map/cropped/59.png',
     name: 'Forgotten Grove',
-    position: {
+    mapPosition: {
       left: 4.624999999999995,
       top: 39.07499999999994,
     },
-    number: {
+    relativeNumberPosition: {
       left: 86,
       top: 140,
     },
-    checkbox: {
+    relativeCheckboxPosition: {
       left: 129,
       top: 249,
     },
@@ -1141,18 +1124,18 @@ export const mapLocations: MapLocation[] = [
     height: 338,
   },
   {
-    id: 60,
+    number: 60,
     imageUrl: '/assets/cards/world-map/cropped/60.png',
     name: 'Alchemy Lab',
-    position: {
+    mapPosition: {
       left: 68.6,
       top: 17.95,
     },
-    number: {
+    relativeNumberPosition: {
       left: 140,
       top: 111,
     },
-    checkbox: {
+    relativeCheckboxPosition: {
       left: 91,
       top: 171,
     },
@@ -1160,18 +1143,18 @@ export const mapLocations: MapLocation[] = [
     height: 261,
   },
   {
-    id: 61,
+    number: 61,
     imageUrl: '/assets/cards/world-map/cropped/61.png',
     name: 'Fading Lighthouse',
-    position: {
+    mapPosition: {
       left: 53.3,
       top: 72.825,
     },
-    number: {
+    relativeNumberPosition: {
       left: 137,
       top: 86,
     },
-    checkbox: {
+    relativeCheckboxPosition: {
       left: 102,
       top: 214,
     },
@@ -1179,18 +1162,18 @@ export const mapLocations: MapLocation[] = [
     height: 294,
   },
   {
-    id: 62,
+    number: 62,
     imageUrl: '/assets/cards/world-map/cropped/62.png',
     name: 'Pit of Souls',
-    position: {
+    mapPosition: {
       left: 54.275,
       top: 76.025,
     },
-    number: {
+    relativeNumberPosition: {
       left: 95,
       top: 75,
     },
-    checkbox: {
+    relativeCheckboxPosition: {
       left: 116,
       top: 196,
     },
@@ -1198,18 +1181,18 @@ export const mapLocations: MapLocation[] = [
     height: 289,
   },
   {
-    id: 63,
+    number: 63,
     imageUrl: '/assets/cards/world-map/cropped/63.png',
     name: 'Magma Pit',
-    position: {
+    mapPosition: {
       left: 6.325,
       top: 71.7,
     },
-    number: {
+    relativeNumberPosition: {
       left: 94,
       top: 141,
     },
-    checkbox: {
+    relativeCheckboxPosition: {
       left: 143,
       top: 275,
     },
@@ -1217,18 +1200,18 @@ export const mapLocations: MapLocation[] = [
     height: 363,
   },
   {
-    id: 64,
+    number: 64,
     imageUrl: '/assets/cards/world-map/cropped/64.png',
     name: 'Underwater Lagoon',
-    position: {
+    mapPosition: {
       left: 75.775,
       top: 57.1,
     },
-    number: {
+    relativeNumberPosition: {
       left: 124,
       top: 83,
     },
-    checkbox: {
+    relativeCheckboxPosition: {
       left: 103,
       top: 234,
     },
@@ -1236,18 +1219,18 @@ export const mapLocations: MapLocation[] = [
     height: 327,
   },
   {
-    id: 65,
+    number: 65,
     imageUrl: '/assets/cards/world-map/cropped/65.png',
     name: 'Sulfur Mine',
-    position: {
+    mapPosition: {
       left: 23.05,
       top: 66.4,
     },
-    number: {
+    relativeNumberPosition: {
       left: 251,
       top: 96,
     },
-    checkbox: {
+    relativeCheckboxPosition: {
       left: 160,
       top: 259,
     },
@@ -1255,18 +1238,18 @@ export const mapLocations: MapLocation[] = [
     height: 356,
   },
   {
-    id: 66,
+    number: 66,
     imageUrl: '/assets/cards/world-map/cropped/66.png',
     name: 'Clockwork Cove',
-    position: {
+    mapPosition: {
       left: 64.625,
       top: 41.075,
     },
-    number: {
+    relativeNumberPosition: {
       left: 95,
       top: 157,
     },
-    checkbox: {
+    relativeCheckboxPosition: {
       left: 144,
       top: 194,
     },
@@ -1274,18 +1257,18 @@ export const mapLocations: MapLocation[] = [
     height: 294,
   },
   {
-    id: 67,
+    number: 67,
     imageUrl: '/assets/cards/world-map/cropped/67.png',
     name: 'Arcane Library',
-    position: {
+    mapPosition: {
       left: 9.55,
       top: 59.475,
     },
-    number: {
+    relativeNumberPosition: {
       left: 112,
       top: 110,
     },
-    checkbox: {
+    relativeCheckboxPosition: {
       left: 114,
       top: 207,
     },
@@ -1293,18 +1276,18 @@ export const mapLocations: MapLocation[] = [
     height: 307,
   },
   {
-    id: 68,
+    number: 68,
     imageUrl: '/assets/cards/world-map/cropped/68.png',
     name: 'Toxic Moor',
-    position: {
+    mapPosition: {
       left: 39.2,
       top: 72.825,
     },
-    number: {
+    relativeNumberPosition: {
       left: 88,
       top: 234,
     },
-    checkbox: {
+    relativeCheckboxPosition: {
       left: 109,
       top: 301,
     },
@@ -1312,18 +1295,18 @@ export const mapLocations: MapLocation[] = [
     height: 404,
   },
   {
-    id: 69,
+    number: 69,
     imageUrl: '/assets/cards/world-map/cropped/69.png',
     name: 'Well of the Unfortunate',
-    position: {
+    mapPosition: {
       left: 36.475,
       top: 35.675,
     },
-    number: {
+    relativeNumberPosition: {
       left: 101,
       top: 188,
     },
-    checkbox: {
+    relativeCheckboxPosition: {
       left: 99,
       top: 250,
     },
@@ -1331,18 +1314,18 @@ export const mapLocations: MapLocation[] = [
     height: 341,
   },
   {
-    id: 70,
+    number: 70,
     imageUrl: '/assets/cards/world-map/cropped/70.png',
     name: 'Chained Isle',
-    position: {
+    mapPosition: {
       left: 76.075,
       top: 51.575,
     },
-    number: {
+    relativeNumberPosition: {
       left: 240,
       top: 180,
     },
-    checkbox: {
+    relativeCheckboxPosition: {
       left: 293,
       top: 119,
     },
@@ -1350,18 +1333,18 @@ export const mapLocations: MapLocation[] = [
     height: 518,
   },
   {
-    id: 71,
+    number: 71,
     imageUrl: '/assets/cards/world-map/cropped/71.png',
     name: 'Windswept Highlands',
-    position: {
+    mapPosition: {
       left: 26.45,
       top: 62.5,
     },
-    number: {
+    relativeNumberPosition: {
       left: 132,
       top: 109,
     },
-    checkbox: {
+    relativeCheckboxPosition: {
       left: 137,
       top: 216,
     },
@@ -1369,18 +1352,18 @@ export const mapLocations: MapLocation[] = [
     height: 303,
   },
   {
-    id: 72,
+    number: 72,
     imageUrl: '/assets/cards/world-map/cropped/72.png',
     name: 'Oozing Grove',
-    position: {
+    mapPosition: {
       left: 51.475,
       top: 44.4,
     },
-    number: {
+    relativeNumberPosition: {
       left: 252,
       top: 136,
     },
-    checkbox: {
+    relativeCheckboxPosition: {
       left: 111,
       top: 189,
     },
@@ -1388,18 +1371,18 @@ export const mapLocations: MapLocation[] = [
     height: 278,
   },
   {
-    id: 73,
+    number: 73,
     imageUrl: '/assets/cards/world-map/cropped/73.png',
     name: 'Rockslide Ridge',
-    position: {
+    mapPosition: {
       left: 25.875,
       top: 72.925,
     },
-    number: {
+    relativeNumberPosition: {
       left: 169,
       top: 108,
     },
-    checkbox: {
+    relativeCheckboxPosition: {
       left: 109,
       top: 273,
     },
@@ -1407,18 +1390,18 @@ export const mapLocations: MapLocation[] = [
     height: 376,
   },
   {
-    id: 74,
+    number: 74,
     imageUrl: '/assets/cards/world-map/cropped/74.png',
     name: 'Merchant Ship',
-    position: {
+    mapPosition: {
       left: 64.3,
       top: 50.825,
     },
-    number: {
+    relativeNumberPosition: {
       left: 82,
       top: 109,
     },
-    checkbox: {
+    relativeCheckboxPosition: {
       left: 153,
       top: 235,
     },
@@ -1426,18 +1409,18 @@ export const mapLocations: MapLocation[] = [
     height: 320,
   },
   {
-    id: 75,
+    number: 75,
     imageUrl: '/assets/cards/world-map/cropped/75.png',
     name: 'Overgrown Graveyard',
-    position: {
+    mapPosition: {
       left: 57.75,
       top: 41.275,
     },
-    number: {
+    relativeNumberPosition: {
       left: 79,
       top: 105,
     },
-    checkbox: {
+    relativeCheckboxPosition: {
       left: 97,
       top: 155,
     },
@@ -1445,18 +1428,18 @@ export const mapLocations: MapLocation[] = [
     height: 239,
   },
   {
-    id: 76,
+    number: 76,
     imageUrl: '/assets/cards/world-map/cropped/76.png',
     name: 'Harrower Hive',
-    position: {
+    mapPosition: {
       left: 16.95,
       top: 66,
     },
-    number: {
+    relativeNumberPosition: {
       left: 84,
       top: 137,
     },
-    checkbox: {
+    relativeCheckboxPosition: {
       left: 121,
       top: 208,
     },
@@ -1464,18 +1447,18 @@ export const mapLocations: MapLocation[] = [
     height: 296,
   },
   {
-    id: 77,
+    number: 77,
     imageUrl: '/assets/cards/world-map/cropped/77.png',
     name: 'Vault of Secrets',
-    position: {
+    mapPosition: {
       left: 75.6,
       top: 15.5,
     },
-    number: {
+    relativeNumberPosition: {
       left: 175,
       top: 158,
     },
-    checkbox: {
+    relativeCheckboxPosition: {
       left: 90,
       top: 222,
     },
@@ -1483,18 +1466,18 @@ export const mapLocations: MapLocation[] = [
     height: 306,
   },
   {
-    id: 78,
+    number: 78,
     imageUrl: '/assets/cards/world-map/cropped/78.png',
     name: 'Sacrifice Pit',
-    position: {
+    mapPosition: {
       left: 62.225,
       top: 18.2,
     },
-    number: {
+    relativeNumberPosition: {
       left: 86,
       top: 119,
     },
-    checkbox: {
+    relativeCheckboxPosition: {
       left: 103,
       top: 150,
     },
@@ -1502,18 +1485,18 @@ export const mapLocations: MapLocation[] = [
     height: 230,
   },
   {
-    id: 79,
+    number: 79,
     imageUrl: '/assets/cards/world-map/cropped/79.png',
     name: 'Lost Temple',
-    position: {
+    mapPosition: {
       left: 57.15,
       top: 57.7,
     },
-    number: {
+    relativeNumberPosition: {
       left: 90,
       top: 99,
     },
-    checkbox: {
+    relativeCheckboxPosition: {
       left: 116,
       top: 159,
     },
@@ -1521,18 +1504,18 @@ export const mapLocations: MapLocation[] = [
     height: 243,
   },
   {
-    id: 80,
+    number: 80,
     imageUrl: '/assets/cards/world-map/cropped/80.png',
     name: 'Vigil Keep',
-    position: {
+    mapPosition: {
       left: 5.275,
       top: 62.025,
     },
-    number: {
+    relativeNumberPosition: {
       left: 90,
       top: 114,
     },
-    checkbox: {
+    relativeCheckboxPosition: {
       left: 106,
       top: 221,
     },
@@ -1540,18 +1523,18 @@ export const mapLocations: MapLocation[] = [
     height: 319,
   },
   {
-    id: 81,
+    number: 81,
     imageUrl: '/assets/cards/world-map/cropped/81.png',
     name: 'Temple of the Eclipse',
-    position: {
+    mapPosition: {
       left: 8.725,
       top: 29.35,
     },
-    number: {
+    relativeNumberPosition: {
       left: 101,
       top: 119,
     },
-    checkbox: {
+    relativeCheckboxPosition: {
       left: 104,
       top: 234,
     },
@@ -1559,18 +1542,18 @@ export const mapLocations: MapLocation[] = [
     height: 316,
   },
   {
-    id: 82,
+    number: 82,
     imageUrl: '/assets/cards/world-map/cropped/82.png',
     name: 'Burning Mountain',
-    position: {
+    mapPosition: {
       left: 28.775,
       top: 70.25,
     },
-    number: {
+    relativeNumberPosition: {
       left: 79,
       top: 198,
     },
-    checkbox: {
+    relativeCheckboxPosition: {
       left: 119,
       top: 245,
     },
@@ -1578,18 +1561,18 @@ export const mapLocations: MapLocation[] = [
     height: 332,
   },
   {
-    id: 83,
+    number: 83,
     imageUrl: '/assets/cards/world-map/cropped/83.png',
     name: 'Shadows Within',
-    position: {
+    mapPosition: {
       left: 65.85,
       top: 22.15,
     },
-    number: {
+    relativeNumberPosition: {
       left: 225,
       top: 85,
     },
-    checkbox: {
+    relativeCheckboxPosition: {
       left: 88,
       top: 126,
     },
@@ -1597,18 +1580,18 @@ export const mapLocations: MapLocation[] = [
     height: 199,
   },
   {
-    id: 84,
+    number: 84,
     imageUrl: '/assets/cards/world-map/cropped/84.png',
     name: 'Crystalline Cave',
-    position: {
+    mapPosition: {
       left: 55.775,
       top: 28.7,
     },
-    number: {
+    relativeNumberPosition: {
       left: 94,
       top: 102,
     },
-    checkbox: {
+    relativeCheckboxPosition: {
       left: 105,
       top: 157,
     },
@@ -1616,18 +1599,18 @@ export const mapLocations: MapLocation[] = [
     height: 244,
   },
   {
-    id: 85,
+    number: 85,
     imageUrl: '/assets/cards/world-map/cropped/85.png',
     name: 'Sun Temple',
-    position: {
+    mapPosition: {
       left: 17.6,
       top: 70.525,
     },
-    number: {
+    relativeNumberPosition: {
       left: 91,
       top: 98,
     },
-    checkbox: {
+    relativeCheckboxPosition: {
       left: 136,
       top: 187,
     },
@@ -1635,18 +1618,18 @@ export const mapLocations: MapLocation[] = [
     height: 276,
   },
   {
-    id: 86,
+    number: 86,
     imageUrl: '/assets/cards/world-map/cropped/86.png',
     name: 'Harried Village',
-    position: {
+    mapPosition: {
       left: 67.1,
       top: 29.025,
     },
-    number: {
+    relativeNumberPosition: {
       left: 266,
       top: 83,
     },
-    checkbox: {
+    relativeCheckboxPosition: {
       left: 96,
       top: 154,
     },
@@ -1654,18 +1637,18 @@ export const mapLocations: MapLocation[] = [
     height: 232,
   },
   {
-    id: 87,
+    number: 87,
     imageUrl: '/assets/cards/world-map/cropped/87.png',
     name: 'Corrupted Cove',
-    position: {
+    mapPosition: {
       left: 43.55,
       top: 52.675,
     },
-    number: {
+    relativeNumberPosition: {
       left: 104,
       top: 91,
     },
-    checkbox: {
+    relativeCheckboxPosition: {
       left: 114,
       top: 207,
     },
@@ -1673,18 +1656,18 @@ export const mapLocations: MapLocation[] = [
     height: 303,
   },
   {
-    id: 88,
+    number: 88,
     imageUrl: '/assets/cards/world-map/cropped/88.png',
     name: 'Plane of Water',
-    position: {
+    mapPosition: {
       left: 74.45,
       top: 26.05,
     },
-    number: {
+    relativeNumberPosition: {
       left: 85,
       top: 100,
     },
-    checkbox: {
+    relativeCheckboxPosition: {
       left: 124,
       top: 189,
     },
@@ -1692,18 +1675,18 @@ export const mapLocations: MapLocation[] = [
     height: 279,
   },
   {
-    id: 89,
+    number: 89,
     imageUrl: '/assets/cards/world-map/cropped/89.png',
     name: 'Syndicate Hideout',
-    position: {
+    mapPosition: {
       left: 76.025,
       top: 22.675,
     },
-    number: {
+    relativeNumberPosition: {
       left: 124,
       top: 116,
     },
-    checkbox: {
+    relativeCheckboxPosition: {
       left: 84,
       top: 67,
     },
@@ -1711,18 +1694,18 @@ export const mapLocations: MapLocation[] = [
     height: 208,
   },
   {
-    id: 90,
+    number: 90,
     imageUrl: '/assets/cards/world-map/cropped/90.png',
     name: 'Demonic Rift',
-    position: {
+    mapPosition: {
       left: 32.8,
       top: 55.7,
     },
-    number: {
+    relativeNumberPosition: {
       left: 87,
       top: 201,
     },
-    checkbox: {
+    relativeCheckboxPosition: {
       left: 135,
       top: 245,
     },
@@ -1730,18 +1713,18 @@ export const mapLocations: MapLocation[] = [
     height: 339,
   },
   {
-    id: 91,
+    number: 91,
     imageUrl: '/assets/cards/world-map/cropped/91.png',
     name: 'Wild Melee',
-    position: {
+    mapPosition: {
       left: 9.8,
       top: 33.05,
     },
-    number: {
+    relativeNumberPosition: {
       left: 86,
       top: 90,
     },
-    checkbox: {
+    relativeCheckboxPosition: {
       left: 135,
       top: 177,
     },
@@ -1749,18 +1732,18 @@ export const mapLocations: MapLocation[] = [
     height: 265,
   },
   {
-    id: 92,
+    number: 92,
     imageUrl: '/assets/cards/world-map/cropped/92.png',
     name: 'Back Alley Brawl',
-    position: {
+    mapPosition: {
       left: 63.525,
       top: 21.225,
     },
-    number: {
+    relativeNumberPosition: {
       left: 142,
       top: 99,
     },
-    checkbox: {
+    relativeCheckboxPosition: {
       left: 96,
       top: 136,
     },
@@ -1768,18 +1751,18 @@ export const mapLocations: MapLocation[] = [
     height: 217,
   },
   {
-    id: 93,
+    number: 93,
     imageUrl: '/assets/cards/world-map/cropped/93.png',
     name: 'Sunken Vessel',
-    position: {
+    mapPosition: {
       left: 76.675,
       top: 71.95,
     },
-    number: {
+    relativeNumberPosition: {
       left: 210,
       top: 98,
     },
-    checkbox: {
+    relativeCheckboxPosition: {
       left: 250,
       top: 261,
     },
@@ -1787,18 +1770,18 @@ export const mapLocations: MapLocation[] = [
     height: 441,
   },
   {
-    id: 94,
+    number: 94,
     imageUrl: '/assets/cards/world-map/cropped/94.png',
     name: 'Vermling Nest',
-    position: {
+    mapPosition: {
       left: 53.1,
       top: 38.925,
     },
-    number: {
+    relativeNumberPosition: {
       left: 95,
       top: 116,
     },
-    checkbox: {
+    relativeCheckboxPosition: {
       left: 91,
       top: 67,
     },
@@ -1806,18 +1789,18 @@ export const mapLocations: MapLocation[] = [
     height: 244,
   },
   {
-    id: 95,
+    number: 95,
     imageUrl: '/assets/cards/world-map/cropped/95.png',
     name: 'Payment Due',
-    position: {
+    mapPosition: {
       left: 56.125,
       top: 38.825,
     },
-    number: {
+    relativeNumberPosition: {
       left: 145,
       top: 100,
     },
-    checkbox: {
+    relativeCheckboxPosition: {
       left: 96,
       top: 203,
     },

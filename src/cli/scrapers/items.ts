@@ -68,7 +68,7 @@ const URL_BASE = 'https://old.reddit.com/r/Gloomhaven/wiki/items/item_';
     }),
   );
 
-  items = _.sortBy(items, item => item.number);
+  items = _.sortBy(items, item => item.relativeNumberPosition);
 
   await fs.promises.writeFile('./dump/items.json', JSON.stringify(items, null, 2), { encoding: 'utf-8' });
 })().catch(err => console.error(err));

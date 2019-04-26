@@ -5,7 +5,7 @@ import { Slot } from '../constants/slot';
 
 @Entity()
 export class Item {
-  // this is the item number and is _not_ generated
+  // this is the item number and is *not* generated
   @PrimaryColumn() number: number;
   // the little number at the bottom of the front (this is unique per card and not really helpful here)
   /* @deprecated */

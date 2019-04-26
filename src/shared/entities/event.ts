@@ -208,7 +208,7 @@ export class Event {
   // @Min(1)
   id?: number;
 
-  // this is the item number and is _not_ generated
+  // this is the item number and is *not* generated
   @Column()
   @ApiModelProperty({ description: 'The event number.', example: 1, required: true })
   @IsNotEmpty()

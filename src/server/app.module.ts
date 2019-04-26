@@ -15,6 +15,7 @@ import {
   EventRequirement,
 } from '../shared/entities/event';
 import { Item } from '../shared/entities/item';
+import { MapLocation } from '../shared/entities/map-location';
 import { PersonalGoals } from '../shared/entities/personal-goals';
 import { RandomScenario } from '../shared/entities/random-scenario';
 import { Role } from '../shared/entities/role';
@@ -79,6 +80,7 @@ const angularUniversal = DEVELOPMENT_MODE
         EventOutcomeEffect,
         EventRequirement,
         Item,
+        MapLocation,
         PersonalGoals,
         RandomScenario,
         Role,
