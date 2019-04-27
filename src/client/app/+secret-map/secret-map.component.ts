@@ -1,5 +1,6 @@
+import { style } from '@angular/animations';
 import { Component, HostBinding, HostListener, OnInit } from '@angular/core';
-import * as _ from 'lodash';
+import { assign, find, forEach } from 'lodash';
 import { mapLocations } from '../../../data/map-locations';
 import { MAP_SIZE, MAP_URL } from '../../../shared/constants/map';
 import { MapLocation } from '../../../shared/entities/map-location';
@@ -290,7 +291,7 @@ export class SecretMapComponent implements OnInit {
       },
     ];
 
-    _.forEach(this.stickers, sticker => _.assign(sticker, _.find(onTheBoard, { number: sticker.number })));
+    forEach(this.stickers, sticker => assign(sticker, find(onTheBoard, { number: sticker.number })));
   }
 
   stickerClick(sticker: OurMapLocation) {
