@@ -1,10 +1,10 @@
 import { animate, style, transition, trigger } from '@angular/animations';
 import { AfterViewInit, Component, ElementRef, HostBinding, HostListener, OnInit, ViewChild } from '@angular/core';
 import { filter, maxBy, minBy, sortBy } from 'lodash';
-import { GloomhavenDB } from '../../../sdk/generated/gloomhavendb.sdk';
-import { Slot } from '../../../shared/constants/slot';
-import { Item } from '../../../shared/entities/item';
-import { ScrollingService } from '../services/scrolling/scrolling.service';
+import { GloomhavenDB } from '../../../../sdk/generated/gloomhavendb.sdk';
+import { Slot } from '../../../../shared/constants/slot';
+import { Item } from '../../../../shared/entities/item';
+import { ScrollingService } from '../../services/scrolling/scrolling.service';
 
 @Component({
   selector: 'gdb-secret-shop',

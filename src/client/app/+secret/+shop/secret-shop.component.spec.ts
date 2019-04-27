@@ -1,5 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { TestBedHelper } from '../../test/test-bed.helper';
+import { TestBedHelper } from '../../../test/test-bed.helper';
 
 import { SecretShopComponent } from './secret-shop.component';
 import { SecretShopModule } from './secret-shop.module';
