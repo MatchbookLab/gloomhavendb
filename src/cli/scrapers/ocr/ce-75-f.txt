@@ -1,0 +1,13 @@
+﻿Returning to Gloomhaven af-
+ter your latest outing, you are ap-
+proached by the Captain of the Guard
+at the city gates.
+“Ah, I was hoping I might catch you here soon-
+er or later," he says. 7 have still been receiving
+reports about large, flying lizards from the
+scouts. Tell me, have you gotten to the bottom
+of that situation yet?"
+Option A: Lie and say that you are still working
+on it.
+Option B: Tell the Captain you decided not to kill
+the Elder Drake.

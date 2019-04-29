@@ -1,0 +1,13 @@
+﻿The Sawbones knows exactly what to do,
+covering his hands and face as he cleans the
+wounds. After an hour of tending to him, the
+Valrath seems good enough to travell
+Gain 1 reputation.
+OTHERWISE: Yon help the Valrath as best
+you can, but it takes many supplies and
+potions. When he finally looks better, you
+realize you are starting to feel sick as a result.
+All start scenario with POISON A.
+ri hi*
+Lose 10 collective gold.
+Gain 1 reputation.

@@ -1,0 +1,12 @@
+﻿; Some ofyour group
+immediately begin to tend to the wounded,
+bandaging cuts and administering potions.
+Gain 2 reputation.
+#	(ygj); Some of your group begin
+to controfthe fire and snulf it with their
+elemental prowess, preventing further
+damage.
+Gain I prosperity.
+OTHERWISE: You do your best, but without
+the proper skills, it isn't much.
+No etleet.

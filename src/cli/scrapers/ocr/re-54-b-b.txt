@@ -1,0 +1,12 @@
+﻿W V	f	L/tar	riru
+mejig/ve precise directions on the easiest
+way out of the forest and back to the main
+road. The Soothsinger seems impressed and
+waves good-bye as she heads off
+Gain I reputation.
+: You gauge your bearings and
+OTHERWISE: You hem and haw and then
+give some vague directions back to the road'
+t he Soothsinger looks at you skeptically and
+heads off
+Add City Event 69 to the deck.

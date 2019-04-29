@@ -1,0 +1,9 @@
+﻿A look of horrid surprise flashes in the
+Scoundrel's eyes as you leap forward and
+throw her to the ground. She doesn’t even
+speak as you bind her arms and take her
+to the city guard. They thank you for your
+service, but their words aren’t much counter
+to the cold\ angry stare of the Scoundrel as
+she s taken away.
+Gain 3 reputation.

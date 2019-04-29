@@ -1,0 +1,12 @@
+﻿: You feel positively dismal trudging
+through the mud and the raint until you
+hear the Soothsingcr s voice rise above the
+thunder. She s singing a song in the middle of
+the storm, and everyone starts to feel better
+No effect.
+OTHERWISE: Walking down the road in a
+storm is just awful\ You are wet and cold and
+miserable and you cannot wait for the whole
+experience to end. By the time you reach your
+destination, you are not feeling well at alll
+Discard 2 cards each.

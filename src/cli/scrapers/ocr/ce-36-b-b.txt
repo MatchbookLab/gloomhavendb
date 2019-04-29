@@ -1,0 +1,12 @@
+﻿: You get up to calm down the room, but
+the Berserker has other ideas, laying into the
+man before vou can get a word out. She goes
+into a f urious rage, and there s really not
+much to be done about it except pay what
+vou can for the damages afterward.
+Lose 10 collective gold.
+OTHERWISE: It takes some work, but you
+manage to calm dow n the Inox and buy off
+the rest of the room with some extra drinks,
+The proprietor looks positively relieved.
+Gain 1 reputation.

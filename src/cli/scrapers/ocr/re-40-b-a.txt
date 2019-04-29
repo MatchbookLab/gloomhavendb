@@ -1,0 +1,15 @@
+﻿#v
+; With the power of the elements
+on your side, crossing the river turns out to
+he incredibly easy. One frozen bridge later,;
+you are on the other side and on your way.
+No effect.
+OTHERWISE: The water is surprisingly cold,
+but it will take more than that to end your
+day. You are still water dogged and shivering
+when you reach your destination, however.
+All start scenario with MUDDLE
+All start scenario with
+IMMOBILIZE*
+J
+►

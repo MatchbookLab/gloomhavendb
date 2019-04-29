@@ -1,0 +1,8 @@
+﻿You put down vour utensils and yield to the
+sailors. They roar with pride and slap vou
+on the back. Unfortunately, the sudden jolt
+doesn't sit well with your stomach, and soon
+S	9
+all the pies you ate arc coming hack up. much
+to the disgust of the gathered crowd.
+Lose 1 reputation.

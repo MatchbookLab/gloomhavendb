@@ -1,0 +1,12 @@
+﻿If: The Plagueherald stretches out his arms
+and the men around him immediately double
+over in pain. You can almost sense it smiling,
+even though it doesn't have a face. The fight
+doesn't last long, especially once the men's
+wounds start bursting with maggots.
+All start scenario with 1 damage.
+OTHERWISE: The men are weakened, but
+they arc still hardened lighters. you light
+them off, but it gets ugly.
+All start scenario with POISON G
+All start scenario with 3 damage.

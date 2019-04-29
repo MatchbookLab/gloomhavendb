@@ -1,0 +1,11 @@
+﻿: The man talks the whole way
+through the process, hut alter an hour or so,
+the axle is repaired and the man leaves in a
+radiant mood[ bestowing blessings upon you.
+All start scenario with BLESS
+Gain 1 reputation.
+OTHERWISE: You happily agree to help the
+man, but quickly realize you don't know what
+you are doing. The man thanks you anyway,
+and you move on.
+No effect.

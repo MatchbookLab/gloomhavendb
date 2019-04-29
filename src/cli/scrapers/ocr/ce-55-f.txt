@@ -1,0 +1,19 @@
+﻿'Ah, they said I might find you
+here. A portly Valrath woman
+looks down at you as you are enjoying a
+cold beverage at the Sleeping Lion.
+"A group of wild-looking Orchids came to
+the Temple of Coin today hoping to engage
+in trade with the merchants of the city. One
+particularly dour-fooking one with a how said
+vou lot would vouch for them.
+Mere always wary of traps and betrayal
+out here on the edge of the wildsr but if you
+think these Orchids can be trusted, then the
+Merchant s Guild may consider opening trade
+with them,”
+Option A: Vouch for the Orchids,
+i
+Option B: Advise against trading with the
+Orchids.
+/

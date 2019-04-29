@@ -1,0 +1,11 @@
+﻿: You try to turn away the woman and get
+hack to gambling, but the Sunkeeper won t
+hear of it, She forces you to follow the woman
+outside.
+Read outcome A.
+OTHERWISE: You return to your gambling,
+but you feel as though a pall has fallen over
+the revelry. Your luck has turned[ and you
+end the night much poorer than when you
+started.
+Lose 10 gold each.

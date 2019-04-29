@@ -1,0 +1,14 @@
+﻿Walking a long*the trail, you are
+surprised by a group of demons who
+appear to your left, charging over a hill toward
+you. Something is off however. Their pace is slow,
+and they are significantly smaller than the demons
+you normally deal with.
+Hallway down the hill, the demons pause and take
+stock of you. Seeing you are far from easy prey, they
+turn around and begin to retreat.
+
+Option A: Chase them down quickly and kill
+them.
+Option B: Follow them more slowly, attempting
+to discover where they came from.

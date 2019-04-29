@@ -1,0 +1,17 @@
+﻿By now, the Sun Demons cut a
+very recognizable portrait against the
+horizon as they move toward you. You sincerely
+had hoped you were done with these creatures.
+h	■	f	-m
+"We have urgent need of your assistance, one of
+them starts. *Night Demons have infested the Sun
+Temple* attempting to desecrate it and send the
+world into eternal darkness.
+"We have tried to stop them, but they are too
+fortified inside the temple. We regrettably need
+more $t rength.
+"Please, you cannot want an absence of a sun on this
+plane any less than we do. It would be disastrous.
+Option A: Agree to help the Sim Demons,
+Option B: Attack the Sun Demons. It may be the
+only way to stop them from bothering you.

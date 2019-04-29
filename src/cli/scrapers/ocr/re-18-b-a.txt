@@ -1,0 +1,12 @@
+﻿REPUTATION < ~4: You begin to agree with
+the Inox that Cloomhaven is a blight on the
+land in need of cleansing, and the Inox seems
+to believe vou. "Go in peace, then," the leader
+says. “A nd stay off my land."
+No effect.
+OTHERWISE: You try to explain that you
+mean the Inox no ill will, but the leader eyes
+you skeptically, "foul creature. I curse you
+and your kind.' Run — get off my land and
+never come back!"
+All start scenario with CURSE

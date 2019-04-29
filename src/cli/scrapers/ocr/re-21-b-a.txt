@@ -1,0 +1,8 @@
+﻿By the time you see the flames, it is too late.
+A great forest fire is raging around you. You
+try to run, but you don't make it out of the
+blaze without serious injuries and smoke
+inhalation.
+All start scenario with WOUND
+All start scenario with 3 damage.
+Lose 1 v each.

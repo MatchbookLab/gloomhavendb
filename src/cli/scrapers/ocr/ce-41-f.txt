@@ -1,0 +1,19 @@
+﻿The Sinking Market is a
+varied area or decrepit huts and
+merchants unable to sell their wares
+anywhere else. It doesnt surprise you as
+you walk through to see a scraggly Vermling
+approach with a small sack.
+"A potion for the big, strong adventurers! she
+savs as she ivjyes you down. “Help you in battle,
+it will!"
+You are about to push her aside and keep walking
+when she pulls the potion out of the sack« It
+glows green in the daylight — an impressive,
+large flask of master craftsmanship.
+“Aha, I knew it catch your eye! How much you
+pay?"
+Option A: Barter with the Vermling for the
+potion.
+Option B: Move along. You don't need any more
+potions.

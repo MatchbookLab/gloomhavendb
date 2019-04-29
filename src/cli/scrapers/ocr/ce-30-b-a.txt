@@ -1,0 +1,13 @@
+﻿The Verm ling escapes into the sewers,
+but the Mindthief is able to give chase,
+catching up as the cutpurse enters his nest,
+There you find more wealth than what was
+lost.
+Gain 5 gold each.
+Gain I collective "Flea-Bitten
+Shawl" (Item 105)*
+OTHERWISE: The Vermling disappears into
+the sewers, and yon try to give chase. But
+after a few minutes you are hopelessly lost
+and are forced to give up.
+Lose 5 gold each.

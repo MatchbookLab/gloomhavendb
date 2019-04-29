@@ -1,0 +1,12 @@
+﻿The Captain of the Guard sighs.
+* 7 really thought you were the ones for the
+job. What business could you possibly have
+that is more important than making sure this
+citv is safe?"
+tf
+He holds up his hand. "No matter. Fine,
+■
+just get out of here! U c will deal with this
+ourselves."
+Lose 1 prosperity.
+Lose 1 reputation.

@@ -1,0 +1,12 @@
+﻿^	• Despite the early hour, you
+* head down to the Inox s forge and get an
+incredibly strong fire going for him so he can
+complete his order; He seems very pleased.
+Gain 1 reputation.
+Gain 10 collective gold.
+OTHERWISE: The Inox is completely
+dumbfounded when you walk all the way
+down to his forge and then proceed to exhibit
+zero aptitude at manipulating or controlling
+fire.
+Lose I reputation.

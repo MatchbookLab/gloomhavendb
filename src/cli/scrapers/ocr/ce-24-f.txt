@@ -1,0 +1,16 @@
+﻿Upon returning to the city
+after your latest adventure, you are
+approached by a high-ranking guard at
+the gate.
+'Ah. good, I'm glad to have caught you, the
+guard begins, NThe capital has fallen behind
+on shipments of wood to Gloomhaven, so
+now it tails to us to pick up the slack so that
+construction of important city buildings
+doesn't stagnate."
+The guard points to the east, We re forming an
+expedition to gather logs from the Corpse wood.
+We could use your help, either to guard against
+enemies or to chop down trees,r
+Option A: join the expedition as a guard.
+Option B: Join the expedition as a logger.

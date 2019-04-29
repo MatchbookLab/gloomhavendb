@@ -6,14 +6,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { join } from 'path';
 import { BattleGoal } from '../shared/entities/battle-goal';
 import { Class } from '../shared/entities/class';
-import {
-  Event,
-  EventChoice,
-  EventCondition,
-  EventOutcome,
-  EventOutcomeEffect,
-  EventRequirement,
-} from '../shared/entities/event';
+import { Event } from '../shared/entities/event';
 import { Item } from '../shared/entities/item';
 import { MapLocation } from '../shared/entities/map-location';
 import { PersonalGoals } from '../shared/entities/personal-goals';
@@ -70,23 +63,7 @@ const angularUniversal = DEVELOPMENT_MODE
       synchronize: true,
       logging: false,
       namingStrategy: new DatabaseNamingStrategy(),
-      entities: [
-        BattleGoal,
-        Class,
-        Event,
-        EventChoice,
-        EventOutcome,
-        EventCondition,
-        EventOutcomeEffect,
-        EventRequirement,
-        Item,
-        MapLocation,
-        PersonalGoals,
-        RandomScenario,
-        Role,
-        Scenario,
-        User,
-      ],
+      entities: [BattleGoal, Class, Event, Item, MapLocation, PersonalGoals, RandomScenario, Role, Scenario, User],
     }),
 
     PassportModule.register({ defaultStrategy: 'jwt' }),

@@ -1,0 +1,16 @@
+﻿Despite your best efforts, you
+find yourself lost in a forest. You thought
+you were taking a shortcut, but then you got
+turned around and lost your bearings.
+And just when you think things couldn t get worse,
+a wolf suddenly jumps out of the brush in front of
+you. Oddly; though, it doesn 't appear aggressive.
+It howls once and then slowly and deliberately
+begins to walk through the trees in front of you, as
+if expecting you to follow it.
+
+
+w. mm
+
+Option A: Follow the wolf.
+Option B: Find your own way through the forest.

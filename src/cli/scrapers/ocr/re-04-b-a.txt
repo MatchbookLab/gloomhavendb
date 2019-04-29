@@ -1,0 +1,9 @@
+﻿The merchants in the caravan seem grateful,
+though the guards eye you skeptically.
+After traveling for half a day without event,
+you head off down a side road and wave
+good bye. The merchants express their
+appreciation with a bit of coin.
+Gain 2 gold each.
+Reputation > 9: Gain 1 additional
+gold each.

@@ -1,0 +1,15 @@
+﻿You are walking across the
+Silent Bridge, headed toward the
+Sleeping Lion to get a quick meal, when
+you sec a Quatryl standing in front of a
+small cart laden with plates of food and
+curious cont rapt ions.
+"Come trv the delicacies of the East!" the
+Quatryl harks. "Food enhanced with science!
+h favors beyond your wildest imagination!"
+
+
+Option A: Stop and try the food.
+Option B: Continue on your way to a less
+adventurous meal.
+/

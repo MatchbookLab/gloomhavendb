@@ -1,0 +1,7 @@
+﻿"Oh, hmm...well, that's disappointing
+The Captain looks at you with dejected
+frustration. “Ifyou could, please look into
+the sightings as soon as you can. I d hate to
+think of some giant living creature attacking
+the city."
+Lose I reputation.

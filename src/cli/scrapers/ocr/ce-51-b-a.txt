@@ -1,0 +1,10 @@
+﻿You explain that you recognize the sword
+from the time you spent traveling with the
+Nightshroud. As a capable assassin, he is
+likely to he the one behind the murders. You
+explain, however, that since he left the group,
+you have no knowledge of his whereabouts
+or dealings. The guard thanks you for the
+information.
+Gain I reputation.
+Add City Event 64 to the deck.

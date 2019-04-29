@@ -1,0 +1,8 @@
+﻿Ihe merchant remains dead silent as you sift
+through his cart and pull out any valuables.
+There's not a whole lot in his wares, but the
+ease in which you are able to take what he
+has makes it all the sweeter.
+Once you are finished, you continue on your
+way and he continues on his.
+Gain 10 gold each.

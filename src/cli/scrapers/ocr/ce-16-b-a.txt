@@ -1,0 +1,13 @@
+﻿PAY 10 COLLECTIVE COLD: You entreat
+the guards to let the boy go, hut they are
+unmoved. With further pressing, they agree
+to do so only ifvou pay his criminal fine. The
+guards cuff the hoy's ear and set him free.
+Add City Event 70 to the deck.
+OTHERWISE: You entreat the guards to let
+the boy go, but they are unmoved. It seems
+like you may be able to g rease their palms
+a bit, but, unfortunately, you do not have
+enough money to sway their minds. The boy
+is hauled of! to the Ghost Fortress.
+No effect.

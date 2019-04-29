@@ -1,0 +1,12 @@
+﻿PAY / COLLECTIVE "MINOR STAMINA
+* POTION* (ITEM 013): After some oddly tense
+negotiations, you are able to agree upon a
+price. With one band firmly on his sword
+hilt, the man grabs a coin pouch with the
+other hand and extends it toward you. You
+exchange goods and continue on your journey
+without further incident.
+Gain 10 collective gold.
+Gain 10 additional
+collective gold.
+OTHERWISE: Read outcome B.

@@ -1,0 +1,20 @@
+﻿Please, something of interest,
+sirs. ' the words come through in
+chitters and hisses. >01/ turn your head
+toward an alley in the Ward of Scales to
+see a Harrower dressed in crude robes and a
+mask, it holds out a piece ofparchment.
+f	r	■
+"Something hr sirs. Very powerful just five
+gold *
+You can see the parchment has the designs for
+something on it, but still — you recognize this
+Harrower. It is known for trading in disreputable
+goods. You can t know where that parchment
+came iromf and if anyone saw you dealing with
+this creature...well, they might get the wrong
+idea.
+Option A: Make a deal wilh the Harrower.
+Option B: Shake your head and walk away. Best
+not to take chances in such situations.
+/

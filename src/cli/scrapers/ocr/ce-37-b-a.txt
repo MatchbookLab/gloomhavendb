@@ -1,0 +1,13 @@
+﻿; The citizens are downtrodden, but the
+uncanny pen'or of the Soothsingcr’s music
+seems to lif t their spirits considerably. Still
+far f rom cheerful, the people find new resolve
+in repairing the damage and rebuilding.
+Gain 1 prosperity.
+OTHERWISE: The citizens view you with a
+cynical eye as you walk around, attempting to
+encourage them and lift their spirits. Despite
+the effort, it seems as though they are in a
+worse mood than when vou arrived.
+W
+Lose 1 reputation.

@@ -1,0 +1,11 @@
+﻿You creep slowly to the crest of the hill,
+watching as the demons retreat to the south.
+You follow them, eventually arriving at a
+weak, fluctuating rift in a small, earthen
+cave. Having experienced enough planar
+manipulation in your travels, you are able to
+mutter a few incantations and close the rift,
+ft takes a lot out of you, but now there is one
+less way for demons to invade this plane.
+Lose 1 <*/ each.
+Gain 1 prosperity.

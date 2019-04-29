@@ -1,0 +1,9 @@
+﻿You tie one of your weapons to a long rope
+and manage to hook it onto a sturdy tree root
+hanging over the pit. With enough effort,
+you are able to extricate yourself from the
+pit and get as far away as possible before
+the situation gets worse. You suffered some
+minor scrapes and bruises in the fall[ but you
+count yourself lucky.
+All start scenario with 1 damage.

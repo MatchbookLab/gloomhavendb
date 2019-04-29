@@ -1,0 +1,9 @@
+﻿You attack the Vermling anyway; despite
+his protests. It t urns out he wasn *t lying
+about his "brothers" nearby, though. As you
+wipe the blood from your blade, ten more
+of the little furry creatures jump out at youf
+brandishing small knives. They are not nearly
+as easy to dispatch.
+All start scenario with POISON
+All start scenario with 2 damage.

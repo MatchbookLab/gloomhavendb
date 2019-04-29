@@ -1,0 +1,10 @@
+﻿BPAY 60 COLLECTIVE GOLD: You sigh
+• and hand over the Sawbones' debt, plus
+interest. Though it feels terrible, the thugs
+are satisfied and walk out the same way they
+came in. At least it is over now.
+No effect.
+OTHERWISE: Seeing as how you don't have
+enough money, you decide pursue other
+options.
+Read outcome B.

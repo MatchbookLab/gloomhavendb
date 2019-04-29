@@ -1,0 +1,12 @@
+﻿With your arrival, the Inox retreat back into
+the woods, one of them casting hexes as he
+flees.
+*Blast it all,” one of the guards says. “Patrol
+duty is the absolute worst. No matter what
+we tell those savages, they're convinced
+were going to take over their forest. Anyway;
+thanks for your help. / thought we were done
+for”
+All start scenario with
+Gain 1 reputation.
+CURSE ».

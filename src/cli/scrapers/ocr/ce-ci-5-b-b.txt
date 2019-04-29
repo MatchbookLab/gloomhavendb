@@ -1,0 +1,11 @@
+﻿OTHERWISE: It is easy enough to follow the
+Valrath as he walks to the west. The day is
+ending and the streets are crowded. Eventually
+he turns into a large warehouse, and you move
+to keep up.
+You are surprised, however, to run into a guard
+at the warehouse entrance. You try to act like
+you belong here, but he is not buying it. Only
+after paying him off with a considerable sum
+does he let you inside.
+Lose 10 collective gold.

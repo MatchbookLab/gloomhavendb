@@ -1,0 +1,13 @@
+﻿; The Acsther in your group leads
+you to an area off the road that feels* fuzzy*
+It is hard to focus your vision, as if the space
+in front of you is only half there. With a few
+words from the Aesther, the blur is gone.
+No effect.
+OTHERWISE: You wander around for a while
+before a massive demon suddenly appears
+before you, ripped from another plane.
+Your presence surprises it, though, and you
+dispatch it before too much trouble is causedl
+All start scenario with 1 damage.
+Discard 1 card each.

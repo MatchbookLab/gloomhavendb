@@ -1,0 +1,13 @@
+﻿1
+The Be*}st Tyrant steps forward with his
+hand outstretched and makes a low humming
+sound. The hear stops mid-charge with a
+perplexed look« You leave the animal there
+and continue on your way unharmed[
+No effect.
+OTHERWISE: Two seconds later, you can t
+help but Teel this was a terrible idea. The bear
+wounds you severely before you are able to
+arm yourself and fight it off.
+All start scenario with WOUND 0 .
+All start scenario with 3 damage.

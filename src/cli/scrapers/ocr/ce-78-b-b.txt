@@ -1,0 +1,10 @@
+﻿“Look...!, ah, don't have a whole lot of capital
+* right now, but I will give you everything I
+have once you get back with that artifact.“
+You narrow your eyes at him. He coughs ner-
+vously and produces a small handful of coins.
+"All right, fine. Look, here. This is all I can
+offer you. Now can we get to the part where
+you go do your job? ”
+Gain 5 collective gold.
+Read outcome A.

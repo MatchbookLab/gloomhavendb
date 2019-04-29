@@ -1,0 +1,12 @@
+﻿Sw	: A group of Inox appears at the edge
+of your campsite. Seeing their kind among
+vou, they greet you in a friendly manner and
+stay for some time to talk. After they leave,
+you find the remainder of the night restful.
+No effect.
+OTHERWISE: A group of irate Inox appears
+at the edge of your campsite. They claim you
+are trespassing and force you to pack up and
+leave. You walk through the rest of the night
+and arrive at your destination tiredl
+Discard 2 cards each.

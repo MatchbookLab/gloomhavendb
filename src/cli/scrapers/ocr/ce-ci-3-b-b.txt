@@ -1,0 +1,12 @@
+﻿OTHERWISE: You sneak forward[ making your
+way to the stairs. Unfortunately, you scrape
+your feet against the dirt, and one of the men
+turns toward you. He yells out, and you hear
+commotion coming from above.
+You make a break tor it, bounding up the stairs
+into a factory. Men with weapons are running
+at you from one direction, so you run the other.:
+The factory is a maze, but you do not stop and
+eventually find an exit out into the city streets.
+You keep running, hoping to lose your pursuers.
+Discard 2 cards each.

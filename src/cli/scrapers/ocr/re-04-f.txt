@@ -1,0 +1,17 @@
+﻿see
+fresh
+tracks
+wagon
+in the dirt as you walk along the road.
+You continue forward and begin to pick out a
+number of distinct tracks. They must be from a
+large caravan.
+Sure enough, as you crest a hill, you see a group
+of four wagons headed down the road in the same
+direction as you. You count perhaps three or four
+guards among them.
+
+
+Option A: Approach the caravan and otter to
+travel with them until your paths diverge.
+Option B: Attack the caravan.

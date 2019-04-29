@@ -1,0 +1,7 @@
+﻿The Mindthief flicks her tail and throws
+• insults around, but it doesn't seem to have
+any positive effect. She is led away and out
+of view. You get about your business, hoping
+that bit about the town being poisoned
+wasn t too serious.
+Add City Event 63 to the deck.

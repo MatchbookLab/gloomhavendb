@@ -1,0 +1,12 @@
+﻿: You keep a calm demeanor as
+you try to talk down the mob. It takes some
+effort, but the men finally agree to turn the
+thief over to the authorities, which stops the
+situation from devolving into chaos.
+Gain I prosperity.
+OTHERWISE: You kindly entreat the crowd
+to hack down, and when that doesn t work,
+you resort to force, i\'o one seems happy that
+you stopped the hanging, but it was the right
+thing to do.
+Lose I reputation.

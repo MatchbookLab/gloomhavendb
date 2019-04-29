@@ -1,0 +1,14 @@
+﻿You arc haggling over the price
+ot road rations with an irritating
+Valrath merchant when a messenger
+boy approaches you holding a note.
+"Sir, I have a pressing letter from an important
+Valrath Sunkeeper, "the messenger says. 7 was
+told to deliver it to you."
+You reach for it, but the messenger moves back
+a little. "Sir, this note has traveled a long distance
+to get to you. If you could, please pay a small fee
+to take possession of it."
+Option A: Begrudgingly pay For the note.
+Option B: Refuse to pay for the note.
+/

@@ -1,0 +1,11 @@
+﻿a PAY40 COLLECTIVE GOLD: It s a hefty
+* chunk of money, hut the Sawbones is
+incredibly grateful.
+" This is wonderful! I knew I could count on
+you. This should be enough to put this mess
+behind me and finally allow me to live free.'
+He hands you a potion and thanks you once
+again for all your help.
+Gain 1 collective Super Healing
+Potion (Item.055).
+OTHERWISE: Head outcome B.

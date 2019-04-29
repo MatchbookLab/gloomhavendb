@@ -1,0 +1,10 @@
+﻿The pious man seems incredibly happy
+• you've decided to help the sanctuary. When
+you arrive at the great building, he explains
+in detail all that has happened. Using that
+information, you inquire around town,
+putting out heelers to possible Fences For the
+goods.
+Add City Event
+65 to the deck.
+Otherwise: No effect.

@@ -1,0 +1,12 @@
+﻿Ill: You not only help to train the new
+recruits, hut the Quartermaster is able to
+repair a lot of the guards' damaged armor
+and weaponry. At the end of the day, the city
+is very pleased with your contribution.
+Gain 15 collective gold.
+Gain I reputation.
+OTHERWISE: You spend the day training the
+new recruits. By the time the sun goes down,
+their skills are much improved, and they are
+grateful to you because of it.
+Gain I reputation.

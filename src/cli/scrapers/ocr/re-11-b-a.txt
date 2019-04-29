@@ -1,0 +1,6 @@
+﻿You race forward\ scanning the area for an
+# open space where the danger from rock slides
+will be less severe. After dodging some rocks
+and getting hit by others, you fmd a relatively
+safe area and wait for the chaos to subside.
+All start scenario with 2 damage.

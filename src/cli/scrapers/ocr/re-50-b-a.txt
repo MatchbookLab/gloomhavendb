@@ -1,0 +1,9 @@
+﻿-'v'V*'	;!
+You shrug and grab the staff, half expecting
+• something exciting to happen when you
+do. Instead, nothing happens at all. In fact,
+the staff seems rather mundane. You feel
+no power running through it at all. Still,
+no sense in leaving it behind. It could be
+important.
+Add City Event 68 to the deck.

@@ -1,0 +1,17 @@
+﻿You are awakened in your room
+by a decisive knock at the door: You
+answer it to find a man in the robes of
+the Great Oak.
+"Greetings," the man begins. 'Our sanctuary
+is having a bit of trouble, and Vve been directed
+to you as persons who could possibly help.
+‘ You see, some of our relics have gone missing,
+and we suspect the worst We are hoping
+you might grace us with your assistance in
+investigating this matter.w
+Option A: Agree to help the priest and
+accompany him to the sanctuary.
+Option B: Refuse to help, making some excuse
+about being too busy,
+&
+/

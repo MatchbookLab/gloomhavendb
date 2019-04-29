@@ -1,0 +1,11 @@
+﻿You take pity on an old Orchid woman trying
+to extricate her fortune-teller’s wagon by
+herself. You help her get it back on the road,
+and then she grabs you and looks deep into
+your eyes.
+" Your path is dark and cursed. There is
+a shadow around you — a Gloom. You
+must leave this place. Be rid of it before it
+consumes you. ”
+Gain 2 experience each.
+Ail start scenario with CURSE

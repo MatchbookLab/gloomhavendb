@@ -1,0 +1,15 @@
+﻿Occasionally your dealings in
+town lead you past the bustling
+docks. All conversation gets drowned
+out by the constant din ot loading and
+unloading cargo and crew; This makes it all
+the more surprising when you hear a voice
+above the noise directed straight at you.
+'Oi! You with the hard looks and big arms! I
+desperately need some help o'er here! Spare
+a few minutes to help make sure I get out of
+port on timer Otherwise VII be stuck here until
+tomorrow!"
+Option A: Help the captain load his ship.
+Option B: Move on with your business. You don't
+have the time or inclination tor such things.

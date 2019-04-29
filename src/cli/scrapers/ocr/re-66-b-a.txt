@@ -1,0 +1,13 @@
+﻿:	l!
+You jump into a ditch and cover your head
+• just as the Elder Drake glides over the raiding
+party, breathing a heavy gout of flame into
+their midst. Those not incinerated scream
+and flee for their lives. The drake lands in
+front of you.
+"Intrepid adventurers! I hope / was able to
+offer you some aid against your aggressors. It
+really was my pleasure after all you have done
+for me. I hope you find some things of value
+among the corpses. It is my gift to you.0
+Gain 25 gold each.

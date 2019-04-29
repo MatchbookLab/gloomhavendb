@@ -3,6 +3,7 @@ import { PreloadAllModules, RouterModule } from '@angular/router';
 import { HomeComponent } from './+home/home.component';
 import { LoginComponent } from './+login/login.component';
 import { NotFoundComponent } from './+not-found/not-found.component';
+import { SecretEventsComponent } from './+secret/+events/secret-events.component';
 import { SecretMapComponent } from './+secret/+map/secret-map.component';
 import { SecretShopComponent } from './+secret/+shop/secret-shop.component';
 
@@ -21,7 +22,7 @@ const routes: BetterRoute[] = [
   {
     path: RoutePath.SecretShop,
     component: SecretShopComponent,
-    // loadChildren: './+secret-shop/secret-shop.module#SecretShopModule',
+    // loadChildren: './+secret/+shop/secret-shop.module#SecretShopModule',
     data: {
       title: 'Secret Shop',
     },
@@ -29,9 +30,17 @@ const routes: BetterRoute[] = [
   {
     path: RoutePath.SecretMap,
     component: SecretMapComponent,
-    // loadChildren: './+secret-map/secret-map.module#SecretMapModule',
+    // loadChildren: './+secret/+map/secret-map.module#SecretMapModule',
     data: {
       title: 'Secret Map',
+    },
+  },
+  {
+    path: RoutePath.SecretEvents,
+    component: SecretEventsComponent,
+    // loadChildren: './+secret/+events/secret-events.module#SecretEventsModule',
+    data: {
+      title: 'Secret Events',
     },
   },
   {

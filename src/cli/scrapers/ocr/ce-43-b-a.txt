@@ -1,0 +1,11 @@
+﻿BPAY5 COLLECTIVE GOLD: Sure enough,
+* under the floorboards of his old room, you
+find a bunch of parts, tools, and an intricately
+craf ted metal spider. You package it up and
+ship it off to the Tinkerer. Anything for an
+ola friend.
+Add Citv Event 6l to the deck.
+OTHERWISE: You don't have the money to
+send him the contraption, so you decide just
+to keep it for yourself
+Read outcome B.

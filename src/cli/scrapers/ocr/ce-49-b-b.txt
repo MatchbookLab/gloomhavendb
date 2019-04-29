@@ -1,0 +1,9 @@
+﻿; The Valrath looks at you with
+trepidation, hut after some persuasiont you
+get him to agree*
+Gain 15 collective gold.
+Read outcome A.
+OTHERWISE: The Valrath recoils, insulted by
+the notion. He storms off, grumbling about
+the lost value of friendship.
+No effect.

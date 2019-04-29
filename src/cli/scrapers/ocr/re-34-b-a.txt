@@ -1,0 +1,12 @@
+﻿«D : Your stealth skills prove
+sufficient enough to remain unnoticed by a
+large group oflnox. You decide to let them
+pass by without incident.
+No effect.
+OTHERWISE: You attempt to hide and stay
+quiet, but a snapped twig at an unfortunate
+moment startles the passing band of inox,
+and they pull out weapons and attack. The
+scene turns bloody, and you are barely able
+fight them off.
+All start scenario with 4 damage.

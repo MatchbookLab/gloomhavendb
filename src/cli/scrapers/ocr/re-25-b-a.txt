@@ -1,0 +1,11 @@
+﻿; 7 /70 Inox in your party talks with the
+leader for a while and they are able to come
+to an agreement They punch each other s
+chests, and the group lets you through.
+No effect.
+OTHERWISE: The Inox don't seem to be
+budging on this payment issue, so you are
+forced to pass along a handful of coins. The
+big one smiles and lets you continue on your
+way.
+Lose 5 gold each.

@@ -1,0 +1,10 @@
+﻿You flatly refuse to pay off the Sawbones'
+debt and convince him the only way to escape
+his pursuers is to board a ship bound for the
+eastern continent, far out of their reach. He
+is reluctant but eventually agrees when you
+remind him what unknown adventures await
+in the land across the ocean. You see him off
+in the night and desperately hope that is the
+last you hear of this situation.
+Add City Event 67 to the deck.

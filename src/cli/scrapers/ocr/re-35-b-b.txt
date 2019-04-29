@@ -1,0 +1,13 @@
+﻿BP AY 5 GOLD EACH: You smile .is non-
+• threateningly as you can and reach for your
+coin purse. You try to give them just a couple
+coins, but he enco urages you to donate more.
+Eventually the men seem satisfied and move
+on their way.
+No effect.
+OTHERWISE: When you try to pay with what
+few coins you have, the man thinks you Jre
+holding out on him and grows angry.
+Read outcome A.
+L
+A

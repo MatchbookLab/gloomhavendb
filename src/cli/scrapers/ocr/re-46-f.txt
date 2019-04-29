@@ -1,0 +1,11 @@
+﻿Walking among the foothills,
+you see a steep ridge in Iront of you and
+on top ol it, a very odd rock formation.
+The formation calls to you somehow, but the way up
+is not readily apparent. In fact, climbing the ridge
+looks pretty dangerous, but you just feel like you
+need to get up there and look at the rocks.
+Option A: Take the risk to climb tbe ridge and
+investigate the rocks*
+Option B: Forget about the rocks and continue
+n your journey*

@@ -1,0 +1,11 @@
+﻿: The Quartermaster steps forward with
+smile and hands over a sack of food and gear.
+He is always well-stocked and the Valraths
+are grateful for the aid.
+Gain 1 reputation.
+OTHERWISE: You 7/ need to replace the
+supplies the next time you re in town, but
+you decide you can spare them. The Valraths
+thank you with relief.
+Lose 5 gold each.
+Gain 1 reputation.

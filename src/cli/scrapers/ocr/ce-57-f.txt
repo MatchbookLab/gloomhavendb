@@ -1,0 +1,16 @@
+﻿You ore haggling over the price
+of road rations with an irritating
+Valrath merchant when a messenger
+boy approaches you holding a note.
+“Sir, I have a pressing letter written by a
+powerful Savvas that has come to you from all
+the way across the Misty Sea/ the messenger
+says. 7 ivas told to deliver it directly, ”
+You reach for it, but the messenger moves back
+a little. '.Sir, this note has traveled a very long
+distance to get to you. If you could, please pay a
+small fee to take possession of it."
+Option A: Pay tor the note.
+Option B: Refuse to pay for the note.
+f
+/
