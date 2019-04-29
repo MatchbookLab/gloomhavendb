@@ -4,6 +4,36 @@ import { Column, Entity, PrimaryGeneratedColumn, Unique } from 'typeorm';
 import { props } from '../../server/util/props';
 import { EventType } from '../constants/event-type';
 
+export class EventOutcome {
+  @ApiModelProperty({
+    description: 'The text of the outcome.',
+    example: 'The fight did not go well... Take 2 damage.',
+    required: true,
+  })
+  @IsNotEmpty()
+  @IsString()
+  text: string;
+
+  @ApiModelProperty({
+    description: 'Image URL of everything cropped but the relevant outcome.',
+    example: 'http://example.com/images/event-road-01-a-a-t.png',
+    required: true,
+  })
+  @IsNotEmpty()
+  @IsString()
+  @IsUrl()
+  imageUrl: string;
+
+  @ApiModelProperty({
+    description: 'Whether you lose the card (true) or put it on the bottom of the deck (false).',
+    example: true,
+    required: true,
+  })
+  @IsNotEmpty()
+  @IsBoolean()
+  loseCard: boolean;
+}
+
 export class EventChoice {
   @ApiModelProperty({
     description: 'The matching choice text at the bottom of the front of the card.',
@@ -14,18 +44,14 @@ export class EventChoice {
   @IsString()
   choice: string;
 
-  @ApiModelProperty({
-    description: 'The text of the outcome.',
-    example: 'The fight did not go well... Take 2 damage.',
-    required: true,
-  })
+  @ApiModelProperty({ description: 'Event outcome.', type: EventOutcome, isArray: true })
   @IsNotEmpty()
-  @IsString()
-  outcome: string;
+  @ValidateNested()
+  outcomes: EventOutcome[];
 
   @ApiModelProperty({
     description: 'Image URL of half of the back of the card.',
-    example: 'http://example.com/images/event-road-01-a.png',
+    example: 'http://example.com/images/event-road-01-a-a.png',
     required: true,
   })
   @IsNotEmpty()
