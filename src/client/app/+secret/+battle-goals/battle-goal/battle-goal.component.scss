@@ -1,0 +1,14 @@
+@import '../../../../styles/mixins';
+
+:host {
+  width: 200px;
+  text-align: center;
+  padding: 20px;
+  display: block;
+  border-radius: 6px;
+  background: rgba(#b8d481, 0.3);
+}
+
+h3 {
+  margin-top: 0;
+}

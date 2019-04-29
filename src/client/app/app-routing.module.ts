@@ -3,6 +3,7 @@ import { PreloadAllModules, RouterModule } from '@angular/router';
 import { HomeComponent } from './+home/home.component';
 import { LoginComponent } from './+login/login.component';
 import { NotFoundComponent } from './+not-found/not-found.component';
+import { SecretBattleGoalsComponent } from './+secret/+battle-goals/secret-battle-goals.component';
 import { SecretEventsComponent } from './+secret/+events/secret-events.component';
 import { SecretMapComponent } from './+secret/+map/secret-map.component';
 import { SecretShopComponent } from './+secret/+shop/secret-shop.component';
@@ -41,6 +42,14 @@ const routes: BetterRoute[] = [
     // loadChildren: './+secret/+events/secret-events.module#SecretEventsModule',
     data: {
       title: 'Secret Events',
+    },
+  },
+  {
+    path: RoutePath.SecretBattleGoals,
+    component: SecretBattleGoalsComponent,
+    // loadChildren: './+secret/+battle-goals/secret-battle-goals.module#SecretBattleGoalsModule',
+    data: {
+      title: 'Secret Battle Goals',
     },
   },
   {

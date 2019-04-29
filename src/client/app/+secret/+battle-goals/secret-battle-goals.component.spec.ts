@@ -1,21 +1,21 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { TestBedHelper } from '../../../test/test-bed.helper';
 
-import { SecretEventsComponent } from './secret-events.component';
-import { SecretEventsModule } from './secret-events.module';
+import { SecretBattleGoalsComponent } from './secret-battle-goals.component';
+import { SecretBattleGoalsModule } from './secret-battle-goals.module';
 
 describe('SecretBattleGoalsComponent', () => {
-  let component: SecretEventsComponent;
-  let fixture: ComponentFixture<SecretEventsComponent>;
+  let component: SecretBattleGoalsComponent;
+  let fixture: ComponentFixture<SecretBattleGoalsComponent>;
 
   const config = TestBedHelper.createComponentConfig()
-    .addImports(SecretEventsModule)
+    .addImports(SecretBattleGoalsModule)
     .getConfig();
 
   TestBedHelper.autoConfigureTestingModule(config);
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SecretEventsComponent);
+    fixture = TestBed.createComponent(SecretBattleGoalsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

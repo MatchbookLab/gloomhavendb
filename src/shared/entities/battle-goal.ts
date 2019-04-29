@@ -2,7 +2,6 @@ import { Column, Entity, PrimaryColumn } from 'typeorm';
 
 @Entity()
 export class BattleGoal {
-  // this ID is the little number below the text aka "card number," it is NOT auto-generated
   @PrimaryColumn()
   id: number;
 
@@ -10,10 +9,13 @@ export class BattleGoal {
   name: string;
 
   @Column()
+  isExtendedGoal: boolean;
+
+  @Column()
   text: string;
 
   @Column()
-  checkmarks: 1 | 2;
+  checks: 1 | 2;
 
   @Column()
   imageUrl: string;

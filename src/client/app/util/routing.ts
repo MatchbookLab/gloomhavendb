@@ -15,4 +15,5 @@ export enum RoutePath {
   SecretShop = 'secret/shop',
   SecretMap = 'secret/map',
   SecretEvents = 'secret/events',
+  SecretBattleGoals = 'secret/battle-goals',
 }

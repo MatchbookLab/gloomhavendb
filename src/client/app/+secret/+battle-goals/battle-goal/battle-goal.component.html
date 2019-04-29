@@ -1,0 +1,12 @@
+<h3>
+  {{ battleGoal.name }}
+</h3>
+
+<p>
+  {{ battleGoal.text }}
+</p>
+
+<div>
+  <fa-icon [icon]="'check'"></fa-icon>
+  <fa-icon *ngIf="battleGoal.checks === 2" [icon]="'check'"></fa-icon>
+</div>

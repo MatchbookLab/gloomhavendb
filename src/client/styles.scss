@@ -37,6 +37,7 @@ body {
 
 @include button(#eee);
 @include button(#4b8cf5, '-secondary');
+@include button(#f43e37, '-danger');
 
 // Breakpoint Helper (for dev only)
 // --------------------------------

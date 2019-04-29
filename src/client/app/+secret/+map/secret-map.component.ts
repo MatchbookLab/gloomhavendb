@@ -289,6 +289,18 @@ export class SecretMapComponent implements OnInit {
         available: true,
         inaccessible: false,
       },
+      {
+        number: 17,
+        completed: false,
+        available: true,
+        inaccessible: false,
+      },
+      {
+        number: 47,
+        completed: false,
+        available: true,
+        inaccessible: false,
+      },
     ];
 
     forEach(this.stickers, sticker => assign(sticker, find(onTheBoard, { number: sticker.number })));

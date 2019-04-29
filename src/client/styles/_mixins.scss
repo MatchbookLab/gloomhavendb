@@ -4,6 +4,13 @@
   .btn#{$suffix} {
     background: $color;
     border: darken($color, 20%);
+
+    &[disabled],
+    &.disabled {
+      color: #666;
+      background: #aaa;
+      cursor: not-allowed;
+    }
   }
 }
 
