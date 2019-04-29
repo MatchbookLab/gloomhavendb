@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { events } from '../../../../data/events-raw';
 import { EventType } from '../../../../shared/constants/event-type';
-import { Event, EventOutcome } from '../../../../shared/entities/event';
+import { Event } from '../../../../shared/entities/event';
 
 @Component({
   selector: 'gdb-secret-events',
@@ -18,13 +18,5 @@ export class SecretEventsComponent implements OnInit {
 
   async ngOnInit() {
     this.selectedEvent = events[1];
-  }
-
-  addOutcome(outcomes: EventOutcome[]) {
-    outcomes.push(<EventOutcome>{});
-  }
-
-  removeOutcome(outcomes: EventOutcome[]) {
-    outcomes.pop();
   }
 }
