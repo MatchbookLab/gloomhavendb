@@ -63,11 +63,13 @@ Promise.all(
   }),
 )
   .then(() => {
-    const str = `import { Event } from '../shared/entities/event';\n\nexport const events: Event[] = ${JSON.stringify(
-      events,
+    const str = `import { EventType } from '../shared/constants/event-type';\nimport { Event } from '../shared/entities/event';\n\nexport const events: Event[] = ${JSON.stringify(
+      _.sortBy(events, event => event.type + _.padStart(event.number + '', 2, '0')),
       null,
       2,
-    )}`;
+    )}`
+      .replace(/"type": "Road"/g, 'type: EventType.Road')
+      .replace(/"type": "City"/g, 'type: EventType.City');
     fs.writeFileSync(path.join(__dirname, '../../data/events-raw.ts'), str, { encoding: 'utf8' });
   })
   .catch(err => {
