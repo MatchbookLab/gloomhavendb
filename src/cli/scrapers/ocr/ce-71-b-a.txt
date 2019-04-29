@@ -1,0 +1,14 @@
+﻿The sphere leaps from your hand, hovers
+* over the water, and then emits an intense
+beam of light straight down into the river,
+illuminating something below.
+You shrug and jump into the river, following
+the beam of light down to the bottom. There
+vou ftnd a wooden chest hall buried under
+the rocks. You bring it back to shore and
+open it to find a small metal rod covered in
+strange carvings. When you pick it up, the
+sphere immediately flics back over to you and
+attaches itself to the rod's end.
+Add Citv Event J2 to the deck.
+r	'

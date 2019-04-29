@@ -1,0 +1,7 @@
+﻿You're not sure exactly what happened to
+the Sunkceper after she left the party, but
+you tell the demons everything you know:
+They seem satished with your response and
+even offer a bitter thanks as they fly off to
+the west.
+Add Road Event 6l to the deck.

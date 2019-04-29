@@ -1,0 +1,11 @@
+﻿Lighting a torch, you see a number of
+passages leading out of the stone room.
+Unlazed, you head down one of them and
+begin exploring the network of chambers. In
+one, you find a pedestal and. sitting atop that,
+a small, metal sphere.
+You take the strange sphere and continue
+your search, but the only other remarkable
+thing you find is an exit.
+Add City Event J\ to the deck.
+All start scenario with 1 damage.

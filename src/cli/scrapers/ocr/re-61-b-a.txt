@@ -1,0 +1,5 @@
+﻿1
+Not wanting to get involved, you simply move
+• on. Eventually the screams of the Sunkeeper
+fade away.
+Add Road Event 62 to the deck.

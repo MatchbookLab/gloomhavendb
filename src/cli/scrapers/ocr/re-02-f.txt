@@ -1,0 +1,10 @@
+﻿You are feeling a tad hungry
+as you walk down the road. tow are
+considering stopping lor a meal when you come
+across a thicket of bushes covered in green berries.
+. ' . . ..
+The berries look delicious, but you hesitate. They
+could be poisonous.
+Option A: Eat the berries.
+Option B: Pass by the berries and just eat your
+normal rations.

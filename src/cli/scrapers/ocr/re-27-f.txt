@@ -1,0 +1,11 @@
+﻿Walking a path between a small
+grove and a steep cliff, you suddenly find
+blocking the road1
+of felled
+The placement of the trees seems odd\ and you have
+a wary suspicious feeling about the whole situation*
+--i if '	, . ,
+Option A: Clear the trees from the road. It is the
+best way through and will help other travelers.
+Option B: 'ake the time to find a way around the
+rees.

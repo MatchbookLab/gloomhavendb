@@ -1,0 +1,18 @@
+﻿You there! Stop!
+You turn to see a city guard walking
+briskly toward you.
+")ou are known associates of this woman,
+yes?" He holds up a crude sketch of the
+Scoundrel. "We believe she is behind a number
+of high profile robberies and demand (hat
+you give us any information you have on her
+whereabouts and activities.”
+His face softens a bit. Look. / know vou guys
+do a lot of good for the city, but the merchant
+guild is breathing down my neck on this one, and
+I could really use a lead."
+£ ag, "	T.	,	i	- A; V;
+Option A: Cooperate with the guard and tell him
+everything you know.
+Option B: Be as vague and unhelpful as possible,
+giving no useful information.

@@ -1,0 +1,7 @@
+﻿You rifle through the corpses, grabbing stray
+• coins and valuables as you go. You make off
+with a good haul, but you start feeling sick as
+soon as you re done.
+All start scenario with POISON Q
+All start scenario with CURSE^ .
+Gain 10 collective gold.

@@ -1,0 +1,18 @@
+﻿You are wandering through the
+city streets late at night when you
+hear a terrifying scream high above
+you. >ou look up /ust in time to see a body
+falling toward vou and jump out of the way.
+It lands with a wet thud on the ground. You
+were not the only ones to hear the scream, and
+quickly a small crowd forms around the corpse,
+including a couple of city guards.
+The body is clad in black leather armor, and a
+long, thin blade conspicuously protrudes from
+its back. You remark that the sword somehow
+looks familiar.
+“What?" asks a guard. “This is the third murder
+like this in a week. Tell me everything vou know! "
+Option A: Tell the guard that the sword belongs
+to the Nightshroud, your former party member.
+Option B: Lie and claim you know nothing.

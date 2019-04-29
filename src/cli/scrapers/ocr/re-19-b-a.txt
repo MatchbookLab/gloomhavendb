@@ -1,0 +1,12 @@
+﻿REPUTATION < -4: You chase after the
+sprinting man, but the guards conclude you
+must be an accomplice trying to help him.
+They shoot arrows in your direction, forcing
+you to retreat from the situation.
+No effect.
+O THER WISE: The man's speed after
+spending months in a jail cell is no match for
+your own. With the help of the guards on
+horseback, you quickly have him cornered
+and returned to the wagon.
+Gain 1 reputation.

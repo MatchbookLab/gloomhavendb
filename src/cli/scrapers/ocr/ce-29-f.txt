@@ -1,0 +1,23 @@
+﻿rou get word from a contact
+that there is trouble brewing
+down at the East Walls and decide to
+investigate.
+What you hnd is a large contingency of the
+city's Savvas workforce — the best builders
+you’ll hnd anywhere in open rebellion
+against the construction managers, demanding
+better pay for the specialized work they
+perform.
+'7his city would he a lifeless pile of rocks without
+us!*f one of the Savvas yells. “Its time we see
+some of its prosperity!”
+The manager on the other side of the argument
+looks like a captured mouse, not sure at all how
+to get out of the situation.
+Option A: Talk to the Savvas, appealing to their
+sense of duty and community.
+Option B: Talk to the managers and attempt to
+get the Savvas better pay.
+Hfa
+f	WL,
+I	b,________________

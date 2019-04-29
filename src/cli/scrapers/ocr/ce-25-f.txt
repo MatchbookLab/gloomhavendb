@@ -1,0 +1,12 @@
+﻿On a trip to the Coin District,
+you catch sight of an old wiry
+Valrath carrying a large, intricate vase
+out his front door.
+/Is you get closer, the Valrath begins to
+struggle with the vase, sweat pouring from his
+brow. Under the strain, the Valrath loses his
+balance, and the fragile vase topples downward
+as he yells a string of curses.
+Option A: Attempt to catch the vase.
+Option B: With no time to reactr watch the vase
+fall to the ground.

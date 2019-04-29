@@ -1,0 +1,16 @@
+﻿You arc approached on the road
+by a group of men on horseback. They
+don t immediately seem menacing, hut they are
+formidable and well organized.
+One of the men, who wears plate armor and has a
+sword at his side, addresses you coldly You hail
+from Gloomhaven, correct? What say you about
+the politics of the place? Are you for or against
+military rule in the region? Do you think those loot
+merchants could do a better job, like they 're doing
+with the rest of this doomed land?"
+Looking closer; you see all the men wear the signet
+of a tower with an eye at its center
+Option A: Claim allegiance to the military.
+Option R: Claim allegiance to the merchant
+guilds.

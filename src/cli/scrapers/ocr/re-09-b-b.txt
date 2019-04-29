@@ -1,0 +1,7 @@
+﻿You adopt an expression of regret and
+apologize for a lack of supplies. You then
+quickly move on your way as he shouts at
+your back.
+“But...please! You’re not just going to leave
+me here, are you?"
+Lose 1 reputation.

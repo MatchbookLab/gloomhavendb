@@ -1,0 +1,12 @@
+﻿PAY 10 COLLECTIVE COLD: >'ou /um/over
+the gold and take hold of the metal. You wipe
+off the grime and slop to discover a foreign
+contraption made of large gears and many
+moving parts. If you can hgure out what it is.
+this device might actually be of some worth.
+Gain I collective Curious Gear"
+; Item 125).
+Global Achievement:
+“Ancient Technology."
+OTHERWISE: "Bah! You don't have enough.
+Come back when you do! '

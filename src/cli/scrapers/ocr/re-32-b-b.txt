@@ -1,0 +1,6 @@
+﻿You apologize curtly and continue on your
+way. The Valraths seem disappointed, but
+vaguely understanding. It doesn't stop them
+from whispering things about you to each
+other as you walk away.
+Lose 1 reputation.

@@ -1,0 +1,5 @@
+﻿You head into the underbrush of the grove
+to get around the felled trees, but it is rough
+going. The growth is very dense and there are
+quite a few prickly thorns to contend with.
+All start scenario with 2 damage.

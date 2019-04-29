@@ -1,0 +1,13 @@
+﻿.•Fortunately, some of your group
+excels when in a defensive position, and the
+tide of the battle clearly turns once they take
+command of the situation. The Vermlings are
+driven off and the caravan is saved.
+Gain 2 reputation.
+OTHERWISE: You try to save the guards,
+but end up in their same predicament. You
+manage to fight off the Vermlings, but not
+before all the guards and merchants are
+killed.
+All start scenario with 3 damage.
+Gain 5 gold each.

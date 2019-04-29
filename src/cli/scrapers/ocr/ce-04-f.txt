@@ -1,0 +1,13 @@
+﻿Having recently returned from
+your latest adventure, you are
+approached by a ratty-looking boy in
+tears.
+"Please, sirs, could you please help me with
+my cat? He went over there, and I’m afraid."
+the boy points a dirty finger at a decrepit,
+abandoned building. "I don't know what else
+to do."
+♦
+Option A: Find a cat? You have more important
+things to do.
+Option B: Reassure the boy and go find the cat.

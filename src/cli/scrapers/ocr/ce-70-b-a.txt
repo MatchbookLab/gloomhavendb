@@ -1,0 +1,12 @@
+﻿B REPUTATION > 9: You head to the Coin
+# District and meet with a member of the
+merchant s guild you've had dealings with
+before. He looks at you skeptically, but says
+he will see what he can do about making the
+area more livable.
+Gain I prosperity.
+OTHERWISE: Every merchant you try to
+talk to about the issue laughs you out of the
+room. Whv help others when there is no prof-
+it in it for them?
+Lose l reputation.

@@ -1,0 +1,18 @@
+﻿7 vc been told you are the
+group to talk to it you want to get
+something done around here.'
+You look up from your tabic at the Sleeping
+Lion to see a rustic man in leather armor
+standing in front of you.
+This tavern may as well be your office, due to
+the number of people coming through the doors
+looking for your help: You nod at the man, and he
+makes his request.
+.. 4	«
+"My brother went out bunting in the Corpsewood
+two days ago and hasn't relumed since, i fear the
+worst. If you are traveling in that direction, I hope
+you wouldn t mind keeping an eye out for him."
+Option A: Demand payment up Front before
+agreeing to look for the man's brother.
+Option B: Agree to help the man in his search.

@@ -1,0 +1,13 @@
+﻿“Yes, verv interesting, ' a bookish Quatryl
+• savs os he rolls the crystal over in his hand.
+“It seems os if this crystal is attuned to a
+specific location, and once removed, it begins
+vibrating until mountains and houses start
+falling down. I'd sav you need to return it to
+its proper home. \ \ ith the proper tools —
+which I II need help pa ving for — / should be
+able to triangulate that location for vou.
+Lose 5 collective gold.
+Unlock Crystalline Cave" 84
+(CM2:.
+Partv Achievement: "Tremors.'

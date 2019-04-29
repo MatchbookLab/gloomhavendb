@@ -1,0 +1,11 @@
+﻿REPUTATION > 14: “Excellent!Someone has
+been attacking my ships at sea and I need to
+get to the bottom of'it. Come, I’ll tell you the
+details."
+Unlock Merchant Ship (74)0 ’4).
+Party Achievement:
+“High Sea Escort."
+OTHERWISE: "Oh. whoops."Gavin
+stammers. "From far away, you looked like
+someone else. Just ignore what I said.'
+No elfect.

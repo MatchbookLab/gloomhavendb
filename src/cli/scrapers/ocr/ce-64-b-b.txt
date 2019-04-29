@@ -1,0 +1,8 @@
+﻿*The Sin-Ra Syndicate seems to think
+you have something to do with this/ the
+Nightshroudyells at you as you leave. That s
+alt that matters! They II strike again, and
+I won 't be there to protect you!” You keep
+walking.
+Add Road Event 64 to the deck.
+▼

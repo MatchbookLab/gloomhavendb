@@ -1,0 +1,12 @@
+﻿*#•) ; The darkness gives the less
+scrupulous among you a good chance to
+perform their craft. Within a matter of
+minutes, vour coin purses are much heavier.
+Gain 10 collective gold.
+OTHERWISE: Vou attempt to lighten some
+purses, hut even in (he dark, you find the
+task a little outside your skill set. One patron
+catches your hand as it searches his belt.
+He starts yelling, and you flee as quickly as
+possible.
+Lose 1 reputation.

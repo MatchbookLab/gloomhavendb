@@ -1,0 +1,12 @@
+﻿: You shake your head at the
+guard, saying you must have been mistaken.
+You thought the sword looked similar to one
+carried by a friend\ but, looking closer, there
+are distinct differences. The guard shrugs
+and goes back to examining the scene.
+No effect.
+OTHER WISE: You laugh and make up some
+poor explanation about seeing a similar
+sword on a bandit in a crypt. The guard eyes
+you suspiciously.
+Lose 1 reputation.

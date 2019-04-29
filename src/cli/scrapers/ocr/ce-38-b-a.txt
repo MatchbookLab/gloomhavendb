@@ -1,0 +1,14 @@
+﻿; The Orchid on the ground puls
+up no defense, hut your group isa different
+matter. The man quickly backs down at
+the sight of a powerful Orchid ready to
+attack, and the crowd disperses, muttering
+disappointment.
+Gain I prosperity.
+Lose I reputation.
+OTHERWISE: You trv to talk some sense into
+«*
+the man, and when that doesn t work, you
+beat him senseless. The crowd seems happy
+and the Orchid thanks you for your aid.
+Gain I prosperity.

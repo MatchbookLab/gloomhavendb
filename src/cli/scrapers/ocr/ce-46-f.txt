@@ -1,0 +1,12 @@
+﻿Anticipating an enjoyable night
+ol drinks at the Sleeping Lion, you
+enter the tavern to sec a familiar Savvas
+sitting at your usual table. The Cragbeart
+stands and extends both its arms.
+“Ah, friends! So good to see youf it says. “Sit!
+Have a drink with me!
+Option A: Have a drink with the Cragheart.
+1 . _	p| ^	•
+Option B: Encourage the Cragheart to move on
+with its life.
+/

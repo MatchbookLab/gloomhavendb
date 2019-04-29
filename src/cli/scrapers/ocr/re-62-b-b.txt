@@ -1,0 +1,9 @@
+﻿Without even speaking, you draw your
+weapons and attack. The demons are caught
+offguard, but they bounce back with great
+ferocity, ft is a long, brutal battle, and you
+continue on in your adventure greatly
+wounded and bloody.
+All start scenario with MUDDLE ^.
+All start scenario with WOUND
+All start scenario with 3 damage.

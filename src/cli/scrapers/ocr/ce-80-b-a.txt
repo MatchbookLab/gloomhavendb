@@ -1,0 +1,13 @@
+﻿if* Jj : You Adopt a serious tone and
+do your best to communicate dun you fuid
+nothing to do with what was written in the
+Town Records. You express remorse for their
+hardships, and, miraculously, the mob prow's
+calmer and disperses.
+No effect.
+OTHERWISE: You laugh and claim that
+this is all some big misunderstanding. The
+guards don't see it that way, but your lack of
+aggression at least stops them from attacking
+you. They leave, grumbling threats.
+Lose I reputation.

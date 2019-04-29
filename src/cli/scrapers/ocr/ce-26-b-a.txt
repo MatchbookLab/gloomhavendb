@@ -1,0 +1,13 @@
+﻿* You quickly identify the source of
+the problem — some frayed wiring in the
+kitchen — and have it replaced in no time.
+The proprietor seems very impressed by your
+work and gives free drinks all around in your
+name.
+Gain 2 reputation.
+OTHERWISE; You fumble about
+magnanimously for a while before concluding
+that you have no idea what you're doing. The
+proprietor looks disappointed and sends out
+for a real tinkerer.
+No effect.

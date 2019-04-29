@@ -1,0 +1,10 @@
+﻿You head into the warehouse and search,
+eventually finding a hidden cache of stolen
+goods. The thieves, however, are nowhere to
+be found. You think about waiting for them
+to return, but it s possible they have already
+been alerted to your presence. return to
+the sanctuary, where the priest is pleased to
+have the artifacts returned, but troubled that
+the thieves are still out there.
+Gain 2 reputation.

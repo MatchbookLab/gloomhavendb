@@ -1,0 +1,14 @@
+﻿♦#
+f Vbu jump under an
+outcropping/but something is not right.
+Those among you attuned to the elements
+turn towardthe face of the mountain and
+step into it, as though the rocks were gone,
+Inside, you see an odd crystal jutting out of
+the earth. Vbu snatch it upt and the tremors
+stop.
+Add City Event 73 to the deck.
+OTHERWISE: The outcropping proves to
+be an unstable place to hide. You are quickly
+buried in rubble.
+All start scenario with 4 damage.

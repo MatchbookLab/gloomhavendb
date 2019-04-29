@@ -1,0 +1,7 @@
+﻿Unwilling to be bothered by such trivial
+• matters, you continue on your way amidst
+curses from the ship's captain. Blast it all!
+You'll get nowhere in life with that sort of
+attitude!"
+Reputation > 4: Gain 1 reputation.
+Reputation < -9: Lose I reputation.

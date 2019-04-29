@@ -1,0 +1,14 @@
+﻿As you crest a hill, you see a
+flock of carrion birds scatter to the east.
+They must have been feasting on something, so
+you decide to investigate.
+After a short walk, you come upon a mans corpse,
+badly decayed and mangled, lying in the dirt« His
+face is a bloody messf but you do see a distinctive
+chain around his neck and recall the description the
+man from the Sleeping Lion gave you of his brother:
+This is very likely him.
+Option A: Bury the man and bring the chain back
+to his brother.
+Option B: Take the chain for yourself and don't
+tell the brother.

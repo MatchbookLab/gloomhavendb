@@ -1,0 +1,6 @@
+﻿You explain to the Brute that you have a long
+day's travel ahead of you and cannot take the
+time to travel in the other direction. As you
+make your good-byes, a shadow falls over
+him. He walks away forlorn.
+Add Road Event 60 to the deck.

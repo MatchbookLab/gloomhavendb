@@ -1,0 +1,13 @@
+﻿REPUTA T10N < -4- You pick up an
+unremarkable set of silverware on the wav
+to the event. When you arrive, the father
+of the bride casts a scornful look vour wav
+J	w
+and begins whispering to those around him.
+Maybe you received the invitation by mistake.
+Lose 5 collective gold.
+Lose 1 reputation.
+OTHERWISE: You are one guest among
+many, and everyone is having too good of a
+time to notice your poor choice ih gifts.
+Lose 5 collective gold.

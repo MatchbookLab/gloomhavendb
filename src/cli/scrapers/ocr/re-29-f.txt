@@ -1,0 +1,12 @@
+﻿Walking among some foothills,
+you enters narrow valley and finds large
+pile of stones blocking your way. Clearly a rock
+slide occurred here recently.
+You move closer to the pile and despair at just how
+large the stones are. Only someone of great strength
+and skill could clear a path efficiently;
+* ■ -• . *
+Option A: Attempt to clear the stones from the
+path.
+Option B: Backtrack and find a way around the
+tone-filled valley.

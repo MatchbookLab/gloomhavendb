@@ -1,0 +1,12 @@
+﻿) ou watch as the men move past you toward
+the gibbet. One carries a thick rope that
+• he ties around the Vermling 's neck. The
+other end of the rope is thrown over the
+cross beam and then the men begin pulling,
+hoisting the helpless thief up off his feet. He
+struggles in vain, a panicked look in his eyes,
+but eventually he stops moving. The men tie
+off the rope, leaving the lifeless thief hanging.
+People begin to mill about, many stopping to
+spit on the ground before returning to work.
+Add City Event 60 to the deck.

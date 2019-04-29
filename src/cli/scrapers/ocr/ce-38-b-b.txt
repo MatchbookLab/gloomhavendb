@@ -1,0 +1,12 @@
+﻿# <p ; After a good beating, the crowd is
+riled up. Many people start looking in your
+direction, muttering about how you have the
+nerve to associate with Orchids as well. You
+make a quick exit.
+Lose I reputation.
+OTHERWISE: The Orchid puts up no defense
+and the "fight "becomes rather one-sided. A
+solid beating is administered, and the crowd
+is sated. You go about your business while the
+Orchid bleeds on the ground.
+No effect.

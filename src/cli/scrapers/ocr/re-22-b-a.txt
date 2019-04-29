@@ -1,0 +1,11 @@
+﻿You put down some boards and then heave
+and push until the great wagon is out oi
+the ditch and moving back on the road. The
+diminutive Quatryl tips his hat.
+"Well, I certainly could not have done that
+on my own. Your assistance is greatly
+appreciated. I tell you what — the next time
+were back in Gloomhaven, why don't you
+stop by our circus, and we 'll let you in for
+free."
+Add City Event 74 to the deck.

@@ -1,0 +1,11 @@
+﻿1
+You quietly move through the forest toward
+the noise. Eventualfyyou come upon a
+clearing where you see a circle of cultists
+performing some strange ritual. One of them
+notices you and shouts to the others. The
+situation devolves into a bloody battle. You
+arer ol course, victorious, but it saps some ol
+your strength.
+Gain 5 experience each.
+Lose 1 each.

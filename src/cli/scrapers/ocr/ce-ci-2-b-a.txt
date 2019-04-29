@@ -1,0 +1,12 @@
+﻿
+: Determining that whatever
+smells that bad cannot possibly be good, you
+steel yourself to climb out into the natural
+cavern. Luckily; <A/e to your elemental
+prowess and natural climbing skills,
+traversing up the rocky incline is not difficult
+at ali In fact, an hour into your climb, you
+notice a small deposit of gems in the cliff face
+and are able to climb up and collect them
+as well
+Gain 20 collective gold.

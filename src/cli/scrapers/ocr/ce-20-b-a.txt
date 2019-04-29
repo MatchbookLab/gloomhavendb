@@ -1,0 +1,13 @@
+﻿REPUTATION > 9: You head to the warehouse
+and watch in silence as a number of heavy
+crates are loaded onto a cart; >01/ then escort
+the cart to the West Gate♦ No thefts are
+attempted, and you are paid well.
+Gain 10 collective gold.
+OTHERWISE: Volt head to the warehouse
+and are immediately set upon by a group of
+thieves. However, they prove no match for
+your expertise and are quickly dispatched,
+Grey mane thanks you.
+Gain 5 experience each.
+Gain 10 collective gold.

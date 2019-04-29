@@ -1,0 +1,12 @@
+﻿The Nightshroud kicks one of the corpses.
+" This is the SinRa Syndicate, a group of
+assassins trying to gain a foothold in the
+region. I 'm trying to stop them, and somehow
+they found out you and I u ere friends. They
+decided logo after vou as retribution. Lucky
+for you. I've locatcJ their hideout, so were
+going to sneak in there and end this whole
+business once and for all. “
+Unlock “Syndicate Hideout (89
+(C-17).
+Party Achievement: "Sin-Ra."

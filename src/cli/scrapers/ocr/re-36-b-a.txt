@@ -1,0 +1,13 @@
+﻿\wjpft	1
+: The wood is overgrown and
+' rampant with all manner of insects, but with
+difficulty, you follow the path. Somewhere
+deep inside, you come across a stone pedestal
+with the following scratched into its base:
+XmWT -KKT W3T ART >-1*11,
+WIT -NKT M'W'lC - 8172.
+OTHERWISE: You follow the path into the
+wood and become hopelessly lost. The going
+is hard and painful.
+All start scenario with POISON
+All start scenario with 2 damage. +8%

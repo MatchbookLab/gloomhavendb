@@ -1,0 +1,13 @@
+﻿REPUTATION - 9. PAY20 COLLECTIVE
+COLD: You head to the New Market and
+find a magnificent vast" to bring as a gif t.
+When the father of the bride sees it, he
+declares it the most wonderful piece he 's ever
+encountered. )oty are the talk ol the town.
+G^in 2 reputation.
+REPUTATION < 10, PAY20 COLLECTIVE
+COLDi You bring a very expensive vase as a
+gift, but you can t seem to catch the father of
+the bride s eve to present it at the right time.
+No
+OTHERWISE: Read outcome B.

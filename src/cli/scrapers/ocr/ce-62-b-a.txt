@@ -1,0 +1,12 @@
+﻿You faugh for a while and trade tales, ,4s the
+sun drops below the tavern windows, the
+Scoundrel gets up to leave.
+"Listen, I really did enjoy our time together,
+and, well, I just wanted to leave you with
+something to remember me by."
+A piece of black cloth flutters down onto the
+table. When you look back up, the Scoundrel
+is gone.
+(Item 109)-
+11
+Ihief s l lood

@@ -1,0 +1,12 @@
+﻿You enter the fortune-teller s tent and the old
+Orchid woman s expression immediately goes
+dark; She gestures you to sit at her tableT and
+when you do, she grabs your arm and looks
+deep into vour eyes.
+*Your path is dark and cursed\ There is a
+shadow around you — a Gloom. You must
+leave this place. Be rid of it before it con-
+sumes vou*
+ml
+All start scenario with CURSE
+Gain 2 experience each.

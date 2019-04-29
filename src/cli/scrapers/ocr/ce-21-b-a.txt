@@ -1,0 +1,12 @@
+﻿REPUTATION > 7: ’What? L. Oh. very well."
+• the man stutters. “Since I trust you to keep
+your word, I'll give you a little money for your
+trouble." The man describes his brother and
+hands you a small coin pouch.
+Gain 5 collective gold.
+Add Road Event 65 to the deck.
+OTHERWISE: The man puffs up in
+indignation, letting you know he is insulted
+by your behavior. He storms out of the t,ivern
+in a rage.
+No effect.

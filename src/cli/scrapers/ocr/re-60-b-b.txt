@@ -1,0 +1,6 @@
+﻿Near the corpse of the Brute, you find an
+axe, presumably the weapon he threw away
+There's really nothing else among the debris,
+so you wordlessly pick it up and move on.
+Gain 1 collective "Battle-Axe"
+(Item 018).

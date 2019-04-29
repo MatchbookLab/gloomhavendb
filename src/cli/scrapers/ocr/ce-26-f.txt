@@ -1,0 +1,15 @@
+﻿While enjoying vour customary
+post-adventure drink at the Sleep-
+ing Lion, you notice something weird
+going on with the lamps in the bar.
+Your first thought is that it is your imagination,
+hut after staring at the lamps intently, you see
+t hev are flickering in and out. lech lamps, as
+opposed to normal gas-burning ones, have
+been known to be a bit unreliable.
+% if on cue, the lamps suddenly go out com-
+pletely, leaving the room pitch-black.
+Option A: Offer to fix the lamps. It shouldn't be
+too hard with a bit of technical know-how.
+Option B: Take tlie opportunity to steal some
+valuables from drunk patrons in the dark.

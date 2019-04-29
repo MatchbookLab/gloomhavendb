@@ -1,0 +1,13 @@
+﻿: You push your way to the front
+of the mob and stop the men as they enter
+the store. Clearly emotions have gotten
+the better of these people. Through a calm
+demeanor, you are able to talk the mob down.
+A sense of relief washes over the crowd.
+Gain I reputation.
+OTHERWISE: You kindly entreat the crowd
+to back down. It gets a little rough, but it
+becomes clear the crowd isn't fully into
+it. After knocking a few heads, the mob
+disperses.
+No effect.

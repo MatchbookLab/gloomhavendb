@@ -1,0 +1,16 @@
+﻿You head to the Sinking Market,
+hoping to find some cheap supplies,
+when you are surprised to see a crowd
+gathering in the distance. You push your
+way through and see a host of dead bodies
+in the street, covered in insects and strange
+pustules in their skin.
+\!earby, a woman screams in terror and runs
+away. Other more curious onlookers inch clos-
+er, trying to get a better view of the grotesque
+scene.
+Option A: Help to dispose of the corpses as
+quickly as possible.
+Option B: Investigate the corpses.
+/
+I
