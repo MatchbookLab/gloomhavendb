@@ -3,13 +3,26 @@
 @mixin button($color, $suffix: '') {
   .btn#{$suffix} {
     background: $color;
-    border: darken($color, 20%);
+    border: $color 3px solid;
 
-    &[disabled],
+    &:disabled,
     &.disabled {
       color: #666;
       background: #aaa;
+      border-color: #aaa;
       cursor: not-allowed;
+    }
+
+    &:active,
+    .active {
+      background: darken($color, 20%);
+      outline: 0;
+    }
+
+    &:focus,
+    .focus {
+      border-color: darken($color, 20%);
+      outline: 0;
     }
   }
 }

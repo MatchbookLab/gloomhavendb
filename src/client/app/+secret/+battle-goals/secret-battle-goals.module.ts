@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 import { FaIconService, FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faCheck } from '@fortawesome/free-solid-svg-icons';
+import { faCheck, faTimes } from '@fortawesome/free-solid-svg-icons';
 import { GdbFormsModule } from '../../shared/forms.module';
 import { BattleGoalComponent } from './battle-goal/battle-goal.component';
 
@@ -31,5 +31,6 @@ export class SecretBattleGoalsModule {
   constructor(private faIconService: FaIconService) {
     this.faIconService.defaultPrefix = 'fas';
     library.add(faCheck);
+    library.add(faTimes);
   }
 }
