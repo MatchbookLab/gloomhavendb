@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { clone, random } from 'lodash';
 import { battleGoals } from '../../../../data/battle-goals';
 import { BattleGoal } from '../../../../shared/entities/battle-goal';
+import { ScrollingService } from '../../services/scrolling/scrolling.service';
 
 enum StoreKey {
   BattleGoalListKey = 'BATTLE_GOAL_LIST',
@@ -21,6 +22,8 @@ export class SecretBattleGoalsComponent implements OnInit {
   playersGoals: BattleGoal[] = [];
   peekedGoal: BattleGoal;
   canVeto: boolean;
+
+  constructor(private scrollingService: ScrollingService) {}
 
   async ngOnInit() {
     this.battleGoals = this.load(StoreKey.BattleGoalListKey);
@@ -47,6 +50,7 @@ export class SecretBattleGoalsComponent implements OnInit {
     this.pickingBattleGoals[1] = this.getRandomGoal();
 
     this.store(StoreKey.BattleGoalListKey, this.battleGoals);
+    this.scrollingService.lock();
   }
 
   vetoGoal(index: number) {
@@ -61,14 +65,17 @@ export class SecretBattleGoalsComponent implements OnInit {
     this.pickingBattleGoals = [];
 
     this.store(StoreKey.PlayersBattleGoalsKey, this.playersGoals);
+    this.scrollingService.unlock();
   }
 
   showPlayerGoal(battleGoal: BattleGoal) {
     this.peekedGoal = battleGoal;
+    this.scrollingService.lock();
   }
 
   dismissPlayerGoal() {
     this.peekedGoal = null;
+    this.scrollingService.unlock();
   }
 
   private getRandomGoal(): BattleGoal {

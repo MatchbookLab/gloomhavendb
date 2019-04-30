@@ -29,6 +29,7 @@ body {
 // buttons
 .btn {
   padding: 8px 10px;
+  cursor: pointer;
 
   & + & {
     margin-left: 8px;
