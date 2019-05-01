@@ -6,7 +6,7 @@ import { FaIconService, FontAwesomeModule } from '@fortawesome/angular-fontaweso
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faCheck, faTimes } from '@fortawesome/free-solid-svg-icons';
 import { BattleGoalModule } from '../../shared/battle-goal/battle-goal.module';
-import { GdbFormsModule } from '../../shared/forms.module';
+import { GdbFormsModule } from '../../shared/forms/forms.module';
 
 import { SecretBattleGoalsComponent } from './secret-battle-goals.component';
 

@@ -4,12 +4,13 @@ import { FaIconService, FontAwesomeModule } from '@fortawesome/angular-fontaweso
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faCheck, faTimes } from '@fortawesome/free-solid-svg-icons';
 import { FitTextModule } from '../fit-text/fit-text.module';
+import { IconModule } from '../icon/icon.module';
 import { BattleGoalComponent } from './battle-goal.component';
 
 const declareAndExport = [BattleGoalComponent];
 
 @NgModule({
-  imports: [CommonModule, FontAwesomeModule, FitTextModule],
+  imports: [CommonModule, FontAwesomeModule, FitTextModule, IconModule],
   declarations: declareAndExport,
   exports: declareAndExport,
 })

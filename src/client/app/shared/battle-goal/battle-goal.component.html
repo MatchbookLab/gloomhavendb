@@ -9,6 +9,6 @@
 </div>
 
 <div class="checks">
-  <fa-icon [icon]="'check'"></fa-icon>
-  <fa-icon *ngIf="battleGoal.checks === 2" [icon]="'check'"></fa-icon>
+  <gdb-icon [size]="40" [icon]="Icon.Check"></gdb-icon>
+  <gdb-icon [size]="40" *ngIf="battleGoal.checks === 2" [icon]="Icon.Check"></gdb-icon>
 </div>

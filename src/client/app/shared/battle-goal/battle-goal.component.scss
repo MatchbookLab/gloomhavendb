@@ -21,7 +21,12 @@
 }
 
 .checks {
-  font-size: 40px;
+  position: relative;
+  left: -5px;
+
+  gdb-icon + gdb-icon {
+    margin-left: 8px;
+  }
 }
 
 h3 {
