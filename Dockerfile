@@ -10,7 +10,7 @@ WORKDIR /app/
 USER node
 
 # try to take advtange of caching for large files
-COPY ./src/client/assets/cards/ ./src/client/assets/cards/
+COPY ./src/client/assets/ ./src/client/assets/
 
 COPY ./package.json ./package-lock.json ./
 RUN npm ci
