@@ -143,7 +143,6 @@ export class SecretShopComponent implements OnInit, AfterViewInit {
   }
 
   setSlot(slot?: Slot) {
-    console.log(slot);
     this.filters.slot = slot || null;
     this.filter();
   }

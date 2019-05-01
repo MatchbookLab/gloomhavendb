@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { clone, random, maxBy } from 'lodash';
+import { clone, random } from 'lodash';
 import { battleGoals } from '../../../../data/battle-goals';
 import { BattleGoal } from '../../../../shared/entities/battle-goal';
 import { ScrollingService } from '../../services/scrolling/scrolling.service';
@@ -26,9 +26,7 @@ export class SecretBattleGoalsComponent implements OnInit {
   constructor(private scrollingService: ScrollingService) {}
 
   async ngOnInit() {
-    this.battleGoals = [maxBy(battleGoals, bg => bg.name.length), maxBy(battleGoals, bg => bg.name.split(' ').length)];
-
-    // this.battleGoals = this.load(StoreKey.BattleGoalListKey);
+    this.battleGoals = this.load(StoreKey.BattleGoalListKey);
     if (!this.battleGoals) {
       this.resetBattleGoals();
     } else {

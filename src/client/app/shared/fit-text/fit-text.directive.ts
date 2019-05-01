@@ -21,7 +21,12 @@ export class FitTextDirective implements AfterViewInit {
       return;
     }
 
-    this.setupStartingValues();
+    // if this fails for some reason, it's not worth bothering, let's just bail
+    try {
+      this.setupStartingValues();
+    } catch (err) {
+      console.error('Could not fit height', err);
+    }
 
     this.adjustSizes();
     setTimeout(() => this.adjustSizes());
