@@ -1,14 +1,30 @@
 @import '../../../../styles/mixins';
 
 :host {
-  width: 200px;
+  width: 296px;
+  height: 437px;
   text-align: center;
-  padding: 20px;
-  display: block;
+  padding: 98px 77px 86px 67px;
+  display: flex;
   border-radius: 6px;
-  background: rgba(#b8d481, 0.3);
+  background-image: url('/assets/creator-pack-v2/battle-goals/battle-goal-front.jpg');
+  color: black;
+  font-family: Fenix, 'Open Sans', serif;
+
+  flex-direction: column;
+  line-height: 20px;
+}
+
+.grow {
+  flex-grow: 1;
+}
+
+.checks {
+  font-size: 40px;
 }
 
 h3 {
+  font-size: 28px;
   margin-top: 0;
+  font-family: 'Pirata One', 'Open Sans', serif;
 }
