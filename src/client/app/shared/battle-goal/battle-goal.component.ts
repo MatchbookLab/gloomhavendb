@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { BattleGoal } from '../../../../../shared/entities/battle-goal';
+import { BattleGoal } from '../../../../shared/entities/battle-goal';
 
 @Component({
   selector: 'gdb-battle-goal',

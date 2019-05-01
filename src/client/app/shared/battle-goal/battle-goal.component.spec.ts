@@ -1,9 +1,9 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { BattleGoal } from '../../../../../shared/entities/battle-goal';
-import { TestBedHelper } from '../../../../test/test-bed.helper';
+import { BattleGoal } from '../../../../shared/entities/battle-goal';
+import { TestBedHelper } from '../../../test/test-bed.helper';
 import { BattleGoalComponent } from './battle-goal.component';
 
-import { SecretBattleGoalsModule } from '../secret-battle-goals.module';
+import { SecretBattleGoalsModule } from '../../+secret/+battle-goals/secret-battle-goals.module';
 
 describe('BattleGoalComponent', () => {
   let component: BattleGoalComponent;

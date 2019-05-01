@@ -1,18 +1,19 @@
-@import '../../../../styles/mixins';
+@import '../../../styles/mixins';
 
 :host {
   width: 296px;
   height: 437px;
   text-align: center;
-  padding: 98px 77px 86px 67px;
+  padding: 104px 81px 94px 74px;
   display: flex;
-  border-radius: 6px;
+  border-radius: 8px;
   background-image: url('/assets/creator-pack-v2/battle-goals/battle-goal-front.jpg');
   color: black;
   font-family: Fenix, 'Open Sans', serif;
 
   flex-direction: column;
-  line-height: 20px;
+  font-size: 19px;
+  line-height: 22px;
 }
 
 .grow {
@@ -24,7 +25,13 @@
 }
 
 h3 {
-  font-size: 28px;
-  margin-top: 0;
+  font-size: 32px;
   font-family: 'Pirata One', 'Open Sans', serif;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 8px;
 }
