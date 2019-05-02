@@ -13,6 +13,9 @@ services:
       LETSENCRYPT_HOST: ${HOSTNAME}
       LETSENCRYPT_EMAIL: ${LETSENCRYPT_EMAIL}
 
+  database:
+    restart: unless-stopped
+
 networks:
   default:
   proxy:
