@@ -1,8 +1,9 @@
 import { Location, PopStateEvent } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
-import { ActivatedRoute, Event, NavigationEnd, NavigationStart, Router } from '@angular/router';
-import { filter, map, mergeMap } from 'rxjs/operators';
+import { ActivatedRoute, Event, NavigationEnd, NavigationStart, Router, UrlSegment } from '@angular/router';
+import { BehaviorSubject } from 'rxjs';
+import { filter, map, mergeMap, tap } from 'rxjs/operators';
 import { PlatformService } from './services/platform/platform.service';
 import { RouteData } from './util/routing';
 

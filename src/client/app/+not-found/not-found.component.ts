@@ -3,7 +3,7 @@ import { RESPONSE } from '@nguniversal/express-engine/tokens';
 import { Response } from 'express';
 import { PlatformService } from '../services/platform/platform.service';
 
-import { RoutePath } from '../util/routing';
+import { BaseRoutePath } from '../util/routing';
 
 @Component({
   selector: 'gdb-not-found',
@@ -11,7 +11,7 @@ import { RoutePath } from '../util/routing';
   styleUrls: ['./not-found.component.scss'],
 })
 export class NotFoundComponent {
-  RoutePath = RoutePath;
+  RoutePath = BaseRoutePath;
 
   constructor(
     platform: PlatformService,

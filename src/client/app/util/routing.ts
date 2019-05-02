@@ -1,17 +1,21 @@
 import { Data, Route } from '@angular/router';
 
 export interface RouteData extends Data {
-  title: string;
+  title?: string;
 }
 
-export interface BetterRoute extends Route {
-  path: RoutePath | '**';
+export interface BetterRoute<RouteEnum extends string> extends Route {
+  path: RouteEnum;
   data: RouteData;
 }
 
-export enum RoutePath {
+export enum BaseRoutePath {
   Home = '',
   Login = 'login',
+
+  Items = 'items',
+  Item = 'items/:number',
+
   SecretShop = 'secret/shop',
   SecretMap = 'secret/map',
   SecretEvents = 'secret/events',
