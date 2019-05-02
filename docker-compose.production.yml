@@ -3,11 +3,9 @@ version: '3.7'
 services:
   app:
     restart: unless-stopped
-    ports:
-      - 3000:3000
-#    networks:
-#      - default
-#      - proxy
+    networks:
+      - default
+      - proxy
     environment:
       NODE_ENV: production
       VIRTUAL_HOST: ${HOSTNAME}
