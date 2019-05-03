@@ -8,7 +8,6 @@ import { GdbIcon } from '../../icon/icon.enum';
 })
 export class EnumToIconPipe implements PipeTransform {
   transform(enumValue: Slot | Limit): GdbIcon {
-    console.log(Limit);
     switch (enumValue) {
       case Limit.Consumed:
         return GdbIcon.LostOrConsumed;
@@ -32,6 +31,6 @@ export class EnumToIconPipe implements PipeTransform {
         return GdbIcon.SmallItem;
     }
 
-    throw new Error('Enum not yet supported');
+    throw new Error('Enum not yet supported. Got: ' + enumValue);
   }
 }
