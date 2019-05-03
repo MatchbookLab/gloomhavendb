@@ -1,5 +1,8 @@
 import { Component, HostBinding, Input, OnInit } from '@angular/core';
+import { invert } from 'lodash';
 import { GdbIcon } from './icon.enum';
+
+const InvertedGdbIcon = invert(GdbIcon);
 
 @Component({
   selector: 'gdb-icon',
@@ -8,7 +11,9 @@ import { GdbIcon } from './icon.enum';
 })
 export class IconComponent implements OnInit {
   @Input() icon: GdbIcon;
-  @Input() size: number = 16;
+  @Input() size: number = 26;
+  iconSrc: string;
+  altText: string;
 
   @HostBinding('style.width')
   get width(): string {
@@ -20,9 +25,8 @@ export class IconComponent implements OnInit {
     return this.size + 'px';
   }
 
-  iconSrc: string;
-
   ngOnInit() {
     this.iconSrc = `/assets/icons/${this.icon}.svg`;
+    this.altText = `{${InvertedGdbIcon[this.icon]}}`;
   }
 }

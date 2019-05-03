@@ -2,6 +2,12 @@
   display: block;
 }
 
-.return-home {
-  margin: 50px 0 70px;
+.little-grid {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-column-gap: 15px;
+}
+
+.content {
+  display: flex;
 }
