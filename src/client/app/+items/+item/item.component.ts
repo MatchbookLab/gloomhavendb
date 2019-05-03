@@ -5,7 +5,7 @@ import { Item } from '../../../../shared/entities/item';
 import { TitleService } from '../../services/title/title.service';
 import { Limit } from '../../../../shared/constants/limit';
 import { GdbIcon } from '../../shared/icon/icon.enum';
-import { Slot } from 'src/shared/constants/slot';
+import { Slot } from '../../../../shared/constants/slot';
 
 @Component({
   selector: 'gdb-items',

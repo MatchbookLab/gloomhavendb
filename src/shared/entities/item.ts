@@ -9,7 +9,7 @@ export class Item {
   @PrimaryColumn() number: number;
   // the little number at the bottom of the front (this is unique per card and not really helpful here)
   /* @deprecated */
-  cardNo: number;
+  cardNo?: number;
   @Column() name: string;
   @Column('enum', { enum: Slot }) slot: Slot;
   @Column() price: number;
