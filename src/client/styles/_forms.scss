@@ -4,9 +4,16 @@
 input[type='text'],
 input[type='tel'],
 input[type='email'],
+input[type='number'],
 textarea {
   border: 2px solid #ccc;
-  padding: 4px 6px;
+  padding: 8px 10px;
+  display: block;
+  width: 100%;
+}
+
+textarea {
+  resize: vertical;
 }
 
 .control-group {

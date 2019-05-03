@@ -95,9 +95,8 @@ export async function bootstrap(): Promise<NestExpressApplication> {
   const document = SwaggerModule.createDocument(app, options);
   SwaggerModule.setup('swagger', app, document);
 
-  if (DEVELOPMENT_MODE) {
-    app.enableCors();
-  }
+  // this is a public API, after all
+  app.enableCors();
 
   await app.listen(3000);
 

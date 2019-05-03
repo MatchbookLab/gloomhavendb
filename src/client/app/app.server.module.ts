@@ -1,3 +1,5 @@
+(<any>global).fetch = require('node-fetch');
+
 import { NgModule } from '@angular/core';
 import { ServerModule, ServerTransferStateModule } from '@angular/platform-server';
 import { TransferHttpCacheModule } from '@nguniversal/common';

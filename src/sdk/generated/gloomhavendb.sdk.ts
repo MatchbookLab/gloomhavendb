@@ -9,6 +9,8 @@ import { Scenario } from '../../shared/entities/scenario';
 import { User } from '../../shared/entities/user';
 
 export class GloomhavenDB {
+  constructor(private baseUrl = 'https://gloomhavendb.com') {}
+
   private queryStringize(queryParamName: string, data: string | (string | number)[]): string {
     if (!data || !data.length) {
       return '';
@@ -33,18 +35,21 @@ export class GloomhavenDB {
   async getItems(numbers?: string | (string | number)[]): Promise<Item[]> {
     const queryParts: string[] = [];
     queryParts.push(this.queryStringize('numbers', numbers));
-    return (await fetch(`/api/items?${queryParts.join('&')}`, {
+    return (await fetch(`${this.baseUrl}/api/items?${queryParts.join('&')}`, {
       method: 'get',
       headers: { 'Content-Type': 'application/json' },
     })).json();
   }
 
   async findItem(id: string | number): Promise<Item> {
-    return (await fetch(`/api/items/${id}`, { method: 'get', headers: { 'Content-Type': 'application/json' } })).json();
+    return (await fetch(`${this.baseUrl}/api/items/${id}`, {
+      method: 'get',
+      headers: { 'Content-Type': 'application/json' },
+    })).json();
   }
 
   async createItem(item: Item): Promise<Item> {
-    return (await fetch(`/api/items`, {
+    return (await fetch(`${this.baseUrl}/api/items`, {
       method: 'post',
       body: JSON.stringify(item),
       headers: { 'Content-Type': 'application/json' },
@@ -52,7 +57,7 @@ export class GloomhavenDB {
   }
 
   async updateItem(cardNo: string | number, item: Item): Promise<Item> {
-    return (await fetch(`/api/items/${cardNo}`, {
+    return (await fetch(`${this.baseUrl}/api/items/${cardNo}`, {
       method: 'put',
       body: JSON.stringify(item),
       headers: { 'Content-Type': 'application/json' },
@@ -60,7 +65,7 @@ export class GloomhavenDB {
   }
 
   async deleteItem(cardNo: string | number): Promise<Item> {
-    return (await fetch(`/api/items/${cardNo}`, {
+    return (await fetch(`${this.baseUrl}/api/items/${cardNo}`, {
       method: 'delete',
       headers: { 'Content-Type': 'application/json' },
     })).json();
@@ -71,18 +76,21 @@ export class GloomhavenDB {
   ///////////
 
   async getRoadEvents(): Promise<Event[]> {
-    return (await fetch(`/api/events/road`, { method: 'get', headers: { 'Content-Type': 'application/json' } })).json();
+    return (await fetch(`${this.baseUrl}/api/events/road`, {
+      method: 'get',
+      headers: { 'Content-Type': 'application/json' },
+    })).json();
   }
 
   async findRoadEvent(cardNo: string | number): Promise<Event> {
-    return (await fetch(`/api/events/road/${cardNo}`, {
+    return (await fetch(`${this.baseUrl}/api/events/road/${cardNo}`, {
       method: 'get',
       headers: { 'Content-Type': 'application/json' },
     })).json();
   }
 
   async createRoadEvent(event: Event): Promise<Event> {
-    return (await fetch(`/api/events/road`, {
+    return (await fetch(`${this.baseUrl}/api/events/road`, {
       method: 'post',
       body: JSON.stringify(event),
       headers: { 'Content-Type': 'application/json' },
@@ -90,7 +98,7 @@ export class GloomhavenDB {
   }
 
   async updateRoadEvent(cardNo: string | number, event: Event): Promise<Event> {
-    return (await fetch(`/api/events/road/${cardNo}`, {
+    return (await fetch(`${this.baseUrl}/api/events/road/${cardNo}`, {
       method: 'put',
       body: JSON.stringify(event),
       headers: { 'Content-Type': 'application/json' },
@@ -98,25 +106,28 @@ export class GloomhavenDB {
   }
 
   async deleteRoadEvent(cardNo: string | number): Promise<Event> {
-    return (await fetch(`/api/events/road/${cardNo}`, {
+    return (await fetch(`${this.baseUrl}/api/events/road/${cardNo}`, {
       method: 'delete',
       headers: { 'Content-Type': 'application/json' },
     })).json();
   }
 
   async getCityEvents(): Promise<(Event)[]> {
-    return (await fetch(`/api/events/city`, { method: 'get', headers: { 'Content-Type': 'application/json' } })).json();
+    return (await fetch(`${this.baseUrl}/api/events/city`, {
+      method: 'get',
+      headers: { 'Content-Type': 'application/json' },
+    })).json();
   }
 
   async findCityEvent(cardNo: string | number): Promise<Event> {
-    return (await fetch(`/api/events/city/${cardNo}`, {
+    return (await fetch(`${this.baseUrl}/api/events/city/${cardNo}`, {
       method: 'get',
       headers: { 'Content-Type': 'application/json' },
     })).json();
   }
 
   async createCityEvent(event: Event): Promise<Event> {
-    return (await fetch(`/api/events/city`, {
+    return (await fetch(`${this.baseUrl}/api/events/city`, {
       method: 'post',
       body: JSON.stringify(event),
       headers: { 'Content-Type': 'application/json' },
@@ -124,7 +135,7 @@ export class GloomhavenDB {
   }
 
   async updateCityEvent(cardNo: string | number, event: Event): Promise<Event> {
-    return (await fetch(`/api/events/city/${cardNo}`, {
+    return (await fetch(`${this.baseUrl}/api/events/city/${cardNo}`, {
       method: 'put',
       body: JSON.stringify(event),
       headers: { 'Content-Type': 'application/json' },
@@ -132,7 +143,7 @@ export class GloomhavenDB {
   }
 
   async deleteCityEvent(cardNo: string | number): Promise<Event> {
-    return (await fetch(`/api/events/city/${cardNo}`, {
+    return (await fetch(`${this.baseUrl}/api/events/city/${cardNo}`, {
       method: 'delete',
       headers: { 'Content-Type': 'application/json' },
     })).json();

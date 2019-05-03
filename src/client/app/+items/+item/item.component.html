@@ -1,0 +1,214 @@
+<div class="content">
+  <div class="readonly-section section">
+    <div class="stats">
+      <div class="little-grid">
+        <div class="right">
+          <strong>Name</strong>
+        </div>
+        <div>
+          {{ item.name }}
+        </div>
+
+        <div class="right">
+          <strong>Slot</strong>
+        </div>
+        <div>
+          {{ item.slot }}
+          <gdb-icon [icon]="item.slot | enumToIcon"></gdb-icon>
+        </div>
+
+        <ng-container *ngIf="item.uses">
+          <div class="right">
+            <strong>Uses</strong>
+          </div>
+          <div>
+            <gdb-icon [icon]="Icon.UseSlot"></gdb-icon>
+            &times; {{ item.uses }}
+          </div>
+        </ng-container>
+
+        <div class="right">
+          <strong>Limit</strong>
+        </div>
+        <div>
+          {{ item.limit }}
+          <gdb-icon *ngIf="item.limit !== Limit.Unlimited" [icon]="item.limit | enumToIcon"></gdb-icon>
+          <gdb-icon *ngIf="item.limit === Limit.UseOncePerScenario" [icon]="Icon.LostOrConsumed"></gdb-icon>
+        </div>
+
+        <ng-container *ngIf="item.negativeCardsCount">
+          <div class="right">
+            <strong>-1 Cards</strong>
+          </div>
+          <div>
+            <gdb-icon [icon]="Icon.MinusOneAttackModifier"></gdb-icon>
+            &times; {{ item.negativeCardsCount }}
+          </div>
+        </ng-container>
+
+        <div class="right">
+          <strong>Text</strong>
+        </div>
+        <gdb-text-with-icons [text]="item.text"></gdb-text-with-icons>
+
+        <div class="right">
+          <strong>Price</strong>
+        </div>
+        <div>
+          {{ item.price }}
+        </div>
+
+        <div class="right">
+          <strong>Count</strong>
+        </div>
+        <div>
+          {{ item.count }}
+        </div>
+
+        <ng-container *ngIf="item.sourceType">
+          <div class="right">
+            <strong>Source</strong>
+          </div>
+          <div>
+            {{ item.sourceType }}
+            <ng-container *ngIf="item.sourceType !== ItemSource.RandomItemDesign">
+              {{ item.sourceId }}
+            </ng-container>
+          </div>
+        </ng-container>
+
+        <div class="right">
+          <strong>Verified</strong>
+        </div>
+        <div>
+          {{ item.verified ? 'Yes' : 'No' }}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="edit-section section">
+    <div class="edit">
+      <div class="little-grid">
+        <div class="right">
+          <strong>Name</strong>
+        </div>
+        <div>
+          <input type="text" [(ngModel)]="item.name" />
+        </div>
+
+        <div class="right">
+          <strong>Slot</strong>
+        </div>
+        <div>
+          <label *ngFor="let slot of slots">
+            <input name="slot" [value]="slot" [(ngModel)]="item.slot" type="radio" />
+            <gdb-icon [icon]="slot | enumToIcon"></gdb-icon>
+            &nbsp;
+          </label>
+        </div>
+
+        <div class="right">
+          <strong>Uses</strong>
+        </div>
+        <div>
+          <input type="number" [(ngModel)]="item.uses" />
+        </div>
+
+        <div class="right">
+          <strong>Limit</strong>
+        </div>
+        <div>
+          <label *ngFor="let limit of limits">
+            <input name="limit" [value]="limit" [(ngModel)]="item.limit" type="radio" />
+            <gdb-icon *ngIf="limit !== Limit.Unlimited" [icon]="limit | enumToIcon"></gdb-icon>
+            <gdb-icon *ngIf="limit === Limit.UseOncePerScenario" [icon]="Icon.LostOrConsumed"></gdb-icon>
+            <span *ngIf="limit === Limit.Unlimited">(Unlimited)</span>
+            &nbsp;
+          </label>
+        </div>
+
+        <div class="right">
+          <strong>-1 Cards</strong>
+        </div>
+        <div>
+          <input type="number" [(ngModel)]="item.negativeCardsCount" />
+        </div>
+
+        <div class="right">
+          <strong>Text</strong>
+        </div>
+        <div>
+          <textarea rows="3" type="text" [(ngModel)]="item.text"></textarea>
+        </div>
+
+        <div class="right">
+          <strong>Price</strong>
+        </div>
+        <div>
+          <input type="number" step="5" max="100" min="10" [(ngModel)]="item.price" />
+        </div>
+
+        <div class="right">
+          <strong>Count</strong>
+        </div>
+        <div>
+          <input type="number" max="4" min="1" [(ngModel)]="item.count" />
+        </div>
+
+        <div class="right">
+          <strong>Source</strong>
+        </div>
+        <div>
+          <label *ngFor="let source of sources">
+            <input name="source" [value]="source" [(ngModel)]="item.sourceType" type="radio" />
+            {{ source }}
+            &nbsp;
+          </label>
+          <label>
+            <input name="source" [value]="null" [(ngModel)]="item.sourceType" type="radio" />
+            Unknown?
+          </label>
+        </div>
+
+        <ng-container *ngIf="item.sourceType && item.sourceType !== ItemSource.RandomItemDesign">
+          <div class="right">
+            <strong>
+              <ng-container [ngSwitch]="item.sourceType">
+                <ng-container *ngSwitchCase="ItemSource.Prosperity">
+                  Prosperity Level
+                </ng-container>
+                <ng-container *ngSwitchCase="ItemSource.Treasure">
+                  Scenario #
+                </ng-container>
+                <ng-container *ngSwitchCase="ItemSource.ScenarioReward">
+                  Scenario #
+                </ng-container>
+                <ng-container *ngSwitchDefault>{{ item.sourceType }} #</ng-container>
+              </ng-container>
+            </strong>
+          </div>
+          <div>
+            <input type="number" [(ngModel)]="item.sourceId" />
+          </div>
+        </ng-container>
+
+        <div class="right">
+          <strong>Verified</strong>
+        </div>
+        <div>
+          <label>
+            <input type="checkbox" [(ngModel)]="item.verified" />
+            I promise this is 100% accurate and there is no missing information.
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="image-section section">
+    <div class="image">
+      <img [src]="item.imageUrl" [alt]="item.name" />
+    </div>
+  </div>
+</div>

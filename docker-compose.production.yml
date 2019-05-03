@@ -21,4 +21,3 @@ networks:
   proxy:
     external:
       name: ${EXTERNAL_PROXY}
-

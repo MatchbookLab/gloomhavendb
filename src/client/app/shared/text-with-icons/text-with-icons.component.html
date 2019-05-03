@@ -1,0 +1,4 @@
+<ng-container *ngFor="let part of parts; even as e; odd as o"
+  ><ng-container *ngIf="e"><span [innerHTML]="part"></span></ng-container
+  ><ng-container *ngIf="o"><gdb-icon [icon]="Icon[part]"></gdb-icon></ng-container
+></ng-container>
