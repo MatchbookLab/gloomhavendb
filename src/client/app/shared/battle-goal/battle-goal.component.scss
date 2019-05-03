@@ -4,7 +4,7 @@
   width: 296px;
   height: 437px;
   text-align: center;
-  padding: 104px 81px 94px 74px;
+  padding: 107px 81px 94px 74px;
   display: flex;
   border-radius: 8px;
   background-image: url('/assets/creator-pack-v2/battle-goals/battle-goal-front.jpg');
@@ -14,10 +14,8 @@
   flex-direction: column;
   font-size: 19px;
   line-height: 22px;
-}
 
-.grow {
-  flex-grow: 1;
+  justify-content: space-between;
 }
 
 .checks {
@@ -34,6 +32,7 @@ h3 {
   font-family: 'Pirata One', 'Open Sans', serif;
   margin-top: 0;
   margin-bottom: 16px;
+  font-weight: normal;
 }
 
 p {
