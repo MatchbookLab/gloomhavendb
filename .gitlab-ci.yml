@@ -27,8 +27,8 @@ test:
     # whatever is built here will be cached for build stage
     - echo "DOCKER_TAG -> $DOCKER_TAG"
     - docker-compose -f docker-compose.yml -f docker-compose.test.yml build --pull app
-    - docker-compose -f docker-compose.yml -f docker-compose.test.yml run --rm app npm run format:ci
-    - docker-compose -f docker-compose.yml -f docker-compose.test.yml run --rm app npm run test
+    - docker-compose -f docker-compose.yml -f docker-compose.test.yml run --no-deps --rm app npm run format:ci
+    - docker-compose -f docker-compose.yml -f docker-compose.test.yml run --no-deps --rm app npm run test
 
 
 #########
