@@ -6,7 +6,9 @@ input[type='tel'],
 input[type='email'],
 textarea {
   border: 2px solid #ccc;
-  padding: 4px 6px;
+  padding: 8px 10px;
+  display: block;
+  width: 100px;
 }
 
 .control-group {

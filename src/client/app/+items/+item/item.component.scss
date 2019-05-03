@@ -6,8 +6,21 @@
   display: grid;
   grid-template-columns: auto 1fr;
   grid-column-gap: 15px;
+
+  border: 1px solid #666;
+  padding: 20px;
+
+  width: 530px;
 }
 
 .content {
   display: flex;
+
+  padding: 30px;
+
+  margin-left: -20px;
+}
+
+.section {
+  padding-left: 20px;
 }
