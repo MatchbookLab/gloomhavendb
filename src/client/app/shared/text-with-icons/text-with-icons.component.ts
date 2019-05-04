@@ -26,9 +26,6 @@ export class TextWithIconsComponent implements OnInit {
 
   @Input()
   set text(value: string) {
-    if (value !== this._text) {
-      console.log('change');
-    }
     this._text = value;
     this.parts = this.explodeText();
   }

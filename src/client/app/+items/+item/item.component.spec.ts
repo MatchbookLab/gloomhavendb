@@ -1,8 +1,10 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { RouterTestingModule } from '@angular/router/testing';
 import { ItemSource } from '../../../../shared/constants/item-source';
 import { Limit } from '../../../../shared/constants/limit';
 import { Slot } from '../../../../shared/constants/slot';
 import { TestBedHelper } from '../../../test/test-bed.helper';
+import { ApiService } from '../../services/api/api.service';
 
 import { ItemComponent } from './item.component';
 import { ItemModule } from './item.module';
@@ -12,7 +14,13 @@ describe('ItemsComponent', () => {
   let fixture: ComponentFixture<ItemComponent>;
 
   const config = TestBedHelper.createComponentConfig()
-    .addImports(ItemModule)
+    .addImports(ItemModule, RouterTestingModule)
+    .addProviders([
+      {
+        provide: ApiService,
+        useValue: {},
+      },
+    ])
     .getConfig();
 
   TestBedHelper.autoConfigureTestingModule(config);
