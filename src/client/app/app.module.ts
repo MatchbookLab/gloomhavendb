@@ -4,9 +4,11 @@ import { FormsModule } from '@angular/forms';
 import { BrowserModule, BrowserTransferStateModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
+import Axios from 'axios';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HttpService } from './services/api/http.service';
 
 @NgModule({
   imports: [
@@ -27,6 +29,10 @@ import { AppComponent } from './app.component';
         // this prevents the component from flashing, and also allows "back" to work as expected
         return new Promise(resolve => {});
       },
+    },
+    {
+      provide: HttpService,
+      useValue: Axios.create({ baseURL: '/', headers: { 'Content-Type': 'application/json' } }),
     },
   ],
   bootstrap: [AppComponent],

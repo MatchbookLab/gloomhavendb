@@ -5,6 +5,8 @@ import { EntityNotFoundError } from 'typeorm/error/EntityNotFoundError';
 @Catch(EntityNotFoundError)
 export class EntityNotFoundErrorFilter implements ExceptionFilter {
   catch(exception: EntityNotFoundError, host: ArgumentsHost) {
+    console.error(exception);
+
     const ctx = host.switchToHttp();
     const response = ctx.getResponse<Response>();
 

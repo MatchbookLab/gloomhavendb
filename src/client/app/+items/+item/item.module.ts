@@ -1,20 +1,20 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { ActivatedRouteSnapshot, RouterModule, RouterStateSnapshot, Routes } from '@angular/router';
-import { GloomhavenDB } from '../../../../sdk/generated/gloomhavendb.sdk';
+import { RouterModule, Routes } from '@angular/router';
 import { IconModule } from '../../shared/icon/icon.module';
 import { PipesModule } from '../../shared/pipes/pipes.module';
 import { TextWithIconsModule } from '../../shared/text-with-icons/text-with-icons.module';
 
 import { ItemComponent } from './item.component';
+import { ItemResolver } from './item.resolver';
 
 const routes: Routes = [
   {
     path: '',
     component: ItemComponent,
     resolve: {
-      item: 'itemResolver',
+      item: ItemResolver,
     },
   },
 ];
@@ -22,13 +22,7 @@ const routes: Routes = [
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
-  providers: [
-    {
-      provide: 'itemResolver',
-      useValue: (route: ActivatedRouteSnapshot, state: RouterStateSnapshot) =>
-        new GloomhavenDB('http://localhost:4200').findItem(route.paramMap.get('number')),
-    },
-  ],
+  providers: [ItemResolver],
 })
 export class ItemRouterModule {}
 

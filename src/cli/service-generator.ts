@@ -23,6 +23,7 @@ const project = new Project({
 const controllers = {
   ItemController: path.join(__dirname, '../server/api/item/item.controller.ts'),
   EventController: path.join(__dirname, '../server/api/event/event.controller.ts'),
+  SuggestedFixController: path.join(__dirname, '../server/api/suggested-fix/suggested-fix.controller.ts'),
 };
 
 let sdkMethods = '';
@@ -99,21 +100,21 @@ _.forEach(controllers, (controllerPath, className) => {
           return p;
         }),
     );
+    const configParts: string[] = [];
     const httpMethod = routingDecorator.name.toLowerCase();
     const urlParams = paramParts.join('/');
     let url = `${apiBase}/${controllerBase}${urlParams ? '/' + urlParams : ''}`;
-    const body = bodyParam ? `, body: JSON.stringify(${bodyParam})` : '';
+    const data = bodyParam ? `, ${bodyParam}` : '';
 
-    let queryParser = _.isEmpty(queryMap)
-      ? ''
-      : _.map(
-          queryMap,
-          (paramName, decoratorName) => `    queryParts.push(this.queryStringize('${paramName}', ${paramName}));\n`,
-        ).join('\n');
+    let query = _.isEmpty(queryMap) ? '' : _.map(queryMap, (paramName, decoratorName) => `${paramName}`).join('\n');
 
-    if (queryParser) {
-      url += `?\${queryParts.join('&')}`;
+    query = query ? `params: { ${query} }` : null;
+
+    if (query) {
+      configParts.push(query);
     }
+
+    const config = configParts.length > 0 ? `, { ${configParts.join(', ')} }` : '';
 
     // console.log(method);
     let methodName = method.name;
@@ -128,9 +129,7 @@ _.forEach(controllers, (controllerPath, className) => {
 
     let impl = '\n';
     impl += `  ${method.isAsync ? 'async ' : ''}${methodName}(${params}): ${method.returnType} {\n`;
-    // , Authorization: `Bearer: ${this.token}`
-    impl += queryParser && `    const queryParts: string[] = [];\n${queryParser}`;
-    impl += `    return (await fetch(\`\${this.baseUrl}${url}\`, { method: '${httpMethod}'${body}, headers: { 'Content-Type': 'application/json' } })).json();\n`;
+    impl += `    return (await this.http.${httpMethod}(\`${url}\`${data}${config})).data;\n`;
     impl += `  }\n`;
 
     controllerMethods += impl;
@@ -152,34 +151,33 @@ const entityMap = _.fromPairs(
     let className = _.camelCase(base);
     _.capitalize(_.camelCase(base));
     className = _.capitalize(className[0]) + className.slice(1);
-    return [className, `../../shared/entities/${base}`];
+    return [className, `../../../../shared/entities/${base}`];
   }),
 );
 const entityImports = _.map(entityMap, (path, name) => `import { ${name} } from '${path}';`).join('\n');
 
-const baseMethods = `
-  constructor(private baseUrl = 'https://gloomhavendb.com') {}
+// language=TypeScript
+const baseContent =
+  entityImports +
+  `
 
-  private queryStringize(queryParamName: string, data: string | (string | number)[]): string {
-    if (!data || !data.length) {
-      return '';
-    }
+import { Injectable } from '@angular/core';
+import { HttpService } from './http.service';
 
-    if (typeof data === 'string') {
-      return \`\${queryParamName}=\${data}\`;
-    }
-    
-    if (Array.isArray(data)) {
-      return data.map(d => \`\${queryParamName}[]=\${d}\`).join('&');
-    }
-    
-    // TODO better error message?
-    throw new Error('Cannot turn data into query string');
-  }
+//////////////////////////////////////////
+// This file is generated. Do not edit. //
+//////////////////////////////////////////
+
+@Injectable({ providedIn: 'root' })
+export class ApiService {
+  constructor(private http: HttpService) {}
+
+  // {generatedContent}
+}
 `;
 
-const finalContents = `${entityImports}\n\nexport class GloomhavenDB {${baseMethods}\n${_.trimEnd(sdkMethods)}}\n`;
+const finalContents = baseContent.replace('  // {generatedContent}', _.trimEnd(sdkMethods));
 
-fs.writeFileSync(path.join(__dirname, `../sdk/generated/gloomhavendb.sdk.ts`), finalContents, {
+fs.writeFileSync(path.join(__dirname, `../client/app/services/api/api.service.ts`), finalContents, {
   encoding: 'utf8',
 });
