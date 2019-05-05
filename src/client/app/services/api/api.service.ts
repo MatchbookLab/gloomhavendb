@@ -96,4 +96,8 @@ export class ApiService {
   async suggestFix<T>(suggestedFix: SuggestedFix<T>): Promise<SuggestedFix<T>> {
     return (await this.http.post(`/api/suggested-fix`, suggestedFix)).data;
   }
+
+  async matchingSuggestedFixes<T>(entityType: string, entityIdOrNumber: string | number): Promise<SuggestedFix<T>[]> {
+    return (await this.http.get(`/api/suggested-fix/matching`, { params: { entityType, entityIdOrNumber } })).data;
+  }
 }

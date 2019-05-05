@@ -106,7 +106,7 @@ _.forEach(controllers, (controllerPath, className) => {
     let url = `${apiBase}/${controllerBase}${urlParams ? '/' + urlParams : ''}`;
     const data = bodyParam ? `, ${bodyParam}` : '';
 
-    let query = _.isEmpty(queryMap) ? '' : _.map(queryMap, (paramName, decoratorName) => `${paramName}`).join('\n');
+    let query = _.isEmpty(queryMap) ? '' : _.map(queryMap, (paramName, decoratorName) => `${paramName}`).join(', ');
 
     query = query ? `params: { ${query} }` : null;
 

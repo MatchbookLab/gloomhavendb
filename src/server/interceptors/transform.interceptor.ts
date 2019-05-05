@@ -15,9 +15,9 @@ export class TransformInterceptor implements NestInterceptor {
     // TODO does this need to be recursive?
     if (request.query) {
       _.forEach(request.query, (val: any, key: string) => {
-        if (val === '1' || val === 'true') {
+        if (val === 'true') {
           request.query[key] = true;
-        } else if (val === '0' || val === 'false') {
+        } else if (val === 'false') {
           request.query[key] = false;
         }
       });
