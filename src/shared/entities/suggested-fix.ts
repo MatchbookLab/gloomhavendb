@@ -10,7 +10,7 @@ export class SuggestedFix<T> {
   type: SuggestedFixType;
 
   @Column('varchar')
-  paramKey: 'id' | 'number' | string;
+  idOrNumber: string;
 
   @Column('json')
   data: T;

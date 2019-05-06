@@ -16,12 +16,12 @@ export class SuggestedFixController {
 
   @Get('matching')
   async getMatchingSuggestedFixes<T>(
-    @Query('entityType') entityType: SuggestedFixType,
-    @Query('entityIdOrNumber') entityIdOrNumber: string,
+    @Query('type') type: SuggestedFixType,
+    @Query('idOrNumber') idOrNumber: string,
   ): Promise<SuggestedFix<T>[]> {
     return await this.suggestedFixRepo.find({
-      type: entityType,
-      paramKey: entityIdOrNumber,
+      type,
+      idOrNumber,
     });
   }
 }

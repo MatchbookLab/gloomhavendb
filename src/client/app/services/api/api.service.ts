@@ -14,6 +14,8 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { mapValues } from 'lodash';
 
+import { SuggestedFixType } from '../../../../shared/constants/suggested-fix-type';
+
 //////////////////////////////////////////
 // This file is generated. Do not edit. //
 //////////////////////////////////////////
@@ -98,14 +100,9 @@ export class ApiService {
     return this.httpClient.post<SuggestedFix<T>>(`/api/suggested-fix`, suggestedFix).toPromise();
   }
 
-  async getMatchingSuggestedFixes<T>(
-    entityType: string,
-    entityIdOrNumber: string | number,
-  ): Promise<SuggestedFix<T>[]> {
+  async getMatchingSuggestedFixes<T>(type: SuggestedFixType, idOrNumber: string): Promise<SuggestedFix<T>[]> {
     return this.httpClient
-      .get<SuggestedFix<T>[]>(`/api/suggested-fix/matching`, {
-        params: this.parametize({ entityType, entityIdOrNumber }),
-      })
+      .get<SuggestedFix<T>[]>(`/api/suggested-fix/matching`, { params: this.parametize({ type, idOrNumber }) })
       .toPromise();
   }
 

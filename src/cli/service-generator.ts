@@ -159,6 +159,8 @@ const entityMap = _.fromPairs(
 );
 const entityImports = _.map(entityMap, (path, name) => `import { ${name} } from '${path}';`).join('\n');
 
+// TODO need better way to import enum (e.g. see SuggestedFixType)
+
 // language=TypeScript
 const baseContent =
   entityImports +
@@ -167,6 +169,8 @@ const baseContent =
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { mapValues } from 'lodash';
+
+import { SuggestedFixType } from '../../../../shared/constants/suggested-fix-type';
 
 //////////////////////////////////////////
 // This file is generated. Do not edit. //

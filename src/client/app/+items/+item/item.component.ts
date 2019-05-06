@@ -45,7 +45,7 @@ export class ItemComponent implements OnInit {
     private location: Location,
   ) {
     this.item = this.resolvedDataService.get('item');
-    this.suggestedFixes = this.resolvedDataService.get('suggestedFixes');
+    this.suggestedFixes = this.resolvedDataService.get('suggestedFixes') || [];
   }
 
   ngOnInit() {
@@ -76,7 +76,7 @@ export class ItemComponent implements OnInit {
   async submitFix(item: Item) {
     await this.api.suggestFix<Item>({
       type: SuggestedFixType.Item,
-      paramKey: item.number + '',
+      idOrNumber: item.number + '',
       data: item,
     });
   }
