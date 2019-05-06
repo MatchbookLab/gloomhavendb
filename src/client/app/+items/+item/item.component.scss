@@ -1,5 +1,7 @@
 :host {
   display: block;
+
+  padding: 30px;
 }
 
 .little-grid {
@@ -15,8 +17,6 @@
 
 .content {
   display: flex;
-
-  padding: 30px;
 
   margin-left: -20px;
 }

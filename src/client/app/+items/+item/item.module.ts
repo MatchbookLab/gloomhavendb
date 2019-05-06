@@ -7,6 +7,7 @@ import { SuggestedFixType } from '../../../../shared/constants/suggested-fix-typ
 import { Item } from '../../../../shared/entities/item';
 import { ApiService } from '../../services/api/api.service';
 import { RouteResolvers, ResolveService } from '../../services/resolver/resolve.service';
+import { DiffModule } from '../../shared/diff/diff.module';
 import { IconModule } from '../../shared/icon/icon.module';
 import { PipesModule } from '../../shared/pipes/pipes.module';
 import { TextWithIconsModule } from '../../shared/text-with-icons/text-with-icons.module';
@@ -60,6 +61,7 @@ export class ItemRouterModule {}
     FormsModule,
     TextWithIconsModule,
     HttpClientModule,
+    DiffModule,
   ],
   declarations: [ItemComponent],
 })

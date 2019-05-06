@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Location } from '@angular/common';
+import { Meta } from '@angular/platform-browser';
 import { ItemSource } from '../../../../shared/constants/item-source';
 import { Limit } from '../../../../shared/constants/limit';
 import { Slot } from '../../../../shared/constants/slot';
@@ -33,18 +35,42 @@ export class ItemComponent implements OnInit {
 
   item: Item;
   suggestedFixes: SuggestedFix<Item>[];
+  header: string;
 
   constructor(
     private titleService: TitleService,
     private api: ApiService,
     private resolvedDataService: ResolvedDataService<ItemResolveData>,
+    private meta: Meta,
+    private location: Location,
   ) {
     this.item = this.resolvedDataService.get('item');
     this.suggestedFixes = this.resolvedDataService.get('suggestedFixes');
   }
 
-  async ngOnInit() {
-    this.titleService.patchTitle(`${this.item.name} - Item ${this.item.number}`);
+  ngOnInit() {
+    this.header = `${this.item.name} - Item ${this.item.number}`;
+    this.titleService.patchTitle(this.header);
+
+    // zzz
+    this.meta.updateTag({ name: 'description', content: this.item.text });
+
+    // TODO remove the "gloomhavendb.com" base once we have full URLs set up
+    this.meta.updateTag({ name: 'og:image', content: `https://gloomhavendb.com${this.item.imageUrl}` });
+    this.meta.updateTag({ name: 'og:title', content: this.header });
+    this.meta.updateTag({ name: 'og:description', content: this.item.text });
+
+    // TODO remove the "gloomhavendb.com" base once we have full URLs set up
+    this.meta.updateTag({ name: 'twitter:image', content: `https://gloomhavendb.com${this.item.imageUrl}` });
+    this.meta.updateTag({ name: 'twitter:title', content: this.header });
+    this.meta.updateTag({ name: 'twitter:description', content: this.item.text });
+
+    // TODO move these to somewhere global
+    this.meta.updateTag({ name: 'og:type', content: 'website' });
+    this.meta.updateTag({ name: 'twitter:card', content: 'website' });
+    this.meta.updateTag({ name: 'twitter:site', content: `https://gloomhavendb.com` });
+    this.meta.updateTag({ name: 'og:site_name', content: 'Gloomhaven DB' });
+    this.meta.updateTag({ name: 'og:url', content: `https://gloomhavendb.com${this.location.path()}` });
   }
 
   async submitFix(item: Item) {

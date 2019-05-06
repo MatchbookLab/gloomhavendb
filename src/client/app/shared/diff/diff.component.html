@@ -1,0 +1,4 @@
+<pre><code
+  *ngFor="let change of changes"
+  [ngClass]="{ added: change.added, removed: change.removed }"
+>{{ change.value }}</code></pre>

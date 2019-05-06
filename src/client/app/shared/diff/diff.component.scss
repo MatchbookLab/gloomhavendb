@@ -1,0 +1,17 @@
+:host {
+  display: block;
+}
+
+pre {
+  padding: 0;
+  margin: 0;
+}
+
+.added {
+  background-color: rgba(#1da362, 0.3);
+}
+
+.removed {
+  background-color: rgba(#de5145, 0.3);
+  text-decoration: line-through;
+}

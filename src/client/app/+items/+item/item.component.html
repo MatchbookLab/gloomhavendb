@@ -1,3 +1,7 @@
+<header>
+  <h1>{{ header }}</h1>
+</header>
+
 <div class="content">
   <div class="readonly-section section">
     <div class="stats">
@@ -85,6 +89,8 @@
         </div>
       </div>
     </div>
+
+    <gdb-diff [objectA]="item" [objectB]="suggestedFixes[0].data"></gdb-diff>
   </div>
 
   <div class="edit-section section">
