@@ -70,6 +70,7 @@ const routes: BetterRoute<BaseRoutePath | '**'>[] = [
   imports: [
     RouterModule.forRoot(routes, {
       preloadingStrategy: PreloadAllModules,
+      initialNavigation: 'enabled',
     }),
   ],
   exports: [RouterModule],

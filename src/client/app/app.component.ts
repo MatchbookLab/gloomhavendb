@@ -1,9 +1,9 @@
 import { Location, PopStateEvent } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
-import { ActivatedRoute, Event, NavigationEnd, NavigationStart, Router, UrlSegment } from '@angular/router';
-import { BehaviorSubject } from 'rxjs';
-import { filter, map, mergeMap, tap } from 'rxjs/operators';
+import { ActivatedRoute, Event, NavigationEnd, NavigationStart, Router } from '@angular/router';
+import { filter, map, mergeMap } from 'rxjs/operators';
+import { environment } from '../environments/environment';
 import { PlatformService } from './services/platform/platform.service';
 import { RouteData } from './util/routing';
 
@@ -39,7 +39,7 @@ export class AppComponent implements OnInit {
       )
       .subscribe((title: string) => this.titleService.setTitle(title));
 
-    if (!this.platform.isBrowser) {
+    if (!this.platform.isBrowser || environment.production) {
       return;
     }
 
