@@ -1,29 +1,28 @@
 import { CommonModule } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { RouterModule, Routes } from '@angular/router';
+import { ActivatedRouteSnapshot, RouterModule, Routes } from '@angular/router';
+import { SuggestedFixType } from '../../../../shared/constants/suggested-fix-type';
 import { Item } from '../../../../shared/entities/item';
-import { SuggestedFix } from '../../../../shared/entities/suggested-fix';
+import { ApiService } from '../../services/api/api.service';
+import { RouteResolvers, ResolveService } from '../../services/resolver/resolve.service';
 import { IconModule } from '../../shared/icon/icon.module';
 import { PipesModule } from '../../shared/pipes/pipes.module';
-import {
-  EntityIdOrNumberKey,
-  EntityType,
-  SuggestedFixesResolver,
-} from '../../shared/resolvers/suggested-fixes/suggested-fixes.resolver';
 import { TextWithIconsModule } from '../../shared/text-with-icons/text-with-icons.module';
 
-import { ItemComponent } from './item.component';
-import { ItemResolver } from './item.resolver';
+import { ItemComponent, ItemResolveData } from './item.component';
+
+const resolveRouteData: RouteResolvers<ItemResolveData> = {
+  item: 'ItemResolver',
+  suggestedFixes: 'SuggestedFixesResolver',
+};
 
 const routes: Routes = [
   {
     path: '',
     component: ItemComponent,
-    resolve: {
-      item: ItemResolver,
-      suggestedFixes: SuggestedFixesResolver,
-    },
+    resolve: resolveRouteData,
   },
 ];
 
@@ -31,22 +30,37 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
   providers: [
-    ItemResolver,
-    SuggestedFixesResolver,
+    HttpClientModule,
     {
-      provide: EntityType,
-      useValue: Item.name,
+      provide: resolveRouteData.suggestedFixes,
+      useFactory: (resolveService: ResolveService) =>
+        resolveService.suggestedFixesResolver<Item>(SuggestedFixType.Item, 'number'),
+      deps: [ResolveService],
     },
     {
-      provide: EntityIdOrNumberKey,
-      useValue: 'number',
+      provide: resolveRouteData.item,
+      useFactory: (resolveService: ResolveService) =>
+        resolveService.factoryResolver({
+          getStateId: (route?: ActivatedRouteSnapshot): string => 'item-' + route.params['number'],
+          getFreshData: (api: ApiService, route?: ActivatedRouteSnapshot): Promise<Item> =>
+            api.findItem(route.params['number']),
+        }),
+      deps: [ResolveService],
     },
   ],
 })
 export class ItemRouterModule {}
 
 @NgModule({
-  imports: [CommonModule, ItemRouterModule, IconModule, PipesModule, FormsModule, TextWithIconsModule],
+  imports: [
+    CommonModule,
+    ItemRouterModule,
+    IconModule,
+    PipesModule,
+    FormsModule,
+    TextWithIconsModule,
+    HttpClientModule,
+  ],
   declarations: [ItemComponent],
 })
 export class ItemModule {}

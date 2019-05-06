@@ -1,15 +1,16 @@
 import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
+import { SuggestedFixType } from '../constants/suggested-fix-type';
 
 @Entity()
 export class SuggestedFix<T> {
   @PrimaryGeneratedColumn('uuid')
   id?: string;
 
-  @Column()
-  entityType: string; // entity name, i.e. "Item"
+  @Column({ enum: SuggestedFixType })
+  type: SuggestedFixType;
 
   @Column('varchar')
-  entityIdOrNumber: string | number;
+  paramKey: 'id' | 'number' | string;
 
   @Column('json')
   data: T;

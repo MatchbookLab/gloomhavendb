@@ -108,7 +108,7 @@ _.forEach(controllers, (controllerPath, className) => {
 
     let query = _.isEmpty(queryMap) ? '' : _.map(queryMap, (paramName, decoratorName) => `${paramName}`).join(', ');
 
-    query = query ? `params: { ${query} }` : null;
+    query = query ? `params: this.parametize({ ${query} })` : null;
 
     if (query) {
       configParts.push(query);
@@ -129,7 +129,10 @@ _.forEach(controllers, (controllerPath, className) => {
 
     let impl = '\n';
     impl += `  ${method.isAsync ? 'async ' : ''}${methodName}(${params}): ${method.returnType} {\n`;
-    impl += `    return (await this.http.${httpMethod}(\`${url}\`${data}${config})).data;\n`;
+    impl += `    return this.httpClient.${httpMethod}<${(<string>method.returnType).replace(
+      /^Promise<(.*?)>$/g,
+      '$1',
+    )}>(\`${url}\`${data}${config}).toPromise();\n`;
     impl += `  }\n`;
 
     controllerMethods += impl;
@@ -162,7 +165,8 @@ const baseContent =
   `
 
 import { Injectable } from '@angular/core';
-import { HttpService } from './http.service';
+import { HttpClient } from '@angular/common/http';
+import { mapValues } from 'lodash';
 
 //////////////////////////////////////////
 // This file is generated. Do not edit. //
@@ -170,9 +174,13 @@ import { HttpService } from './http.service';
 
 @Injectable({ providedIn: 'root' })
 export class ApiService {
-  constructor(private http: HttpService) {}
-
+  constructor(private httpClient: HttpClient) {}
+  
   // {generatedContent}
+  
+  private parametize(paramMap: { [paramName: string]: string | number | (string | number)[] }): { [paramName: string]: string | string[] } {
+    return mapValues(paramMap, v => Array.isArray(v) ? v.map(av => av + '') : (v + ''));
+  }
 }
 `;
 

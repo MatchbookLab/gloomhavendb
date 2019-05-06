@@ -11,7 +11,8 @@ import { SuggestedFix } from '../../../../shared/entities/suggested-fix';
 import { User } from '../../../../shared/entities/user';
 
 import { Injectable } from '@angular/core';
-import { HttpService } from './http.service';
+import { HttpClient } from '@angular/common/http';
+import { mapValues } from 'lodash';
 
 //////////////////////////////////////////
 // This file is generated. Do not edit. //
@@ -19,30 +20,30 @@ import { HttpService } from './http.service';
 
 @Injectable({ providedIn: 'root' })
 export class ApiService {
-  constructor(private http: HttpService) {}
+  constructor(private httpClient: HttpClient) {}
 
   //////////
   // Item //
   //////////
 
   async getItems(numbers?: string | (string | number)[]): Promise<Item[]> {
-    return (await this.http.get(`/api/items`, { params: { numbers } })).data;
+    return this.httpClient.get<Item[]>(`/api/items`, { params: this.parametize({ numbers }) }).toPromise();
   }
 
   async findItem(id: string | number): Promise<Item> {
-    return (await this.http.get(`/api/items/${id}`)).data;
+    return this.httpClient.get<Item>(`/api/items/${id}`).toPromise();
   }
 
   async createItem(item: Item): Promise<Item> {
-    return (await this.http.post(`/api/items`, item)).data;
+    return this.httpClient.post<Item>(`/api/items`, item).toPromise();
   }
 
   async updateItem(cardNo: string | number, item: Item): Promise<Item> {
-    return (await this.http.put(`/api/items/${cardNo}`, item)).data;
+    return this.httpClient.put<Item>(`/api/items/${cardNo}`, item).toPromise();
   }
 
   async deleteItem(cardNo: string | number): Promise<Item> {
-    return (await this.http.delete(`/api/items/${cardNo}`)).data;
+    return this.httpClient.delete<Item>(`/api/items/${cardNo}`).toPromise();
   }
 
   ///////////
@@ -50,43 +51,43 @@ export class ApiService {
   ///////////
 
   async getRoadEvents(): Promise<Event[]> {
-    return (await this.http.get(`/api/events/road`)).data;
+    return this.httpClient.get<Event[]>(`/api/events/road`).toPromise();
   }
 
   async findRoadEvent(cardNo: string | number): Promise<Event> {
-    return (await this.http.get(`/api/events/road/${cardNo}`)).data;
+    return this.httpClient.get<Event>(`/api/events/road/${cardNo}`).toPromise();
   }
 
   async createRoadEvent(event: Event): Promise<Event> {
-    return (await this.http.post(`/api/events/road`, event)).data;
+    return this.httpClient.post<Event>(`/api/events/road`, event).toPromise();
   }
 
   async updateRoadEvent(cardNo: string | number, event: Event): Promise<Event> {
-    return (await this.http.put(`/api/events/road/${cardNo}`, event)).data;
+    return this.httpClient.put<Event>(`/api/events/road/${cardNo}`, event).toPromise();
   }
 
   async deleteRoadEvent(cardNo: string | number): Promise<Event> {
-    return (await this.http.delete(`/api/events/road/${cardNo}`)).data;
+    return this.httpClient.delete<Event>(`/api/events/road/${cardNo}`).toPromise();
   }
 
   async getCityEvents(): Promise<(Event)[]> {
-    return (await this.http.get(`/api/events/city`)).data;
+    return this.httpClient.get<(Event)[]>(`/api/events/city`).toPromise();
   }
 
   async findCityEvent(cardNo: string | number): Promise<Event> {
-    return (await this.http.get(`/api/events/city/${cardNo}`)).data;
+    return this.httpClient.get<Event>(`/api/events/city/${cardNo}`).toPromise();
   }
 
   async createCityEvent(event: Event): Promise<Event> {
-    return (await this.http.post(`/api/events/city`, event)).data;
+    return this.httpClient.post<Event>(`/api/events/city`, event).toPromise();
   }
 
   async updateCityEvent(cardNo: string | number, event: Event): Promise<Event> {
-    return (await this.http.put(`/api/events/city/${cardNo}`, event)).data;
+    return this.httpClient.put<Event>(`/api/events/city/${cardNo}`, event).toPromise();
   }
 
   async deleteCityEvent(cardNo: string | number): Promise<Event> {
-    return (await this.http.delete(`/api/events/city/${cardNo}`)).data;
+    return this.httpClient.delete<Event>(`/api/events/city/${cardNo}`).toPromise();
   }
 
   ///////////////////
@@ -94,10 +95,23 @@ export class ApiService {
   ///////////////////
 
   async suggestFix<T>(suggestedFix: SuggestedFix<T>): Promise<SuggestedFix<T>> {
-    return (await this.http.post(`/api/suggested-fix`, suggestedFix)).data;
+    return this.httpClient.post<SuggestedFix<T>>(`/api/suggested-fix`, suggestedFix).toPromise();
   }
 
-  async matchingSuggestedFixes<T>(entityType: string, entityIdOrNumber: string | number): Promise<SuggestedFix<T>[]> {
-    return (await this.http.get(`/api/suggested-fix/matching`, { params: { entityType, entityIdOrNumber } })).data;
+  async getMatchingSuggestedFixes<T>(
+    entityType: string,
+    entityIdOrNumber: string | number,
+  ): Promise<SuggestedFix<T>[]> {
+    return this.httpClient
+      .get<SuggestedFix<T>[]>(`/api/suggested-fix/matching`, {
+        params: this.parametize({ entityType, entityIdOrNumber }),
+      })
+      .toPromise();
+  }
+
+  private parametize(paramMap: {
+    [paramName: string]: string | number | (string | number)[];
+  }): { [paramName: string]: string | string[] } {
+    return mapValues(paramMap, v => (Array.isArray(v) ? v.map(av => av + '') : v + ''));
   }
 }

@@ -1,4 +1,5 @@
-import { Body, Controller, Get, Param, Post, Query } from '@nestjs/common';
+import { Body, Controller, Get, Post, Query } from '@nestjs/common';
+import { SuggestedFixType } from '../../../shared/constants/suggested-fix-type';
 import { SuggestedFix } from '../../../shared/entities/suggested-fix';
 import { SuggestedFixRepository } from './suggested-fix.repository';
 
@@ -14,18 +15,13 @@ export class SuggestedFixController {
   }
 
   @Get('matching')
-  async matchingSuggestedFixes<T>(
-    @Query('entityType') entityType: string,
-    @Query('entityIdOrNumber') entityIdOrNumber: string | number,
+  async getMatchingSuggestedFixes<T>(
+    @Query('entityType') entityType: SuggestedFixType,
+    @Query('entityIdOrNumber') entityIdOrNumber: string,
   ): Promise<SuggestedFix<T>[]> {
-    entityIdOrNumber = entityIdOrNumber + ''; // ensure string
-    console.log({
-      entityType,
-      entityIdOrNumber,
-    });
     return await this.suggestedFixRepo.find({
-      entityType,
-      entityIdOrNumber,
+      type: entityType,
+      paramKey: entityIdOrNumber,
     });
   }
 }
