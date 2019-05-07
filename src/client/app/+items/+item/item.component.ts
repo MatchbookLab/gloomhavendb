@@ -11,6 +11,7 @@ import { ApiService } from '../../services/api/api.service';
 import { ResolvedDataService } from '../../services/resolver/resolve.service';
 import { TitleService } from '../../services/title/title.service';
 import { GdbIcon } from '../../shared/icon/icon.enum';
+import { PopupService } from '../../shared/popup/popup.service';
 
 export interface ItemResolveData {
   item: Item;
@@ -36,10 +37,12 @@ export class ItemComponent implements OnInit {
   item: Item;
   suggestedFixes: SuggestedFix<Item>[];
   header: string;
+  showDiffPopup: boolean;
 
   constructor(
     private titleService: TitleService,
     private api: ApiService,
+    private popupService: PopupService,
     private resolvedDataService: ResolvedDataService<ItemResolveData>,
     private meta: Meta,
     private location: Location,
@@ -71,6 +74,14 @@ export class ItemComponent implements OnInit {
     this.meta.updateTag({ name: 'twitter:site', content: `https://gloomhavendb.com` });
     this.meta.updateTag({ name: 'og:site_name', content: 'Gloomhaven DB' });
     this.meta.updateTag({ name: 'og:url', content: `https://gloomhavendb.com${this.location.path()}` });
+  }
+
+  openPopup() {
+    this.showDiffPopup = true;
+  }
+
+  closePopup() {
+    this.showDiffPopup = false;
   }
 
   async submitFix(item: Item) {

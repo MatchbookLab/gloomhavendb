@@ -10,6 +10,7 @@ import { RouteResolvers, ResolveService } from '../../services/resolver/resolve.
 import { DiffModule } from '../../shared/diff/diff.module';
 import { IconModule } from '../../shared/icon/icon.module';
 import { PipesModule } from '../../shared/pipes/pipes.module';
+import { PopupModule } from '../../shared/popup/popup.module';
 import { TextWithIconsModule } from '../../shared/text-with-icons/text-with-icons.module';
 
 import { ItemComponent, ItemResolveData } from './item.component';
@@ -55,6 +56,7 @@ export class ItemRouterModule {}
 @NgModule({
   imports: [
     CommonModule,
+    PopupModule,
     ItemRouterModule,
     IconModule,
     PipesModule,

@@ -90,7 +90,11 @@
       </div>
     </div>
 
-    <gdb-diff [objectA]="item" [objectB]="suggestedFixes[0]?.data"></gdb-diff>
+    <tc-popup-container *ngIf="showDiffPopup" (backgroundClick)="closePopup()" [isModal]="false">
+      <gdb-diff [objectA]="item" [objectB]="suggestedFixes[0]?.data"></gdb-diff>
+    </tc-popup-container>
+
+    <button class="btn" type="button" (click)="openPopup()">Open Popup</button>
   </div>
 
   <div class="edit-section section">
