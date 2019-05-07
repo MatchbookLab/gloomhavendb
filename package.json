@@ -86,6 +86,7 @@
     "passport-jwt": "^4.0.0",
     "pg": "^7.10.0",
     "pluralize": "^7.0.0",
+    "preboot": "^7.0.0",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^6.5.1",
     "swagger-ui-express": "^4.0.2",

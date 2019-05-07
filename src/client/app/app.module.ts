@@ -12,6 +12,7 @@ import { BrowserModule, BrowserTransferStateModule } from '@angular/platform-bro
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
 import { Observable } from 'rxjs';
+import { PrebootModule } from 'preboot';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -20,6 +21,7 @@ import { PlatformService } from './services/platform/platform.service';
 @NgModule({
   imports: [
     BrowserModule.withServerTransition({ appId: 'gloomhavendb' }),
+    PrebootModule.withConfig({ appRoot: 'gdb-root' }),
     BrowserTransferStateModule,
     BrowserAnimationsModule,
     AppRoutingModule,
