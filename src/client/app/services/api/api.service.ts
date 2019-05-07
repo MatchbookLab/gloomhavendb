@@ -12,9 +12,10 @@ import { User } from '../../../../shared/entities/user';
 
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { mapValues } from 'lodash';
+import { mapValues, omitBy, isNil } from 'lodash';
 
 import { SuggestedFixType } from '../../../../shared/constants/suggested-fix-type';
+import { NumberList } from '../../../../shared/types/number-list';
 
 //////////////////////////////////////////
 // This file is generated. Do not edit. //
@@ -28,7 +29,7 @@ export class ApiService {
   // Item //
   //////////
 
-  async getItems(numbers?: string | (string | number)[]): Promise<Item[]> {
+  async getItems(numbers?: NumberList): Promise<Item[]> {
     return this.httpClient.get<Item[]>(`/api/items`, { params: this.parametize({ numbers }) }).toPromise();
   }
 
@@ -106,9 +107,25 @@ export class ApiService {
       .toPromise();
   }
 
+  //////////////////
+  // Map Location //
+  //////////////////
+
+  async getMapLocations(numbers?: NumberList): Promise<MapLocation[]> {
+    return this.httpClient
+      .get<MapLocation[]>(`/api/map-locations`, { params: this.parametize({ numbers }) })
+      .toPromise();
+  }
+
+  async findMapLocation(id: string | number): Promise<MapLocation> {
+    return this.httpClient.get<MapLocation>(`/api/map-locations/${id}`).toPromise();
+  }
+
   private parametize(paramMap: {
-    [paramName: string]: string | number | (string | number)[];
+    [paramName: string]: number | NumberList;
   }): { [paramName: string]: string | string[] } {
-    return mapValues(paramMap, v => (Array.isArray(v) ? v.map(av => av + '') : v + ''));
+    const stringifiedMap = mapValues(paramMap, v => (Array.isArray(v) ? v.map(av => av + '') : v + ''));
+    // remove undesirable values
+    return omitBy(stringifiedMap, v => isNil(v) || v === 'undefined' || v === 'null' || v === '');
   }
 }

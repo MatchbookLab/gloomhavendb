@@ -19,6 +19,7 @@ import { User } from '../shared/entities/user';
 
 import { EventController } from './api/event/event.controller';
 import { ItemController } from './api/item/item.controller';
+import { MapLocationController } from './api/map-location/map-location.controller';
 import { SuggestedFixController } from './api/suggested-fix/suggested-fix.controller';
 import { UserController } from './api/user/user.controller';
 
@@ -92,7 +93,7 @@ const angularUniversal = DEVELOPMENT_MODE
       },
     }),
   ],
-  controllers: [EventController, ItemController, UserController, SuggestedFixController],
+  controllers: [EventController, ItemController, UserController, SuggestedFixController, MapLocationController],
   providers: [
     ...repositories,
     {

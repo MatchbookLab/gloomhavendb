@@ -24,6 +24,7 @@ const controllers = {
   ItemController: path.join(__dirname, '../server/api/item/item.controller.ts'),
   EventController: path.join(__dirname, '../server/api/event/event.controller.ts'),
   SuggestedFixController: path.join(__dirname, '../server/api/suggested-fix/suggested-fix.controller.ts'),
+  MapLocationController: path.join(__dirname, '../server/api/map-location/map-location.controller.ts'),
 };
 
 let sdkMethods = '';
@@ -168,9 +169,10 @@ const baseContent =
 
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { mapValues } from 'lodash';
+import { mapValues, omitBy, isNil } from 'lodash';
 
 import { SuggestedFixType } from '../../../../shared/constants/suggested-fix-type';
+import { NumberList } from '../../../../shared/types/number-list';
 
 //////////////////////////////////////////
 // This file is generated. Do not edit. //
@@ -181,9 +183,11 @@ export class ApiService {
   constructor(private httpClient: HttpClient) {}
   
   // {generatedContent}
-  
-  private parametize(paramMap: { [paramName: string]: string | number | (string | number)[] }): { [paramName: string]: string | string[] } {
-    return mapValues(paramMap, v => Array.isArray(v) ? v.map(av => av + '') : (v + ''));
+
+  private parametize(paramMap: { [paramName: string]: number | NumberList }): { [paramName: string]: string | string[] } {
+    const stringifiedMap = mapValues(paramMap, v => Array.isArray(v) ? v.map(av => av + '') : (v + ''));
+    // remove undesirable values
+    return omitBy(stringifiedMap, v => isNil(v) || v === 'undefined' || v === 'null' || v === '');
   }
 }
 `;

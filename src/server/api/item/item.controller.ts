@@ -3,6 +3,8 @@ import { AuthGuard } from '@nestjs/passport';
 import { In } from 'typeorm';
 import { items } from '../../../data/items';
 import { Item } from '../../../shared/entities/item';
+import { NumberList } from '../../../shared/types/number-list';
+import { numberListToArray } from '../../util/number-list-to-array';
 import { BetterFindManyOptions } from '../base.repository';
 import { ItemRepository } from './item.repository';
 
@@ -13,12 +15,12 @@ export class ItemController {
   }
 
   @Get()
-  async getItems(@Query('numbers') numberList?: string | (string | number)[]): Promise<Item[]> {
+  async getItems(@Query('numbers') numberList?: NumberList): Promise<Item[]> {
     const options: BetterFindManyOptions<Item> = { order: { number: 'ASC' } };
 
     if (numberList) {
-      const idArray: number[] = (Array.isArray(numberList) ? numberList : numberList.split(',')).map(id => +id);
-      options.where = { number: In(idArray) };
+      const numbers: number[] = numberListToArray(numberList);
+      options.where = { number: In(numbers) };
     }
 
     return await this.itemRepo.smartFind(options);

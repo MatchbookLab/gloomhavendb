@@ -8,7 +8,10 @@ export interface MapPosition {
 @Entity()
 export class MapLocation {
   // this is the scenario number and is *not* generated
-  @PrimaryColumn() number: number;
+  @PrimaryColumn()
+  number: number;
+
+  @Column()
   name: string;
 
   @Column()
