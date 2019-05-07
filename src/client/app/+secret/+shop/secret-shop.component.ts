@@ -113,6 +113,7 @@ export class SecretShopComponent implements OnInit, AfterViewInit {
       100,
       101,
       107,
+      113,
       114,
       115,
       116,
