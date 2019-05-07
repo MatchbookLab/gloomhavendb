@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { FaIconService, FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faSearchPlus, faSearchMinus, faCheckCircle, faCheck } from '@fortawesome/free-solid-svg-icons';
+import { faCheckCircle, faSearchMinus, faSearchPlus } from '@fortawesome/free-solid-svg-icons';
 
 import { SecretMapComponent } from './secret-map.component';
 
