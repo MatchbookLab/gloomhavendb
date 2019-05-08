@@ -2,7 +2,7 @@ import { Test, TestingModule } from '@nestjs/testing';
 import { UserController } from './user.controller';
 import { UserRepository } from './user.repository';
 
-describe('UsersController', () => {
+describe('UserController', () => {
   let fixture: TestingModule;
   beforeAll(async () => {
     fixture = await Test.createTestingModule({

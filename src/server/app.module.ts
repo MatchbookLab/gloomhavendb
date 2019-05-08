@@ -16,6 +16,7 @@ import { Role } from '../shared/entities/role';
 import { Scenario } from '../shared/entities/scenario';
 import { SuggestedFix } from '../shared/entities/suggested-fix';
 import { User } from '../shared/entities/user';
+import { BattleGoalController } from './api/battle-goal/battle-goal.controller';
 
 import { EventController } from './api/event/event.controller';
 import { ItemController } from './api/item/item.controller';
@@ -93,7 +94,14 @@ const angularUniversal = DEVELOPMENT_MODE
       },
     }),
   ],
-  controllers: [EventController, ItemController, UserController, SuggestedFixController, MapLocationController],
+  controllers: [
+    EventController,
+    ItemController,
+    UserController,
+    SuggestedFixController,
+    MapLocationController,
+    BattleGoalController,
+  ],
   providers: [
     ...repositories,
     {

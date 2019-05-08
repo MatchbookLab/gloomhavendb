@@ -1,4 +1,5 @@
 import { Connection } from 'typeorm';
+import { BattleGoalRepository } from './battle-goal/battle-goal.repository';
 import { EventRepository } from './event/event.repository';
 import { ItemRepository } from './item/item.repository';
 import { MapLocationRepository } from './map-location/map-location.repository';
@@ -30,6 +31,11 @@ export const repositories = [
   {
     provide: MapLocationRepository,
     useFactory: (connection: Connection) => connection.getCustomRepository(MapLocationRepository),
+    inject: [Connection],
+  },
+  {
+    provide: BattleGoalRepository,
+    useFactory: (connection: Connection) => connection.getCustomRepository(BattleGoalRepository),
     inject: [Connection],
   },
 ];

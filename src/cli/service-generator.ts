@@ -25,6 +25,7 @@ const controllers = {
   EventController: path.join(__dirname, '../server/api/event/event.controller.ts'),
   SuggestedFixController: path.join(__dirname, '../server/api/suggested-fix/suggested-fix.controller.ts'),
   MapLocationController: path.join(__dirname, '../server/api/map-location/map-location.controller.ts'),
+  BattleGoalController: path.join(__dirname, '../server/api/battle-goal/battle-goal.controller.ts'),
 };
 
 let sdkMethods = '';
@@ -184,7 +185,11 @@ export class ApiService {
   
   // {generatedContent}
 
-  private parametize(paramMap: { [paramName: string]: number | NumberList }): { [paramName: string]: string | string[] } {
+  ////////////////////////////
+  // Private Shared Methods //
+  ////////////////////////////
+
+  private parametize(paramMap: { [paramName: string]: boolean | number | NumberList }): { [paramName: string]: string | string[] } {
     const stringifiedMap = mapValues(paramMap, v => Array.isArray(v) ? v.map(av => av + '') : (v + ''));
     // remove undesirable values
     return omitBy(stringifiedMap, v => isNil(v) || v === 'undefined' || v === 'null' || v === '');

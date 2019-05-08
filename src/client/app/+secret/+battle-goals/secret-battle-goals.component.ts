@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { clone, random } from 'lodash';
-import { battleGoals } from '../../../../data/battle-goals';
 import { BattleGoal } from '../../../../shared/entities/battle-goal';
+import { ApiService } from '../../services/api/api.service';
 import { ScrollingService } from '../../services/scrolling/scrolling.service';
 
 enum StoreKey {
@@ -23,19 +23,19 @@ export class SecretBattleGoalsComponent implements OnInit {
   peekedGoal: BattleGoal;
   canVeto: boolean;
 
-  constructor(private scrollingService: ScrollingService) {}
+  constructor(private scrollingService: ScrollingService, private api: ApiService) {}
 
   async ngOnInit() {
     this.battleGoals = this.load(StoreKey.BattleGoalListKey);
     if (!this.battleGoals) {
-      this.resetBattleGoals();
+      await this.resetBattleGoals();
     } else {
       this.playersGoals = this.load(StoreKey.PlayersBattleGoalsKey) || [];
     }
   }
 
-  resetBattleGoals() {
-    this.battleGoals = clone(battleGoals);
+  async resetBattleGoals() {
+    this.battleGoals = clone(await this.api.getBattleGoals(true));
     this.playersGoals = [];
     this.pickingBattleGoals = [];
     this.peekedGoal = null;

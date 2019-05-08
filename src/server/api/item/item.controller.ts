@@ -26,9 +26,9 @@ export class ItemController {
     return await this.itemRepo.smartFind(options);
   }
 
-  @Get(':id')
-  async findItem(@Param('id') id: string | number): Promise<Item> {
-    return this.itemRepo.smartFindOneOrFail(id);
+  @Get(':number')
+  async findItem(@Param('number') number: string | number): Promise<Item> {
+    return this.itemRepo.smartFindOneOrFail(number);
   }
 
   @Post()

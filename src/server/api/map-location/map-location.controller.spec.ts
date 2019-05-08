@@ -2,7 +2,7 @@ import { Test, TestingModule } from '@nestjs/testing';
 import { MapLocationController } from './map-location.controller';
 import { MapLocationRepository } from './map-location.repository';
 
-describe('Item Controller', () => {
+describe('MapLocationController', () => {
   let controller: MapLocationController;
 
   beforeEach(async () => {

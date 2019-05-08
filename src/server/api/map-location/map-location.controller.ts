@@ -25,9 +25,9 @@ export class MapLocationController {
     return await this.mapLocationRepo.smartFind(options);
   }
 
-  @Get(':id')
-  async findMapLocation(@Param('id') id: string | number): Promise<MapLocation> {
-    return this.mapLocationRepo.smartFindOneOrFail(id);
+  @Get(':number')
+  async findMapLocation(@Param('number') number: string | number): Promise<MapLocation> {
+    return this.mapLocationRepo.smartFindOneOrFail(number);
   }
 
   private async seed() {

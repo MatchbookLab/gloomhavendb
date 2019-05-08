@@ -2,7 +2,7 @@ import { Test, TestingModule } from '@nestjs/testing';
 import { SuggestedFixController } from './suggested-fix.controller';
 import { SuggestedFixRepository } from './suggested-fix.repository';
 
-describe('Item Controller', () => {
+describe('SuggestedFixController', () => {
   let controller: SuggestedFixController;
 
   beforeEach(async () => {

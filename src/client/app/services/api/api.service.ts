@@ -33,8 +33,8 @@ export class ApiService {
     return this.httpClient.get<Item[]>(`/api/items`, { params: this.parametize({ numbers }) }).toPromise();
   }
 
-  async findItem(id: string | number): Promise<Item> {
-    return this.httpClient.get<Item>(`/api/items/${id}`).toPromise();
+  async findItem(number: string | number): Promise<Item> {
+    return this.httpClient.get<Item>(`/api/items/${number}`).toPromise();
   }
 
   async createItem(item: Item): Promise<Item> {
@@ -117,12 +117,30 @@ export class ApiService {
       .toPromise();
   }
 
-  async findMapLocation(id: string | number): Promise<MapLocation> {
-    return this.httpClient.get<MapLocation>(`/api/map-locations/${id}`).toPromise();
+  async findMapLocation(number: string | number): Promise<MapLocation> {
+    return this.httpClient.get<MapLocation>(`/api/map-locations/${number}`).toPromise();
   }
 
+  /////////////////
+  // Battle Goal //
+  /////////////////
+
+  async getBattleGoals(includeExtendedGoals?: boolean): Promise<BattleGoal[]> {
+    return this.httpClient
+      .get<BattleGoal[]>(`/api/battle-goals`, { params: this.parametize({ includeExtendedGoals }) })
+      .toPromise();
+  }
+
+  async findBattleGoal(name: string): Promise<BattleGoal> {
+    return this.httpClient.get<BattleGoal>(`/api/battle-goals/${name}`).toPromise();
+  }
+
+  ////////////////////////////
+  // Private Shared Methods //
+  ////////////////////////////
+
   private parametize(paramMap: {
-    [paramName: string]: number | NumberList;
+    [paramName: string]: boolean | number | NumberList;
   }): { [paramName: string]: string | string[] } {
     const stringifiedMap = mapValues(paramMap, v => (Array.isArray(v) ? v.map(av => av + '') : v + ''));
     // remove undesirable values
