@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { ROUTE_TITLE_PLACEHOLDER } from '../services/title/title.service';
+import { ROUTE_TITLE_PLACEHOLDER } from '../services/meta-tags/meta-tags.service';
 import { BetterRoute } from '../util/routing';
 
 import { ItemsPageComponent } from './items-page.component';

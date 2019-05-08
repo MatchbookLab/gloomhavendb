@@ -192,6 +192,11 @@
       </label>
     </ng-container>
   </div>
-</div>
 
-<button class="btn btn-primary" (click)="onSubmit()">Submit</button>
+  <ng-container *ngIf="editable">
+    <div>&nbsp;</div>
+    <div>
+      <button class="btn btn-primary" (click)="onSubmit()">Submit</button>
+    </div>
+  </ng-container>
+</div>

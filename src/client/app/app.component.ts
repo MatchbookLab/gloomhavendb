@@ -1,8 +1,8 @@
 import { Location, PopStateEvent } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
-import { Title } from '@angular/platform-browser';
+import { Meta, Title } from '@angular/platform-browser';
 import { ActivatedRoute, Event, NavigationEnd, NavigationStart, Router } from '@angular/router';
-import { filter, map, mergeMap } from 'rxjs/operators';
+import { filter, map, mergeMap, tap } from 'rxjs/operators';
 import { environment } from '../environments/environment';
 import { PlatformService } from './services/platform/platform.service';
 import { RouteData } from './util/routing';
@@ -22,6 +22,7 @@ export class AppComponent implements OnInit {
     private router: Router,
     private location: Location,
     private platform: PlatformService,
+    private meta: Meta,
   ) {}
 
   ngOnInit() {
@@ -35,9 +36,18 @@ export class AppComponent implements OnInit {
         }),
         filter((route: ActivatedRoute) => route.outlet === 'primary'),
         mergeMap((route: ActivatedRoute) => route.data),
+        tap(() =>
+          this.meta.updateTag({ property: 'og:url', content: `https://gloomhavendb.com${this.location.path()}` }),
+        ),
         map((data: RouteData) => (data && data.title ? `${data.title} | ` : '') + 'Gloomhaven DB'),
       )
       .subscribe((title: string) => this.titleService.setTitle(title));
+
+    this.meta.updateTag({ property: 'og:type', content: 'website' });
+    this.meta.updateTag({ name: 'twitter:card', content: 'website' });
+    this.meta.updateTag({ name: 'twitter:site', content: `https://gloomhavendb.com` });
+    this.meta.updateTag({ property: 'og:site_name', content: 'Gloomhaven DB' });
+    this.meta.updateTag({ property: 'og:url', content: `https://gloomhavendb.com${this.location.path()}` });
 
     if (!this.platform.isBrowser || environment.production) {
       return;
