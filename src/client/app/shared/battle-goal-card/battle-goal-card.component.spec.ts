@@ -1,13 +1,13 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { BattleGoal } from '../../../../shared/entities/battle-goal';
 import { TestBedHelper } from '../../../test/test-bed.helper';
-import { BattleGoalComponent } from './battle-goal.component';
+import { BattleGoalCardComponent } from './battle-goal-card.component';
 
 import { SecretBattleGoalsModule } from '../../+secret/+battle-goals/secret-battle-goals.module';
 
-describe('BattleGoalComponent', () => {
-  let component: BattleGoalComponent;
-  let fixture: ComponentFixture<BattleGoalComponent>;
+describe('BattleGoalCardComponent', () => {
+  let component: BattleGoalCardComponent;
+  let fixture: ComponentFixture<BattleGoalCardComponent>;
 
   const config = TestBedHelper.createComponentConfig()
     .addImports(SecretBattleGoalsModule)
@@ -16,7 +16,7 @@ describe('BattleGoalComponent', () => {
   TestBedHelper.autoConfigureTestingModule(config);
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(BattleGoalComponent);
+    fixture = TestBed.createComponent(BattleGoalCardComponent);
     component = fixture.componentInstance;
     component.battleGoal = {
       id: 1,

@@ -3,11 +3,11 @@ import { BattleGoal } from '../../../../shared/entities/battle-goal';
 import { GdbIcon } from '../icon/icon.enum';
 
 @Component({
-  selector: 'gdb-battle-goal',
-  templateUrl: './battle-goal.component.html',
-  styleUrls: ['./battle-goal.component.scss'],
+  selector: 'gdb-battle-goal-card',
+  templateUrl: './battle-goal-card.component.html',
+  styleUrls: ['./battle-goal-card.component.scss'],
 })
-export class BattleGoalComponent {
+export class BattleGoalCardComponent {
   Icon = GdbIcon;
 
   @Input() battleGoal: BattleGoal;

@@ -5,7 +5,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { FaIconService, FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faCheck, faTimes } from '@fortawesome/free-solid-svg-icons';
-import { BattleGoalModule } from '../../shared/battle-goal/battle-goal.module';
+import { BattleGoalCardModule } from '../../shared/battle-goal-card/battle-goal-card.module';
 import { GdbFormsModule } from '../../shared/forms/forms.module';
 
 import { SecretBattleGoalsComponent } from './secret-battle-goals.component';
@@ -31,7 +31,7 @@ export class SecretBattleGoalsRoutingModule {}
     GdbFormsModule,
     SecretBattleGoalsRoutingModule,
     FontAwesomeModule,
-    BattleGoalModule,
+    BattleGoalCardModule,
   ],
   declarations: [SecretBattleGoalsComponent],
 })
