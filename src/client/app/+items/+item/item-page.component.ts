@@ -1,16 +1,12 @@
-import { Component, OnInit } from '@angular/core';
 import { Location } from '@angular/common';
+import { Component, OnInit } from '@angular/core';
 import { Meta } from '@angular/platform-browser';
-import { ItemSource } from '../../../../shared/constants/item-source';
-import { Limit } from '../../../../shared/constants/limit';
-import { Slot } from '../../../../shared/constants/slot';
 import { SuggestedFixType } from '../../../../shared/constants/suggested-fix-type';
 import { Item } from '../../../../shared/entities/item';
 import { SuggestedFix } from '../../../../shared/entities/suggested-fix';
 import { ApiService } from '../../services/api/api.service';
 import { ResolvedDataService } from '../../services/resolver/resolve.service';
 import { TitleService } from '../../services/title/title.service';
-import { GdbIcon } from '../../shared/icon/icon.enum';
 import { PopupService } from '../../shared/popup/popup.service';
 
 export interface ItemResolveData {

@@ -16,18 +16,12 @@ export class IconComponent implements OnChanges {
   iconSrc: string;
   altText: string;
 
-  @HostBinding('style.width')
-  get width(): string {
-    return this.size + 'px';
-  }
-
-  @HostBinding('style.height')
-  get height(): string {
-    return this.size + 'px';
-  }
+  @HostBinding('style.padding')
+  padding: string;
 
   ngOnChanges() {
     this.iconSrc = `/assets/icons/${this.icon}.svg`;
     this.altText = `{${InvertedGdbIcon[this.icon]}}`;
+    this.padding = `0 ${this.size / 20}px`;
   }
 }
