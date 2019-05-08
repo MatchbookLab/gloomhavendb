@@ -67,7 +67,7 @@ e2e:
     - echo "DOCKER_TAG -> $DOCKER_TAG"
     - docker-compose -f docker-compose.yml -f docker-compose.test.yml up -d app database mailhog
     - sleep 3s
-    - docker-compose -f docker-compose.yml -f docker-compose.test.yml logs app mailhog
+    - docker-compose -f docker-compose.yml -f docker-compose.test.yml logs
   script:
     # run this on the runner host
     - eval $(dmport -i "$RUNNER_MACHINE_CONFIG")
@@ -78,7 +78,7 @@ e2e:
     - eval $(dmport -i "$RUNNER_MACHINE_CONFIG")
     - echo "DOCKER_TAG -> $DOCKER_TAG"
     # one last log in case of failure
-    - docker-compose -f docker-compose.yml -f docker-compose.test.yml logs app mailhog
+    - docker-compose -f docker-compose.yml -f docker-compose.test.yml logs
     # this should remove all of the containers running
     - docker-compose -f docker-compose.yml -f docker-compose.test.yml down -v
 
