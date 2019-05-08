@@ -37,8 +37,13 @@ body {
 }
 
 @include button(#eee);
-@include button(#4b8cf5, '-secondary');
+@include button(#4b8cf5, '-primary');
+@include button(#ff9800, '-secondary');
 @include button(#f43e37, '-danger');
+
+.pointer {
+  cursor: pointer;
+}
 
 // Breakpoint Helper (for dev only)
 // --------------------------------

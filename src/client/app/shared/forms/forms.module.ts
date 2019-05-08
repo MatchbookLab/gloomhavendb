@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 import { ControlComponent } from './control/control.component';
 import { FormComponent } from './form/form.component';
 
 const toDeclareAndExport = [FormComponent, ControlComponent];
 
 @NgModule({
-  imports: [FormsModule, ReactiveFormsModule],
+  imports: [FormsModule],
   declarations: [...toDeclareAndExport],
-  exports: [...toDeclareAndExport],
+  exports: [...toDeclareAndExport, FormsModule],
 })
 export class GdbFormsModule {}

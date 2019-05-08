@@ -1,5 +1,5 @@
 import { Component, Input, OnChanges } from '@angular/core';
-import { Change, diffWords, diffWordsWithSpace } from 'diff';
+import { Change, diffWordsWithSpace } from 'diff';
 import { PlatformService } from '../../services/platform/platform.service';
 
 @Component({

@@ -25,19 +25,12 @@ export interface ItemResolveData {
   providers: [ResolvedDataService],
 })
 export class ItemPageComponent implements OnInit {
-  Icon = GdbIcon;
-  Limit = Limit;
-  Slot = Slot;
-  ItemSource = ItemSource;
-
-  slots: Slot[] = Object.values(Slot);
-  limits: Limit[] = Object.values(Limit);
-  sources: ItemSource[] = Object.values(ItemSource);
-
   item: Item;
   suggestedFixes: SuggestedFix<Item>[];
   header: string;
   showDiffPopup: boolean;
+
+  editable = false;
 
   constructor(
     private titleService: TitleService,
@@ -90,5 +83,7 @@ export class ItemPageComponent implements OnInit {
       idOrNumber: item.number + '',
       data: item,
     });
+
+    this.editable = false;
   }
 }

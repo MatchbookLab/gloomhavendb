@@ -1,32 +1,23 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { RouterTestingModule } from '@angular/router/testing';
 import { ItemSource } from '../../../../shared/constants/item-source';
 import { Limit } from '../../../../shared/constants/limit';
 import { Slot } from '../../../../shared/constants/slot';
 import { TestBedHelper } from '../../../test/test-bed.helper';
-import { ApiService } from '../../services/api/api.service';
+import { ItemComponent } from './item.component';
+import { ItemModule } from './item.module';
 
-import { ItemPageComponent } from './item-page.component';
-import { ItemPageModule } from './item-page.module';
-
-describe('ItemPageComponent', () => {
-  let component: ItemPageComponent;
-  let fixture: ComponentFixture<ItemPageComponent>;
+describe('ItemComponent', () => {
+  let component: ItemComponent;
+  let fixture: ComponentFixture<ItemComponent>;
 
   const config = TestBedHelper.createComponentConfig()
-    .addImports(ItemPageModule, RouterTestingModule)
-    .addProviders([
-      {
-        provide: ApiService,
-        useValue: {},
-      },
-    ])
+    .addImports(ItemModule)
     .getConfig();
 
   TestBedHelper.autoConfigureTestingModule(config);
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ItemPageComponent);
+    fixture = TestBed.createComponent(ItemComponent);
     component = fixture.componentInstance;
 
     component.item = {
