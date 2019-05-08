@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 245.2 204.92">
+<svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 245.2 204.92">
   <defs>
-    <mask id="round-bonus-mask">
+    <mask id="round-bonus-mask" fill="#000">
       <rect width="100%" height="100%" fill="#fff"/>
       <path d="M107.1 168.28l18.5-32.11h-11.15a43.65 43.65 0 1 0-19.25 49.11 7 7 0 1 0-7.31-11.94 29.67 29.67 0 1 1 11.71-37.17h-11z"/>
     </mask>

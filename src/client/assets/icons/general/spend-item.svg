@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 246.24 204.92">
+<svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 246.24 204.92">
   <defs>
-    <mask id="spend-item-mask">
+    <mask id="spend-item-mask" fill="#000">
       <rect width="100%" height="100%" fill="#fff"/>
       <path d="M36.57 62.9a5.25 5.25 0 1 1-10.49 0c1.66 0 3.31-1.2 5.25-1.2 1.59 0 3.42 1.2 5.24 1.2"/>
       <path d="M27.55 93.14h7.55L33.88 66.8h-5.11l-1.22 26.34z"/>

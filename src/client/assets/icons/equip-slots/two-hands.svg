@@ -1,8 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 528.3 456.32">
+<svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 528.3 456.32">
   <defs>
-    <mask id="two-hands-mask">
+    <mask id="two-hands-mask" fill="#000">
       <rect width="100%" height="100%" fill="#fff"/>
-      <path d="M237.79 59.45s93.14 59.71 135.36 166.95" stroke="#000" stroke-linecap="round" stroke-miterlimit="10" stroke-width="20"/>
+      <path d="M237.79 59.45s93.14 59.71 135.36 166.95" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="20"/>
     </mask>
   </defs>
   <g mask="url(#two-hands-mask)">

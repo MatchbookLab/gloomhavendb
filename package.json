@@ -66,6 +66,7 @@
     "@nguniversal/common": "^7.1.1",
     "@nguniversal/express-engine": "^7.1.1",
     "@nguniversal/module-map-ngfactory-loader": "^7.1.1",
+    "angular-svg-icon": "^7.2.1",
     "axios": "^0.18.0",
     "bcryptjs": "^2.4.3",
     "class-transformer": "^0.2.0",
