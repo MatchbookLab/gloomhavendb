@@ -1,1 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 223.37 217.92"><defs><style>.cls-2{clip-path:url(#clip-path)}</style><clipPath id="clip-path" transform="translate(-38.31 -41.04)"><path fill="none" d="M0 0h300v300H0z"/></clipPath></defs><g id="Layer_2" data-name="Layer 2"><g class="cls-2" id="Layer_1-2" data-name="Layer 1"><g class="cls-2"><path d="M174.51 150a68.1 68.1 0 1 1-68.1-68.1 68.1 68.1 0 0 1 68.1 68.1" transform="translate(-38.31 -41.04)"/><path d="M152.73 41a108.52 108.52 0 0 0-72 27.22 92.62 92.62 0 1 1 0 163.48 108.95 108.95 0 1 0 72-190.7" transform="translate(-38.31 -41.04)"/></g></g></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 223.37 217.92">
+  <path d="M136.2 108.96a68.1 68.1 0 1 1-68.1-68.1 68.1 68.1 0 0 1 68.1 68.1"/>
+  <path d="M114.42-.04a108.52 108.52 0 0 0-72 27.22 92.62 92.62 0 1 1 0 163.48 108.95 108.95 0 1 0 72-190.7"/>
+</svg>
