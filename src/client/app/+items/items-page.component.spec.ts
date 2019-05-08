@@ -1,21 +1,21 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { TestBedHelper } from '../../test/test-bed.helper';
 
-import { HomeComponent } from './home.component';
-import { HomeModule } from './home.module';
+import { ItemsPageComponent } from './items-page.component';
+import { ItemsPageModule } from './items-page.module';
 
-describe('HomeComponent', () => {
-  let component: HomeComponent;
-  let fixture: ComponentFixture<HomeComponent>;
+describe('ItemsPageComponent', () => {
+  let component: ItemsPageComponent;
+  let fixture: ComponentFixture<ItemsPageComponent>;
 
   const config = TestBedHelper.createComponentConfig()
-    .addImports(HomeModule)
+    .addImports(ItemsPageModule)
     .getConfig();
 
   TestBedHelper.autoConfigureTestingModule(config);
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(HomeComponent);
+    fixture = TestBed.createComponent(ItemsPageComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

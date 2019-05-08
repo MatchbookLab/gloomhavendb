@@ -2,11 +2,11 @@ import { Component } from '@angular/core';
 import { Login } from '../../../shared/types/login';
 
 @Component({
-  selector: 'gdb-login',
-  templateUrl: './login.component.html',
-  styleUrls: ['./login.component.scss'],
+  selector: 'gdb-login-page',
+  templateUrl: './login-page.component.html',
+  styleUrls: ['./login-page.component.scss'],
 })
-export class LoginComponent {
+export class LoginPageComponent {
   lastResult: any;
 
   credentials: Login = {};

@@ -1,14 +1,13 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 
-import { LoginComponent } from './login.component';
+import { HomePageComponent } from './home-page.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: LoginComponent,
+    component: HomePageComponent,
   },
 ];
 
@@ -16,10 +15,10 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class LoginRoutingModule {}
+export class HomePageRoutingModule {}
 
 @NgModule({
-  imports: [CommonModule, FormsModule, LoginRoutingModule],
-  declarations: [LoginComponent],
+  imports: [CommonModule, HomePageRoutingModule],
+  declarations: [HomePageComponent],
 })
-export class LoginModule {}
+export class HomePageModule {}

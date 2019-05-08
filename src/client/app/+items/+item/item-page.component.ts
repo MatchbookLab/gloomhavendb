@@ -19,12 +19,12 @@ export interface ItemResolveData {
 }
 
 @Component({
-  selector: 'gdb-items',
-  templateUrl: './item.component.html',
-  styleUrls: ['./item.component.scss'],
+  selector: 'gdb-item-page',
+  templateUrl: './item-page.component.html',
+  styleUrls: ['./item-page.component.scss'],
   providers: [ResolvedDataService],
 })
-export class ItemComponent implements OnInit {
+export class ItemPageComponent implements OnInit {
   Icon = GdbIcon;
   Limit = Limit;
   Slot = Slot;

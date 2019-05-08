@@ -6,11 +6,11 @@ import { PlatformService } from '../services/platform/platform.service';
 import { BaseRoutePath } from '../util/routing';
 
 @Component({
-  selector: 'gdb-not-found',
-  templateUrl: './not-found.component.html',
-  styleUrls: ['./not-found.component.scss'],
+  selector: 'gdb-not-found-page',
+  templateUrl: './not-found-page.component.html',
+  styleUrls: ['./not-found-page.component.scss'],
 })
-export class NotFoundComponent {
+export class NotFoundPageComponent {
   RoutePath = BaseRoutePath;
 
   constructor(

@@ -3,7 +3,7 @@ import { RouterModule } from '@angular/router';
 import { ROUTE_TITLE_PLACEHOLDER } from '../services/title/title.service';
 import { BetterRoute } from '../util/routing';
 
-import { ItemsComponent } from './items.component';
+import { ItemsPageComponent } from './items-page.component';
 
 export enum ItemRoutes {
   Items = '',
@@ -13,12 +13,12 @@ export enum ItemRoutes {
 const routes: BetterRoute<ItemRoutes>[] = [
   {
     path: ItemRoutes.Items,
-    component: ItemsComponent,
+    component: ItemsPageComponent,
     data: {},
   },
   {
     path: ItemRoutes.Item,
-    loadChildren: './+item/item.module#ItemModule',
+    loadChildren: './+item/item-page.module#ItemPageModule',
     data: {
       title: ROUTE_TITLE_PLACEHOLDER,
     },
@@ -29,10 +29,10 @@ const routes: BetterRoute<ItemRoutes>[] = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class ItemsRouterModule {}
+export class ItemsPageRouterModule {}
 
 @NgModule({
-  imports: [RouterModule, ItemsRouterModule],
-  declarations: [ItemsComponent],
+  imports: [RouterModule, ItemsPageRouterModule],
+  declarations: [ItemsPageComponent],
 })
-export class ItemsModule {}
+export class ItemsPageModule {}

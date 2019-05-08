@@ -13,7 +13,7 @@ import { PipesModule } from '../../shared/pipes/pipes.module';
 import { PopupModule } from '../../shared/popup/popup.module';
 import { TextWithIconsModule } from '../../shared/text-with-icons/text-with-icons.module';
 
-import { ItemComponent, ItemResolveData } from './item.component';
+import { ItemPageComponent, ItemResolveData } from './item-page.component';
 
 const resolveRouteData: RouteResolvers<ItemResolveData> = {
   item: 'ItemResolver',
@@ -23,7 +23,7 @@ const resolveRouteData: RouteResolvers<ItemResolveData> = {
 const routes: Routes = [
   {
     path: '',
-    component: ItemComponent,
+    component: ItemPageComponent,
     resolve: resolveRouteData,
   },
 ];
@@ -51,13 +51,13 @@ const routes: Routes = [
     },
   ],
 })
-export class ItemRouterModule {}
+export class ItemPageRouterModule {}
 
 @NgModule({
   imports: [
     CommonModule,
     PopupModule,
-    ItemRouterModule,
+    ItemPageRouterModule,
     IconModule,
     PipesModule,
     FormsModule,
@@ -65,6 +65,6 @@ export class ItemRouterModule {}
     HttpClientModule,
     DiffModule,
   ],
-  declarations: [ItemComponent],
+  declarations: [ItemPageComponent],
 })
-export class ItemModule {}
+export class ItemPageModule {}

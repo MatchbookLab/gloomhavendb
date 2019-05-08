@@ -6,15 +6,15 @@ import { Slot } from '../../../../shared/constants/slot';
 import { TestBedHelper } from '../../../test/test-bed.helper';
 import { ApiService } from '../../services/api/api.service';
 
-import { ItemComponent } from './item.component';
-import { ItemModule } from './item.module';
+import { ItemPageComponent } from './item-page.component';
+import { ItemPageModule } from './item-page.module';
 
-describe('ItemsComponent', () => {
-  let component: ItemComponent;
-  let fixture: ComponentFixture<ItemComponent>;
+describe('ItemsPageComponent', () => {
+  let component: ItemPageComponent;
+  let fixture: ComponentFixture<ItemPageComponent>;
 
   const config = TestBedHelper.createComponentConfig()
-    .addImports(ItemModule, RouterTestingModule)
+    .addImports(ItemPageModule, RouterTestingModule)
     .addProviders([
       {
         provide: ApiService,
@@ -26,7 +26,7 @@ describe('ItemsComponent', () => {
   TestBedHelper.autoConfigureTestingModule(config);
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ItemComponent);
+    fixture = TestBed.createComponent(ItemPageComponent);
     component = fixture.componentInstance;
 
     component.item = {

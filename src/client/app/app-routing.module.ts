@@ -6,7 +6,7 @@ import { BaseRoutePath, BetterRoute } from './util/routing';
 const routes: BetterRoute<BaseRoutePath | '**'>[] = [
   {
     path: BaseRoutePath.Home,
-    loadChildren: './+home/home.module#HomeModule',
+    loadChildren: './+home/home-page.module#HomePageModule',
     pathMatch: 'full',
     data: {
       title: '',
@@ -14,7 +14,7 @@ const routes: BetterRoute<BaseRoutePath | '**'>[] = [
   },
   {
     path: BaseRoutePath.Items,
-    loadChildren: './+items/items.module#ItemsModule',
+    loadChildren: './+items/items-page.module#ItemsPageModule',
     data: {
       title: 'Items',
     },
@@ -50,7 +50,7 @@ const routes: BetterRoute<BaseRoutePath | '**'>[] = [
   },
   {
     path: BaseRoutePath.Login,
-    loadChildren: './+login/login.module#LoginModule',
+    loadChildren: './+login/login-page.module#LoginPageModule',
     data: {
       title: 'Login',
     },
@@ -59,7 +59,7 @@ const routes: BetterRoute<BaseRoutePath | '**'>[] = [
   // this item should be last... only shown if no other match
   {
     path: '**',
-    loadChildren: './+not-found/not-found.module#NotFoundModule',
+    loadChildren: './+not-found/not-found-page.module#NotFoundPageModule',
     data: {
       title: 'Page Not Found',
     },

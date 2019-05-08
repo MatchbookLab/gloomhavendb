@@ -1,21 +1,21 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { TestBedHelper } from '../../test/test-bed.helper';
 
-import { LoginComponent } from './login.component';
-import { LoginModule } from './login.module';
+import { NotFoundPageComponent } from './not-found-page.component';
+import { NotFoundPageModule } from './not-found-page.module';
 
-describe('LoginComponent', () => {
-  let component: LoginComponent;
-  let fixture: ComponentFixture<LoginComponent>;
+describe('NotFoundPageComponent', () => {
+  let component: NotFoundPageComponent;
+  let fixture: ComponentFixture<NotFoundPageComponent>;
 
   const config = TestBedHelper.createComponentConfig()
-    .addImports(LoginModule)
+    .addImports(NotFoundPageModule)
     .getConfig();
 
   TestBedHelper.autoConfigureTestingModule(config);
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(LoginComponent);
+    fixture = TestBed.createComponent(NotFoundPageComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
