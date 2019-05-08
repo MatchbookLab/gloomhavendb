@@ -52,9 +52,9 @@ export class ItemPageComponent implements OnInit {
     this.meta.updateTag({ name: 'description', content: this.item.text });
 
     // TODO remove the "gloomhavendb.com" base once we have full URLs set up
-    this.meta.updateTag({ name: 'og:image', content: `https://gloomhavendb.com${this.item.imageUrl}` });
-    this.meta.updateTag({ name: 'og:title', content: this.header });
-    this.meta.updateTag({ name: 'og:description', content: this.item.text });
+    this.meta.updateTag({ property: 'og:image', content: `https://gloomhavendb.com${this.item.imageUrl}` });
+    this.meta.updateTag({ property: 'og:title', content: this.header });
+    this.meta.updateTag({ property: 'og:description', content: this.item.text });
 
     // TODO remove the "gloomhavendb.com" base once we have full URLs set up
     this.meta.updateTag({ name: 'twitter:image', content: `https://gloomhavendb.com${this.item.imageUrl}` });
@@ -62,11 +62,11 @@ export class ItemPageComponent implements OnInit {
     this.meta.updateTag({ name: 'twitter:description', content: this.item.text });
 
     // TODO move these to somewhere global
-    this.meta.updateTag({ name: 'og:type', content: 'website' });
+    this.meta.updateTag({ property: 'og:type', content: 'website' });
     this.meta.updateTag({ name: 'twitter:card', content: 'website' });
     this.meta.updateTag({ name: 'twitter:site', content: `https://gloomhavendb.com` });
-    this.meta.updateTag({ name: 'og:site_name', content: 'Gloomhaven DB' });
-    this.meta.updateTag({ name: 'og:url', content: `https://gloomhavendb.com${this.location.path()}` });
+    this.meta.updateTag({ property: 'og:site_name', content: 'Gloomhaven DB' });
+    this.meta.updateTag({ property: 'og:url', content: `https://gloomhavendb.com${this.location.path()}` });
   }
 
   openPopup() {
