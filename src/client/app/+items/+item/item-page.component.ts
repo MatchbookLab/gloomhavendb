@@ -46,23 +46,22 @@ export class ItemPageComponent implements OnInit, OnDestroy {
     private resolvedDataService: ResolvedDataService<ItemResolveData>,
     private metaService: MetaTagsService,
     private authService: AuthService,
-    router: Router,
-  ) {
-    this.routerSub = router.events
-      .pipe(
-        filter(e => e instanceof NavigationEnd),
-        skip(1),
-      )
-      .subscribe(() => {
-        this.ngOnInit();
-      });
+    private router: Router,
+  ) {}
+
+  ngOnInit() {
+    this.routerSub = this.router.events
+      .pipe(filter(event => event instanceof NavigationEnd))
+      .subscribe(() => this.setupItem());
+
+    this.setupItem();
   }
 
   ngOnDestroy() {
     this.routerSub.unsubscribe();
   }
 
-  ngOnInit() {
+  setupItem() {
     this.item = this.resolvedDataService.get('item');
     this.dbItem = cloneDeep(this.item);
     this.suggestedFixes = this.resolvedDataService.get('suggestedFixes') || [];

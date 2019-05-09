@@ -2,8 +2,10 @@ import { APP_BASE_HREF } from '@angular/common';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { getTestBed, TestBed, TestModuleMetadata } from '@angular/core/testing';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { ActivatedRoute } from '@angular/router';
 import { RouterTestingModule } from '@angular/router/testing';
 import * as _ from 'lodash';
+import { StorageTestingModule } from '../app/services/storage/storage-testing.module';
 import Mocked = jest.Mocked;
 
 // https://github.com/angular/angular/issues/12409
@@ -75,7 +77,7 @@ export class TestBedHelper {
 
   static createComponentConfig() {
     return new ModuleConfig({
-      imports: [NoopAnimationsModule, RouterTestingModule, HttpClientTestingModule],
+      imports: [NoopAnimationsModule, RouterTestingModule, HttpClientTestingModule, StorageTestingModule],
       providers: [{ provide: APP_BASE_HREF, useValue: '/' }],
     });
   }
@@ -84,6 +86,17 @@ export class TestBedHelper {
     return new ModuleConfig({
       imports: [HttpClientTestingModule],
     });
+  }
+
+  static mockRouteData<T>(data: T): any {
+    return {
+      provide: ActivatedRoute,
+      useValue: {
+        snapshot: {
+          data,
+        },
+      },
+    };
   }
 }
 

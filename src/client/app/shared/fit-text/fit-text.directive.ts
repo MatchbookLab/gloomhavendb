@@ -73,12 +73,24 @@ export class FitTextDirective implements AfterViewInit {
 
   setupStartingValues() {
     this.computedStyles = window.getComputedStyle(this.elemRef.nativeElement);
-    const [, fontSizeStr, fontSizeUnits] = this.computedStyles.fontSize.match(/^(\d+)(.*)$/);
+    const fontSizeMatches = this.computedStyles.fontSize.match(/^(\d+)(.*)$/);
+
+    if (!fontSizeMatches) {
+      return;
+    }
+
+    const [, fontSizeStr, fontSizeUnits] = fontSizeMatches;
 
     this.fontSize = +fontSizeStr;
     this.fontSizeUnits = fontSizeUnits;
 
-    const [, lineHeightStr, lineHeightUnits] = this.computedStyles.lineHeight.match(/^(\d+)(.*)$/);
+    const lineHeightMatches = this.computedStyles.lineHeight.match(/^(\d+)(.*)$/);
+
+    if (!lineHeightMatches) {
+      return;
+    }
+
+    const [, lineHeightStr, lineHeightUnits] = lineHeightMatches;
 
     this.lineHeight = +lineHeightStr;
     this.lineHeightUnits = lineHeightUnits;

@@ -6,7 +6,7 @@ import { Slot } from '../../../../shared/constants/slot';
 import { TestBedHelper } from '../../../test/test-bed.helper';
 import { ApiService } from '../../services/api/api.service';
 
-import { ItemPageComponent } from './item-page.component';
+import { ItemPageComponent, ItemResolveData } from './item-page.component';
 import { ItemPageModule } from './item-page.module';
 
 describe('ItemPageComponent', () => {
@@ -20,6 +20,24 @@ describe('ItemPageComponent', () => {
         provide: ApiService,
         useValue: {},
       },
+      TestBedHelper.mockRouteData<ItemResolveData>({
+        item: {
+          number: 1,
+          name: 'Boots of Striding',
+          slot: Slot.Legs,
+          price: 20,
+          text: 'During your movement, add +2 Move to the movement.',
+          count: 2,
+          limit: Limit.Spent,
+          uses: null,
+          negativeCardsCount: null,
+          sourceType: ItemSource.Prosperity,
+          sourceId: 1,
+          imageUrl: '/assets/cards/items/1-14/boots-of-striding.png',
+          verified: false,
+        },
+        suggestedFixes: [],
+      }),
     ])
     .getConfig();
 
@@ -28,23 +46,6 @@ describe('ItemPageComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(ItemPageComponent);
     component = fixture.componentInstance;
-
-    component.item = {
-      number: 1,
-      name: 'Boots of Striding',
-      slot: Slot.Legs,
-      price: 20,
-      text: 'During your movement, add +2 Move to the movement.',
-      count: 2,
-      limit: Limit.Spent,
-      uses: null,
-      negativeCardsCount: null,
-      sourceType: ItemSource.Prosperity,
-      sourceId: 1,
-      imageUrl: '/assets/cards/items/1-14/boots-of-striding.png',
-      verified: false,
-    };
-
     fixture.detectChanges();
   });
 
