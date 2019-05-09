@@ -2,6 +2,7 @@ import { Overlay } from '@angular/cdk/overlay';
 import { CdkPortal, ComponentPortal, ComponentType, PortalInjector } from '@angular/cdk/portal';
 import { Injectable, Injector } from '@angular/core';
 import { BasicPopupComponent } from './basic/basic-popup.component';
+import { IconListPopup } from './icon-list/icon-list-popup.component';
 import { PopupRef } from './popup-ref.class';
 
 @Injectable()
@@ -12,7 +13,9 @@ export class PopupService {
     return this.openComponent<void>(BasicPopupComponent);
   }
 
-  openTemplate(templateRef: CdkPortal) {}
+  openIconListPopup(): PopupRef<void> {
+    return this.openComponent<void>(IconListPopup);
+  }
 
   private openComponent<R>(component: ComponentType<any>): PopupRef<R> {
     const overlayRef = this.overlay.create();

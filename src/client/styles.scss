@@ -41,8 +41,68 @@ body {
 @include button(#ff9800, '-secondary');
 @include button(#f43e37, '-danger');
 
+h1,
+p {
+  margin-top: 0;
+}
+
+a {
+  cursor: pointer;
+  color: #4b8cf5;
+  text-decoration: none;
+
+  &:hover {
+    color: darken(#4b8cf5, 20%);
+  }
+
+  &:focus {
+    outline: none;
+    border-bottom: 1px solid #4b8cf5;
+  }
+}
+
 .pointer {
   cursor: pointer;
+}
+
+.table {
+  border-collapse: collapse;
+
+  tr {
+    border-bottom: 1px solid currentColor;
+    border-left: 1px solid currentColor;
+  }
+
+  th,
+  td {
+    border-top: 1px solid currentColor;
+    border-right: 1px solid currentColor;
+    padding: 4px 10px;
+  }
+}
+
+.banner-alert {
+  display: flex;
+  background: rgba(yellow, 0.3);
+  padding: 20px 60px 20px 20px;
+  align-items: center;
+  position: relative;
+
+  .small-spacer {
+    margin-bottom: 12px;
+  }
+
+  .dismiss {
+    font-size: 42px;
+    position: absolute;
+    top: 10px;
+    right: 0;
+  }
+
+  fa-icon {
+    font-size: 50px;
+    margin-right: 20px;
+  }
 }
 
 // Breakpoint Helper (for dev only)

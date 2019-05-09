@@ -1,5 +1,17 @@
-:host {
+.content {
   display: block;
 
   padding: 30px;
+}
+
+.align-right {
+  text-align: right;
+}
+
+:host tc-popup-container ::ng-deep .popup-content {
+  max-width: 80%;
+}
+
+.previous-suggestions {
+  margin-bottom: 15px;
 }

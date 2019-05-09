@@ -1,34 +1,34 @@
 import { Pipe, PipeTransform } from '@angular/core';
 import { Limit } from '../../../../../shared/constants/limit';
 import { Slot } from '../../../../../shared/constants/slot';
-import { GdbIcon } from '../../icon/icon.enum';
+import { GloomhavenIcon } from '../../icon/icon.enum';
 
 @Pipe({
   name: 'enumToIcon',
 })
 export class EnumToIconPipe implements PipeTransform {
-  transform(enumValue: Slot | Limit): GdbIcon {
+  transform(enumValue: Slot | Limit): GloomhavenIcon {
     switch (enumValue) {
       case Limit.Consumed:
-        return GdbIcon.LostOrConsumed;
+        return GloomhavenIcon.LostOrConsumed;
       case Limit.Spent:
-        return GdbIcon.SpendItem;
+        return GloomhavenIcon.SpendItem;
       case Limit.Unlimited:
         throw new Error('No icon for Limit.Unlimited');
       case Limit.UseOncePerScenario:
-        return GdbIcon.CannotRecover;
+        return GloomhavenIcon.CannotRecover;
       case Slot.Body:
-        return GdbIcon.Body;
+        return GloomhavenIcon.Body;
       case Slot.Head:
-        return GdbIcon.Head;
+        return GloomhavenIcon.Head;
       case Slot.Legs:
-        return GdbIcon.Legs;
+        return GloomhavenIcon.Legs;
       case Slot.OneHand:
-        return GdbIcon.OneHand;
+        return GloomhavenIcon.OneHand;
       case Slot.TwoHands:
-        return GdbIcon.TwoHands;
+        return GloomhavenIcon.TwoHands;
       case Slot.SmallItem:
-        return GdbIcon.SmallItem;
+        return GloomhavenIcon.SmallItem;
     }
 
     throw new Error('Enum not yet supported. Got: ' + enumValue);

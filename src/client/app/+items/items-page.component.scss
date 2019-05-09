@@ -5,3 +5,14 @@
 .return-home {
   margin: 50px 0 70px;
 }
+
+.content {
+  padding: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  row-gap: 5px;
+  column-gap: 10px;
+}

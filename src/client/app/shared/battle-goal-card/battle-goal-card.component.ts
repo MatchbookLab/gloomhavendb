@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { BattleGoal } from '../../../../shared/entities/battle-goal';
-import { GdbIcon } from '../icon/icon.enum';
+import { GloomhavenIcon } from '../icon/icon.enum';
 
 @Component({
   selector: 'gdb-battle-goal-card',
@@ -8,7 +8,7 @@ import { GdbIcon } from '../icon/icon.enum';
   styleUrls: ['./battle-goal-card.component.scss'],
 })
 export class BattleGoalCardComponent {
-  Icon = GdbIcon;
+  Icon = GloomhavenIcon;
 
   @Input() battleGoal: BattleGoal;
 }

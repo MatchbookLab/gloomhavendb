@@ -1,8 +1,8 @@
 import { ChangeDetectionStrategy, Component, HostBinding, Input, OnChanges } from '@angular/core';
 import { invert } from 'lodash';
-import { GdbIcon } from './icon.enum';
+import { GloomhavenIcon } from './icon.enum';
 
-const InvertedGdbIcon = invert(GdbIcon);
+const InvertedGloomhavenIcon = invert(GloomhavenIcon);
 
 @Component({
   selector: 'gdb-icon',
@@ -11,7 +11,7 @@ const InvertedGdbIcon = invert(GdbIcon);
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class IconComponent implements OnChanges {
-  @Input() icon: GdbIcon;
+  @Input() icon: GloomhavenIcon;
   @Input() size: number = 26;
   iconSrc: string;
   altText: string;
@@ -19,9 +19,13 @@ export class IconComponent implements OnChanges {
   @HostBinding('style.padding')
   padding: string;
 
+  @HostBinding('style.height')
+  height: string;
+
   ngOnChanges() {
     this.iconSrc = `/assets/icons/${this.icon}.svg`;
-    this.altText = `{${InvertedGdbIcon[this.icon]}}`;
+    this.altText = `{${InvertedGloomhavenIcon[this.icon]}}`;
     this.padding = `0 ${this.size / 20}px`;
+    this.height = `${this.size}px`;
   }
 }

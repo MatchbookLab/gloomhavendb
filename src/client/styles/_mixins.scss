@@ -4,6 +4,7 @@
   .btn#{$suffix} {
     background: $color;
     border: $color 3px solid;
+    color: inherit;
 
     &:disabled,
     &.disabled {
@@ -11,6 +12,10 @@
       background: #aaa;
       border-color: #aaa;
       cursor: not-allowed;
+    }
+
+    &:hover {
+      color: inherit;
     }
 
     &:active,

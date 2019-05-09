@@ -1,4 +1,4 @@
-export enum GdbIcon {
+export enum GloomhavenIcon {
   Brute = 'classes/brute',
   Circles = 'classes/circles',
   Cragheart = 'classes/cragheart',

@@ -1,17 +1,61 @@
-<header>
-  <h1>{{ header }}</h1>
-</header>
+<gdb-wip-banner-component></gdb-wip-banner-component>
 
 <div class="content">
-  <div class="right">
-    <span class="pointer" (click)="editable = true"><fa-icon [icon]="'pencil-alt'"></fa-icon> Suggest Fix</span>
+  <p>
+    <a [routerLink]="'/items'">
+      <fa-icon [icon]="'arrow-circle-left'"></fa-icon>
+      Back to All Items
+    </a>
+  </p>
+
+  <header>
+    <h1>{{ header }}</h1>
+  </header>
+
+  <div class="previous-suggestions">
+    <div class="alert" *ngIf="suggestedFixes.length > 0">
+      <strong>Note:</strong> This item already has pending edits. You can view them below.
+    </div>
+
+    <p [style.visibility]="editable ? 'hidden' : 'visible'">
+      <a (click)="editable = true"><fa-icon [icon]="'wrench'"></fa-icon> Suggest Fix</a>
+      |
+      <a (click)="reset()"><fa-icon [icon]="'power-off'"></fa-icon> Reset Changes</a>
+    </p>
+
+    <table class="table" *ngIf="suggestedFixes.length > 0">
+      <thead>
+        <tr>
+          <th>Submitted By</th>
+          <th>Timestamp</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let fix of suggestedFixes; trackBy: trackById">
+          <td>{{ fix.author || 'Anonymous' }}</td>
+          <td>{{ fix.updated | date: 'medium' }}</td>
+          <td>
+            <a (click)="loadSuggestedFix(fix.data)" class="pointer">
+              <fa-icon [icon]="'truck-loading'"></fa-icon>
+              Load Their Edits
+            </a>
+            |
+            <a (click)="openPopup(fix.data)" class="pointer">
+              <fa-icon [icon]="'code-branch'"></fa-icon>
+              View Diff from Original
+            </a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 
-  <gdb-item (submit)="submitFix($event)" [item]="item" [editable]="editable"></gdb-item>
+  <div class="content">
+    <gdb-item (submit)="submitFix($event)" (cancel)="editable = false" [item]="item" [editable]="editable"></gdb-item>
 
-  <tc-popup-container *ngIf="showDiffPopup" (backgroundClick)="closePopup()" [isModal]="false">
-    <gdb-diff [objectA]="item" [objectB]="suggestedFixes[0]?.data"></gdb-diff>
-  </tc-popup-container>
-
-  <button class="btn" type="button" (click)="openPopup()">Open Popup</button>
+    <tc-popup-container *ngIf="showDiffPopup" (backgroundClick)="closePopup()" [isModal]="false">
+      <gdb-diff [objectA]="dbItem" [objectB]="diffToView"></gdb-diff>
+    </tc-popup-container>
+  </div>
 </div>

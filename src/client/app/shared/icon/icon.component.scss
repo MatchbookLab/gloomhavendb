@@ -4,10 +4,14 @@
   align-items: center;
   justify-content: center;
 
-  vertical-align: middle;
+  vertical-align: top;
 }
 
 img {
   position: relative;
   top: -2px;
+}
+
+svg {
+  display: block;
 }

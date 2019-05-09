@@ -1,10 +1,10 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { GdbIcon } from '../icon/icon.enum';
+import { GloomhavenIcon } from '../icon/icon.enum';
 
-const regex: RegExp = new RegExp(`\{\\s*(${Object.keys(GdbIcon).join('|')})\\s*\}`, 'g');
+const regex: RegExp = new RegExp(`\{\\s*(${Object.keys(GloomhavenIcon).join('|')})\\s*\}`, 'g');
 // const regex: RegExp = new RegExp(`{([\\s\\S]+?)}`, 'g');
 
-type ExplodedPart = string | GdbIcon;
+type ExplodedPart = string | GloomhavenIcon;
 
 @Component({
   selector: 'gdb-text-with-icons',
@@ -13,7 +13,7 @@ type ExplodedPart = string | GdbIcon;
   styleUrls: ['./text-with-icons.component.scss'],
 })
 export class TextWithIconsComponent implements OnInit {
-  Icon = GdbIcon;
+  Icon = GloomhavenIcon;
   parts: ExplodedPart[] = [];
 
   constructor() {}

@@ -1,5 +1,35 @@
-Testerton
+<gdb-wip-banner-component></gdb-wip-banner-component>
 
-<router-outlet>
-  All Items
-</router-outlet>
+<div class="content">
+  <p>
+    <a [routerLink]="'/'">
+      <fa-icon [icon]="'arrow-circle-left'"></fa-icon>
+      Back to Home
+    </a>
+  </p>
+
+  <header>
+    <h1>Items</h1>
+  </header>
+
+  <p>
+    <button class="btn btn-secondary" (click)="showNames = !showNames">
+      <span *ngIf="!showNames">
+        Show (All)
+      </span>
+      <span *ngIf="showNames">
+        Hide
+      </span>
+      Item Names
+    </button>
+  </p>
+
+  <div class="grid">
+    <div *ngFor="let item of items">
+      <a [routerLink]="[item.number]">
+        #{{ item.number }}
+        <span *ngIf="showNames"> - {{ item.name }} </span>
+      </a>
+    </div>
+  </div>
+</div>

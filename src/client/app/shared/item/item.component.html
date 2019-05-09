@@ -1,202 +1,219 @@
-<div class="image">
+<div class="split image-split">
   <img width="200" height="300" [src]="item.imageUrl" [alt]="item.name" />
 </div>
 
-<div class="little-grid">
-  <div class="right">
-    <strong>Name</strong>
-  </div>
-  <div>
-    <ng-container *ngIf="!editable">
-      {{ item.name }}
-    </ng-container>
-    <ng-container *ngIf="editable">
-      <input type="text" [(ngModel)]="item.name" />
-    </ng-container>
-  </div>
-
-  <div class="right">
-    <strong>Slot</strong>
-  </div>
-  <div>
-    <ng-container *ngIf="!editable">
-      {{ item.slot }}
-      <gdb-icon [icon]="item.slot | enumToIcon"></gdb-icon>
-    </ng-container>
-    <ng-container *ngIf="editable">
-      <label *ngFor="let slot of slots">
-        <input name="slot" [value]="slot" [(ngModel)]="item.slot" type="radio" />
-        <gdb-icon [icon]="slot | enumToIcon"></gdb-icon>
-        &nbsp;
-      </label>
-    </ng-container>
-  </div>
-
-  <ng-container *ngIf="item.uses || editable">
+<div class="split">
+  <div class="little-grid" [class.editable]="editable">
     <div class="right">
-      <strong>Uses</strong>
+      <strong>Name</strong>
     </div>
     <div>
       <ng-container *ngIf="!editable">
-        <gdb-icon [icon]="Icon.UseSlot"></gdb-icon>
-        &times; {{ item.uses }}
+        {{ item.name }}
       </ng-container>
-
       <ng-container *ngIf="editable">
-        <input type="number" [(ngModel)]="item.uses" />
+        <input class="inline" type="text" [(ngModel)]="item.name" />
       </ng-container>
     </div>
-  </ng-container>
 
-  <div class="right">
-    <strong>Limit</strong>
-  </div>
-  <div>
-    <ng-container *ngIf="!editable">
-      {{ item.limit }}
-      <gdb-icon *ngIf="item.limit !== Limit.Unlimited" [icon]="item.limit | enumToIcon"></gdb-icon>
-      <gdb-icon *ngIf="item.limit === Limit.UseOncePerScenario" [icon]="Icon.LostOrConsumed"></gdb-icon>
-    </ng-container>
-
-    <ng-container *ngIf="editable">
-      <label *ngFor="let limit of limits">
-        <input name="limit" [value]="limit" [(ngModel)]="item.limit" type="radio" />
-        <gdb-icon *ngIf="limit !== Limit.Unlimited" [icon]="limit | enumToIcon"></gdb-icon>
-        <gdb-icon *ngIf="limit === Limit.UseOncePerScenario" [icon]="Icon.LostOrConsumed"></gdb-icon>
-        <span *ngIf="limit === Limit.Unlimited">(Unlimited)</span>
-        &nbsp;
-      </label>
-    </ng-container>
-  </div>
-
-  <ng-container *ngIf="item.negativeCardsCount || editable">
     <div class="right">
-      <strong>-1 Cards</strong>
+      <strong>Slot</strong>
     </div>
     <div>
       <ng-container *ngIf="!editable">
-        <gdb-icon [icon]="Icon.MinusOneAttackModifier"></gdb-icon>
-        &times; {{ item.negativeCardsCount }}
+        {{ item.slot }}
+        <gdb-icon [icon]="item.slot | enumToIcon"></gdb-icon>
       </ng-container>
-
       <ng-container *ngIf="editable">
-        <input type="number" [(ngModel)]="item.negativeCardsCount" />
+        <label *ngFor="let slot of slots" class="radio-spacing">
+          <input name="slot" [value]="slot" [(ngModel)]="item.slot" type="radio" />
+          <gdb-icon [icon]="slot | enumToIcon"></gdb-icon>
+        </label>
       </ng-container>
     </div>
-  </ng-container>
 
-  <div class="right">
-    <strong>Text</strong>
-  </div>
-  <div>
-    <ng-container *ngIf="editable">
-      <textarea rows="3" type="text" [(ngModel)]="item.text"></textarea>
-    </ng-container>
-
-    <ng-container>
-      <strong *ngIf="editable">Preview: </strong>
-      <gdb-text-with-icons [text]="item.text"></gdb-text-with-icons>
-    </ng-container>
-  </div>
-
-  <div class="right">
-    <strong>Price</strong>
-  </div>
-  <div>
-    <ng-container *ngIf="!editable">
-      {{ item.price }}
-    </ng-container>
-
-    <ng-container *ngIf="editable">
-      <input type="number" step="5" max="100" min="10" [(ngModel)]="item.price" />
-    </ng-container>
-  </div>
-
-  <div class="right">
-    <strong>Count</strong>
-  </div>
-  <div>
-    <ng-container *ngIf="!editable">
-      {{ item.count }}
-    </ng-container>
-
-    <ng-container *ngIf="editable">
-      <input type="number" max="4" min="1" [(ngModel)]="item.count" />
-    </ng-container>
-  </div>
-
-  <ng-container *ngIf="item.sourceType || editable">
-    <div class="right">
-      <strong>Source</strong>
-    </div>
-    <div>
-      <ng-container *ngIf="!editable">
-        {{ item.sourceType }}
-        <ng-container *ngIf="item.sourceType !== ItemSource.RandomItemDesign">
-          {{ item.sourceId }}
+    <ng-container *ngIf="item.uses || editable">
+      <div class="right">
+        <strong>Uses</strong>
+      </div>
+      <div>
+        <ng-container *ngIf="!editable">
+          <gdb-icon [icon]="Icon.UseSlot"></gdb-icon>
+          &times; {{ item.uses }}
         </ng-container>
+
+        <ng-container *ngIf="editable">
+          <input type="number" class="inline" [(ngModel)]="item.uses" />
+        </ng-container>
+      </div>
+    </ng-container>
+
+    <div class="right">
+      <strong>Limit</strong>
+    </div>
+    <div>
+      <ng-container *ngIf="!editable">
+        {{ item.limit }}
+        <gdb-icon *ngIf="item.limit !== Limit.Unlimited" [icon]="item.limit | enumToIcon"></gdb-icon>
+        <gdb-icon *ngIf="item.limit === Limit.UseOncePerScenario" [icon]="Icon.LostOrConsumed"></gdb-icon>
       </ng-container>
 
       <ng-container *ngIf="editable">
-        <div *ngFor="let source of sources">
-          <label>
-            <input name="source" [value]="source" [(ngModel)]="item.sourceType" type="radio" />
-            {{ source }}
-            &nbsp;
-          </label>
-        </div>
-        <div>
-          <label>
-            <input name="source" [value]="null" [(ngModel)]="item.sourceType" type="radio" />
-            Unknown?
-          </label>
-        </div>
+        <label *ngFor="let limit of limits" class="radio-spacing">
+          <input name="limit" [value]="limit" [(ngModel)]="item.limit" type="radio" />
+          <gdb-icon *ngIf="limit !== Limit.Unlimited" [icon]="limit | enumToIcon"></gdb-icon>
+          <gdb-icon *ngIf="limit === Limit.UseOncePerScenario" [icon]="Icon.LostOrConsumed"></gdb-icon>
+          <span *ngIf="limit === Limit.Unlimited">(Unlimited)</span>
+        </label>
       </ng-container>
     </div>
-  </ng-container>
 
-  <ng-container *ngIf="editable && item.sourceType && item.sourceType !== ItemSource.RandomItemDesign">
-    <div class="right">
-      <strong>
-        <ng-container [ngSwitch]="item.sourceType">
-          <ng-container *ngSwitchCase="ItemSource.Prosperity">
-            Prosperity Level
-          </ng-container>
-          <ng-container *ngSwitchCase="ItemSource.Treasure">
-            Scenario #
-          </ng-container>
-          <ng-container *ngSwitchCase="ItemSource.ScenarioReward">
-            Scenario #
-          </ng-container>
-          <ng-container *ngSwitchDefault>{{ item.sourceType }} #</ng-container>
+    <ng-container *ngIf="item.negativeCardsCount || editable">
+      <div class="right">
+        <strong>-1 Cards</strong>
+      </div>
+      <div>
+        <ng-container *ngIf="!editable">
+          <gdb-icon [icon]="Icon.MinusOneAttackModifier"></gdb-icon>
+          &times; {{ item.negativeCardsCount }}
         </ng-container>
-      </strong>
+
+        <ng-container *ngIf="editable">
+          <input type="number" class="inline" [(ngModel)]="item.negativeCardsCount" />
+        </ng-container>
+      </div>
+    </ng-container>
+
+    <div class="right">
+      <strong>Text</strong>
+      <div *ngIf="editable" class="subtext">
+        <small>
+          You can add icons to this field by using <strong>{{ '{' }}IconName}</strong>.<br />
+          <a (click)="openListOfIconsPopup()">Show List of Icons</a>
+        </small>
+      </div>
     </div>
     <div>
-      <input type="number" [(ngModel)]="item.sourceId" />
-    </div>
-  </ng-container>
+      <ng-container *ngIf="editable">
+        <textarea class="inline" rows="4" [(ngModel)]="item.text"></textarea>
+      </ng-container>
 
-  <div class="right">
-    <strong>Verified</strong>
-  </div>
-  <div>
-    <ng-container *ngIf="!editable">
-      {{ item.verified ? 'Yes' : 'No' }}
+      <ng-container>
+        <strong *ngIf="editable">Preview: </strong>
+        <gdb-text-with-icons [text]="item.text"></gdb-text-with-icons>
+      </ng-container>
+    </div>
+
+    <div class="right">
+      <strong>Price</strong>
+    </div>
+    <div>
+      <ng-container *ngIf="!editable">
+        {{ item.price }}
+      </ng-container>
+
+      <ng-container *ngIf="editable">
+        <input type="number" class="inline" step="5" max="100" min="10" [(ngModel)]="item.price" />
+      </ng-container>
+    </div>
+
+    <div class="right">
+      <strong>Count</strong>
+    </div>
+    <div>
+      <ng-container *ngIf="!editable">
+        {{ item.count }}
+      </ng-container>
+
+      <ng-container *ngIf="editable">
+        <input type="number" class="inline" max="4" min="1" [(ngModel)]="item.count" />
+      </ng-container>
+    </div>
+
+    <ng-container *ngIf="item.sourceType || editable">
+      <div class="right">
+        <strong>Source</strong>
+      </div>
+      <div>
+        <ng-container *ngIf="!editable">
+          {{ item.sourceType }}
+          <ng-container *ngIf="item.sourceType !== ItemSource.RandomItemDesign">
+            {{ item.sourceId }}
+          </ng-container>
+        </ng-container>
+
+        <ng-container *ngIf="editable">
+          <div *ngFor="let source of sources">
+            <label>
+              <input name="source" [value]="source" [(ngModel)]="item.sourceType" type="radio" />
+              {{ source }}
+              &nbsp;
+            </label>
+          </div>
+          <div>
+            <label>
+              <input name="source" [value]="null" [(ngModel)]="item.sourceType" type="radio" />
+              Unknown?
+            </label>
+          </div>
+        </ng-container>
+      </div>
+    </ng-container>
+
+    <ng-container *ngIf="editable && item.sourceType && item.sourceType !== ItemSource.RandomItemDesign">
+      <div class="right">
+        <strong>
+          <ng-container [ngSwitch]="item.sourceType">
+            <ng-container *ngSwitchCase="ItemSource.Prosperity">
+              Prosperity Level
+            </ng-container>
+            <ng-container *ngSwitchCase="ItemSource.Treasure">
+              Scenario #
+            </ng-container>
+            <ng-container *ngSwitchCase="ItemSource.ScenarioReward">
+              Scenario #
+            </ng-container>
+            <ng-container *ngSwitchDefault>{{ item.sourceType }} #</ng-container>
+          </ng-container>
+        </strong>
+      </div>
+      <div>
+        <input type="number" class="inline" [(ngModel)]="item.sourceId" />
+      </div>
+    </ng-container>
+
+    <div class="right">
+      <strong>Verified</strong>
+    </div>
+    <div>
+      <ng-container *ngIf="!editable">
+        {{ item.verified ? 'Yes' : 'No' }}
+      </ng-container>
+
+      <ng-container *ngIf="editable">
+        <label>
+          <input type="checkbox" [(ngModel)]="item.verified" />
+          I promise this is 100% accurate and there is no missing information.
+        </label>
+      </ng-container>
+    </div>
+
+    <ng-container *ngIf="editable">
+      <div class="right">
+        <div><strong>Submitted By</strong></div>
+        <div class="subtext"><small>(optional)</small></div>
+      </div>
+      <div>
+        <input type="text" class="inline" [(ngModel)]="submittedBy" />
+      </div>
     </ng-container>
 
     <ng-container *ngIf="editable">
-      <label>
-        <input type="checkbox" [(ngModel)]="item.verified" />
-        I promise this is 100% accurate and there is no missing information.
-      </label>
+      <div>&nbsp;</div>
+      <div>
+        <button class="btn btn-primary" (click)="onSubmit()">Submit</button>
+        <button class="btn btn-danger" (click)="onCancel()">Cancel</button>
+      </div>
     </ng-container>
   </div>
-
-  <ng-container *ngIf="editable">
-    <div>&nbsp;</div>
-    <div>
-      <button class="btn btn-primary" (click)="onSubmit()">Submit</button>
-    </div>
-  </ng-container>
 </div>

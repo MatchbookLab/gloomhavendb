@@ -2,8 +2,11 @@ import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output } from 
 import { ItemSource } from '../../../../shared/constants/item-source';
 import { Limit } from '../../../../shared/constants/limit';
 import { Slot } from '../../../../shared/constants/slot';
+import { SuggestedFixType } from '../../../../shared/constants/suggested-fix-type';
 import { Item } from '../../../../shared/entities/item';
-import { GdbIcon } from '../icon/icon.enum';
+import { SuggestedFix } from '../../../../shared/entities/suggested-fix';
+import { GloomhavenIcon } from '../icon/icon.enum';
+import { PopupService } from '../popup/popup.service';
 
 @Component({
   selector: 'gdb-item',
@@ -13,11 +16,12 @@ import { GdbIcon } from '../icon/icon.enum';
 })
 export class ItemComponent {
   @Input() item: Item;
-  @Input() editable = false;
+  @Input() readonly editable = false;
 
-  @Output() submit: EventEmitter<Item> = new EventEmitter<Item>();
+  @Output() submit: EventEmitter<SuggestedFix<Item>> = new EventEmitter<SuggestedFix<Item>>();
+  @Output() cancel: EventEmitter<void> = new EventEmitter<void>();
 
-  Icon = GdbIcon;
+  Icon = GloomhavenIcon;
   Limit = Limit;
   Slot = Slot;
   ItemSource = ItemSource;
@@ -26,7 +30,28 @@ export class ItemComponent {
   limits: Limit[] = Object.values(Limit);
   sources: ItemSource[] = Object.values(ItemSource);
 
+  submittedBy: string;
+
+  constructor(private popupService: PopupService) {}
+
   onSubmit() {
-    this.submit.emit(this.item);
+    this.item.negativeCardsCount = this.item.negativeCardsCount || null;
+    this.item.uses = this.item.uses || null;
+    this.item.sourceId = this.item.sourceType === ItemSource.RandomItemDesign ? null : this.item.sourceId;
+
+    this.submit.emit({
+      type: SuggestedFixType.Item,
+      idOrNumber: this.item.number + '',
+      data: this.item,
+      author: this.submittedBy || null,
+    });
+  }
+
+  onCancel() {
+    this.cancel.emit();
+  }
+
+  openListOfIconsPopup() {
+    this.popupService.openIconListPopup();
   }
 }

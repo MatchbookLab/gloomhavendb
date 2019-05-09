@@ -10,7 +10,17 @@ textarea {
   padding: 8px 10px;
   display: block;
   width: 100%;
+
+  &.inline {
+    position: relative;
+    top: -6px;
+  }
 }
+
+//input[type="radio"] {
+//  display: inline-block;
+//  margin-right: 5px;
+//}
 
 textarea {
   resize: vertical;
