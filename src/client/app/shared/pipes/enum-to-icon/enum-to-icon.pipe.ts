@@ -29,6 +29,8 @@ export class EnumToIconPipe implements PipeTransform {
         return GloomhavenIcon.TwoHands;
       case Slot.SmallItem:
         return GloomhavenIcon.SmallItem;
+      case null:
+        return null;
     }
 
     throw new Error('Enum not yet supported. Got: ' + enumValue);

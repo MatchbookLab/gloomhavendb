@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule } from '@angular/router';
+import { environment } from '../environments/environment.prod';
 
 import { BaseRoutePath, BetterRoute } from './util/routing';
 
@@ -71,6 +72,8 @@ const routes: BetterRoute<BaseRoutePath | '**'>[] = [
     RouterModule.forRoot(routes, {
       preloadingStrategy: PreloadAllModules,
       initialNavigation: 'enabled',
+      onSameUrlNavigation: 'reload',
+      scrollPositionRestoration: 'enabled',
     }),
   ],
   exports: [RouterModule],

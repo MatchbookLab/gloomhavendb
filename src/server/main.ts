@@ -69,7 +69,7 @@ export async function bootstrap(): Promise<NestExpressApplication> {
     // TODO monitor this, this may not be enough... no need to be stingy, mostly just trying to protect from bots
     new RateLimit({
       windowMs: 5 * 60 * 1000, // 5 minutes
-      max: 100, // limit each IP to 100 requests per windowMs
+      max: 1000, // limit each IP to 100 requests per windowMs
       message: {
         status: 429,
         message: 'Rate Limit Error: Too many requests in too short a time, please try again later.',

@@ -1,9 +1,8 @@
 import { trigger } from '@angular/animations';
 import { Component } from '@angular/core';
 import { PlatformService } from '../../services/platform/platform.service';
+import { StorageKey, StorageService } from '../../services/storage/storage.service';
 import { toVoidTransition } from '../../util/transitions';
-
-const STORAGE_KEY = 'dismissed-wip-banner';
 
 @Component({
   selector: 'gdb-wip-banner-component',
@@ -25,14 +24,12 @@ const STORAGE_KEY = 'dismissed-wip-banner';
 export class WipBannerComponent {
   dismissed = true;
 
-  constructor(platformService: PlatformService) {
-    if (platformService.isBrowser) {
-      this.dismissed = !!localStorage.getItem(STORAGE_KEY);
-    }
+  constructor(platformService: PlatformService, private storageService: StorageService) {
+    this.dismissed = this.storageService.load<boolean>(StorageKey.DismissedWipBanner);
   }
 
   dismiss() {
-    localStorage.setItem(STORAGE_KEY, 'true');
+    this.storageService.store<boolean>(StorageKey.DismissedWipBanner, true);
     this.dismissed = true;
   }
 }

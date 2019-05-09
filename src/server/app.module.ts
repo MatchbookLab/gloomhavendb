@@ -16,6 +16,7 @@ import { Role } from '../shared/entities/role';
 import { Scenario } from '../shared/entities/scenario';
 import { SuggestedFix } from '../shared/entities/suggested-fix';
 import { User } from '../shared/entities/user';
+import { AuthenticationController } from './api/authentication/authentication.controller';
 import { BattleGoalController } from './api/battle-goal/battle-goal.controller';
 
 import { EventController } from './api/event/event.controller';
@@ -38,6 +39,7 @@ import {
 
 import { IdAbsentGuard } from './guards/id-absent.guard';
 import { IdMatchGuard } from './guards/id-match.guard';
+import { RolesGuard } from './guards/roles.guard';
 import { AuthService } from './services/auth/auth.service';
 import { JwtStrategy } from './services/auth/jwt.strategy';
 import { EmailerService } from './services/emailer/emailer.service';
@@ -95,6 +97,7 @@ const angularUniversal = DEVELOPMENT_MODE
     }),
   ],
   controllers: [
+    AuthenticationController,
     EventController,
     ItemController,
     UserController,
@@ -112,6 +115,7 @@ const angularUniversal = DEVELOPMENT_MODE
     IdMatchGuard,
     AuthService,
     JwtStrategy,
+    RolesGuard,
   ],
 })
 export class AppModule {}

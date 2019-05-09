@@ -1,22 +1,17 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { ExplodedPart, explodeStringWithIcons } from '../../util/icon-codes';
 import { GloomhavenIcon } from '../icon/icon.enum';
 
-const regex: RegExp = new RegExp(`\{\\s*(${Object.keys(GloomhavenIcon).join('|')})\\s*\}`, 'g');
-// const regex: RegExp = new RegExp(`{([\\s\\S]+?)}`, 'g');
-
-type ExplodedPart = string | GloomhavenIcon;
+// note the funky layout for the HTML is to maintain consistent whitespace
 
 @Component({
   selector: 'gdb-text-with-icons',
-  // note the funky layout for the HTML is to maintain consistent whitespace
   templateUrl: './text-with-icons.component.html',
   styleUrls: ['./text-with-icons.component.scss'],
 })
 export class TextWithIconsComponent implements OnInit {
   Icon = GloomhavenIcon;
   parts: ExplodedPart[] = [];
-
-  constructor() {}
 
   private _text: string;
 
@@ -33,6 +28,6 @@ export class TextWithIconsComponent implements OnInit {
   ngOnInit() {}
 
   explodeText(): ExplodedPart[] {
-    return (this.text || '').replace(/(\r\n|\r|\n)/g, '<br />').split(regex);
+    return explodeStringWithIcons(this.text.replace(/(\r\n|\r|\n)/g, '<br />'));
   }
 }

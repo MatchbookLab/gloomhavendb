@@ -1,8 +1,6 @@
 import { ChangeDetectionStrategy, Component, HostBinding, Input, OnChanges } from '@angular/core';
-import { invert } from 'lodash';
+import { InvertedGloomhavenIcon } from '../../util/icon-codes';
 import { GloomhavenIcon } from './icon.enum';
-
-const InvertedGloomhavenIcon = invert(GloomhavenIcon);
 
 @Component({
   selector: 'gdb-icon',

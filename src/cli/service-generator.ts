@@ -26,6 +26,8 @@ const controllers = {
   SuggestedFixController: path.join(__dirname, '../server/api/suggested-fix/suggested-fix.controller.ts'),
   MapLocationController: path.join(__dirname, '../server/api/map-location/map-location.controller.ts'),
   BattleGoalController: path.join(__dirname, '../server/api/battle-goal/battle-goal.controller.ts'),
+  AuthenticationController: path.join(__dirname, '../server/api/authentication/authentication.controller.ts'),
+  UserController: path.join(__dirname, '../server/api/user/user.controller.ts'),
 };
 
 let sdkMethods = '';
@@ -173,7 +175,9 @@ import { HttpClient } from '@angular/common/http';
 import { mapValues, omitBy, isNil } from 'lodash';
 
 import { SuggestedFixType } from '../../../../shared/constants/suggested-fix-type';
+import { Login } from '../../../../shared/types/login';
 import { NumberList } from '../../../../shared/types/number-list';
+import { AuthResponse } from '../../../../shared/types/auth-response';
 
 //////////////////////////////////////////
 // This file is generated. Do not edit. //

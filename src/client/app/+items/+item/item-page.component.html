@@ -1,12 +1,26 @@
 <gdb-wip-banner-component></gdb-wip-banner-component>
 
 <div class="content">
-  <p>
-    <a [routerLink]="'/items'">
-      <fa-icon [icon]="'arrow-circle-left'"></fa-icon>
-      Back to All Items
-    </a>
-  </p>
+  <div class="nav">
+    <div class="first-cell">
+      <a *ngIf="item.number > 1" [routerLink]="['/items', item.number - 1]">
+        <fa-icon [icon]="'arrow-circle-left'"></fa-icon>
+        View Previous Item
+      </a>
+    </div>
+    <div class="center-cell">
+      <a [routerLink]="['/items']">
+        <fa-icon [icon]="'arrow-circle-up'"></fa-icon>
+        View All Items
+      </a>
+    </div>
+    <div class="last-cell">
+      <a *ngIf="item.number < 150" [routerLink]="['/items', item.number + 1]">
+        <fa-icon [icon]="'arrow-circle-right'"></fa-icon>
+        View Next Item
+      </a>
+    </div>
+  </div>
 
   <header>
     <h1>{{ header }}</h1>
@@ -18,9 +32,15 @@
     </div>
 
     <p [style.visibility]="editable ? 'hidden' : 'visible'">
-      <a (click)="editable = true"><fa-icon [icon]="'wrench'"></fa-icon> Suggest Fix</a>
+      <a (click)="editable = true">
+        <fa-icon [icon]="'wrench'"></fa-icon>
+        Suggest Fix</a
+      >
       |
-      <a (click)="reset()"><fa-icon [icon]="'power-off'"></fa-icon> Reset Changes</a>
+      <a (click)="reset()">
+        <fa-icon [icon]="'power-off'"></fa-icon>
+        Reset Changes</a
+      >
     </p>
 
     <table class="table" *ngIf="suggestedFixes.length > 0">
@@ -45,6 +65,13 @@
               <fa-icon [icon]="'code-branch'"></fa-icon>
               View Diff from Original
             </a>
+            <ng-container *ngIf="isAdmin">
+              |
+              <a (click)="commitFix(fix)" class="pointer">
+                <fa-icon [icon]="'save'"></fa-icon>
+                Commit Fix
+              </a>
+            </ng-container>
           </td>
         </tr>
       </tbody>

@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { Login } from '../../../shared/types/login';
+import { AuthService } from '../services/auth/auth.service';
+import { BaseRoutePath } from '../util/routing';
 
 @Component({
   selector: 'gdb-login-page',
@@ -7,18 +10,19 @@ import { Login } from '../../../shared/types/login';
   styleUrls: ['./login-page.component.scss'],
 })
 export class LoginPageComponent {
-  lastResult: any;
+  error: string;
 
   credentials: Login = {};
 
-  constructor() {}
+  constructor(private authService: AuthService, private router: Router) {}
 
   async login() {
     try {
-      console.log(this.credentials);
-      throw new Error('Not Yet Implemented');
+      await this.authService.login(this.credentials);
+      await this.router.navigate([BaseRoutePath.Home]);
     } catch (err) {
-      this.lastResult = err.message;
+      this.error = err.message;
+      console.error(err);
     }
   }
 }

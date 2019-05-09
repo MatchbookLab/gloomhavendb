@@ -33,8 +33,8 @@ export abstract class BaseRepository<Entity extends EntityWithId> extends Reposi
       entityLike = omit(entityLike, this.autoExcludeProperties);
     }
 
-    // we always omit id, createdAt and updatedAt
-    entityLike = omit(entityLike, ['id', 'createdAt', 'updatedAt']);
+    // we always omit id, created and updated
+    entityLike = omit(entityLike, ['id', 'created', 'updated']);
 
     return this.create(entityLike);
   }
@@ -44,11 +44,11 @@ export abstract class BaseRepository<Entity extends EntityWithId> extends Reposi
   }
 
   async smartFindOne(id: string | number, options: BetterFindOneOptions<Entity> = {}): Promise<Entity> {
-    return super.findOne(+id, options);
+    return super.findOne(id, options);
   }
 
   async smartFindOneOrFail(id: string | number, options: BetterFindOneOptions<Entity> = {}): Promise<Entity> {
-    const result = await this.smartFindOne(+id, options);
+    const result = await this.smartFindOne(id, options);
 
     if (!result) {
       throw new NotFoundException(`Cannot find ${this.niceName} with ID ${id}`);

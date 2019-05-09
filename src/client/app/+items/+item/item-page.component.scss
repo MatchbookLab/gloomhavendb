@@ -16,3 +16,22 @@
 .previous-suggestions {
   margin-bottom: 15px;
 }
+
+.nav {
+  display: grid;
+  margin-bottom: 16px;
+
+  grid-template-columns: 1fr 1fr 1fr;
+
+  .first-cell {
+    justify-self: start;
+  }
+
+  .center-cell {
+    justify-self: center;
+  }
+
+  .last-cell {
+    justify-self: end;
+  }
+}

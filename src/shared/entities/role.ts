@@ -1,10 +1,11 @@
-import { Column, Entity, OneToMany, PrimaryGeneratedColumn } from 'typeorm';
+import { Column, Entity, OneToMany, PrimaryColumn } from 'typeorm';
+import { RoleId } from '../constants/role-id';
 import { User } from './user';
 
 @Entity()
 export class Role {
-  @PrimaryGeneratedColumn('uuid')
-  id: number;
+  @PrimaryColumn('int')
+  id: RoleId;
 
   @Column({ unique: true })
   name: string;

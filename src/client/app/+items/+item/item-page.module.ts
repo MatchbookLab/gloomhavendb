@@ -1,5 +1,4 @@
 import { CommonModule } from '@angular/common';
-import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { ActivatedRouteSnapshot, RouterModule, Routes } from '@angular/router';
@@ -7,15 +6,18 @@ import { FaIconService, FontAwesomeModule } from '@fortawesome/angular-fontaweso
 import { library } from '@fortawesome/fontawesome-svg-core';
 import {
   faArrowCircleLeft,
+  faArrowCircleRight,
+  faArrowCircleUp,
   faCodeBranch,
   faPowerOff,
+  faSave,
   faTruckLoading,
   faWrench,
 } from '@fortawesome/free-solid-svg-icons';
 import { SuggestedFixType } from '../../../../shared/constants/suggested-fix-type';
 import { Item } from '../../../../shared/entities/item';
+import { ResolveService, RouteResolvers } from '../../services/resolver/resolve.service';
 import { ApiService } from '../../services/api/api.service';
-import { RouteResolvers, ResolveService } from '../../services/resolver/resolve.service';
 import { DiffModule } from '../../shared/diff/diff.module';
 import { IconModule } from '../../shared/icon/icon.module';
 import { ItemModule } from '../../shared/item/item.module';
@@ -36,6 +38,7 @@ const routes: Routes = [
     path: '',
     component: ItemPageComponent,
     resolve: resolveRouteData,
+    runGuardsAndResolvers: 'always',
   },
 ];
 
@@ -43,7 +46,6 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
   providers: [
-    HttpClientModule,
     {
       provide: resolveRouteData.suggestedFixes,
       useFactory: (resolveService: ResolveService) =>
@@ -74,7 +76,6 @@ export class ItemPageRouterModule {}
     PipesModule,
     FormsModule,
     TextWithIconsModule,
-    HttpClientModule,
     DiffModule,
     FontAwesomeModule,
     WipBannerModule,
@@ -89,5 +90,8 @@ export class ItemPageModule {
     library.add(faCodeBranch);
     library.add(faPowerOff);
     library.add(faArrowCircleLeft);
+    library.add(faArrowCircleUp);
+    library.add(faArrowCircleRight);
+    library.add(faSave);
   }
 }

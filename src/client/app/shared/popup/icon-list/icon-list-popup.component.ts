@@ -1,9 +1,7 @@
 import { Component } from '@angular/core';
-import { invert } from 'lodash';
+import { InvertedGloomhavenIcon } from '../../../util/icon-codes';
 import { GloomhavenIcon } from '../../icon/icon.enum';
 import { PopupRef } from '../popup-ref.class';
-
-const InvertedGloomhavenIcon = invert(GloomhavenIcon);
 
 @Component({
   selector: 'tc-icon-list-popup',

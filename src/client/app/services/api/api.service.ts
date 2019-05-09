@@ -15,7 +15,9 @@ import { HttpClient } from '@angular/common/http';
 import { mapValues, omitBy, isNil } from 'lodash';
 
 import { SuggestedFixType } from '../../../../shared/constants/suggested-fix-type';
+import { Login } from '../../../../shared/types/login';
 import { NumberList } from '../../../../shared/types/number-list';
+import { AuthResponse } from '../../../../shared/types/auth-response';
 
 //////////////////////////////////////////
 // This file is generated. Do not edit. //
@@ -107,6 +109,10 @@ export class ApiService {
       .toPromise();
   }
 
+  async commitFix<T>(payload: { id: string }): Promise<void> {
+    return this.httpClient.post<void>(`/api/suggested-fix/commit`, payload).toPromise();
+  }
+
   //////////////////
   // Map Location //
   //////////////////
@@ -133,6 +139,30 @@ export class ApiService {
 
   async findBattleGoal(name: string): Promise<BattleGoal> {
     return this.httpClient.get<BattleGoal>(`/api/battle-goals/${name}`).toPromise();
+  }
+
+  ////////////////////
+  // Authentication //
+  ////////////////////
+
+  async login(login: Login): Promise<AuthResponse> {
+    return this.httpClient.post<AuthResponse>(`/api/auth/login`, login).toPromise();
+  }
+
+  async signup(user: User): Promise<User> {
+    return this.httpClient.post<User>(`/api/auth/signup`, user).toPromise();
+  }
+
+  //////////
+  // User //
+  //////////
+
+  async getUsers(): Promise<User[]> {
+    return this.httpClient.get<User[]>(`/api/users`).toPromise();
+  }
+
+  async findUser(id: string): Promise<User> {
+    return this.httpClient.get<User>(`/api/users/${id}`).toPromise();
   }
 
   ////////////////////////////

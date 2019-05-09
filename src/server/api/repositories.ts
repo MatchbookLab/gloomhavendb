@@ -3,6 +3,7 @@ import { BattleGoalRepository } from './battle-goal/battle-goal.repository';
 import { EventRepository } from './event/event.repository';
 import { ItemRepository } from './item/item.repository';
 import { MapLocationRepository } from './map-location/map-location.repository';
+import { RoleRepository } from './role/role.repository';
 import { SuggestedFixRepository } from './suggested-fix/suggested-fix.repository';
 import { UserRepository } from './user/user.repository';
 
@@ -21,6 +22,11 @@ export const repositories = [
   {
     provide: UserRepository,
     useFactory: (connection: Connection) => connection.getCustomRepository(UserRepository),
+    inject: [Connection],
+  },
+  {
+    provide: RoleRepository,
+    useFactory: (connection: Connection) => connection.getCustomRepository(RoleRepository),
     inject: [Connection],
   },
   {

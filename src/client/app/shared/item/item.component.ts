@@ -6,10 +6,9 @@ import { SuggestedFixType } from '../../../../shared/constants/suggested-fix-typ
 import { Item } from '../../../../shared/entities/item';
 import { SuggestedFix } from '../../../../shared/entities/suggested-fix';
 import { PlatformService } from '../../services/platform/platform.service';
+import { StorageKey, StorageService } from '../../services/storage/storage.service';
 import { GloomhavenIcon } from '../icon/icon.enum';
 import { PopupService } from '../popup/popup.service';
-
-const SUBMITTED_BY_STORAGE_KEY = 'SUBMITTED_BY';
 
 @Component({
   selector: 'gdb-item',
@@ -35,10 +34,8 @@ export class ItemComponent {
 
   submittedBy: string;
 
-  constructor(private popupService: PopupService, private platformService: PlatformService) {
-    if (this.platformService.isBrowser) {
-      this.submittedBy = localStorage.getItem(SUBMITTED_BY_STORAGE_KEY);
-    }
+  constructor(private popupService: PopupService, private storageService: StorageService) {
+    this.submittedBy = this.storageService.load<string>(StorageKey.FixSubmittedBy);
   }
 
   onSubmit() {
@@ -53,7 +50,7 @@ export class ItemComponent {
       author: this.submittedBy || null,
     });
 
-    localStorage.setItem(SUBMITTED_BY_STORAGE_KEY, this.submittedBy || null);
+    this.storageService.store<string>(StorageKey.FixSubmittedBy, this.submittedBy || null);
   }
 
   onCancel() {

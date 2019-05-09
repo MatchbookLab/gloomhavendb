@@ -1,0 +1,14 @@
+:host {
+  padding: 20px;
+  display: flex;
+
+  flex-grow: 1;
+
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  display: block;
+  max-width: 400px;
+}

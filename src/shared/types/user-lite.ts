@@ -2,6 +2,6 @@ import { RoleId } from '../constants/role-id';
 
 export interface UserLite {
   id: number;
-  email: string;
+  username: string;
   roleId: RoleId;
 }

@@ -7,16 +7,18 @@ import {
   HttpRequest,
 } from '@angular/common/http';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
 import { BrowserModule, BrowserTransferStateModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
-import { Observable } from 'rxjs';
 import { PrebootModule } from 'preboot';
+import { Observable } from 'rxjs';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { AuthService } from './services/auth/auth.service';
 import { PlatformService } from './services/platform/platform.service';
+import { LocalStorageService } from './services/storage/local-storage.service';
+import { StorageService } from './services/storage/storage.service';
 
 @NgModule({
   imports: [
@@ -25,7 +27,6 @@ import { PlatformService } from './services/platform/platform.service';
     BrowserTransferStateModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    FormsModule,
     HttpClientModule,
   ],
   declarations: [AppComponent],
@@ -56,6 +57,30 @@ import { PlatformService } from './services/platform/platform.service';
         },
       multi: true,
       deps: [PlatformService],
+    },
+    {
+      provide: HTTP_INTERCEPTORS,
+      useFactory: (authService: AuthService): HttpInterceptor => ({
+        intercept(request: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
+          const token = authService.getToken();
+
+          if (token) {
+            request = request.clone({
+              setHeaders: {
+                Authorization: `Bearer ${token}`,
+              },
+            });
+          }
+
+          return next.handle(request);
+        },
+      }),
+      multi: true,
+      deps: [AuthService],
+    },
+    {
+      provide: StorageService,
+      useClass: LocalStorageService,
     },
   ],
   bootstrap: [AppComponent],

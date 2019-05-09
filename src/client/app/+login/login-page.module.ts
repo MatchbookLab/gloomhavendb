@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
+import { GdbFormsModule } from '../shared/forms/forms.module';
 
 import { LoginPageComponent } from './login-page.component';
 
@@ -19,7 +19,7 @@ const routes: Routes = [
 export class LoginPageRoutingModule {}
 
 @NgModule({
-  imports: [CommonModule, FormsModule, LoginPageRoutingModule],
+  imports: [CommonModule, GdbFormsModule, LoginPageRoutingModule],
   declarations: [LoginPageComponent],
 })
 export class LoginPageModule {}

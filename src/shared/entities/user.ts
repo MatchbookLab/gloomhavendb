@@ -4,7 +4,7 @@ import {
   CreateDateColumn,
   Entity,
   JoinColumn,
-  OneToMany,
+  ManyToOne,
   PrimaryGeneratedColumn,
   UpdateDateColumn,
 } from 'typeorm';
@@ -30,7 +30,7 @@ export class User implements UserLite {
   @Column({ nullable: true })
   password: string | null;
 
-  @OneToMany(() => Role, role => role.users)
+  @ManyToOne(() => Role, role => role.users)
   @JoinColumn()
   role: Role;
 
@@ -45,8 +45,8 @@ export class User implements UserLite {
   active: boolean;
 
   @CreateDateColumn()
-  createdAt: string;
+  created: string;
 
   @UpdateDateColumn()
-  updatedAt: string;
+  updated: string;
 }

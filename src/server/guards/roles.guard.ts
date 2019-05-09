@@ -11,7 +11,10 @@ export class RolesGuard implements CanActivate {
   constructor(private reflector: Reflector) {}
 
   canActivate(context: ExecutionContext): boolean {
-    const roleIds = this.reflector.get<RoleId[]>(roleIdsMetaDataKey, context.getHandler());
+    const roleIdsOnClass = this.reflector.get<RoleId[]>(roleIdsMetaDataKey, context.getClass());
+    const roleIdsOnMethod = this.reflector.get<RoleId[]>(roleIdsMetaDataKey, context.getHandler());
+
+    const roleIds = roleIdsOnMethod || roleIdsOnClass;
 
     const user: UserLite = context.switchToHttp().getRequest<Request>().user;
 
