@@ -1,7 +1,7 @@
-import { Component, ElementRef, ViewChild } from '@angular/core';
+import { Component } from '@angular/core';
+import { invert } from 'lodash';
 import { GloomhavenIcon } from '../../icon/icon.enum';
 import { PopupRef } from '../popup-ref.class';
-import { invert } from 'lodash';
 
 const InvertedGloomhavenIcon = invert(GloomhavenIcon);
 
@@ -11,8 +11,6 @@ const InvertedGloomhavenIcon = invert(GloomhavenIcon);
   styleUrls: ['./icon-list-popup.component.scss'],
 })
 export class IconListPopup {
-  @ViewChild('input') inputRef: ElementRef<HTMLInputElement>;
-
   InvertedGloomhavenIcon = InvertedGloomhavenIcon;
 
   icons: GloomhavenIcon[] = Object.values(GloomhavenIcon);
@@ -25,11 +23,11 @@ export class IconListPopup {
     this.popupRef.close();
   }
 
-  copyToClipboard(icon: GloomhavenIcon) {
+  copyToClipboard(icon: GloomhavenIcon, input: HTMLInputElement) {
     this.recentlyCopied = `{${InvertedGloomhavenIcon[icon]}}`;
 
-    this.inputRef.nativeElement.value = this.recentlyCopied;
-    this.inputRef.nativeElement.select();
+    input.select();
     document.execCommand('copy');
+    input.blur();
   }
 }

@@ -2,20 +2,25 @@
   <div class="content">
     <div class="note">
       Click on an icon to copy its code to your clipboard.
-      <span *ngIf="recentlyCopied">
+      <em *ngIf="recentlyCopied">
         Copied <strong>{{ recentlyCopied }}</strong> to the clipboard!
-      </span>
+      </em>
     </div>
 
-    <input class="copy-input" type="text" #input />
-
     <div class="grid">
-      <ng-container *ngFor="let icon of icons">
-        <div class="icon" (click)="copyToClipboard(icon)" class="pointer">
+      <div class="grid-cell" *ngFor="let icon of icons">
+        <div class="icon pointer" (click)="copyToClipboard(icon, input)">
           <gdb-icon [icon]="icon"></gdb-icon>
         </div>
-        <div class="name">{{ '{' }}{{ InvertedGloomhavenIcon[icon] }}{{ '}' }}</div>
-      </ng-container>
+        <input
+          readonly
+          #input
+          type="text"
+          [size]="InvertedGloomhavenIcon[icon].length + 4"
+          [value]="'{' + InvertedGloomhavenIcon[icon] + '}'"
+          class="name copy-input"
+        />
+      </div>
     </div>
   </div>
 </tc-popup-container>
