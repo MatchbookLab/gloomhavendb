@@ -1,22 +1,20 @@
 import { Test, TestingModule } from '@nestjs/testing';
-import { AuthenticationController } from './authentication.controller';
-import { Connection } from 'typeorm';
 import { AuthService } from '../../services/auth/auth.service';
+import { RoleRepository } from '../role/role.repository';
+import { AuthenticationController } from './authentication.controller';
 
-describe('Authentication Controller', () => {
+describe('AuthenticationController', () => {
   let fixture: TestingModule;
   beforeAll(async () => {
     fixture = await Test.createTestingModule({
       controllers: [AuthenticationController],
       providers: [
         {
-          provide: Connection,
-          useValue: {
-            getRepository: () => {},
-          },
+          provide: AuthService,
+          useValue: {},
         },
         {
-          provide: AuthService,
+          provide: RoleRepository,
           useValue: {},
         },
       ],
