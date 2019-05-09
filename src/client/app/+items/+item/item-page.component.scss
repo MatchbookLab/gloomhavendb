@@ -9,7 +9,8 @@
 }
 
 :host tc-popup-container ::ng-deep .popup-content {
-  max-width: 80%;
+  max-width: 87%;
+  overflow-x: scroll;
 }
 
 .previous-suggestions {

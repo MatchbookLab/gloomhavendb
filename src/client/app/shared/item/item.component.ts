@@ -5,8 +5,11 @@ import { Slot } from '../../../../shared/constants/slot';
 import { SuggestedFixType } from '../../../../shared/constants/suggested-fix-type';
 import { Item } from '../../../../shared/entities/item';
 import { SuggestedFix } from '../../../../shared/entities/suggested-fix';
+import { PlatformService } from '../../services/platform/platform.service';
 import { GloomhavenIcon } from '../icon/icon.enum';
 import { PopupService } from '../popup/popup.service';
+
+const SUBMITTED_BY_STORAGE_KEY = 'SUBMITTED_BY';
 
 @Component({
   selector: 'gdb-item',
@@ -32,7 +35,11 @@ export class ItemComponent {
 
   submittedBy: string;
 
-  constructor(private popupService: PopupService) {}
+  constructor(private popupService: PopupService, private platformService: PlatformService) {
+    if (this.platformService.isBrowser) {
+      this.submittedBy = localStorage.getItem(SUBMITTED_BY_STORAGE_KEY);
+    }
+  }
 
   onSubmit() {
     this.item.negativeCardsCount = this.item.negativeCardsCount || null;
@@ -45,6 +52,8 @@ export class ItemComponent {
       data: this.item,
       author: this.submittedBy || null,
     });
+
+    localStorage.setItem(SUBMITTED_BY_STORAGE_KEY, this.submittedBy || null);
   }
 
   onCancel() {
