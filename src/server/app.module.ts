@@ -109,7 +109,7 @@ const angularUniversal = DEVELOPMENT_MODE
     ...repositories,
     {
       provide: EmailerService,
-      useClass: MailgunEmailer, // PRODUCTION_MODE ? MailgunEmailer : MailhogEmailer,
+      useClass: PRODUCTION_MODE ? MailgunEmailer : MailhogEmailer,
     },
     IdAbsentGuard,
     IdMatchGuard,
