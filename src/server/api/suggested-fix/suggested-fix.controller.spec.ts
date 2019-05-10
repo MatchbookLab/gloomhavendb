@@ -1,4 +1,5 @@
 import { Test, TestingModule } from '@nestjs/testing';
+import { EmailerService } from '../../services/emailer/emailer.service';
 import { ItemRepository } from '../item/item.repository';
 import { SuggestedFixController } from './suggested-fix.controller';
 import { SuggestedFixRepository } from './suggested-fix.repository';
@@ -16,6 +17,10 @@ describe('SuggestedFixController', () => {
         },
         {
           provide: ItemRepository,
+          useValue: {},
+        },
+        {
+          provide: EmailerService,
           useValue: {},
         },
       ],
