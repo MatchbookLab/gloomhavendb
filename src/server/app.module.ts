@@ -43,8 +43,8 @@ import { RolesGuard } from './guards/roles.guard';
 import { AuthService } from './services/auth/auth.service';
 import { JwtStrategy } from './services/auth/jwt.strategy';
 import { EmailerService } from './services/emailer/emailer.service';
-import { MailhogEmailer } from './services/emailer/mailhog-emailer';
-import { ProductionEmailer } from './services/emailer/production-emailer';
+import { MailhogEmailer } from './services/emailer/mailhog.emailer';
+import { MailgunEmailer } from './services/emailer/mailgun.emailer';
 
 import { repositories } from './api/repositories';
 
@@ -109,7 +109,7 @@ const angularUniversal = DEVELOPMENT_MODE
     ...repositories,
     {
       provide: EmailerService,
-      useClass: PRODUCTION_MODE ? ProductionEmailer : MailhogEmailer,
+      useClass: MailgunEmailer, // PRODUCTION_MODE ? MailgunEmailer : MailhogEmailer,
     },
     IdAbsentGuard,
     IdMatchGuard,

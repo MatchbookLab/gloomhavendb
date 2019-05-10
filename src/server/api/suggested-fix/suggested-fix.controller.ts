@@ -14,19 +14,33 @@ import { SuggestedFixType } from '../../../shared/constants/suggested-fix-type';
 import { Item } from '../../../shared/entities/item';
 import { SuggestedFix } from '../../../shared/entities/suggested-fix';
 import { Roles } from '../../decorators/roles.decorator';
+import { BASE_URL, DEFAULT_EMAIL_TO, HOSTNAME, PROTOCOL } from '../../environment';
 import { RolesGuard } from '../../guards/roles.guard';
+import { EmailerService } from '../../services/emailer/emailer.service';
 import { ItemRepository } from '../item/item.repository';
 import { SuggestedFixRepository } from './suggested-fix.repository';
 
 @Controller('suggested-fix')
 export class SuggestedFixController {
-  constructor(private suggestedFixRepo: SuggestedFixRepository, private itemRepo: ItemRepository) {}
+  constructor(
+    private suggestedFixRepo: SuggestedFixRepository,
+    private itemRepo: ItemRepository,
+    private emailer: EmailerService,
+  ) {}
 
   @Post()
   async suggestFix<T>(@Body() suggestedFix: SuggestedFix<T>): Promise<SuggestedFix<T>> {
     // TODO handle UUIDs
     const savedEntity = await this.suggestedFixRepo.save(suggestedFix);
-    return this.suggestedFixRepo.findOne(savedEntity.id);
+    const fix = await this.suggestedFixRepo.findOne(savedEntity.id);
+
+    await this.emailer.sendMail({
+      to: DEFAULT_EMAIL_TO,
+      subject: `Someone Suggested a Fix for ${fix.type}/${fix.idOrNumber}`,
+      html: `Check out this new suggestion: ${BASE_URL}/${fix.type}/${fix.idOrNumber}`,
+    });
+
+    return fix;
   }
 
   @Get('matching')

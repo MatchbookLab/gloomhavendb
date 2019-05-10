@@ -1,11 +1,11 @@
 import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output } from '@angular/core';
+import { clone } from 'lodash';
 import { ItemSource } from '../../../../shared/constants/item-source';
 import { Limit } from '../../../../shared/constants/limit';
 import { Slot } from '../../../../shared/constants/slot';
 import { SuggestedFixType } from '../../../../shared/constants/suggested-fix-type';
 import { Item } from '../../../../shared/entities/item';
 import { SuggestedFix } from '../../../../shared/entities/suggested-fix';
-import { PlatformService } from '../../services/platform/platform.service';
 import { StorageKey, StorageService } from '../../services/storage/storage.service';
 import { GloomhavenIcon } from '../icon/icon.enum';
 import { PopupService } from '../popup/popup.service';
@@ -17,7 +17,15 @@ import { PopupService } from '../popup/popup.service';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ItemComponent {
-  @Input() item: Item;
+  private _item: Item;
+  @Input()
+  set item(item: Item) {
+    this._item = clone(item);
+  }
+  get item(): Item {
+    return this._item;
+  }
+
   @Input() readonly editable = false;
 
   @Output() submit: EventEmitter<SuggestedFix<Item>> = new EventEmitter<SuggestedFix<Item>>();
