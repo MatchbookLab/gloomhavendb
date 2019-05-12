@@ -7,7 +7,10 @@ import { environment } from './environments/environment';
 
 import { hmrBootstrap } from './hmr';
 
+import * as LogRocket from 'logrocket';
+
 if (environment.production) {
+  LogRocket.init('wuzazy/gloomhaven-db');
   enableProdMode();
 }
 
