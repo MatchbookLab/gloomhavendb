@@ -10,7 +10,6 @@ import { NgModule } from '@angular/core';
 import { BrowserModule, BrowserTransferStateModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
-import { JWT_OPTIONS, JwtModule, JwtModuleOptions } from '@auth0/angular-jwt';
 import { PrebootModule } from 'preboot';
 import { Observable } from 'rxjs';
 
@@ -29,17 +28,6 @@ import { StorageService } from './services/storage/storage.service';
     BrowserAnimationsModule,
     AppRoutingModule,
     HttpClientModule,
-    JwtModule.forRoot({
-      jwtOptionsProvider: {
-        provide: JWT_OPTIONS,
-        useFactory: (authService: AuthService) =>
-          <JwtModuleOptions['config']>{
-            tokenGetter: () => authService.getToken(),
-            whitelistedDomains: ['gloomhavendb.com', 'localhost'],
-          },
-        deps: [AuthService],
-      },
-    }),
   ],
   declarations: [AppComponent],
   providers: [
@@ -69,6 +57,26 @@ import { StorageService } from './services/storage/storage.service';
         },
       multi: true,
       deps: [PlatformService],
+    },
+    {
+      provide: HTTP_INTERCEPTORS,
+      useFactory: (authService: AuthService): HttpInterceptor => ({
+        intercept(request: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
+          const token = authService.getToken();
+
+          if (token) {
+            request = request.clone({
+              setHeaders: {
+                Authorization: `Bearer ${token}`,
+              },
+            });
+          }
+
+          return next.handle(request);
+        },
+      }),
+      multi: true,
+      deps: [AuthService],
     },
     {
       provide: StorageService,

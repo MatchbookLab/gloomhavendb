@@ -1,13 +1,9 @@
 import { Injectable } from '@angular/core';
-import { JwtHelperService } from '@auth0/angular-jwt';
-import { JwtPayload } from '../../../../server/types/jwt-payload';
 import { RoleId } from '../../../../shared/constants/role-id';
 import { Login } from '../../../../shared/types/login';
 import { UserLite } from '../../../../shared/types/user-lite';
 import { ApiService } from '../api/api.service';
 import { StorageKey, StorageService } from '../storage/storage.service';
-
-const jwtHelper: JwtHelperService = new JwtHelperService();
 
 @Injectable({ providedIn: 'root' })
 export class AuthService {
@@ -20,11 +16,10 @@ export class AuthService {
   }
 
   async login(credentials: Login) {
-    const { token } = await this.api.login(credentials);
+    const { token, userLite } = await this.api.login(credentials);
 
     this._token = token;
-    const tokenJson: JwtPayload = jwtHelper.decodeToken(token);
-    this._currentlyLoggedInUser = tokenJson.user;
+    this._currentlyLoggedInUser = userLite;
 
     this.storageService.store<string>(StorageKey.BearToken, this._token);
     this.storageService.store<UserLite>(StorageKey.UserLite, this._currentlyLoggedInUser);

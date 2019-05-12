@@ -17,6 +17,7 @@ import { mapValues, omitBy, isNil } from 'lodash';
 import { SuggestedFixType } from '../../../../shared/constants/suggested-fix-type';
 import { Login } from '../../../../shared/types/login';
 import { NumberList } from '../../../../shared/types/number-list';
+import { AuthResponse } from '../../../../shared/types/auth-response';
 
 //////////////////////////////////////////
 // This file is generated. Do not edit. //
@@ -144,8 +145,12 @@ export class ApiService {
   // Authentication //
   ////////////////////
 
-  async login(login: Login): Promise<{ token: string }> {
-    return this.httpClient.post<{ token: string }>(`/api/auth/login`, login).toPromise();
+  async login(login: Login): Promise<AuthResponse> {
+    return this.httpClient.post<AuthResponse>(`/api/auth/login`, login).toPromise();
+  }
+
+  async signup(user: User): Promise<User> {
+    return this.httpClient.post<User>(`/api/auth/signup`, user).toPromise();
   }
 
   //////////
