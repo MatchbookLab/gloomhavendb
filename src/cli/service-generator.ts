@@ -177,7 +177,6 @@ import { mapValues, omitBy, isNil } from 'lodash';
 import { SuggestedFixType } from '../../../../shared/constants/suggested-fix-type';
 import { Login } from '../../../../shared/types/login';
 import { NumberList } from '../../../../shared/types/number-list';
-import { AuthResponse } from '../../../../shared/types/auth-response';
 
 //////////////////////////////////////////
 // This file is generated. Do not edit. //

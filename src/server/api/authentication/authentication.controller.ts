@@ -1,7 +1,6 @@
 import { Body, Controller, Post } from '@nestjs/common';
 import { RoleId } from '../../../shared/constants/role-id';
 import { User } from '../../../shared/entities/user';
-import { AuthResponse } from '../../../shared/types/auth-response';
 import { Login } from '../../../shared/types/login';
 
 import { AuthService } from '../../services/auth/auth.service';
@@ -14,7 +13,7 @@ export class AuthenticationController {
   }
 
   @Post('login')
-  async login(@Body() login: Login): Promise<AuthResponse> {
+  async login(@Body() login: Login): Promise<{ token: string }> {
     return await this.authService.signIn(login);
   }
 

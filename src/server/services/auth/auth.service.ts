@@ -3,7 +3,6 @@ import { JwtService } from '@nestjs/jwt';
 import * as bcrypt from 'bcryptjs';
 import { RoleId } from '../../../shared/constants/role-id';
 import { User } from '../../../shared/entities/user';
-import { AuthResponse } from '../../../shared/types/auth-response';
 import { Login } from '../../../shared/types/login';
 import { UserRepository } from '../../api/user/user.repository';
 import { JwtPayload } from '../../types/jwt-payload';
@@ -14,7 +13,7 @@ const failedLoginMessage = 'Username or password was incorrect';
 export class AuthService {
   constructor(private readonly jwtService: JwtService, private readonly userRepo: UserRepository) {}
 
-  async signIn(login: Login): Promise<AuthResponse> {
+  async signIn(login: Login): Promise<{ token: string }> {
     const user = await this.userRepo.findByUsernameOrEmail(login.emailOrUsername);
 
     if (!user) {
@@ -27,16 +26,13 @@ export class AuthService {
       throw new HttpException(failedLoginMessage, 401);
     }
 
-    const userLite = this.userRepo.convertToUserLite(user);
-
     const userJwt: JwtPayload = {
       email: user.email,
-      user: userLite,
+      user: this.userRepo.convertToUserLite(user),
     };
 
     return {
       token: this.jwtService.sign(userJwt),
-      userLite,
     };
   }
 
