@@ -30,11 +30,11 @@ export abstract class BaseRepository<Entity extends EntityWithId> extends Reposi
     if (this.autoFillProperties) {
       entityLike = <DeepPartial<Entity>>pick(entityLike, this.autoFillProperties);
     } else if (this.autoExcludeProperties) {
-      entityLike = omit(entityLike, this.autoExcludeProperties);
+      entityLike = <DeepPartial<Entity>>omit(entityLike, this.autoExcludeProperties);
     }
 
     // we always omit id, created and updated
-    entityLike = omit(entityLike, ['id', 'created', 'updated']);
+    entityLike = <DeepPartial<Entity>>omit(entityLike, ['id', 'created', 'updated']);
 
     return this.create(entityLike);
   }
