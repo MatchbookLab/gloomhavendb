@@ -16,8 +16,8 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import { EventType } from '../../../../shared/constants/event-type';
 import { SuggestedFixType } from '../../../../shared/constants/suggested-fix-type';
-import { Event } from '../../../../shared/entities/event';
-import { SuggestedFix } from '../../../../shared/entities/suggested-fix';
+import { Event } from '../../../../shared/types/entities/event';
+import { SuggestedFix } from '../../../../shared/types/entities/suggested-fix';
 import { ApiService } from '../../services/api/api.service';
 import { ResolveService, RouteResolvers } from '../../services/resolver/resolve.service';
 import { DiffModule } from '../../shared/diff/diff.module';

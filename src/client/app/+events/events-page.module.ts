@@ -4,7 +4,7 @@ import { RouterModule } from '@angular/router';
 import { FaIconService, FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faArrowCircleLeft } from '@fortawesome/free-solid-svg-icons';
-import { Event } from '../../../shared/entities/event';
+import { Event } from '../../../shared/types/entities/event';
 import { ApiService } from '../services/api/api.service';
 import { ROUTE_TITLE_PLACEHOLDER } from '../services/meta-tags/meta-tags.service';
 import { ResolveService, RouteResolvers } from '../services/resolver/resolve.service';

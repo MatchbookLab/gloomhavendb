@@ -9,7 +9,13 @@ export class DatabaseNamingStrategy extends DefaultNamingStrategy implements Nam
     }
 
     const parts = startCase(className).split(' ');
-    const lastIndex = parts.length - 1;
+    let lastIndex = parts.length - 1;
+
+    if (parts[lastIndex] === 'Entity') {
+      parts.pop();
+      lastIndex--;
+    }
+
     parts[lastIndex] = pluralize(parts[lastIndex]);
     return snakeCase(parts.join(' '));
   }

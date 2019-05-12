@@ -1,6 +1,6 @@
-import { BattleGoal } from '../shared/entities/battle-goal';
+import { BattleGoalEntity } from '../server/api/battle-goal/battle-goal.entity';
 
-export const battleGoals: BattleGoal[] = [
+export const battleGoals: BattleGoalEntity[] = [
   {
     id: 1,
     name: 'Acrobatic',

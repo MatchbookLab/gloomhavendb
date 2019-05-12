@@ -2,7 +2,7 @@ import { HttpException, Injectable } from '@nestjs/common';
 import { JwtService } from '@nestjs/jwt';
 import * as bcrypt from 'bcryptjs';
 import { RoleId } from '../../../shared/constants/role-id';
-import { User } from '../../../shared/entities/user';
+import { UserEntity } from '../../api/user/user.entity';
 import { AuthResponse } from '../../../shared/types/auth-response';
 import { Login } from '../../../shared/types/login';
 import { UserRepository } from '../../api/user/user.repository';
@@ -40,7 +40,7 @@ export class AuthService {
     };
   }
 
-  async signUp(user: User): Promise<User> {
+  async signUp(user: UserEntity): Promise<UserEntity> {
     user.password = await this.createPasswordHash(user.password);
 
     user.active = true;

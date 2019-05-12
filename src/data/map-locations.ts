@@ -1,6 +1,6 @@
-import { MapLocation } from '../shared/entities/map-location';
+import { MapLocationEntity } from '../server/api/map-location/map-location.entity';
 
-export const mapLocations: MapLocation[] = [
+export const mapLocations: MapLocationEntity[] = [
   {
     number: 1,
     imageUrl: '/assets/cards/world-map/cropped/1.png',

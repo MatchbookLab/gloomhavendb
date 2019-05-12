@@ -1,5 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { BattleGoal } from '../../../../shared/entities/battle-goal';
+import { BattleGoal } from '../../../../shared/types/entities/battle-goal';
 import { TestBedHelper } from '../../../test/test-bed.helper';
 import { BattleGoalCardComponent } from './battle-goal-card.component';
 

@@ -1,8 +1,8 @@
 import { ClassAlias } from '../shared/constants/class-alias';
 import { Race } from '../shared/constants/race';
-import { Class } from '../shared/entities/class';
+import { ClassEntity } from '../server/api/class/class.entity';
 
-export const classes: Class[] = [
+export const classes: ClassEntity[] = [
   {
     number: 1,
     name: 'Brute',

@@ -5,17 +5,17 @@ import { PassportModule } from '@nestjs/passport';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { join } from 'path';
 
-import { BattleGoal } from '../shared/entities/battle-goal';
-import { Class } from '../shared/entities/class';
-import { Event } from '../shared/entities/event';
-import { Item } from '../shared/entities/item';
-import { MapLocation } from '../shared/entities/map-location';
-import { PersonalGoals } from '../shared/entities/personal-goals';
-import { RandomScenario } from '../shared/entities/random-scenario';
-import { Role } from '../shared/entities/role';
-import { Scenario } from '../shared/entities/scenario';
-import { SuggestedFix } from '../shared/entities/suggested-fix';
-import { User } from '../shared/entities/user';
+import { BattleGoalEntity } from './api/battle-goal/battle-goal.entity';
+import { ClassEntity } from './api/class/class.entity';
+import { EventEntity } from './api/event/event.entity';
+import { ItemEntity } from './api/item/item.entity';
+import { MapLocationEntity } from './api/map-location/map-location.entity';
+import { PersonalGoalsEntity } from './api/personal-goal/personal-goals.entity';
+import { RandomScenarioEntity } from './api/random-scenario/random-scenario.entity';
+import { RoleEntity } from './api/role/role.entity';
+import { ScenarioEntity } from './api/scenario/scenario.entity';
+import { SuggestedFixEntity } from './api/suggested-fix/suggested-fix.entity';
+import { UserEntity } from './api/user/user.entity';
 import { AuthenticationController } from './api/authentication/authentication.controller';
 import { BattleGoalController } from './api/battle-goal/battle-goal.controller';
 
@@ -74,17 +74,17 @@ const angularUniversal = DEVELOPMENT_MODE
       logging: false,
       namingStrategy: new DatabaseNamingStrategy(),
       entities: [
-        BattleGoal,
-        Class,
-        Event,
-        Item,
-        MapLocation,
-        PersonalGoals,
-        RandomScenario,
-        Role,
-        Scenario,
-        SuggestedFix,
-        User,
+        BattleGoalEntity,
+        ClassEntity,
+        EventEntity,
+        ItemEntity,
+        MapLocationEntity,
+        PersonalGoalsEntity,
+        RandomScenarioEntity,
+        RoleEntity,
+        ScenarioEntity,
+        SuggestedFixEntity,
+        UserEntity,
       ],
     }),
 

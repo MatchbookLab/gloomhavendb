@@ -1,6 +1,6 @@
 import { EntityRepository } from 'typeorm';
-import { MapLocation } from '../../../shared/entities/map-location';
+import { MapLocationEntity } from './map-location.entity';
 import { BaseRepository } from '../base.repository';
 
-@EntityRepository(MapLocation)
-export class MapLocationRepository extends BaseRepository<MapLocation> {}
+@EntityRepository(MapLocationEntity)
+export class MapLocationRepository extends BaseRepository<MapLocationEntity> {}

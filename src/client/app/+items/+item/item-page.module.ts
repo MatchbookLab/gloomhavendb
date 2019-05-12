@@ -15,7 +15,7 @@ import {
   faWrench,
 } from '@fortawesome/free-solid-svg-icons';
 import { SuggestedFixType } from '../../../../shared/constants/suggested-fix-type';
-import { Item } from '../../../../shared/entities/item';
+import { Item } from '../../../../shared/types/entities/item';
 import { ResolveService, RouteResolvers } from '../../services/resolver/resolve.service';
 import { ApiService } from '../../services/api/api.service';
 import { DiffModule } from '../../shared/diff/diff.module';

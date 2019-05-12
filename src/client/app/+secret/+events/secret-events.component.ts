@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { events } from '../../../../data/events';
 import { EventType } from '../../../../shared/constants/event-type';
-import { Event } from '../../../../shared/entities/event';
+import { Event } from '../../../../shared/types/entities/event';
 
 @Component({
   selector: 'gdb-secret-events',

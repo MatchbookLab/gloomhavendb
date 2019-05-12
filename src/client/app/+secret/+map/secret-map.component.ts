@@ -2,7 +2,7 @@ import { style } from '@angular/animations';
 import { Component, HostBinding, HostListener, OnInit } from '@angular/core';
 import { assign, find, forEach } from 'lodash';
 import { MAP_SIZE, MAP_URL } from '../../../../shared/constants/map';
-import { MapLocation } from '../../../../shared/entities/map-location';
+import { MapLocation } from '../../../../shared/types/entities/map-location';
 import { ApiService } from '../../services/api/api.service';
 
 interface OurMapLocation extends MapLocation {

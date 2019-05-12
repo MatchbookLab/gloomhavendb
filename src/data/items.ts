@@ -1,12 +1,11 @@
 import { ItemSource } from '../shared/constants/item-source';
 import { Limit } from '../shared/constants/limit';
 import { Slot } from '../shared/constants/slot';
-import { Item } from '../shared/entities/item';
+import { Item } from '../shared/types/entities/item';
 
 export const items: Item[] = [
   {
     number: 1,
-    cardNo: null,
     name: 'Boots of Striding',
     slot: Slot.Legs,
     price: 20,
@@ -22,7 +21,6 @@ export const items: Item[] = [
   },
   {
     number: 2,
-    cardNo: null,
     name: 'Winged Shoes',
     slot: Slot.Legs,
     price: 20,
@@ -38,7 +36,6 @@ export const items: Item[] = [
   },
   {
     number: 3,
-    cardNo: null,
     name: 'Hide Armor',
     slot: Slot.Body,
     price: 10,
@@ -54,7 +51,6 @@ export const items: Item[] = [
   },
   {
     number: 4,
-    cardNo: null,
     name: 'Leather Armor',
     slot: Slot.Body,
     price: 20,
@@ -70,7 +66,6 @@ export const items: Item[] = [
   },
   {
     number: 5,
-    cardNo: null,
     name: 'Cloak of Invisibility',
     slot: Slot.Body,
     price: 20,
@@ -86,7 +81,6 @@ export const items: Item[] = [
   },
   {
     number: 6,
-    cardNo: null,
     name: 'Eagle-Eye Goggles',
     slot: Slot.Head,
     price: 30,
@@ -102,7 +96,6 @@ export const items: Item[] = [
   },
   {
     number: 7,
-    cardNo: null,
     name: 'Iron Helmet',
     slot: Slot.Head,
     price: 10,
@@ -118,7 +111,6 @@ export const items: Item[] = [
   },
   {
     number: 8,
-    cardNo: null,
     name: 'Heater Shield',
     slot: Slot.OneHand,
     price: 20,
@@ -134,7 +126,6 @@ export const items: Item[] = [
   },
   {
     number: 9,
-    cardNo: null,
     name: 'Piercing Bow',
     slot: Slot.TwoHands,
     price: 30,
@@ -150,7 +141,6 @@ export const items: Item[] = [
   },
   {
     number: 10,
-    cardNo: null,
     name: 'War Hammer',
     slot: Slot.TwoHands,
     price: 30,
@@ -166,7 +156,6 @@ export const items: Item[] = [
   },
   {
     number: 11,
-    cardNo: null,
     name: 'Poison Dagger',
     slot: Slot.OneHand,
     price: 20,
@@ -182,7 +171,6 @@ export const items: Item[] = [
   },
   {
     number: 12,
-    cardNo: null,
     name: 'Minor Healing Potion',
     slot: Slot.SmallItem,
     price: 10,
@@ -198,7 +186,6 @@ export const items: Item[] = [
   },
   {
     number: 13,
-    cardNo: null,
     name: 'Minor Stamina Potion',
     slot: Slot.SmallItem,
     price: 10,
@@ -214,7 +201,6 @@ export const items: Item[] = [
   },
   {
     number: 14,
-    cardNo: null,
     name: 'Minor Power Potion',
     slot: Slot.SmallItem,
     price: 10,
@@ -230,7 +216,6 @@ export const items: Item[] = [
   },
   {
     number: 15,
-    cardNo: null,
     name: 'Boots of Speed',
     slot: Slot.Legs,
     price: 30,
@@ -247,7 +232,6 @@ export const items: Item[] = [
   },
   {
     number: 16,
-    cardNo: null,
     name: 'Cloak of Pockets',
     slot: Slot.Body,
     price: 20,
@@ -263,7 +247,6 @@ export const items: Item[] = [
   },
   {
     number: 17,
-    cardNo: null,
     name: 'Empowering Talisman',
     slot: Slot.Head,
     price: 45,
@@ -279,7 +262,6 @@ export const items: Item[] = [
   },
   {
     number: 18,
-    cardNo: null,
     name: 'Battle-Axe',
     slot: Slot.OneHand,
     price: 20,
@@ -296,7 +278,6 @@ export const items: Item[] = [
   },
   {
     number: 19,
-    cardNo: null,
     name: 'Weighted Net',
     slot: Slot.TwoHands,
     price: 20,
@@ -312,7 +293,6 @@ export const items: Item[] = [
   },
   {
     number: 20,
-    cardNo: null,
     name: 'Minor Mana Potion',
     slot: Slot.SmallItem,
     price: 10,
@@ -328,7 +308,6 @@ export const items: Item[] = [
   },
   {
     number: 21,
-    cardNo: null,
     name: 'Stun Powder',
     slot: Slot.SmallItem,
     price: 20,
@@ -344,7 +323,6 @@ export const items: Item[] = [
   },
   {
     number: 22,
-    cardNo: null,
     name: 'Heavy Greaves',
     slot: Slot.Legs,
     price: 20,
@@ -360,7 +338,6 @@ export const items: Item[] = [
   },
   {
     number: 23,
-    cardNo: null,
     name: 'Chainmail',
     slot: Slot.Body,
     price: 20,
@@ -376,7 +353,6 @@ export const items: Item[] = [
   },
   {
     number: 24,
-    cardNo: null,
     name: 'Amulet of Life',
     slot: Slot.Head,
     price: 20,
@@ -392,7 +368,6 @@ export const items: Item[] = [
   },
   {
     number: 25,
-    cardNo: null,
     name: 'Jagged Sword',
     slot: Slot.OneHand,
     price: 30,
@@ -408,7 +383,6 @@ export const items: Item[] = [
   },
   {
     number: 26,
-    cardNo: null,
     name: 'Long Spear',
     slot: Slot.TwoHands,
     price: 30,
@@ -424,7 +398,6 @@ export const items: Item[] = [
   },
   {
     number: 27,
-    cardNo: null,
     name: 'Major Healing Potion',
     slot: Slot.SmallItem,
     price: 30,
@@ -440,7 +413,6 @@ export const items: Item[] = [
   },
   {
     number: 28,
-    cardNo: null,
     name: 'Moon Earring',
     slot: Slot.SmallItem,
     price: 20,
@@ -456,7 +428,6 @@ export const items: Item[] = [
   },
   {
     number: 29,
-    cardNo: null,
     name: 'Comfortable Shoes',
     slot: Slot.Legs,
     price: 30,
@@ -472,7 +443,6 @@ export const items: Item[] = [
   },
   {
     number: 30,
-    cardNo: null,
     name: 'Studded Leather',
     slot: Slot.Body,
     price: 30,
@@ -488,7 +458,6 @@ export const items: Item[] = [
   },
   {
     number: 31,
-    cardNo: null,
     name: 'Hawk Helm',
     slot: Slot.Head,
     price: 20,
@@ -504,7 +473,6 @@ export const items: Item[] = [
   },
   {
     number: 32,
-    cardNo: null,
     name: 'Tower Shield',
     slot: Slot.OneHand,
     price: 40,
@@ -520,7 +488,6 @@ export const items: Item[] = [
   },
   {
     number: 33,
-    cardNo: null,
     name: 'Volatile Bomb',
     slot: Slot.OneHand,
     price: 30,
@@ -537,7 +504,6 @@ export const items: Item[] = [
   },
   {
     number: 34,
-    cardNo: null,
     name: 'Major Stamina Potion',
     slot: Slot.SmallItem,
     price: 30,
@@ -553,7 +519,6 @@ export const items: Item[] = [
   },
   {
     number: 35,
-    cardNo: null,
     name: 'Falcon Figurine',
     slot: Slot.SmallItem,
     price: 50,
@@ -569,7 +534,6 @@ export const items: Item[] = [
   },
   {
     number: 36,
-    cardNo: null,
     name: 'Boots of Dashing',
     slot: Slot.Legs,
     price: 40,
@@ -585,7 +549,6 @@ export const items: Item[] = [
   },
   {
     number: 37,
-    cardNo: null,
     name: 'Robes of Evocation',
     slot: Slot.Body,
     price: 40,
@@ -601,7 +564,6 @@ export const items: Item[] = [
   },
   {
     number: 38,
-    cardNo: null,
     name: 'Heavy Basinet',
     slot: Slot.Head,
     price: 30,
@@ -617,7 +579,6 @@ export const items: Item[] = [
   },
   {
     number: 39,
-    cardNo: null,
     name: 'Hooked Chain',
     slot: Slot.TwoHands,
     price: 40,
@@ -633,7 +594,6 @@ export const items: Item[] = [
   },
   {
     number: 40,
-    cardNo: null,
     name: 'Versatile Dagger',
     slot: Slot.OneHand,
     price: 25,
@@ -650,7 +610,6 @@ export const items: Item[] = [
   },
   {
     number: 41,
-    cardNo: null,
     name: 'Major Power Potion',
     slot: Slot.SmallItem,
     price: 40,
@@ -666,7 +625,6 @@ export const items: Item[] = [
   },
   {
     number: 42,
-    cardNo: null,
     name: 'Ring of Haste',
     slot: Slot.SmallItem,
     price: 30,
@@ -683,7 +641,6 @@ export const items: Item[] = [
   },
   {
     number: 43,
-    cardNo: null,
     name: 'Boots of Quickness',
     slot: Slot.Legs,
     price: 75,
@@ -700,7 +657,6 @@ export const items: Item[] = [
   },
   {
     number: 44,
-    cardNo: null,
     name: 'Splintmail',
     slot: Slot.Body,
     price: 35,
@@ -716,7 +672,6 @@ export const items: Item[] = [
   },
   {
     number: 45,
-    cardNo: null,
     name: 'Pendant of Dark Pacts',
     slot: Slot.Head,
     price: 75,
@@ -732,7 +687,6 @@ export const items: Item[] = [
   },
   {
     number: 46,
-    cardNo: null,
     name: 'Spiked Shield',
     slot: Slot.OneHand,
     price: 40,
@@ -748,7 +702,6 @@ export const items: Item[] = [
   },
   {
     number: 47,
-    cardNo: null,
     name: 'Reaping Scythe',
     slot: Slot.TwoHands,
     price: 40,
@@ -765,7 +718,6 @@ export const items: Item[] = [
   },
   {
     number: 48,
-    cardNo: null,
     name: 'Major Mana Potion',
     slot: Slot.SmallItem,
     price: 30,
@@ -781,7 +733,6 @@ export const items: Item[] = [
   },
   {
     number: 49,
-    cardNo: null,
     name: 'Sun Earring',
     slot: Slot.SmallItem,
     price: 40,
@@ -797,7 +748,6 @@ export const items: Item[] = [
   },
   {
     number: 50,
-    cardNo: null,
     name: 'Steel Sabatons',
     slot: Slot.Legs,
     price: 60,
@@ -813,7 +763,6 @@ export const items: Item[] = [
   },
   {
     number: 51,
-    cardNo: null,
     name: 'Shadow Armor',
     slot: Slot.Body,
     price: 30,
@@ -829,7 +778,6 @@ export const items: Item[] = [
   },
   {
     number: 52,
-    cardNo: null,
     name: 'Protective Charm',
     slot: Slot.Head,
     price: 60,
@@ -845,7 +793,6 @@ export const items: Item[] = [
   },
   {
     number: 53,
-    cardNo: null,
     name: 'Black Knife',
     slot: Slot.OneHand,
     price: 25,
@@ -861,7 +808,6 @@ export const items: Item[] = [
   },
   {
     number: 54,
-    cardNo: null,
     name: 'Staff of Eminence',
     slot: Slot.TwoHands,
     price: 60,
@@ -877,7 +823,6 @@ export const items: Item[] = [
   },
   {
     number: 55,
-    cardNo: null,
     name: 'Super Healing Potion',
     slot: Slot.SmallItem,
     price: 50,
@@ -893,7 +838,6 @@ export const items: Item[] = [
   },
   {
     number: 56,
-    cardNo: null,
     name: 'Ring of Brutality',
     slot: Slot.SmallItem,
     price: 40,
@@ -909,7 +853,6 @@ export const items: Item[] = [
   },
   {
     number: 57,
-    cardNo: null,
     name: 'Serene Sandals',
     slot: Slot.Legs,
     price: 75,
@@ -925,7 +868,6 @@ export const items: Item[] = [
   },
   {
     number: 58,
-    cardNo: null,
     name: 'Cloak of Phasing',
     slot: Slot.Body,
     price: 75,
@@ -941,7 +883,6 @@ export const items: Item[] = [
   },
   {
     number: 59,
-    cardNo: null,
     name: 'Telescopic Lens',
     slot: Slot.Head,
     price: 50,
@@ -957,7 +898,6 @@ export const items: Item[] = [
   },
   {
     number: 60,
-    cardNo: null,
     name: 'Unstable Explosives',
     slot: Slot.OneHand,
     price: 45,
@@ -974,7 +914,6 @@ export const items: Item[] = [
   },
   {
     number: 61,
-    cardNo: null,
     name: 'Wall Shield',
     slot: Slot.TwoHands,
     price: 60,
@@ -990,7 +929,6 @@ export const items: Item[] = [
   },
   {
     number: 62,
-    cardNo: null,
     name: 'Doom Powder',
     slot: Slot.SmallItem,
     price: 40,
@@ -1006,7 +944,6 @@ export const items: Item[] = [
   },
   {
     number: 63,
-    cardNo: null,
     name: 'Lucky Eye',
     slot: Slot.SmallItem,
     price: 60,
@@ -1022,7 +959,6 @@ export const items: Item[] = [
   },
   {
     number: 64,
-    cardNo: null,
     name: 'Boots of Sprinting',
     slot: Slot.Legs,
     price: 75,
@@ -1038,7 +974,6 @@ export const items: Item[] = [
   },
   {
     number: 65,
-    cardNo: null,
     name: 'Platemail',
     slot: Slot.Body,
     price: 50,
@@ -1054,7 +989,6 @@ export const items: Item[] = [
   },
   {
     number: 66,
-    cardNo: null,
     name: 'Mask of Terror',
     slot: Slot.Head,
     price: 50,
@@ -1070,7 +1004,6 @@ export const items: Item[] = [
   },
   {
     number: 67,
-    cardNo: null,
     name: 'Balanced Blade',
     slot: Slot.OneHand,
     price: 60,
@@ -1086,7 +1019,6 @@ export const items: Item[] = [
   },
   {
     number: 68,
-    cardNo: null,
     name: 'Halberd',
     slot: Slot.TwoHands,
     price: 75,
@@ -1102,7 +1034,6 @@ export const items: Item[] = [
   },
   {
     number: 69,
-    cardNo: null,
     name: 'Star Earring',
     slot: Slot.SmallItem,
     price: 70,
@@ -1119,7 +1050,6 @@ export const items: Item[] = [
   },
   {
     number: 70,
-    cardNo: null,
     name: 'Second Chance Ring',
     slot: Slot.SmallItem,
     price: 75,
@@ -1136,7 +1066,6 @@ export const items: Item[] = [
   },
   {
     number: 71,
-    cardNo: null,
     name: 'Boots of Levitation',
     slot: Slot.Legs,
     price: 50,
@@ -1152,7 +1081,6 @@ export const items: Item[] = [
   },
   {
     number: 72,
-    cardNo: null,
     name: 'Boots of Happiness',
     slot: Slot.Legs,
     price: 50,
@@ -1168,7 +1096,6 @@ export const items: Item[] = [
   },
   {
     number: 73,
-    cardNo: null,
     name: 'Blinking Cape',
     slot: Slot.Body,
     price: 50,
@@ -1184,7 +1111,6 @@ export const items: Item[] = [
   },
   {
     number: 74,
-    cardNo: null,
     name: 'Swordedge Armor',
     slot: Slot.Body,
     price: 40,
@@ -1200,7 +1126,6 @@ export const items: Item[] = [
   },
   {
     number: 75,
-    cardNo: null,
     name: 'Circlet of Elements',
     slot: Slot.Head,
     price: 25,
@@ -1216,7 +1141,6 @@ export const items: Item[] = [
   },
   {
     number: 76,
-    cardNo: null,
     name: 'Chain Hood',
     slot: Slot.Head,
     price: 40,
@@ -1232,7 +1156,6 @@ export const items: Item[] = [
   },
   {
     number: 77,
-    cardNo: null,
     name: 'Frigid Blade',
     slot: Slot.OneHand,
     price: 30,
@@ -1248,7 +1171,6 @@ export const items: Item[] = [
   },
   {
     number: 78,
-    cardNo: null,
     name: 'Storm Blade',
     slot: Slot.OneHand,
     price: 30,
@@ -1264,7 +1186,6 @@ export const items: Item[] = [
   },
   {
     number: 79,
-    cardNo: null,
     name: 'Inferno Blade',
     slot: Slot.OneHand,
     price: 30,
@@ -1280,7 +1201,6 @@ export const items: Item[] = [
   },
   {
     number: 80,
-    cardNo: null,
     name: 'Tremor Blade',
     slot: Slot.OneHand,
     price: 30,
@@ -1296,7 +1216,6 @@ export const items: Item[] = [
   },
   {
     number: 81,
-    cardNo: null,
     name: 'Brilliant Blade',
     slot: Slot.OneHand,
     price: 30,
@@ -1312,7 +1231,6 @@ export const items: Item[] = [
   },
   {
     number: 82,
-    cardNo: null,
     name: 'Night Blade',
     slot: Slot.OneHand,
     price: 30,
@@ -1328,7 +1246,6 @@ export const items: Item[] = [
   },
   {
     number: 83,
-    cardNo: null,
     name: 'Wand of Frost',
     slot: Slot.OneHand,
     price: 30,
@@ -1344,7 +1261,6 @@ export const items: Item[] = [
   },
   {
     number: 84,
-    cardNo: null,
     name: 'Wand of Storms',
     slot: Slot.OneHand,
     price: 30,
@@ -1360,7 +1276,6 @@ export const items: Item[] = [
   },
   {
     number: 85,
-    cardNo: null,
     name: 'Wand of Infernos',
     slot: Slot.OneHand,
     price: 30,
@@ -1376,7 +1291,6 @@ export const items: Item[] = [
   },
   {
     number: 86,
-    cardNo: null,
     name: 'Wand of Tremors',
     slot: Slot.OneHand,
     price: 30,
@@ -1392,7 +1306,6 @@ export const items: Item[] = [
   },
   {
     number: 87,
-    cardNo: null,
     name: 'Wand of Brilliance',
     slot: Slot.OneHand,
     price: 30,
@@ -1408,7 +1321,6 @@ export const items: Item[] = [
   },
   {
     number: 88,
-    cardNo: null,
     name: 'Wand of Darkness',
     slot: Slot.OneHand,
     price: 30,
@@ -1424,7 +1336,6 @@ export const items: Item[] = [
   },
   {
     number: 89,
-    cardNo: null,
     name: 'Minor Cure Potion',
     slot: Slot.SmallItem,
     price: 10,
@@ -1440,7 +1351,6 @@ export const items: Item[] = [
   },
   {
     number: 90,
-    cardNo: null,
     name: 'Major Cure Potion',
     slot: Slot.SmallItem,
     price: 30,
@@ -1456,7 +1366,6 @@ export const items: Item[] = [
   },
   {
     number: 91,
-    cardNo: null,
     name: 'Steel Ring',
     slot: Slot.SmallItem,
     price: 20,
@@ -1472,7 +1381,6 @@ export const items: Item[] = [
   },
   {
     number: 92,
-    cardNo: null,
     name: 'Dampening Ring',
     slot: Slot.SmallItem,
     price: 25,
@@ -1488,7 +1396,6 @@ export const items: Item[] = [
   },
   {
     number: 93,
-    cardNo: null,
     name: 'Scroll of Power',
     slot: Slot.SmallItem,
     price: 30,
@@ -1504,7 +1411,6 @@ export const items: Item[] = [
   },
   {
     number: 94,
-    cardNo: null,
     name: 'Scroll of Healing',
     slot: Slot.SmallItem,
     price: 30,
@@ -1520,7 +1426,6 @@ export const items: Item[] = [
   },
   {
     number: 95,
-    cardNo: null,
     name: 'Scroll of Stamina',
     slot: Slot.SmallItem,
     price: 50,
@@ -1536,7 +1441,6 @@ export const items: Item[] = [
   },
   {
     number: 96,
-    cardNo: null,
     name: 'Rocket Boots',
     slot: Slot.Legs,
     price: 80,
@@ -1553,7 +1457,6 @@ export const items: Item[] = [
   },
   {
     number: 97,
-    cardNo: null,
     name: 'Endurance Footwraps',
     slot: Slot.Legs,
     price: 40,
@@ -1570,7 +1473,6 @@ export const items: Item[] = [
   },
   {
     number: 98,
-    cardNo: null,
     name: 'Drakescale Boots',
     slot: Slot.Legs,
     price: 50,
@@ -1587,7 +1489,6 @@ export const items: Item[] = [
   },
   {
     number: 99,
-    cardNo: null,
     name: 'Magma Waders',
     slot: Slot.Legs,
     price: 50,
@@ -1605,7 +1506,6 @@ export const items: Item[] = [
   },
   {
     number: 100,
-    cardNo: null,
     name: 'Robes of Summoning',
     slot: Slot.Body,
     price: 40,
@@ -1622,7 +1522,6 @@ export const items: Item[] = [
   },
   {
     number: 101,
-    cardNo: null,
     name: 'Second Skin',
     slot: Slot.Body,
     price: 30,
@@ -1639,7 +1538,6 @@ export const items: Item[] = [
   },
   {
     number: 102,
-    cardNo: null,
     name: 'Sacrificial Robes',
     slot: Slot.Body,
     price: 50,
@@ -1656,7 +1554,6 @@ export const items: Item[] = [
   },
   {
     number: 103,
-    cardNo: null,
     name: 'Drakescale Armor',
     slot: Slot.Body,
     price: 50,
@@ -1673,7 +1570,6 @@ export const items: Item[] = [
   },
   {
     number: 104,
-    cardNo: null,
     name: 'Steam Armor',
     slot: Slot.Body,
     price: 50,
@@ -1690,7 +1586,6 @@ export const items: Item[] = [
   },
   {
     number: 105,
-    cardNo: null,
     name: 'Flea-Bitten Shawl',
     slot: Slot.Body,
     price: 10,
@@ -1707,7 +1602,6 @@ export const items: Item[] = [
   },
   {
     number: 106,
-    cardNo: null,
     name: 'Necklace of Teeth',
     slot: Slot.Head,
     price: 40,
@@ -1723,7 +1617,6 @@ export const items: Item[] = [
   },
   {
     number: 107,
-    cardNo: null,
     name: 'Horned Helm',
     slot: Slot.Head,
     price: 30,
@@ -1740,7 +1633,6 @@ export const items: Item[] = [
   },
   {
     number: 108,
-    cardNo: null,
     name: 'Drakescale Helm',
     slot: Slot.Head,
     price: 50,
@@ -1757,7 +1649,6 @@ export const items: Item[] = [
   },
   {
     number: 109,
-    cardNo: null,
     name: "Thief's Hood",
     slot: Slot.Head,
     price: 20,
@@ -1774,7 +1665,6 @@ export const items: Item[] = [
   },
   {
     number: 110,
-    cardNo: null,
     name: 'Helm of the Mountain',
     slot: Slot.Head,
     price: 50,
@@ -1791,7 +1681,6 @@ export const items: Item[] = [
   },
   {
     number: 111,
-    cardNo: null,
     name: 'Wave Crest',
     slot: Slot.Head,
     price: 50,
@@ -1808,7 +1697,6 @@ export const items: Item[] = [
   },
   {
     number: 112,
-    cardNo: null,
     name: 'Ancient Drill',
     slot: Slot.TwoHands,
     price: 30,
@@ -1824,7 +1712,6 @@ export const items: Item[] = [
   },
   {
     number: 113,
-    cardNo: null,
     name: 'Skullbane Axe',
     slot: Slot.TwoHands,
     price: 50,
@@ -1843,7 +1730,6 @@ export const items: Item[] = [
   },
   {
     number: 114,
-    cardNo: null,
     name: 'Staff of Xorn',
     slot: Slot.TwoHands,
     price: 50,
@@ -1859,7 +1745,6 @@ export const items: Item[] = [
   },
   {
     number: 115,
-    cardNo: null,
     name: 'Mountain Hammer',
     slot: Slot.TwoHands,
     price: 50,
@@ -1876,7 +1761,6 @@ export const items: Item[] = [
   },
   {
     number: 116,
-    cardNo: null,
     name: 'Fueled Falchion',
     slot: Slot.OneHand,
     price: 20,
@@ -1893,7 +1777,6 @@ export const items: Item[] = [
   },
   {
     number: 117,
-    cardNo: null,
     name: 'Bloody Axe',
     slot: Slot.OneHand,
     price: 40,
@@ -1910,7 +1793,6 @@ export const items: Item[] = [
   },
   {
     number: 118,
-    cardNo: null,
     name: 'Staff of Elements',
     slot: Slot.TwoHands,
     price: 50,
@@ -1927,7 +1809,6 @@ export const items: Item[] = [
   },
   {
     number: 119,
-    cardNo: null,
     name: 'Skull of Hatred',
     slot: Slot.OneHand,
     price: 50,
@@ -1943,7 +1824,6 @@ export const items: Item[] = [
   },
   {
     number: 120,
-    cardNo: null,
     name: 'Staff of Summoning',
     slot: Slot.TwoHands,
     price: 60,
@@ -1960,7 +1840,6 @@ export const items: Item[] = [
   },
   {
     number: 121,
-    cardNo: null,
     name: 'Orb of Dawn',
     slot: Slot.OneHand,
     price: 50,
@@ -1976,7 +1855,6 @@ export const items: Item[] = [
   },
   {
     number: 122,
-    cardNo: null,
     name: 'Orb of Twilight',
     slot: Slot.OneHand,
     price: 50,
@@ -1993,7 +1871,6 @@ export const items: Item[] = [
   },
   {
     number: 123,
-    cardNo: null,
     name: 'Ring of Skulls',
     slot: Slot.SmallItem,
     price: 50,
@@ -2010,7 +1887,6 @@ export const items: Item[] = [
   },
   {
     number: 124,
-    cardNo: null,
     name: 'Doomed Compass',
     slot: Slot.SmallItem,
     price: 50,
@@ -2028,7 +1904,6 @@ export const items: Item[] = [
   },
   {
     number: 125,
-    cardNo: null,
     name: 'Curious Gear',
     slot: Slot.SmallItem,
     price: 50,
@@ -2045,7 +1920,6 @@ export const items: Item[] = [
   },
   {
     number: 126,
-    cardNo: null,
     name: 'Remote Spider',
     slot: Slot.SmallItem,
     price: 40,
@@ -2062,7 +1936,6 @@ export const items: Item[] = [
   },
   {
     number: 127,
-    cardNo: null,
     name: 'Giant Remote Spider',
     slot: Slot.SmallItem,
     price: 60,
@@ -2079,7 +1952,6 @@ export const items: Item[] = [
   },
   {
     number: 128,
-    cardNo: null,
     name: 'Black Censer',
     slot: Slot.SmallItem,
     price: 50,
@@ -2095,7 +1967,6 @@ export const items: Item[] = [
   },
   {
     number: 129,
-    cardNo: null,
     name: 'Black Card',
     slot: Slot.SmallItem,
     price: 75,
@@ -2112,7 +1983,6 @@ export const items: Item[] = [
   },
   {
     number: 130,
-    cardNo: null,
     name: 'Helix Ring',
     slot: Slot.SmallItem,
     price: 50,
@@ -2129,7 +1999,6 @@ export const items: Item[] = [
   },
   {
     number: 131,
-    cardNo: null,
     name: 'Heart of the Betrayer',
     slot: Slot.SmallItem,
     price: 60,
@@ -2147,7 +2016,6 @@ export const items: Item[] = [
   },
   {
     number: 132,
-    cardNo: null,
     name: 'Power Core',
     slot: Slot.SmallItem,
     price: 75,
@@ -2163,7 +2031,6 @@ export const items: Item[] = [
   },
   {
     number: 133,
-    cardNo: null,
     name: 'Resonant Crystal',
     slot: Slot.SmallItem,
     price: 20,
@@ -2179,7 +2046,6 @@ export const items: Item[] = [
   },
   {
     number: 134,
-    cardNo: null,
     name: 'Imposing Blade',
     slot: Slot.OneHand,
     price: 50,
@@ -2195,7 +2061,6 @@ export const items: Item[] = [
   },
   {
     number: 135,
-    cardNo: null,
     name: 'Focusing Ray',
     slot: Slot.OneHand,
     price: 50,
@@ -2211,7 +2076,6 @@ export const items: Item[] = [
   },
   {
     number: 136,
-    cardNo: null,
     name: 'Volatile Elixir',
     slot: Slot.SmallItem,
     price: 50,
@@ -2228,7 +2092,6 @@ export const items: Item[] = [
   },
   {
     number: 137,
-    cardNo: null,
     name: 'Silent Stiletto',
     slot: Slot.OneHand,
     price: 50,
@@ -2244,7 +2107,6 @@ export const items: Item[] = [
   },
   {
     number: 138,
-    cardNo: null,
     name: 'Stone Charm',
     slot: Slot.Head,
     price: 50,
@@ -2261,7 +2123,6 @@ export const items: Item[] = [
   },
   {
     number: 139,
-    cardNo: null,
     name: 'Psychic Knife',
     slot: Slot.OneHand,
     price: 50,
@@ -2277,7 +2138,6 @@ export const items: Item[] = [
   },
   {
     number: 140,
-    cardNo: null,
     name: 'Sun Shield',
     slot: Slot.OneHand,
     price: 50,
@@ -2293,7 +2153,6 @@ export const items: Item[] = [
   },
   {
     number: 141,
-    cardNo: null,
     name: 'Utility Belt',
     slot: Slot.SmallItem,
     price: 50,
@@ -2309,7 +2168,6 @@ export const items: Item[] = [
   },
   {
     number: 142,
-    cardNo: null,
     name: 'Phasing Idol',
     slot: Slot.SmallItem,
     price: 50,
@@ -2325,7 +2183,6 @@ export const items: Item[] = [
   },
   {
     number: 143,
-    cardNo: null,
     name: 'Smoke Elixir',
     slot: Slot.SmallItem,
     price: 50,
@@ -2341,7 +2198,6 @@ export const items: Item[] = [
   },
   {
     number: 144,
-    cardNo: null,
     name: 'Pendant of the Plague',
     slot: Slot.Head,
     price: 50,
@@ -2357,7 +2213,6 @@ export const items: Item[] = [
   },
   {
     number: 145,
-    cardNo: null,
     name: 'Mask of Death',
     slot: Slot.Head,
     price: 50,
@@ -2373,7 +2228,6 @@ export const items: Item[] = [
   },
   {
     number: 146,
-    cardNo: null,
     name: 'Master’s Lute',
     slot: Slot.TwoHands,
     price: 50,
@@ -2389,7 +2243,6 @@ export const items: Item[] = [
   },
   {
     number: 147,
-    cardNo: null,
     name: 'Cloak of the Hunter',
     slot: Slot.Body,
     price: 50,
@@ -2405,7 +2258,6 @@ export const items: Item[] = [
   },
   {
     number: 148,
-    cardNo: null,
     name: 'Doctor’s Coat',
     slot: Slot.Body,
     price: 50,
@@ -2421,7 +2273,6 @@ export const items: Item[] = [
   },
   {
     number: 149,
-    cardNo: null,
     name: 'Elemental Boots',
     slot: Slot.Legs,
     price: 50,
@@ -2437,7 +2288,6 @@ export const items: Item[] = [
   },
   {
     number: 150,
-    cardNo: null,
     name: 'Staff of Command',
     slot: Slot.TwoHands,
     price: 50,

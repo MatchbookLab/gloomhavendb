@@ -1,6 +1,6 @@
 import { EntityRepository } from 'typeorm';
-import { BattleGoal } from '../../../shared/entities/battle-goal';
+import { BattleGoalEntity } from './battle-goal.entity';
 import { BaseRepository } from '../base.repository';
 
-@EntityRepository(BattleGoal)
-export class BattleGoalRepository extends BaseRepository<BattleGoal> {}
+@EntityRepository(BattleGoalEntity)
+export class BattleGoalRepository extends BaseRepository<BattleGoalEntity> {}

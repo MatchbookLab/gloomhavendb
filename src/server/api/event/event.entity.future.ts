@@ -1,9 +1,9 @@
 import { ApiModelProperty } from '@nestjs/swagger';
 import { IsBoolean, IsEnum, IsInt, IsNotEmpty, IsString, Min, ValidateNested } from 'class-validator';
 import { Column, Entity, JoinColumn, ManyToOne, OneToMany, OneToOne, PrimaryGeneratedColumn, Unique } from 'typeorm';
-import { props } from '../util/props';
-import { EventConditionType } from '../constants/event-condition-type';
-import { EventType } from '../constants/event-type';
+import { props } from '../../../shared/util/props';
+import { EventConditionType } from '../../../shared/constants/event-condition-type';
+import { EventType } from '../../../shared/constants/event-type';
 
 @Entity()
 class EventRequirement {

@@ -4,11 +4,11 @@ import * as fs from 'fs';
 import * as _ from 'lodash';
 import { Limit } from '../../shared/constants/limit';
 import { Slot } from '../../shared/constants/slot';
-import { Item } from '../../shared/entities/item';
+import { ItemEntity } from '../../server/api/item/item.entity';
 
 const x: XRay.Instance = XRay();
 
-type ItemLike = { [key in keyof Item]?: string };
+type ItemLike = { [key in keyof ItemEntity]?: string };
 
 interface AltItemLike {
   priceAlt: string;
@@ -38,7 +38,7 @@ const URL_BASE = 'https://old.reddit.com/r/Gloomhaven/wiki/items/item_';
     textAltAlt: '#wiki_bonus_gained + p',
   };
 
-  let items: Item[] = await Promise.all(
+  let items: ItemEntity[] = await Promise.all(
     _.range(1, 151).map(async itemNo => {
       const result: ItemLike & AltItemLike = await x(
         `${URL_BASE}${_.padStart(itemNo + '', 3, '0')}`,
@@ -46,7 +46,7 @@ const URL_BASE = 'https://old.reddit.com/r/Gloomhaven/wiki/items/item_';
         matchers,
       );
 
-      const item: Item = {
+      const item: ItemEntity = {
         number: itemNo,
         cardNo: null,
         name: _.last(result.name.split(' — ')) || null,

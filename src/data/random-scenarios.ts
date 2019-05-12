@@ -1,6 +1,6 @@
-import { RandomScenario } from '../shared/entities/random-scenario';
+import { RandomScenarioEntity } from '../server/api/random-scenario/random-scenario.entity';
 
-export const randomScenarios: RandomScenario[] = [
+export const randomScenarios: RandomScenarioEntity[] = [
   {
     id: 486,
     scenarioId: 67,

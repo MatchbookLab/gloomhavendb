@@ -2,10 +2,10 @@ import * as fs from 'fs';
 import * as _ from 'lodash';
 import * as path from 'path';
 import { EventType } from '../../shared/constants/event-type';
-import { Event } from '../../shared/entities/event';
+import { EventEntity } from '../../server/api/event/event.entity';
 
 let id = 1;
-const events: Event[] = [];
+const events: EventEntity[] = [];
 Promise.all(
   _.range(1, 82).map(async (i: number) => {
     const paddedNum = _.padStart(i + '', 2, '0');
@@ -26,7 +26,7 @@ Promise.all(
 
           const [, flavorText, choiceA, choiceB] = frontText.match(/^(.*?)Option A[:;] (.*?)Option [BR8][:;](.*?)$/);
 
-          const event: Event = {
+          const event: EventEntity = {
             id: id++,
             type,
             number: i,

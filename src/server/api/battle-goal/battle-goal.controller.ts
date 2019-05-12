@@ -2,7 +2,7 @@ import { Controller, Get, Param, Query } from '@nestjs/common';
 import * as _ from 'lodash';
 import { FindConditions } from 'typeorm';
 import { battleGoals } from '../../../data/battle-goals';
-import { BattleGoal } from '../../../shared/entities/battle-goal';
+import { BattleGoalEntity } from './battle-goal.entity';
 import { BetterFindManyOptions } from '../base.repository';
 import { BattleGoalRepository } from './battle-goal.repository';
 
@@ -13,10 +13,10 @@ export class BattleGoalController {
   }
 
   @Get()
-  async getBattleGoals(@Query('includeExtendedGoals') includeExtendedGoals?: boolean): Promise<BattleGoal[]> {
-    const options: BetterFindManyOptions<BattleGoal> = { order: { name: 'ASC' } };
+  async getBattleGoals(@Query('includeExtendedGoals') includeExtendedGoals?: boolean): Promise<BattleGoalEntity[]> {
+    const options: BetterFindManyOptions<BattleGoalEntity> = { order: { name: 'ASC' } };
 
-    const where: FindConditions<BattleGoal> = {};
+    const where: FindConditions<BattleGoalEntity> = {};
 
     if (!includeExtendedGoals) {
       where.isExtendedGoal = false;
@@ -30,7 +30,7 @@ export class BattleGoalController {
   }
 
   @Get(':name')
-  async findBattleGoal(@Param('name') name: string): Promise<BattleGoal> {
+  async findBattleGoal(@Param('name') name: string): Promise<BattleGoalEntity> {
     name = _.startCase(name);
     return this.battleGoalRepo.findOneOrFail({ where: { name } });
   }

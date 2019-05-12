@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Item } from '../../../shared/entities/item';
+import { Item } from '../../../shared/types/entities/item';
 import { ResolvedDataService } from '../services/resolver/resolve.service';
 
 export interface ItemsResolveData {

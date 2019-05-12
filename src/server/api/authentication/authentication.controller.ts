@@ -1,6 +1,6 @@
 import { Body, Controller, Post } from '@nestjs/common';
 import { RoleId } from '../../../shared/constants/role-id';
-import { User } from '../../../shared/entities/user';
+import { UserEntity } from '../user/user.entity';
 import { AuthResponse } from '../../../shared/types/auth-response';
 import { Login } from '../../../shared/types/login';
 
@@ -20,7 +20,7 @@ export class AuthenticationController {
 
   // disable signups for now
   // @Post('signup')
-  async signup(@Body() user: User): Promise<User> {
+  async signup(@Body() user: UserEntity): Promise<UserEntity> {
     return await this.authService.signUp(user);
   }
 

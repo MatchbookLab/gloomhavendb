@@ -1,14 +1,14 @@
-import { BattleGoal } from '../../../../shared/entities/battle-goal';
-import { Class } from '../../../../shared/entities/class';
-import { Event } from '../../../../shared/entities/event';
-import { Item } from '../../../../shared/entities/item';
-import { MapLocation } from '../../../../shared/entities/map-location';
-import { PersonalGoals } from '../../../../shared/entities/personal-goals';
-import { RandomScenario } from '../../../../shared/entities/random-scenario';
-import { Role } from '../../../../shared/entities/role';
-import { Scenario } from '../../../../shared/entities/scenario';
-import { SuggestedFix } from '../../../../shared/entities/suggested-fix';
-import { User } from '../../../../shared/entities/user';
+import { BattleGoal } from '../../../../shared/types/entities/battle-goal';
+import { Class } from '../../../../shared/types/entities/class';
+import { Event } from '../../../../shared/types/entities/event';
+import { Item } from '../../../../shared/types/entities/item';
+import { MapLocation } from '../../../../shared/types/entities/map-location';
+import { PersonalGoals } from '../../../../shared/types/entities/personal-goals';
+import { RandomScenario } from '../../../../shared/types/entities/random-scenario';
+import { Role } from '../../../../shared/types/entities/role';
+import { Scenario } from '../../../../shared/types/entities/scenario';
+import { SuggestedFix } from '../../../../shared/types/entities/suggested-fix';
+import { User } from '../../../../shared/types/entities/user';
 
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';

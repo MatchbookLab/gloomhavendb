@@ -3,7 +3,7 @@ import { AfterViewInit, Component, ElementRef, HostBinding, HostListener, OnInit
 import { filter, maxBy, minBy, sortBy } from 'lodash';
 import { GloomhavenDB } from '../../../../sdk/generated/gloomhavendb.sdk';
 import { Slot } from '../../../../shared/constants/slot';
-import { Item } from '../../../../shared/entities/item';
+import { Item } from '../../../../shared/types/entities/item';
 import { ScrollingService } from '../../services/scrolling/scrolling.service';
 
 @Component({

@@ -1,6 +1,6 @@
 import { EntityRepository } from 'typeorm';
-import { Event } from '../../../shared/entities/event';
+import { EventEntity } from './event.entity';
 import { BaseRepository } from '../base.repository';
 
-@EntityRepository(Event)
-export class EventRepository extends BaseRepository<Event> {}
+@EntityRepository(EventEntity)
+export class EventRepository extends BaseRepository<EventEntity> {}

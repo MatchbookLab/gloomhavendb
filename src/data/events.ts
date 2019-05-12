@@ -1,7 +1,7 @@
 import { EventType } from '../shared/constants/event-type';
-import { Event } from '../shared/entities/event';
+import { EventEntity } from '../server/api/event/event.entity';
 
-export const events: Event[] = [
+export const events: EventEntity[] = [
   {
     id: 3,
     type: EventType.City,

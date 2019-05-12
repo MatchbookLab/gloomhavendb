@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { clone, random } from 'lodash';
-import { BattleGoal } from '../../../../shared/entities/battle-goal';
+import { BattleGoal } from '../../../../shared/types/entities/battle-goal';
 import { ApiService } from '../../services/api/api.service';
 import { ScrollingService } from '../../services/scrolling/scrolling.service';
 

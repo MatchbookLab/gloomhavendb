@@ -3,7 +3,7 @@ import { makeStateKey, TransferState } from '@angular/platform-browser';
 import { ActivatedRoute, ActivatedRouteSnapshot, Resolve, RouterStateSnapshot } from '@angular/router';
 import { Prop } from '../../../../shared/util/props';
 import { SuggestedFixType } from '../../../../shared/constants/suggested-fix-type';
-import { SuggestedFix } from '../../../../shared/entities/suggested-fix';
+import { SuggestedFix } from '../../../../shared/types/entities/suggested-fix';
 import { ApiService } from '../api/api.service';
 import { PlatformService } from '../platform/platform.service';
 

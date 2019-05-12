@@ -11,8 +11,8 @@ import {
 import { AuthGuard } from '@nestjs/passport';
 import { RoleId } from '../../../shared/constants/role-id';
 import { SuggestedFixType } from '../../../shared/constants/suggested-fix-type';
-import { Item } from '../../../shared/entities/item';
-import { SuggestedFix } from '../../../shared/entities/suggested-fix';
+import { ItemEntity } from '../item/item.entity';
+import { SuggestedFixEntity } from './suggested-fix.entity';
 import { Roles } from '../../decorators/roles.decorator';
 import { BASE_URL, DEFAULT_EMAIL_TO, HOSTNAME, PROTOCOL } from '../../environment';
 import { RolesGuard } from '../../guards/roles.guard';
@@ -29,7 +29,7 @@ export class SuggestedFixController {
   ) {}
 
   @Post()
-  async suggestFix<T>(@Body() suggestedFix: SuggestedFix<T>): Promise<SuggestedFix<T>> {
+  async suggestFix<T>(@Body() suggestedFix: SuggestedFixEntity<T>): Promise<SuggestedFixEntity<T>> {
     // TODO handle UUIDs
     const savedEntity = await this.suggestedFixRepo.save(suggestedFix);
     const fix = await this.suggestedFixRepo.findOne(savedEntity.id);
@@ -47,7 +47,7 @@ export class SuggestedFixController {
   async getMatchingSuggestedFixes<T>(
     @Query('type') type: SuggestedFixType,
     @Query('idOrNumber') idOrNumber: string,
-  ): Promise<SuggestedFix<T>[]> {
+  ): Promise<SuggestedFixEntity<T>[]> {
     return await this.suggestedFixRepo.find({
       type,
       idOrNumber,
@@ -66,7 +66,7 @@ export class SuggestedFixController {
 
     switch (fix.type) {
       case SuggestedFixType.Item:
-        const item: Item = fix.data;
+        const item: ItemEntity = fix.data;
         await this.itemRepo.saveExisting(item.number, item);
         break;
       default:

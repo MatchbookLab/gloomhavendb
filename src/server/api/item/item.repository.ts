@@ -1,6 +1,6 @@
 import { EntityRepository } from 'typeorm';
-import { Item } from '../../../shared/entities/item';
+import { ItemEntity } from './item.entity';
 import { BaseRepository } from '../base.repository';
 
-@EntityRepository(Item)
-export class ItemRepository extends BaseRepository<Item> {}
+@EntityRepository(ItemEntity)
+export class ItemRepository extends BaseRepository<ItemEntity> {}

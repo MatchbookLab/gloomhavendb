@@ -1,7 +1,7 @@
 import { Controller, Get, Param, Query } from '@nestjs/common';
 import { In } from 'typeorm';
 import { mapLocations } from '../../../data/map-locations';
-import { MapLocation } from '../../../shared/entities/map-location';
+import { MapLocationEntity } from './map-location.entity';
 import { NumberList } from '../../../shared/types/number-list';
 import { numberListToArray } from '../../util/number-list-to-array';
 import { BetterFindManyOptions } from '../base.repository';
@@ -14,8 +14,8 @@ export class MapLocationController {
   }
 
   @Get()
-  async getMapLocations(@Query('numbers') numberList?: NumberList): Promise<MapLocation[]> {
-    const options: BetterFindManyOptions<MapLocation> = { order: { number: 'ASC' } };
+  async getMapLocations(@Query('numbers') numberList?: NumberList): Promise<MapLocationEntity[]> {
+    const options: BetterFindManyOptions<MapLocationEntity> = { order: { number: 'ASC' } };
 
     if (numberList) {
       const numbers: number[] = numberListToArray(numberList);
@@ -26,7 +26,7 @@ export class MapLocationController {
   }
 
   @Get(':number')
-  async findMapLocation(@Param('number') number: string | number): Promise<MapLocation> {
+  async findMapLocation(@Param('number') number: string | number): Promise<MapLocationEntity> {
     return this.mapLocationRepo.smartFindOneOrFail(number);
   }
 

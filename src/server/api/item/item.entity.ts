@@ -1,15 +1,13 @@
 import { Column, Entity, PrimaryColumn } from 'typeorm';
-import { ItemSource } from '../constants/item-source';
-import { Limit } from '../constants/limit';
-import { Slot } from '../constants/slot';
+import { ItemSource } from '../../../shared/constants/item-source';
+import { Limit } from '../../../shared/constants/limit';
+import { Slot } from '../../../shared/constants/slot';
+import { Item } from '../../../shared/types/entities/item';
 
 @Entity()
-export class Item {
+export class ItemEntity implements Item {
   // this is the item number and is *not* generated
   @PrimaryColumn() number: number;
-  // the little number at the bottom of the front (this is unique per card and not really helpful here)
-  /* @deprecated */
-  cardNo?: number;
   @Column() name: string;
   @Column('enum', { enum: Slot }) slot: Slot;
   @Column() price: number;

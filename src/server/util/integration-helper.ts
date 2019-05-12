@@ -2,8 +2,8 @@ import { Test, TestingModule } from '@nestjs/testing';
 import axios, { AxiosInstance } from 'axios';
 import { Connection } from 'typeorm';
 import { RoleId } from '../../shared/constants/role-id';
-import { Role } from '../../shared/entities/role';
-import { User } from '../../shared/entities/user';
+import { RoleEntity } from '../api/role/role.entity';
+import { UserEntity } from '../api/user/user.entity';
 import { UserRepository } from '../api/user/user.repository';
 import { AppModule } from '../app.module';
 
@@ -59,7 +59,7 @@ export class IntegrationHelper {
   }
 
   async login(roleId: RoleId): Promise<void> {
-    const user = await this.connection.getRepository(User).findOne({ roleId });
+    const user = await this.connection.getRepository(UserEntity).findOne({ roleId });
 
     const {
       data: { token },
@@ -85,14 +85,14 @@ export class IntegrationHelper {
   private async setupUsers() {
     await this.connection.query('TRUNCATE users CASCADE');
     await Promise.all([
-      this.connection.getCustomRepository(UserRepository).saveNew(<User>{
+      this.connection.getCustomRepository(UserRepository).saveNew(<UserEntity>{
         username: 'admin',
         roleId: RoleId.Admin,
         email: 'admin@matchbooklab.com',
         password: TEST_PASSWORD,
       }),
-      this.connection.getCustomRepository(UserRepository).saveNew(<User>{
-        username: 'user',
+      this.connection.getCustomRepository(UserRepository).saveNew(<UserEntity>{
+        username: 'user.entity.ts',
         roleId: RoleId.User,
         email: 'user@matchbooklab.com',
         password: TEST_PASSWORD,
@@ -101,11 +101,11 @@ export class IntegrationHelper {
   }
 
   private async setupRoles() {
-    if ((await this.connection.getRepository(Role).find()).length === 6) {
+    if ((await this.connection.getRepository(RoleEntity).find()).length === 6) {
       return;
     }
 
-    await this.connection.getRepository(Role).insert([
+    await this.connection.getRepository(RoleEntity).insert([
       {
         id: RoleId.Admin,
         name: 'Admin',

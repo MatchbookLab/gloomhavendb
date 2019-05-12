@@ -2,8 +2,8 @@ import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output } from 
 import { clone } from 'lodash';
 import { EventType } from '../../../../shared/constants/event-type';
 import { SuggestedFixType } from '../../../../shared/constants/suggested-fix-type';
-import { Event } from '../../../../shared/entities/event';
-import { SuggestedFix } from '../../../../shared/entities/suggested-fix';
+import { Event } from '../../../../shared/types/entities/event';
+import { SuggestedFix } from '../../../../shared/types/entities/suggested-fix';
 import { StorageKey, StorageService } from '../../services/storage/storage.service';
 import { GloomhavenIcon } from '../icon/icon.enum';
 import { PopupService } from '../popup/popup.service';

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Event } from '../../../shared/entities/event';
+import { Event } from '../../../shared/types/entities/event';
 import { ResolvedDataService } from '../services/resolver/resolve.service';
 
 export interface EventsResolveData {
