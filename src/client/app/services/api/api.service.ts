@@ -149,10 +149,6 @@ export class ApiService {
     return this.httpClient.post<AuthResponse>(`/api/auth/login`, login).toPromise();
   }
 
-  async signup(user: User): Promise<User> {
-    return this.httpClient.post<User>(`/api/auth/signup`, user).toPromise();
-  }
-
   //////////
   // User //
   //////////

@@ -1,7 +1,7 @@
 import { ApiModelProperty } from '@nestjs/swagger';
 import { IsBoolean, IsEnum, IsInt, IsNotEmpty, IsString, Min, ValidateNested } from 'class-validator';
 import { Column, Entity, JoinColumn, ManyToOne, OneToMany, OneToOne, PrimaryGeneratedColumn, Unique } from 'typeorm';
-import { props } from '../../server/util/props';
+import { props } from '../util/props';
 import { EventConditionType } from '../constants/event-condition-type';
 import { EventType } from '../constants/event-type';
 

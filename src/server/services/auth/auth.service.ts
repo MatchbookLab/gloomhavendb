@@ -6,7 +6,7 @@ import { User } from '../../../shared/entities/user';
 import { AuthResponse } from '../../../shared/types/auth-response';
 import { Login } from '../../../shared/types/login';
 import { UserRepository } from '../../api/user/user.repository';
-import { JwtPayload } from '../../types/jwt-payload';
+import { JwtPayload } from '../../../shared/types/jwt-payload';
 
 const failedLoginMessage = 'Username or password was incorrect';
 

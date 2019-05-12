@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { makeStateKey, TransferState } from '@angular/platform-browser';
 import { ActivatedRoute, ActivatedRouteSnapshot, Resolve, RouterStateSnapshot } from '@angular/router';
-import { Prop } from '../../../../server/util/props';
+import { Prop } from '../../../../shared/util/props';
 import { SuggestedFixType } from '../../../../shared/constants/suggested-fix-type';
 import { SuggestedFix } from '../../../../shared/entities/suggested-fix';
 import { ApiService } from '../api/api.service';

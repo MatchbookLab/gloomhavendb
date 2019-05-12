@@ -1,0 +1,93 @@
+<gdb-wip-banner-component></gdb-wip-banner-component>
+
+<div class="content">
+  <div class="nav">
+    <div class="first-cell">
+      <a *ngIf="event.number > 1" [routerLink]="['/events', event.number - 1]">
+        <fa-icon [icon]="'arrow-circle-left'"></fa-icon>
+        View Previous Event
+      </a>
+    </div>
+    <div class="center-cell">
+      <a [routerLink]="['/events']">
+        <fa-icon [icon]="'arrow-circle-up'"></fa-icon>
+        View All Events
+      </a>
+    </div>
+    <div class="last-cell">
+      <a *ngIf="event.number < 150" [routerLink]="['/events', event.number + 1]">
+        <fa-icon [icon]="'arrow-circle-right'"></fa-icon>
+        View Next Event
+      </a>
+    </div>
+  </div>
+
+  <header>
+    <h1>{{ header }}</h1>
+  </header>
+
+  <div class="previous-suggestions">
+    <div class="alert" *ngIf="suggestedFixes.length > 0">
+      <strong>Note:</strong> This event already has pending edits. You can view them below.
+    </div>
+
+    <p [style.visibility]="editable ? 'hidden' : 'visible'">
+      <a (click)="editable = true">
+        <fa-icon [icon]="'wrench'"></fa-icon>
+        Suggest Fix</a
+      >
+      |
+      <a (click)="reset()">
+        <fa-icon [icon]="'power-off'"></fa-icon>
+        Reset Changes</a
+      >
+    </p>
+
+    <table class="table" *ngIf="suggestedFixes.length > 0">
+      <thead>
+        <tr>
+          <th>Submitted By</th>
+          <th>Timestamp</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let fix of suggestedFixes; trackBy: trackById">
+          <td>{{ fix.author || 'Anonymous' }}</td>
+          <td>{{ fix.updated | date: 'medium' }}</td>
+          <td>
+            <a (click)="loadSuggestedFix(fix.data)" class="pointer">
+              <fa-icon [icon]="'truck-loading'"></fa-icon>
+              Load Their Edits
+            </a>
+            |
+            <a (click)="openPopup(fix.data)" class="pointer">
+              <fa-icon [icon]="'code-branch'"></fa-icon>
+              View Diff from Original
+            </a>
+            <ng-container *ngIf="isAdmin">
+              |
+              <a (click)="commitFix(fix)" class="pointer">
+                <fa-icon [icon]="'save'"></fa-icon>
+                Commit Fix
+              </a>
+            </ng-container>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="content">
+    <gdb-event
+      (submit)="submitFix($event)"
+      (cancel)="editable = false"
+      [event]="event"
+      [editable]="editable"
+    ></gdb-event>
+
+    <tc-popup-container *ngIf="showDiffPopup" (backgroundClick)="closePopup()" [isModal]="false">
+      <gdb-diff [objectA]="dbEvent" [objectB]="diffToView"></gdb-diff>
+    </tc-popup-container>
+  </div>
+</div>

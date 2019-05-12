@@ -3,7 +3,7 @@ import * as passport from 'passport';
 import { ExtractJwt, Strategy } from 'passport-jwt';
 import { UserLite } from '../../../shared/types/user-lite';
 import { JWT_SECRET } from '../../environment';
-import { JwtPayload } from '../../types/jwt-payload';
+import { JwtPayload } from '../../../shared/types/jwt-payload';
 
 // this is (hopefully) a temporary workaround cuz `extends PassportStrategy(Strategy)` doesn't work with HMR
 abstract class PassportJwtStrategy extends Strategy {

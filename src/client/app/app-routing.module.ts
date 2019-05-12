@@ -20,6 +20,13 @@ const routes: BetterRoute<BaseRoutePath | '**'>[] = [
       title: 'Items',
     },
   },
+  {
+    path: BaseRoutePath.Events,
+    loadChildren: './+events/events-page.module#EventsPageModule',
+    data: {
+      title: 'Events',
+    },
+  },
 
   {
     path: BaseRoutePath.SecretShop,

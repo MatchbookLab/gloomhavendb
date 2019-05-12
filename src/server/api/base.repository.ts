@@ -1,7 +1,7 @@
 import { BadRequestException, NotFoundException } from '@nestjs/common';
 import { omit, pick, startCase } from 'lodash';
 import { DeepPartial, FindManyOptions, FindOneOptions, ObjectLiteral, Repository, SaveOptions } from 'typeorm';
-import { Props } from '../util/props';
+import { Props } from '../../shared/util/props';
 
 interface EntityWithId extends ObjectLiteral {
   id?: string | number;

@@ -31,6 +31,7 @@ module.exports = {
     ],
   },
   mode: 'development',
+  devtool: 'cheap-module-inline-source-map',
   resolve: {
     extensions: ['.ts', '.js'],
     plugins: [

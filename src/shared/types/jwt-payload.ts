@@ -1,4 +1,4 @@
-import { UserLite } from '../../shared/types/user-lite';
+import { UserLite } from './user-lite';
 
 export interface JwtPayload {
   email: string;

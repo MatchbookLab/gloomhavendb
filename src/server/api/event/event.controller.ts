@@ -8,7 +8,9 @@ import { EventRepository } from './event.repository';
 
 @Controller('events')
 export class EventController {
-  constructor(private eventRepo: EventRepository) {}
+  constructor(private eventRepo: EventRepository) {
+    this.seed();
+  }
 
   /////////////////
   // Road Events //
@@ -100,7 +102,7 @@ export class EventController {
 
   private async getEvents(type: EventType): Promise<Event[]> {
     // TODO bad error handling
-    return this.eventRepo.find({ type });
+    return this.eventRepo.find({ where: { type }, order: { number: 'ASC' } });
   }
 
   private async findEvent(type: EventType, number: string | number): Promise<Event> {
@@ -122,5 +124,13 @@ export class EventController {
 
   private async deleteEvent(type: EventType, number: string | number): Promise<Event> {
     return await this.eventRepo.deleteAndReturn(number);
+  }
+
+  private async seed() {
+    if ((await this.eventRepo.smartFind()).length) {
+      return;
+    }
+
+    await this.eventRepo.save(events);
   }
 }

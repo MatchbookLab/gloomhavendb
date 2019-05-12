@@ -1,0 +1,20 @@
+<gdb-wip-banner-component></gdb-wip-banner-component>
+
+<div class="content">
+  <p>
+    <a [routerLink]="'/'">
+      <fa-icon [icon]="'arrow-circle-left'"></fa-icon>
+      Back to Home
+    </a>
+  </p>
+
+  <header>
+    <h1>Events</h1>
+  </header>
+
+  <div class="grid">
+    <div class="cell" *ngFor="let event of events">
+      <a [routerLink]="[event.type | lowercase, event.number]">{{ event.type }} Event #{{ event.number }}</a>
+    </div>
+  </div>
+</div>

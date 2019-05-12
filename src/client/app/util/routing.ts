@@ -16,6 +16,9 @@ export enum BaseRoutePath {
   Items = 'items',
   Item = 'items/:number',
 
+  Events = 'events',
+  Event = 'events/:type/:number',
+
   SecretShop = 'secret/shop',
   SecretMap = 'secret/map',
   SecretEvents = 'secret/events',

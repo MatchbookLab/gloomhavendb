@@ -19,6 +19,7 @@ import { AuthService } from './services/auth/auth.service';
 import { PlatformService } from './services/platform/platform.service';
 import { LocalStorageService } from './services/storage/local-storage.service';
 import { StorageService } from './services/storage/storage.service';
+import { startsWith } from 'lodash';
 
 @NgModule({
   imports: [
@@ -61,18 +62,19 @@ import { StorageService } from './services/storage/storage.service';
     {
       provide: HTTP_INTERCEPTORS,
       useFactory: (authService: AuthService): HttpInterceptor => ({
-        intercept(request: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
+        intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
           const token = authService.getToken();
 
-          if (token) {
-            request = request.clone({
+          // TODO whitelisting may need updating if using remote API
+          if (startsWith(req.url[0], '/api') && token) {
+            req = req.clone({
               setHeaders: {
                 Authorization: `Bearer ${token}`,
               },
             });
           }
 
-          return next.handle(request);
+          return next.handle(req);
         },
       }),
       multi: true,
