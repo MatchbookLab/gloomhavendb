@@ -9,6 +9,7 @@ import {
   UseGuards,
 } from '@nestjs/common';
 import { AuthGuard } from '@nestjs/passport';
+import { ApiExcludeEndpoint } from '@nestjs/swagger';
 import { RoleId } from '../../../shared/constants/role-id';
 import { SuggestedFixType } from '../../../shared/constants/suggested-fix-type';
 import { ItemEntity } from '../item/item.entity';
@@ -55,6 +56,7 @@ export class SuggestedFixController {
   }
 
   @Post('commit')
+  @ApiExcludeEndpoint()
   @UseGuards(AuthGuard(), RolesGuard)
   @Roles(RoleId.Admin)
   async commitFix<T>(@Body() payload: { id: string }): Promise<void> {

@@ -1,20 +1,39 @@
 import { Body, Controller, Delete, Get, Param, Post, Put, Query, UseGuards } from '@nestjs/common';
 import { AuthGuard } from '@nestjs/passport';
+import {
+  ApiExcludeEndpoint,
+  ApiImplicitBody,
+  ApiImplicitParam,
+  ApiImplicitQuery,
+  ApiOkResponse,
+  ApiUseTags,
+} from '@nestjs/swagger';
 import { In } from 'typeorm';
 import { items } from '../../../data/items';
-import { ItemEntity } from './item.entity';
 import { NumberList } from '../../../shared/types/number-list';
 import { numberListToArray } from '../../util/number-list-to-array';
 import { BetterFindManyOptions } from '../base.repository';
+import { ItemEntity } from './item.entity';
 import { ItemRepository } from './item.repository';
 
+// @ApiExcludeEndpoint() are to hide endpoints that won't be available until custom content is ready
+
 @Controller('items')
+@ApiUseTags('Items')
 export class ItemController {
   constructor(private itemRepo: ItemRepository) {
     this.seed();
   }
 
   @Get()
+  @ApiOkResponse({ description: 'All of the Items.', type: [ItemEntity] })
+  @ApiImplicitQuery({
+    name: 'numbers',
+    description:
+      'The numbers of the items you want to return. Accepts array of numbers or comma/space/pipe separated list.',
+    type: '"csv" | "ssv" | "pipes" | (string | number)[]',
+    required: false,
+  })
   async getItems(@Query('numbers') numberList?: NumberList): Promise<ItemEntity[]> {
     const options: BetterFindManyOptions<ItemEntity> = { order: { number: 'ASC' } };
 
@@ -27,28 +46,37 @@ export class ItemController {
   }
 
   @Get(':number')
+  @ApiImplicitParam({ name: 'number', description: 'The number of the item.', type: 'string | number', required: true })
+  @ApiOkResponse({ description: 'The specified item.', type: ItemEntity })
   async findItem(@Param('number') number: string | number): Promise<ItemEntity> {
     return this.itemRepo.smartFindOneOrFail(number);
   }
 
   @Post()
+  @ApiExcludeEndpoint()
+  @ApiImplicitBody({ name: 'item', type: ItemEntity, description: 'The Item to create.', required: true })
   @UseGuards(AuthGuard())
   async createItem(@Body() item: ItemEntity): Promise<ItemEntity> {
     item = this.itemRepo.scrub(item);
     return await this.itemRepo.saveNew(item);
   }
 
-  @Put(':cardNo')
+  @Put(':number')
+  @ApiExcludeEndpoint()
+  @ApiImplicitBody({ name: 'item', type: ItemEntity, description: 'The Item to update.', required: true })
   @UseGuards(AuthGuard())
-  async updateItem(@Param('cardNo') cardNo: string | number, @Body() item: ItemEntity): Promise<ItemEntity> {
+  async updateItem(@Param('number') number: string | number, @Body() item: ItemEntity): Promise<ItemEntity> {
     item = this.itemRepo.scrub(item);
-    return await this.itemRepo.saveExisting(cardNo, item);
+    return await this.itemRepo.saveExisting(number, item);
   }
 
-  @Delete(':cardNo')
+  @Delete(':number')
+  @ApiExcludeEndpoint()
+  @ApiImplicitParam({ name: 'number', description: 'The Item number to delete.' })
+  @ApiOkResponse({ description: 'The Item that was deleted.', type: ItemEntity })
   @UseGuards(AuthGuard())
-  async deleteItem(@Param('cardNo') cardNo: string | number): Promise<ItemEntity> {
-    return await this.itemRepo.deleteAndReturn(cardNo);
+  async deleteItem(@Param('number') number: string | number): Promise<ItemEntity> {
+    return await this.itemRepo.deleteAndReturn(number);
   }
 
   private async seed() {

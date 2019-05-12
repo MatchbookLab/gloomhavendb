@@ -1,5 +1,6 @@
 import { Controller, Get, Param, UseGuards } from '@nestjs/common';
 import { AuthGuard } from '@nestjs/passport';
+import { ApiExcludeEndpoint } from '@nestjs/swagger';
 import { RoleId } from '../../../shared/constants/role-id';
 import { UserEntity } from './user.entity';
 import { UserLite } from '../../../shared/types/user-lite';
@@ -15,11 +16,13 @@ export class UserController {
   constructor(private readonly userRepo: UserRepository) {}
 
   @Get()
+  @ApiExcludeEndpoint()
   async getUsers(@LoggedInUser() user: UserLite): Promise<UserEntity[]> {
     return this.userRepo.smartFind();
   }
 
   @Get(':id')
+  @ApiExcludeEndpoint()
   async findUser(@Param('id') id: string, @LoggedInUser() cur: UserLite): Promise<UserEntity> {
     return this.userRepo.smartFindOneOrFail(id);
   }

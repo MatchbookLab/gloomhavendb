@@ -1,4 +1,5 @@
 import { Body, Controller, Post } from '@nestjs/common';
+import { ApiExcludeEndpoint } from '@nestjs/swagger';
 import { RoleId } from '../../../shared/constants/role-id';
 import { UserEntity } from '../user/user.entity';
 import { AuthResponse } from '../../../shared/types/auth-response';
@@ -14,6 +15,7 @@ export class AuthenticationController {
   }
 
   @Post('login')
+  @ApiExcludeEndpoint()
   async login(@Body() login: Login): Promise<AuthResponse> {
     return await this.authService.signIn(login);
   }

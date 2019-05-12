@@ -1,12 +1,15 @@
 import { Body, Controller, Delete, Get, Param, Post, Put, UseGuards } from '@nestjs/common';
 import { AuthGuard } from '@nestjs/passport';
-import { ApiImplicitBody, ApiImplicitParam, ApiOkResponse } from '@nestjs/swagger';
+import { ApiExcludeEndpoint, ApiImplicitBody, ApiImplicitParam, ApiOkResponse, ApiUseTags } from '@nestjs/swagger';
 import { events } from '../../../data/events';
 import { EventType } from '../../../shared/constants/event-type';
 import { EventEntity } from './event.entity';
 import { EventRepository } from './event.repository';
 
+// @ApiExcludeEndpoint() are to hide endpoints that won't be available until custom content is ready
+
 @Controller('events')
+@ApiUseTags('Events')
 export class EventController {
   constructor(private eventRepo: EventRepository) {
     this.seed();
@@ -30,9 +33,10 @@ export class EventController {
   }
 
   @Post('road')
+  @ApiExcludeEndpoint()
   @UseGuards(AuthGuard())
   @ApiImplicitBody({
-    name: 'event.entity.ts',
+    name: 'event',
     type: EventEntity,
     description: 'The Road Event to create.',
     required: true,
@@ -43,10 +47,11 @@ export class EventController {
   }
 
   @Put('road/:cardNo')
+  @ApiExcludeEndpoint()
   @UseGuards(AuthGuard())
   @ApiImplicitParam({ name: 'cardNo', description: 'The event card number.' })
   @ApiImplicitBody({
-    name: 'event.entity.ts',
+    name: 'event',
     type: EventEntity,
     description: 'The Road Event to update.',
     required: true,
@@ -57,6 +62,7 @@ export class EventController {
   }
 
   @Delete('road/:cardNo')
+  @ApiExcludeEndpoint()
   @UseGuards(AuthGuard())
   @ApiImplicitParam({ name: 'cardNo', description: 'The event card number.' })
   @ApiOkResponse({ description: 'The Road Event that was deleted.', type: EventEntity })
@@ -82,9 +88,10 @@ export class EventController {
   }
 
   @Post('city')
+  @ApiExcludeEndpoint()
   @UseGuards(AuthGuard())
   @ApiImplicitBody({
-    name: 'event.entity.ts',
+    name: 'event',
     type: EventEntity,
     description: 'The City Event to create.',
     required: true,
@@ -95,10 +102,11 @@ export class EventController {
   }
 
   @Put('city/:cardNo')
+  @ApiExcludeEndpoint()
   @UseGuards(AuthGuard())
   @ApiImplicitParam({ name: 'cardNo', description: 'The event card number.' })
   @ApiImplicitBody({
-    name: 'event.entity.ts',
+    name: 'event',
     type: EventEntity,
     description: 'The City Event to update.',
     required: true,
@@ -109,6 +117,7 @@ export class EventController {
   }
 
   @Delete('city/:cardNo')
+  @ApiExcludeEndpoint()
   @UseGuards(AuthGuard())
   @ApiImplicitParam({ name: 'cardNo', description: 'The event card number.' })
   @ApiOkResponse({ description: 'The City Event that was deleted.', type: EventEntity })
