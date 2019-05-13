@@ -1,1 +1,96 @@
-<pre style="white-space: pre-wrap"><code>{{ event | json }}</code></pre>
+<div class="split image-split">
+  <img width="200" height="300" [src]="event.imageUrl" [alt]="event.name" />
+</div>
+
+<div class="split">
+  <div class="little-grid" [class.editable]="editable">
+    <div class="right">
+      <strong>Name</strong>
+    </div>
+    <div>
+      <ng-container *ngIf="!editable">
+        {{ event.number }}
+      </ng-container>
+      <ng-container *ngIf="editable">
+        <input class="inline" type="number" [(ngModel)]="event.number" />
+      </ng-container>
+    </div>
+
+    <div class="right">
+      <strong>Type</strong>
+    </div>
+    <div>
+      <ng-container *ngIf="!editable">
+        {{ event.type }}
+      </ng-container>
+      <ng-container *ngIf="editable">
+        <label>
+          <input type="radio" [(ngModel)]="event.type" [value]="EventType.Road" />
+          Road
+        </label>
+        <label>
+          <input type="radio" [(ngModel)]="event.type" [value]="EventType.City" />
+          City
+        </label>
+      </ng-container>
+    </div>
+
+    MORE...
+
+    <div class="right">
+      <strong>Text</strong>
+      <div *ngIf="editable" class="subtext">
+        <small>
+          You can add icons to this field by using <strong>{{ '{' }}IconName}</strong>.<br />
+          <a (click)="openListOfIconsPopup()">Show List of Icons</a>
+        </small>
+      </div>
+    </div>
+    <div>
+      <ng-container *ngIf="editable">
+        <textarea class="inline" rows="7" [(ngModel)]="event.text"></textarea>
+      </ng-container>
+
+      <ng-container>
+        <strong *ngIf="editable">Preview: </strong>
+        <gdb-text-with-icons [text]="event.text"></gdb-text-with-icons>
+      </ng-container>
+    </div>
+
+    <div class="right">
+      <strong>Verified</strong>
+    </div>
+    <div>
+      <ng-container *ngIf="!editable">
+        {{ event.verified ? 'Yes' : 'No' }}
+      </ng-container>
+
+      <ng-container *ngIf="editable">
+        <label>
+          <input type="checkbox" [(ngModel)]="event.verified" />
+          I promise this is 100% accurate and there is no missing information.
+        </label>
+      </ng-container>
+    </div>
+
+    <ng-container *ngIf="editable">
+      <div class="right">
+        <div><strong>Submitted By</strong></div>
+        <div class="subtext">
+          <small>(optional)</small>
+        </div>
+      </div>
+      <div>
+        <input type="text" class="inline" [(ngModel)]="submittedBy" />
+      </div>
+    </ng-container>
+
+    <ng-container *ngIf="editable">
+      <div>&nbsp;</div>
+      <div>
+        <button class="btn btn-primary" (click)="onSubmit()">Submit</button>
+        <button class="btn btn-danger" (click)="onCancel()">Cancel</button>
+      </div>
+    </ng-container>
+  </div>
+</div>
