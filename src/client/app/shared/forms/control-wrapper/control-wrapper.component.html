@@ -1,0 +1,11 @@
+<label class="input-label" [ngClass]="{ required: !(readonly$ | async) && (required$ | async) }">
+  {{ label$ | async }}
+</label>
+<div class="input-wrapper">
+  <ng-container *ngIf="!(readonly$ | async)">
+    <ng-content></ng-content>
+  </ng-container>
+  <ng-container *ngIf="readonly$ | async">
+    {{ stringValue$ | async }}
+  </ng-container>
+</div>

@@ -1,0 +1,13 @@
+:host(.horizontal) {
+  display: flex;
+}
+
+.input-label {
+  font-weight: bold;
+
+  &.required::after {
+    content: ' *';
+    font-weight: normal;
+    color: darkred;
+  }
+}

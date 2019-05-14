@@ -1,11 +1,11 @@
 <div class="split image-split">
-  <img width="200" height="300" [src]="event.imageUrl" [alt]="event.name" />
+  <img width="200" height="300" [src]="event.imageUrl" [alt]="event.type + ' Event #' + event.number" />
 </div>
 
 <div class="split">
   <div class="little-grid" [class.editable]="editable">
     <div class="right">
-      <strong>Name</strong>
+      <strong>Number</strong>
     </div>
     <div>
       <ng-container *ngIf="!editable">

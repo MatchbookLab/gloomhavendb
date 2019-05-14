@@ -12,9 +12,20 @@ textarea {
   display: block;
   width: 100%;
 
+  outline: none;
+  box-shadow: none; // Override Firefox default invalid styles
+
   &.inline {
     position: relative;
     top: -6px;
+  }
+
+  &:focus {
+    box-shadow: 0 0 3px rgba(#000, 0.3);
+  }
+
+  &.ng-invalid.ng-touched {
+    border-color: #de5145;
   }
 }
 
