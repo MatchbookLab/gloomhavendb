@@ -1,12 +1,18 @@
 <gdb-form>
   <form (ngSubmit)="login()">
-    <gdb-control label="Email">
-      <input [(ngModel)]="credentials.emailOrUsername" id="email" name="name" type="text" />
-    </gdb-control>
+    <gdb-text-control
+      name="Email"
+      label="Email"
+      type="email"
+      [(ngModel)]="credentials.emailOrUsername"
+    ></gdb-text-control>
 
-    <gdb-control label="Password">
-      <input [(ngModel)]="credentials.password" id="password" name="password" type="password" />
-    </gdb-control>
+    <gdb-text-control
+      name="Password"
+      label="Password"
+      type="password"
+      [(ngModel)]="credentials.password"
+    ></gdb-text-control>
 
     <div class="alert alert-error" *ngIf="error">
       {{ error }}
