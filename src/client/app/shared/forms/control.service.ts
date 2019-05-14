@@ -1,11 +1,15 @@
 import { Injectable, Injector } from '@angular/core';
 import { ControlValueAccessor, FormControl, NgControl } from '@angular/forms';
-import { Observable, ReplaySubject } from 'rxjs';
+import { ReplaySubject } from 'rxjs';
 
-export interface ControlSharedConfig {
+export interface GdbControlInputs {
   label: string;
   required: boolean;
+  disabled: boolean;
   readonly: boolean;
+}
+
+export interface ControlSharedConfig extends GdbControlInputs {
   stringValue: string;
 }
 
@@ -20,6 +24,7 @@ export class ControlService {
     label: new ReplaySubject<string>(),
     readonly: new ReplaySubject<boolean>(),
     required: new ReplaySubject<boolean>(),
+    disabled: new ReplaySubject<boolean>(),
     stringValue: new ReplaySubject<string>(),
   };
 

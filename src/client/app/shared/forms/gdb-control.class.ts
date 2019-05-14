@@ -3,7 +3,7 @@ import { ControlValueAccessor, FormControl } from '@angular/forms';
 import { forEach } from 'lodash';
 import { ReplaySubject } from 'rxjs';
 import { distinctUntilChanged, takeUntil, tap } from 'rxjs/operators';
-import { ControlService, ControlSharedConfig, ControlSharedConfigChanges } from './control.service';
+import { ControlService, ControlSharedConfig, ControlSharedConfigChanges, GdbControlInputs } from './control.service';
 
 // TODO reuse somewhere
 export type SimplerChanges<T> = SimpleChanges & { [K in keyof T]: SimplerChange<T[K]> };
@@ -13,13 +13,6 @@ export type SimplerChange<T> = {
   currentValue: T;
   firstChange: boolean;
 };
-
-interface GdbControlInputs {
-  label: string;
-  required: boolean;
-  disabled: boolean;
-  readonly: boolean;
-}
 
 export abstract class GdbControl<ControlModel, InternalModel = ControlModel>
   implements GdbControlInputs, ControlValueAccessor, OnInit, OnChanges, OnDestroy {
