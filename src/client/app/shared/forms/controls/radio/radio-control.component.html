@@ -1,13 +1,16 @@
 <gdb-control-wrapper>
   <label *ngFor="let option of options; trackBy: trackByOptionValue">
-    <input type="radio" [name]="label" [value]="option.value" [formControl]="control" />
+    <input type="radio" [name]="label" [value]="option.value" [formControl]="control" [required]="required" />
     {{ option.label }}
     <gdb-icon *ngIf="option.icon" [icon]="option.icon"></gdb-icon>
   </label>
 
   <ng-content></ng-content>
 
-  <gdb-icon gdbReadonly *ngIf="selectedOption?.icon" [icon]="selectedOption.icon"></gdb-icon>
+  <ng-template #readonly>
+    <gdb-icon *ngIf="selectedOption?.icon" [icon]="selectedOption.icon"></gdb-icon>
+    {{ selectedOption?.label }}
+  </ng-template>
 
   <ng-content select="gdb-radio-option"></ng-content>
 </gdb-control-wrapper>

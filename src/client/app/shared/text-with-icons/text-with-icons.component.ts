@@ -27,7 +27,6 @@ export class TextWithIconsComponent {
   }
 
   explodeText(): ExplodedPart[] {
-    console.log(this.text);
     return explodeStringWithIcons((this.text || '').replace(/(\r\n|\r|\n)/g, '<br />'));
   }
 }

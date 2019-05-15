@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+import { AfterViewInit, ChangeDetectionStrategy, Component, ContentChild, TemplateRef } from '@angular/core';
 import { Observable } from 'rxjs';
 import { ControlService } from '../control.service';
 
@@ -8,7 +8,9 @@ import { ControlService } from '../control.service';
   styleUrls: ['./control-wrapper.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class ControlWrapperComponent {
+export class ControlWrapperComponent implements AfterViewInit {
+  @ContentChild('readonly', { read: TemplateRef }) readonlyTemplate: TemplateRef<any>;
+
   label$: Observable<string>;
   required$: Observable<boolean>;
   readonly$: Observable<boolean>;
@@ -19,5 +21,12 @@ export class ControlWrapperComponent {
     this.stringValue$ = controlService.configChanges.stringValue;
     this.required$ = controlService.configChanges.required;
     this.readonly$ = controlService.configChanges.readonly;
+  }
+
+  ngAfterViewInit() {
+    // TODO (this ngAfterViewInit is fired before control's ngAfterViewInit)
+    setTimeout(() => {
+      this.readonlyTemplate = this.controlService.readonlyTemplate || this.readonlyTemplate;
+    });
   }
 }

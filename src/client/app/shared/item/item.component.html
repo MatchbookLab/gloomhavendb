@@ -8,23 +8,25 @@
 
     <gdb-radio-control [readonly]="!editable" [label]="'Slot'" [(ngModel)]="item.slot">
       <gdb-radio-option *ngFor="let slot of slots" [value]="slot" [icon]="slot | enumToIcon"></gdb-radio-option>
+      <ng-template #readonly>
+        {{ item.slot }}
+        <gdb-icon [icon]="item.slot | enumToIcon"></gdb-icon>
+      </ng-template>
     </gdb-radio-control>
 
-    <ng-container *ngIf="item.uses || editable">
-      <div class="right">
-        <strong>Uses</strong>
-      </div>
-      <div>
-        <ng-container *ngIf="!editable">
-          <gdb-icon [icon]="Icon.UseSlot"></gdb-icon>
-          &times; {{ item.uses }}
-        </ng-container>
-
-        <ng-container *ngIf="editable">
-          <input type="number" class="inline" [(ngModel)]="item.uses" />
-        </ng-container>
-      </div>
-    </ng-container>
+    <gdb-number-control
+      *ngIf="item.uses || editable"
+      [readonly]="!editable"
+      [label]="'Uses'"
+      [min]="1"
+      [max]="5"
+      [(ngModel)]="item.uses"
+    >
+      <ng-template #readonly>
+        <gdb-icon [icon]="Icon.UseSlot"></gdb-icon>
+        &times; {{ item.uses }}
+      </ng-template>
+    </gdb-number-control>
 
     <div class="right">
       <strong>Limit</strong>

@@ -46,6 +46,8 @@ export class RadioControlComponent extends GdbControlComponent<string>
 
     this.showOpts = true;
     this.mergeOptions();
+
+    super.ngAfterViewInit();
   }
 
   ngOnChanges(changes: SimplerChanges<GdbControlInputs & RadioControlInputs>) {

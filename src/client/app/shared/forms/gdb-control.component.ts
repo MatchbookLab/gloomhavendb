@@ -1,4 +1,13 @@
-import { Input, OnChanges, OnDestroy, OnInit, SimpleChanges } from '@angular/core';
+import {
+  AfterViewInit,
+  ContentChild,
+  Input,
+  OnChanges,
+  OnDestroy,
+  OnInit,
+  SimpleChanges,
+  TemplateRef,
+} from '@angular/core';
 import { ControlValueAccessor, FormControl } from '@angular/forms';
 import { forEach } from 'lodash';
 import { Observable, ReplaySubject } from 'rxjs';
@@ -61,11 +70,13 @@ export type SimplerChange<T> = {
 };
 
 export abstract class GdbControlComponent<ControlModel, InternalModel = ControlModel>
-  implements GdbControlInputs, ControlValueAccessor, OnInit, OnChanges, OnDestroy {
+  implements GdbControlInputs, ControlValueAccessor, OnInit, OnChanges, AfterViewInit, OnDestroy {
   @Input() label: string;
   @Input() required: boolean = false;
   @Input() disabled: boolean = false;
   @Input() readonly: boolean = false;
+
+  @ContentChild('readonly', { read: TemplateRef }) readonlyTemplate: TemplateRef<any>;
 
   destroyed$: ReplaySubject<boolean> = new ReplaySubject(1);
 
@@ -109,6 +120,10 @@ export abstract class GdbControlComponent<ControlModel, InternalModel = ControlM
     this.valueChanges$.subscribe((val: InternalModel) => this.propagateChange(this.read(val)));
   }
 
+  ngAfterViewInit() {
+    this.controlService.readonlyTemplate = this.readonlyTemplate;
+  }
+
   ngOnDestroy() {
     this.destroyed$.next(true);
     this.destroyed$.complete();
@@ -136,6 +151,6 @@ export abstract class GdbControlComponent<ControlModel, InternalModel = ControlM
   }
 
   protected getStringValue(value: InternalModel): string {
-    return <string>(<unknown>value);
+    return value ? value + '' : '';
   }
 }

@@ -7,7 +7,11 @@
     <ng-content select="[gdbHint]"></ng-content>
   </ng-container>
   <ng-container *ngIf="readonly$ | async">
-    <gdb-text-with-icons [text]="stringValue$ | async"></gdb-text-with-icons>
-    <ng-content select="[gdbReadonly]"></ng-content>
+    <ng-container *ngIf="readonlyTemplate">
+      <ng-container [ngTemplateOutlet]="readonlyTemplate"></ng-container>
+    </ng-container>
+    <ng-container *ngIf="!readonlyTemplate">
+      <gdb-text-with-icons [text]="stringValue$ | async"></gdb-text-with-icons>
+    </ng-container>
   </ng-container>
 </div>

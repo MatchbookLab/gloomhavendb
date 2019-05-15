@@ -1,4 +1,4 @@
-import { Injectable, Injector } from '@angular/core';
+import { Injectable, Injector, TemplateRef } from '@angular/core';
 import { ControlValueAccessor, FormControl, NgControl } from '@angular/forms';
 import { ReplaySubject } from 'rxjs';
 import { GdbControl } from './gdb-control.component';
@@ -28,6 +28,8 @@ export class ControlService {
     disabled: new ReplaySubject<boolean>(),
     stringValue: new ReplaySubject<string>(),
   };
+
+  readonlyTemplate: TemplateRef<any>;
 
   private ngControl: NgControl;
 
