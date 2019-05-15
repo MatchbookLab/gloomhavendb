@@ -6,21 +6,9 @@
   <div class="little-grid" [class.editable]="editable">
     <gdb-text-control [readonly]="!editable" [label]="'Name'" [(ngModel)]="item.name"></gdb-text-control>
 
-    <div class="right">
-      <strong>Slot</strong>
-    </div>
-    <div>
-      <ng-container *ngIf="!editable">
-        {{ item.slot }}
-        <gdb-icon [icon]="item.slot | enumToIcon"></gdb-icon>
-      </ng-container>
-      <ng-container *ngIf="editable">
-        <label *ngFor="let slot of slots" class="radio-spacing">
-          <input name="slot" [value]="slot" [(ngModel)]="item.slot" type="radio" />
-          <gdb-icon [icon]="slot | enumToIcon"></gdb-icon>
-        </label>
-      </ng-container>
-    </div>
+    <gdb-radio-control [readonly]="!editable" [label]="'Slot'" [(ngModel)]="item.slot">
+      <gdb-radio-option *ngFor="let slot of slots" [value]="slot" [icon]="slot | enumToIcon"></gdb-radio-option>
+    </gdb-radio-control>
 
     <ng-container *ngIf="item.uses || editable">
       <div class="right">

@@ -1,9 +1,3 @@
 <gdb-control-wrapper>
-  <input *ngIf="type !== 'textarea'" [type]="type" [formControl]="control" [required]="required" />
-  <textarea [rows]="rows" *ngIf="type === 'textarea'" [formControl]="control" [required]="required"></textarea>
   <ng-content></ng-content>
-  <div *ngIf="preview">
-    <strong>Preview:</strong>
-    <gdb-text-with-icons [text]="control.value"></gdb-text-with-icons>
-  </div>
 </gdb-control-wrapper>

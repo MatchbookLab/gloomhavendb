@@ -8,5 +8,6 @@
   </ng-container>
   <ng-container *ngIf="readonly$ | async">
     <gdb-text-with-icons [text]="stringValue$ | async"></gdb-text-with-icons>
+    <ng-content select="[gdbReadonly]"></ng-content>
   </ng-container>
 </div>

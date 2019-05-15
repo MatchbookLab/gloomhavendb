@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import { ControlService } from '../../control.service';
-import { GdbControl } from '../../gdb-control.class';
+import { GdbControlComponent } from '../../gdb-control.component';
 
 @Component({
   selector: 'gdb-text-control',
@@ -9,7 +9,7 @@ import { GdbControl } from '../../gdb-control.class';
   providers: [ControlService],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class TextControlComponent extends GdbControl<string> {
+export class TextControlComponent extends GdbControlComponent<string> {
   @Input() rows: number; // only for textarea
   @Input() type: 'password' | 'text' | 'email' | 'textarea' = 'text';
   @Input() preview: boolean;

@@ -1,6 +1,7 @@
 import { Injectable, Injector } from '@angular/core';
 import { ControlValueAccessor, FormControl, NgControl } from '@angular/forms';
 import { ReplaySubject } from 'rxjs';
+import { GdbControl } from './gdb-control.component';
 
 export interface GdbControlInputs {
   label: string;
@@ -18,7 +19,7 @@ export type ControlSharedConfigChanges = { [K in keyof ControlSharedConfig]: Rep
 // this should be injected directly into control components
 @Injectable()
 export class ControlService {
-  control: FormControl = new FormControl();
+  control: GdbControl<any> = new FormControl();
 
   configChanges: ControlSharedConfigChanges = {
     label: new ReplaySubject<string>(),

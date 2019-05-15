@@ -1,9 +1,55 @@
 import { Input, OnChanges, OnDestroy, OnInit, SimpleChanges } from '@angular/core';
 import { ControlValueAccessor, FormControl } from '@angular/forms';
 import { forEach } from 'lodash';
-import { ReplaySubject } from 'rxjs';
+import { Observable, ReplaySubject } from 'rxjs';
 import { distinctUntilChanged, takeUntil, tap } from 'rxjs/operators';
 import { ControlService, ControlSharedConfig, ControlSharedConfigChanges, GdbControlInputs } from './control.service';
+
+export interface GdbControl<T> extends FormControl {
+  readonly statusChanges: Observable<any>; // TODO
+  readonly value: T;
+  readonly valueChanges: Observable<T>;
+
+  // get<T2>(path: Array<string | number> | string): GdbControl<T2> | null;
+
+  patchValue(
+    value: T,
+    options?: {
+      onlySelf?: boolean;
+      emitEvent?: boolean;
+      emitModelToViewChange?: boolean;
+      emitViewToModelChange?: boolean;
+    },
+  ): void;
+  patchValue(value: T, options?: Object): void;
+  patchValue(
+    value: T,
+    options?:
+      | { onlySelf?: boolean; emitEvent?: boolean; emitModelToViewChange?: boolean; emitViewToModelChange?: boolean }
+      | Object,
+  ): void;
+
+  reset(formState?: T, options?: { onlySelf?: boolean; emitEvent?: boolean }): void;
+  reset(value?: T, options?: Object): void;
+  reset(formState?: T, options?: { onlySelf?: boolean; emitEvent?: boolean } | Object): void;
+
+  setValue(
+    value: T,
+    options?: {
+      onlySelf?: boolean;
+      emitEvent?: boolean;
+      emitModelToViewChange?: boolean;
+      emitViewToModelChange?: boolean;
+    },
+  ): void;
+  setValue(value: T, options?: Object): void;
+  setValue(
+    value: T,
+    options?:
+      | { onlySelf?: boolean; emitEvent?: boolean; emitModelToViewChange?: boolean; emitViewToModelChange?: boolean }
+      | Object,
+  ): void;
+}
 
 // TODO reuse somewhere
 export type SimplerChanges<T> = SimpleChanges & { [K in keyof T]: SimplerChange<T[K]> };
@@ -14,7 +60,7 @@ export type SimplerChange<T> = {
   firstChange: boolean;
 };
 
-export abstract class GdbControl<ControlModel, InternalModel = ControlModel>
+export abstract class GdbControlComponent<ControlModel, InternalModel = ControlModel>
   implements GdbControlInputs, ControlValueAccessor, OnInit, OnChanges, OnDestroy {
   @Input() label: string;
   @Input() required: boolean = false;
@@ -26,11 +72,13 @@ export abstract class GdbControl<ControlModel, InternalModel = ControlModel>
   propagateChange: (newVal: ControlModel) => void;
   propagateTouched: () => void;
 
+  protected valueChanges$: Observable<InternalModel>;
+
   protected constructor(protected controlService: ControlService) {
     this.controlService.setNgControl(this);
   }
 
-  get control(): FormControl {
+  get control(): GdbControl<InternalModel> {
     return this.controlService.control;
   }
 
@@ -49,15 +97,16 @@ export abstract class GdbControl<ControlModel, InternalModel = ControlModel>
     this.control.statusChanges.pipe(
       distinctUntilChanged(),
       tap(val => console.log('statusChanges', val)),
+      takeUntil(this.destroyed$),
     );
 
-    this.control.valueChanges
-      .pipe(
-        distinctUntilChanged(),
-        tap(val => this.controlService.configChanges.stringValue.next(this.getStringValue(val))),
-        takeUntil(this.destroyed$),
-      )
-      .subscribe((val: InternalModel) => this.propagateChange(this.read(val)));
+    this.valueChanges$ = this.control.valueChanges.pipe(
+      distinctUntilChanged(),
+      tap(val => this.controlService.configChanges.stringValue.next(this.getStringValue(val))),
+      takeUntil(this.destroyed$),
+    );
+
+    this.valueChanges$.subscribe((val: InternalModel) => this.propagateChange(this.read(val)));
   }
 
   ngOnDestroy() {
