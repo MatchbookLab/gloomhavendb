@@ -1,0 +1,10 @@
+<gdb-control-wrapper>
+  <label>
+    <input type="checkbox" [name]="label" [formControl]="control" [required]="required" />
+    <ng-content></ng-content>
+  </label>
+
+  <ng-template #readonly>
+    {{ control.value ? 'Yes' : 'No' }}
+  </ng-template>
+</gdb-control-wrapper>

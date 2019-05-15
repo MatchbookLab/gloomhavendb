@@ -34,7 +34,7 @@ export class ItemPageComponent implements OnInit, OnDestroy {
 
   dbItem: Item;
 
-  editable = true;
+  editable = false;
 
   isAdmin = false;
 

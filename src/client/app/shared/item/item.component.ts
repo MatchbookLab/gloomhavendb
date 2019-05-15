@@ -41,9 +41,30 @@ export class ItemComponent {
   sources: ItemSource[] = Object.values(ItemSource);
 
   submittedBy: string;
+  sourceIdLabel: string;
 
   constructor(private popupService: PopupService, private storageService: StorageService) {
     this.submittedBy = this.storageService.load<string>(StorageKey.FixSubmittedBy);
+  }
+
+  onSourceTypeChange() {
+    switch (this.item.sourceType) {
+      case ItemSource.Prosperity: {
+        this.sourceIdLabel = 'Prosperity Level';
+        break;
+      }
+      case ItemSource.Treasure: {
+        this.sourceIdLabel = 'Scenario #';
+        break;
+      }
+      case ItemSource.ScenarioReward: {
+        this.sourceIdLabel = 'Scenario #';
+        break;
+      }
+      default: {
+        this.sourceIdLabel = this.item.sourceType + ' #';
+      }
+    }
   }
 
   onSubmit() {

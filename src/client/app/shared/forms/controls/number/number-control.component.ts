@@ -12,6 +12,7 @@ import { GdbControlComponent } from '../../gdb-control.component';
 export class NumberControlComponent extends GdbControlComponent<string> {
   @Input() min: number;
   @Input() max: number;
+  @Input() step: number;
 
   constructor(protected controlService: ControlService) {
     super(controlService);

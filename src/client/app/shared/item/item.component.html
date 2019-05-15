@@ -42,21 +42,19 @@
       </ng-template>
     </gdb-radio-control>
 
-    <ng-container *ngIf="item.negativeCardsCount || editable">
-      <div class="right">
-        <strong>-1 Cards</strong>
-      </div>
-      <div>
-        <ng-container *ngIf="!editable">
-          <gdb-icon [icon]="Icon.MinusOneAttackModifier"></gdb-icon>
-          &times; {{ item.negativeCardsCount }}
-        </ng-container>
-
-        <ng-container *ngIf="editable">
-          <input type="number" class="inline" [(ngModel)]="item.negativeCardsCount" />
-        </ng-container>
-      </div>
-    </ng-container>
+    <gdb-number-control
+      *ngIf="item.negativeCardsCount || editable"
+      [readonly]="!editable"
+      [label]="'-1 Cards'"
+      [min]="1"
+      [max]="5"
+      [(ngModel)]="item.negativeCardsCount"
+    >
+      <ng-template #readonly>
+        <gdb-icon [icon]="Icon.MinusOneAttackModifier"></gdb-icon>
+        &times; {{ item.negativeCardsCount }}
+      </ng-template>
+    </gdb-number-control>
 
     <gdb-text-control
       type="textarea"
@@ -72,99 +70,51 @@
       </small>
     </gdb-text-control>
 
-    <div class="right">
-      <strong>Price</strong>
-    </div>
-    <div>
-      <ng-container *ngIf="!editable">
-        {{ item.price }}
-      </ng-container>
+    <gdb-number-control
+      *ngIf="item.price || editable"
+      [label]="'Price'"
+      [readonly]="!editable"
+      [min]="10"
+      [max]="100"
+      [step]="5"
+      [(ngModel)]="item.price"
+    ></gdb-number-control>
 
-      <ng-container *ngIf="editable">
-        <input type="number" class="inline" step="5" max="100" min="10" [(ngModel)]="item.price" />
-      </ng-container>
-    </div>
+    <gdb-number-control
+      *ngIf="item.count || editable"
+      [label]="'Count'"
+      [readonly]="!editable"
+      [min]="1"
+      [max]="4"
+      [(ngModel)]="item.count"
+    ></gdb-number-control>
 
-    <div class="right">
-      <strong>Count</strong>
-    </div>
-    <div>
-      <ng-container *ngIf="!editable">
-        {{ item.count }}
-      </ng-container>
-
-      <ng-container *ngIf="editable">
-        <input type="number" class="inline" max="4" min="1" [(ngModel)]="item.count" />
-      </ng-container>
-    </div>
-
-    <ng-container *ngIf="item.sourceType || editable">
-      <div class="right">
-        <strong>Source</strong>
-      </div>
-      <div>
-        <ng-container *ngIf="!editable">
-          {{ item.sourceType }}
-          <ng-container *ngIf="item.sourceType !== ItemSource.RandomItemDesign">
-            {{ item.sourceId }}
-          </ng-container>
+    <gdb-radio-control
+      class="block-radios"
+      [readonly]="!editable"
+      [label]="'Source'"
+      [(ngModel)]="item.sourceType"
+      (ngModelChange)="onSourceTypeChange()"
+    >
+      <gdb-radio-option *ngFor="let source of sources" [value]="source" [label]="source"></gdb-radio-option>
+      <gdb-radio-option [value]="null" [label]="'Unknown?'"></gdb-radio-option>
+      <ng-template #readonly>
+        {{ item.sourceType }}
+        <ng-container *ngIf="item.sourceType !== ItemSource.RandomItemDesign">
+          {{ item.sourceId }}
         </ng-container>
+      </ng-template>
+    </gdb-radio-control>
 
-        <ng-container *ngIf="editable">
-          <div *ngFor="let source of sources">
-            <label>
-              <input name="source" [value]="source" [(ngModel)]="item.sourceType" type="radio" />
-              {{ source }}
-              &nbsp;
-            </label>
-          </div>
-          <div>
-            <label>
-              <input name="source" [value]="null" [(ngModel)]="item.sourceType" type="radio" />
-              Unknown?
-            </label>
-          </div>
-        </ng-container>
-      </div>
-    </ng-container>
+    <gdb-number-control
+      [label]="sourceIdLabel"
+      [(ngModel)]="item.sourceId"
+      *ngIf="editable && item.sourceType && item.sourceType !== ItemSource.RandomItemDesign"
+    ></gdb-number-control>
 
-    <ng-container *ngIf="editable && item.sourceType && item.sourceType !== ItemSource.RandomItemDesign">
-      <div class="right">
-        <strong>
-          <ng-container [ngSwitch]="item.sourceType">
-            <ng-container *ngSwitchCase="ItemSource.Prosperity">
-              Prosperity Level
-            </ng-container>
-            <ng-container *ngSwitchCase="ItemSource.Treasure">
-              Scenario #
-            </ng-container>
-            <ng-container *ngSwitchCase="ItemSource.ScenarioReward">
-              Scenario #
-            </ng-container>
-            <ng-container *ngSwitchDefault>{{ item.sourceType }} #</ng-container>
-          </ng-container>
-        </strong>
-      </div>
-      <div>
-        <input type="number" class="inline" [(ngModel)]="item.sourceId" />
-      </div>
-    </ng-container>
-
-    <div class="right">
-      <strong>Verified</strong>
-    </div>
-    <div>
-      <ng-container *ngIf="!editable">
-        {{ item.verified ? 'Yes' : 'No' }}
-      </ng-container>
-
-      <ng-container *ngIf="editable">
-        <label>
-          <input type="checkbox" [(ngModel)]="item.verified" />
-          I promise this is 100% accurate and there is no missing information.
-        </label>
-      </ng-container>
-    </div>
+    <gdb-checkbox-control [label]="'Verified'" [readonly]="!editable" [(ngModel)]="item.verified">
+      I promise this is 100% accurate and there is no missing information.
+    </gdb-checkbox-control>
 
     <ng-container *ngIf="editable">
       <gdb-text-control [readonly]="!editable" [label]="'Submitted By'" [(ngModel)]="submittedBy">

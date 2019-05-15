@@ -4,6 +4,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { IconModule } from '../icon/icon.module';
 import { TextWithIconsModule } from '../text-with-icons/text-with-icons.module';
 import { ControlWrapperComponent } from './control-wrapper/control-wrapper.component';
+import { CheckboxControlComponent } from './controls/checkbox/checkbox-control.component';
 import { NumberControlComponent } from './controls/number/number-control.component';
 import { RadioControlComponent } from './controls/radio/radio-control.component';
 import { RadioOptionComponent } from './controls/radio/radio-option/radio-option.component';
@@ -16,6 +17,7 @@ const toDeclareAndExport = [
   RadioControlComponent,
   RadioOptionComponent,
   NumberControlComponent,
+  CheckboxControlComponent,
 ];
 
 @NgModule({
