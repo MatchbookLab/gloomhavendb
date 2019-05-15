@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import { ExplodedPart, explodeStringWithIcons } from '../../util/icon-codes';
 import { GloomhavenIcon } from '../icon/icon.enum';
 
@@ -8,8 +8,9 @@ import { GloomhavenIcon } from '../icon/icon.enum';
   selector: 'gdb-text-with-icons',
   templateUrl: './text-with-icons.component.html',
   styleUrls: ['./text-with-icons.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class TextWithIconsComponent implements OnInit {
+export class TextWithIconsComponent {
   Icon = GloomhavenIcon;
   parts: ExplodedPart[] = [];
 
@@ -25,9 +26,7 @@ export class TextWithIconsComponent implements OnInit {
     this.parts = this.explodeText();
   }
 
-  ngOnInit() {}
-
   explodeText(): ExplodedPart[] {
-    return explodeStringWithIcons(this.text.replace(/(\r\n|\r|\n)/g, '<br />'));
+    return explodeStringWithIcons((this.text || '').replace(/(\r\n|\r|\n)/g, '<br />'));
   }
 }

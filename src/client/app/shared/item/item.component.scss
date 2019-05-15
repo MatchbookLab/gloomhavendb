@@ -16,14 +16,10 @@
 }
 
 .little-grid {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  grid-column-gap: 15px;
-
   border: 1px solid #666;
   padding: 20px;
 
-  width: 530px;
+  max-width: 530px;
 
   &.editable > div {
     padding: 12px 0;

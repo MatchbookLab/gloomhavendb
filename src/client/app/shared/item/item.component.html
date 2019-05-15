@@ -4,17 +4,7 @@
 
 <div class="split">
   <div class="little-grid" [class.editable]="editable">
-    <div class="right">
-      <strong>Name</strong>
-    </div>
-    <div>
-      <ng-container *ngIf="!editable">
-        {{ item.name }}
-      </ng-container>
-      <ng-container *ngIf="editable">
-        <input class="inline" type="text" [(ngModel)]="item.name" />
-      </ng-container>
-    </div>
+    <gdb-text-control [readonly]="!editable" [label]="'Name'" [(ngModel)]="item.name"></gdb-text-control>
 
     <div class="right">
       <strong>Slot</strong>
@@ -84,25 +74,19 @@
       </div>
     </ng-container>
 
-    <div class="right">
-      <strong>Text</strong>
-      <div *ngIf="editable" class="subtext">
-        <small>
-          You can add icons to this field by using <strong>{{ '{' }}IconName}</strong>.<br />
-          <a (click)="openListOfIconsPopup()">Show List of Icons</a>
-        </small>
-      </div>
-    </div>
-    <div>
-      <ng-container *ngIf="editable">
-        <textarea class="inline" rows="4" [(ngModel)]="item.text"></textarea>
-      </ng-container>
-
-      <ng-container>
-        <strong *ngIf="editable">Preview: </strong>
-        <gdb-text-with-icons [text]="item.text"></gdb-text-with-icons>
-      </ng-container>
-    </div>
+    <gdb-text-control
+      type="textarea"
+      rows="4"
+      [preview]="true"
+      [readonly]="!editable"
+      [label]="'Text'"
+      [(ngModel)]="item.text"
+    >
+      <small gdbHint>
+        You can add icons to this field by using <strong>{{ '{' }}IconName}</strong>.<br />
+        <a (click)="openListOfIconsPopup()">Show List of Icons</a>
+      </small>
+    </gdb-text-control>
 
     <div class="right">
       <strong>Price</strong>
@@ -199,21 +183,14 @@
     </div>
 
     <ng-container *ngIf="editable">
-      <div class="right">
-        <div><strong>Submitted By</strong></div>
-        <div class="subtext"><small>(optional)</small></div>
-      </div>
-      <div>
-        <input type="text" class="inline" [(ngModel)]="submittedBy" />
-      </div>
+      <gdb-text-control [readonly]="!editable" [label]="'Submitted By'" [(ngModel)]="submittedBy">
+        <div gdbHint>(optional)</div>
+      </gdb-text-control>
     </ng-container>
 
-    <ng-container *ngIf="editable">
-      <div>&nbsp;</div>
-      <div>
-        <button class="btn btn-primary" (click)="onSubmit()">Submit</button>
-        <button class="btn btn-danger" (click)="onCancel()">Cancel</button>
-      </div>
-    </ng-container>
+    <div *ngIf="editable">
+      <button class="btn btn-primary" (click)="onSubmit()">Submit</button>
+      <button class="btn btn-danger" (click)="onCancel()">Cancel</button>
+    </div>
   </div>
 </div>

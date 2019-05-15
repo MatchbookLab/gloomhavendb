@@ -4,8 +4,9 @@
 <div class="input-wrapper">
   <ng-container *ngIf="!(readonly$ | async)">
     <ng-content></ng-content>
+    <ng-content select="[gdbHint]"></ng-content>
   </ng-container>
   <ng-container *ngIf="readonly$ | async">
-    {{ stringValue$ | async }}
+    <gdb-text-with-icons [text]="stringValue$ | async"></gdb-text-with-icons>
   </ng-container>
 </div>
