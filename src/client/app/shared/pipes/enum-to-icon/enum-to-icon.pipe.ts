@@ -16,7 +16,7 @@ export class EnumToIconPipe implements PipeTransform {
       case Limit.Unlimited:
         throw new Error('No icon for Limit.Unlimited');
       case Limit.UseOncePerScenario:
-        return GloomhavenIcon.CannotRecover;
+        return GloomhavenIcon.OncePerScenario;
       case Slot.Body:
         return GloomhavenIcon.Body;
       case Slot.Head:

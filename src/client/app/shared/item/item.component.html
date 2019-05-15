@@ -28,25 +28,19 @@
       </ng-template>
     </gdb-number-control>
 
-    <div class="right">
-      <strong>Limit</strong>
-    </div>
-    <div>
-      <ng-container *ngIf="!editable">
+    <gdb-radio-control [readonly]="!editable" [label]="'Limit'" [(ngModel)]="item.limit">
+      <gdb-radio-option
+        *ngFor="let limit of limits"
+        [value]="limit"
+        [label]="limit === Limit.Unlimited ? '(Unlimited)' : undefined"
+        [icon]="limit === Limit.Unlimited ? undefined : (limit | enumToIcon)"
+      ></gdb-radio-option>
+
+      <ng-template #readonly>
         {{ item.limit }}
         <gdb-icon *ngIf="item.limit !== Limit.Unlimited" [icon]="item.limit | enumToIcon"></gdb-icon>
-        <gdb-icon *ngIf="item.limit === Limit.UseOncePerScenario" [icon]="Icon.LostOrConsumed"></gdb-icon>
-      </ng-container>
-
-      <ng-container *ngIf="editable">
-        <label *ngFor="let limit of limits" class="radio-spacing">
-          <input name="limit" [value]="limit" [(ngModel)]="item.limit" type="radio" />
-          <gdb-icon *ngIf="limit !== Limit.Unlimited" [icon]="limit | enumToIcon"></gdb-icon>
-          <gdb-icon *ngIf="limit === Limit.UseOncePerScenario" [icon]="Icon.LostOrConsumed"></gdb-icon>
-          <span *ngIf="limit === Limit.Unlimited">(Unlimited)</span>
-        </label>
-      </ng-container>
-    </div>
+      </ng-template>
+    </gdb-radio-control>
 
     <ng-container *ngIf="item.negativeCardsCount || editable">
       <div class="right">

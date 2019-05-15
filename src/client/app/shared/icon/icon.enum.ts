@@ -49,6 +49,7 @@ export enum GloomhavenIcon {
   Loot = 'general/loot',
   LostOrConsumed = 'general/lost-or-consumed',
   Move = 'general/move',
+  OncePerScenario = 'general/once-per-scenario',
   PersistentBonus = 'general/persistent-bonus',
   PlayerHex = 'general/player-hex',
   Range = 'general/range',
