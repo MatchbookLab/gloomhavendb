@@ -11,3 +11,28 @@
     color: darkred;
   }
 }
+
+:host-context(gdb-form.horizontal) {
+  display: flex;
+  .input-label {
+    margin-right: 15px;
+    text-align: right;
+    max-width: 120px;
+    min-width: 120px;
+    flex-basis: 120px;
+    padding-top: 8px;
+
+    &.readonly {
+      padding-top: 0;
+    }
+  }
+
+  .input-wrapper {
+    min-height: 40px;
+    align-self: center;
+
+    &.readonly {
+      min-height: 0;
+    }
+  }
+}

@@ -3,7 +3,7 @@
 </div>
 
 <div class="split">
-  <div class="little-grid" [class.editable]="editable">
+  <gdb-form [class.horizontal]="!editable">
     <gdb-text-control [readonly]="!editable" [label]="'Name'" [(ngModel)]="item.name"></gdb-text-control>
 
     <gdb-radio-control [readonly]="!editable" [label]="'Slot'" [(ngModel)]="item.slot">
@@ -118,7 +118,7 @@
 
     <ng-container *ngIf="editable">
       <gdb-text-control [readonly]="!editable" [label]="'Submitted By'" [(ngModel)]="submittedBy">
-        <div gdbHint>(optional)</div>
+        <small gdbHint>(optional)</small>
       </gdb-text-control>
     </ng-container>
 
@@ -126,5 +126,5 @@
       <button class="btn btn-primary" (click)="onSubmit()">Submit</button>
       <button class="btn btn-danger" (click)="onCancel()">Cancel</button>
     </div>
-  </div>
+  </gdb-form>
 </div>

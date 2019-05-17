@@ -15,24 +15,11 @@
   will-change: transform;
 }
 
-.little-grid {
+gdb-form {
   border: 1px solid #666;
   padding: 20px;
 
   max-width: 530px;
-
-  &.editable > div {
-    padding: 12px 0;
-
-    .right {
-      padding: 24px 0;
-    }
-  }
-}
-
-.right {
-  text-align: right;
-  width: 135px;
 }
 
 .radio-spacing {

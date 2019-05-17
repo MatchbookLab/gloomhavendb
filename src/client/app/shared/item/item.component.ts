@@ -17,15 +17,6 @@ import { PopupService } from '../popup/popup.service';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ItemComponent {
-  private _item: Item;
-  @Input()
-  set item(item: Item) {
-    this._item = clone(item);
-  }
-  get item(): Item {
-    return this._item;
-  }
-
   @Input() readonly editable = false;
 
   @Output() submit: EventEmitter<SuggestedFix<Item>> = new EventEmitter<SuggestedFix<Item>>();
@@ -45,6 +36,17 @@ export class ItemComponent {
 
   constructor(private popupService: PopupService, private storageService: StorageService) {
     this.submittedBy = this.storageService.load<string>(StorageKey.FixSubmittedBy);
+  }
+
+  private _item: Item;
+
+  get item(): Item {
+    return this._item;
+  }
+
+  @Input()
+  set item(item: Item) {
+    this._item = clone(item);
   }
 
   onSourceTypeChange() {

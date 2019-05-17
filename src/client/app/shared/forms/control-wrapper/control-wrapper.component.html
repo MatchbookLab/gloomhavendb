@@ -1,7 +1,10 @@
-<label class="input-label" [ngClass]="{ required: !(readonly$ | async) && (required$ | async) }">
+<label
+  class="input-label"
+  [ngClass]="{ required: !(readonly$ | async) && (required$ | async), readonly: readonly$ | async }"
+>
   {{ label$ | async }}
 </label>
-<div class="input-wrapper">
+<div class="input-wrapper" [class.readonly]="readonly$ | async">
   <ng-container *ngIf="!(readonly$ | async)">
     <ng-content></ng-content>
     <ng-content select="[gdbHint]"></ng-content>
