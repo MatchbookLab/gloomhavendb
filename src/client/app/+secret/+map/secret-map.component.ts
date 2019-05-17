@@ -299,7 +299,7 @@ export class SecretMapComponent implements OnInit {
       },
       {
         number: 47,
-        completed: false,
+        completed: true,
         available: true,
         inaccessible: false,
       },
