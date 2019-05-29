@@ -7,7 +7,7 @@ import { SwaggerModule, DocumentBuilder } from '@nestjs/swagger';
 import * as compression from 'compression';
 import * as express from 'express';
 import { Express } from 'express';
-import * as RateLimit from 'express-rate-limit';
+import { RateLimit } from 'express-rate-limit';
 import * as helmet from 'helmet';
 
 import 'reflect-metadata';
@@ -67,7 +67,7 @@ export async function bootstrap(): Promise<NestExpressApplication> {
   // some security considerations
   app.use(
     // TODO monitor this, this may not be enough... no need to be stingy, mostly just trying to protect from bots
-    new RateLimit({
+    RateLimit({
       windowMs: 5 * 60 * 1000, // 5 minutes
       max: 1000, // limit each IP to 100 requests per windowMs
       message: {
