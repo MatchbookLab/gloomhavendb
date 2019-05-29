@@ -31,7 +31,7 @@ import { ScrollingService } from '../../services/scrolling/scrolling.service';
   ],
 })
 export class SecretShopComponent implements OnInit, AfterViewInit {
-  @ViewChild('header') header: ElementRef<HTMLDivElement>;
+  @ViewChild('header', { static: true }) header: ElementRef<HTMLDivElement>;
 
   Slot = Slot;
   shopItems: Item[];

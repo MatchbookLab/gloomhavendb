@@ -76,7 +76,7 @@ export abstract class GdbControlComponent<ControlModel, InternalModel = ControlM
   @Input() disabled: boolean = false;
   @Input() readonly: boolean = false;
 
-  @ContentChild('readonly', { read: TemplateRef }) readonlyTemplate: TemplateRef<any>;
+  @ContentChild('readonly', { read: TemplateRef, static: false }) readonlyTemplate: TemplateRef<any>;
 
   destroyed$: ReplaySubject<boolean> = new ReplaySubject(1);
 

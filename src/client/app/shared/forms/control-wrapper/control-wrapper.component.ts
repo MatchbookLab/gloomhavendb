@@ -9,7 +9,7 @@ import { ControlService } from '../control.service';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ControlWrapperComponent implements AfterViewInit {
-  @ContentChild('readonly', { read: TemplateRef }) readonlyTemplate: TemplateRef<any>;
+  @ContentChild('readonly', { read: TemplateRef, static: false }) readonlyTemplate: TemplateRef<any>;
 
   label$: Observable<string>;
   required$: Observable<boolean>;
