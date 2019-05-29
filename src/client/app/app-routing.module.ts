@@ -1,13 +1,12 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule } from '@angular/router';
-import { environment } from '../environments/environment.prod';
 
 import { BaseRoutePath, BetterRoute } from './util/routing';
 
 const routes: BetterRoute<BaseRoutePath | '**'>[] = [
   {
     path: BaseRoutePath.Home,
-    loadChildren: './+home/home-page.module#HomePageModule',
+    loadChildren: () => import('./+home/home-page.module').then(m => m.HomePageModule),
     pathMatch: 'full',
     data: {
       title: '',
@@ -15,14 +14,14 @@ const routes: BetterRoute<BaseRoutePath | '**'>[] = [
   },
   {
     path: BaseRoutePath.Items,
-    loadChildren: './+items/items-page.module#ItemsPageModule',
+    loadChildren: () => import('./+items/items-page.module').then(m => m.ItemsPageModule),
     data: {
       title: 'Items',
     },
   },
   {
     path: BaseRoutePath.Events,
-    loadChildren: './+events/events-page.module#EventsPageModule',
+    loadChildren: () => import('./+events/events-page.module').then(m => m.EventsPageModule),
     data: {
       title: 'Events',
     },
@@ -30,35 +29,36 @@ const routes: BetterRoute<BaseRoutePath | '**'>[] = [
 
   {
     path: BaseRoutePath.SecretShop,
-    loadChildren: './+secret/+shop/secret-shop.module#SecretShopModule',
+    loadChildren: () => import('./+secret/+shop/secret-shop.module').then(m => m.SecretShopModule),
     data: {
       title: 'Secret Shop',
     },
   },
   {
     path: BaseRoutePath.SecretMap,
-    loadChildren: './+secret/+map/secret-map.module#SecretMapModule',
+    loadChildren: () => import('./+secret/+map/secret-map.module').then(m => m.SecretMapModule),
     data: {
       title: 'Secret Map',
     },
   },
   {
     path: BaseRoutePath.SecretEvents,
-    loadChildren: './+secret/+events/secret-events.module#SecretEventsModule',
+    loadChildren: () => import('./+secret/+events/secret-events.module').then(m => m.SecretEventsModule),
     data: {
       title: 'Secret Events',
     },
   },
   {
     path: BaseRoutePath.SecretBattleGoals,
-    loadChildren: './+secret/+battle-goals/secret-battle-goals.module#SecretBattleGoalsModule',
+    loadChildren: () =>
+      import('./+secret/+battle-goals/secret-battle-goals.module').then(m => m.SecretBattleGoalsModule),
     data: {
       title: 'Secret Battle Goals',
     },
   },
   {
     path: BaseRoutePath.Login,
-    loadChildren: './+login/login-page.module#LoginPageModule',
+    loadChildren: () => import('./+login/login-page.module').then(m => m.LoginPageModule),
     data: {
       title: 'Login',
     },
@@ -67,7 +67,7 @@ const routes: BetterRoute<BaseRoutePath | '**'>[] = [
   // this item should be last... only shown if no other match
   {
     path: '**',
-    loadChildren: './+not-found/not-found-page.module#NotFoundPageModule',
+    loadChildren: () => import('./+not-found/not-found-page.module').then(m => m.NotFoundPageModule),
     data: {
       title: 'Page Not Found',
     },

@@ -33,7 +33,7 @@ const routes: BetterRoute<EventRoutes>[] = [
   },
   {
     path: EventRoutes.Event,
-    loadChildren: './+event/event-page.module#EventPageModule',
+    loadChildren: () => import('./+event/event-page.module').then(m => m.EventPageModule),
     runGuardsAndResolvers: 'always',
     data: {
       title: ROUTE_TITLE_PLACEHOLDER,

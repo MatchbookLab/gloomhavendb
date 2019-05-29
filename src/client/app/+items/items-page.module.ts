@@ -33,7 +33,7 @@ const routes: BetterRoute<ItemRoutes>[] = [
   },
   {
     path: ItemRoutes.Item,
-    loadChildren: './+item/item-page.module#ItemPageModule',
+    loadChildren: () => import('./+item/item-page.module').then(m => m.ItemPageModule),
     runGuardsAndResolvers: 'always',
     data: {
       title: ROUTE_TITLE_PLACEHOLDER,
