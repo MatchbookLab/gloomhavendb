@@ -7,7 +7,6 @@ import { SwaggerModule, DocumentBuilder } from '@nestjs/swagger';
 import * as compression from 'compression';
 import * as express from 'express';
 import { Express } from 'express';
-import { RateLimit } from 'express-rate-limit';
 import * as helmet from 'helmet';
 
 import 'reflect-metadata';
@@ -21,6 +20,7 @@ import { TransformInterceptor } from './interceptors/transform.interceptor';
 
 // untpyed imports
 const forceDomain = require('forcedomain');
+const RateLimit = require('express-rate-limit'); // can go back to `import` after new version is released
 
 declare const module: any;
 
