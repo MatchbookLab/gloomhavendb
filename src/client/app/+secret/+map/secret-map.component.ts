@@ -257,6 +257,12 @@ export class SecretMapComponent implements OnInit {
       },
       {
         number: 72,
+        completed: true,
+        available: true,
+        inaccessible: false,
+      },
+      {
+        number: 73,
         completed: false,
         available: true,
         inaccessible: false,
@@ -305,7 +311,7 @@ export class SecretMapComponent implements OnInit {
       },
       {
         number: 44,
-        completed: false,
+        completed: true,
         available: true,
         inaccessible: false,
       },
