@@ -49,17 +49,17 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 3,
     text:
-      "As the daylight fades, you find yourselves wandering through a half-crowded market street, browsing wares. 'Hey! Over here!” You turn in the direction a of the voice to see a filthy Vermling gesturing from a dark alley 'Yeah, you grim-looking chaps.\t/ have something you might be interested in. ” _\t1\tP •J |\t» Jl\t•\t■ The Vermling holds out a piece of metal covered in sludge. Found this in the sewer; Writing on it l don't understand, but I know its valuable. You can have it for ten gold!\"",
+      'As the daylight fades, you find yourselves wandering through a half-crowded market street, browsing wares.\n\n"Hey! Over here!" You turn in the direction a of the voice to see a filthy Vermling gesturing from a dark alley "Yeah, you grim-looking chaps. I have something you might be interested in."\n\nThe Vermling holds out a piece of metal covered in sludge. Found this in the sewer. Writing on it I don\'t understand, but I know its valuable. You can have it for ten gold!"',
     optionA: {
       choice: 'Pay for the thing. You never know.',
       outcome:
-        'PAY 10 COLLECTIVE COLD: >\'ou /um/over the gold and take hold of the metal. You wipe off the grime and slop to discover a foreign contraption made of large gears and many moving parts. If you can hgure out what it is. this device might actually be of some worth. Gain I collective Curious Gear" ; Item 125). Global Achievement: “Ancient Technology." OTHERWISE: "Bah! You don\'t have enough. Come back when you do! \'',
+        'PAY 10 COLLECTIVE COLD: You hand over the gold and take hold of the metal. You wipe off the grime and slop to discover a foreign contraption made of large gears and many moving parts. If you can figure out what it is, this device might actually be of some worth.\n\nGain 1 collective "Curious Gear" (Item 125).\n\nGlobal Achievement: "Ancient Technology."\n\nOTHERWISE: "Bah! You don\'t have enough. Come back when you do!"',
       imageUrl: '/assets/cards/events/base/city/ce-03-b-a.png',
     },
     optionB: {
       choice: 'Refuse to pay. Never trust a Vermling.',
       outcome:
-        'You laugh and gesture the Vermling away. You can recognize a low-lite swindler when you see one. And that piece of garbage was just..foul No effect.',
+        'You laugh and gesture the Vermling away. You can recognize a low-life swindler when you see one. And that piece of garbage was just..foul.\n\nNo effect.',
       imageUrl: '/assets/cards/events/base/city/ce-03-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-03-f.png',
