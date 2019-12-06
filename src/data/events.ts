@@ -95,7 +95,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Go help lay the foundation.',
       outcome:
-        'Amidst a great deal of revelry, you put all you have into laying the foundation of the sanctuary. Surely much good will be done here healing the sick and wounded. After all your exhaustive efforts, though, you might end up being their first patients.\n\n Lose 1 checkmark\n\nGain 1 reputation.\n\n Gain 1 prosperity.',
+        'Amidst a great deal of revelry, you put all you have into laying the foundation of the sanctuary. Surely much good will be done here healing the sick and wounded. After all your exhaustive efforts, though, you might end up being their first patients.\n\n Lose 1 CHECKMARK\n\nGain 1 reputation.\n\n Gain 1 prosperity.',
       imageUrl: '/assets/cards/events/base/city/ce-05-b-a.png',
     },
     optionB: {
@@ -459,7 +459,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Leave the criminal element alone and continue enjoying the show.',
       outcome:
-        'The music is too good to be interrupted You ignore the men in the back and simply have a great time.\n\n Gain 1 checkmark each.',
+        'The music is too good to be interrupted You ignore the men in the back and simply have a great time.\n\n Gain 1 CHECKMARK each.',
       imageUrl: '/assets/cards/events/base/city/ce-22-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-22-f.png',
