@@ -7,17 +7,17 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 1,
     text:
-      'You decide to unwind at the Sleeping Lion, but just as you arc starting to relay, a bear of a man crashes into your table, scattering your drinks across the floor. Towering over him is a massive Inox. "What did vou say about my horns? the Inox shouts. The man stands up and brushes shards ol glass f rom his tunic. "I said the sight of them makes me want to vomit!" The Inox roars and charges headlong into the man, crashing through more tables in the process. At this, the entire tavern erupts into violence. After all, when a man is deep into his drink, the last thing you want to do is knock that drink over.',
+      'You decide to unwind at the Sleeping Lion, but just as you are starting to relax, a bear of a man crashes into your table, scattering your drinks across the floor.\n\nTowering over him is a massive Inox. "What did vou say about my horns?" the Inox shouts.\n\nThe man stands up and brushes shards of glass from his tunic. "I said the sight of them makes me want to vomit!"\n\nThe Inox roars and charges headlong into the man, crashing through more tables in the process. At this, the entire tavern erupts into violence. After all, when a man is deep into his drink, the last thing you want to do is knock that drink over.',
     optionA: {
       choice: 'Join the fray! These insults will not go unanswered!',
       outcome:
-        "Nothing like busting some drunken skulls • to lift one's spirits. It turns out to be a great wav to unwind. Unfortunately, the proprietor of the Sleeping Lion doesn't exactly see it that way. and he sullenly asks for compensation for the damage you caused. Gain 10 experience each. Either lose 5 gold each or lose I reputation.",
+        "Nothing like busting some drunken skulls to lift one's spirits. It turns out to be a great way to unwind. Unfortunately, the proprietor of the Sleeping Lion doesn't exactly see it that way, and he sullenly asks for compensation for the damage you caused.\n\nGain 10 experience each.\n\nEither lose 5 gold each or lose 1 reputation.",
       imageUrl: '/assets/cards/events/base/city/ce-01-b-a.png',
     },
     optionB: {
       choice: 'Do your best to stop the fighting. This is a respectable establishment.',
       outcome:
-        'After restraining the enraged Ino.x and offering to replace the drinks of a few of the more belligerent patrons. \\ou calm the place dow n a bit. Some of the non-human patrons are understandably on edge, but the proprietor thanks you for your efforts and reimburses you for the drinks. Gain 1 reputation.',
+        'After restraining the enraged Inox and offering to replace the drinks of a few of the more belligerent patrons, you calm the place down a bit. Some of the non-human patrons are understandably on edge, but the proprietor thanks you for your efforts and reimburses you for the drinks.\n\nGain 1 reputation.',
       imageUrl: '/assets/cards/events/base/city/ce-01-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-01-f.png',
