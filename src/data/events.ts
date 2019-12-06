@@ -617,17 +617,17 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 30,
     text:
-      '■4s you shop for supplies at the Sinking Market, your hand instinctively goes for the purse at vour waist. It s gone! You quickly scan the crowd and see a small Verm ling darting a way from you, heading directly toward a sewer grating.',
+      'As you shop for supplies at the Sinking Market, your hand instinctively goes for the purse at vour waist.\n\nIt\'s gone!\n\nYou quickly scan the crowd and see a small Vermling darting away from you, heading directly toward a sewer grating.',
     optionA: {
       choice: 'Give chase! No one steals from you and gets away with it.',
       outcome:
-        'The Verm ling escapes into the sewers, but the Mindthief is able to give chase, catching up as the cutpurse enters his nest, There you find more wealth than what was lost. Gain 5 gold each. Gain I collective "Flea-Bitten Shawl" (Item 105)* OTHERWISE: The Vermling disappears into the sewers, and yon try to give chase. But after a few minutes you are hopelessly lost and are forced to give up. Lose 5 gold each.',
+        'MINDTHIEF: The Vermling escapes into the sewers, but the Mindthief is able to give chase, catching up as the cutpurse enters his nest. There you find more wealth than what was lost.\n\nGain 5 gold each.\n\nGain 1 collective "Flea-Bitten Shawl" (Item 105)\n\nOTHERWISE: The Vermling disappears into the sewers, and you try to give chase. But after a few minutes you are hopelessly lost and are forced to give up.\n\nLose 5 gold each.',
       imageUrl: '/assets/cards/events/base/city/ce-30-b-a.png',
     },
     optionB: {
-      choice: 'lake a clear shot at him with a bow before he disappears into the grating.',
+      choice: 'Take a clear shot at him with a bow before he disappears into the grating.',
       outcome:
-        'You raise your bow and take aim at the thief. A woman screams, but you try not to let it faze you. /4 s the Verm ling pauses to open the grate, you fire the arrow and see the furry figure drop. You smile and go to retrieve your gold from the corpse. You get a lot of dirty looks, though. Apparently firing a bow on .) crowded street is frowned upon. Lose 1 reputation.',
+        'You raise your bow and take aim at the thief. A woman screams, but you try not to let it faze you. As the Vermling pauses to open the grate, you fire the arrow and see the furry figure drop. You smile and go to retrieve your gold from the corpse. You get a lot of dirty looks, though. Apparently firing a bow on a crowded street is frowned upon.\n\nLose 1 reputation.',
       imageUrl: '/assets/cards/events/base/city/ce-30-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-30-f.png',
