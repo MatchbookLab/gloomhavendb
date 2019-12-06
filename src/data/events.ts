@@ -70,17 +70,17 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 4,
     text:
-      'Having recently returned from your latest adventure, you are approached by a ratty-looking boy in tears. "Please, sirs, could you please help me with my cat? He went over there, and I’m afraid." the boy points a dirty finger at a decrepit, abandoned building. "I don\'t know what else to do." ♦',
+      'Having recently returned from your latest adventure, you are approached by a ratty-looking boy in tears.\n\n"Please, sirs, could you please help me with my cat? He went over there, and I’m afraid." The boy points a dirty finger at a decrepit, abandoned building. "I don\'t know what else to do."',
     optionA: {
       choice: 'Find a cat? You have more important things to do.',
       outcome:
-        'You shake your head and direct the hov to • go find his mother. With any luck she will knock some sense into him so that he stops w troubling strangers with such trivial matters. No effect.',
+        'You shake your head and direct the boy to go find his mother. With any luck she will knock some sense into him so that he stops troubling strangers with such trivial matters.\n\nNo effect.',
       imageUrl: '/assets/cards/events/base/city/ce-04-b-a.png',
     },
     optionB: {
       choice: 'Reassure the boy and go find the cat.',
       outcome:
-        'You approach the foreboding house full of heroic bravado. The res certainly nothing otherworldly about the structure, but its fallen beams and piles of rubble do make it difficult to look around. Bv the time you find the cat hiding under a hurned out bed frame, you are utterly exhausted. At least the boy is ecstatic his cat has been found. Lose I each. Gain I reputation.',
+        'You approach the foreboding house full of heroic bravado. There\'s certainly nothing otherworldly about the structure, but its fallen beams and piles of rubble do make it difficult to look around. By the time you find the cat hiding under a burned-out bed frame, you are utterly exhausted. At least the boy is ecstatic his cat has been found.\n\nLose 1 CHECKMARK each.\n\n Gain 1 reputation.',
       imageUrl: '/assets/cards/events/base/city/ce-04-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-04-f.png',
