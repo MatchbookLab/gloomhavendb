@@ -134,7 +134,7 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 7,
     text:
-      'Occasionally your dealings in town lead you past the bustling docks. All conversation gets drowned out by the constant din of loading and unloading cargo and crew. This makes it all the more surprising when you hear a voice above the noise directed straight at you.\n\n"Oi! You with the hard looks and big arms! I desperately need some help o\'er here! Spare a few minutes to help make sure I get out of port on time? Otherwise I''ll be stuck here until tomorrow!"',
+      'Occasionally your dealings in town lead you past the bustling docks. All conversation gets drowned out by the constant din of loading and unloading cargo and crew. This makes it all the more surprising when you hear a voice above the noise directed straight at you.\n\n"Oi! You with the hard looks and big arms! I desperately need some help o\'er here! Spare a few minutes to help make sure I get out of port on time? Otherwise I\'ll be stuck here until tomorrow!"',
     optionA: {
       choice: 'Help the captain load his ship.',
       outcome:
@@ -302,7 +302,7 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 15,
     text:
-      'It was a truly marvelous night, full of alcohol and fuzzy memories. You are heading hack to your rooms in high spirits when you take a wrong turn into an alley and trip over a mutilated corpse.\n\n "What''s all this then?" You look up to see a city guard walk into the alley, annoyed by all the noise you were making in your revelry.\n\nBefore you can react, he draws his sword. "You... what did you do?"\n\nYou look and see that, due to the fall, your clothes are now covered in blood. The guard clearly thinks you are responsible for the man\'s death, This night just took a serious turn for the worse.',
+      'It was a truly marvelous night, full of alcohol and fuzzy memories. You are heading hack to your rooms in high spirits when you take a wrong turn into an alley and trip over a mutilated corpse.\n\n "What\'s all this then?" You look up to see a city guard walk into the alley, annoyed by all the noise you were making in your revelry.\n\nBefore you can react, he draws his sword. "You... what did you do?"\n\nYou look and see that, due to the fall, your clothes are now covered in blood. The guard clearly thinks you are responsible for the man\'s death, This night just took a serious turn for the worse.',
     optionA: {
       choice: 'Do your best to explain that the man was like this when you found him.',
       outcome:
