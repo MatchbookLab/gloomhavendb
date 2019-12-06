@@ -512,17 +512,17 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 25,
     text:
-      'On a trip to the Coin District, you catch sight of an old wiry Valrath carrying a large, intricate vase out his front door. /Is you get closer, the Valrath begins to struggle with the vase, sweat pouring from his brow. Under the strain, the Valrath loses his balance, and the fragile vase topples downward as he yells a string of curses.',
+      'On a trip to the Coin District, you catch sight of an old wiry Valrath carrying a large, intricate vase out his front door.\n\nAs you get closer, the Valrath begins to struggle with the vase, sweat pouring from his brow. Under the strain, the Valrath loses his balance, and the fragile vase topples downward as he yells a string of curses.',
     optionA: {
       choice: 'Attempt to catch the vase.',
       outcome:
-        "SUM ; You race forward at hi wrap your arms around the vase. )'ou manage to keep grip of it. preventing tragedy. I he Vairath is relieved and offers to pay you fervour trouble if you carry it the rest of the way. Gain 5 collective gold. OTHERWISE: You race forward and attempt to catch the vase, hut it is too much for you. Your grip loosens and the vase shatters into a hundred pieces. The Vairath is irate, demanding compensation from you for breaking it. You pay him what you can. Lose 10 collective gold.",
+        "BRUTE, CRAGHEART, BERSERKER: You race forward and wrap your arms around the vase. You manage to keep grip of it, preventing tragedy. The Vairath is relieved and offers to pay you for your trouble if you carry it the rest of the way.\n\nGain 5 collective gold.\n\nOTHERWISE: You race forward and attempt to catch the vase, but it is too much for you. Your grip loosens and the vase shatters into a hundred pieces. The Valrath is irate, demanding compensation from you for breaking it. You pay him what you can.\n\nLose 10 collective gold.",
       imageUrl: '/assets/cards/events/base/city/ce-25-b-a.png',
     },
     optionB: {
-      choice: 'With no time to reactr watch the vase fall to the ground.',
+      choice: 'With no time to react watch the vase fall to the ground.',
       outcome:
-        'You watch helplessly as the vase careens • out of the Valraths grasp and, once it connects with the hard ground shatters into a hundred pieces. The Valrath looks distraught and a little angry: You exchange a sympathetic glance with him and then continue about your business. No effect.',
+        'You watch helplessly as the vase careens out of the Valraths grasp and, once it connects with the hard ground shatters into a hundred pieces. The Valrath looks distraught and a little angry: You exchange a sympathetic glance with him and then continue about your business.\n\nNo effect.',
       imageUrl: '/assets/cards/events/base/city/ce-25-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-25-f.png',
