@@ -155,17 +155,17 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 8,
     text:
-      'On a trip to the New Market, you see a curious sea chart prominently displayed in a Valrath merchants stall. "Ah. I see this interests you!* he savs while holding it up, taking great care not to damage it* *Vve been told this map will lead you to j location of untold riches! Wondrous beyond anything you have seen before! The Valrath gestures grandly with his free hand and his smile grows wide« "How can you sav no to thisFfust make me an offer, "',
+      'On a trip to the New Market, you see a curious sea chart prominently displayed in a Valrath merchants stall.\n\n"Ah. I see this interests you!" he savs while holding it up, taking great care not to damage it. "I\'ve been told this map will lead you to a location of untold riches! Wondrous beyond anything you have seen before!"\n\nThe Valrath gestures grandly with his free hand and his smile grows wide. "How can you sav no to this? Just make me an offer!"',
     optionA: {
-      choice: 'The map docs look valuable* Decide to bargain for it* f I l , j i r< rj',
+      choice: 'The map docs look valuable. Decide to bargain for it.',
       outcome:
-        'PAY 20 (reputation v to) or 15 (reputation > 9) COLLECTIVE COLD: After some amount of haggling back and lorth, you set tie on a price and pay for the map. You recognize some of the landmarks and should be able to find this place of "untold treasure "by hirinj Unlock Sunken Vessel (£ Partv Achievement: J "A Map to Treasure." OTHERWISE: Despite your valiant efforts, you cannot get the merchant to lower his price to something you can afford. No effect.',
+        'PAY 20 (reputation < 10) or 15 (reputation > 9) COLLECTIVE COLD: After some amount of haggling back and forth, you settle on a price and pay for the map. You recognize some of the landmarks and should be able to find this place of "untold treasure "by hiring a ship.\n\nUnlock "Sunken Vessel" 93 (N-17)\n\nParty Achievement: "A Map to Treasure."\n\nOTHERWISE: Despite your valiant efforts, you cannot get the merchant to lower his price to something you can afford.\n\nNo effect.',
       imageUrl: '/assets/cards/events/base/city/ce-08-b-a.png',
     },
     optionB: {
       choice: 'Refuse to deal with the merchant.',
       outcome:
-        'Wary of the merchants overly exuberant • nature, you politely decline his offer and go about your intended business. No ef fect.',
+        'Wary of the merchant\'s overly exuberant nature, you politely decline his offer and go about your intended business.\n\nNo effect.',
       imageUrl: '/assets/cards/events/base/city/ce-08-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-08-f.png',
