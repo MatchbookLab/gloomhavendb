@@ -533,17 +533,17 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 26,
     text:
-      'While enjoying vour customary post-adventure drink at the Sleep- ing Lion, you notice something weird going on with the lamps in the bar. Your first thought is that it is your imagination, hut after staring at the lamps intently, you see t hev are flickering in and out. lech lamps, as opposed to normal gas-burning ones, have been known to be a bit unreliable. % if on cue, the lamps suddenly go out com- pletely, leaving the room pitch-black.',
+      'While enjoying vour customary post-adventure drink at the Sleeping Lion, you notice something weird going on with the lamps in the bar.\n\nYour first thought is that it is your imagination, hut after staring at the lamps intently, you see they are flickering in and out. Tech lamps, as opposed to normal gas-burning ones, have been known to be a bit unreliable.\n\nAs if on cue, the lamps suddenly go out completely, leaving the room pitch-black.',
     optionA: {
       choice: "Offer to fix the lamps. It shouldn't be too hard with a bit of technical know-how.",
       outcome:
-        "* You quickly identify the source of the problem — some frayed wiring in the kitchen — and have it replaced in no time. The proprietor seems very impressed by your work and gives free drinks all around in your name. Gain 2 reputation. OTHERWISE; You fumble about magnanimously for a while before concluding that you have no idea what you're doing. The proprietor looks disappointed and sends out for a real tinkerer. No effect.",
+        "TINKERER: You quickly identify the source of the problem — some frayed wiring in the kitchen — and have it replaced in no time. The proprietor seems very impressed by your work and gives free drinks all around in your name.\n\nGain 2 reputation.\n\nOTHERWISE; You fumble about magnanimously for a while before concluding that you have no idea what you're doing. The proprietor looks disappointed and sends out for a real tinkerer.\n\nNo effect.",
       imageUrl: '/assets/cards/events/base/city/ce-26-b-a.png',
     },
     optionB: {
-      choice: 'Take tlie opportunity to steal some valuables from drunk patrons in the dark.',
+      choice: 'Take the opportunity to steal some valuables from drunk patrons in the dark.',
       outcome:
-        '*#•) ; The darkness gives the less scrupulous among you a good chance to perform their craft. Within a matter of minutes, vour coin purses are much heavier. Gain 10 collective gold. OTHERWISE: Vou attempt to lighten some purses, hut even in (he dark, you find the task a little outside your skill set. One patron catches your hand as it searches his belt. He starts yelling, and you flee as quickly as possible. Lose 1 reputation.',
+        'SCOUNDREL, MINDTHIEF, NIGHTSHROUD: The darkness gives the less scrupulous among you a good chance to perform their craft. Within a matter of minutes, your coin purses are much heavier.\n\nGain 10 collective gold.\n\nOTHERWISE: You attempt to lighten some purses, hut even in the dark, you find the task a little outside your skill set. One patron catches your hand as it searches his belt. He starts yelling, and you flee as quickly as possible.\n\nLose 1 reputation.',
       imageUrl: '/assets/cards/events/base/city/ce-26-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-26-f.png',
