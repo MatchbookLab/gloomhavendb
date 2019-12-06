@@ -449,17 +449,17 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 22,
     text:
-      "You decide to head to the Brown Door for the evening to enjoy«? Quatryl concert. HT- i\t' . Corruption and crime run rampant in the bar, but the music is unmatched in all of Cloomhaven. You are enjoying yourself immensely when you catch a glimpse of a man in a dark, tattered robe near the back of the room. He appears to be handing vials full of red liquid to a second man.",
+      "You decide to head to the Brown Door for the evening to enjoy a Quatryl concert.\n\nCorruption and crime run rampant in the bar, but the music is unmatched in all of Cloomhaven.\n\nYou are enjoying yourself immensely when you catch a glimpse of a man in a dark, tattered robe near the back of the room. He appears to be handing vials full of red liquid to a second man.",
     optionA: {
       choice: 'Further investigate the exchange between the men.',
       outcome:
-        'You subtly move in the direction o( the men, monitoring their actions with your peripheral vision. You recognize the dark robes from the run-ins you have had with cultists in the area, and as you get closer, you become convinced that the vials being traded contain blood. You grab the men and cause a huge amount of commotion as you fight to drag them outside and foil their dealings. You are able to hand them off to the proper authorities, but it may he a while before you are allowed back in the Brown Door. The concert was ruined. Gain 2 reputation.',
+        'You subtly move in the direction of the men, monitoring their actions with your peripheral vision. You recognize the dark robes from the run-ins you have had with cultists in the area, and as you get closer, you become convinced that the vials being traded contain blood. You grab the men and cause a huge amount of commotion as you fight to drag them outside and foil their dealings. You are able to hand them off to the proper authorities, but it may he a while before you are allowed back in the Brown Door. The concert was ruined.\n\n Gain 2 reputation.',
       imageUrl: '/assets/cards/events/base/city/ce-22-b-a.png',
     },
     optionB: {
-      choice: 'Leave the criminal element alone and continue enjoying the show. ^____________',
+      choice: 'Leave the criminal element alone and continue enjoying the show.',
       outcome:
-        'BThe music is too good to be interrupted You • ig nore the men in the back and simply have a great time■. Gain 1 v each.',
+        'The music is too good to be interrupted You ignore the men in the back and simply have a great time.\n\n Gain 1 checkmark each.',
       imageUrl: '/assets/cards/events/base/city/ce-22-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-22-f.png',
