@@ -554,17 +554,17 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 27,
     text:
-      'You are out in the Ward of Scales when you sec a crowd of people forming to the south, growing louder and more dense hv the second. * As you approach, you sec through the angry mob a terrified Vermfing being pulled in your direction by a group of gruff men, "Dirty thief!\' a woman next to you screams. “String it up!’ Glancing behind you to where the crowd appears to be headed, you see a disused gibbet in the market square. The men — clearly not guards — move closer.',
+      'You are out in the Ward of Scales when you see a crowd of people forming to the south, growing louder and more dense by the second.\n\nAs you approach, you see through the angry mob a terrified Vermling being pulled in your direction by a group of gruff men.\n\n"Dirty thief!" a woman next to you screams. "String it up"\n\nGlancing behind you to where the crowd appears to be headed, you see a disused gibbet in the market square.\n\nThe men — clearly not guards — move closer.',
     optionA: {
       choice: 'Attempt to stop the crowd from hanging the Vermling,',
       outcome:
-        ": You keep a calm demeanor as you try to talk down the mob. It takes some effort, but the men finally agree to turn the thief over to the authorities, which stops the situation from devolving into chaos. Gain I prosperity. OTHERWISE: You kindly entreat the crowd to hack down, and when that doesn t work, you resort to force, i\\'o one seems happy that you stopped the hanging, but it was the right thing to do. Lose I reputation.",
+        "SPELLWEAVER, DOOMSTALKER, SOOTHSINGER: You keep a calm demeanor as you try to talk down the mob. It takes some effort, but the men finally agree to turn the thief over to the authorities, which stops the situation from devolving into chaos.\n\nGain 1 prosperity.\n\nOTHERWISE: You kindly entreat the crowd to back down, and when that doesn't work, you resort to force. No one seems happy that you stopped the hanging, but it was the right thing to do.\n\n Lose 1 reputation.",
       imageUrl: '/assets/cards/events/base/city/ce-27-b-a.png',
     },
     optionB: {
       choice: 'lake no action and see this through to its logical conclusion.',
       outcome:
-        ") ou watch as the men move past you toward the gibbet. One carries a thick rope that • he ties around the Vermling 's neck. The other end of the rope is thrown over the cross beam and then the men begin pulling, hoisting the helpless thief up off his feet. He struggles in vain, a panicked look in his eyes, but eventually he stops moving. The men tie off the rope, leaving the lifeless thief hanging. People begin to mill about, many stopping to spit on the ground before returning to work. Add City Event 60 to the deck.",
+        "You watch as the men move past you toward the gibbet. One carries a thick rope that he ties around the Vermling's neck. The other end of the rope is thrown over the cross beam and then the men begin pulling, hoisting the helpless thief up off his feet. He struggles in vain, a panicked look in his eyes, but eventually he stops moving. The men tie off the rope, leaving the lifeless thief hanging. People begin to mill about, many stopping to spit on the ground before returning to work.\n\nAdd City Event 60 to the deck.",
       imageUrl: '/assets/cards/events/base/city/ce-27-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-27-f.png',
