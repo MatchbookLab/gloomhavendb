@@ -428,17 +428,17 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 21,
     text:
-      '7 vc been told you are the group to talk to it you want to get something done around here.\' You look up from your tabic at the Sleeping Lion to see a rustic man in leather armor standing in front of you. This tavern may as well be your office, due to the number of people coming through the doors looking for your help: You nod at the man, and he makes his request. .. 4\t« "My brother went out bunting in the Corpsewood two days ago and hasn\'t relumed since, i fear the worst. If you are traveling in that direction, I hope you wouldn t mind keeping an eye out for him."',
+      '"I\'ve been told you are the group to talk to if you want to get something done around here."\n\nYou look up from your table at the Sleeping Lion to see a rustic man in leather armor standing in front of you.\n\nThis tavern may as well be your office, due to the number of people coming through the doors looking for your help. You nod at the man, and he makes his request.\n\n "My brother went out hunting in the Corpsewood two days ago and hasn\'t returned since, I fear the worst. If you are traveling in that direction, I hope you wouldn\'t mind keeping an eye out for him."',
     optionA: {
-      choice: "Demand payment up Front before agreeing to look for the man's brother.",
+      choice: "Demand payment up front before agreeing to look for the man's brother.",
       outcome:
-        'REPUTATION > 7: ’What? L. Oh. very well." • the man stutters. “Since I trust you to keep your word, I\'ll give you a little money for your trouble." The man describes his brother and hands you a small coin pouch. Gain 5 collective gold. Add Road Event 65 to the deck. OTHERWISE: The man puffs up in indignation, letting you know he is insulted by your behavior. He storms out of the t,ivern in a rage. No effect.',
+        'REPUTATION > 7: "What? I... Oh, very well." the man stutters. "Since I trust you to keep your word, I\'ll give you a little money for your trouble." The man describes his brother and hands you a small coin pouch.\n\nGain 5 collective gold.\n\nAdd Road Event 65 to the deck.\n\nOTHERWISE: The man puffs up in indignation, letting you know he is insulted by your behavior. He storms out of the tavern in a rage.\n\nNo effect.',
       imageUrl: '/assets/cards/events/base/city/ce-21-b-a.png',
     },
     optionB: {
       choice: 'Agree to help the man in his search.',
       outcome:
-        'The man thanks you profusely and gives a detailed description of his brother "Ifyou find him, no matter the condition, please let me know right away." Add Road Event 65 to the deck.',
+        'The man thanks you profusely and gives a detailed description of his brother "If you find him, no matter the condition, please let me know right away."\n\nAdd Road Event 65 to the deck.',
       imageUrl: '/assets/cards/events/base/city/ce-21-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-21-f.png',
