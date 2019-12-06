@@ -407,17 +407,17 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 20,
     text:
-      'You are relaxing at the Sleeping Lion when an immaculately dressed man approach your table, a fake smile plastered to his face. "Ah, you must be the mercenaries everyone is talking about, yes? My name is Lord Grey mane and I have a delicate matter to discuss. May i sitr >bu gesture to a chair and he sits with a faint grimace. "I am transporting some valuable goods this evening from one of my warehouses, and I have reason to believe that some of the less desirable elements of this city wish to steal from me. I would like to hire you to help guard the undertaking."',
+      'You are relaxing at the Sleeping Lion when an immaculately dressed man approach your table, a fake smile plastered to his face.\n\n"Ah, you must be the mercenaries everyone is talking about, yes? My name is Lord Greymane and I have a delicate matter to discuss. May i sit?"\n\nYou gesture to a chair and he sits with a faint grimace. "I am transporting some valuable goods this evening from one of my warehouses, and I have reason to believe that some of the less desirable elements of this city wish to steal from me. I would like to hire you to help guard the undertaking."',
     optionA: {
-      choice: "Agree to guard the goods. It should be easy money. • ■ w f v' ' ^ H\tB !r p t\tB\tC| H J",
+      choice: "Agree to guard the goods. It should be easy money.",
       outcome:
-        'REPUTATION > 9: You head to the warehouse and watch in silence as a number of heavy crates are loaded onto a cart; >01/ then escort the cart to the West Gate♦ No thefts are attempted, and you are paid well. Gain 10 collective gold. OTHERWISE: Volt head to the warehouse and are immediately set upon by a group of thieves. However, they prove no match for your expertise and are quickly dispatched, Grey mane thanks you. Gain 5 experience each. Gain 10 collective gold.',
+        'REPUTATION > 9: You head to the warehouse and watch in silence as a number of heavy crates are loaded onto a cart. You then escort the cart to the West Gate. No thefts are attempted, and you are paid well.\n\nGain 10 collective gold.\n\nOTHERWISE: You head to the warehouse and are immediately set upon by a group of thieves. However, they prove no match for your expertise and are quickly dispatched. Greymane thanks you.\n\nGain 5 experience each.\n\nGain 10 collective gold.',
       imageUrl: '/assets/cards/events/base/city/ce-20-b-a.png',
     },
     optionB: {
       choice: 'Politely decline. Yon have much better things to do tonight.',
       outcome:
-        'This is your night off, and you are going to • spend it drinking, not guarding some snobby "lord. ” In the morning; you hear news that a shipment of rare minerals bound for the capital was stolen in the night. People are calling it a huge blow to the economy of the to wn. Lose I prosperity.',
+        'This is your night off, and you are going to spend it drinking, not guarding some snobby "lord."\n\nIn the morning; you hear news that a shipment of rare minerals bound for the capital was stolen in the night. People are calling it a huge blow to the economy of the town.\n\nLose 1 prosperity.',
       imageUrl: '/assets/cards/events/base/city/ce-20-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-20-f.png',
