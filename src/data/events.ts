@@ -491,17 +491,17 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 24,
     text:
-      "Upon returning to the city after your latest adventure, you are approached by a high-ranking guard at the gate. 'Ah. good, I'm glad to have caught you, the guard begins, NThe capital has fallen behind on shipments of wood to Gloomhaven, so now it tails to us to pick up the slack so that construction of important city buildings doesn't stagnate.\" The guard points to the east, We re forming an expedition to gather logs from the Corpse wood. We could use your help, either to guard against enemies or to chop down trees,r",
+      'Upon returning to the city after your latest adventure, you are approached by a high-ranking guard at the gate.\n\n"Ah. good, I\'m glad to have caught you, the guard begins, The capital has fallen behind on shipments of wood to Gloomhaven, so now it falls to us to pick up the slack so that construction of important city buildings doesn\'t stagnate."\n\nThe guard points to the east. We\'re forming an expedition to gather logs from the Corpsewood. We could use your help, either to guard against enemies or to chop down trees,r',
     optionA: {
-      choice: 'join the expedition as a guard.',
+      choice: 'Join the expedition as a guard.',
       outcome:
-        'The logging expedition heads to the outskirts of the Corpsewood and begins felling trees and transporting them back to Gloomhaven. You stay on your guard, patrolling the area and making sure there are no surprise attacks. A couple hours in, a tribe of Vermlings appear through the woods, but you are alert and prepared, dispatching them without a single casualty The rest of the day goes by uneventfully. Gain 10 experience each.',
+        'The logging expedition heads to the outskirts of the Corpsewood and begins felling trees and transporting them back to Gloomhaven. You stay on your guard, patrolling the area and making sure there are no surprise attacks. A couple hours in, a tribe of Vermlings appear through the woods, but you are alert and prepared, dispatching them without a single casualty. The rest of the day goes by uneventfully.\n\nGain 10 experience each.',
       imageUrl: '/assets/cards/events/base/city/ce-24-b-a.png',
     },
     optionB: {
       choice: 'Join the expedition as a logger.',
       outcome:
-        'You journey out to the Corpsewood, axe in hand and begin chopping away at the trees. You seem to have a natural skill with it, probably due to all the practice you get swinging a blade. Thanks to your help, the city is able to gather a large amount of extra wood for construction. You encounter some dangers throughout the day but nothing you cannot handle. Gain 1 prosperity.',
+        'You journey out to the Corpsewood, axe in hand and begin chopping away at the trees. You seem to have a natural skill with it, probably due to all the practice you get swinging a blade. Thanks to your help, the city is able to gather a large amount of extra wood for construction. You encounter some dangers throughout the day but nothing you cannot handle.\n\nGain 1 prosperity.',
       imageUrl: '/assets/cards/events/base/city/ce-24-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-24-f.png',
