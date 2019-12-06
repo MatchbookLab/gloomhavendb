@@ -323,17 +323,17 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 16,
     text:
-      '"Stop struggling! You re coming with me and there\'s nothing you can do about it! ” Ahead of you in the street, you see a pair of guards scuffling with a young boy dressed in rags. "You snatch purses, you go to the Ghost Fortress. No way around that." "But my family is starving." the boy cries. You recognize his voice from some of vour dealings in the Sunken Market. He s given you helpful tips for mercenary work on a number of occasions.',
+      '"Stop struggling! You\'re coming with me and there\'s nothing you can do about it!"\n\nAhead of you in the street, you see a pair of guards scuffling with a young boy dressed in rags. "You snatch purses, you go to the Ghost Fortress. No way around that."\n\n"But my family is starving." the boy cries. You recognize his voice from some of vour dealings in the Sunken Market. He\'s given you helpful tips for mercenary work on a number of occasions.',
     optionA: {
       choice: "Intervene on the boy's behalf.",
       outcome:
-        "PAY 10 COLLECTIVE COLD: You entreat the guards to let the boy go, hut they are unmoved. With further pressing, they agree to do so only ifvou pay his criminal fine. The guards cuff the hoy's ear and set him free. Add City Event 70 to the deck. OTHERWISE: You entreat the guards to let the boy go, but they are unmoved. It seems like you may be able to g rease their palms a bit, but, unfortunately, you do not have enough money to sway their minds. The boy is hauled of! to the Ghost Fortress. No effect.",
+        "PAY 10 COLLECTIVE COLD: You entreat the guards to let the boy go, but they are unmoved. With further pressing, they agree to do so only if vou pay his criminal fine. The guards cuff the boy's ear and set him free.\n\nAdd City Event 70 to the deck.\n\nOTHERWISE: You entreat the guards to let the boy go, but they are unmoved. It seems like you may be able to grease their palms a bit, but, unfortunately, you do not have enough money to sway their minds. The boy is hauled off to the Ghost Fortress.\n\n No effect.",
       imageUrl: '/assets/cards/events/base/city/ce-16-b-a.png',
     },
     optionB: {
       choice: 'Let the guards haul the boy away to prison.',
       outcome:
-        "There 3re repercussions to getting caught, • and like the guard said, sometimes there's no way out of it. You owe the boy nothing, and so let the guards take him away. No effect.",
+        "There are repercussions to getting caught, and like the guard said, sometimes there's no way out of it. You owe the boy nothing, and so let the guards take him away.\n\nNo effect.",
       imageUrl: '/assets/cards/events/base/city/ce-16-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-16-f.png',
