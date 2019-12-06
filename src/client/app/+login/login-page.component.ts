@@ -16,9 +16,9 @@ export class LoginPageComponent {
 
   constructor(private authService: AuthService, private router: Router) {}
 
-  async login() {
+  async login(credentials: Login) {
     try {
-      await this.authService.login(this.credentials);
+      await this.authService.login(credentials);
       await this.router.navigate([BaseRoutePath.Home]);
     } catch (err) {
       this.error = err.message;

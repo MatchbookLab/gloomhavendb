@@ -11,7 +11,7 @@ import {
 import { ControlValueAccessor, FormControl } from '@angular/forms';
 import { forEach } from 'lodash';
 import { Observable, ReplaySubject } from 'rxjs';
-import { distinctUntilChanged, takeUntil, tap } from 'rxjs/operators';
+import { distinctUntilChanged, filter, takeUntil, tap } from 'rxjs/operators';
 import { ControlService, ControlSharedConfig, ControlSharedConfigChanges, GdbControlInputs } from './control.service';
 
 export interface GdbControl<T> extends FormControl {
@@ -112,6 +112,7 @@ export abstract class GdbControlComponent<ControlModel, InternalModel = ControlM
     );
 
     this.valueChanges$ = this.control.valueChanges.pipe(
+      filter(() => !!this.propagateChange),
       distinctUntilChanged(),
       tap(val => this.controlService.configChanges.stringValue.next(this.getStringValue(val))),
       takeUntil(this.destroyed$),
