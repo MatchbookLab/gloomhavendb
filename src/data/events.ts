@@ -28,17 +28,17 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 2,
     text:
-      'As the daylight fades, you find yourselves wandering through a half-crowded market street, browsing wares.\n\n "Hey! Over here!" You turn in the direction of the voice to see a filthy Vermling gesturing from a dark alley. "Yeah, you grim-looking chaps. I have something you might he interested in."\n\n The Vermling holds out a piece of metal covered in sludge. "Found this in the sewer. Writing on it I don\'t understand, but I know it\'s valuable. You can have it for ten gold!"',
+      'As the daylight fades, you find yourselves wandering through a half-crowded market street, browsing wares.\n\n"Hey! Over here!" You turn in the direction of the voice to see a filthy Vermling gesturing from a dark alley. "Yeah, you grim-looking chaps. I have something you might he interested in."\n\nThe Vermling holds out a piece of metal covered in sludge. "Found this in the sewer. Writing on it I don\'t understand, but I know it\'s valuable. You can have it for ten gold!"',
     optionA: {
       choice: 'Pay for the thing. You never know.',
       outcome:
-        'PAY 10 COLLECTIVE GOLD: You hand over the gold and take hold of the piece of garbage. Amidst troubling brown smears you see a lot of meaningless scratches likely made by rats and bugs. Oh well. Sometimes the long shot doesn\'t pay off.\n\n No effect.\n\n OTHERWISE: "Bah! You don\'t have enough. Come back when you do!" No effect.',
+        'PAY 10 COLLECTIVE GOLD: You hand over the gold and take hold of the piece of garbage. Amidst troubling brown smears you see a lot of meaningless scratches likely made by rats and bugs. Oh well. Sometimes the long shot doesn\'t pay off.\n\nNo effect.\n\nOTHERWISE: "Bah! You don\'t have enough. Come back when you do!" No effect.',
       imageUrl: '/assets/cards/events/base/city/ce-02-b-a.png',
     },
     optionB: {
       choice: 'Refuse to pay. Never trust a Vermling.',
       outcome:
-        'You laugh and gesture the Vermling away. You can recognize a low-life swindler when you see one. And that piece of garbage was just...foul.\n\n No effect.',
+        'You laugh and gesture the Vermling away. You can recognize a low-life swindler when you see one. And that piece of garbage was just...foul.\n\nNo effect.',
       imageUrl: '/assets/cards/events/base/city/ce-02-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-02-f.png',
@@ -80,7 +80,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Reassure the boy and go find the cat.',
       outcome:
-        'You approach the foreboding house full of heroic bravado. There\'s certainly nothing otherworldly about the structure, but its fallen beams and piles of rubble do make it difficult to look around. By the time you find the cat hiding under a burned-out bed frame, you are utterly exhausted. At least the boy is ecstatic his cat has been found.\n\nLose 1 CHECKMARK each.\n\n Gain 1 reputation.',
+        'You approach the foreboding house full of heroic bravado. There\'s certainly nothing otherworldly about the structure, but its fallen beams and piles of rubble do make it difficult to look around. By the time you find the cat hiding under a burned-out bed frame, you are utterly exhausted. At least the boy is ecstatic his cat has been found.\n\nLose 1 CHECKMARK each.\n\nGain 1 reputation.',
       imageUrl: '/assets/cards/events/base/city/ce-04-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-04-f.png',
@@ -95,13 +95,13 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Go help lay the foundation.',
       outcome:
-        'Amidst a great deal of revelry, you put all you have into laying the foundation of the sanctuary. Surely much good will be done here healing the sick and wounded. After all your exhaustive efforts, though, you might end up being their first patients.\n\n Lose 1 CHECKMARK\n\nGain 1 reputation.\n\n Gain 1 prosperity.',
+        'Amidst a great deal of revelry, you put all you have into laying the foundation of the sanctuary. Surely much good will be done here healing the sick and wounded. After all your exhaustive efforts, though, you might end up being their first patients.\n\nLose 1 CHECKMARK\n\nGain 1 reputation.\n\nGain 1 prosperity.',
       imageUrl: '/assets/cards/events/base/city/ce-05-b-a.png',
     },
     optionB: {
       choice: 'Take the opportunity to steal some valuables in the area while people are distracted.',
       outcome:
-        "You head to the prosperous east side of town, not to help lay down the foundation, but to steal some goods from shopkeepers too silly to lock up their wares during the festivities. You make off with a good deal of money and the distracted guards are none the wiser.\n\n Gain 5 gold each.\n\n Reputation < -4: Gain 5 additional gold each.",
+        "You head to the prosperous east side of town, not to help lay down the foundation, but to steal some goods from shopkeepers too silly to lock up their wares during the festivities. You make off with a good deal of money and the distracted guards are none the wiser.\n\nGain 5 gold each.\n\nReputation < -4: Gain 5 additional gold each.",
       imageUrl: '/assets/cards/events/base/city/ce-05-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-05-f.png',
@@ -197,7 +197,7 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 10,
     text:
-      'Relaxing for the evening at the Sleeping Lion, a shifty-looking man approaches you, hand outstretched. In it are a pair of pale dice with crude marks scratched on them.\n\n "Greetings, friends. You look like you could stand to liven things up a bit. Care for a quick game of bone dice with me? I\'m sure we could make it interesting." His other hand pats a coin purse at his side.',
+      'Relaxing for the evening at the Sleeping Lion, a shifty-looking man approaches you, hand outstretched. In it are a pair of pale dice with crude marks scratched on them.\n\n"Greetings, friends. You look like you could stand to liven things up a bit. Care for a quick game of bone dice with me? I\'m sure we could make it interesting." His other hand pats a coin purse at his side.',
     optionA: {
       choice: 'Play a game with the man. It may prove to be a good time.',
       outcome:
@@ -222,7 +222,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Make a deal wilh the Harrower.',
       outcome:
-        "PAY 5 COLLECTIVE GOLD: Intrigued by the parchment, you quickly make a decision to buy it off the Narrower. The exchange is fast, and then you move on your way, hoping no one saw you.\n\nGain Random Item Design.\n\n Reputation > 9: Lose 1 reputation.\n\nOTHERWISE: You try to pay the Narrower less than it asks for, which only manages to anger it. It hisses loudly and shuns you.\n\nLose 1 reputation.",
+        "PAY 5 COLLECTIVE GOLD: Intrigued by the parchment, you quickly make a decision to buy it off the Narrower. The exchange is fast, and then you move on your way, hoping no one saw you.\n\nGain Random Item Design.\n\nReputation > 9: Lose 1 reputation.\n\nOTHERWISE: You try to pay the Narrower less than it asks for, which only manages to anger it. It hisses loudly and shuns you.\n\nLose 1 reputation.",
       imageUrl: '/assets/cards/events/base/city/ce-11-b-a.png',
     },
     optionB: {
@@ -243,7 +243,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Yield to the pie and admit defeat.',
       outcome:
-        "You put down vour utensils and yield to the sailors. They roar with pride and slap vou on the back. Unfortunately, the sudden jolt doesn't sit well with your stomach, and soon all the pies you ate are coming back up, much to the disgust of the gathered crowd.\n\n Lose 1 reputation.",
+        "You put down vour utensils and yield to the sailors. They roar with pride and slap vou on the back. Unfortunately, the sudden jolt doesn't sit well with your stomach, and soon all the pies you ate are coming back up, much to the disgust of the gathered crowd.\n\nLose 1 reputation.",
       imageUrl: '/assets/cards/events/base/city/ce-12-b-a.png',
     },
     optionB: {
@@ -302,7 +302,7 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 15,
     text:
-      'It was a truly marvelous night, full of alcohol and fuzzy memories. You are heading hack to your rooms in high spirits when you take a wrong turn into an alley and trip over a mutilated corpse.\n\n "What\'s all this then?" You look up to see a city guard walk into the alley, annoyed by all the noise you were making in your revelry.\n\nBefore you can react, he draws his sword. "You... what did you do?"\n\nYou look and see that, due to the fall, your clothes are now covered in blood. The guard clearly thinks you are responsible for the man\'s death, This night just took a serious turn for the worse.',
+      'It was a truly marvelous night, full of alcohol and fuzzy memories. You are heading hack to your rooms in high spirits when you take a wrong turn into an alley and trip over a mutilated corpse.\n\n"What\'s all this then?" You look up to see a city guard walk into the alley, annoyed by all the noise you were making in your revelry.\n\nBefore you can react, he draws his sword. "You... what did you do?"\n\nYou look and see that, due to the fall, your clothes are now covered in blood. The guard clearly thinks you are responsible for the man\'s death, This night just took a serious turn for the worse.',
     optionA: {
       choice: 'Do your best to explain that the man was like this when you found him.',
       outcome:
@@ -327,7 +327,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: "Intervene on the boy's behalf.",
       outcome:
-        "PAY 10 COLLECTIVE COLD: You entreat the guards to let the boy go, but they are unmoved. With further pressing, they agree to do so only if vou pay his criminal fine. The guards cuff the boy's ear and set him free.\n\nAdd City Event 70 to the deck.\n\nOTHERWISE: You entreat the guards to let the boy go, but they are unmoved. It seems like you may be able to grease their palms a bit, but, unfortunately, you do not have enough money to sway their minds. The boy is hauled off to the Ghost Fortress.\n\n No effect.",
+        "PAY 10 COLLECTIVE COLD: You entreat the guards to let the boy go, but they are unmoved. With further pressing, they agree to do so only if vou pay his criminal fine. The guards cuff the boy's ear and set him free.\n\nAdd City Event 70 to the deck.\n\nOTHERWISE: You entreat the guards to let the boy go, but they are unmoved. It seems like you may be able to grease their palms a bit, but, unfortunately, you do not have enough money to sway their minds. The boy is hauled off to the Ghost Fortress.\n\nNo effect.",
       imageUrl: '/assets/cards/events/base/city/ce-16-b-a.png',
     },
     optionB: {
@@ -428,7 +428,7 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 21,
     text:
-      '"I\'ve been told you are the group to talk to if you want to get something done around here."\n\nYou look up from your table at the Sleeping Lion to see a rustic man in leather armor standing in front of you.\n\nThis tavern may as well be your office, due to the number of people coming through the doors looking for your help. You nod at the man, and he makes his request.\n\n "My brother went out hunting in the Corpsewood two days ago and hasn\'t returned since, I fear the worst. If you are traveling in that direction, I hope you wouldn\'t mind keeping an eye out for him."',
+      '"I\'ve been told you are the group to talk to if you want to get something done around here."\n\nYou look up from your table at the Sleeping Lion to see a rustic man in leather armor standing in front of you.\n\nThis tavern may as well be your office, due to the number of people coming through the doors looking for your help. You nod at the man, and he makes his request.\n\n"My brother went out hunting in the Corpsewood two days ago and hasn\'t returned since, I fear the worst. If you are traveling in that direction, I hope you wouldn\'t mind keeping an eye out for him."',
     optionA: {
       choice: "Demand payment up front before agreeing to look for the man's brother.",
       outcome:
@@ -453,13 +453,13 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Further investigate the exchange between the men.',
       outcome:
-        'You subtly move in the direction of the men, monitoring their actions with your peripheral vision. You recognize the dark robes from the run-ins you have had with cultists in the area, and as you get closer, you become convinced that the vials being traded contain blood. You grab the men and cause a huge amount of commotion as you fight to drag them outside and foil their dealings. You are able to hand them off to the proper authorities, but it may he a while before you are allowed back in the Brown Door. The concert was ruined.\n\n Gain 2 reputation.',
+        'You subtly move in the direction of the men, monitoring their actions with your peripheral vision. You recognize the dark robes from the run-ins you have had with cultists in the area, and as you get closer, you become convinced that the vials being traded contain blood. You grab the men and cause a huge amount of commotion as you fight to drag them outside and foil their dealings. You are able to hand them off to the proper authorities, but it may he a while before you are allowed back in the Brown Door. The concert was ruined.\n\nGain 2 reputation.',
       imageUrl: '/assets/cards/events/base/city/ce-22-b-a.png',
     },
     optionB: {
       choice: 'Leave the criminal element alone and continue enjoying the show.',
       outcome:
-        'The music is too good to be interrupted You ignore the men in the back and simply have a great time.\n\n Gain 1 CHECKMARK each.',
+        'The music is too good to be interrupted You ignore the men in the back and simply have a great time.\n\nGain 1 CHECKMARK each.',
       imageUrl: '/assets/cards/events/base/city/ce-22-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-22-f.png',
@@ -558,7 +558,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Attempt to stop the crowd from hanging the Vermling,',
       outcome:
-        "SPELLWEAVER, DOOMSTALKER, SOOTHSINGER: You keep a calm demeanor as you try to talk down the mob. It takes some effort, but the men finally agree to turn the thief over to the authorities, which stops the situation from devolving into chaos.\n\nGain 1 prosperity.\n\nOTHERWISE: You kindly entreat the crowd to back down, and when that doesn't work, you resort to force. No one seems happy that you stopped the hanging, but it was the right thing to do.\n\n Lose 1 reputation.",
+        "SPELLWEAVER, DOOMSTALKER, SOOTHSINGER: You keep a calm demeanor as you try to talk down the mob. It takes some effort, but the men finally agree to turn the thief over to the authorities, which stops the situation from devolving into chaos.\n\nGain 1 prosperity.\n\nOTHERWISE: You kindly entreat the crowd to back down, and when that doesn't work, you resort to force. No one seems happy that you stopped the hanging, but it was the right thing to do.\n\nLose 1 reputation.",
       imageUrl: '/assets/cards/events/base/city/ce-27-b-a.png',
     },
     optionB: {
