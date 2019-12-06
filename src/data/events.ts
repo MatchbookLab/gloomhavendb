@@ -91,17 +91,17 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 5,
     text:
-      'After resting for the evening, you start out your day noticing a great number of prominent, command- ing posters around the city. Reading one, you learn that the Sanctuary of the Great Oak is laying down the foundation for a new building on the east side of G/oomhaven. Everyone is encouraged to come and help. This could be an important community event.',
+      'After resting for the evening, you start out your day noticing a great number of prominent, commanding posters around the city. Reading one, you learn that the Sanctuary of the Great Oak is laying down the foundation for a new building on the east side of Gloomhaven. Everyone is encouraged to come and help. This could be an important community event.',
     optionA: {
       choice: 'Go help lay the foundation.',
       outcome:
-        'Amidst a great deal of revelry, you put all • you have into laying the foundation of the sanctuary. Surely much good will be done here healing the sick and wounded. After all your exhaustive efforts, though, you might end up being their first patients. I Lose 1 V* Gain I reputation. Gain I prosperity.',
+        'Amidst a great deal of revelry, you put all you have into laying the foundation of the sanctuary. Surely much good will be done here healing the sick and wounded. After all your exhaustive efforts, though, you might end up being their first patients.\n\n Lose 1 checkmark\n\nGain 1 reputation.\n\n Gain 1 prosperity.',
       imageUrl: '/assets/cards/events/base/city/ce-05-b-a.png',
     },
     optionB: {
-      choice: 'Take the opportunity to steal some valuables in the area while people arc distracted.',
+      choice: 'Take the opportunity to steal some valuables in the area while people are distracted.',
       outcome:
-        ")'ow head to the prosperous east side of town, * not to help lay down the foundation, but to steal some goods from shopkeepers too silly to lock up their wares during the festivities. You make off with a good deal of money and the distracted guards are none the wiser. Gain 5 gold each. Reputation < -4: Gain 5 additional gold each.",
+        "You head to the prosperous east side of town, not to help lay down the foundation, but to steal some goods from shopkeepers too silly to lock up their wares during the festivities. You make off with a good deal of money and the distracted guards are none the wiser.\n\n Gain 5 gold each.\n\n Reputation < -4: Gain 5 additional gold each.",
       imageUrl: '/assets/cards/events/base/city/ce-05-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-05-f.png',
