@@ -365,17 +365,17 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 18,
     text:
-      'You are attending to business in the Sinking .Market when a frail white-haired woman approaches you and grabs you by the arm, "Oh my, don\'t you lot look strong." she says. "Could you possibly assist me with a small problem I am having in mv cellar? ” Her eyes grow narrow. Rats! So many rats! I don\'t know where they\'re coming from, but they are a right nuisance. Ruined three jars of preserves just yesterday ! She tugs weakly at vour sleeve. "Please, can you help me? ”',
+      'You are attending to business in the Sinking Market when a frail white-haired woman approaches you and grabs you by the arm.\n\n"Oh my, don\'t you lot look strong." she says. "Could you possibly assist me with a small problem I am having in mv cellar?"\n\nHer eyes grow narrow. "Rats! So many rats! I don\'t know where they\'re coming from, but they are a right nuisance. Ruined three jars of preserves just yesterday!"\n\nShe tugs weakly at vour sleeve. "Please, can you help me?"',
     optionA: {
       choice: 'Decline to help the old woman.',
       outcome:
-        'You pull vour arm away from her filthy grasp and step away, making apologies for being too busy. Your excuses lack the proper tact, however, and soon the woman is bawling in the street, lamenting that no one will help her and how the rats will kill her in her sleep, then feast on her corpse. The whole speech is very graphic, and passersby begin to give you odd looks, wondering what you could have done to upset the poor woman so intensely. Lose I reputation.',
+        'You pull vour arm away from her filthy grasp and step away, making apologies for being too busy. Your excuses lack the proper tact, however, and soon the woman is bawling in the street, lamenting that no one will help her and how the rats will kill her in her sleep, then feast on her corpse. The whole speech is very graphic, and passersby begin to give you odd looks, wondering what you could have done to upset the poor woman so intensely.\n\nLose 1 reputation.',
       imageUrl: '/assets/cards/events/base/city/ce-18-b-a.png',
     },
     optionB: {
       choice: 'Agree to help with the rat infestation.',
       outcome:
-        ')ou smile broadly and ask the woman to lead • you to her house. It is a ramshackle dwelling half sunk into the muddy foundation. And inside there are certainly a lot of rats. You kill as many as you can, but in her cellar you a\tw\tw1 find a large hole leading to a section of sewer that recently collapsed, leaving the pests with nowhere else to go. The woman thanks you for at least helping her to he able to sleep tonight and hands you a few coins. Gain 2 gold each.',
+        'You smile broadly and ask the woman to lead you to her house. It is a ramshackle dwelling half sunk into the muddy foundation. And inside there are certainly a lot of rats. You kill as many as you can, but in her cellar you find a large hole leading to a section of sewer that recently collapsed, leaving the pests with nowhere else to go. The woman thanks you for at least helping her to he able to sleep tonight and hands you a few coins.\n\nGain 2 gold each.',
       imageUrl: '/assets/cards/events/base/city/ce-18-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-18-f.png',
