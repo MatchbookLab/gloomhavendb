@@ -596,17 +596,17 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 29,
     text:
-      "rou get word from a contact that there is trouble brewing down at the East Walls and decide to investigate. What you hnd is a large contingency of the city's Savvas workforce — the best builders you’ll hnd anywhere in open rebellion against the construction managers, demanding better pay for the specialized work they perform. '7his city would he a lifeless pile of rocks without us!*f one of the Savvas yells. “Its time we see some of its prosperity!” The manager on the other side of the argument looks like a captured mouse, not sure at all how to get out of the situation.",
+      'You get word from a contact that there is trouble brewing down at the East Walls and decide to investigate.\n\nWhat you find is a large contingency of the city\'s Savvas workforce — the best builders you\'ll find anywhere — in open rebellion against the construction managers, demanding better pay for the specialized work they perform. "This city would he a lifeless pile of rocks without us!" one of the Savvas yells. "Its time we see some of its prosperity!"\n\nThe manager on the other side of the argument looks like a captured mouse, not sure at all how to get out of the situation.',
     optionA: {
       choice: 'Talk to the Savvas, appealing to their sense of duty and community.',
       outcome:
-        "The workers' hard expressions soften a bit when they see a Savvas among you. You talk for a while and explain that they need the city just as much as the city needs them. In the end. you sell them on a smaller wage increase, and everyone returns to work. Gain I prosperity. OTHERWISE: Even after much effort, the workers won't speak to you at all, calling you part of the problem. The strike is eventually resolved, but no one seems happy. No effect.",
+        "CRAGHEART, ELEMENTALIST: The workers' hard expressions soften a bit when they see a Savvas among you. You talk for a while and explain that they need the city just as much as the city needs them. In the end, you sell them on a smaller wage increase, and everyone returns to work.\n\nGain 1 prosperity.\n\nOTHERWISE: Even after much effort, the workers won't speak to you at all, calling you part of the problem. The strike is eventually resolved, but no one seems happy.\n\nNo effect.",
       imageUrl: '/assets/cards/events/base/city/ce-29-b-a.png',
     },
     optionB: {
-      choice: 'Talk to the managers and attempt to get the Savvas better pay. Hfa f\tWL, I\tb,________________',
+      choice: 'Talk to the managers and attempt to get the Savvas better pay.',
       outcome:
-        '"Id just can \'t give them more # money!" the manager pleads. After some persuasion, though, he seems to open up to negotiation, [he workers and management meet halfway and everyone seems content. Gain 1 prosperity. OTHERWISE: You just can\'t get the manager to budge on his position, and he only gets angrier with continued pushing. The Savvas eventually agree tentatively to continue work, but the underlying problem remains. No effect.',
+        'SCOUNDREL, SAWBONES, SOOTHSINGER: "I-I just can\'t give them more money!" the manager pleads. After some persuasion, though, he seems to open up to negotiation, The workers and management meet halfway and everyone seems content.\n\nGain 1 prosperity.\n\nOTHERWISE: You just can\'t get the manager to budge on his position, and he only gets angrier with continued pushing. The Savvas eventually agree tentatively to continue work, but the underlying problem remains.\n\nNo effect.',
       imageUrl: '/assets/cards/events/base/city/ce-29-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-29-f.png',
