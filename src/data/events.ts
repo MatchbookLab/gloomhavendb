@@ -281,17 +281,17 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 14,
     text:
-      'You hear screams from the south as you approach the docks and see a group of women running toward you in a panic. "An invasion! They veil as they race by you, nearly knocking you over You hurry to the docks and find a crowd of workers on edge, armed with makeshift weapons and circling one particular pier. Standing at the far end of the wooden planks is a group of Lurkers — terrifying crab-like monsters as big as an Inox and equally ferocious. Except these Lurkers don\'t appear to be hostile. They are simply standing on the dock, clacking their claws in a strange rhythm.',
+      'You hear screams from the south as you approach the docks and see a group of women running toward you in a panic.\n\n"An invasion! They yell as they race by you, nearly knocking you over.\n\nYou hurry to the docks and find a crowd of workers on edge, armed with makeshift weapons and circling one particular pier.\n\nStanding at the far end of the wooden planks is a group of Lurkers — terrifying crab-like monsters as big as an Inox and equally ferocious. Except these Lurkers don\'t appear to be hostile. They are simply standing on the dock, clacking their claws in a strange rhythm.',
     optionA: {
       choice: 'Raise arms and fight the Lurkers back into the sea.',
       outcome:
-        'The crowd ports os you opprooch the dock with weapons drown. You step onto the soft wood ond the Lurkers turn toward you and stop clocking. They oil hiss ond brandish their clows in aggression. You charge forward ond meet the threat head-on, hacking away at their carapaces until they scuttle off the dock ond back into the water. r . . Gam 10 experience each.',
+        'The crowd parts as you approach the dock with weapons drawn. You step onto the soft wood ond the Lurkers turn toward you and stop clacking. They all hiss and brandish their claws in aggression. You charge forward and meet the threat head-on, hacking away at their carapaces until they scuttle off the dock and back into the water.\n\nGain 10 experience each.',
       imageUrl: '/assets/cards/events/base/city/ce-14-b-a.png',
     },
     optionB: {
       choice: 'Approach the Lurkers cautiously and attempt to communicate with them.',
       outcome:
-        'The crowd parts as you move toward the dock with both confidence and care. I he Lurkers notice your approach and continue to clack in your direction. You call out to them and ask why they are here, but all you get in response is a change in the tempo of their clacking. When you express conf usion, they clack again in frustration and scuttle back into the ocean. The crowd is very impressed that you managed to ward off the creatures without using force. Gain 2 reputation.',
+        'The crowd parts as you move toward the dock with both confidence and care. The Lurkers notice your approach and continue to clack in your direction. You call out to them and ask why they are here, but all you get in response is a change in the tempo of their clacking. When you express confusion, they clack again in frustration and scuttle back into the ocean. The crowd is very impressed that you managed to ward off the creatures without using force.\n\nGain 2 reputation.',
       imageUrl: '/assets/cards/events/base/city/ce-14-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-14-f.png',
