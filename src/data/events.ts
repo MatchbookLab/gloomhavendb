@@ -176,17 +176,17 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 9,
     text:
-      'After a night of heavy drinking, you get turned around while navigating the back alleys and find yourself standing before a collapsed section of bricked road that leads down into an underground tunnel Fueled by curiosity and a bit of liquid courage, you descend in search of adventure. Stumbling around in the vast network of tunnels proves rather fruitless, however, until a well-concealed passage leads you to a long-forgot ten stash of weaponry and dried food. The stuff could fetch a decent price at the Sunken Market, or you could turn it over to the city wt\t* guard, which is always in need arms and rations.',
+      'After a night of heavy drinking, you get turned around while navigating the back alleys and find yourself standing before a collapsed section of bricked road that leads down into an underground tunnel.\n\nFueled by curiosity and a bit of liquid courage, you descend in search of adventure. Stumbling around in the vast network of tunnels proves rather fruitless, however, until a well-concealed passage leads you to a long-forgotten stash of weaponry and dried food.\n\nThe stuff could fetch a decent price at the Sunken Market, or you could turn it over to the city guard, which is always in need arms and rations.',
     optionA: {
       choice: 'Sell the goods.',
       outcome:
-        "Using a fevv less-than-savory contacts, you 're • able to unload the goods for a respectable price. Who knew drunken strolls could prove so profitable? Gain 10 gold each. Reputation < -9: Gain 5 additional gold each.",
+        'Using a fevv less-than-savory contacts, you\'re able to unload the goods for a respectable price. Who knew drunken strolls could prove so profitable?\n\nGain 10 gold each.\n\nReputation < -9: Gain 5 additional gold each.',
       imageUrl: '/assets/cards/events/base/city/ce-09-b-a.png',
     },
     optionB: {
       choice: 'Donate the goods to the city.',
       outcome:
-        ')ou sleep off the previous nights revelries and approach the Captain of the Guard This is wonderful news! With attacks on i the citv becoming ever more frequentf our blacksmiths are having trouble keeping up with our demands. And the food should help considerably if we ever find ourselves under siege. This is truly a big help to the city ” Gain I prosperity.',
+        'You sleep off the previous nights revelries and approach the Captain of the Guard. "This is wonderful news! With attacks on the citv becoming ever more frequent our blacksmiths are having trouble keeping up with our demands. And the food should help considerably if we ever find ourselves under siege. This is truly a big help to the city."\n\nGain 1 prosperity.',
       imageUrl: '/assets/cards/events/base/city/ce-09-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-09-f.png',
