@@ -22,7 +22,7 @@ services:
       MAILGUN_DOMAIN: ${MAILGUN_DOMAIN}
 
   database:
-    image: postgres
+    image: postgres:11
     # TODO volumes
     environment:
       POSTGRES_DB: ${DATABASE_DATABASE}
