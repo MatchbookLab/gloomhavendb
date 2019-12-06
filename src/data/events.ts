@@ -134,17 +134,17 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 7,
     text:
-      "Occasionally your dealings in town lead you past the bustling docks. All conversation gets drowned out by the constant din ot loading and unloading cargo and crew; This makes it all the more surprising when you hear a voice above the noise directed straight at you. 'Oi! You with the hard looks and big arms! I desperately need some help o'er here! Spare a few minutes to help make sure I get out of port on timer Otherwise VII be stuck here until tomorrow!\"",
+      'Occasionally your dealings in town lead you past the bustling docks. All conversation gets drowned out by the constant din of loading and unloading cargo and crew. This makes it all the more surprising when you hear a voice above the noise directed straight at you.\n\n"Oi! You with the hard looks and big arms! I desperately need some help o\'er here! Spare a few minutes to help make sure I get out of port on time? Otherwise I''ll be stuck here until tomorrow!"',
     optionA: {
       choice: 'Help the captain load his ship.',
       outcome:
-        'B What was advertised as a few minutes turns • out to be an hour or two as you fug large crates full of some foul-smelling liquid from a nearby warehouse into the hold of the ship, At least the captain is relieved that he ll be able to set sail on time, though. He gratefully pavsyou, but you can t help but think that such menial labor might be beneath you. Gain 5 gold each. Reputation > 9: l ose I reputation. Reputation < -4: Gain I reputation.',
+        'What was advertised as a few minutes turns out to be an hour or two as you lug large crates full of some foul-smelling liquid from a nearby warehouse into the hold of the ship, At least the captain is relieved that he\'ll be able to set sail on time, though. He gratefully pays you, but you can\'t help but think that such menial labor might be beneath you.\n\nGain 5 gold each.\n\nReputation > 9: lose 1 reputation.\n\nReputation < -4: Gain 1 reputation.',
       imageUrl: '/assets/cards/events/base/city/ce-07-b-a.png',
     },
     optionB: {
-      choice: "Move on with your business. You don't have the time or inclination tor such things.",
+      choice: "Move on with your business. You don't have the time or inclination for such things.",
       outcome:
-        "Unwilling to be bothered by such trivial • matters, you continue on your way amidst curses from the ship's captain. Blast it all! You'll get nowhere in life with that sort of attitude!\" Reputation > 4: Gain 1 reputation. Reputation < -9: Lose I reputation.",
+        'Unwilling to be bothered by such trivial matters, you continue on your way amidst curses from the ship\'s captain. "Blast it all! You\'ll get nowhere in life with that sort of attitude!"\n\nReputation > 4: Gain 1 reputation.\n\nReputation < -9: Lose 1 reputation.',
       imageUrl: '/assets/cards/events/base/city/ce-07-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-07-f.png',
