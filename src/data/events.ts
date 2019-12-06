@@ -197,17 +197,17 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 10,
     text:
-      "Relaxing for the evening at the Sleeping Lion, a shifty-looking man approaches you, hand outstretched. In it are a pair of pale dice with crude marks scratched on them. 'Greetings, friends. You look like you could stand to liven things up a bit. Care for a quick game of bone dice with me? I'm sure we could make it interesting.\" His other hand pats a coin purse at his side.",
+      'Relaxing for the evening at the Sleeping Lion, a shifty-looking man approaches you, hand outstretched. In it are a pair of pale dice with crude marks scratched on them.\n\n "Greetings, friends. You look like you could stand to liven things up a bit. Care for a quick game of bone dice with me? I\'m sure we could make it interesting." His other hand pats a coin purse at his side.',
     optionA: {
       choice: 'Play a game with the man. It may prove to be a good time.',
       outcome:
-        'REPUTATIO\\ \' -5; You get into the game, but after a few rounds, your enthusiasm wanes as the man displays a streak ofluek that can onlv be described as "uncanny." Vou * * leave the table empty handed, Lose 5 gold each.\tiS8^ OTHERWISE; The man clearly intends to cheat you out of vour hard-earned money. ^\t#\tw Hes not the only one capable of cheating, however. Altera few rounds,you wipe that smile right off his face. Gain 5 gold each.',
+        'REPUTATION > -5: You get into the game, but after a few rounds, your enthusiasm wanes as the man displays a streak of luck that can only be described as "uncanny" You leave the table empty handed.\n\nLose 5 gold each.\n\nOTHERWISE; The man clearly intends to cheat you out of vour hard-earned money. He\'s not the only one capable of cheating, however. After a few rounds,you wipe that smile right off his face.\n\nGain 5 gold each.',
       imageUrl: '/assets/cards/events/base/city/ce-10-b-a.png',
     },
     optionB: {
       choice: 'Refuse the game of dice.',
       outcome:
-        'Kou laugh and wave awa\\ the man s offer. )ou • get all the excitement you need fighting toe- to-toe against vicious monsters. In combat, what matters most is planning and tactics, which are far more interesting than some random roll of the dice. Gain 1 reputation.',
+        'You laugh and wave away the man\'s offer. Youg et all the excitement you need fighting toe- to-toe against vicious monsters. In combat, what matters most is planning and tactics, which are far more interesting than some random roll of the dice.\n\nGain 1 reputation.',
       imageUrl: '/assets/cards/events/base/city/ce-10-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-10-f.png',
