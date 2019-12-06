@@ -302,17 +302,17 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 15,
     text:
-      "It was a truly marvelous night, full of alcohol and fuzzy memories. You are heading hack to your rooms in high spirits when you take a wrong turn into an alley and trip over a mutilated corpse, 'What '$ all thisr then? You look up to see a city guard walk into the alley; annoyed by all the noise you were making in your revelry Before you can react, he draws his sword. \"You... what did you do?” You look and see that, due to the fall your clothes are now covered in blood. The guard clearly thinks you are responsible for the man s death, This night just took a serious turn for the worse,",
+      'It was a truly marvelous night, full of alcohol and fuzzy memories. You are heading hack to your rooms in high spirits when you take a wrong turn into an alley and trip over a mutilated corpse.\n\n "What''s all this then?" You look up to see a city guard walk into the alley, annoyed by all the noise you were making in your revelry.\n\nBefore you can react, he draws his sword. "You... what did you do?"\n\nYou look and see that, due to the fall, your clothes are now covered in blood. The guard clearly thinks you are responsible for the man\'s death, This night just took a serious turn for the worse.',
     optionA: {
       choice: 'Do your best to explain that the man was like this when you found him.',
       outcome:
-        "REPUTATION > 5* You sober up pretty quickly ancf explain the situation. Lucidly the guard is familiar with your reputation and believes your story A fter a few more questions, he allows you to leave and clean up. No effect. OTHERWISE: Attempts to explain yourself just seem to make the situation worse. More guards show up and everyone eyes you suspiciously Luckily your weapons don't match the man s woundst and the guards let you go, but they do so with a mistrustful ■■■■■■■■I Lose 2 reputation.",
+        "REPUTATION > 5: You sober up pretty quickly and explain the situation. Luckily the guard is familiar with your reputation and believes your story A fter a few more questions, he allows you to leave and clean up.\n\nNo effect.\n\nOTHERWISE: Attempts to explain yourself just seem to make the situation worse. More guards show up and everyone eyes you suspiciously. Luckily your weapons don't match the man's wounds and the guards let you go, but they do so with a mistrustful glare.\n\nLose 2 reputation.",
       imageUrl: '/assets/cards/events/base/city/ce-15-b-a.png',
     },
     optionB: {
       choice: 'Panic and kill the guard, then dispose of both corpses.',
       outcome:
-        "The unlucky guard falls to your blade before he is able to call for help. If the bodies are found, it could cause a lot of trouble for you. PAY 95 COLLECTIVE GOLD: You go looking someone who can properly dispose of the mesSr It's not cheap, but one of your contacts promises to make the bodies disappear No effect. 07 HER WISE: Knowing you don't have enough to professional help, you spend all night cleaning up the mess before anyone discovers it. Lose I",
+        "The unlucky guard falls to your blade before he is able to call for help. If the bodies are found, it could cause a lot of trouble for you.\n\nPAY 15 COLLECTIVE GOLD: You go looking someone who can properly dispose of the mess. It's not cheap, but one of your contacts promises to make the bodies disappear.\n\nNo effect.\n\nOTHERWISE: Knowing you don't have enough to professional help, you spend all night cleaning up the mess before anyone discovers it.\n\nLose 1 CHECKMARK",
       imageUrl: '/assets/cards/events/base/city/ce-15-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-15-f.png',
