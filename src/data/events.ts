@@ -260,17 +260,17 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 13,
     text:
-      'You are walking across the Silent Bridge, headed toward the Sleeping Lion to get a quick meal, when you sec a Quatryl standing in front of a small cart laden with plates of food and curious cont rapt ions. "Come trv the delicacies of the East!" the Quatryl harks. "Food enhanced with science! h favors beyond your wildest imagination!"',
+      'You are walking across the Silent Bridge, headed toward the Sleeping Lion to get a quick meal, when you sec a Quatryl standing in front of a small cart laden with plates of food and curious cont raptions.\n\n"Come try the delicacies of the East!" the Quatryl barks. "Food enhanced with science!  Flavors beyond your wildest imagination!"',
     optionA: {
       choice: 'Stop and try the food.',
       outcome:
-        'RYou decide to indulge in the unknown and • see what the Qua try! is offering. He looks very pleased at your approach and instructs you to inhale a tube of vapors, then take a bite from a bowl full of tiny golden spheres. As the spheres melt in your mouth, the taste mixes with the aroma of the vapors to create a wonderful experience. You pay what you can, but the Quatryl seems solely focused on how much you enjoyed the meal. All start scenario with BLF.SS Lose 3 gold each.',
+        'You decide to indulge in the unknown and see what the Quatryl is offering. He looks very pleased at your approach and instructs you to inhale a tube of vapors, then take a bite from a bowl full of tiny golden spheres. As the spheres melt in your mouth, the taste mixes with the aroma of the vapors to create a wonderful experience. You pay what you can, but the Quatryl seems solely focused on how much you enjoyed the meal.\n\nAll start scenario with BLESS.\n\nLose 3 gold each.',
       imageUrl: '/assets/cards/events/base/city/ce-13-b-a.png',
     },
     optionB: {
-      choice: 'Continue on your way to a less adventurous meal. /',
+      choice: 'Continue on your way to a less adventurous meal.',
       outcome:
-        'After a quick glance at the cart, you are not even sure how you would go about eating most of the food Best to play it safe in these situations and stick to what you know will hll you up cheaply. No efleet.',
+        'After a quick glance at the cart, you are not even sure how you would go about eating most of the food Best to play it safe in these situations and stick to what you know will fill you up cheaply.\n\nNo effect.',
       imageUrl: '/assets/cards/events/base/city/ce-13-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-13-f.png',
