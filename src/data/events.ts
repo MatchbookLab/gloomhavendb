@@ -390,13 +390,13 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Attend the wedding with an expensive gift.',
       outcome:
-        'REPUTATION - 9. PAY20 COLLECTIVE COLD: You head to the New Market and find a magnificent vast" to bring as a gif t. When the father of the bride sees it, he declares it the most wonderful piece he \'s ever encountered. )oty are the talk ol the town. G^in 2 reputation. REPUTATION < 10, PAY20 COLLECTIVE COLDi You bring a very expensive vase as a gift, but you can t seem to catch the father of the bride s eve to present it at the right time. No OTHERWISE: Read outcome B.',
+        'REPUTATION > 9. PAY 20 COLLECTIVE COLD: You head to the New Market and find a magnificent vase to bring as a gift. When the father of the bride sees it, he declares it the most wonderful piece he\'s ever encountered. You are the talk ol the town.\n\nGain 2 reputation.\n\nREPUTATION < 10, PAY 20 COLLECTIVE COLD: You bring a very expensive vase as a gift, but you can\'t seem to catch the father of the bride\'s eve to present it at the right time.\n\nNo effect.\n\nOTHERWISE: Read outcome B.',
       imageUrl: '/assets/cards/events/base/city/ce-19-b-a.png',
     },
     optionB: {
       choice: 'Attend the wedding and bring a mundane gift. /',
       outcome:
-        'REPUTA T10N < -4- You pick up an unremarkable set of silverware on the wav to the event. When you arrive, the father of the bride casts a scornful look vour wav J\tw and begins whispering to those around him. Maybe you received the invitation by mistake. Lose 5 collective gold. Lose 1 reputation. OTHERWISE: You are one guest among many, and everyone is having too good of a time to notice your poor choice ih gifts. Lose 5 collective gold.',
+        'REPUTATI0N < -4: You pick up an unremarkable set of silverware on the wav to the event. When you arrive, the father of the bride casts a scornful look vour way and begins whispering to those around him. Maybe you received the invitation by mistake.\n\nLose 5 collective gold.\n\nLose 1 reputation.\n\nOTHERWISE: You are one guest among many, and everyone is having too good of a time to notice your poor choice in gifts.\n\nLose 5 collective gold.',
       imageUrl: '/assets/cards/events/base/city/ce-19-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-19-f.png',
