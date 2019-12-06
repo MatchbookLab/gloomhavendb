@@ -470,17 +470,17 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 23,
     text:
-      'You are walking home late at night when you hear some sus- sounds coming from a nearby You move to investigate, and a shadowy figure holts in the opposite direct carrying an armful of vegetables.',
+      'You are walking home late at night when you hear some suspicious sounds coming from a nearby garden.\n\nYou move to investigate, and a shadowy figure holts in the opposite direct carrying an armful of vegetables.',
     optionA: {
       choice: 'Give chase. Thieves must be brought to justice.',
       outcome:
-        'The figure overburdened with vegetables is • no match for your speed. You quickly run him down and deliver him to the city guard. Thankfully very little of the produce w<js damaged in the pursuit, and you are able to return it to the owner of the garden. Gain I reputation.',
+        'The figure overburdened with vegetables is no match for your speed. You quickly run him down and deliver him to the city guard. Thankfully very little of the produce was damaged in the pursuit, and you are able to return it to the owner of the garden.\n\nGain 1 reputation.',
       imageUrl: '/assets/cards/events/base/city/ce-23-b-a.png',
     },
     optionB: {
-      choice: 'The thief had the right idea. Grab some vegetables for yourself. picious garden.',
+      choice: 'The thief had the right idea. Grab some vegetables for yourself.',
       outcome:
-        'In an area cut off from civilization with no • viable farmland, fresh vegetables are a rare commodity. The thiefalready made off with an armful so what s the harm in taking some more? When you get back to your room, you cook up a nice hearty soup and have a great meal. All start scenario with BLHSS',
+        'In an area cut off from civilization with no • viable farmland, fresh vegetables are a rare commodity. The thiefalready made off with an armful so what\'s the harm in taking some more? When you get back to your room, you cook up a nice hearty soup and have a great meal. All start scenario with BLESS',
       imageUrl: '/assets/cards/events/base/city/ce-23-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-23-f.png',
