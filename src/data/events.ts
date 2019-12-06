@@ -239,17 +239,17 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 12,
     text:
-      'A great revelry is underway at the New Market when you arrive to purchase supplies. Investigating further, vou discover the town is in the - midst of a pie-eating contest. A group of large sailors sits triumphantly at a long table on a makeshift stage, crumbs and bits of fruit scattered all around. A man in the center stands and addresses the crowd[ \'Can no one best our pie-eating prowess? Step up and test your mettle!" With nothing better to do, you head up to the stage. The contest goes well fora while as you match the others pie-for-pie, but soon your eating starts to slow; and the sailors are still going strong.',
+      'A great revelry is underway at the New Market when you arrive to purchase supplies. Investigating further, vou discover the town is in the midst of a pie-eating contest.\n\nA group of large sailors sits triumphantly at a long table on a makeshift stage, crumbs and bits of fruit scattered all around. A man in the center stands and addresses the crowd.\n\n"Can no one best our pie-eating prowess? Step up and test your mettle!" With nothing better to do, you head up to the stage.\n\nThe contest goes well for a while as you match the others pie-for-pie, but soon your eating starts to slow, and the sailors are still going strong.',
     optionA: {
       choice: 'Yield to the pie and admit defeat.',
       outcome:
-        "You put down vour utensils and yield to the sailors. They roar with pride and slap vou on the back. Unfortunately, the sudden jolt doesn't sit well with your stomach, and soon S\t9 all the pies you ate arc coming hack up. much to the disgust of the gathered crowd. Lose 1 reputation.",
+        "You put down vour utensils and yield to the sailors. They roar with pride and slap vou on the back. Unfortunately, the sudden jolt doesn't sit well with your stomach, and soon all the pies you ate are coming back up, much to the disgust of the gathered crowd.\n\n Lose 1 reputation.",
       imageUrl: '/assets/cards/events/base/city/ce-12-b-a.png',
     },
     optionB: {
       choice: 'Power through the pain. You will not be bested!',
       outcome:
-        ">bi/ emit a primal yell and continue eating. Pie alter pie, your willpower cannot be broken, and eventually the sailors are forced to concede. However, you cannot even stand to shake your foes' hands. Your legs are bonelesst and your stomach feels worse than it has ever felt before. You have earned glory and prize money, but all you want to do is lie down and wait for the horror to pass. Lose 1 v* Gain 10 gold each. Gain 1 reputation.",
+        "You emit a primal yell and continue eating. Pie after pie, your willpower cannot be broken, and eventually the sailors are forced to concede. However, you cannot even stand to shake your foes' hands. Your legs are boneless and your stomach feels worse than it has ever felt before. You have earned glory and prize money, but all you want to do is lie down and wait for the horror to pass.\n\nLose 1 CHECKMARK.\n\nGain 10 gold each.\n\nGain 1 reputation.",
       imageUrl: '/assets/cards/events/base/city/ce-12-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-12-f.png',
