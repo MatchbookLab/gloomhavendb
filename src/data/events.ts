@@ -28,17 +28,17 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 2,
     text:
-      '>45 the daylight fades, you find yourselves wandering through a half-crowded market street, browsing wares.\tI 4Hev! Over here! You turn in the direction * ot the voice to see a filthy Vermling gesturing from a dark alley. “Yeah, you grim-looking chaps. I have something you might he interested in." The Vermling holds out a piece of metal covered in sludge. "Found this in the sewer. Writing on it I don\'t understand, but I know it\'s valuable. You can have it for ten gold! "',
+      'As the daylight fades, you find yourselves wandering through a half-crowded market street, browsing wares.\n\n "Hey! Over here!" You turn in the direction of the voice to see a filthy Vermling gesturing from a dark alley. "Yeah, you grim-looking chaps. I have something you might he interested in."\n\n The Vermling holds out a piece of metal covered in sludge. "Found this in the sewer. Writing on it I don\'t understand, but I know it\'s valuable. You can have it for ten gold!"',
     optionA: {
       choice: 'Pay for the thing. You never know.',
       outcome:
-        'PAY 10 COLLECTIVE GOLD: You hand over the gold and take hold ot the piece of garbage. Amidst troubling brown smears you see a lot of meaningless scratches likely made by rats and bugs. Oh well. Sometimes the long shot doesn t pay off. No effect. OTHERWISE: "Bah! You don\'t have enough. Come back when you do!" No effect.',
+        'PAY 10 COLLECTIVE GOLD: You hand over the gold and take hold of the piece of garbage. Amidst troubling brown smears you see a lot of meaningless scratches likely made by rats and bugs. Oh well. Sometimes the long shot doesn\'t pay off.\n\n No effect.\n\n OTHERWISE: "Bah! You don\'t have enough. Come back when you do!" No effect.',
       imageUrl: '/assets/cards/events/base/city/ce-02-b-a.png',
     },
     optionB: {
       choice: 'Refuse to pay. Never trust a Vermling.',
       outcome:
-        'You laugh and gesture the Vermiing away. You can recognize a low-life swindler when you see one. And that piece of garbage was just...foul No effect.',
+        'You laugh and gesture the Vermling away. You can recognize a low-life swindler when you see one. And that piece of garbage was just...foul.\n\n No effect.',
       imageUrl: '/assets/cards/events/base/city/ce-02-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-02-f.png',
