@@ -344,17 +344,17 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 17,
     text:
-      "Returning to Gloomhaven with vour latest haul of' treasure, you if\tr ^ approach the market in search of a good trade. Unfortunately, there are only a few visible stands around that are not yet packing up for the day. A robed Savvas catches your eye. It has a few strange artifacts on display, but you approach with no great expectation, hoping vour goods will fetch a decent price. The Savvas silently nods as you approach. It picks through your haul and lifts up a single item, holding out a small bag for you in exchange. Pouring out the bags contents, a single rectangular black-and white coin lands in vour palm. .■1‘ I u.\t-i\tj\t\" vVj\t'AfV-\t«",
+      "Returning to Gloomhaven with vour latest haul of' treasure, you approach the market in search of a good trade. Unfortunately, there are only a few visible stands around that are not yet packing up for the day.\n\nA robed Savvas catches your eye. It has a few strange artifacts on display, but you approach with no great expectation, hoping vour goods will fetch a decent price.\n\nThe Savvas silently nods as you approach. It picks through your haul and lifts up a single item, holding out a small bag for you in exchange.\n\nPouring out the bag's contents, a single rectangular black-and-white coin lands in vour palm.",
     optionA: {
-      choice: 'Demand a diderent payment. The single coin is an insult, f',
+      choice: 'Demand a different payment. The single coin is an insult.',
       outcome:
-        "You slam the strange coin back down onto the Savvas' display in anger. It reaches out to grab the coin, but you take hold of ’its arm and demand a proper payment. Wordlessly, it looks at you with disdain and throws a handful of gold in vour face. You shield vour eyes and move to draw your weapon, hut when you look around, the Savvas and its goods are no longer to be found. You sullenly gather the coins it threw and move on. Gain 10 collective gold.",
+        "You slam the strange coin back down onto the Savvas' display in anger. It reaches out to grab the coin, but you take hold of its arm and demand a proper payment. Wordlessly, it looks at you with disdain and throws a handful of gold in vour face. You shield vour eyes and move to draw your weapon, but when you look around, the Savvas and its goods are no longer to be found. You sullenly gather the coins it threw and move on.\n\nGain 10 collective gold.",
       imageUrl: '/assets/cards/events/base/city/ce-17-b-a.png',
     },
     optionB: {
       choice: 'Accept the strange coin and research it for hidden value.',
       outcome:
-        'You calmly assess that the coin may possess much more value than it appears to have. * Vbu head to the University and spend hours looking through old records to no avail. You end the day in a tavern, easing the frustration with a drink and loud laments about the coin. Those markings are very interesting. ” You look up to see an Aesther standing over you. “They describe a special meeting place♦ / can show you whereT* V Unlock “Temple of the Eclipse" © (D-2).',
+        'You calmly assess that the coin may possess much more value than it appears to have. You head to the University and spend hours looking through old records to no avail. You end the day in a tavern, easing the frustration with a drink and loud laments about the coin.\n\n"Those markings are very interesting." You look up to see an Aesther standing over you. "They describe a special meeting place. I can show you where."\n\nUnlock "Temple of the Eclipse" 81 (D-2).',
       imageUrl: '/assets/cards/events/base/city/ce-17-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-17-f.png',
