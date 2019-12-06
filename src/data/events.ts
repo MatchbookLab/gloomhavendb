@@ -112,18 +112,18 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 6,
     text:
-      "You awake in the middle of the night to the sound of alarms ringing in the west. You recognize them as the warning clangs of an attack on the wall. Any force hold enough to assault the defenses of Gloomhaven can't be good, For a moment you are grateful for the prolific number of guards defending the city. But still, there is always the possibility that the guards may not be enough.",
+      "You awake in the middle of the night to the sound of alarms ringing in the west. You recognize them as the warning clangs of an attack on the wall.\n\nAny force bold enough to assault the defenses of Gloomhaven can't be good, For a moment you are grateful for the prolific number of guards defending the city. But still, there is always the possibility that the guards may not be enough.",
     optionA: {
       choice: 'Go aid in the defense of the city.',
       outcome:
-        'You rush toward the West Gate, eager to fight back the invaders. As you approach, you see j mass of Vcrmlings climbing over the wall and attacking the guards with daggers and arrows. You yell and charge into the battle. It is a rough fight, but you emerge victorious, covered in fur and blood. The citizens of Gloomhaven remain safe, and the town is free to grow and prosper. Gain 5 experience each. Gain I prosperity.',
+        'You rush toward the West Gate, eager to fight back the invaders. As you approach, you see a mass of Vcrmlings climbing over the wall and attacking the guards with daggers and arrows. You yell and charge into the battle. It is a rough fight, but you emerge victorious, covered in fur and blood. The citizens of Gloomhaven remain safe, and the town is free to grow and prosper.\n\nGain 5 experience each.\n\nGain 1 prosperity.',
       imageUrl: '/assets/cards/events/base/city/ce-06-b-a.png',
     },
     optionB: {
       choice:
         'If the guards are distracted by an attacking force, now would be the perfect time to steal some valuables.',
       outcome:
-        "The town erupts into chaos with panicked cries of 'JVernllings!,'— a perfect opportunity to collect some valuables. Slinking around to an abandoned shop, you find a way in and pilfer the safe. In the morning, the devastation from the assault is noticeable. Downtrodden looks greet you as you passr and you wonder if your presence was missed along the walls. Gain Random Item Design. Reputation > 4: Lose 1 reputation.",
+        'The town erupts into chaos with panicked cries of "Vermlings!" — a perfect opportunity to collect some valuables. Slinking around to an abandoned shop, you find a way in and pilfer the safe. In the morning, the devastation from the assault is noticeable. Downtrodden looks greet you as you passr and you wonder if your presence was missed along the walls.\n\nGain Random Item Design.\n\nReputation > 4: Lose 1 reputation.',
       imageUrl: '/assets/cards/events/base/city/ce-06-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-06-f.png',
