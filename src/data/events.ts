@@ -575,17 +575,17 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 28,
     text:
-      'Ah, the Sleeping Lion. Surely there is no better place to get a drink and relax after clearing out some dank dungeon. On this particular occasion, though, you are approached by a heavily scarred Inox. She sits at your table and pushes forward a piece of paper. "An interested party would like to hire you to steal a valuable hgurine from a residence in the Battlements," she savs matter-of-factlv. "The details are on the paper Meet me in the hack alley in two days time after the job is done.\'',
+      'Ah, the Sleeping Lion. Surely there is no better place to get a drink and relax after clearing out some dank dungeon.\n\nOn this particular occasion, though, you are approached by a heavily scarred Inox. She sits at your table and pushes forward a piece of paper.\n\n"An interested party would like to hire you to steal a valuable figurine from a residence in the Battlements." she says matter-of-factlv. "The details are on the paper. Meet me in the hack alley in two days\' time after the job is done."',
     optionA: {
       choice: 'Accept the mysterious job. You can handle anything.',
       outcome:
-        "; The job proves easy enough with the proper expertise. The plans are simple, and you are in and out of the estate easily, free to meet up with the Inox and claim your payment. Gain 10 gold each. OTHERWISE: It turns out confidence isn't enough when it comes to sneaking in and out of a well-guarded estate without being seen. You didn t get the fig urine, and one ol t he guards got a pretty good look at you. Lose 3 reputation.",
+        "SCOUNDREL, MINDTHIEF, NIGHTSHROUD: The job proves easy enough with the proper expertise. The plans are simple, and you are in and out of the estate easily, free to meet up with the Inox and claim your payment.\n\nGain 10 gold each.\n\nOTHERWISE: It turns out confidence isn't enough when it comes to sneaking in and out of a well-guarded estate without being seen. You didn't get the figurine, and one of the guards got a pretty good look at you.\n\nLose 3 reputation.",
       imageUrl: '/assets/cards/events/base/city/ce-28-b-a.png',
     },
     optionB: {
       choice: "Incredulously explain she must have the wrong people and you won't take the job.",
       outcome:
-        'BYou grab the Inoxs arm as she is getting up • to leave and push the paper back toward her. She looks incredibly angry as you explain that your group doesn t do this sort of thing. She wordlessly grabs the plans and storms out of the bar. No effect.',
+        'You grab the Inox\'s arm as she is getting up to leave and push the paper back toward her. She looks incredibly angry as you explain that your group doesn\'t do this sort of thing. She wordlessly grabs the plans and storms out of the bar.\n\nNo effect.',
       imageUrl: '/assets/cards/events/base/city/ce-28-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-28-f.png',
