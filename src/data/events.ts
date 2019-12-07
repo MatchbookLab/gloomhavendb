@@ -80,7 +80,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Reassure the boy and go find the cat.',
       outcome:
-        'You approach the foreboding house full of heroic bravado. There\'s certainly nothing otherworldly about the structure, but its fallen beams and piles of rubble do make it difficult to look around. By the time you find the cat hiding under a burned-out bed frame, you are utterly exhausted. At least the boy is ecstatic his cat has been found.\n\nLose 1 CHECKMARK each.\n\nGain 1 reputation.',
+        'You approach the foreboding house full of heroic bravado. There\'s certainly nothing otherworldly about the structure, but its fallen beams and piles of rubble do make it difficult to look around. By the time you find the cat hiding under a burned-out bed frame, you are utterly exhausted. At least the boy is ecstatic his cat has been found.\n\nLose 1 {Check} each.\n\nGain 1 reputation.',
       imageUrl: '/assets/cards/events/base/city/ce-04-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-04-f.png',
@@ -95,7 +95,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Go help lay the foundation.',
       outcome:
-        'Amidst a great deal of revelry, you put all you have into laying the foundation of the sanctuary. Surely much good will be done here healing the sick and wounded. After all your exhaustive efforts, though, you might end up being their first patients.\n\nLose 1 CHECKMARK\n\nGain 1 reputation.\n\nGain 1 prosperity.',
+        'Amidst a great deal of revelry, you put all you have into laying the foundation of the sanctuary. Surely much good will be done here healing the sick and wounded. After all your exhaustive efforts, though, you might end up being their first patients.\n\nLose 1 {Check}\n\nGain 1 reputation.\n\nGain 1 prosperity.',
       imageUrl: '/assets/cards/events/base/city/ce-05-b-a.png',
     },
     optionB: {
@@ -249,7 +249,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Power through the pain. You will not be bested!',
       outcome:
-        "You emit a primal yell and continue eating. Pie after pie, your willpower cannot be broken, and eventually the sailors are forced to concede. However, you cannot even stand to shake your foes' hands. Your legs are boneless and your stomach feels worse than it has ever felt before. You have earned glory and prize money, but all you want to do is lie down and wait for the horror to pass.\n\nLose 1 CHECKMARK.\n\nGain 10 gold each.\n\nGain 1 reputation.",
+        "You emit a primal yell and continue eating. Pie after pie, your willpower cannot be broken, and eventually the sailors are forced to concede. However, you cannot even stand to shake your foes' hands. Your legs are boneless and your stomach feels worse than it has ever felt before. You have earned glory and prize money, but all you want to do is lie down and wait for the horror to pass.\n\nLose 1 {Check}.\n\nGain 10 gold each.\n\nGain 1 reputation.",
       imageUrl: '/assets/cards/events/base/city/ce-12-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-12-f.png',
@@ -264,7 +264,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Stop and try the food.',
       outcome:
-        'You decide to indulge in the unknown and see what the Quatryl is offering. He looks very pleased at your approach and instructs you to inhale a tube of vapors, then take a bite from a bowl full of tiny golden spheres. As the spheres melt in your mouth, the taste mixes with the aroma of the vapors to create a wonderful experience. You pay what you can, but the Quatryl seems solely focused on how much you enjoyed the meal.\n\nAll start scenario with BLESS.\n\nLose 3 gold each.',
+        'You decide to indulge in the unknown and see what the Quatryl is offering. He looks very pleased at your approach and instructs you to inhale a tube of vapors, then take a bite from a bowl full of tiny golden spheres. As the spheres melt in your mouth, the taste mixes with the aroma of the vapors to create a wonderful experience. You pay what you can, but the Quatryl seems solely focused on how much you enjoyed the meal.\n\nAll start scenario with {Bless}.\n\nLose 3 gold each.',
       imageUrl: '/assets/cards/events/base/city/ce-13-b-a.png',
     },
     optionB: {
@@ -312,7 +312,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Panic and kill the guard, then dispose of both corpses.',
       outcome:
-        "The unlucky guard falls to your blade before he is able to call for help. If the bodies are found, it could cause a lot of trouble for you.\n\nPAY 15 COLLECTIVE GOLD: You go looking someone who can properly dispose of the mess. It's not cheap, but one of your contacts promises to make the bodies disappear.\n\nNo effect.\n\nOTHERWISE: Knowing you don't have enough to professional help, you spend all night cleaning up the mess before anyone discovers it.\n\nLose 1 CHECKMARK",
+        "The unlucky guard falls to your blade before he is able to call for help. If the bodies are found, it could cause a lot of trouble for you.\n\nPAY 15 COLLECTIVE GOLD: You go looking someone who can properly dispose of the mess. It's not cheap, but one of your contacts promises to make the bodies disappear.\n\nNo effect.\n\nOTHERWISE: Knowing you don't have enough to professional help, you spend all night cleaning up the mess before anyone discovers it.\n\nLose 1 {Check}",
       imageUrl: '/assets/cards/events/base/city/ce-15-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-15-f.png',
@@ -459,7 +459,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Leave the criminal element alone and continue enjoying the show.',
       outcome:
-        'The music is too good to be interrupted You ignore the men in the back and simply have a great time.\n\nGain 1 CHECKMARK each.',
+        'The music is too good to be interrupted You ignore the men in the back and simply have a great time.\n\nGain 1 {Check} each.',
       imageUrl: '/assets/cards/events/base/city/ce-22-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-22-f.png',
@@ -480,7 +480,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'The thief had the right idea. Grab some vegetables for yourself.',
       outcome:
-        'In an area cut off from civilization with no • viable farmland, fresh vegetables are a rare commodity. The thiefalready made off with an armful so what\'s the harm in taking some more? When you get back to your room, you cook up a nice hearty soup and have a great meal. All start scenario with BLESS',
+        'In an area cut off from civilization with no • viable farmland, fresh vegetables are a rare commodity. The thiefalready made off with an armful so what\'s the harm in taking some more? When you get back to your room, you cook up a nice hearty soup and have a great meal. All start scenario with {Bless}',
       imageUrl: '/assets/cards/events/base/city/ce-23-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-23-f.png',
@@ -516,7 +516,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Attempt to catch the vase.',
       outcome:
-        "BRUTE, CRAGHEART, BERSERKER: You race forward and wrap your arms around the vase. You manage to keep grip of it, preventing tragedy. The Vairath is relieved and offers to pay you for your trouble if you carry it the rest of the way.\n\nGain 5 collective gold.\n\nOTHERWISE: You race forward and attempt to catch the vase, but it is too much for you. Your grip loosens and the vase shatters into a hundred pieces. The Valrath is irate, demanding compensation from you for breaking it. You pay him what you can.\n\nLose 10 collective gold.",
+        "{Brute}, {Cragheart}, {LightningBolts}: You race forward and wrap your arms around the vase. You manage to keep grip of it, preventing tragedy. The Vairath is relieved and offers to pay you for your trouble if you carry it the rest of the way.\n\nGain 5 collective gold.\n\nOTHERWISE: You race forward and attempt to catch the vase, but it is too much for you. Your grip loosens and the vase shatters into a hundred pieces. The Valrath is irate, demanding compensation from you for breaking it. You pay him what you can.\n\nLose 10 collective gold.",
       imageUrl: '/assets/cards/events/base/city/ce-25-b-a.png',
     },
     optionB: {
@@ -537,13 +537,13 @@ export const events: EventEntity[] = [
     optionA: {
       choice: "Offer to fix the lamps. It shouldn't be too hard with a bit of technical know-how.",
       outcome:
-        "TINKERER: You quickly identify the source of the problem — some frayed wiring in the kitchen — and have it replaced in no time. The proprietor seems very impressed by your work and gives free drinks all around in your name.\n\nGain 2 reputation.\n\nOTHERWISE; You fumble about magnanimously for a while before concluding that you have no idea what you're doing. The proprietor looks disappointed and sends out for a real tinkerer.\n\nNo effect.",
+        "{Tinkerer}: You quickly identify the source of the problem — some frayed wiring in the kitchen — and have it replaced in no time. The proprietor seems very impressed by your work and gives free drinks all around in your name.\n\nGain 2 reputation.\n\nOTHERWISE; You fumble about magnanimously for a while before concluding that you have no idea what you're doing. The proprietor looks disappointed and sends out for a real tinkerer.\n\nNo effect.",
       imageUrl: '/assets/cards/events/base/city/ce-26-b-a.png',
     },
     optionB: {
       choice: 'Take the opportunity to steal some valuables from drunk patrons in the dark.',
       outcome:
-        'SCOUNDREL, MINDTHIEF, NIGHTSHROUD: The darkness gives the less scrupulous among you a good chance to perform their craft. Within a matter of minutes, your coin purses are much heavier.\n\nGain 10 collective gold.\n\nOTHERWISE: You attempt to lighten some purses, hut even in the dark, you find the task a little outside your skill set. One patron catches your hand as it searches his belt. He starts yelling, and you flee as quickly as possible.\n\nLose 1 reputation.',
+        '{Scoundrel}, {Mindthief}, {Eclipse}: The darkness gives the less scrupulous among you a good chance to perform their craft. Within a matter of minutes, your coin purses are much heavier.\n\nGain 10 collective gold.\n\nOTHERWISE: You attempt to lighten some purses, hut even in the dark, you find the task a little outside your skill set. One patron catches your hand as it searches his belt. He starts yelling, and you flee as quickly as possible.\n\nLose 1 reputation.',
       imageUrl: '/assets/cards/events/base/city/ce-26-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-26-f.png',
@@ -558,7 +558,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Attempt to stop the crowd from hanging the Vermling,',
       outcome:
-        "SPELLWEAVER, DOOMSTALKER, SOOTHSINGER: You keep a calm demeanor as you try to talk down the mob. It takes some effort, but the men finally agree to turn the thief over to the authorities, which stops the situation from devolving into chaos.\n\nGain 1 prosperity.\n\nOTHERWISE: You kindly entreat the crowd to back down, and when that doesn't work, you resort to force. No one seems happy that you stopped the hanging, but it was the right thing to do.\n\nLose 1 reputation.",
+        "{Spellweaver}, {PointyHead}, {MusicNote}: You keep a calm demeanor as you try to talk down the mob. It takes some effort, but the men finally agree to turn the thief over to the authorities, which stops the situation from devolving into chaos.\n\nGain 1 prosperity.\n\nOTHERWISE: You kindly entreat the crowd to back down, and when that doesn't work, you resort to force. No one seems happy that you stopped the hanging, but it was the right thing to do.\n\nLose 1 reputation.",
       imageUrl: '/assets/cards/events/base/city/ce-27-b-a.png',
     },
     optionB: {
@@ -579,7 +579,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Accept the mysterious job. You can handle anything.',
       outcome:
-        "SCOUNDREL, MINDTHIEF, NIGHTSHROUD: The job proves easy enough with the proper expertise. The plans are simple, and you are in and out of the estate easily, free to meet up with the Inox and claim your payment.\n\nGain 10 gold each.\n\nOTHERWISE: It turns out confidence isn't enough when it comes to sneaking in and out of a well-guarded estate without being seen. You didn't get the figurine, and one of the guards got a pretty good look at you.\n\nLose 3 reputation.",
+        "{Scoundrel}, {Mindthief}, {Eclipse}: The job proves easy enough with the proper expertise. The plans are simple, and you are in and out of the estate easily, free to meet up with the Inox and claim your payment.\n\nGain 10 gold each.\n\nOTHERWISE: It turns out confidence isn't enough when it comes to sneaking in and out of a well-guarded estate without being seen. You didn't get the figurine, and one of the guards got a pretty good look at you.\n\nLose 3 reputation.",
       imageUrl: '/assets/cards/events/base/city/ce-28-b-a.png',
     },
     optionB: {
@@ -600,13 +600,13 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Talk to the Savvas, appealing to their sense of duty and community.',
       outcome:
-        "CRAGHEART, ELEMENTALIST: The workers' hard expressions soften a bit when they see a Savvas among you. You talk for a while and explain that they need the city just as much as the city needs them. In the end, you sell them on a smaller wage increase, and everyone returns to work.\n\nGain 1 prosperity.\n\nOTHERWISE: Even after much effort, the workers won't speak to you at all, calling you part of the problem. The strike is eventually resolved, but no one seems happy.\n\nNo effect.",
+        "{Cragheart}, {Triangles}: The workers' hard expressions soften a bit when they see a Savvas among you. You talk for a while and explain that they need the city just as much as the city needs them. In the end, you sell them on a smaller wage increase, and everyone returns to work.\n\nGain 1 prosperity.\n\nOTHERWISE: Even after much effort, the workers won't speak to you at all, calling you part of the problem. The strike is eventually resolved, but no one seems happy.\n\nNo effect.",
       imageUrl: '/assets/cards/events/base/city/ce-29-b-a.png',
     },
     optionB: {
       choice: 'Talk to the managers and attempt to get the Savvas better pay.',
       outcome:
-        'SCOUNDREL, SAWBONES, SOOTHSINGER: "I-I just can\'t give them more money!" the manager pleads. After some persuasion, though, he seems to open up to negotiation, The workers and management meet halfway and everyone seems content.\n\nGain 1 prosperity.\n\nOTHERWISE: You just can\'t get the manager to budge on his position, and he only gets angrier with continued pushing. The Savvas eventually agree tentatively to continue work, but the underlying problem remains.\n\nNo effect.',
+        '{Scoundrel}, {Saw}, {MusicNote}: "I-I just can\'t give them more money!" the manager pleads. After some persuasion, though, he seems to open up to negotiation, The workers and management meet halfway and everyone seems content.\n\nGain 1 prosperity.\n\nOTHERWISE: You just can\'t get the manager to budge on his position, and he only gets angrier with continued pushing. The Savvas eventually agree tentatively to continue work, but the underlying problem remains.\n\nNo effect.',
       imageUrl: '/assets/cards/events/base/city/ce-29-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-29-f.png',
@@ -621,7 +621,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Give chase! No one steals from you and gets away with it.',
       outcome:
-        'MINDTHIEF: The Vermling escapes into the sewers, but the Mindthief is able to give chase, catching up as the cutpurse enters his nest. There you find more wealth than what was lost.\n\nGain 5 gold each.\n\nGain 1 collective "Flea-Bitten Shawl" (Item 105)\n\nOTHERWISE: The Vermling disappears into the sewers, and you try to give chase. But after a few minutes you are hopelessly lost and are forced to give up.\n\nLose 5 gold each.',
+        '{Mindthief}: The Vermling escapes into the sewers, but the Mindthief is able to give chase, catching up as the cutpurse enters his nest. There you find more wealth than what was lost.\n\nGain 5 gold each.\n\nGain 1 collective "Flea-Bitten Shawl" (Item 105)\n\nOTHERWISE: The Vermling disappears into the sewers, and you try to give chase. But after a few minutes you are hopelessly lost and are forced to give up.\n\nLose 5 gold each.',
       imageUrl: '/assets/cards/events/base/city/ce-30-b-a.png',
     },
     optionB: {
@@ -1736,7 +1736,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Eat the berries.',
       outcome:
-        "You shrug and grab a handful of berries to stuff in your mouth, they are incredibly sweet and just the right amount of tart. You couldn't feel better about your decision. All start scenario with BLESS",
+        "You shrug and grab a handful of berries to stuff in your mouth, they are incredibly sweet and just the right amount of tart. You couldn't feel better about your decision. All start scenario with {Bless}",
       imageUrl: '/assets/cards/events/base/road/re-02-b-a.png',
     },
     optionB: {
@@ -1987,7 +1987,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: '-',
       outcome:
-        'You pull back your bow 3ml take aim. The arrow flies true and connects with one of the birds. You retrieve it, pluck it, cook itr and eat it. Definitely beats the field rations you carry with you. All start scenario with BLESS',
+        'You pull back your bow 3ml take aim. The arrow flies true and connects with one of the birds. You retrieve it, pluck it, cook itr and eat it. Definitely beats the field rations you carry with you. All start scenario with {Bless}',
       imageUrl: '/assets/cards/events/base/road/re-14-b-a.png',
     },
     optionB: {
@@ -2035,7 +2035,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: '-',
       outcome:
-        'You are enjoying watching the animals graze when an arrow flies out and hits the larger of the deer in its center chest, ft holts away, hut doesn\'t make it very far before collapsing. Then you see a large fnox emerge from the brush and turn toward you. 7 thought you were going to do something stupid there for a second. Thanks for not scaring away my quarry. Allow me to share some of the spoils with you," All start scenario with BLESS J',
+        'You are enjoying watching the animals graze when an arrow flies out and hits the larger of the deer in its center chest, ft holts away, hut doesn\'t make it very far before collapsing. Then you see a large fnox emerge from the brush and turn toward you. 7 thought you were going to do something stupid there for a second. Thanks for not scaring away my quarry. Allow me to share some of the spoils with you," All start scenario with {Bless} J',
       imageUrl: '/assets/cards/events/base/road/re-16-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-16-f.png',
@@ -2239,7 +2239,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Attempt to help the man with his axle problem.',
       outcome:
-        ": The man talks the whole way through the process, hut alter an hour or so, the axle is repaired and the man leaves in a radiant mood[ bestowing blessings upon you. All start scenario with BLESS Gain 1 reputation. OTHERWISE: You happily agree to help the man, but quickly realize you don't know what you are doing. The man thanks you anyway, and you move on. No effect.",
+        ": The man talks the whole way through the process, hut alter an hour or so, the axle is repaired and the man leaves in a radiant mood[ bestowing blessings upon you. All start scenario with {Bless} Gain 1 reputation. OTHERWISE: You happily agree to help the man, but quickly realize you don't know what you are doing. The man thanks you anyway, and you move on. No effect.",
       imageUrl: '/assets/cards/events/base/road/re-26-b-a.png',
     },
     optionB: {
@@ -2932,7 +2932,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Cover yourself as best you can and try to walk through the swarm.',
       outcome:
-        'If you were to list the top ten worst moments • of your fife, this would probably be up there. You walk into the swarm and the insects are everywhere, biting and clawing at your flesh. You move as quickly as you can, emerging from the other side with your life intact but your sanity in shambles. Oddly though, you also feel as though you were just in the presence of a powerful, divine force. All start scenario with 2 damage. All start scenario with POISON C MUDDLE «*, and BLESS',
+        'If you were to list the top ten worst moments • of your fife, this would probably be up there. You walk into the swarm and the insects are everywhere, biting and clawing at your flesh. You move as quickly as you can, emerging from the other side with your life intact but your sanity in shambles. Oddly though, you also feel as though you were just in the presence of a powerful, divine force. All start scenario with 2 damage. All start scenario with POISON C MUDDLE «*, and {Bless}',
       imageUrl: '/assets/cards/events/base/road/re-59-b-a.png',
     },
     optionB: {
