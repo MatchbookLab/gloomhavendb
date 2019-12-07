@@ -7,7 +7,7 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 1,
     text:
-      'You decide to unwind at the Sleeping Lion, but just as you are starting to relax, a bear of a man crashes into your table, scattering your drinks across the floor.\n\nTowering over him is a massive Inox. "What did vou say about my horns?" the Inox shouts.\n\nThe man stands up and brushes shards of glass from his tunic. "I said the sight of them makes me want to vomit!"\n\nThe Inox roars and charges headlong into the man, crashing through more tables in the process. At this, the entire tavern erupts into violence. After all, when a man is deep into his drink, the last thing you want to do is knock that drink over.',
+      'You decide to unwind at the Sleeping Lion, but just as you are starting to relax, a bear of a man crashes into your table, scattering your drinks across the floor.\n\nTowering over him is a massive Inox. "What did you say about my horns?" the Inox shouts.\n\nThe man stands up and brushes shards of glass from his tunic. "I said the sight of them makes me want to vomit!"\n\nThe Inox roars and charges headlong into the man, crashing through more tables in the process. At this, the entire tavern erupts into violence. After all, when a man is deep into his drink, the last thing you want to do is knock that drink over.',
     optionA: {
       choice: 'Join the fray! These insults will not go unanswered!',
       outcome:
@@ -180,13 +180,13 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Sell the goods.',
       outcome:
-        'Using a fevv less-than-savory contacts, you\'re able to unload the goods for a respectable price. Who knew drunken strolls could prove so profitable?\n\nGain 10 gold each.\n\nReputation < -9: Gain 5 additional gold each.',
+        'Using a few less-than-savory contacts, you\'re able to unload the goods for a respectable price. Who knew drunken strolls could prove so profitable?\n\nGain 10 gold each.\n\nReputation < -9: Gain 5 additional gold each.',
       imageUrl: '/assets/cards/events/base/city/ce-09-b-a.png',
     },
     optionB: {
       choice: 'Donate the goods to the city.',
       outcome:
-        'You sleep off the previous nights revelries and approach the Captain of the Guard. "This is wonderful news! With attacks on the citv becoming ever more frequent our blacksmiths are having trouble keeping up with our demands. And the food should help considerably if we ever find ourselves under siege. This is truly a big help to the city."\n\nGain 1 prosperity.',
+        'You sleep off the previous nights revelries and approach the Captain of the Guard. "This is wonderful news! With attacks on the city becoming ever more frequent our blacksmiths are having trouble keeping up with our demands. And the food should help considerably if we ever find ourselves under siege. This is truly a big help to the city."\n\nGain 1 prosperity.',
       imageUrl: '/assets/cards/events/base/city/ce-09-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-09-f.png',
@@ -201,13 +201,13 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Play a game with the man. It may prove to be a good time.',
       outcome:
-        'REPUTATION > -5: You get into the game, but after a few rounds, your enthusiasm wanes as the man displays a streak of luck that can only be described as "uncanny" You leave the table empty handed.\n\nLose 5 gold each.\n\nOTHERWISE; The man clearly intends to cheat you out of vour hard-earned money. He\'s not the only one capable of cheating, however. After a few rounds,you wipe that smile right off his face.\n\nGain 5 gold each.',
+        'REPUTATION > -5: You get into the game, but after a few rounds, your enthusiasm wanes as the man displays a streak of luck that can only be described as "uncanny" You leave the table empty handed.\n\nLose 5 gold each.\n\nOTHERWISE; The man clearly intends to cheat you out of your hard-earned money. He\'s not the only one capable of cheating, however. After a few rounds,you wipe that smile right off his face.\n\nGain 5 gold each.',
       imageUrl: '/assets/cards/events/base/city/ce-10-b-a.png',
     },
     optionB: {
       choice: 'Refuse the game of dice.',
       outcome:
-        'You laugh and wave away the man\'s offer. Youg et all the excitement you need fighting toe- to-toe against vicious monsters. In combat, what matters most is planning and tactics, which are far more interesting than some random roll of the dice.\n\nGain 1 reputation.',
+        'You laugh and wave away the man\'s offer. You get all the excitement you need fighting toe-to-toe against vicious monsters. In combat, what matters most is planning and tactics, which are far more interesting than some random roll of the dice.\n\nGain 1 reputation.',
       imageUrl: '/assets/cards/events/base/city/ce-10-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-10-f.png',
@@ -222,7 +222,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Make a deal wilh the Harrower.',
       outcome:
-        "PAY 5 COLLECTIVE GOLD: Intrigued by the parchment, you quickly make a decision to buy it off the Narrower. The exchange is fast, and then you move on your way, hoping no one saw you.\n\nGain Random Item Design.\n\nReputation > 9: Lose 1 reputation.\n\nOTHERWISE: You try to pay the Narrower less than it asks for, which only manages to anger it. It hisses loudly and shuns you.\n\nLose 1 reputation.",
+        "PAY 5 COLLECTIVE GOLD: Intrigued by the parchment, you quickly make a decision to buy it off the Harrower. The exchange is fast, and then you move on your way, hoping no one saw you.\n\nGain Random Item Design.\n\nReputation > 9: Lose 1 reputation.\n\nOTHERWISE: You try to pay the Harrower less than it asks for, which only manages to anger it. It hisses loudly and shuns you.\n\nLose 1 reputation.",
       imageUrl: '/assets/cards/events/base/city/ce-11-b-a.png',
     },
     optionB: {
@@ -239,11 +239,11 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 12,
     text:
-      'A great revelry is underway at the New Market when you arrive to purchase supplies. Investigating further, vou discover the town is in the midst of a pie-eating contest.\n\nA group of large sailors sits triumphantly at a long table on a makeshift stage, crumbs and bits of fruit scattered all around. A man in the center stands and addresses the crowd.\n\n"Can no one best our pie-eating prowess? Step up and test your mettle!" With nothing better to do, you head up to the stage.\n\nThe contest goes well for a while as you match the others pie-for-pie, but soon your eating starts to slow, and the sailors are still going strong.',
+      'A great revelry is underway at the New Market when you arrive to purchase supplies. Investigating further, you discover the town is in the midst of a pie-eating contest.\n\nA group of large sailors sits triumphantly at a long table on a makeshift stage, crumbs and bits of fruit scattered all around. A man in the center stands and addresses the crowd.\n\n"Can no one best our pie-eating prowess? Step up and test your mettle!" With nothing better to do, you head up to the stage.\n\nThe contest goes well for a while as you match the others pie-for-pie, but soon your eating starts to slow, and the sailors are still going strong.',
     optionA: {
       choice: 'Yield to the pie and admit defeat.',
       outcome:
-        "You put down vour utensils and yield to the sailors. They roar with pride and slap vou on the back. Unfortunately, the sudden jolt doesn't sit well with your stomach, and soon all the pies you ate are coming back up, much to the disgust of the gathered crowd.\n\nLose 1 reputation.",
+        "You put down uour utensils and yield to the sailors. They roar with pride and slap you on the back. Unfortunately, the sudden jolt doesn't sit well with your stomach, and soon all the pies you ate are coming back up, much to the disgust of the gathered crowd.\n\nLose 1 reputation.",
       imageUrl: '/assets/cards/events/base/city/ce-12-b-a.png',
     },
     optionB: {
@@ -260,7 +260,7 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 13,
     text:
-      'You are walking across the Silent Bridge, headed toward the Sleeping Lion to get a quick meal, when you sec a Quatryl standing in front of a small cart laden with plates of food and curious cont raptions.\n\n"Come try the delicacies of the East!" the Quatryl barks. "Food enhanced with science!  Flavors beyond your wildest imagination!"',
+      'You are walking across the Silent Bridge, headed toward the Sleeping Lion to get a quick meal, when you sec a Quatryl standing in front of a small cart laden with plates of food and curious contraptions.\n\n"Come try the delicacies of the East!" the Quatryl barks. "Food enhanced with science! Flavors beyond your wildest imagination!"',
     optionA: {
       choice: 'Stop and try the food.',
       outcome:
@@ -285,7 +285,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Raise arms and fight the Lurkers back into the sea.',
       outcome:
-        'The crowd parts as you approach the dock with weapons drawn. You step onto the soft wood ond the Lurkers turn toward you and stop clacking. They all hiss and brandish their claws in aggression. You charge forward and meet the threat head-on, hacking away at their carapaces until they scuttle off the dock and back into the water.\n\nGain 10 experience each.',
+        'The crowd parts as you approach the dock with weapons drawn. You step onto the soft wood and the Lurkers turn toward you and stop clacking. They all hiss and brandish their claws in aggression. You charge forward and meet the threat head-on, hacking away at their carapaces until they scuttle off the dock and back into the water.\n\nGain 10 experience each.',
       imageUrl: '/assets/cards/events/base/city/ce-14-b-a.png',
     },
     optionB: {
@@ -302,11 +302,11 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 15,
     text:
-      'It was a truly marvelous night, full of alcohol and fuzzy memories. You are heading hack to your rooms in high spirits when you take a wrong turn into an alley and trip over a mutilated corpse.\n\n"What\'s all this then?" You look up to see a city guard walk into the alley, annoyed by all the noise you were making in your revelry.\n\nBefore you can react, he draws his sword. "You... what did you do?"\n\nYou look and see that, due to the fall, your clothes are now covered in blood. The guard clearly thinks you are responsible for the man\'s death, This night just took a serious turn for the worse.',
+      'It was a truly marvelous night, full of alcohol and fuzzy memories. You are heading back to your rooms in high spirits when you take a wrong turn into an alley and trip over a mutilated corpse.\n\n"What\'s all this then?" You look up to see a city guard walk into the alley, annoyed by all the noise you were making in your revelry.\n\nBefore you can react, he draws his sword. "You... what did you do?"\n\nYou look and see that, due to the fall, your clothes are now covered in blood. The guard clearly thinks you are responsible for the man\'s death, This night just took a serious turn for the worse.',
     optionA: {
       choice: 'Do your best to explain that the man was like this when you found him.',
       outcome:
-        "REPUTATION > 5: You sober up pretty quickly and explain the situation. Luckily the guard is familiar with your reputation and believes your story A fter a few more questions, he allows you to leave and clean up.\n\nNo effect.\n\nOTHERWISE: Attempts to explain yourself just seem to make the situation worse. More guards show up and everyone eyes you suspiciously. Luckily your weapons don't match the man's wounds and the guards let you go, but they do so with a mistrustful glare.\n\nLose 2 reputation.",
+        "REPUTATION > 5: You sober up pretty quickly and explain the situation. Luckily the guard is familiar with your reputation and believes your story. After a few more questions, he allows you to leave and clean up.\n\nNo effect.\n\nOTHERWISE: Attempts to explain yourself just seem to make the situation worse. More guards show up and everyone eyes you suspiciously. Luckily your weapons don't match the man's wounds and the guards let you go, but they do so with a mistrustful glare.\n\nLose 2 reputation.",
       imageUrl: '/assets/cards/events/base/city/ce-15-b-a.png',
     },
     optionB: {
@@ -323,11 +323,11 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 16,
     text:
-      '"Stop struggling! You\'re coming with me and there\'s nothing you can do about it!"\n\nAhead of you in the street, you see a pair of guards scuffling with a young boy dressed in rags. "You snatch purses, you go to the Ghost Fortress. No way around that."\n\n"But my family is starving." the boy cries. You recognize his voice from some of vour dealings in the Sunken Market. He\'s given you helpful tips for mercenary work on a number of occasions.',
+      '"Stop struggling! You\'re coming with me and there\'s nothing you can do about it!"\n\nAhead of you in the street, you see a pair of guards scuffling with a young boy dressed in rags. "You snatch purses, you go to the Ghost Fortress. No way around that."\n\n"But my family is starving." the boy cries. You recognize his voice from some of your dealings in the Sunken Market. He\'s given you helpful tips for mercenary work on a number of occasions.',
     optionA: {
       choice: "Intervene on the boy's behalf.",
       outcome:
-        "PAY 10 COLLECTIVE COLD: You entreat the guards to let the boy go, but they are unmoved. With further pressing, they agree to do so only if vou pay his criminal fine. The guards cuff the boy's ear and set him free.\n\nAdd City Event 70 to the deck.\n\nOTHERWISE: You entreat the guards to let the boy go, but they are unmoved. It seems like you may be able to grease their palms a bit, but, unfortunately, you do not have enough money to sway their minds. The boy is hauled off to the Ghost Fortress.\n\nNo effect.",
+        "PAY 10 COLLECTIVE COLD: You entreat the guards to let the boy go, but they are unmoved. With further pressing, they agree to do so only if you pay his criminal fine. The guards cuff the boy's ear and set him free.\n\nAdd City Event 70 to the deck.\n\nOTHERWISE: You entreat the guards to let the boy go, but they are unmoved. It seems like you may be able to grease their palms a bit, but, unfortunately, you do not have enough money to sway their minds. The boy is hauled off to the Ghost Fortress.\n\nNo effect.",
       imageUrl: '/assets/cards/events/base/city/ce-16-b-a.png',
     },
     optionB: {
@@ -344,11 +344,11 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 17,
     text:
-      "Returning to Gloomhaven with vour latest haul of' treasure, you approach the market in search of a good trade. Unfortunately, there are only a few visible stands around that are not yet packing up for the day.\n\nA robed Savvas catches your eye. It has a few strange artifacts on display, but you approach with no great expectation, hoping vour goods will fetch a decent price.\n\nThe Savvas silently nods as you approach. It picks through your haul and lifts up a single item, holding out a small bag for you in exchange.\n\nPouring out the bag's contents, a single rectangular black-and-white coin lands in vour palm.",
+      "Returning to Gloomhaven with your latest haul of treasure, you approach the market in search of a good trade. Unfortunately, there are only a few visible stands around that are not yet packing up for the day.\n\nA robed Savvas catches your eye. It has a few strange artifacts on display, but you approach with no great expectation, hoping your goods will fetch a decent price.\n\nThe Savvas silently nods as you approach. It picks through your haul and lifts up a single item, holding out a small bag for you in exchange.\n\nPouring out the bag's contents, a single rectangular black-and-white coin lands in your palm.",
     optionA: {
       choice: 'Demand a different payment. The single coin is an insult.',
       outcome:
-        "You slam the strange coin back down onto the Savvas' display in anger. It reaches out to grab the coin, but you take hold of its arm and demand a proper payment. Wordlessly, it looks at you with disdain and throws a handful of gold in vour face. You shield vour eyes and move to draw your weapon, but when you look around, the Savvas and its goods are no longer to be found. You sullenly gather the coins it threw and move on.\n\nGain 10 collective gold.",
+        "You slam the strange coin back down onto the Savvas' display in anger. It reaches out to grab the coin, but you take hold of its arm and demand a proper payment. Wordlessly, it looks at you with disdain and throws a handful of gold in your face. You shield your eyes and move to draw your weapon, but when you look around, the Savvas and its goods are no longer to be found. You sullenly gather the coins it threw and move on.\n\nGain 10 collective gold.",
       imageUrl: '/assets/cards/events/base/city/ce-17-b-a.png',
     },
     optionB: {
@@ -365,11 +365,11 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 18,
     text:
-      'You are attending to business in the Sinking Market when a frail white-haired woman approaches you and grabs you by the arm.\n\n"Oh my, don\'t you lot look strong." she says. "Could you possibly assist me with a small problem I am having in mv cellar?"\n\nHer eyes grow narrow. "Rats! So many rats! I don\'t know where they\'re coming from, but they are a right nuisance. Ruined three jars of preserves just yesterday!"\n\nShe tugs weakly at vour sleeve. "Please, can you help me?"',
+      'You are attending to business in the Sinking Market when a frail white-haired woman approaches you and grabs you by the arm.\n\n"Oh my, don\'t you lot look strong." she says. "Could you possibly assist me with a small problem I am having in mv cellar?"\n\nHer eyes grow narrow. "Rats! So many rats! I don\'t know where they\'re coming from, but they are a right nuisance. Ruined three jars of preserves just yesterday!"\n\nShe tugs weakly at your sleeve. "Please, can you help me?"',
     optionA: {
       choice: 'Decline to help the old woman.',
       outcome:
-        'You pull vour arm away from her filthy grasp and step away, making apologies for being too busy. Your excuses lack the proper tact, however, and soon the woman is bawling in the street, lamenting that no one will help her and how the rats will kill her in her sleep, then feast on her corpse. The whole speech is very graphic, and passersby begin to give you odd looks, wondering what you could have done to upset the poor woman so intensely.\n\nLose 1 reputation.',
+        'You pull your arm away from her filthy grasp and step away, making apologies for being too busy. Your excuses lack the proper tact, however, and soon the woman is bawling in the street, lamenting that no one will help her and how the rats will kill her in her sleep, then feast on her corpse. The whole speech is very graphic, and passersby begin to give you odd looks, wondering what you could have done to upset the poor woman so intensely.\n\nLose 1 reputation.',
       imageUrl: '/assets/cards/events/base/city/ce-18-b-a.png',
     },
     optionB: {
@@ -396,7 +396,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Attend the wedding and bring a mundane gift.',
       outcome:
-        'REPUTATI0N < -4: You pick up an unremarkable set of silverware on the wav to the event. When you arrive, the father of the bride casts a scornful look vour way and begins whispering to those around him. Maybe you received the invitation by mistake.\n\nLose 5 collective gold.\n\nLose 1 reputation.\n\nOTHERWISE: You are one guest among many, and everyone is having too good of a time to notice your poor choice in gifts.\n\nLose 5 collective gold.',
+        'REPUTATI0N < -4: You pick up an unremarkable set of silverware on the way to the event. When you arrive, the father of the bride casts a scornful look your way and begins whispering to those around him. Maybe you received the invitation by mistake.\n\nLose 5 collective gold.\n\nLose 1 reputation.\n\nOTHERWISE: You are one guest among many, and everyone is having too good of a time to notice your poor choice in gifts.\n\nLose 5 collective gold.',
       imageUrl: '/assets/cards/events/base/city/ce-19-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-19-f.png',
@@ -407,7 +407,7 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 20,
     text:
-      'You are relaxing at the Sleeping Lion when an immaculately dressed man approach your table, a fake smile plastered to his face.\n\n"Ah, you must be the mercenaries everyone is talking about, yes? My name is Lord Greymane and I have a delicate matter to discuss. May i sit?"\n\nYou gesture to a chair and he sits with a faint grimace. "I am transporting some valuable goods this evening from one of my warehouses, and I have reason to believe that some of the less desirable elements of this city wish to steal from me. I would like to hire you to help guard the undertaking."',
+      'You are relaxing at the Sleeping Lion when an immaculately dressed man approach your table, a fake smile plastered to his face.\n\n"Ah, you must be the mercenaries everyone is talking about, yes? My name is Lord Greymane and I have a delicate matter to discuss. May I sit?"\n\nYou gesture to a chair and he sits with a faint grimace. "I am transporting some valuable goods this evening from one of my warehouses, and I have reason to believe that some of the less desirable elements of this city wish to steal from me. I would like to hire you to help guard the undertaking."',
     optionA: {
       choice: "Agree to guard the goods. It should be easy money.",
       outcome:
@@ -417,7 +417,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Politely decline. Yon have much better things to do tonight.',
       outcome:
-        'This is your night off, and you are going to spend it drinking, not guarding some snobby "lord."\n\nIn the morning; you hear news that a shipment of rare minerals bound for the capital was stolen in the night. People are calling it a huge blow to the economy of the town.\n\nLose 1 prosperity.',
+        'This is your night off, and you are going to spend it drinking, not guarding some snobby "lord."\n\nIn the morning, you hear news that a shipment of rare minerals bound for the capital was stolen in the night. People are calling it a huge blow to the economy of the town.\n\nLose 1 prosperity.',
       imageUrl: '/assets/cards/events/base/city/ce-20-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-20-f.png',
@@ -470,7 +470,7 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 23,
     text:
-      'You are walking home late at night when you hear some suspicious sounds coming from a nearby garden.\n\nYou move to investigate, and a shadowy figure holts in the opposite direct carrying an armful of vegetables.',
+      'You are walking home late at night when you hear some suspicious sounds coming from a nearby garden.\n\nYou move to investigate, and a shadowy figure bolts in the opposite direct carrying an armful of vegetables.',
     optionA: {
       choice: 'Give chase. Thieves must be brought to justice.',
       outcome:
@@ -480,7 +480,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'The thief had the right idea. Grab some vegetables for yourself.',
       outcome:
-        'In an area cut off from civilization with no • viable farmland, fresh vegetables are a rare commodity. The thief already made off with an armful so what\'s the harm in taking some more? When you get back to your room, you cook up a nice hearty soup and have a great meal. All start scenario with {Bless}',
+        'In an area cut off from civilization with no viable farmland, fresh vegetables are a rare commodity. The thief already made off with an armful so what\'s the harm in taking some more? When you get back to your room, you cook up a nice hearty soup and have a great meal. All start scenario with {Bless}',
       imageUrl: '/assets/cards/events/base/city/ce-23-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-23-f.png',
@@ -491,7 +491,7 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 24,
     text:
-      'Upon returning to the city after your latest adventure, you are approached by a high-ranking guard at the gate.\n\n"Ah. good, I\'m glad to have caught you, the guard begins, The capital has fallen behind on shipments of wood to Gloomhaven, so now it falls to us to pick up the slack so that construction of important city buildings doesn\'t stagnate."\n\nThe guard points to the east. We\'re forming an expedition to gather logs from the Corpsewood. We could use your help, either to guard against enemies or to chop down trees,r',
+      'Upon returning to the city after your latest adventure, you are approached by a high-ranking guard at the gate.\n\n"Ah. good, I\'m glad to have caught you, the guard begins. The capital has fallen behind on shipments of wood to Gloomhaven, so now it falls to us to pick up the slack so that construction of important city buildings doesn\'t stagnate."\n\nThe guard points to the east. We\'re forming an expedition to gather logs from the Corpsewood. We could use your help, either to guard against enemies or to chop down trees."',
     optionA: {
       choice: 'Join the expedition as a guard.',
       outcome:
@@ -516,7 +516,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Attempt to catch the vase.',
       outcome:
-        "{Brute}, {Cragheart}, {LightningBolts}: You race forward and wrap your arms around the vase. You manage to keep grip of it, preventing tragedy. The Vairath is relieved and offers to pay you for your trouble if you carry it the rest of the way.\n\nGain 5 collective gold.\n\nOTHERWISE: You race forward and attempt to catch the vase, but it is too much for you. Your grip loosens and the vase shatters into a hundred pieces. The Valrath is irate, demanding compensation from you for breaking it. You pay him what you can.\n\nLose 10 collective gold.",
+        "{Brute}, {Cragheart}, {LightningBolts}: You race forward and wrap your arms around the vase. You manage to keep grip of it, preventing tragedy. The Valrath is relieved and offers to pay you for your trouble if you carry it the rest of the way.\n\nGain 5 collective gold.\n\nOTHERWISE: You race forward and attempt to catch the vase, but it is too much for you. Your grip loosens and the vase shatters into a hundred pieces. The Valrath is irate, demanding compensation from you for breaking it. You pay him what you can.\n\nLose 10 collective gold.",
       imageUrl: '/assets/cards/events/base/city/ce-25-b-a.png',
     },
     optionB: {
@@ -533,7 +533,7 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 26,
     text:
-      'While enjoying vour customary post-adventure drink at the Sleeping Lion, you notice something weird going on with the lamps in the bar.\n\nYour first thought is that it is your imagination, hut after staring at the lamps intently, you see they are flickering in and out. Tech lamps, as opposed to normal gas-burning ones, have been known to be a bit unreliable.\n\nAs if on cue, the lamps suddenly go out completely, leaving the room pitch-black.',
+      'While enjoying your customary post-adventure drink at the Sleeping Lion, you notice something weird going on with the lamps in the bar.\n\nYour first thought is that it is your imagination, but after staring at the lamps intently, you see they are flickering in and out. Tech lamps, as opposed to normal gas-burning ones, have been known to be a bit unreliable.\n\nAs if on cue, the lamps suddenly go out completely, leaving the room pitch-black.',
     optionA: {
       choice: "Offer to fix the lamps. It shouldn't be too hard with a bit of technical know-how.",
       outcome:
@@ -543,7 +543,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Take the opportunity to steal some valuables from drunk patrons in the dark.',
       outcome:
-        '{Scoundrel}, {Mindthief}, {Eclipse}: The darkness gives the less scrupulous among you a good chance to perform their craft. Within a matter of minutes, your coin purses are much heavier.\n\nGain 10 collective gold.\n\nOTHERWISE: You attempt to lighten some purses, hut even in the dark, you find the task a little outside your skill set. One patron catches your hand as it searches his belt. He starts yelling, and you flee as quickly as possible.\n\nLose 1 reputation.',
+        '{Scoundrel}, {Mindthief}, {Eclipse}: The darkness gives the less scrupulous among you a good chance to perform their craft. Within a matter of minutes, your coin purses are much heavier.\n\nGain 10 collective gold.\n\nOTHERWISE: You attempt to lighten some purses, but even in the dark, you find the task a little outside your skill set. One patron catches your hand as it searches his belt. He starts yelling, and you flee as quickly as possible.\n\nLose 1 reputation.',
       imageUrl: '/assets/cards/events/base/city/ce-26-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-26-f.png',
@@ -575,7 +575,7 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 28,
     text:
-      'Ah, the Sleeping Lion. Surely there is no better place to get a drink and relax after clearing out some dank dungeon.\n\nOn this particular occasion, though, you are approached by a heavily scarred Inox. She sits at your table and pushes forward a piece of paper.\n\n"An interested party would like to hire you to steal a valuable figurine from a residence in the Battlements." she says matter-of-factlv. "The details are on the paper. Meet me in the hack alley in two days\' time after the job is done."',
+      'Ah, the Sleeping Lion. Surely there is no better place to get a drink and relax after clearing out some dank dungeon.\n\nOn this particular occasion, though, you are approached by a heavily scarred Inox. She sits at your table and pushes forward a piece of paper.\n\n"An interested party would like to hire you to steal a valuable figurine from a residence in the Battlements." she says matter-of-factly. "The details are on the paper. Meet me in the back alley in two days\' time after the job is done."',
     optionA: {
       choice: 'Accept the mysterious job. You can handle anything.',
       outcome:
@@ -617,7 +617,7 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 30,
     text:
-      'As you shop for supplies at the Sinking Market, your hand instinctively goes for the purse at vour waist.\n\nIt\'s gone!\n\nYou quickly scan the crowd and see a small Vermling darting away from you, heading directly toward a sewer grating.',
+      'As you shop for supplies at the Sinking Market, your hand instinctively goes for the purse at your waist.\n\nIt\'s gone!\n\nYou quickly scan the crowd and see a small Vermling darting away from you, heading directly toward a sewer grating.',
     optionA: {
       choice: 'Give chase! No one steals from you and gets away with it.',
       outcome:
@@ -648,7 +648,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: '-',
       outcome:
-        ': You try to turn away the woman and get hack to gambling, but the Sunkeeper won t hear of it, She forces you to follow the woman outside. Read outcome A. OTHERWISE: You return to your gambling, but you feel as though a pall has fallen over the revelry. Your luck has turned[ and you end the night much poorer than when you started. Lose 10 gold each.',
+        ': You try to turn away the woman and get back to gambling, but the Sunkeeper won t hear of it, She forces you to follow the woman outside. Read outcome A. OTHERWISE: You return to your gambling, but you feel as though a pall has fallen over the revelry. Your luck has turned[ and you end the night much poorer than when you started. Lose 10 gold each.',
       imageUrl: '/assets/cards/events/base/city/ce-31-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-31-f.png',
@@ -659,11 +659,11 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 32,
     text:
-      'As vou return to town after * your latest adventure, a high- ranking guard approaches and gestures you to the side of the road. 7 am embarrassed to admit this," he begins in a low voice, "but we could really use some help. With all the attacks recently and very little support from the capital the city guard finds itself woefully lacking in both equipment and training for the new recruits." The guard looks you over. You are experienced warriors, and anything you could do to help the situation would be greatly appreciatedl',
+      'As you return to town after * your latest adventure, a high- ranking guard approaches and gestures you to the side of the road. 7 am embarrassed to admit this," he begins in a low voice, "but we could really use some help. With all the attacks recently and very little support from the capital the city guard finds itself woefully lacking in both equipment and training for the new recruits." The guard looks you over. You are experienced warriors, and anything you could do to help the situation would be greatly appreciatedl',
     optionA: {
       choice: 'Agree to help the city guard.',
       outcome:
-        "Ill: You not only help to train the new recruits, hut the Quartermaster is able to repair a lot of the guards' damaged armor and weaponry. At the end of the day, the city is very pleased with your contribution. Gain 15 collective gold. Gain I reputation. OTHERWISE: You spend the day training the new recruits. By the time the sun goes down, their skills are much improved, and they are grateful to you because of it. Gain I reputation.",
+        "Ill: You not only help to train the new recruits, but the Quartermaster is able to repair a lot of the guards' damaged armor and weaponry. At the end of the day, the city is very pleased with your contribution. Gain 15 collective gold. Gain I reputation. OTHERWISE: You spend the day training the new recruits. By the time the sun goes down, their skills are much improved, and they are grateful to you because of it. Gain I reputation.",
       imageUrl: '/assets/cards/events/base/city/ce-32-b-a.png',
     },
     optionB: {
@@ -680,7 +680,7 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 33,
     text:
-      'The Void is a troubling area in Gloomhaven — a vast, barren expanse of black sand amid the bustling streets of the citv. No one enters its «• perimeter. On a trip to the University, however, you see a young girl playing near the edge of the Void Before you can warn her, she trips and falls onto the sandl She immediately emits a blood-curdling scream and begins to tear at her skin.',
+      'The Void is a troubling area in Gloomhaven — a vast, barren expanse of black sand amid the bustling streets of the city. No one enters its «• perimeter. On a trip to the University, however, you see a young girl playing near the edge of the Void Before you can warn her, she trips and falls onto the sandl She immediately emits a blood-curdling scream and begins to tear at her skin.',
     optionA: {
       choice: 'Run to the girl and attempt to pull her out of the Void.',
       outcome:
@@ -701,7 +701,7 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 34,
     text:
-      "After a night of revelry at the Sleeping L ion, you head out into the streets and notice a suspicious man in black robes skulking toward an allevwav; J I\t^\t✓ You've been hearing reports about a cult inside the city, calling themselves the Ravens and performing all sort of terrible acts. Perhaps this is one of them.",
+      "After a night of revelry at the Sleeping L ion, you head out into the streets and notice a suspicious man in black robes skulking toward an allevway; J I\t^\t✓ You've been hearing reports about a cult inside the city, calling themselves the Ravens and performing all sort of terrible acts. Perhaps this is one of them.",
     optionA: {
       choice: "Follow the man in an attempt to discover the Ravens' lair.",
       outcome:
@@ -711,7 +711,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Confront him on the spot and turn him over to the authorities. / / I',
       outcome:
-        "Not confident in vour stealth abilities, you J\t✓ decide speed and force are a better way to go. You charge forward\\ catching the man completely by surprise. You block oil all avenues of escape and surround him. He snarls as you tie him up and hand him over to the city guards. Hopefully they'll he able to get some useful information out of him. Gain 1 reputation.",
+        "Not confident in your stealth abilities, you J\t✓ decide speed and force are a better way to go. You charge forward\\ catching the man completely by surprise. You block oil all avenues of escape and surround him. He snarls as you tie him up and hand him over to the city guards. Hopefully they'll he able to get some useful information out of him. Gain 1 reputation.",
       imageUrl: '/assets/cards/events/base/city/ce-34-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-34-f.png',
@@ -722,7 +722,7 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 35,
     text:
-      "Harrowers are a rare sight, both outside of Gloomhaven and within. Which explains why you are bit surprised when you find yourself standing before three Harrowers in ornate robes unlike any you've ever seen. * l¥ \"We require spices from across the sea,' one chitters at you. 'Can you direct us to the appropriate merchant?'' A bit caught offguard, you ask about the specihc kind of spice, but the Narrower makes only unintelligible hisses. \"It is hard to describe, lie will know it when we see it. It is very important to our hive. ”",
+      "Harrowers are a rare sight, both outside of Gloomhaven and within. Which explains why you are bit surprised when you find yourself standing before three Harrowers in ornate robes unlike any you've ever seen. * l¥ \"We require spices from across the sea,' one chitters at you. 'Can you direct us to the appropriate merchant?'' A bit caught offguard, you ask about the specihc kind of spice, but the Harrower makes only unintelligible hisses. \"It is hard to describe, lie will know it when we see it. It is very important to our hive. ”",
     optionA: {
       choice: 'Point (lie way to the Sinking Market — the only place that would deal with them. 9',
       outcome:
@@ -743,7 +743,7 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 36,
     text:
-      ')ou decide to unwind at the Sleeping Lion, hut fust os you ore storting to relax, .1 hear of o man crashes into your table, scattering your drinks across the floor. Towering over him is a massive Inox. W hat did vou sjv about my horns\'" the inox shouts. y\t*\t/ The man stands up and brushes shards of glass from his tunic. 7 said the sight of them makes me want to vomit! ’ The Inox roars and charges headlong into the manr crashing through more tables in the process. At this, the entire tavern erupts into violence. After all when a man is deep into his drink, the last thing vou want to do is knock that drink oven',
+      ')ou decide to unwind at the Sleeping Lion, but fust os you ore storting to relax, .1 hear of o man crashes into your table, scattering your drinks across the floor. Towering over him is a massive Inox. W hat did you sjv about my horns\'" the inox shouts. y\t*\t/ The man stands up and brushes shards of glass from his tunic. 7 said the sight of them makes me want to vomit! ’ The Inox roars and charges headlong into the manr crashing through more tables in the process. At this, the entire tavern erupts into violence. After all when a man is deep into his drink, the last thing you want to do is knock that drink oven',
     optionA: {
       choice: 'Join the fray! These insults will not go unanswered!',
       outcome:
@@ -753,7 +753,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Do your best to stop the fighting. This is a respectable establishment. I t',
       outcome:
-        ': You get up to calm down the room, but the Berserker has other ideas, laying into the man before vou can get a word out. She goes into a f urious rage, and there s really not much to be done about it except pay what vou can for the damages afterward. Lose 10 collective gold. OTHERWISE: It takes some work, but you manage to calm dow n the Inox and buy off the rest of the room with some extra drinks, The proprietor looks positively relieved. Gain 1 reputation.',
+        ': You get up to calm down the room, but the Berserker has other ideas, laying into the man before you can get a word out. She goes into a f urious rage, and there s really not much to be done about it except pay what you can for the damages afterward. Lose 10 collective gold. OTHERWISE: It takes some work, but you manage to calm dow n the Inox and buy off the rest of the room with some extra drinks, The proprietor looks positively relieved. Gain 1 reputation.',
       imageUrl: '/assets/cards/events/base/city/ce-36-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-36-f.png',
@@ -768,7 +768,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Attempt to console and cheer up those affected by the attack.',
       outcome:
-        "; The citizens are downtrodden, but the uncanny pen'or of the Soothsingcr’s music seems to lif t their spirits considerably. Still far f rom cheerful, the people find new resolve in repairing the damage and rebuilding. Gain 1 prosperity. OTHERWISE: The citizens view you with a cynical eye as you walk around, attempting to encourage them and lift their spirits. Despite the effort, it seems as though they are in a worse mood than when vou arrived. W Lose 1 reputation.",
+        "; The citizens are downtrodden, but the uncanny pen'or of the Soothsingcr’s music seems to lif t their spirits considerably. Still far f rom cheerful, the people find new resolve in repairing the damage and rebuilding. Gain 1 prosperity. OTHERWISE: The citizens view you with a cynical eye as you walk around, attempting to encourage them and lift their spirits. Despite the effort, it seems as though they are in a worse mood than when you arrived. W Lose 1 reputation.",
       imageUrl: '/assets/cards/events/base/city/ce-37-b-a.png',
     },
     optionB: {
@@ -785,11 +785,11 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 38,
     text:
-      'Walking through the crowded streets of the Ward of Scales, you suddenly hear a commotion behind you, You turn to see a gruff shirtless man badgering a male Orchid. 7 assure you, I did nothing of the sort." the Orchid says calm/v. “You calling me a liar now?” bellows the man. "I think somebody needs to teach you a lesson. The man careens forward with his fist and knocks the Orchid to the ground. A gasp emerges from the crowd, hut very quickly the attitude turns to excitement and encouragement. Nothing like a good fight to get a crowd worked up.',
+      'Walking through the crowded streets of the Ward of Scales, you suddenly hear a commotion behind you, You turn to see a gruff shirtless man badgering a male Orchid. 7 assure you, I did nothing of the sort." the Orchid says calm/v. “You calling me a liar now?” bellows the man. "I think somebody needs to teach you a lesson. The man careens forward with his fist and knocks the Orchid to the ground. A gasp emerges from the crowd, but very quickly the attitude turns to excitement and encouragement. Nothing like a good fight to get a crowd worked up.',
     optionA: {
       choice: "Intervene on the Orchid's behalf. r",
       outcome:
-        '; The Orchid on the ground puls up no defense, hut your group isa different matter. The man quickly backs down at the sight of a powerful Orchid ready to attack, and the crowd disperses, muttering disappointment. Gain I prosperity. Lose I reputation. OTHERWISE: You trv to talk some sense into «* the man, and when that doesn t work, you beat him senseless. The crowd seems happy and the Orchid thanks you for your aid. Gain I prosperity.',
+        '; The Orchid on the ground puls up no defense, but your group isa different matter. The man quickly backs down at the sight of a powerful Orchid ready to attack, and the crowd disperses, muttering disappointment. Gain I prosperity. Lose I reputation. OTHERWISE: You trv to talk some sense into «* the man, and when that doesn t work, you beat him senseless. The crowd seems happy and the Orchid thanks you for your aid. Gain I prosperity.',
       imageUrl: '/assets/cards/events/base/city/ce-38-b-a.png',
     },
     optionB: {
@@ -891,11 +891,11 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 43,
     text:
-      'You return to your rooms for the evening to find a small note resting on the ground in front of vour door. It is from the Tinkerer, explaining that he has been pursuing further studies in flammable liquid delivery methods. He asks for your help in delivering to him a small robotic contraption that he absentmindedlv left behind in a secret stash under the floorboards of his old room. He details the device’s location and gives an address to deliver it to some small village far to the northwest. »',
+      'You return to your rooms for the evening to find a small note resting on the ground in front of your door. It is from the Tinkerer, explaining that he has been pursuing further studies in flammable liquid delivery methods. He asks for your help in delivering to him a small robotic contraption that he absentmindedlv left behind in a secret stash under the floorboards of his old room. He details the device’s location and gives an address to deliver it to some small village far to the northwest. »',
     optionA: {
       choice: 'Oblige the Tinkerer and send along the contraption ■',
       outcome:
-        "BPAY5 COLLECTIVE GOLD: Sure enough, * under the floorboards of his old room, you find a bunch of parts, tools, and an intricately craf ted metal spider. You package it up and ship it off to the Tinkerer. Anything for an ola friend. Add Citv Event 6l to the deck. OTHERWISE: You don't have the money to send him the contraption, so you decide just to keep it for yourself Read outcome B.",
+        "BPAY5 COLLECTIVE GOLD: Sure enough, * under the floorboards of his old room, you find a bunch of parts, tools, and an intricately craf ted metal spider. You package it up and ship it off to the Tinkerer. Anything for an ola friend. Add City Event 6l to the deck. OTHERWISE: You don't have the money to send him the contraption, so you decide just to keep it for yourself Read outcome B.",
       imageUrl: '/assets/cards/events/base/city/ce-43-b-a.png',
     },
     optionB: {
@@ -933,17 +933,17 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 45,
     text:
-      'You there! Stop! You turn to see a city guard walking briskly toward you. ")ou are known associates of this woman, yes?" He holds up a crude sketch of the Scoundrel. "We believe she is behind a number of high profile robberies and demand (hat you give us any information you have on her whereabouts and activities.” His face softens a bit. Look. / know vou guys do a lot of good for the city, but the merchant guild is breathing down my neck on this one, and I could really use a lead." £ ag, "\tT.\t,\ti\t- A; V;',
+      'You there! Stop! You turn to see a city guard walking briskly toward you. ")ou are known associates of this woman, yes?" He holds up a crude sketch of the Scoundrel. "We believe she is behind a number of high profile robberies and demand (hat you give us any information you have on her whereabouts and activities.” His face softens a bit. Look. / know you guys do a lot of good for the city, but the merchant guild is breathing down my neck on this one, and I could really use a lead." £ ag, "\tT.\t,\ti\t- A; V;',
     optionA: {
       choice: 'Cooperate with the guard and tell him everything you know.',
       outcome:
-        'The guard taps his notes with a smile on his • lace, "This is great, he says. 7 understand that you haven\'t seen her in a while, hut the information you\'ve provided should still be useful. Have a nice day!" ^ . « Gain I reputation.',
+        'The guard taps his notes with a smile on his • lace, "This is great, he says. 7 understand that you haven\'t seen her in a while, but the information you\'ve provided should still be useful. Have a nice day!" ^ . « Gain I reputation.',
       imageUrl: '/assets/cards/events/base/city/ce-45-b-a.png',
     },
     optionB: {
       choice: 'Be as vague and unhelpful as possible, giving no useful information.',
       outcome:
-        'fhe guard scratches his head and looks down at his notes. "Well, that wasn\'t very helpful." he sighs. But thanks lor your time, I guess. Let me know if you remember anything or get any new information." Add Citv Event 62 to the deck. J I',
+        'fhe guard scratches his head and looks down at his notes. "Well, that wasn\'t very helpful." he sighs. But thanks lor your time, I guess. Let me know if you remember anything or get any new information." Add City Event 62 to the deck. J I',
       imageUrl: '/assets/cards/events/base/city/ce-45-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-45-f.png',
@@ -958,7 +958,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Have a drink with the Cragheart. 1 . _\tp| ^\t•',
       outcome:
-        "One drink turns into five, and five turns 9 into even more. It is a great night of revelry at the Sleeping Lion. You see sadness in the Cragheart's eyes when you finally stand up to leave. It tells you it s been hard to find people to relate to since leaving the party and it thanks vou for your continued friendship. Gain 1 reputation. Lose 5 gold each.",
+        "One drink turns into five, and five turns 9 into even more. It is a great night of revelry at the Sleeping Lion. You see sadness in the Cragheart's eyes when you finally stand up to leave. It tells you it s been hard to find people to relate to since leaving the party and it thanks you for your continued friendship. Gain 1 reputation. Lose 5 gold each.",
       imageUrl: '/assets/cards/events/base/city/ce-46-b-a.png',
     },
     optionB: {
@@ -1000,7 +1000,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Begrudgingly pay For the note.',
       outcome:
-        "PAY5 COLLECTIVE GOLD: You throw the kid a few coins and grab the note. Enclosed with the note is a small medallion engraved with the image of the sun. Apparently the Sunkeeper thinks the object may help you at some point in the future. The note doesn't say exactly how and the thing has no apparent use. Vou stow it away in your pack. Party Achievement: “Sun-Blessed. OTHERWISE: You reach into your pocket to pay the kid. but come up empty-handed. He slinks off in indignation. No eflect.",
+        "PAY5 COLLECTIVE GOLD: You throw the kid a few coins and grab the note. Enclosed with the note is a small medallion engraved with the image of the sun. Apparently the Sunkeeper thinks the object may help you at some point in the future. The note doesn't say exactly how and the thing has no apparent use. You stow it away in your pack. Party Achievement: “Sun-Blessed. OTHERWISE: You reach into your pocket to pay the kid. but come up empty-handed. He slinks off in indignation. No eflect.",
       imageUrl: '/assets/cards/events/base/city/ce-48-b-a.png',
     },
     optionB: {
@@ -1027,7 +1027,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Demand a finder s fee for setting him up with buyers. /',
       outcome:
-        '; The Valrath looks at you with trepidation, hut after some persuasiont you get him to agree* Gain 15 collective gold. Read outcome A. OTHERWISE: The Valrath recoils, insulted by the notion. He storms off, grumbling about the lost value of friendship. No effect.',
+        '; The Valrath looks at you with trepidation, but after some persuasion you get him to agree* Gain 15 collective gold. Read outcome A. OTHERWISE: The Valrath recoils, insulted by the notion. He storms off, grumbling about the lost value of friendship. No effect.',
       imageUrl: '/assets/cards/events/base/city/ce-49-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-49-f.png',
@@ -1059,7 +1059,7 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 51,
     text:
-      'You are wandering through the city streets late at night when you hear a terrifying scream high above you. >ou look up /ust in time to see a body falling toward vou and jump out of the way. It lands with a wet thud on the ground. You were not the only ones to hear the scream, and quickly a small crowd forms around the corpse, including a couple of city guards. The body is clad in black leather armor, and a long, thin blade conspicuously protrudes from its back. You remark that the sword somehow looks familiar. “What?" asks a guard. “This is the third murder like this in a week. Tell me everything vou know! "',
+      'You are wandering through the city streets late at night when you hear a terrifying scream high above you. >ou look up /ust in time to see a body falling toward you and jump out of the way. It lands with a wet thud on the ground. You were not the only ones to hear the scream, and quickly a small crowd forms around the corpse, including a couple of city guards. The body is clad in black leather armor, and a long, thin blade conspicuously protrudes from its back. You remark that the sword somehow looks familiar. “What?" asks a guard. “This is the third murder like this in a week. Tell me everything you know! "',
     optionA: {
       choice: 'Tell the guard that the sword belongs to the Nightshroud, your former party member.',
       outcome:
@@ -1080,7 +1080,7 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 52,
     text:
-      ")ou have been hearing rumors in the bars: a pox is spreading through Cioomhaven, affecting lower class citizens — street urchins and back- alley thugs. And then one night you see it: a Narrower dressed in a ragged green cloak holding a man do wn in tin alley as its swarm spreads out and consumes him. The man's screams are muffled as the insects skitter down his throats Killing monsters and demons is one thing, but the Plagueherald shouldn t be preying on people in the citv. You approach it, intent on stopping its attack.",
+      ")ou have been hearing rumors in the bars: a pox is spreading through Cioomhaven, affecting lower class citizens — street urchins and back- alley thugs. And then one night you see it: a Harrower dressed in a ragged green cloak holding a man do wn in tin alley as its swarm spreads out and consumes him. The man's screams are muffled as the insects skitter down his throats Killing monsters and demons is one thing, but the Plagueherald shouldn t be preying on people in the city. You approach it, intent on stopping its attack.",
     optionA: {
       choice: 'Calmly explain the situation to the Plagueherald, imploring it to move on.',
       outcome:
@@ -1090,7 +1090,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Threaten the Plagueherald with retribution if it doesn’t stop attacking residents.',
       outcome:
-        'The Plaguehera/d recoils at your threat, genuinely concerned that you would attack it. But, the cleansing...the city isn\'t ready. " You shake your head, and the Harrower chitters in disappointment. " Very well, hut you will be responsible when the Harbinger comes." It turns and floats ofT into the darkness. Gain 1 prosperity.',
+        'The Plaguehera/d recoils at your threat, genuinely concerned that you would attack it. But, the cleansing...the city isn\'t ready. " You shake your head, and the Harrower chitters in disappointment. " Very well, but you will be responsible when the Harbinger comes." It turns and floats ofT into the darkness. Gain 1 prosperity.',
       imageUrl: '/assets/cards/events/base/city/ce-52-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-52-f.png',
@@ -1105,7 +1105,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Let the guards know you recognize the Berserker s axe.',
       outcome:
-        'You approach (he wounded detail, explaining • how that axe belonged to a former member of your party. "Yeah, we know," one of them says with an icy stare. “Said »ve were desecrating her land or some such nonsense and just went crazy. But we weren\'t doing anything but patrolling! Quite a piece of work vour friend, fust take the axe if you want and get out of here." Lose 1 reputation. Cain I collective Bloody Axe (Item 117;.',
+        'You approach (he wounded detail, explaining • how that axe belonged to a former member of your party. "Yeah, we know," one of them says with an icy stare. “Said »ve were desecrating her land or some such nonsense and just went crazy. But we weren\'t doing anything but patrolling! Quite a piece of work your friend, fust take the axe if you want and get out of here." Lose 1 reputation. Cain I collective Bloody Axe (Item 117;.',
       imageUrl: '/assets/cards/events/base/city/ce-53-b-a.png',
     },
     optionB: {
@@ -1143,11 +1143,11 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 55,
     text:
-      '\'Ah, they said I might find you here. A portly Valrath woman looks down at you as you are enjoying a cold beverage at the Sleeping Lion. "A group of wild-looking Orchids came to the Temple of Coin today hoping to engage in trade with the merchants of the city. One particularly dour-fooking one with a how said vou lot would vouch for them. Mere always wary of traps and betrayal out here on the edge of the wildsr but if you think these Orchids can be trusted, then the Merchant s Guild may consider opening trade with them,”',
+      '\'Ah, they said I might find you here. A portly Valrath woman looks down at you as you are enjoying a cold beverage at the Sleeping Lion. "A group of wild-looking Orchids came to the Temple of Coin today hoping to engage in trade with the merchants of the city. One particularly dour-fooking one with a how said you lot would vouch for them. Mere always wary of traps and betrayal out here on the edge of the wildsr but if you think these Orchids can be trusted, then the Merchant s Guild may consider opening trade with them,”',
     optionA: {
       choice: 'Vouch for the Orchids, i',
       outcome:
-        '11 ell, we\'ll take it under advisement. Personally, I don\'t even know why your opinion matters, hut some people in the A ierchant 5 Guild seem to like you. "Anyway, feel free to get back to your life of consumption and murder." Gain I prosperity.',
+        '11 ell, we\'ll take it under advisement. Personally, I don\'t even know why your opinion matters, but some people in the A ierchant 5 Guild seem to like you. "Anyway, feel free to get back to your life of consumption and murder." Gain I prosperity.',
       imageUrl: '/assets/cards/events/base/city/ce-55-b-a.png',
     },
     optionB: {
@@ -1216,7 +1216,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Calm down the crowd and get more details from the man about the attack. /',
       outcome:
-        'ft s not easy, hut you quiet down the crowd and take the staggering man over to a secluded corner ol the tavern to get the full story out of him. Apparently he was part of a group of ruffians working to harvest the Dagger Forest for wood. In the middle of their logging expedition, however, they were attacked by the Beast Tyrant and an army of forest animals. Though he ran off in the middle of the fightf the man swears he also heard the howl of angry spirits in the chaos„',
+        'ft s not easy, but you quiet down the crowd and take the staggering man over to a secluded corner ol the tavern to get the full story out of him. Apparently he was part of a group of ruffians working to harvest the Dagger Forest for wood. In the middle of their logging expedition, however, they were attacked by the Beast Tyrant and an army of forest animals. Though he ran off in the middle of the fightf the man swears he also heard the howl of angry spirits in the chaos„',
       imageUrl: '/assets/cards/events/base/city/ce-58-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-58-f.png',
@@ -1237,7 +1237,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Investigate the corpses. / I',
       outcome:
-        'Curiosity gets the better of you, as well and you approach the corpses with morbid fascination# hoping to find some clue about what happened\\ The number of insects is alarming, as is the diseased nature of the skin. If you had to guess, a Narrower could be responsible, or perhaps Xorn, who you so helpfully revived. Over the next few days, the disease spreads throughout the Sinking Market, killing many more people. Lose I prosperity.',
+        'Curiosity gets the better of you, as well and you approach the corpses with morbid fascination# hoping to find some clue about what happened\\ The number of insects is alarming, as is the diseased nature of the skin. If you had to guess, a Harrower could be responsible, or perhaps Xorn, who you so helpfully revived. Over the next few days, the disease spreads throughout the Sinking Market, killing many more people. Lose I prosperity.',
       imageUrl: '/assets/cards/events/base/city/ce-59-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-59-f.png',
@@ -1269,7 +1269,7 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 61,
     text:
-      'The day proves uneventful until you head back to your room in the evening to find a small package waiting at your doorstep. Resting on it is another note from the Tinkerer: He thanks you profusely for sending along the mechanical spider, saying it was a great help in his work. He doesn t need it any longer, however and decided to send it hack. He explains that he made a few improvements to it as well while it was in his possession, and that it should help you significantly in your adventures.',
+      'The day proves uneventful until you head back to your room in the evening to find a small package waiting at your doorstep. Resting on it is another note from the Tinkerer: He thanks you profusely for sending along the mechanical spider, saying it was a great help in his work. He doesn t need it any longer, however and decided to send it back. He explains that he made a few improvements to it as well while it was in his possession, and that it should help you significantly in your adventures.',
     optionA: {
       choice: 'Gratefully keep the spider*',
       outcome:
@@ -1311,7 +1311,7 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 63,
     text:
-      '7 assume vou are aware of an increased amount of sickness in the * city. )ou were summoned to the Ghost fortress and now stand before the Captain ot the Guard, "ItV believe it could have something to do with a poisoning threat brought to our attention by your Mindthief friend a while ago. We ignored it, but now she is nowhere to he found, the Hook Coast is a bed of disease, and Gloomhaven proper is on its way there, too. He looks at vou firmly. “I need you to head dow n to the Hook Coast and figure out what is going on. Then eliminate the source of the poison.',
+      '7 assume you are aware of an increased amount of sickness in the * city. )ou were summoned to the Ghost fortress and now stand before the Captain ot the Guard, "ItV believe it could have something to do with a poisoning threat brought to our attention by your Mindthief friend a while ago. We ignored it, but now she is nowhere to he found, the Hook Coast is a bed of disease, and Gloomhaven proper is on its way there, too. He looks at you firmly. “I need you to head dow n to the Hook Coast and figure out what is going on. Then eliminate the source of the poison.',
     optionA: {
       choice: 'Agree to help.',
       outcome:
@@ -1321,7 +1321,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Tell the captain to fix his own problem. /',
       outcome:
-        'The Captain of the Guard sighs. * 7 really thought you were the ones for the job. What business could you possibly have that is more important than making sure this citv is safe?" tf He holds up his hand. "No matter. Fine, ■ just get out of here! U c will deal with this ourselves." Lose 1 prosperity. Lose 1 reputation.',
+        'The Captain of the Guard sighs. * 7 really thought you were the ones for the job. What business could you possibly have that is more important than making sure this city is safe?" tf He holds up his hand. "No matter. Fine, ■ just get out of here! U c will deal with this ourselves." Lose 1 prosperity. Lose 1 reputation.',
       imageUrl: '/assets/cards/events/base/city/ce-63-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-63-f.png',
@@ -1336,7 +1336,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Stay and listen to what the Nightshroud has to say.',
       outcome:
-        'The Nightshroud kicks one of the corpses. " This is the SinRa Syndicate, a group of assassins trying to gain a foothold in the region. I \'m trying to stop them, and somehow they found out you and I u ere friends. They decided logo after vou as retribution. Lucky for you. I\'ve locatcJ their hideout, so were going to sneak in there and end this whole business once and for all. “ Unlock “Syndicate Hideout (89 (C-17). Party Achievement: "Sin-Ra."',
+        'The Nightshroud kicks one of the corpses. " This is the SinRa Syndicate, a group of assassins trying to gain a foothold in the region. I \'m trying to stop them, and somehow they found out you and I u ere friends. They decided logo after you as retribution. Lucky for you. I\'ve locatcJ their hideout, so were going to sneak in there and end this whole business once and for all. “ Unlock “Syndicate Hideout (89 (C-17). Party Achievement: "Sin-Ra."',
       imageUrl: '/assets/cards/events/base/city/ce-64-b-a.png',
     },
     optionB: {
@@ -1353,7 +1353,7 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 65,
     text:
-      "In the middle of the night, you tire wakened by a hard knocking at vour door. Vou answer and it takes vou *\tv a second to recognize the man standing on the other side. t hose Oak relics vou was look in for, the man J\t* says as he scratches a blister on the side of his lace. Some cut purses tried to sell them to me. I can take you to their place, but we gotta move fast, and / want a cut of the loot. ” Vou hurriedly agree and make your way to a ramshackle warehouse next to the old docks. ' This is it/' the man says. \"Looks like no one s V* home, though/",
+      "In the middle of the night, you tire wakened by a hard knocking at your door. You answer and it takes you *\tv a second to recognize the man standing on the other side. t hose Oak relics you was look in for, the man J\t* says as he scratches a blister on the side of his lace. Some cut purses tried to sell them to me. I can take you to their place, but we gotta move fast, and / want a cut of the loot. ” You hurriedly agree and make your way to a ramshackle warehouse next to the old docks. ' This is it/' the man says. \"Looks like no one s V* home, though/",
     optionA: {
       choice: 'Raid the warehouse and recover the stolen goods.',
       outcome:
@@ -1378,7 +1378,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: "Offer to pay off the Sawbones' debt.",
       outcome:
-        'a PAY40 COLLECTIVE GOLD: It s a hefty * chunk of money, hut the Sawbones is incredibly grateful. " This is wonderful! I knew I could count on you. This should be enough to put this mess behind me and finally allow me to live free.\' He hands you a potion and thanks you once again for all your help. Gain 1 collective Super Healing Potion (Item.055). OTHERWISE: Head outcome B.',
+        'a PAY40 COLLECTIVE GOLD: It s a hefty * chunk of money, but the Sawbones is incredibly grateful. " This is wonderful! I knew I could count on you. This should be enough to put this mess behind me and finally allow me to live free.\' He hands you a potion and thanks you once again for all your help. Gain 1 collective Super Healing Potion (Item.055). OTHERWISE: Head outcome B.',
       imageUrl: '/assets/cards/events/base/city/ce-66-b-a.png',
     },
     optionB: {
@@ -1416,7 +1416,7 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 68,
     text:
-      "You wake in the middle of the night to the sound of rushing water. In the corner ofyour room, you sec a flood gushing out of the head of the Summoner's staff which you had previously picked up in your travels. You jump out of bed and splash through a growing puddle of water to investigate the staff, hut you can't make any sense of it. ft seems to he materializing the water out of thin air, possibly channeling it from another plane of existence. You scratch your head, unsure of what to do next.",
+      "You wake in the middle of the night to the sound of rushing water. In the corner ofyour room, you sec a flood gushing out of the head of the Summoner's staff which you had previously picked up in your travels. You jump out of bed and splash through a growing puddle of water to investigate the staff, but you can't make any sense of it. ft seems to he materializing the water out of thin air, possibly channeling it from another plane of existence. You scratch your head, unsure of what to do next.",
     optionA: {
       choice: 'Kind some way to get the water to stop gushing.',
       outcome:
@@ -1441,13 +1441,13 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Embrace the joke and go with it.',
       outcome:
-        'You nuke your way to the front ot the crowd and join in the tun. When the Soothsinger notices you in the crowd, she brings you up on stage for the chorus, ft s a lit tie embarrassing, hut people are enjoying your positive attitude about it. Gain I reputation.',
+        'You nuke your way to the front ot the crowd and join in the tun. When the Soothsinger notices you in the crowd, she brings you up on stage for the chorus, ft s a lit tie embarrassing, but people are enjoying your positive attitude about it. Gain I reputation.',
       imageUrl: '/assets/cards/events/base/city/ce-69-b-a.png',
     },
     optionB: {
       choice: 'Leave the bar before someone recog- nizes you. /',
       outcome:
-        "You flee the bar to escape the tune, hut it doesn't prove to be that simple. The next day, everyone on the street is humming the tune, They all seems to be looking at you and laughing. It 's a nightmare. •*» Lose 1 reputation.",
+        "You flee the bar to escape the tune, but it doesn't prove to be that simple. The next day, everyone on the street is humming the tune, They all seems to be looking at you and laughing. It 's a nightmare. •*» Lose 1 reputation.",
       imageUrl: '/assets/cards/events/base/city/ce-69-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-69-f.png',
@@ -1479,12 +1479,12 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 71,
     text:
-      "You are walking along the riv- er's edge in the Mixed District late at night when something in votir pack begins to vibrate. The sensation is odd and you quickly fish out the small metal sphere vou found out on the road. It shakes uncon- w trollably and then begins pulling your arm toward the river. You walk to the bank, but still the sphere pulls. It is drawn to something in the water.",
+      "You are walking along the riv- er's edge in the Mixed District late at night when something in votir pack begins to vibrate. The sensation is odd and you quickly fish out the small metal sphere you found out on the road. It shakes uncon- w trollably and then begins pulling your arm toward the river. You walk to the bank, but still the sphere pulls. It is drawn to something in the water.",
     optionA: {
       choice:
         "Let the sphere go. Option 6: | limp into the river and continue to follow the sphere's pulh ■ /  Option A: -",
       outcome:
-        "The sphere leaps from your hand, hovers * over the water, and then emits an intense beam of light straight down into the river, illuminating something below. You shrug and jump into the river, following the beam of light down to the bottom. There vou ftnd a wooden chest hall buried under the rocks. You bring it back to shore and open it to find a small metal rod covered in strange carvings. When you pick it up, the sphere immediately flics back over to you and attaches itself to the rod's end. Add Citv Event J2 to the deck. r\t'",
+        "The sphere leaps from your hand, hovers * over the water, and then emits an intense beam of light straight down into the river, illuminating something below. You shrug and jump into the river, following the beam of light down to the bottom. There you ftnd a wooden chest hall buried under the rocks. You bring it back to shore and open it to find a small metal rod covered in strange carvings. When you pick it up, the sphere immediately flics back over to you and attaches itself to the rod's end. Add City Event J2 to the deck. r\t'",
       imageUrl: '/assets/cards/events/base/city/ce-71-b-a.png',
     },
     optionB: {
@@ -1501,17 +1501,17 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 72,
     text:
-      "The metal sphere and rod — you 've had them in your possession for a while non and occasionally pull them out to mull o\\er the can ings. Youve brought it to the University but the\\ can t make any sense of it either you are fiddling with the device in the Sleeping Lion when you are tapped on the shoulder. )ou turn to see a wicked grin on the dirt\\ face of a old bandit. They call me Fish and that there is a Lev, friend a ke\\ of the ancient sort. . * ^ Before you can ask, Fish pulls out a similar black sphere atop a metal rod. \"They're twins, ain't they, and Fish knows just what they open. \\ tomb of treasure, friend Come, come, Fish will show vou the * w\t*r *1",
+      "The metal sphere and rod — you 've had them in your possession for a while non and occasionally pull them out to mull o\\er the can ings. Youve brought it to the University but the\\ can t make any sense of it either you are fiddling with the device in the Sleeping Lion when you are tapped on the shoulder. )ou turn to see a wicked grin on the dirt\\ face of a old bandit. They call me Fish and that there is a Lev, friend a ke\\ of the ancient sort. . * ^ Before you can ask, Fish pulls out a similar black sphere atop a metal rod. \"They're twins, ain't they, and Fish knows just what they open. \\ tomb of treasure, friend Come, come, Fish will show you the * w\t*r *1",
     optionA: {
       choice: 'Follow the smelly old bandit.',
       outcome:
-        'Your curiosity gets the better of your judg- • ment. You need to know the purpose of the device you found, so you follow Fish into«) derelict shock where he pulls out a mop of the oreo ond lo vs it on o table. Fish directs you to pull out vour rod ond both you ond he hold your respective rods over the toble. 4 specific location on the mop glows brightly ond Fish loughs. ‘Sec? I toldya. didn \'t I? Meet me there with your rod and we ll get rich!" Unlock Lost Temple (79)(K-I2). Party Achievement: "Fish\'s Aid.”',
+        'Your curiosity gets the better of your judg- • ment. You need to know the purpose of the device you found, so you follow Fish into«) derelict shock where he pulls out a mop of the oreo ond lo vs it on o table. Fish directs you to pull out your rod ond both you ond he hold your respective rods over the toble. 4 specific location on the mop glows brightly ond Fish loughs. ‘Sec? I toldya. didn \'t I? Meet me there with your rod and we ll get rich!" Unlock Lost Temple (79)(K-I2). Party Achievement: "Fish\'s Aid.”',
       imageUrl: '/assets/cards/events/base/city/ce-72-b-a.png',
     },
     optionB: {
       choice: 'Refuse to go with the man. This whole situation seems,.Jishv, /',
       outcome:
-        "This suspicious old man must have seen you in here before with the rod and fashioned some elaborate con to swindle you out ol something. You won i be so easily fooled. There 's no he knows what the rod does when no one else in town does. Vbi/ push him awav and go back to your drink. No effect.",
+        "This suspicious old man must have seen you in here before with the rod and fashioned some elaborate con to swindle you out ol something. You won i be so easily fooled. There 's no he knows what the rod does when no one else in town does. Vbi/ push him away and go back to your drink. No effect.",
       imageUrl: '/assets/cards/events/base/city/ce-72-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-72-f.png',
@@ -1526,7 +1526,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Seek help from the University.',
       outcome:
-        "“Yes, verv interesting, ' a bookish Quatryl says as he rolls the crystal over in his hand. “It seems os if this crystal is attuned to a specific location, and once removed, it begins vibrating until mountains and houses start falling down. I'd say you need to return it to its proper home. \\ \\ ith the proper tools — which I II need help pa ving for — / should be able to triangulate that location for vou. Lose 5 collective gold. Unlock Crystalline Cave\" 84 (CM2:. Partv Achievement: \"Tremors.'",
+        "“Yes, verv interesting, ' a bookish Quatryl says as he rolls the crystal over in his hand. “It seems os if this crystal is attuned to a specific location, and once removed, it begins vibrating until mountains and houses start falling down. I'd say you need to return it to its proper home. \\ \\ ith the proper tools — which I II need help pa ving for — / should be able to triangulate that location for you. Lose 5 collective gold. Unlock Crystalline Cave\" 84 (CM2:. Partv Achievement: \"Tremors.'",
       imageUrl: '/assets/cards/events/base/city/ce-73-b-a.png',
     },
     optionB: {
@@ -1543,7 +1543,7 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 74,
     text:
-      '"Welcome to the Marvelous . _ » ami Magic Techno-Circus!* The Quatryl with a top hat you met on the road greets you as you enter (he circus tent. We always welcome our friends to come and see the wondrous sights! you wander around the pavilion for a while, looking at all signs for .>// manner of improbable creatures. Ultimately vou will have to decide on «/ f* what to see first.',
+      '"Welcome to the Marvelous . _ » ami Magic Techno-Circus!* The Quatryl with a top hat you met on the road greets you as you enter (he circus tent. We always welcome our friends to come and see the wondrous sights! you wander around the pavilion for a while, looking at all signs for .>// manner of improbable creatures. Ultimately you will have to decide on «/ f* what to see first.',
     optionA: {
       choice: 'Go watch tlic dancing bean',
       outcome:
@@ -1553,7 +1553,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Visit the tamed fortune teller.',
       outcome:
-        'You enter the fortune-teller s tent and the old Orchid woman s expression immediately goes dark; She gestures you to sit at her tableT and when you do, she grabs your arm and looks deep into vour eyes. *Your path is dark and cursed\\ There is a shadow around you — a Gloom. You must leave this place. Be rid of it before it con- sumes vou* ml All start scenario with CURSE Gain 2 experience each.',
+        'You enter the fortune-teller s tent and the old Orchid woman s expression immediately goes dark; She gestures you to sit at her tableT and when you do, she grabs your arm and looks deep into your eyes. *Your path is dark and cursed\\ There is a shadow around you — a Gloom. You must leave this place. Be rid of it before it con- sumes you* ml All start scenario with CURSE Gain 2 experience each.',
       imageUrl: '/assets/cards/events/base/city/ce-74-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-74-f.png',
@@ -1627,7 +1627,7 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 78,
     text:
-      'The scene is typical A nervous looking man stands in front of your table at the Sleeping lion. You eye him lazily until he speaks. 7 was, um, told you might be able to help me," he starts. 7 was in the Corpse wood conduct- ing some, uh, business, when my partners and I ivcrc attacked by Vermlings. I barely escaped with my life, but mv partners weren\'t so lucky. One ol them was carrying something valuable — an artifact we managed to find in our, uh, business. It s very important I get it back. I fol- lowed the Vermlings back to their nest, and I can assure you they have many valuables. I\'ll show vou where it is, and vou can take whatever vou * . *• ■* want. Just bring me back the artifact."',
+      'The scene is typical A nervous looking man stands in front of your table at the Sleeping lion. You eye him lazily until he speaks. 7 was, um, told you might be able to help me," he starts. 7 was in the Corpse wood conduct- ing some, uh, business, when my partners and I ivcrc attacked by Vermlings. I barely escaped with my life, but mv partners weren\'t so lucky. One ol them was carrying something valuable — an artifact we managed to find in our, uh, business. It s very important I get it back. I fol- lowed the Vermlings back to their nest, and I can assure you they have many valuables. I\'ll show you where it is, and you can take whatever you * . *• ■* want. Just bring me back the artifact."',
     optionA: {
       choice: "Accept the man's deal.",
       outcome:
@@ -1637,7 +1637,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Demand payment for the job up-front. /',
       outcome:
-        '“Look...!, ah, don\'t have a whole lot of capital * right now, but I will give you everything I have once you get back with that artifact.“ You narrow your eyes at him. He coughs ner- vously and produces a small handful of coins. "All right, fine. Look, here. This is all I can offer you. Now can we get to the part where you go do your job? ” Gain 5 collective gold. Read outcome A.',
+        '“Look...!, ah, don\'t have a whole lot of capital * right now, but I will give you everything I have once you get back with that artifact.“ You narrow your eyes at him. He coughs nervously and produces a small handful of coins. "All right, fine. Look, here. This is all I can offer you. Now can we get to the part where you go do your job? ” Gain 5 collective gold. Read outcome A.',
       imageUrl: '/assets/cards/events/base/city/ce-78-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-78-f.png',
@@ -1669,7 +1669,7 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 80,
     text:
-      "Asyou prepare to leave the city on another journey, you are sud- denly surrounded by a large group of guards near the west gate. 'He hear you've been spreading rumors, one ol them says. \"Claiming that the guards are causing the Vermling attacks on the citv. That‘s some high-grade garbage you 're spewing. “My best friend died in the last Vermling raid!'’ another one veils. You got something smart to say about that? ”",
+      "As you prepare to leave the city on another journey, you are sud- denly surrounded by a large group of guards near the west gate. 'He hear you've been spreading rumors, one ol them says. \"Claiming that the guards are causing the Vermling attacks on the city. That‘s some high-grade garbage you 're spewing. “My best friend died in the last Vermling raid!'’ another one veils. You got something smart to say about that? ”",
     optionA: {
       choice: 'Attempt to calm down the guards and explain the situation.',
       outcome:
@@ -1679,7 +1679,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: '1 hesc guards are not interested in a Iricndly discourse. Prepare to defend yourself. /',
       outcome:
-        'Seeing the situation turning south, you waste no time pulling your weapons and prepare for an attack. The guards are more than happy to oblige. Luckily vour foes sustain only some minor injuries in the time it takes for another squad of guards to arrive and break up the scuffle. They let you go on your wayf but you can see the disdain in all of their eves. A Lose 2 reputation.',
+        'Seeing the situation turning south, you waste no time pulling your weapons and prepare for an attack. The guards are more than happy to oblige. Luckily your foes sustain only some minor injuries in the time it takes for another squad of guards to arrive and break up the scuffle. They let you go on your wayf but you can see the disdain in all of their eves. A Lose 2 reputation.',
       imageUrl: '/assets/cards/events/base/city/ce-80-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-80-f.png',
@@ -1694,13 +1694,13 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Take the time to relate the story of what happened.',
       outcome:
-        'You smile and nod[ explaining how an ancient force attempted to destroy the city, hut it was banished to another plane. Everyone around you stands enraptured by vour story and cheers and claps at its conclusion. After a few additional questions, you are finally able extricate yourself from the crowd and continue your business. Gain 2 reputation.',
+        'You smile and nod[ explaining how an ancient force attempted to destroy the city, but it was banished to another plane. Everyone around you stands enraptured by your story and cheers and claps at its conclusion. After a few additional questions, you are finally able extricate yourself from the crowd and continue your business. Gain 2 reputation.',
       imageUrl: '/assets/cards/events/base/city/ce-81-b-a.png',
     },
     optionB: {
       choice: 'Claim it wasn’t you and leave quickly. /',
       outcome:
-        'You brusquely shake your head and wave • your hand away saying the man has the wrong person. His excited face immediately turns to one of disappointment. And audible sigh of dejection emerges from the crowd as you rush away. * “There s no need to be rude about it!* the dockworker yells at vour back. *\ta* Lose 2 reputation.',
+        'You brusquely shake your head and wave • your hand away saying the man has the wrong person. His excited face immediately turns to one of disappointment. And audible sigh of dejection emerges from the crowd as you rush away. * “There s no need to be rude about it!* the dockworker yells at your back. *\ta* Lose 2 reputation.',
       imageUrl: '/assets/cards/events/base/city/ce-81-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-81-f.png',
@@ -1715,7 +1715,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Run from the howling to safety.',
       outcome:
-        '1 You pick up and run as fast as you can through the underbrush and away from the ominous sounds. They seem to be receding as you stumble headlong into some sort o f thicket hiled with sticky spines. You pull yourself out, hut not before your skin is pierced in numerous places and becomes in flamed. Best to avoid this plant in the future. All start scenario with POISON^ •',
+        '1 You pick up and run as fast as you can through the underbrush and away from the ominous sounds. They seem to be receding as you stumble headlong into some sort o f thicket hiled with sticky spines. You pull yourself out, but not before your skin is pierced in numerous places and becomes in flamed. Best to avoid this plant in the future. All start scenario with POISON^ •',
       imageUrl: '/assets/cards/events/base/road/re-01-b-a.png',
     },
     optionB: {
@@ -1846,7 +1846,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Keep moving on down the road. No eed to get mixed up in whatever is going on.',
       outcome:
-        'Without a second thought, you get hack onto the main road and continue moving toward your dest mat ion. No effect.',
+        'Without a second thought, you get back onto the main road and continue moving toward your dest mat ion. No effect.',
       imageUrl: '/assets/cards/events/base/road/re-07-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-07-f.png',
@@ -1972,7 +1972,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Attempt to calm down the hermit and resolve the situation peacefully.',
       outcome:
-        "You grab the broom handle and wrestle the old man to the ground, attempting to restrain bis flailing limbs. You try to explain that this is all a misunderstanding, but he just keeps warning you not to defecate on bis wives, The man is surprisingly agilef and the stench of his rags also makes keeping him pinned difficult. He slips free and scrambles around for his broom handle, muttering about the 'stars'gift.* Vou run away with all haste, but his odor is much harder to escape. All start scenario with CURSE 4 .",
+        "You grab the broom handle and wrestle the old man to the ground, attempting to restrain bis flailing limbs. You try to explain that this is all a misunderstanding, but he just keeps warning you not to defecate on bis wives, The man is surprisingly agilef and the stench of his rags also makes keeping him pinned difficult. He slips free and scrambles around for his broom handle, muttering about the 'stars'gift.* You run away with all haste, but his odor is much harder to escape. All start scenario with CURSE 4 .",
       imageUrl: '/assets/cards/events/base/road/re-13-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-13-f.png',
@@ -2008,7 +2008,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Shoot at the birds',
       outcome:
-        'You pull back your how and take aim> The instant you loose the arrow, however you notice something odd about the birds. They are much farther away than you realized and much bigger. The arrow misses, but it gets their attention, As the flock turns and descends towardyour you realize you just shot at a group of drakes. You run for cover among the trees, hut are hit by their acidic spit a number of times in the process. All start scenario with MUDDLE All start scenario with 2 damage.',
+        'You pull back your how and take aim> The instant you loose the arrow, however you notice something odd about the birds. They are much farther away than you realized and much bigger. The arrow misses, but it gets their attention, As the flock turns and descends towardyour you realize you just shot at a group of drakes. You run for cover among the trees, but are hit by their acidic spit a number of times in the process. All start scenario with MUDDLE All start scenario with 2 damage.',
       imageUrl: '/assets/cards/events/base/road/re-15-b-a.png',
     },
     optionB: {
@@ -2035,7 +2035,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: '-',
       outcome:
-        'You are enjoying watching the animals graze when an arrow flies out and hits the larger of the deer in its center chest, ft holts away, hut doesn\'t make it very far before collapsing. Then you see a large fnox emerge from the brush and turn toward you. 7 thought you were going to do something stupid there for a second. Thanks for not scaring away my quarry. Allow me to share some of the spoils with you," All start scenario with {Bless} J',
+        'You are enjoying watching the animals graze when an arrow flies out and hits the larger of the deer in its center chest, ft bolts away, but doesn\'t make it very far before collapsing. Then you see a large fnox emerge from the brush and turn toward you. 7 thought you were going to do something stupid there for a second. Thanks for not scaring away my quarry. Allow me to share some of the spoils with you," All start scenario with {Bless} J',
       imageUrl: '/assets/cards/events/base/road/re-16-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-16-f.png',
@@ -2056,7 +2056,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Demand an explanation before you help in any way.',
       outcome:
-        'You force the Quatryl to slow down and talk to you, hut his eyes keep darting around in a panic. "Don t you understand? The world needs my technology now! / must perfect it! It will revolutionize everything!" You agree that the power of flight is pretty great, hut you convince the Quatryl that the world can wait a day for him to get some rest and organize his thoughts. You help him transport the broken machine back to town. Gain 1 prosperity.',
+        'You force the Quatryl to slow down and talk to you, but his eyes keep darting around in a panic. "Don t you understand? The world needs my technology now! / must perfect it! It will revolutionize everything!" You agree that the power of flight is pretty great, but you convince the Quatryl that the world can wait a day for him to get some rest and organize his thoughts. You help him transport the broken machine back to town. Gain 1 prosperity.',
       imageUrl: '/assets/cards/events/base/road/re-17-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-17-f.png',
@@ -2071,7 +2071,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Attempt to come to a peaceful reso lution.',
       outcome:
-        'REPUTATION < ~4: You begin to agree with the Inox that Cloomhaven is a blight on the land in need of cleansing, and the Inox seems to believe vou. "Go in peace, then," the leader says. “A nd stay off my land." No effect. OTHERWISE: You try to explain that you mean the Inox no ill will, but the leader eyes you skeptically, "foul creature. I curse you and your kind.\' Run — get off my land and never come back!" All start scenario with CURSE',
+        'REPUTATION < ~4: You begin to agree with the Inox that Cloomhaven is a blight on the land in need of cleansing, and the Inox seems to believe you. "Go in peace, then," the leader says. “A nd stay off my land." No effect. OTHERWISE: You try to explain that you mean the Inox no ill will, but the leader eyes you skeptically, "foul creature. I curse you and your kind.\' Run — get off my land and never come back!" All start scenario with CURSE',
       imageUrl: '/assets/cards/events/base/road/re-18-b-a.png',
     },
     optionB: {
@@ -2239,7 +2239,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Attempt to help the man with his axle problem.',
       outcome:
-        ": The man talks the whole way through the process, hut alter an hour or so, the axle is repaired and the man leaves in a radiant mood[ bestowing blessings upon you. All start scenario with {Bless} Gain 1 reputation. OTHERWISE: You happily agree to help the man, but quickly realize you don't know what you are doing. The man thanks you anyway, and you move on. No effect.",
+        ": The man talks the whole way through the process, but alter an hour or so, the axle is repaired and the man leaves in a radiant mood[ bestowing blessings upon you. All start scenario with {Bless} Gain 1 reputation. OTHERWISE: You happily agree to help the man, but quickly realize you don't know what you are doing. The man thanks you anyway, and you move on. No effect.",
       imageUrl: '/assets/cards/events/base/road/re-26-b-a.png',
     },
     optionB: {
@@ -2308,7 +2308,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Backtrack and find a way around the tone-filled valley.',
       outcome:
-        "You sigh and turn around' After some backward progress, you find another path through the foothills and work your way through it. Unfortunately it leads you directly into a den of wolves, and they don ’t seem too happy about your sudden arrival. You fend them off, hut they leave you wo it ruled. All start scenario with WOUND",
+        "You sigh and turn around' After some backward progress, you find another path through the foothills and work your way through it. Unfortunately it leads you directly into a den of wolves, and they don ’t seem too happy about your sudden arrival. You fend them off, but they leave you wo it ruled. All start scenario with WOUND",
       imageUrl: '/assets/cards/events/base/road/re-29-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-29-f.png',
@@ -2413,7 +2413,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Wait by the fire for whatever comes.',
       outcome:
-        'Sw\t: A group of Inox appears at the edge of your campsite. Seeing their kind among vou, they greet you in a friendly manner and stay for some time to talk. After they leave, you find the remainder of the night restful. No effect. OTHERWISE: A group of irate Inox appears at the edge of your campsite. They claim you are trespassing and force you to pack up and leave. You walk through the rest of the night and arrive at your destination tiredl Discard 2 cards each.',
+        'Sw\t: A group of Inox appears at the edge of your campsite. Seeing their kind among you, they greet you in a friendly manner and stay for some time to talk. After they leave, you find the remainder of the night restful. No effect. OTHERWISE: A group of irate Inox appears at the edge of your campsite. They claim you are trespassing and force you to pack up and leave. You walk through the rest of the night and arrive at your destination tiredl Discard 2 cards each.',
       imageUrl: '/assets/cards/events/base/road/re-34-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-34-f.png',
@@ -2445,7 +2445,7 @@ export const events: EventEntity[] = [
     type: EventType.Road,
     number: 36,
     text:
-      "Up abead you see the path you are on leads into a dark and unfamiliar wood[ It gives you an eerie feeling. As you step closer,; you can fee/your skin crawl and it forces you to pause, you can 't help hut think that this wood might best be avoided.",
+      "Up abead you see the path you are on leads into a dark and unfamiliar wood[ It gives you an eerie feeling. As you step closer,; you can fee/your skin crawl and it forces you to pause, you can 't help but think that this wood might best be avoided.",
     optionA: {
       choice: 'Continue down the path into the wood. You are not afraid.',
       outcome:
@@ -2518,7 +2518,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'This is clearly some sort of plague. Avoid it at all costs.',
       outcome:
-        'You recoil in terror and quickly move along. You can hear the Valrath sobbing as you do so, hut you kno w well enough to avoid a plague when you see it. No effect.',
+        'You recoil in terror and quickly move along. You can hear the Valrath sobbing as you do so, but you kno w well enough to avoid a plague when you see it. No effect.',
       imageUrl: '/assets/cards/events/base/road/re-39-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-39-f.png',
@@ -2539,7 +2539,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Head downriver and find a better place to cross.',
       outcome:
-        'It takes an hour, hut you finally find a rocky area where the river has been diverted into many smaller streams. It is no problem to cross, but just finding the spot and then getting back on track takes some of the fire out or you. Discard 2 cards each.',
+        'It takes an hour, but you finally find a rocky area where the river has been diverted into many smaller streams. It is no problem to cross, but just finding the spot and then getting back on track takes some of the fire out or you. Discard 2 cards each.',
       imageUrl: '/assets/cards/events/base/road/re-40-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-40-f.png',
@@ -2718,7 +2718,7 @@ export const events: EventEntity[] = [
     type: EventType.Road,
     number: 49,
     text:
-      'You arc approached on the road by a group of men on horseback. They don t immediately seem menacing, hut they are formidable and well organized. One of the men, who wears plate armor and has a sword at his side, addresses you coldly You hail from Gloomhaven, correct? What say you about the politics of the place? Are you for or against military rule in the region? Do you think those loot merchants could do a better job, like they \'re doing with the rest of this doomed land?" Looking closer; you see all the men wear the signet of a tower with an eye at its center',
+      'You arc approached on the road by a group of men on horseback. They don t immediately seem menacing, but they are formidable and well organized. One of the men, who wears plate armor and has a sword at his side, addresses you coldly You hail from Gloomhaven, correct? What say you about the politics of the place? Are you for or against military rule in the region? Do you think those loot merchants could do a better job, like they \'re doing with the rest of this doomed land?" Looking closer; you see all the men wear the signet of a tower with an eye at its center',
     optionA: {
       choice: 'Claim allegiance to the military.',
       outcome:
@@ -2823,7 +2823,7 @@ export const events: EventEntity[] = [
     type: EventType.Road,
     number: 54,
     text:
-      "Deep inside a dense forest, you begin to hear the jangling of bells and see a small troupe of performers approaching you through the trees. 'Well, look who it is! * The small voice belongs to a garishly dressed female Qua try I with a lute and a feathered hat. fancy running into you out here. “This actually may be a stroke of luckf the Soothsingcr says. *You see, my compatriots and I seem to be a bit lost. We were beaded toward the Capital when my drummer said he knew a shortcut. Now here wc are in the middle of a forest without an inkling of a clue. / don't suppose you could find it in your heart to escort us hack to the main road„ could you?",
+      "Deep inside a dense forest, you begin to hear the jangling of bells and see a small troupe of performers approaching you through the trees. 'Well, look who it is! * The small voice belongs to a garishly dressed female Qua try I with a lute and a feathered hat. fancy running into you out here. “This actually may be a stroke of luckf the Soothsingcr says. *You see, my compatriots and I seem to be a bit lost. We were beaded toward the Capital when my drummer said he knew a shortcut. Now here wc are in the middle of a forest without an inkling of a clue. / don't suppose you could find it in your heart to escort us back to the main road„ could you?",
     optionA: {
       choice: 'Take the time to escort the troupe back out of the forest.',
       outcome:
@@ -2854,7 +2854,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Take the overgrown path.',
       outcome:
-        'The trek through the overgrown path is unpleasant. You are constantly getting pricked by sharp thorns covered in a strange sap. You think you recognize them f rom a previous foray into harsh, unforgiving foliage. Sure enough, you start feeling sick pretty soon after vou emerge from the bushes. All start scenario with POISON',
+        'The trek through the overgrown path is unpleasant. You are constantly getting pricked by sharp thorns covered in a strange sap. You think you recognize them f rom a previous foray into harsh, unforgiving foliage. Sure enough, you start feeling sick pretty soon after you emerge from the bushes. All start scenario with POISON',
       imageUrl: '/assets/cards/events/base/road/re-55-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-55-f.png',
@@ -2875,7 +2875,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Let the man die and take his belongings.',
       outcome:
-        "You riffle through the man 's pockets as he speaks his last words. They're too soft to make out, hut the tone is one of anger and disappointment. You make off with a decent amount of money and leave the corpse to rot. Gain 3 gold each.",
+        "You riffle through the man 's pockets as he speaks his last words. They're too soft to make out, but the tone is one of anger and disappointment. You make off with a decent amount of money and leave the corpse to rot. Gain 3 gold each.",
       imageUrl: '/assets/cards/events/base/road/re-56-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-56-f.png',
@@ -2928,7 +2928,7 @@ export const events: EventEntity[] = [
     type: EventType.Road,
     number: 59,
     text:
-      'The\tair is especially humid and muggy as you walk towards your destination, hut even that couldn’t explain the sight that greets you on the road. Directly in Iront of you, completely blocking the only available path, is a massive swarm of insects. There must he millions of them. >bt/ take a hesitant step forward and the bugs do not react. They are not concerned by your presence at all. — w    \t■&» ■». m« mwi',
+      'The\tair is especially humid and muggy as you walk towards your destination, but even that couldn’t explain the sight that greets you on the road. Directly in Iront of you, completely blocking the only available path, is a massive swarm of insects. There must he millions of them. >bt/ take a hesitant step forward and the bugs do not react. They are not concerned by your presence at all. — w    \t■&» ■». m« mwi',
     optionA: {
       choice: 'Cover yourself as best you can and try to walk through the swarm.',
       outcome:
@@ -3022,7 +3022,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Admonish the Savvas, claiming you could have handled the demons without his help.',
       outcome:
-        'The Savvas adopts a look of serious contemplation. “You are right, of course. I presumed to think that a lesser race would need my help, hut l Forgot vour dedication to growth and learning. I have made a grave mistake and must now beg your forgiveness. It holds out a small trinket toward you. Please, accept this with my apologies." Gain 1 collective “Sun Earring" (Item 049).',
+        'The Savvas adopts a look of serious contemplation. “You are right, of course. I presumed to think that a lesser race would need my help, but l Forgot your dedication to growth and learning. I have made a grave mistake and must now beg your forgiveness. It holds out a small trinket toward you. Please, accept this with my apologies." Gain 1 collective “Sun Earring" (Item 049).',
       imageUrl: '/assets/cards/events/base/road/re-63-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-63-f.png',
@@ -3075,7 +3075,7 @@ export const events: EventEntity[] = [
     type: EventType.Road,
     number: 66,
     text:
-      'The first sign of the tnox raiding party was a cloud of dust on the horizon. vvja* so large, however, there was nowhere to run, City-dwelling scum!" one of the Inox in front calls out to you as you approach. "We march now to attack your city and wipe it from the face of this landl What do you say to that?” four ifrst thought, as you prepare for a fight. is that they will need a larger army. Before you can strike, though, the sky grows dark. You assume it is a cloud, hut then look up to see a giant drake descending on you from above.  >*»■ <■ i i i m !■■■ ■v^vnii(<n Min i',
+      'The first sign of the tnox raiding party was a cloud of dust on the horizon. vvja* so large, however, there was nowhere to run, City-dwelling scum!" one of the Inox in front calls out to you as you approach. "We march now to attack your city and wipe it from the face of this landl What do you say to that?” four ifrst thought, as you prepare for a fight. is that they will need a larger army. Before you can strike, though, the sky grows dark. You assume it is a cloud, but then look up to see a giant drake descending on you from above.  >*»■ <■ i i i m !■■■ ■v^vnii(<n Min i',
     optionA: {
       choice: 'Take cover.',
       outcome:
