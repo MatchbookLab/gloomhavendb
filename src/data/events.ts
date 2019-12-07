@@ -116,7 +116,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Go aid in the defense of the city.',
       outcome:
-        'You rush toward the West Gate, eager to fight back the invaders. As you approach, you see a mass of Vcrmlings climbing over the wall and attacking the guards with daggers and arrows. You yell and charge into the battle. It is a rough fight, but you emerge victorious, covered in fur and blood. The citizens of Gloomhaven remain safe, and the town is free to grow and prosper.\n\nGain 5 experience each.\n\nGain 1 prosperity.',
+        'You rush toward the West Gate, eager to fight back the invaders. As you approach, you see a mass of Vermlings climbing over the wall and attacking the guards with daggers and arrows. You yell and charge into the battle. It is a rough fight, but you emerge victorious, covered in fur and blood. The citizens of Gloomhaven remain safe, and the town is free to grow and prosper.\n\nGain 5 experience each.\n\nGain 1 prosperity.',
       imageUrl: '/assets/cards/events/base/city/ce-06-b-a.png',
     },
     optionB: {
