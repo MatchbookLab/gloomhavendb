@@ -155,7 +155,7 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 8,
     text:
-      'On a trip to the New Market, you see a curious sea chart prominently displayed in a Valrath merchants stall.\n\n"Ah. I see this interests you!" he savs while holding it up, taking great care not to damage it. "I\'ve been told this map will lead you to a location of untold riches! Wondrous beyond anything you have seen before!"\n\nThe Valrath gestures grandly with his free hand and his smile grows wide. "How can you sav no to this? Just make me an offer!"',
+      'On a trip to the New Market, you see a curious sea chart prominently displayed in a Valrath merchants stall.\n\n"Ah. I see this interests you!" he says while holding it up, taking great care not to damage it. "I\'ve been told this map will lead you to a location of untold riches! Wondrous beyond anything you have seen before!"\n\nThe Valrath gestures grandly with his free hand and his smile grows wide. "How can you sav no to this? Just make me an offer!"',
     optionA: {
       choice: 'The map docs look valuable. Decide to bargain for it.',
       outcome:
@@ -764,7 +764,7 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 37,
     text:
-      "As you return to town after your latest adventure, you see 5/770Ac rising from the walls of the city: You enter the broken gates and see a scene of despair as the citizens of Gloomhaven recover from a catastrophic attack. 'Demons, a wounded guard at the gate savs. \"Wish you lot could have been around to help fight them off Now look at the place, Luckily the rest of the city remained safe.'",
+      "As you return to town after your latest adventure, you see 5/770Ac rising from the walls of the city: You enter the broken gates and see a scene of despair as the citizens of Gloomhaven recover from a catastrophic attack. 'Demons, a wounded guard at the gate says. \"Wish you lot could have been around to help fight them off Now look at the place, Luckily the rest of the city remained safe.'",
     optionA: {
       choice: 'Attempt to console and cheer up those affected by the attack.',
       outcome:
@@ -785,7 +785,7 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 38,
     text:
-      'Walking through the crowded streets of the Ward of Scales, you suddenly hear a commotion behind you, You turn to see a gruff shirtless man badgering a male Orchid. 7 assure you, I did nothing of the sort." the Orchid savs calm/v. “You calling me a liar now?” bellows the man. "I think somebody needs to teach you a lesson. The man careens forward with his fist and knocks the Orchid to the ground. A gasp emerges from the crowd, hut very quickly the attitude turns to excitement and encouragement. Nothing like a good fight to get a crowd worked up.',
+      'Walking through the crowded streets of the Ward of Scales, you suddenly hear a commotion behind you, You turn to see a gruff shirtless man badgering a male Orchid. 7 assure you, I did nothing of the sort." the Orchid says calm/v. “You calling me a liar now?” bellows the man. "I think somebody needs to teach you a lesson. The man careens forward with his fist and knocks the Orchid to the ground. A gasp emerges from the crowd, hut very quickly the attitude turns to excitement and encouragement. Nothing like a good fight to get a crowd worked up.',
     optionA: {
       choice: "Intervene on the Orchid's behalf. r",
       outcome:
@@ -849,7 +849,7 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 41,
     text:
-      'The Sinking Market is a varied area or decrepit huts and merchants unable to sell their wares anywhere else. It doesnt surprise you as you walk through to see a scraggly Vermling approach with a small sack. "A potion for the big, strong adventurers! she savs as she ivjyes you down. “Help you in battle, it will!" You are about to push her aside and keep walking when she pulls the potion out of the sack« It glows green in the daylight — an impressive, large flask of master craftsmanship. “Aha, I knew it catch your eye! How much you pay?"',
+      'The Sinking Market is a varied area or decrepit huts and merchants unable to sell their wares anywhere else. It doesnt surprise you as you walk through to see a scraggly Vermling approach with a small sack. "A potion for the big, strong adventurers! she says as she ivjyes you down. “Help you in battle, it will!" You are about to push her aside and keep walking when she pulls the potion out of the sack« It glows green in the daylight — an impressive, large flask of master craftsmanship. “Aha, I knew it catch your eye! How much you pay?"',
     optionA: {
       choice: 'Barter with the Vermling for the potion.',
       outcome:
@@ -922,7 +922,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Direct him to the Savvas Elemental Guild and go back to sleep*',
       outcome:
-        '“Ah, yes, that is probably a good idea," he 0 savs. "Thanks for your time and I hope your friend the Spellweaver is doing wed!" Gain I reputation.',
+        '“Ah, yes, that is probably a good idea," he 0 says. "Thanks for your time and I hope your friend the Spellweaver is doing wed!" Gain I reputation.',
       imageUrl: '/assets/cards/events/base/city/ce-44-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-44-f.png',
@@ -1353,7 +1353,7 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 65,
     text:
-      "In the middle of the night, you tire wakened by a hard knocking at vour door. Vou answer and it takes vou *\tv a second to recognize the man standing on the other side. t hose Oak relics vou was look in for, the man J\t* says as he scratches a blister on the side of his lace. Some cut purses tried to sell them to me. I can take you to their place, but we gotta move fast, and / want a cut of the loot. ” Vou hurriedly agree and make your way to a ramshackle warehouse next to the old docks. ' This is it/' the man savs. \"Looks like no one s V* home, though/",
+      "In the middle of the night, you tire wakened by a hard knocking at vour door. Vou answer and it takes vou *\tv a second to recognize the man standing on the other side. t hose Oak relics vou was look in for, the man J\t* says as he scratches a blister on the side of his lace. Some cut purses tried to sell them to me. I can take you to their place, but we gotta move fast, and / want a cut of the loot. ” Vou hurriedly agree and make your way to a ramshackle warehouse next to the old docks. ' This is it/' the man says. \"Looks like no one s V* home, though/",
     optionA: {
       choice: 'Raid the warehouse and recover the stolen goods.',
       outcome:
@@ -1526,7 +1526,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Seek help from the University.',
       outcome:
-        "“Yes, verv interesting, ' a bookish Quatryl • savs os he rolls the crystal over in his hand. “It seems os if this crystal is attuned to a specific location, and once removed, it begins vibrating until mountains and houses start falling down. I'd sav you need to return it to its proper home. \\ \\ ith the proper tools — which I II need help pa ving for — / should be able to triangulate that location for vou. Lose 5 collective gold. Unlock Crystalline Cave\" 84 (CM2:. Partv Achievement: \"Tremors.'",
+        "“Yes, verv interesting, ' a bookish Quatryl says as he rolls the crystal over in his hand. “It seems os if this crystal is attuned to a specific location, and once removed, it begins vibrating until mountains and houses start falling down. I'd sav you need to return it to its proper home. \\ \\ ith the proper tools — which I II need help pa ving for — / should be able to triangulate that location for vou. Lose 5 collective gold. Unlock Crystalline Cave\" 84 (CM2:. Partv Achievement: \"Tremors.'",
       imageUrl: '/assets/cards/events/base/city/ce-73-b-a.png',
     },
     optionB: {
