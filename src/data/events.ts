@@ -226,7 +226,7 @@ export const events: EventEntity[] = [
       imageUrl: '/assets/cards/events/base/city/ce-11-b-a.png',
     },
     optionB: {
-      choice: 'Shake your head and walk away. Best not to take chances in such situations. /',
+      choice: 'Shake your head and walk away. Best not to take chances in such situations.',
       outcome:
         'You loudly refuse the Harrower\'s offer and continue about your business. That thing should know better than to stray from the Sinking Market.\n\nReputation < -4: Gain 1 reputation.',
       imageUrl: '/assets/cards/events/base/city/ce-11-b-b.png',
@@ -394,7 +394,7 @@ export const events: EventEntity[] = [
       imageUrl: '/assets/cards/events/base/city/ce-19-b-a.png',
     },
     optionB: {
-      choice: 'Attend the wedding and bring a mundane gift. /',
+      choice: 'Attend the wedding and bring a mundane gift.',
       outcome:
         'REPUTATI0N < -4: You pick up an unremarkable set of silverware on the wav to the event. When you arrive, the father of the bride casts a scornful look vour way and begins whispering to those around him. Maybe you received the invitation by mistake.\n\nLose 5 collective gold.\n\nLose 1 reputation.\n\nOTHERWISE: You are one guest among many, and everyone is having too good of a time to notice your poor choice in gifts.\n\nLose 5 collective gold.',
       imageUrl: '/assets/cards/events/base/city/ce-19-b-b.png',
