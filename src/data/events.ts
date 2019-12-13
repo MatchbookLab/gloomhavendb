@@ -201,7 +201,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Play a game with the man. It may prove to be a good time.',
       outcome:
-        'REPUTATION > -5: You get into the game, but after a few rounds, your enthusiasm wanes as the man displays a streak of luck that can only be described as "uncanny" You leave the table empty handed.\n\nLose 5 gold each.\n\nOTHERWISE; The man clearly intends to cheat you out of your hard-earned money. He\'s not the only one capable of cheating, however. After a few rounds,you wipe that smile right off his face.\n\nGain 5 gold each.',
+        'REPUTATION > -5: You get into the game, but after a few rounds, your enthusiasm wanes as the man displays a streak of luck that can only be described as "uncanny" You leave the table empty handed.\n\nLose 5 gold each.\n\nOTHERWISE: The man clearly intends to cheat you out of your hard-earned money. He\'s not the only one capable of cheating, however. After a few rounds,you wipe that smile right off his face.\n\nGain 5 gold each.',
       imageUrl: '/assets/cards/events/base/city/ce-10-b-a.png',
     },
     optionB: {
@@ -537,7 +537,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: "Offer to fix the lamps. It shouldn't be too hard with a bit of technical know-how.",
       outcome:
-        "{Tinkerer}: You quickly identify the source of the problem — some frayed wiring in the kitchen — and have it replaced in no time. The proprietor seems very impressed by your work and gives free drinks all around in your name.\n\nGain 2 reputation.\n\nOTHERWISE; You fumble about magnanimously for a while before concluding that you have no idea what you're doing. The proprietor looks disappointed and sends out for a real tinkerer.\n\nNo effect.",
+        "{Tinkerer}: You quickly identify the source of the problem — some frayed wiring in the kitchen — and have it replaced in no time. The proprietor seems very impressed by your work and gives free drinks all around in your name.\n\nGain 2 reputation.\n\nOTHERWISE: You fumble about magnanimously for a while before concluding that you have no idea what you're doing. The proprietor looks disappointed and sends out for a real tinkerer.\n\nNo effect.",
       imageUrl: '/assets/cards/events/base/city/ce-26-b-a.png',
     },
     optionB: {
