@@ -260,7 +260,7 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 13,
     text:
-      'You are walking across the Silent Bridge, headed toward the Sleeping Lion to get a quick meal, when you sec a Quatryl standing in front of a small cart laden with plates of food and curious contraptions.\n\n"Come try the delicacies of the East!" the Quatryl barks. "Food enhanced with science! Flavors beyond your wildest imagination!"',
+      'You are walking across the Silent Bridge, headed toward the Sleeping Lion to get a quick meal, when you see a Quatryl standing in front of a small cart laden with plates of food and curious contraptions.\n\n"Come try the delicacies of the East!" the Quatryl barks. "Food enhanced with science! Flavors beyond your wildest imagination!"',
     optionA: {
       choice: 'Stop and try the food.',
       outcome:
@@ -838,7 +838,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Pursue the hooded figure and make him answer for this attack.',
       outcome:
-        'You jump to your feet and sprint as fast as you can in pursuit. The figure races toward the city wall and begins to climb the stairs. You close the gap. but look on in frustration as he moves to jump over the wall and out of the city. You lunge and grab his robe as be falls. His body twists awkwardly, freeing him of the robe. You look over the edge to sec him land face-first on the ground and not get up. Gain 1 collective "Sacrificial Robes” (Item 102). Gain 1 reputation.',
+        'You jump to your feet and sprint as fast as you can in pursuit. The figure races toward the city wall and begins to climb the stairs. You close the gap. but look on in frustration as he moves to jump over the wall and out of the city. You lunge and grab his robe as be falls. His body twists awkwardly, freeing him of the robe. You look over the edge to see him land face-first on the ground and not get up. Gain 1 collective "Sacrificial Robes” (Item 102). Gain 1 reputation.',
       imageUrl: '/assets/cards/events/base/city/ce-40-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-40-f.png',
@@ -954,7 +954,7 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 46,
     text:
-      'Anticipating an enjoyable night ol drinks at the Sleeping Lion, you enter the tavern to sec a familiar Savvas sitting at your usual table. The Cragbeart stands and extends both its arms. “Ah, friends! So good to see youf it says. “Sit! Have a drink with me!',
+      'Anticipating an enjoyable night ol drinks at the Sleeping Lion, you enter the tavern to see a familiar Savvas sitting at your usual table. The Cragbeart stands and extends both its arms. “Ah, friends! So good to see youf it says. “Sit! Have a drink with me!',
     optionA: {
       choice: 'Have a drink with the Cragheart. 1 . _\tp| ^\t•',
       outcome:
@@ -975,7 +975,7 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 47,
     text:
-      'Walking near Gloomhaven Square, you see a peculiar scene. A group of guards is dragging along a VermUng in tattered robes toward the Ghost Fortress. Getting a little closer, you recognise the Mindthicf, "Hssss," she spits. *\'Why do you do this? I came to you! I tell you that this town is being poisoned, and you respond by imprisoning me?" “Well sec what the Captain of the Guard has to say about this," one of her captors says. “Keep moving!"',
+      'Walking near Gloomhaven Square, you see a peculiar scene. A group of guards is dragging along a VermUng in tattered robes toward the Ghost Fortress. Getting a little closer, you recognise the Mindthicf, "Hssss," she spits. *\'Why do you do this? I came to you! I tell you that this town is being poisoned, and you respond by imprisoning me?" “Well see what the Captain of the Guard has to say about this," one of her captors says. “Keep moving!"',
     optionA: {
       choice: 'Intervene with the guards and find out what is going on.',
       outcome:
@@ -1084,7 +1084,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Calmly explain the situation to the Plagueherald, imploring it to move on.',
       outcome:
-        'With the man dead at its feet, the Plagueherald makes a chittering sound that sounds almost like laughing. “You cannot see it, but this city needs to be cleansed. You will sec. and you will thank me. At this, the Plagueherald bursts out into a massive swarm of insects and Hies up into the sky. The deaths continue, and new rumors start about how you are associated with the killer. Lose 2 reputation.',
+        'With the man dead at its feet, the Plagueherald makes a chittering sound that sounds almost like laughing. “You cannot see it, but this city needs to be cleansed. You will see. and you will thank me. At this, the Plagueherald bursts out into a massive swarm of insects and Hies up into the sky. The deaths continue, and new rumors start about how you are associated with the killer. Lose 2 reputation.',
       imageUrl: '/assets/cards/events/base/city/ce-52-b-a.png',
     },
     optionB: {
@@ -1405,7 +1405,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Refuse to pay. You won t be strong- armed by anyone. A /',
       outcome:
-        'You laugh and wave your hand dismissively. I here \'s no way you will be paying such a large amount of money to these thugs. Unfortunately, the Inox is not amused. m " Then your payment will he blood! she says "Meet us in the back alley, and ivc \'ll sec if "we can t come to terms. “ Unlock "Back Alley Brawi"(92 (C-14). Party Achievement: "Debt Collection.\'"',
+        'You laugh and wave your hand dismissively. I here \'s no way you will be paying such a large amount of money to these thugs. Unfortunately, the Inox is not amused. m " Then your payment will he blood! she says "Meet us in the back alley, and ivc \'ll see if "we can t come to terms. “ Unlock "Back Alley Brawi"(92 (C-14). Party Achievement: "Debt Collection.\'"',
       imageUrl: '/assets/cards/events/base/city/ce-67-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-67-f.png',
@@ -1416,7 +1416,7 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 68,
     text:
-      "You wake in the middle of the night to the sound of rushing water. In the corner ofyour room, you sec a flood gushing out of the head of the Summoner's staff which you had previously picked up in your travels. You jump out of bed and splash through a growing puddle of water to investigate the staff, but you can't make any sense of it. ft seems to he materializing the water out of thin air, possibly channeling it from another plane of existence. You scratch your head, unsure of what to do next.",
+      "You wake in the middle of the night to the sound of rushing water. In the corner ofyour room, you see a flood gushing out of the head of the Summoner's staff which you had previously picked up in your travels. You jump out of bed and splash through a growing puddle of water to investigate the staff, but you can't make any sense of it. ft seems to he materializing the water out of thin air, possibly channeling it from another plane of existence. You scratch your head, unsure of what to do next.",
     optionA: {
       choice: 'Kind some way to get the water to stop gushing.',
       outcome:
@@ -1505,7 +1505,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Follow the smelly old bandit.',
       outcome:
-        'Your curiosity gets the better of your judg- • ment. You need to know the purpose of the device you found, so you follow Fish into«) derelict shock where he pulls out a mop of the oreo ond lo vs it on o table. Fish directs you to pull out your rod ond both you ond he hold your respective rods over the toble. 4 specific location on the mop glows brightly ond Fish loughs. ‘Sec? I toldya. didn \'t I? Meet me there with your rod and we ll get rich!" Unlock Lost Temple (79)(K-I2). Party Achievement: "Fish\'s Aid.”',
+        'Your curiosity gets the better of your judg- • ment. You need to know the purpose of the device you found, so you follow Fish into«) derelict shock where he pulls out a mop of the oreo ond lo vs it on o table. Fish directs you to pull out your rod ond both you ond he hold your respective rods over the toble. 4 specific location on the mop glows brightly ond Fish loughs. ‘See? I toldya. didn \'t I? Meet me there with your rod and we ll get rich!" Unlock Lost Temple (79)(K-I2). Party Achievement: "Fish\'s Aid.”',
       imageUrl: '/assets/cards/events/base/city/ce-72-b-a.png',
     },
     optionB: {
@@ -2277,7 +2277,7 @@ export const events: EventEntity[] = [
     type: EventType.Road,
     number: 28,
     text:
-      "As you walk down a dirt path, you sec a hard-looking mercenary sitting in a patch ol grass. He nods as you pass. i a\tI ml ley, f riends,\" he says. There is something off about his tone, though. 7 don't suppose one of you might he willing to part with a stamina potion, would you? Tm headed toward Gloomhavenf but I've just come such a long way and I'm not feeling too good about the stretch I have left * With the clank ol his sword sheath against his armor and a loud groan, the man stands up. 771 pay you well for it.,f «««■ - -mwf mtm —r '• mu\thi ■■ n MfcaM——— ■ ■ ■ M",
+      "As you walk down a dirt path, you see a hard-looking mercenary sitting in a patch ol grass. He nods as you pass. i a\tI ml ley, f riends,\" he says. There is something off about his tone, though. 7 don't suppose one of you might he willing to part with a stamina potion, would you? Tm headed toward Gloomhavenf but I've just come such a long way and I'm not feeling too good about the stretch I have left * With the clank ol his sword sheath against his armor and a loud groan, the man stands up. 771 pay you well for it.,f «««■ - -mwf mtm —r '• mu\thi ■■ n MfcaM——— ■ ■ ■ M",
     optionA: {
       choice: 'Sell the man a stamina potion.',
       outcome:
@@ -2970,7 +2970,7 @@ export const events: EventEntity[] = [
     type: EventType.Road,
     number: 61,
     text:
-      'They are Sun Demons, perhaps the same ones who accosted you earlier That suspicion is confirmed when you get closer and sec they are hovering around an armored Valrath woman bound to a tree, torturing her for information. Don \'t you see how important this is!" one of the demons says. "Give us the location of the templet" "Lies and tricks of a demon, * the Sunkeeper responds, " The temple is in no danger except from you.0 — ■ omini mi« mmmmmmi—miii    \t■■ ~\t■■ ■ ■■',
+      'They are Sun Demons, perhaps the same ones who accosted you earlier That suspicion is confirmed when you get closer and see they are hovering around an armored Valrath woman bound to a tree, torturing her for information. Don \'t you see how important this is!" one of the demons says. "Give us the location of the templet" "Lies and tricks of a demon, * the Sunkeeper responds, " The temple is in no danger except from you.0 — ■ omini mi« mmmmmmi—miii    \t■■ ~\t■■ ■ ■■',
     optionA: {
       choice: 'Leave the scene quietly and return to your own business.',
       outcome:
