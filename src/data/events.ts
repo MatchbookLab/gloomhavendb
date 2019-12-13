@@ -396,7 +396,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Attend the wedding and bring a mundane gift.',
       outcome:
-        'REPUTATI0N < -4: You pick up an unremarkable set of silverware on the way to the event. When you arrive, the father of the bride casts a scornful look your way and begins whispering to those around him. Maybe you received the invitation by mistake.\n\nLose 5 collective gold.\n\nLose 1 reputation.\n\nOTHERWISE: You are one guest among many, and everyone is having too good of a time to notice your poor choice in gifts.\n\nLose 5 collective gold.',
+        'REPUTATION < -4: You pick up an unremarkable set of silverware on the way to the event. When you arrive, the father of the bride casts a scornful look your way and begins whispering to those around him. Maybe you received the invitation by mistake.\n\nLose 5 collective gold.\n\nLose 1 reputation.\n\nOTHERWISE: You are one guest among many, and everyone is having too good of a time to notice your poor choice in gifts.\n\nLose 5 collective gold.',
       imageUrl: '/assets/cards/events/base/city/ce-19-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-19-f.png',
