@@ -827,7 +827,7 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 40,
     text:
-      'You are shopping for supplies in the Boilers District when an intense explosion knocks you off your feet You look in the direction of the heat waves to see plumes of fire and smoke rising from a building less than a block a way, The fire rages uncontrollably and there arc many wounded residents laying near the blast, screaming in pain. You also spot something else — a hooded figure in a dark robe fleeing from the scene.',
+      'You are shopping for supplies in the Boilers District when an intense explosion knocks you off your feet You look in the direction of the heat waves to see plumes of fire and smoke rising from a building less than a block a way, The fire rages uncontrollably and there are many wounded residents laying near the blast, screaming in pain. You also spot something else — a hooded figure in a dark robe fleeing from the scene.',
     optionA: {
       choice:
         'Rush to the aid of the residents and help put out the fire. Bv Bff ~ *T MJLJ\tm « V -\t|\t■ ■\t^\tI. -\t|',
@@ -996,7 +996,7 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 48,
     text:
-      'You arc haggling over the price ot road rations with an irritating Valrath merchant when a messenger boy approaches you holding a note. "Sir, I have a pressing letter from an important Valrath Sunkeeper, "the messenger says. 7 was told to deliver it to you." You reach for it, but the messenger moves back a little. "Sir, this note has traveled a long distance to get to you. If you could, please pay a small fee to take possession of it."',
+      'You are haggling over the price ot road rations with an irritating Valrath merchant when a messenger boy approaches you holding a note. "Sir, I have a pressing letter from an important Valrath Sunkeeper, "the messenger says. 7 was told to deliver it to you." You reach for it, but the messenger moves back a little. "Sir, this note has traveled a long distance to get to you. If you could, please pay a small fee to take possession of it."',
     optionA: {
       choice: 'Begrudgingly pay For the note.',
       outcome:
@@ -1248,7 +1248,7 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 60,
     text:
-      'You arc wandering the Ward of Seales in the evening when a crowd of people begins to form outside one of the shops, growing louder and more dense hv the second. /Is you approach, you see a terrified family of Quatrvls through a familiar angry mob. The father pleads with a group of disheveled men with torches. "C heats! A woman next to you screams, \'Burn the store down!" One of the men — clearly not a guard — backhands the father away from the door and pushes his way inside the shop.',
+      'You are wandering the Ward of Seales in the evening when a crowd of people begins to form outside one of the shops, growing louder and more dense hv the second. /Is you approach, you see a terrified family of Quatrvls through a familiar angry mob. The father pleads with a group of disheveled men with torches. "C heats! A woman next to you screams, \'Burn the store down!" One of the men — clearly not a guard — backhands the father away from the door and pushes his way inside the shop.',
     optionA: {
       choice: 'Attempt to stop the men from burning down the shop.',
       outcome:
@@ -1721,7 +1721,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Let the wolves come.',
       outcome:
-        'Confident that the wolves pose no significant threat, you stand your ground and prepare for battle, The pack comes — ragged and hungry slowly emerging from the dark — and surrounds your party; There are more of them than you expected[ but not enough to take you down, You suffer a bite or iwot but arc able to fight them off. All start scenario with 3 damage.',
+        'Confident that the wolves pose no significant threat, you stand your ground and prepare for battle, The pack comes — ragged and hungry slowly emerging from the dark — and surrounds your party; There are more of them than you expected[ but not enough to take you down, You suffer a bite or iwot but are able to fight them off. All start scenario with 3 damage.',
       imageUrl: '/assets/cards/events/base/road/re-01-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-01-f.png',
@@ -1783,7 +1783,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Attack the caravan.',
       outcome:
-        'With so Few guards protecting it. the caravan makes an ideal mark. You charge down the hill, weapons at the ready. The merchants scatter, and the guards arc easily dispatched, leaving you with a nice stash of valuables. Gain 10 gold each. Lose 2 reputation.',
+        'With so Few guards protecting it. the caravan makes an ideal mark. You charge down the hill, weapons at the ready. The merchants scatter, and the guards are easily dispatched, leaving you with a nice stash of valuables. Gain 10 gold each. Lose 2 reputation.',
       imageUrl: '/assets/cards/events/base/road/re-04-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-04-f.png',
@@ -1794,7 +1794,7 @@ export const events: EventEntity[] = [
     type: EventType.Road,
     number: 5,
     text:
-      "You are traveling through a small wooded area when you round a bend and find a group of Inox warriors fighting a band of armored humans. With all the commotion, it 's hard to discern more details, but the humans look like guards from ' r ' -Wr* •\"\t~ .*\t‘ ‘ - Y,\tj •*- ~ - * ,y;-;' - . * v,’ J/, t\ti+j* Gloomhaven, You arc not sure why they would be out here fighting the Inox, though.",
+      "You are traveling through a small wooded area when you round a bend and find a group of Inox warriors fighting a band of armored humans. With all the commotion, it 's hard to discern more details, but the humans look like guards from ' r ' -Wr* •\"\t~ .*\t‘ ‘ - Y,\tj •*- ~ - * ,y;-;' - . * v,’ J/, t\ti+j* Gloomhaven, You are not sure why they would be out here fighting the Inox, though.",
     optionA: {
       choice: 'Help the tnox fight o(F the humans.',
       outcome:
@@ -1945,7 +1945,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Leave the puppy to fend for itself!',
       outcome:
-        "Adorable as the puppy is, you arc not the ones to care for it. You are headed into danger, and you can't let anything distract you from the task at hand. It follows you for a while, barking in indignation, but it eventually wanders off No effect.",
+        "Adorable as the puppy is, you are not the ones to care for it. You are headed into danger, and you can't let anything distract you from the task at hand. It follows you for a while, barking in indignation, but it eventually wanders off No effect.",
       imageUrl: '/assets/cards/events/base/road/re-12-b-a.png',
     },
     optionB: {
@@ -1962,7 +1962,7 @@ export const events: EventEntity[] = [
     type: EventType.Road,
     number: 13,
     text:
-      'Traveling off the beaten path, you arc surprised to see a large group ol figures on the horizon. You take out your weapons and move cautiously forward. As you get closer; it becomes clear that the figures are not aliver but sculptures of some kind\\ made haphazardly out of branches, garbage, and scrap metal There are fifty or so in the middle of a field, with no other signs of life as far as you can see. You see a necklace that may be valuable on one of them and go to grab it. "Don\'t touch her!" You wheel around to see an old man in rags emerge from a hole in the ground and charge at you with a broken broom handle. "These women arc all mine!"',
+      'Traveling off the beaten path, you are surprised to see a large group ol figures on the horizon. You take out your weapons and move cautiously forward. As you get closer; it becomes clear that the figures are not aliver but sculptures of some kind\\ made haphazardly out of branches, garbage, and scrap metal There are fifty or so in the middle of a field, with no other signs of life as far as you can see. You see a necklace that may be valuable on one of them and go to grab it. "Don\'t touch her!" You wheel around to see an old man in rags emerge from a hole in the ground and charge at you with a broken broom handle. "These women are all mine!"',
     optionA: {
       choice: 'Defend yourself with lethal force.',
       outcome:
@@ -2067,7 +2067,7 @@ export const events: EventEntity[] = [
     type: EventType.Road,
     number: 18,
     text:
-      'road contains many dangers, and chief among them arc the barbaric tribes of Inox that inhabit the wilderness around the city: This is why your heart sinks when you see a mounted group of them ride up to you and surround your party, “Ah, agents of that wretched monstrosity you call a town,\' the largest of the Inox says as he looks down at you, "Tell me, scum. What business do you have out here on my land? Have those fools sent you out to murder more of my people?*',
+      'road contains many dangers, and chief among them are the barbaric tribes of Inox that inhabit the wilderness around the city: This is why your heart sinks when you see a mounted group of them ride up to you and surround your party, “Ah, agents of that wretched monstrosity you call a town,\' the largest of the Inox says as he looks down at you, "Tell me, scum. What business do you have out here on my land? Have those fools sent you out to murder more of my people?*',
     optionA: {
       choice: 'Attempt to come to a peaceful reso lution.',
       outcome:
@@ -2098,7 +2098,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Interfere with the guards to help the an escape.',
       outcome:
-        'Criminals deserve freedom as much as the next man. While the guards arc distracted by the one escapee, you rush to the wagon and release the others. Chaos erupts as the prisoners scatter in every direction. Many manage to escape, and you find a mysterious gift of thanks waiting on your doorstep when you return to Cloomhaven. Lose 2 reputation. Reputation < -9: Gain 1 collective "Major Power Potion” (Item 04l)«',
+        'Criminals deserve freedom as much as the next man. While the guards are distracted by the one escapee, you rush to the wagon and release the others. Chaos erupts as the prisoners scatter in every direction. Many manage to escape, and you find a mysterious gift of thanks waiting on your doorstep when you return to Cloomhaven. Lose 2 reputation. Reputation < -9: Gain 1 collective "Major Power Potion” (Item 04l)«',
       imageUrl: '/assets/cards/events/base/road/re-19-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-19-f.png',
@@ -2195,7 +2195,7 @@ export const events: EventEntity[] = [
     text:
       'come a cross a group of brow-beaten Inox trudging down the path in the opposite direct ion as you. Some are pulling carts laden with various miscellany, mostly Furs and crudely crafted goods. The rest have armloads of much of the same. It is obvious that this is everything the Inox have — their life \'s worth in their arms and wagons* They are all covered in what appears to be soot. The shaman at the head of the group calls to you* The beast awakens! The mountain is aflame! Beware you do not anger it!" Looking to the horizon, you can see black smoke rising from a far-off peak.',
     optionA: {
-      choice: 'Aid the Inox with what they arc carrying.',
+      choice: 'Aid the Inox with what they are carrying.',
       outcome:
         'rrrjTHMM|rj^mm 7m*/I You take pity on the disheveled group of Inox, forced from their home by a natural disaster. You travel with them fora time, treating their wounds and helping to lighten their loads. The Shaman thanks you and hands you an amulet. TMf can’t return to our homes until the Beast rests. I fear what this may mean for us all. I hope this keeps you safe." Gain 10 collective gold. Discard 2 cards each. Unlock "Burning Mountain" (M-6).',
       imageUrl: '/assets/cards/events/base/road/re-24-b-a.png',
@@ -2428,7 +2428,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Fight oft the men. This is highway robbery, whatever the motive.',
       outcome:
-        "If: The Plagueherald stretches out his arms and the men around him immediately double over in pain. You can almost sense it smiling, even though it doesn't have a face. The fight doesn't last long, especially once the men's wounds start bursting with maggots. All start scenario with 1 damage. OTHERWISE: The men are weakened, but they arc still hardened lighters. you light them off, but it gets ugly. All start scenario with POISON G All start scenario with 3 damage.",
+        "If: The Plagueherald stretches out his arms and the men around him immediately double over in pain. You can almost sense it smiling, even though it doesn't have a face. The fight doesn't last long, especially once the men's wounds start bursting with maggots. All start scenario with 1 damage. OTHERWISE: The men are weakened, but they are still hardened lighters. you light them off, but it gets ugly. All start scenario with POISON G All start scenario with 3 damage.",
       imageUrl: '/assets/cards/events/base/road/re-35-b-a.png',
     },
     optionB: {
@@ -2531,7 +2531,7 @@ export const events: EventEntity[] = [
     text:
       'This river is no small matter either it is several feet deep and fast-flowing, h s rather troubling; toor since you have no idea how long it might take to find a decent crossing point. "m —\t, — r - ■-! i ■ ■■ MfMl———I—nmiii - ■ | u',
     optionA: {
-      choice: 'Ford the river where you arc. It is not ideal, but it should be possible.',
+      choice: 'Ford the river where you are. It is not ideal, but it should be possible.',
       outcome:
         '#v ; With the power of the elements on your side, crossing the river turns out to he incredibly easy. One frozen bridge later,; you are on the other side and on your way. No effect. OTHERWISE: The water is surprisingly cold, but it will take more than that to end your day. You are still water dogged and shivering when you reach your destination, however. All start scenario with MUDDLE All start scenario with IMMOBILIZE* J ►',
       imageUrl: '/assets/cards/events/base/road/re-40-b-a.png',
@@ -2617,7 +2617,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Renew your efforts to slay the demons.',
       outcome:
-        'With the help of the mysterious forecaster, the battle turns and the demons arc slain without much pain. Out of the darkness steps t he familiar face of a female Orchid. "Sorry about that. I think they were looking for this. ” The Spell weaver holds up a black censer, “ft s a good thing I ran into you, though. I could use your help." She draws out a crude map. "Meet me here as soon as you can, and I ’ll explain more," Unlock “Demonic Rift" (5^) 0-7).',
+        'With the help of the mysterious forecaster, the battle turns and the demons are slain without much pain. Out of the darkness steps t he familiar face of a female Orchid. "Sorry about that. I think they were looking for this. ” The Spell weaver holds up a black censer, “ft s a good thing I ran into you, though. I could use your help." She draws out a crude map. "Meet me here as soon as you can, and I ’ll explain more," Unlock “Demonic Rift" (5^) 0-7).',
       imageUrl: '/assets/cards/events/base/road/re-44-b-a.png',
     },
     optionB: {
@@ -2718,7 +2718,7 @@ export const events: EventEntity[] = [
     type: EventType.Road,
     number: 49,
     text:
-      'You arc approached on the road by a group of men on horseback. They don t immediately seem menacing, but they are formidable and well organized. One of the men, who wears plate armor and has a sword at his side, addresses you coldly You hail from Gloomhaven, correct? What say you about the politics of the place? Are you for or against military rule in the region? Do you think those loot merchants could do a better job, like they \'re doing with the rest of this doomed land?" Looking closer; you see all the men wear the signet of a tower with an eye at its center',
+      'You are approached on the road by a group of men on horseback. They don t immediately seem menacing, but they are formidable and well organized. One of the men, who wears plate armor and has a sword at his side, addresses you coldly You hail from Gloomhaven, correct? What say you about the politics of the place? Are you for or against military rule in the region? Do you think those loot merchants could do a better job, like they \'re doing with the rest of this doomed land?" Looking closer; you see all the men wear the signet of a tower with an eye at its center',
     optionA: {
       choice: 'Claim allegiance to the military.',
       outcome:
@@ -2764,7 +2764,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Investigate further.',
       outcome:
-        "You get closer to the pike. The skull looks pretty fresh There arc still bits of decayed flesh attached to the bonef and flies buzz around it* You can see there is a small paper card stuck in its mouth so you caref ully reach in and pull it out. I he card is black and depicts a skull with blades running through it. Come to think of it you remember rumors of an assassins' guild that has been known to use the same imagery You get out of the area as quickly as you can. Gain 1 collective “Black Card” (Item 129)-",
+        "You get closer to the pike. The skull looks pretty fresh There are still bits of decayed flesh attached to the bonef and flies buzz around it* You can see there is a small paper card stuck in its mouth so you caref ully reach in and pull it out. I he card is black and depicts a skull with blades running through it. Come to think of it you remember rumors of an assassins' guild that has been known to use the same imagery You get out of the area as quickly as you can. Gain 1 collective “Black Card” (Item 129)-",
       imageUrl: '/assets/cards/events/base/road/re-51-b-a.png',
     },
     optionB: {
@@ -2869,7 +2869,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Help the wounded man as best you can.',
       outcome:
-        "■' ' ■ \"WKm*. ■' 4*.d .mm i ^ The nun's wounds actually look worse than they really arc, and your time with the Sawbones has given you some experience in what to do. You hind the wounds to stop the bleeding and then give him something to eat. He lost a lot of blood, but after some nursing, he's able to stand and make his way back to Gloomhaven, thanking you profusely in the process. Gain 1 reputation.",
+        "■' ' ■ \"WKm*. ■' 4*.d .mm i ^ The nun's wounds actually look worse than they really are, and your time with the Sawbones has given you some experience in what to do. You hind the wounds to stop the bleeding and then give him something to eat. He lost a lot of blood, but after some nursing, he's able to stand and make his way back to Gloomhaven, thanking you profusely in the process. Gain 1 reputation.",
       imageUrl: '/assets/cards/events/base/road/re-56-b-a.png',
     },
     optionB: {
