@@ -1756,7 +1756,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Eat the berries.',
       outcome:
-        "v\t4-^y\t.\t£\t^ You shrug and grab a handful of berries to * stuff in your mouth. They are incredibly sweet and just the right amount of tart. You couldn’t feel better about your decision. That is. until you start vomiting. Your stomach is incredibly unhappy with you, and the situation doesn't improve much by the time you arrive at your destination. All start scenario with POISON O.",
+        "v\t4-^y\t.\t£\t^ You shrug and grab a handful of berries to * stuff in your mouth. They are incredibly sweet and just the right amount of tart. You couldn’t feel better about your decision. That is. until you start vomiting. Your stomach is incredibly unhappy with you, and the situation doesn't improve much by the time you arrive at your destination. All start scenario with {Poison} O.",
       imageUrl: '/assets/cards/events/base/road/re-03-b-a.png',
     },
     optionB: {
@@ -2113,7 +2113,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'The song must serve some nefarious purpose. Attack the Vermlings.',
       outcome:
-        'You take the pack by surprise. Fully • distracted by their ritual they dont even see you coming. The Vermlings still get in a few good attacks before they are slain, though. All start scenario with POISON All start scenario with 2 damage.',
+        'You take the pack by surprise. Fully • distracted by their ritual they dont even see you coming. The Vermlings still get in a few good attacks before they are slain, though. All start scenario with {Poison} All start scenario with 2 damage.',
       imageUrl: '/assets/cards/events/base/road/re-20-b-a.png',
     },
     optionB: {
@@ -2428,7 +2428,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Fight oft the men. This is highway robbery, whatever the motive.',
       outcome:
-        "If: The Plagueherald stretches out his arms and the men around him immediately double over in pain. You can almost sense it smiling, even though it doesn't have a face. The fight doesn't last long, especially once the men's wounds start bursting with maggots. All start scenario with 1 damage. OTHERWISE: The men are weakened, but they are still hardened lighters. you light them off, but it gets ugly. All start scenario with POISON G All start scenario with 3 damage.",
+        "If: The Plagueherald stretches out his arms and the men around him immediately double over in pain. You can almost sense it smiling, even though it doesn't have a face. The fight doesn't last long, especially once the men's wounds start bursting with maggots. All start scenario with 1 damage. OTHERWISE: The men are weakened, but they are still hardened lighters. you light them off, but it gets ugly. All start scenario with {Poison} G All start scenario with 3 damage.",
       imageUrl: '/assets/cards/events/base/road/re-35-b-a.png',
     },
     optionB: {
@@ -2449,7 +2449,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Continue down the path into the wood. You are not afraid.',
       outcome:
-        "\\wjpft\t1 : The wood is overgrown and ' rampant with all manner of insects, but with difficulty, you follow the path. Somewhere deep inside, you come across a stone pedestal with the following scratched into its base: XmWT -KKT W3T ART >-1*11, WIT -NKT M'W'lC - 8172. OTHERWISE: You follow the path into the wood and become hopelessly lost. The going is hard and painful. All start scenario with POISON All start scenario with 2 damage. +8%",
+        "\\wjpft\t1 : The wood is overgrown and ' rampant with all manner of insects, but with difficulty, you follow the path. Somewhere deep inside, you come across a stone pedestal with the following scratched into its base: XmWT -KKT W3T ART >-1*11, WIT -NKT M'W'lC - 8172. OTHERWISE: You follow the path into the wood and become hopelessly lost. The going is hard and painful. All start scenario with {Poison} All start scenario with 2 damage. +8%",
       imageUrl: '/assets/cards/events/base/road/re-36-b-a.png',
     },
     optionB: {
@@ -2512,7 +2512,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Help the poor Valrath.',
       outcome:
-        'The Sawbones knows exactly what to do, covering his hands and face as he cleans the wounds. After an hour of tending to him, the Valrath seems good enough to travell Gain 1 reputation. OTHERWISE: Yon help the Valrath as best you can, but it takes many supplies and potions. When he finally looks better, you realize you are starting to feel sick as a result. All start scenario with POISON A. ri hi* Lose 10 collective gold. Gain 1 reputation.',
+        'The Sawbones knows exactly what to do, covering his hands and face as he cleans the wounds. After an hour of tending to him, the Valrath seems good enough to travell Gain 1 reputation. OTHERWISE: Yon help the Valrath as best you can, but it takes many supplies and potions. When he finally looks better, you realize you are starting to feel sick as a result. All start scenario with {Poison} A. ri hi* Lose 10 collective gold. Gain 1 reputation.',
       imageUrl: '/assets/cards/events/base/road/re-39-b-a.png',
     },
     optionB: {
@@ -2686,7 +2686,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Kill the savage little beast.',
       outcome:
-        'You attack the Vermling anyway; despite his protests. It t urns out he wasn *t lying about his "brothers" nearby, though. As you wipe the blood from your blade, ten more of the little furry creatures jump out at youf brandishing small knives. They are not nearly as easy to dispatch. All start scenario with POISON All start scenario with 2 damage.',
+        'You attack the Vermling anyway; despite his protests. It t urns out he wasn *t lying about his "brothers" nearby, though. As you wipe the blood from your blade, ten more of the little furry creatures jump out at youf brandishing small knives. They are not nearly as easy to dispatch. All start scenario with {Poison} All start scenario with 2 damage.',
       imageUrl: '/assets/cards/events/base/road/re-47-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-47-f.png',
@@ -2791,7 +2791,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Inspect the corpses for valuables.',
       outcome:
-        'You rifle through the corpses, grabbing stray • coins and valuables as you go. You make off with a good haul, but you start feeling sick as soon as you re done. All start scenario with POISON Q All start scenario with CURSE^ . Gain 10 collective gold.',
+        'You rifle through the corpses, grabbing stray • coins and valuables as you go. You make off with a good haul, but you start feeling sick as soon as you re done. All start scenario with {Poison} Q All start scenario with CURSE^ . Gain 10 collective gold.',
       imageUrl: '/assets/cards/events/base/road/re-52-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-52-f.png',
@@ -2854,7 +2854,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Take the overgrown path.',
       outcome:
-        'The trek through the overgrown path is unpleasant. You are constantly getting pricked by sharp thorns covered in a strange sap. You think you recognize them f rom a previous foray into harsh, unforgiving foliage. Sure enough, you start feeling sick pretty soon after you emerge from the bushes. All start scenario with POISON',
+        'The trek through the overgrown path is unpleasant. You are constantly getting pricked by sharp thorns covered in a strange sap. You think you recognize them f rom a previous foray into harsh, unforgiving foliage. Sure enough, you start feeling sick pretty soon after you emerge from the bushes. All start scenario with {Poison}',
       imageUrl: '/assets/cards/events/base/road/re-55-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-55-f.png',
@@ -2932,7 +2932,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Cover yourself as best you can and try to walk through the swarm.',
       outcome:
-        'If you were to list the top ten worst moments • of your fife, this would probably be up there. You walk into the swarm and the insects are everywhere, biting and clawing at your flesh. You move as quickly as you can, emerging from the other side with your life intact but your sanity in shambles. Oddly though, you also feel as though you were just in the presence of a powerful, divine force. All start scenario with 2 damage. All start scenario with POISON C MUDDLE «*, and {Bless}',
+        'If you were to list the top ten worst moments • of your fife, this would probably be up there. You walk into the swarm and the insects are everywhere, biting and clawing at your flesh. You move as quickly as you can, emerging from the other side with your life intact but your sanity in shambles. Oddly though, you also feel as though you were just in the presence of a powerful, divine force. All start scenario with 2 damage. All start scenario with {Poison} C MUDDLE «*, and {Bless}',
       imageUrl: '/assets/cards/events/base/road/re-59-b-a.png',
     },
     optionB: {
