@@ -2145,17 +2145,17 @@ export const events: EventEntity[] = [
     type: EventType.Road,
     number: 22,
     text:
-      'There was a heavy rain HH night, and the roads are now dark streaks of mud. And as bad as it is for you walking, you see that others up ahead on the road are having worse trouble. You come upon a collection of wagons stuck in the mud on the side of the road. You look around and see an odd assortment of people dressed in garish clothing. They are working to push their brightly painted wagons, all emblazoned with a Marvelous and Magical Techno- Circus " logo, out of the muck. We just stopped for a quick meal, and now the wheels have sunk into this mess/ a Qua try I with a fancy top hat says as you approach. "I\'m sure our strongmen will get us out eventually but we certainly wouldn\'t begrudge a little extra help."',
+      'There was a heavy rain last night, and the roads are now dark streaks of mud. And as bad as it is for you walking, you see that others up ahead on the road are having worse trouble. You come upon a collection of wagons stuck in the mud on the side of the road.\n\nYou look around and see an odd assortment of people dressed in garish clothing. They are working to push their brightly painted wagons, all emblazoned with a "Marvelous and Magical Techno-Circus" logo, out of the muck.\n\n"We just stopped for a quick meal, and now the wheels have sunk into this mess," a Quatryl with a fancy top hat says as you approach. "I\'m sure our strongmen will get us out eventually but we certainly wouldn\'t begrudge a little extra help."',
     optionA: {
-      choice: 'Help push out the Quatryl ringmasters wagon.',
+      choice: 'Help push out the Quatryl ringmaster\'s wagon.',
       outcome:
-        'You put down some boards and then heave and push until the great wagon is out oi the ditch and moving back on the road. The diminutive Quatryl tips his hat. "Well, I certainly could not have done that on my own. Your assistance is greatly appreciated. I tell you what — the next time were back in Gloomhaven, why don\'t you stop by our circus, and we \'ll let you in for free." Add City Event 74 to the deck.',
+        'You put down some boards and then heave and push until the great wagon is out of the ditch and moving back on the road. The diminutive Quatryl tips his hat.\n\n"Well, I certainly could not have done that on my own. Your assistance is greatly appreciated. I tell you what — the next time were back in Gloomhaven, why don\'t you stop by our circus, and we \'ll let you in for free."\n\nAdd City Event 74 to the deck.',
       imageUrl: '/assets/cards/events/base/road/re-22-b-a.png',
     },
     optionB: {
       choice: 'Help push out the fortune-tellers wagon.',
       outcome:
-        'You take pity on an old Orchid woman trying to extricate her fortune-teller’s wagon by herself. You help her get it back on the road, and then she grabs you and looks deep into your eyes. " Your path is dark and cursed. There is a shadow around you — a Gloom. You must leave this place. Be rid of it before it consumes you. ”\n\nGain 2 experience each.\n\nAll start scenario with {Curse}.',
+        'You take pity on an old Orchid woman trying to extricate her fortune-teller\'s wagon by herself. You help her get it back on the road, and then she grabs you and looks deep into your eyes.\n\n"Your path is dark and cursed. There is a shadow around you — a Gloom. You must leave this place. Be rid of it before it consumes you."\n\nGain 2 experience each.\n\nAll start scenario with {Curse}.',
       imageUrl: '/assets/cards/events/base/road/re-22-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-22-f.png',
