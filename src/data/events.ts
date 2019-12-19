@@ -648,7 +648,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: '-',
       outcome:
-        ': You try to turn away the woman and get back to gambling, but the Sunkeeper won t hear of it, She forces you to follow the woman outside. Read outcome A.\n\nOTHERWISE: You return to your gambling, but you feel as though a pall has fallen over the revelry. Your luck has turned[ and you end the night much poorer than when you started. Lose 10 gold each.',
+        ': You try to turn away the woman and get back to gambling, but the Sunkeeper won t hear of it, She forces you to follow the woman outside. Read outcome A.\n\nOTHERWISE: You return to your gambling, but you feel as though a pall has fallen over the revelry. Your luck has turned[ and you end the night much poorer than when you started.\n\nLose 10 gold each.',
       imageUrl: '/assets/cards/events/base/city/ce-31-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-31-f.png',
@@ -747,13 +747,13 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Join the fray! These insults will not go unanswered!',
       outcome:
-        "1,75 ■' Y°u break a chair over the mans back, kick him in the teeth, and then you really get into it. It 's a bar brawl that could only be described as \"epic,' fueled by pure, raw rage. The carnage is extreme.\n\nGain 5 experience each.\n\nLose 2 reputation.\n\nOTHERWISE: You jump into the melee, breaking heads and chairs in equal measure. You’ve seen worse brawls, but the proprietor st ill isn t very happy when it s over. Lose 1 reputation.",
+        "1,75 ■' Y°u break a chair over the mans back, kick him in the teeth, and then you really get into it. It 's a bar brawl that could only be described as \"epic,' fueled by pure, raw rage. The carnage is extreme.\n\nGain 5 experience each.\n\nLose 2 reputation.\n\nOTHERWISE: You jump into the melee, breaking heads and chairs in equal measure. You’ve seen worse brawls, but the proprietor st ill isn t very happy when it s over.\n\nLose 1 reputation.",
       imageUrl: '/assets/cards/events/base/city/ce-36-b-a.png',
     },
     optionB: {
       choice: 'Do your best to stop the fighting. This is a respectable establishment. I t',
       outcome:
-        ': You get up to calm down the room, but the Berserker has other ideas, laying into the man before you can get a word out. She goes into a f urious rage, and there s really not much to be done about it except pay what you can for the damages afterward. Lose 10 collective gold.\n\nOTHERWISE: It takes some work, but you manage to calm dow n the Inox and buy off the rest of the room with some extra drinks, The proprietor looks positively relieved.\n\nGain 1 reputation.',
+        ': You get up to calm down the room, but the Berserker has other ideas, laying into the man before you can get a word out. She goes into a f urious rage, and there s really not much to be done about it except pay what you can for the damages afterward.\n\nLose 10 collective gold.\n\nOTHERWISE: It takes some work, but you manage to calm dow n the Inox and buy off the rest of the room with some extra drinks, The proprietor looks positively relieved.\n\nGain 1 reputation.',
       imageUrl: '/assets/cards/events/base/city/ce-36-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-36-f.png',
@@ -768,7 +768,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Attempt to console and cheer up those affected by the attack.',
       outcome:
-        "; The citizens are downtrodden, but the uncanny pen'or of the Soothsingcr’s music seems to lif t their spirits considerably. Still far f rom cheerful, the people find new resolve in repairing the damage and rebuilding.\n\nGain 1 prosperity.\n\nOTHERWISE: The citizens view you with a cynical eye as you walk around, attempting to encourage them and lift their spirits. Despite the effort, it seems as though they are in a worse mood than when you arrived. W Lose 1 reputation.",
+        "; The citizens are downtrodden, but the uncanny pen'or of the Soothsingcr’s music seems to lif t their spirits considerably. Still far f rom cheerful, the people find new resolve in repairing the damage and rebuilding.\n\nGain 1 prosperity.\n\nOTHERWISE: The citizens view you with a cynical eye as you walk around, attempting to encourage them and lift their spirits. Despite the effort, it seems as though they are in a worse mood than when you arrived.\n\nLose 1 reputation.",
       imageUrl: '/assets/cards/events/base/city/ce-37-b-a.png',
     },
     optionB: {
@@ -789,13 +789,13 @@ export const events: EventEntity[] = [
     optionA: {
       choice: "Intervene on the Orchid's behalf. r",
       outcome:
-        '; The Orchid on the ground puls up no defense, but your group isa different matter. The man quickly backs down at the sight of a powerful Orchid ready to attack, and the crowd disperses, muttering disappointment.\n\nGain I prosperity. Lose I reputation.\n\nOTHERWISE: You try to talk some sense into «* the man, and when that doesn t work, you beat him senseless. The crowd seems happy and the Orchid thanks you for your aid.\n\nGain 1 prosperity.',
+        '; The Orchid on the ground puls up no defense, but your group isa different matter. The man quickly backs down at the sight of a powerful Orchid ready to attack, and the crowd disperses, muttering disappointment.\n\nGain I prosperity.\n\nLose 1 reputation.\n\nOTHERWISE: You try to talk some sense into «* the man, and when that doesn t work, you beat him senseless. The crowd seems happy and the Orchid thanks you for your aid.\n\nGain 1 prosperity.',
       imageUrl: '/assets/cards/events/base/city/ce-38-b-a.png',
     },
     optionB: {
       choice: 'Watch the fight with the crowd. /',
       outcome:
-        '# <p ; After a good beating, the crowd is riled up. Many people start looking in your direction, muttering about how you have the nerve to associate with Orchids as well. You make a quick exit. Lose I reputation.\n\nOTHERWISE: The Orchid puts up no defense and the "fight "becomes rather one-sided. A solid beating is administered, and the crowd is sated. You go about your business while the Orchid bleeds on the ground.\n\nNo effect.',
+        '# <p ; After a good beating, the crowd is riled up. Many people start looking in your direction, muttering about how you have the nerve to associate with Orchids as well. You make a quick exit.\n\nLose 1 reputation.\n\nOTHERWISE: The Orchid puts up no defense and the "fight "becomes rather one-sided. A solid beating is administered, and the crowd is sated. You go about your business while the Orchid bleeds on the ground.\n\nNo effect.',
       imageUrl: '/assets/cards/events/base/city/ce-38-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-38-f.png',
@@ -880,7 +880,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Tell this kid that he must have the wrong group of adventurers.',
       outcome:
-        'You shake your head and avert your gaze. You ■ claim that the kid must have you conf used with a different adventuring party. He looks crushed as you walk a way. Lose I reputation.',
+        'You shake your head and avert your gaze. You claim that the kid must have you conf used with a different adventuring party. He looks crushed as you walk a way.\n\nLose 1 reputation.',
       imageUrl: '/assets/cards/events/base/city/ce-42-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-42-f.png',
@@ -916,7 +916,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Offer to help the blacksmith yourself',
       outcome:
-        '^\t• Despite the early hour, you * head down to the Inox s forge and get an incredibly strong fire going for him so he can complete his order; He seems very pleased.\n\nGain 1 reputation.\n\nGain 10 collective gold.\n\nOTHERWISE: The Inox is completely dumbfounded when you walk all the way down to his forge and then proceed to exhibit zero aptitude at manipulating or controlling fire. Lose I reputation.',
+        '^\t• Despite the early hour, you * head down to the Inox s forge and get an incredibly strong fire going for him so he can complete his order; He seems very pleased.\n\nGain 1 reputation.\n\nGain 10 collective gold.\n\nOTHERWISE: The Inox is completely dumbfounded when you walk all the way down to his forge and then proceed to exhibit zero aptitude at manipulating or controlling fire.\n\nLose 1 reputation.',
       imageUrl: '/assets/cards/events/base/city/ce-44-b-a.png',
     },
     optionB: {
@@ -979,7 +979,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Intervene with the guards and find out what is going on.',
       outcome:
-        "The guards took incredibly perturbed when • you step in front of them and ask that they lea ve the Mindthief to you. After some effort, tbev begrudgingly hand her over. The Mindthief thanks you. explaining that her colony in the sewers is being poisoned, and the poison is quickly migrating to the city's water supply. She says she’s tracked the source to a small cove along the Hook Coast. Lose I reputation. Unlock Corrupted Cove (87) (1-9). Party Achievement: \"The Poison's Source.",
+        "The guards took incredibly perturbed when • you step in front of them and ask that they lea ve the Mindthief to you. After some effort, tbev begrudgingly hand her over. The Mindthief thanks you. explaining that her colony in the sewers is being poisoned, and the poison is quickly migrating to the city's water supply. She says she’s tracked the source to a small cove along the Hook Coast.\n\nLose 1 reputation. Unlock Corrupted Cove (87) (1-9). Party Achievement: \"The Poison's Source.",
       imageUrl: '/assets/cards/events/base/city/ce-47-b-a.png',
     },
     optionB: {
@@ -1084,7 +1084,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Calmly explain the situation to the Plagueherald, imploring it to move on.',
       outcome:
-        'With the man dead at its feet, the Plagueherald makes a chittering sound that sounds almost like laughing. “You cannot see it, but this city needs to be cleansed. You will see. and you will thank me. At this, the Plagueherald bursts out into a massive swarm of insects and Hies up into the sky. The deaths continue, and new rumors start about how you are associated with the killer. Lose 2 reputation.',
+        'With the man dead at its feet, the Plagueherald makes a chittering sound that sounds almost like laughing. “You cannot see it, but this city needs to be cleansed. You will see. and you will thank me. At this, the Plagueherald bursts out into a massive swarm of insects and Hies up into the sky. The deaths continue, and new rumors start about how you are associated with the killer.\n\nLose 2 reputation.',
       imageUrl: '/assets/cards/events/base/city/ce-52-b-a.png',
     },
     optionB: {
@@ -1105,7 +1105,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Let the guards know you recognize the Berserker s axe.',
       outcome:
-        'You approach (he wounded detail, explaining • how that axe belonged to a former member of your party. "Yeah, we know," one of them says with an icy stare. “Said »ve were desecrating her land or some such nonsense and just went crazy. But we weren\'t doing anything but patrolling! Quite a piece of work your friend, fust take the axe if you want and get out of here." Lose 1 reputation. Cain I collective Bloody Axe (Item 117;.',
+        'You approach (he wounded detail, explaining • how that axe belonged to a former member of your party. "Yeah, we know," one of them says with an icy stare. “Said »ve were desecrating her land or some such nonsense and just went crazy. But we weren\'t doing anything but patrolling! Quite a piece of work your friend, fust take the axe if you want and get out of here."\n\nLose 1 reputation.\n\nGain I collective Bloody Axe (Item 117).',
       imageUrl: '/assets/cards/events/base/city/ce-53-b-a.png',
     },
     optionB: {
@@ -1231,13 +1231,13 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Help to dispose of the corpses as quickly as possible.',
       outcome:
-        'Finding it probable that these corpses harbor some sort of disease, you ward c veryone away while you carefully load the bodies onto a cart, take them outside the city, and burn them. The crowd is a little disappointed that you took away the morning entertainment. Especially annoyed are the guards, who don l appreciate you disposing of dead bodies before they can investigate them. Lose I reputation.',
+        'Finding it probable that these corpses harbor some sort of disease, you ward c veryone away while you carefully load the bodies onto a cart, take them outside the city, and burn them. The crowd is a little disappointed that you took away the morning entertainment. Especially annoyed are the guards, who don l appreciate you disposing of dead bodies before they can investigate them.\n\nLose 1 reputation.',
       imageUrl: '/assets/cards/events/base/city/ce-59-b-a.png',
     },
     optionB: {
       choice: 'Investigate the corpses. / I',
       outcome:
-        'Curiosity gets the better of you, as well and you approach the corpses with morbid fascination# hoping to find some clue about what happened\\ The number of insects is alarming, as is the diseased nature of the skin. If you had to guess, a Harrower could be responsible, or perhaps Xorn, who you so helpfully revived. Over the next few days, the disease spreads throughout the Sinking Market, killing many more people. Lose I prosperity.',
+        'Curiosity gets the better of you, as well and you approach the corpses with morbid fascination# hoping to find some clue about what happened\\ The number of insects is alarming, as is the diseased nature of the skin. If you had to guess, a Harrower could be responsible, or perhaps Xorn, who you so helpfully revived. Over the next few days, the disease spreads throughout the Sinking Market, killing many more people.\n\nLose 1 prosperity.',
       imageUrl: '/assets/cards/events/base/city/ce-59-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-59-f.png',
@@ -1321,7 +1321,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Tell the captain to fix his own problem. /',
       outcome:
-        'The Captain of the Guard sighs. * 7 really thought you were the ones for the job. What business could you possibly have that is more important than making sure this city is safe?" tf He holds up his hand. "No matter. Fine, ■ just get out of here! U c will deal with this ourselves." Lose 1 prosperity. Lose 1 reputation.',
+        'The Captain of the Guard sighs. * 7 really thought you were the ones for the job. What business could you possibly have that is more important than making sure this city is safe?" tf He holds up his hand. "No matter. Fine, ■ just get out of here! U c will deal with this ourselves."\n\nLose 1 prosperity.\n\nLose 1 reputation.',
       imageUrl: '/assets/cards/events/base/city/ce-63-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-63-f.png',
@@ -1420,7 +1420,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Kind some way to get the water to stop gushing.',
       outcome:
-        '; You take a moment to attune yourself to the staff which you feel now has a direct link another plane. The water stops and you are left with an openga Unlock Plane of Water "(88)(D-l6}. Party Achievement: “Water Staff."\n\nOTHERWISE: You figure out how to work the staff but not before your entire room is flooded. The innkeeper will not he happy Lose 15 collective gold. Unlock "Plane of Water (8&(D-l6). Party Achievement: \'Water Staff."',
+        '; You take a moment to attune yourself to the staff which you feel now has a direct link another plane. The water stops and you are left with an openga Unlock Plane of Water "(88)(D-l6}. Party Achievement: “Water Staff."\n\nOTHERWISE: You figure out how to work the staff but not before your entire room is flooded. The innkeeper will not he happy.\n\nLose 15 collective gold. Unlock "Plane of Water (8&(D-l6). Party Achievement: \'Water Staff."',
       imageUrl: '/assets/cards/events/base/city/ce-68-b-a.png',
     },
     optionB: {
@@ -1447,7 +1447,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Leave the bar before someone recog- nizes you. /',
       outcome:
-        "You flee the bar to escape the tune, but it doesn't prove to be that simple. The next day, everyone on the street is humming the tune, They all seems to be looking at you and laughing. It 's a nightmare. •*» Lose 1 reputation.",
+        "You flee the bar to escape the tune, but it doesn't prove to be that simple. The next day, everyone on the street is humming the tune, They all seems to be looking at you and laughing. It 's a nightmare.\n\nLose 1 reputation.",
       imageUrl: '/assets/cards/events/base/city/ce-69-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-69-f.png',
@@ -1462,7 +1462,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Talk to some merchants about revital- izing the area.',
       outcome:
-        "REPUTATION > 9: You head to the Coin # District and meet with a member of the merchant s guild you've had dealings with before. He looks at you skeptically, but says he will see what he can do about making the area more livable.\n\nGain 1 prosperity.\n\nOTHERWISE: Every merchant you try to talk to about the issue laughs you out of the room. Whv help others when there is no prof- it in it for them? Lose l reputation.",
+        "REPUTATION > 9: You head to the Coin # District and meet with a member of the merchant s guild you've had dealings with before. He looks at you skeptically, but says he will see what he can do about making the area more livable.\n\nGain 1 prosperity.\n\nOTHERWISE: Every merchant you try to talk to about the issue laughs you out of the room. Whv help others when there is no prof- it in it for them?\n\nLose 1 reputation.",
       imageUrl: '/assets/cards/events/base/city/ce-70-b-a.png',
     },
     optionB: {
@@ -1526,13 +1526,13 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Seek help from the University.',
       outcome:
-        "“Yes, verv interesting, ' a bookish Quatryl says as he rolls the crystal over in his hand. “It seems os if this crystal is attuned to a specific location, and once removed, it begins vibrating until mountains and houses start falling down. I'd say you need to return it to its proper home. \\ \\ ith the proper tools — which I II need help pa ving for — / should be able to triangulate that location for you. Lose 5 collective gold. Unlock Crystalline Cave\" 84 (CM2:. Partv Achievement: \"Tremors.'",
+        "“Yes, verv interesting, ' a bookish Quatryl says as he rolls the crystal over in his hand. “It seems os if this crystal is attuned to a specific location, and once removed, it begins vibrating until mountains and houses start falling down. I'd say you need to return it to its proper home. \\ \\ ith the proper tools — which I II need help pa ving for — / should be able to triangulate that location for you.\n\nLose 5 collective gold. Unlock Crystalline Cave\" 84 (CM2:. Partv Achievement: \"Tremors.'",
       imageUrl: '/assets/cards/events/base/city/ce-73-b-a.png',
     },
     optionB: {
       choice: '1 hrow the crystal into the boy. /',
       outcome:
-        'Not wanting to waste your time with the problem, you walk to the Jocks anJ throw the crystal into the bay. When you hear reports of harsher weather anJ larger waves hitting the Jocks, you try not to pay them any mind. Lose 1 prosperity.',
+        'Not wanting to waste your time with the problem, you walk to the Jocks anJ throw the crystal into the bay. When you hear reports of harsher weather anJ larger waves hitting the Jocks, you try not to pay them any mind.\n\nLose 1 prosperity.',
       imageUrl: '/assets/cards/events/base/city/ce-73-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-73-f.png',
@@ -1568,13 +1568,13 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Lie and say that you are still working on it.',
       outcome:
-        '"Oh, hmm...well, that\'s disappointing The Captain looks at you with dejected frustration. “Ifyou could, please look into the sightings as soon as you can. I d hate to think of some giant living creature attacking the city." Lose I reputation.',
+        '"Oh, hmm...well, that\'s disappointing The Captain looks at you with dejected frustration. “Ifyou could, please look into the sightings as soon as you can. I d hate to think of some giant living creature attacking the city."\n\nLose 1 reputation.',
       imageUrl: '/assets/cards/events/base/city/ce-75-b-a.png',
     },
     optionB: {
       choice: 'Tell the Captain you decided not to kill the Elder Drake.',
       outcome:
-        '"Oh, mv...well, okay." The Captain looks at you with stunned curiosity. "So there is a massive, fire-breathing drake up in the moun- tains, and you decided there was no reason to kill it? Interesting." The Captain wanders off. mumbling about needing to find better help. Lose 2 reputation.',
+        '"Oh, mv...well, okay." The Captain looks at you with stunned curiosity. "So there is a massive, fire-breathing drake up in the moun- tains, and you decided there was no reason to kill it? Interesting." The Captain wanders off. mumbling about needing to find better help.\n\nLose 2 reputation.',
       imageUrl: '/assets/cards/events/base/city/ce-75-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-75-f.png',
@@ -1652,13 +1652,13 @@ export const events: EventEntity[] = [
     optionA: {
       choice: "Intervene on the man's behalf.",
       outcome:
-        'There is only one method these demons respect: violence. You run forward and hack at one of the demons\' arms as it comes down to strike at the man. The arm falls limp to the ground and the rest of the demon soon follows. The other demon looks at you with seething rage as you face it with raised weapons. n This grave insult will not go unpunished! This city will feel our wrath!" Lose I prosperity.',
+        'There is only one method these demons respect: violence. You run forward and hack at one of the demons\' arms as it comes down to strike at the man. The arm falls limp to the ground and the rest of the demon soon follows. The other demon looks at you with seething rage as you face it with raised weapons. n This grave insult will not go unpunished! This city will feel our wrath!"\n\nLose 1 prosperity.',
       imageUrl: '/assets/cards/events/base/city/ce-79-b-a.png',
     },
     optionB: {
       choice: 'Keep walking.',
       outcome:
-        'You continue your stroll, trying to block the • unpleasantness from your mind Unfortu- nately, others around you cannot, and they are reminded of the actions you took that caused this horrible and afl-too-frequent occurrence. Lose I reputation.',
+        'You continue your stroll, trying to block the • unpleasantness from your mind Unfortu- nately, others around you cannot, and they are reminded of the actions you took that caused this horrible and afl-too-frequent occurrence.\n\nLose 1 reputation.',
       imageUrl: '/assets/cards/events/base/city/ce-79-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-79-f.png',
@@ -1673,13 +1673,13 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Attempt to calm down the guards and explain the situation.',
       outcome:
-        "if* Jj : You Adopt a serious tone and do your best to communicate dun you fuid nothing to do with what was written in the Town Records. You express remorse for their hardships, and, miraculously, the mob prow's calmer and disperses.\n\nNo effect.\n\nOTHERWISE: You laugh and claim that this is all some big misunderstanding. The guards don't see it that way, but your lack of aggression at least stops them from attacking you. They leave, grumbling threats. Lose I reputation.",
+        "if* Jj : You Adopt a serious tone and do your best to communicate dun you fuid nothing to do with what was written in the Town Records. You express remorse for their hardships, and, miraculously, the mob prow's calmer and disperses.\n\nNo effect.\n\nOTHERWISE: You laugh and claim that this is all some big misunderstanding. The guards don't see it that way, but your lack of aggression at least stops them from attacking you. They leave, grumbling threats.\n\nLose 1 reputation.",
       imageUrl: '/assets/cards/events/base/city/ce-80-b-a.png',
     },
     optionB: {
       choice: '1 hesc guards are not interested in a Iricndly discourse. Prepare to defend yourself. /',
       outcome:
-        'Seeing the situation turning south, you waste no time pulling your weapons and prepare for an attack. The guards are more than happy to oblige. Luckily your foes sustain only some minor injuries in the time it takes for another squad of guards to arrive and break up the scuffle. They let you go on your wayf but you can see the disdain in all of their eves. A Lose 2 reputation.',
+        'Seeing the situation turning south, you waste no time pulling your weapons and prepare for an attack. The guards are more than happy to oblige. Luckily your foes sustain only some minor injuries in the time it takes for another squad of guards to arrive and break up the scuffle. They let you go on your wayf but you can see the disdain in all of their eves.\n\nLose 2 reputation.',
       imageUrl: '/assets/cards/events/base/city/ce-80-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-80-f.png',
@@ -1700,7 +1700,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Claim it wasn’t you and leave quickly. /',
       outcome:
-        'You brusquely shake your head and wave • your hand away saying the man has the wrong person. His excited face immediately turns to one of disappointment. And audible sigh of dejection emerges from the crowd as you rush away. * “There s no need to be rude about it!* the dockworker yells at your back. *\ta* Lose 2 reputation.',
+        'You brusquely shake your head and wave • your hand away saying the man has the wrong person. His excited face immediately turns to one of disappointment. And audible sigh of dejection emerges from the crowd as you rush away. * “There s no need to be rude about it!* the dockworker yells at your back.\n\nLose 2 reputation.',
       imageUrl: '/assets/cards/events/base/city/ce-81-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-81-f.png',
@@ -2365,7 +2365,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'You spent good money on these supplies. Refuse to help.',
       outcome:
-        "You apologize curtly and continue on your way. The Valraths seem disappointed, but vaguely understanding. It doesn't stop them from whispering things about you to each other as you walk away. Lose 1 reputation.",
+        "You apologize curtly and continue on your way. The Valraths seem disappointed, but vaguely understanding. It doesn't stop them from whispering things about you to each other as you walk away.\n\nLose 1 reputation.",
       imageUrl: '/assets/cards/events/base/road/re-32-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-32-f.png',
@@ -2485,7 +2485,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Head off into the forest to find out what happened.',
       outcome:
-        '^ ^ W, You are able to track the trail with ease. It leads to a couple of priests, bloody and unconscious, but still alive. You revive them and bring them back to the main road. They are very grate fullH\tI.\n\nGain 1 prosperity.\n\nOTHERWISE: You try to follow the trail, but end up getting turned around and lost. Then you have an incredibly difficult and painful way back out. Discard 1 card each. time just finding your Lose 1 v each.',
+        '^ ^ W, You are able to track the trail with ease. It leads to a couple of priests, bloody and unconscious, but still alive. You revive them and bring them back to the main road. They are very grate fullH\tI.\n\nGain 1 prosperity.\n\nOTHERWISE: You try to follow the trail, but end up getting turned around and lost. Then you have an incredibly difficult and painful way back out. Discard 1 card each. time just finding your.\n\nLose 1 {Check} each.',
       imageUrl: '/assets/cards/events/base/road/re-38-b-a.png',
     },
     optionB: {
@@ -3031,13 +3031,13 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Investigate further.',
       outcome:
-        'Against your better judgment; you approach the skull[ which looks suspiciously like the Sin-Ras calling cardl Sure enough, a group of dark-clad warriors appears before you from out of thin air. Wordlessly they draw their long, curved blades and attack* Caught by surprise, you don t fare well in the battle. You do fight them off, but in the end[ you are severely woundedexhausted, and demoralized. Lose 1 V each. Discard 4 cards each.\n\nAll start scenario with 4 damage.',
+        'Against your better judgment; you approach the skull[ which looks suspiciously like the Sin-Ras calling cardl Sure enough, a group of dark-clad warriors appears before you from out of thin air. Wordlessly they draw their long, curved blades and attack* Caught by surprise, you don t fare well in the battle. You do fight them off, but in the end[ you are severely woundedexhausted, and demoralized.\n\nLose 1 {Check} each. Discard 4 cards each.\n\nAll start scenario with 4 damage.',
       imageUrl: '/assets/cards/events/base/road/re-64-b-a.png',
     },
     optionB: {
       choice: 'Arm yourself and make a defensive retreat from the area.',
       outcome:
-        "Recognizing the pike as a symbol of the Sin-Ra Syndicate, you arm yourself and run from the area. Unfortunately you don't make it far before you see a number of black-clad assassins bearing down on you. You move into a defensive position and prepare for battle. The fight is arduous, but in the end[ the assassins are dead[ and you hope they don t come back, Lose 1 V each. Discard 2 cards each.\n\nAll start scenario with 2 damage.",
+        "Recognizing the pike as a symbol of the Sin-Ra Syndicate, you arm yourself and run from the area. Unfortunately you don't make it far before you see a number of black-clad assassins bearing down on you. You move into a defensive position and prepare for battle. The fight is arduous, but in the end[ the assassins are dead[ and you hope they don t come back.\n\nLose 1 {Check} each. Discard 2 cards each.\n\nAll start scenario with 2 damage.",
       imageUrl: '/assets/cards/events/base/road/re-64-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-64-f.png',
@@ -3142,7 +3142,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Follow them more slowly, attempting to discover where they came from.',
       outcome:
-        'You creep slowly to the crest of the hill, watching as the demons retreat to the south. You follow them, eventually arriving at a weak, fluctuating rift in a small, earthen cave. Having experienced enough planar manipulation in your travels, you are able to mutter a few incantations and close the rift, ft takes a lot out of you, but now there is one less way for demons to invade this plane. Lose 1 <*/ each.\n\nGain 1 prosperity.',
+        'You creep slowly to the crest of the hill, watching as the demons retreat to the south. You follow them, eventually arriving at a weak, fluctuating rift in a small, earthen cave. Having experienced enough planar manipulation in your travels, you are able to mutter a few incantations and close the rift, ft takes a lot out of you, but now there is one less way for demons to invade this plane.\n\nLose 1 {Check} each.\n\nGain 1 prosperity.',
       imageUrl: '/assets/cards/events/base/road/re-69-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-69-f.png',
