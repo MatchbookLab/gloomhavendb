@@ -1998,17 +1998,17 @@ export const events: EventEntity[] = [
     type: EventType.Road,
     number: 15,
     text:
-      'You are walking down the road when the sound of’ many wings pulls your gaze to the sky: Above you, you see a large flock of red birds flying southward. At that height, you figure a well-aimed arrow coufd bring one of them down to make a nice mealr.',
+      'You are walking down the road when the sound of many wings pulls your gaze to the sky. Above you, you see a large flock of red birds flying southward.\n\nAt that height, you figure a well-aimed arrow could bring one of them down to make a nice meal.',
     optionA: {
-      choice: 'Shoot at the birds',
+      choice: 'Shoot at the birds.',
       outcome:
-        'You pull back your how and take aim> The instant you loose the arrow, however you notice something odd about the birds. They are much farther away than you realized and much bigger. The arrow misses, but it gets their attention, As the flock turns and descends towardyour you realize you just shot at a group of drakes. You run for cover among the trees, but are hit by their acidic spit a number of times in the process.\n\nAll start scenario with {Muddle}.\n\nAll start scenario with 2 damage.',
+        'You pull back your bow and take aim. The instant you loose the arrow, however you notice something odd about the birds. They are much farther away than you realized and much bigger. The arrow misses, but it gets their attention. As the flock turns and descends toward your you realize you just shot at a group of drakes. You run for cover among the trees, but are hit by their acidic spit a number of times in the process.\n\nAll start scenario with {Muddle}.\n\nAll start scenario with 2 damage.',
       imageUrl: '/assets/cards/events/base/road/re-15-b-a.png',
     },
     optionB: {
       choice: 'Let the birds pass undisturbed.',
       outcome:
-        "The shot would be difficult, and you'd prefer P not to waste the arrow. You simply move on toward your destination.\n\nNo effect.",
+        "The shot would be difficult, and you'd prefer not to waste the arrow. You simply move on toward your destination.\n\nNo effect.",
       imageUrl: '/assets/cards/events/base/road/re-15-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-15-f.png',
