@@ -2271,11 +2271,11 @@ export const events: EventEntity[] = [
     type: EventType.Road,
     number: 28,
     text:
-      "As you walk down a dirt path, you see a hard-looking mercenary sitting in a patch of grass. He nods as you pass. i a\tI ml ley, f riends,\" he says. There is something off about his tone, though. 7 don't suppose one of you might he willing to part with a stamina potion, would you? Tm headed toward Gloomhavenf but I've just come such a long way and I'm not feeling too good about the stretch I have left * With the clank of his sword sheath against his armor and a loud groan, the man stands up. 771 pay you well for it.,f «««■ - -mwf mtm —r '• mu\thi ■■ n MfcaM——— ■ ■ ■ M",
+      'As you walk down a dirt path, you see a hard-looking mercenary sitting in a patch of grass. He nods as you pass.\n\n"Hey, friends," he says. There is something off about his tone, though.\n\n"I don\'t suppose one of you might he willing to part with a stamina potion, would you? I\'m headed toward Gloomhaven but I\'ve just come such a long way and I\'m not feeling too good about the stretch I have left."\n\nWith the clank of his sword sheath against his armor and a loud groan, the man stands up. "I\'ll pay you well for it."',
     optionA: {
       choice: 'Sell the man a stamina potion.',
       outcome:
-        'PAY / COLLECTIVE "MINOR STAMINA * POTION* (ITEM 013): After some oddly tense negotiations, you are able to agree upon a price. With one band firmly on his sword hilt, the man grabs a coin pouch with the other hand and extends it toward you. You exchange goods and continue on your journey without further incident.\n\nGain 10 collective gold.\n\nGain 10 additional collective gold.\n\nOTHERWISE: Read outcome B.',
+        'PAY 1 COLLECTIVE "MINOR STAMINA POTION" (ITEM 013): After some oddly tense negotiations, you are able to agree upon a price. With one hand firmly on his sword hilt, the man grabs a coin pouch with the other hand and extends it toward you. You exchange goods and continue on your journey without further incident.\n\nGain 10 collective gold.\n\n{Scoundrel}, {Saw}, {MusicNote}: Gain 10 additional collective gold.\n\nOTHERWISE: Read outcome B.',
       imageUrl: '/assets/cards/events/base/road/re-28-b-a.png',
     },
     optionB: {
