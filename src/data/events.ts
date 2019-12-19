@@ -2103,11 +2103,11 @@ export const events: EventEntity[] = [
     type: EventType.Road,
     number: 20,
     text:
-      'You are trudging through some foothills when you hear the strongest sound in the distance. It sounds vaguely like wolves howling, but higher pitched, and there is a rhythm and a melody to it, You crest a nearby hill and survey the area, spying a pack ofVermUngs standing in a circle and singing. "Singing\'T is the best way you can think to describe it, anyway Occasionally during the song they also clap and dance around.',
+      'You are trudging through some foothills when you hear the strangest sound in the distance. It sounds vaguely like wolves howling, but higher pitched, and there is a rhythm and a melody to it.\n\nYou crest a nearby hill and survey the area, spying a pack of Vermlings standing in a circle and singing. "Singing" is the best way you can think to describe it, anyway. Occasionally during the song they also clap and dance around.',
     optionA: {
       choice: 'The song must serve some nefarious purpose. Attack the Vermlings.',
       outcome:
-        'You take the pack by surprise. Fully • distracted by their ritual they dont even see you coming. The Vermlings still get in a few good attacks before they are slain, though.\n\nAll start scenario with {Poison}.\n\nAll start scenario with 2 damage.',
+        'You take the pack by surprise. Fully distracted by their ritual they don\'t even see you coming. The Vermlings still get in a few good attacks before they are slain, though.\n\nAll start scenario with {Poison}.\n\nAll start scenario with 2 damage.',
       imageUrl: '/assets/cards/events/base/road/re-20-b-a.png',
     },
     optionB: {
