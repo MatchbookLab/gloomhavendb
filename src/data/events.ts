@@ -2166,17 +2166,17 @@ export const events: EventEntity[] = [
     type: EventType.Road,
     number: 23,
     text:
-      'knapsack walking stick on the side of the road catch your attention as you pass. You look around and see a man squatting in the hushes a small distance away mOh, hello/r* he says. Good timing, actually You wouldn\'t mind grabbing me some leaves, would you? h s seems Vve made quite a mess over here«" 4 • •••*>« •••',
+      'A knapsack and a walking stick on the side of the road catch your attention as you pass. You look around and see a man squatting in the hushes a small distance away.\n\n"Oh, hello!" he says. "Good timing, actually. You wouldn\'t mind grabbing me some leaves, would you? It\'s seems I\'ve made quite a mess over here."',
     optionA: {
       choice: 'Bring the man some leaves.',
       outcome:
-        '1 You gather up a handful of leaves and walk over to him. if you weren\'t quite sure what was going on before, the smell definitely confirms it. "Thanks a lot!\' he says cheerily. "Sometimes nature calls, am I rightF” You cough in affirmation and quickly move on.\n\nNo effect.',
+        'You gather up a handful of leaves and walk over to him. If you weren\'t quite sure what was going on before, the smell definitely confirms it.\n\n"Thanks a lot!" he says cheerily. "Sometimes nature calls, am I right?"\n\nYou cough in affirmation and quickly move on.\n\nNo effect.',
       imageUrl: '/assets/cards/events/base/road/re-23-b-a.png',
     },
     optionB: {
-      choice: 'Grab his stuff and run oft while he’s indisposed.',
+      choice: 'Grab his stuff and run off while he\'s indisposed.',
       outcome:
-        'Koii look f rom the squatting man down to his bag. Surely he has something of value in there. You quickly grab it and run off down the road. “Hey!" the man yells at you. "What are you doing? My stuff: You don 11 look back.\n\nGain 2 gold each.\n\nLose 1 reputation.',
+        'You look from the squatting man down to his bag. Surely he has something of value in there. You quickly grab it and run off down the road.\n\n"Hey!" the man yells at you. "What are you doing? My stuff!"You don\'t look back.\n\nGain 2 gold each.\n\nLose 1 reputation.',
       imageUrl: '/assets/cards/events/base/road/re-23-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-23-f.png',
