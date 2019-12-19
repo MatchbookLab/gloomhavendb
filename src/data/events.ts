@@ -2187,11 +2187,11 @@ export const events: EventEntity[] = [
     type: EventType.Road,
     number: 24,
     text:
-      'come a cross a group of brow-beaten Inox trudging down the path in the opposite direct ion as you. Some are pulling carts laden with various miscellany, mostly Furs and crudely crafted goods. The rest have armloads of much of the same. It is obvious that this is everything the Inox have — their life \'s worth in their arms and wagons* They are all covered in what appears to be soot. The shaman at the head of the group calls to you* The beast awakens! The mountain is aflame! Beware you do not anger it!" Looking to the horizon, you can see black smoke rising from a far-off peak.',
+      'You come across a group of brow-beaten Inox trudging down the path in the opposite direction as you. Some are pulling carts laden with various miscellany, mostly furs and crudely crafted goods. The rest have armloads of much of the same.\n\nIt is obvious that this is everything the Inox have — their life\'s worth in their arms and wagons. They are all covered in what appears to be soot.\n\nThe shaman at the head of the group calls to you. "The beast awakens! The mountain is aflame! Beware you do not anger it!"\n\nLooking to the horizon, you can see black smoke rising from a far-off peak.',
     optionA: {
       choice: 'Aid the Inox with what they are carrying.',
       outcome:
-        'You take pity on the disheveled group of Inox, forced from their home by a natural disaster. You travel with them fora time, treating their wounds and helping to lighten their loads. The Shaman thanks you and hands you an amulet. TMf can’t return to our homes until the Beast rests. I fear what this may mean for us all. I hope this keeps you safe."\n\nGain 10 collective gold.\n\nDiscard 2 cards each.\n\nUnlock "Burning Mountain" (M-6).',
+        'You take pity on the disheveled group of Inox, forced from their home by a natural disaster. You travel with them fora time, treating their wounds and helping to lighten their loads.\n\nThe Shaman thanks you and hands you an amulet. "We can\'t return to our homes until the beast rests. I fear what this may mean for us all. I hope this keeps you safe."\n\nGain 10 collective gold.\n\nDiscard 2 cards each.\n\nUnlock "Burning Mountain" (M-6).',
       imageUrl: '/assets/cards/events/base/road/re-24-b-a.png',
     },
     optionB: {
