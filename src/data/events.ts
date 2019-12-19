@@ -1956,17 +1956,17 @@ export const events: EventEntity[] = [
     type: EventType.Road,
     number: 13,
     text:
-      'Traveling off the beaten path, you are surprised to see a large group of figures on the horizon. You take out your weapons and move cautiously forward. As you get closer; it becomes clear that the figures are not aliver but sculptures of some kind\\ made haphazardly out of branches, garbage, and scrap metal There are fifty or so in the middle of a field, with no other signs of life as far as you can see. You see a necklace that may be valuable on one of them and go to grab it. "Don\'t touch her!" You wheel around to see an old man in rags emerge from a hole in the ground and charge at you with a broken broom handle. "These women are all mine!"',
+      'Traveling off the beaten path, you are surprised to see a large group of figures on the horizon. You take out your weapons and move cautiously forward.\n\nAs you get closer, it becomes clear that the figures are not alive but sculptures of some kind, made haphazardly out of branches, garbage, and scrap metal. There are fifty or so in the middle of a field, with no other signs of life as far as you can see.\n\nYou see a necklace that may be valuable on one of them and go to grab it.\n\n"Don\'t touch her!" You wheel around to see an old man in rags emerge from a hole in the ground and charge at you with a broken broom handle. "These women are all mine!"',
     optionA: {
       choice: 'Defend yourself with lethal force.',
       outcome:
-        'r RWith a single swing of your sword, the old • man s head separates from his body and tumbles to the ground. The stench coming from his rags is terrible; so you grab what valuables you can find and quickly move on. Gain 2 gold each.',
+        'With a single swing of your sword, the old man\'s head separates from his body and tumbles to the ground. The stench coming from his rags is terrible, so you grab what valuables you can find and quickly move on. Gain 2 gold each.',
       imageUrl: '/assets/cards/events/base/road/re-13-b-a.png',
     },
     optionB: {
       choice: 'Attempt to calm down the hermit and resolve the situation peacefully.',
       outcome:
-        "You grab the broom handle and wrestle the old man to the ground, attempting to restrain bis flailing limbs. You try to explain that this is all a misunderstanding, but he just keeps warning you not to defecate on bis wives, The man is surprisingly agilef and the stench of his rags also makes keeping him pinned difficult. He slips free and scrambles around for his broom handle, muttering about the 'stars'gift.* You run away with all haste, but his odor is much harder to escape. All start scenario with CURSE 4 .",
+        'You grab the broom handle and wrestle the old man to the ground, attempting to restrain bis flailing limbs. You try to explain that this is all a misunderstanding, but he just keeps warning you not to defecate on bis wives. The man is surprisingly agile and the stench of his rags also makes keeping him pinned difficult. He slips free and scrambles around for his broom handle, muttering about the "stars" gift. You run away with all haste, but his odor is much harder to escape.\n\nAll start scenario with {Curse}.',
       imageUrl: '/assets/cards/events/base/road/re-13-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-13-f.png',
