@@ -2002,7 +2002,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Shoot at the birds',
       outcome:
-        'You pull back your how and take aim> The instant you loose the arrow, however you notice something odd about the birds. They are much farther away than you realized and much bigger. The arrow misses, but it gets their attention, As the flock turns and descends towardyour you realize you just shot at a group of drakes. You run for cover among the trees, but are hit by their acidic spit a number of times in the process. All start scenario with MUDDLE All start scenario with 2 damage.',
+        'You pull back your how and take aim> The instant you loose the arrow, however you notice something odd about the birds. They are much farther away than you realized and much bigger. The arrow misses, but it gets their attention, As the flock turns and descends towardyour you realize you just shot at a group of drakes. You run for cover among the trees, but are hit by their acidic spit a number of times in the process.\n\nAll start scenario with {Muddle}.\n\nAll start scenario with 2 damage.',
       imageUrl: '/assets/cards/events/base/road/re-15-b-a.png',
     },
     optionB: {
@@ -2527,7 +2527,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Ford the river where you are. It is not ideal, but it should be possible.',
       outcome:
-        '#v ; With the power of the elements on your side, crossing the river turns out to he incredibly easy. One frozen bridge later,; you are on the other side and on your way. No effect. OTHERWISE: The water is surprisingly cold, but it will take more than that to end your day. You are still water dogged and shivering when you reach your destination, however. All start scenario with MUDDLE All start scenario with IMMOBILIZE* J ►',
+        '#v ; With the power of the elements on your side, crossing the river turns out to he incredibly easy. One frozen bridge later,; you are on the other side and on your way. No effect. OTHERWISE: The water is surprisingly cold, but it will take more than that to end your day. You are still water dogged and shivering when you reach your destination, however.\n\nAll start scenario with {Muddle}.\n\nAll start scenario with IMMOBILIZE',
       imageUrl: '/assets/cards/events/base/road/re-40-b-a.png',
     },
     optionB: {
@@ -2701,7 +2701,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Attack the demons. There are a lot of them, but you do not take kindly to threats.',
       outcome:
-        'Without even speaking, you draw your weapons and attack. The demons are caught off guard, but they bounce back with great ferocity, ft is a long, brutal battle, and you continue on in your adventure greatly wounded and bloody.\n\nAll start scenario with MUDDLE.\n\nAll start scenario with {Wound}.\n\nAll start scenario with 3 damage.',
+        'Without even speaking, you draw your weapons and attack. The demons are caught off guard, but they bounce back with great ferocity, ft is a long, brutal battle, and you continue on in your adventure greatly wounded and bloody.\n\nAll start scenario with {Muddle}.\n\nAll start scenario with {Wound}.\n\nAll start scenario with 3 damage.',
       imageUrl: '/assets/cards/events/base/road/re-48-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-48-f.png',
@@ -2926,7 +2926,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Cover yourself as best you can and try to walk through the swarm.',
       outcome:
-        'If you were to list the top ten worst moments • of your fife, this would probably be up there. You walk into the swarm and the insects are everywhere, biting and clawing at your flesh. You move as quickly as you can, emerging from the other side with your life intact but your sanity in shambles. Oddly though, you also feel as though you were just in the presence of a powerful, divine force. All start scenario with 2 damage. All start scenario with {Poison} C MUDDLE «*, and {Bless}',
+        'If you were to list the top ten worst moments • of your fife, this would probably be up there. You walk into the swarm and the insects are everywhere, biting and clawing at your flesh. You move as quickly as you can, emerging from the other side with your life intact but your sanity in shambles. Oddly though, you also feel as though you were just in the presence of a powerful, divine force.\n\nAll start scenario with 2 damage.\n\nAll start scenario with {Poison}, {Muddle} , and {Bless}',
       imageUrl: '/assets/cards/events/base/road/re-59-b-a.png',
     },
     optionB: {
@@ -2995,7 +2995,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Attack the Sun Demons. It may be the only way to stop them from bothering you.',
       outcome:
-        'Without even speaking, you draw your weapons and attack. The demons are caught offguard, but they bounce back with great ferocity, ft is a long, brutal battle, and you continue on in your adventure greatly wounded and bloody. All start scenario with MUDDLE ^.\n\nAll start scenario with {Wound}/\n\nAll start scenario with 3 damage.',
+        'Without even speaking, you draw your weapons and attack. The demons are caught offguard, but they bounce back with great ferocity, ft is a long, brutal battle, and you continue on in your adventure greatly wounded and bloody.\n\nAll start scenario with {Muddle}.\n\nAll start scenario with {Wound}/\n\nAll start scenario with 3 damage.',
       imageUrl: '/assets/cards/events/base/road/re-62-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-62-f.png',
