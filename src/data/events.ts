@@ -1153,7 +1153,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Advise against trading with the Orchids. /',
       outcome:
-        "The Valrath woman nods. 7 agree. Orchids • are not to be trusted. Personally. I thought you lacked the brains to make a proper decision, but I'm happy to be proven wrong Cjain I reputation.",
+        "The Valrath woman nods. 7 agree. Orchids • are not to be trusted. Personally. I thought you lacked the brains to make a proper decision, but I'm happy to be proven wrong.\n\nGain 1 reputation.",
       imageUrl: '/assets/cards/events/base/city/ce-55-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-55-f.png',
@@ -2317,7 +2317,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Help the survivors deal with the carnage.',
       outcome:
-        'You approach to help those still alive, but the woman in the road screams, gesturing at the Vcrmling in your group. You try to calm her, but it is of no use. You abanJon the cause.\n\nNo effect.\n\nOTHERWISE: You disperse through the scene, tending to people s wounds and getting them back on their feet, ft takes a few supplies, but they seem grateful in the end Consume 1 fi item each.\n\nGain I reputation.',
+        'You approach to help those still alive, but the woman in the road screams, gesturing at the Vcrmling in your group. You try to calm her, but it is of no use. You abanJon the cause.\n\nNo effect.\n\nOTHERWISE: You disperse through the scene, tending to people s wounds and getting them back on their feet, ft takes a few supplies, but they seem grateful in the end Consume 1 fi item each.\n\nGain 1 reputation.',
       imageUrl: '/assets/cards/events/base/road/re-30-b-a.png',
     },
     optionB: {
