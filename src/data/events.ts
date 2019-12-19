@@ -648,7 +648,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: '-',
       outcome:
-        ': You try to turn away the woman and get back to gambling, but the Sunkeeper won t hear of it, She forces you to follow the woman outside. Read outcome A.\n\nOTHERWISE: You return to your gambling, but you feel as though a pall has fallen over the revelry. Your luck has turned[ and you end the night much poorer than when you started.\n\nLose 10 gold each.',
+        ': You try to turn away the woman and get back to gambling, but the Sunkeeper won t hear of it, She forces you to follow the woman outside.\n\nRead outcome A.\n\nOTHERWISE: You return to your gambling, but you feel as though a pall has fallen over the revelry. Your luck has turned[ and you end the night much poorer than when you started.\n\nLose 10 gold each.',
       imageUrl: '/assets/cards/events/base/city/ce-31-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-31-f.png',
@@ -895,7 +895,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Oblige the Tinkerer and send along the contraption ■',
       outcome:
-        "BPAY5 COLLECTIVE GOLD: Sure enough, * under the floorboards of his old room, you find a bunch of parts, tools, and an intricately craf ted metal spider. You package it up and ship it off to the Tinkerer. Anything for an ola friend. Add City Event 6l to the deck.\n\nOTHERWISE: You don't have the money to send him the contraption, so you decide just to keep it for yourself Read outcome B.",
+        "BPAY5 COLLECTIVE GOLD: Sure enough, * under the floorboards of his old room, you find a bunch of parts, tools, and an intricately craf ted metal spider. You package it up and ship it off to the Tinkerer. Anything for an ola friend. Add City Event 6l to the deck.\n\nOTHERWISE: You don't have the money to send him the contraption, so you decide just to keep it for yourself.\n\nRead outcome B.",
       imageUrl: '/assets/cards/events/base/city/ce-43-b-a.png',
     },
     optionB: {
@@ -2743,7 +2743,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Investigate the area and get to the bottom of this.',
       outcome:
-        'You spend a good hour looking over (he area, scouring every bush dm! divot you can find. Unfortunately, you find no other clues about what happened here and end up fust tiring yourself out.\n\nDiscard 2 cards each. Read outcome A.',
+        'You spend a good hour looking over (he area, scouring every bush dm! divot you can find. Unfortunately, you find no other clues about what happened here and end up fust tiring yourself out.\n\nDiscard 2 cards each.\n\nRead outcome A.',
       imageUrl: '/assets/cards/events/base/road/re-50-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-50-f.png',
