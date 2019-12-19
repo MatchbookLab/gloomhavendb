@@ -912,7 +912,7 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 44,
     text:
-      "In the very early morning, you are wakened by a knock at your door. Standing behind it is giant, dirty In ox wearing a leather apron. “Oh, uh'.ahem, he coughs. Sorry; I was looking for a female Orchid. She used to help me on occasion with my forge. Her control over fire was astounding and I paid her well for her assistance completing some of mv specialty work.rJ He scratches his head. 'I guess shes not around anymore. Vow wouldn't happen to know where I could hnd someone who could help me in her absence, would vow?\"",
+      "In the very early morning, you are wakened by a knock at your door. Standing behind it is giant, dirty In ox wearing a leather apron. “Oh, uh'.ahem, he coughs. Sorry; I was looking for a female Orchid. She used to help me on occasion with my forge. Her control over fire was astounding and I paid her well for her assistance completing some of mv specialty work.rJ He scratches his head. 'I guess shes not around anymore. You wouldn't happen to know where I could hnd someone who could help me in her absence, would vow?\"",
     optionA: {
       choice: 'Offer to help the blacksmith yourself',
       outcome:
@@ -1420,7 +1420,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Kind some way to get the water to stop gushing.',
       outcome:
-        '; You take a moment to attune yourself to the staff which you feel now has a direct link another plane. The water stops and you are left with an openga Unlock Plane of Water "(88)(D-l6}. Party Achievement: “Water Staff." OTHERWISE: Vow figure out how to work the staff but not before your entire room is flooded. The innkeeper will not he happy Lose 15 collective gold. Unlock "Plane of Water (8&(D-l6). Party Achievement: \'Water Staff."',
+        '; You take a moment to attune yourself to the staff which you feel now has a direct link another plane. The water stops and you are left with an openga Unlock Plane of Water "(88)(D-l6}. Party Achievement: “Water Staff." OTHERWISE: You figure out how to work the staff but not before your entire room is flooded. The innkeeper will not he happy Lose 15 collective gold. Unlock "Plane of Water (8&(D-l6). Party Achievement: \'Water Staff."',
       imageUrl: '/assets/cards/events/base/city/ce-68-b-a.png',
     },
     optionB: {
@@ -1998,7 +1998,7 @@ export const events: EventEntity[] = [
     type: EventType.Road,
     number: 15,
     text:
-      'Vow are walking down the road when the sound of’ many wings pulls your gaze to the sky: Above you, you see a large flock of red birds flying southward. At that height, you figure a well-aimed arrow coufd bring one of them down to make a nice mealr.',
+      'You are walking down the road when the sound of’ many wings pulls your gaze to the sky: Above you, you see a large flock of red birds flying southward. At that height, you figure a well-aimed arrow coufd bring one of them down to make a nice mealr.',
     optionA: {
       choice: 'Shoot at the birds',
       outcome:
