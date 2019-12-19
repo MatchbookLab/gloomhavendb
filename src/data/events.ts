@@ -2229,17 +2229,17 @@ export const events: EventEntity[] = [
     type: EventType.Road,
     number: 26,
     text:
-      'You see a lone wagon off to the side of the road up ahead\\ You approach cautiously. you at you. Ho there! I don \'t suppose you have any The his hands together and "Just splits in half. I need to have all these goods up north in t wo days, and I am Just at a loss about how to get myself out of this pickle!"',
+      'You see a lone wagon off to the side of the road up ahead. You approach cautiously.\n\nAs you near, a jovial man with a wide hat waves at you. "Ho there! I don \'t suppose you have any expertise in fixing a broken axle? The road wasn\'t even that bumpy, and then BAM!" The man claps his hands together.\n\n"Just splits in half. I need to have all these goods up north in two days, and I am just at a loss about how to get myself out of this pickle!"',
     optionA: {
       choice: 'Attempt to help the man with his axle problem.',
       outcome:
-        ": The man talks the whole way through the process, but alter an hour or so, the axle is repaired and the man leaves in a radiant mood[ bestowing blessings upon you.\n\nAll start scenario with {Bless}.\n\nGain 1 reputation.\n\nOTHERWISE: You happily agree to help the man, but quickly realize you don't know what you are doing. The man thanks you anyway, and you move on.\n\nNo effect.",
+        "{Tinkerer}, {ThreeSpears}: The man talks the whole way through the process, but after an hour or so, the axle is repaired and the man leaves in a radiant mood, bestowing blessings upon you.\n\nAll start scenario with {Bless}.\n\nGain 1 reputation.\n\nOTHERWISE: You happily agree to help the man, but quickly realize you don't know what you are doing. The man thanks you anyway, and you move on.\n\nNo effect.",
       imageUrl: '/assets/cards/events/base/road/re-26-b-a.png',
     },
     optionB: {
-      choice: 'Pie up the man and take all of the oods he is so concerned about.',
+      choice: 'Tie up the man and take all of the goods he is so concerned about.',
       outcome:
-        "You smile widely and approach the man. He doesn't even put up a light. 7he first thing you do is gag him. because he is a talker. You select the lightest of the valuables to take with you and leave the man tied up on the side of the road. You could say his day just went from bad to worse, but that s not your problem.\n\nGain 10 collective gold.\n\nLose 1 reputation.",
+        "You smile widely and approach the man. He doesn't even put up a fight. The first thing you do is gag him, because he is a talker. You select the lightest of the valuables to take with you and leave the man tied up on the side of the road. You could say his day just went from bad to worse, but that s not your problem.\n\nGain 10 collective gold.\n\nLose 1 reputation.",
       imageUrl: '/assets/cards/events/base/road/re-26-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-26-f.png',
