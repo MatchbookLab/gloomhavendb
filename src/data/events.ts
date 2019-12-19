@@ -1872,17 +1872,17 @@ export const events: EventEntity[] = [
     type: EventType.Road,
     number: 9,
     text:
-      'Walking through a stretch of lowlands, you see a man in armor silting against a large boulder. /A5 you get closer, you see that he is bleeding from his side. *Ah, what luckt" he says« 7 got separated from my detail and then had an unfortunate run-in with a bear, tm afraid I no longer have the strength to stand." He looks at you imploringly. uYou wouldn\'t happen to have 3 pot ion or something you wouId be willing to give me? I Just need a little extra energy to make it back to Gloomhaven.\'',
+      'Walking through a stretch of lowlands, you see a man in armor sitting against a large boulder. As you get closer, you see that he is bleeding from his side.\n\n"Ah, what luck," he says "I got separated from my detail and then had an unfortunate run-in with a bear. I\'m afraid I no longer have the strength to stand."\n\nHe looks at you imploringly. "You wouldn\'t happen to have a potion or something you wouId be willing to give me? I Just need a little extra energy to make it back to Gloomhaven."',
     optionA: {
       choice: 'Help out the guard.',
       outcome:
-        'You happily oblige the request; letting the man partake of some of your supplies. He slowly stands up, thanks you, and then heads toward Cloomhaven as you head in the opposite direction. Consume 1 collective item.',
+        'You happily oblige the request; letting the man partake of some of your supplies. He slowly stands up, thanks you, and then heads toward Gloomhaven as you head in the opposite direction.\n\nConsume 1 collective item.',
       imageUrl: '/assets/cards/events/base/road/re-09-b-a.png',
     },
     optionB: {
-      choice: 'Claim you have no aid to give and move on*',
+      choice: 'Claim you have no aid to give and move on.',
       outcome:
-        'You adopt an expression of regret and apologize for a lack of supplies. You then quickly move on your way as he shouts at your back. “But...please! You’re not just going to leave me here, are you?" Lose 1 reputation.',
+        'You adopt an expression of regret and apologize for a lack of supplies. You then quickly move on your way as he shouts at your back.\n\n"But...please! You\'re not just going to leave me here, are you?"\n\nLose 1 reputation.',
       imageUrl: '/assets/cards/events/base/road/re-09-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-09-f.png',
