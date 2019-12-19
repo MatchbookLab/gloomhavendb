@@ -1809,17 +1809,17 @@ export const events: EventEntity[] = [
     type: EventType.Road,
     number: 6,
     text:
-      'Stumbling through the woods, you are alarmed to hear the sudden sounds of a large animal rummaging through the underbrush Kou crouch down, gauging the grunts and growls. Through the trees, you see a large bear approaching your location. It has not noticed you yet, but you imagine it will soon.',
+      'Stumbling through the woods, you are alarmed to hear the sudden sounds of a large animal rummaging through the underbrush. You crouch down, gauging the grunts and growls.\n\nThrough the trees, you see a large bear approaching your location. It has not noticed you yet, but you imagine it will soon.',
     optionA: {
-      choice: 'lake the opportunity to run from the bear before it gets any closer.',
+      choice: 'Take the opportunity to run from the bear before it gets any closer.',
       outcome:
-        '1 You holt from hiding as fast as you can. Luckily the hear was still a ways off, and it gets bored with the chase before it can catch you. Still, you keep running and running until you can t catch your breath.',
+        'You holt from hiding as fast as you can. Luckily the hear was still a ways off, and it gets bored with the chase before it can catch you. Still, you keep running and running until you can\'t catch your breath.',
       imageUrl: '/assets/cards/events/base/road/re-06-b-a.png',
     },
     optionB: {
-      choice: 'Attack the bear, hopefully catching it y surprise.',
+      choice: 'Attack the bear, hopefully catching it by surprise.',
       outcome:
-        'The bear roars as you approach, making powerful swipes with its claws. Still, with the surprise and the commotion, the bear is not all that committed to the fight. After a bit of back and forth, the animal grunts and runs off into the trees. All start scenario with WOUND O.',
+        'The bear roars as you approach, making powerful swipes with its claws. Still, with the surprise and the commotion, the bear is not all that committed to the fight. After a bit of back and forth, the animal grunts and runs off into the trees.\n\nAll start scenario with {Wound}.',
       imageUrl: '/assets/cards/events/base/road/re-06-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-06-f.png',
