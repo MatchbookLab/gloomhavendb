@@ -449,7 +449,7 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 22,
     text:
-      "You decide to head to the Brown Door for the evening to enjoy a Quatryl concert.\n\nCorruption and crime run rampant in the bar, but the music is unmatched in all of Cloomhaven.\n\nYou are enjoying yourself immensely when you catch a glimpse of a man in a dark, tattered robe near the back of the room. He appears to be handing vials full of red liquid to a second man.",
+      "You decide to head to the Brown Door for the evening to enjoy a Quatryl concert.\n\nCorruption and crime run rampant in the bar, but the music is unmatched in all of Gloomhaven.\n\nYou are enjoying yourself immensely when you catch a glimpse of a man in a dark, tattered robe near the back of the room. He appears to be handing vials full of red liquid to a second man.",
     optionA: {
       choice: 'Further investigate the exchange between the men.',
       outcome:
@@ -1126,7 +1126,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Go to the show and cheer on the Soothsinger.',
       outcome:
-        'enjoy the Soothsingers concert There is even a song or two party and its adventures arount Cloomhaven Gain I reputation.',
+        'enjoy the Soothsingers concert There is even a song or two party and its adventures arount Gloomhaven Gain I reputation.',
       imageUrl: '/assets/cards/events/base/city/ce-54-b-a.png',
     },
     optionB: {
@@ -2065,7 +2065,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Attempt to come to a peaceful reso lution.',
       outcome:
-        'REPUTATION < ~4: You begin to agree with the Inox that Cloomhaven is a blight on the land in need of cleansing, and the Inox seems to believe you. "Go in peace, then," the leader says. “A nd stay off my land." No effect. OTHERWISE: You try to explain that you mean the Inox no ill will, but the leader eyes you skeptically, "foul creature. I curse you and your kind.\' Run — get off my land and never come back!" All start scenario with CURSE',
+        'REPUTATION < ~4: You begin to agree with the Inox that Gloomhaven is a blight on the land in need of cleansing, and the Inox seems to believe you. "Go in peace, then," the leader says. “A nd stay off my land." No effect. OTHERWISE: You try to explain that you mean the Inox no ill will, but the leader eyes you skeptically, "foul creature. I curse you and your kind.\' Run — get off my land and never come back!" All start scenario with CURSE',
       imageUrl: '/assets/cards/events/base/road/re-18-b-a.png',
     },
     optionB: {
@@ -2092,7 +2092,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Interfere with the guards to help the an escape.',
       outcome:
-        'Criminals deserve freedom as much as the next man. While the guards are distracted by the one escapee, you rush to the wagon and release the others. Chaos erupts as the prisoners scatter in every direction. Many manage to escape, and you find a mysterious gift of thanks waiting on your doorstep when you return to Cloomhaven. Lose 2 reputation. Reputation < -9: Gain 1 collective "Major Power Potion” (Item 04l)«',
+        'Criminals deserve freedom as much as the next man. While the guards are distracted by the one escapee, you rush to the wagon and release the others. Chaos erupts as the prisoners scatter in every direction. Many manage to escape, and you find a mysterious gift of thanks waiting on your doorstep when you return to Gloomhaven. Lose 2 reputation. Reputation < -9: Gain 1 collective "Major Power Potion” (Item 04l)«',
       imageUrl: '/assets/cards/events/base/road/re-19-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-19-f.png',
@@ -2796,7 +2796,7 @@ export const events: EventEntity[] = [
     type: EventType.Road,
     number: 53,
     text:
-      'fau hear the distinctive sound of metal on metal in the distance and race up a hill in the road to investigate. In front of you, you see a familiar female Inox in heated battle with a group of Cloomhaven guards. Though outnumbered and bloodied\\ youve never seen that stop the Berserker before. With every wound they inflict, she becomes more and more enraged[ cleaving off limbs with the ease of cutting grass< ■v Iff* all',
+      'fau hear the distinctive sound of metal on metal in the distance and race up a hill in the road to investigate. In front of you, you see a familiar female Inox in heated battle with a group of Gloomhaven guards. Though outnumbered and bloodied\\ youve never seen that stop the Berserker before. With every wound they inflict, she becomes more and more enraged[ cleaving off limbs with the ease of cutting grass< ■v Iff* all',
     optionA: {
       choice: 'Help the Berserker fight oH the guards.',
       outcome:
