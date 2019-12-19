@@ -2040,17 +2040,17 @@ export const events: EventEntity[] = [
     type: EventType.Road,
     number: 17,
     text:
-      'Not for outside of Gtoomhaven, you look up to see a large bird flying overhead. Something is odd, though, movements are jerky; and there is smoke billowing out of it. Then you see it plunge into a sudden nose- dive and crash to the ground off in the east. You rush to the scene and find a limping, soot- covered Qua try I kicking a giant winged contraption made of leather and metal. "Curse this wretched thing!" He yells in trust rat ion. 7 thought Vd worked it out, and then I suddenly lost pressure in the piston chamber!" He looks over at you. "You there! Wonderful timing! Help me get this thing back into the air. There is no time to waste!*',
+      'Not far outside of Gloomhaven, you look up to see a large bird flying overhead. Something is odd, though. It\'s movements are jerky, and there is smoke billowing out of it. Then you see it plunge into a sudden nosedive and crash to the ground off in the east.\n\nYou rush to the scene and find a limping, soot-covered Quatryl kicking a giant winged contraption made of leather and metal.\n\n"Curse this wretched thing!" He yells in frustration. "I thought I\'d worked it out, and then I suddenly lost pressure in the piston chamber!"\n\nHe looks over at you. "You there! Wonderful timing! Help me get this thing back into the air. There is no time to waste!"',
     optionA: {
-      choice: 'Da whatever the Quatryl says.',
+      choice: 'Do whatever the Quatryl says.',
       outcome:
-        "You set the wings and bang out a few dents while the Quatryl repairs his pressure problem. In under an hour, the Quatryl declares the contraption airworthy and jumps in the cockpit. You stand clear and watch in awe as the thing begins flapping wildly, then sputters forward and lifts off the ground. Unfortunately, the flight is short-lived, and the second crash is not nearly as forgiving. You find the Quatryl dead on impact, and there's nothing more to do except harvest the machine for valuable parts.\n\nGain 5 collective gold.",
+        "You set the wings and bang out a few dents while the Quatryl repairs his pressure problem. In under an hour, the Quatryl declares the contraption airworthy and jumps in the cockpit. You stand clear and watch in awe as the thing begins flapping wildly, then sputters forward and lifts off the ground.\n\nUnfortunately, the flight is short-lived, and the second crash is not nearly as forgiving. You find the Quatryl dead on impact, and there's nothing more to do except harvest the machine for valuable parts.\n\nGain 5 collective gold.",
       imageUrl: '/assets/cards/events/base/road/re-17-b-a.png',
     },
     optionB: {
       choice: 'Demand an explanation before you help in any way.',
       outcome:
-        'You force the Quatryl to slow down and talk to you, but his eyes keep darting around in a panic. "Don t you understand? The world needs my technology now! / must perfect it! It will revolutionize everything!" You agree that the power of flight is pretty great, but you convince the Quatryl that the world can wait a day for him to get some rest and organize his thoughts. You help him transport the broken machine back to town. Gain 1 prosperity.',
+        'You force the Quatryl to slow down and talk to you, but his eyes keep darting around in a panic. "Don\'t you understand? The world needs my technology now! I must perfect it! It will revolutionize everything!" You agree that the power of flight is pretty great, but you convince the Quatryl that the world can wait a day for him to get some rest and organize his thoughts. You help him transport the broken machine back to town.\n\nGain 1 prosperity.',
       imageUrl: '/assets/cards/events/base/road/re-17-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-17-f.png',
