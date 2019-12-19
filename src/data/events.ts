@@ -32,7 +32,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Pay for the thing. You never know.',
       outcome:
-        'PAY 10 COLLECTIVE GOLD: You hand over the gold and take hold of the piece of garbage. Amidst troubling brown smears you see a lot of meaningless scratches likely made by rats and bugs. Oh well. Sometimes the long shot doesn\'t pay off.\n\nNo effect.\n\nOTHERWISE: "Bah! You don\'t have enough. Come back when you do!" No effect.',
+        'PAY 10 COLLECTIVE GOLD: You hand over the gold and take hold of the piece of garbage. Amidst troubling brown smears you see a lot of meaningless scratches likely made by rats and bugs. Oh well. Sometimes the long shot doesn\'t pay off.\n\nNo effect.\n\nOTHERWISE: "Bah! You don\'t have enough. Come back when you do!"\n\nNo effect.',
       imageUrl: '/assets/cards/events/base/city/ce-02-b-a.png',
     },
     optionB: {
@@ -684,7 +684,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Run to the girl and attempt to pull her out of the Void.',
       outcome:
-        "w); You grab the child and lift her clear e haunting area. She is still screaming oTthe haunting madly when the Aesther in your group lays a hand upon the child in deep concentration. Slowly, the crying subsides, and the child gets up and runs off Gain 2 reputation. OTHERWISE: You get the child off the sand as quickly as you can. but it doesn't do much good. The girl screams and screams no matter what aid is administered. No effect.",
+        "w); You grab the child and lift her clear e haunting area. She is still screaming oTthe haunting madly when the Aesther in your group lays a hand upon the child in deep concentration. Slowly, the crying subsides, and the child gets up and runs off Gain 2 reputation. OTHERWISE: You get the child off the sand as quickly as you can. but it doesn't do much good. The girl screams and screams no matter what aid is administered.\n\nNo effect.",
       imageUrl: '/assets/cards/events/base/city/ce-33-b-a.png',
     },
     optionB: {
@@ -705,7 +705,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: "Follow the man in an attempt to discover the Ravens' lair.",
       outcome:
-        ": Using the night like a cloak, you follow the man unseen and unheard. Eventually he stops at a small dwelling nestled under the west wall of the city. Unlock Sacrifice Pit'(7^)(B-I4J. OTHERWISE: You sneak forward, confident in your stealth abilities. After a few minutes, though, the man suddenly bolts around a corner. By the time you get there, he is long gone. No effect.",
+        ": Using the night like a cloak, you follow the man unseen and unheard. Eventually he stops at a small dwelling nestled under the west wall of the city. Unlock Sacrifice Pit'(7^)(B-I4J. OTHERWISE: You sneak forward, confident in your stealth abilities. After a few minutes, though, the man suddenly bolts around a corner. By the time you get there, he is long gone.\n\nNo effect.",
       imageUrl: '/assets/cards/events/base/city/ce-34-b-a.png',
     },
     optionB: {
@@ -732,7 +732,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Escort the Harrowers to the New Market and help them find a spice merchant.',
       outcome:
-        '™: You make your way to the market with the Harrowers in fcnv. It s easy to find a reputable spice merchant, but difficult to get the merchant and the Harrowers to trust each other. In the end. they find common ground through the Plagueherald and make a deal Gain 1 prosperity. OTHERWISE: You bring the Harrowers to the marketf but even after great effort, you cannot find any merchants willing to deal with them, fhey depart empty handed. No effect*',
+        '™: You make your way to the market with the Harrowers in fcnv. It s easy to find a reputable spice merchant, but difficult to get the merchant and the Harrowers to trust each other. In the end. they find common ground through the Plagueherald and make a deal Gain 1 prosperity. OTHERWISE: You bring the Harrowers to the marketf but even after great effort, you cannot find any merchants willing to deal with them, fhey depart empty handed.\n\nNo effect.',
       imageUrl: '/assets/cards/events/base/city/ce-35-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-35-f.png',
@@ -774,7 +774,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Help repair the gate. You wouldn’t want another attack to further cripple the town.',
       outcome:
-        'Bi\tt|!\t^ You set to work # repairing the gate, and by the time night falls, it is at least functional1 The downtrodden citizens are inspired by your work, and you have little doubt that the community will «§> bounce bock with little permanent damage. Gain 1 prosperity. OTHERWISE: You fiddle with the gate fora bit until it becomes dear that you are doing nothing to help. You decide to head back to your rooms instead and get some rest. No effect.',
+        'Bi\tt|!\t^ You set to work # repairing the gate, and by the time night falls, it is at least functional1 The downtrodden citizens are inspired by your work, and you have little doubt that the community will «§> bounce bock with little permanent damage. Gain 1 prosperity. OTHERWISE: You fiddle with the gate fora bit until it becomes dear that you are doing nothing to help. You decide to head back to your rooms instead and get some rest.\n\nNo effect.',
       imageUrl: '/assets/cards/events/base/city/ce-37-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-37-f.png',
@@ -795,7 +795,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Watch the fight with the crowd. /',
       outcome:
-        '# <p ; After a good beating, the crowd is riled up. Many people start looking in your direction, muttering about how you have the nerve to associate with Orchids as well. You make a quick exit. Lose I reputation. OTHERWISE: The Orchid puts up no defense and the "fight "becomes rather one-sided. A solid beating is administered, and the crowd is sated. You go about your business while the Orchid bleeds on the ground. No effect.',
+        '# <p ; After a good beating, the crowd is riled up. Many people start looking in your direction, muttering about how you have the nerve to associate with Orchids as well. You make a quick exit. Lose I reputation. OTHERWISE: The Orchid puts up no defense and the "fight "becomes rather one-sided. A solid beating is administered, and the crowd is sated. You go about your business while the Orchid bleeds on the ground.\n\nNo effect.',
       imageUrl: '/assets/cards/events/base/city/ce-38-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-38-f.png',
@@ -810,7 +810,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Agree to help the priest and accompany him to the sanctuary.',
       outcome:
-        "The pious man seems incredibly happy • you've decided to help the sanctuary. When you arrive at the great building, he explains in detail all that has happened. Using that information, you inquire around town, putting out heelers to possible Fences For the goods. Add City Event 65 to the deck. Otherwise: No effect.",
+        "The pious man seems incredibly happy • you've decided to help the sanctuary. When you arrive at the great building, he explains in detail all that has happened. Using that information, you inquire around town, putting out heelers to possible Fences For the goods.\n\nAdd City Event 65 to the deck.\n\nOtherwise:\n\nNo effect.",
       imageUrl: '/assets/cards/events/base/city/ce-39-b-a.png',
     },
     optionB: {
@@ -859,7 +859,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: "Move along. You don't need any more potions.",
       outcome:
-        'Shaking your head, you move past the % Vermling and get back to your business. She begins to make sobbing sounds behind you. But, but you die without potion! Is life worth nothing?" No effect.',
+        'Shaking your head, you move past the % Vermling and get back to your business. She begins to make sobbing sounds behind you. But, but you die without potion! Is life worth nothing?"\n\nNo effect.',
       imageUrl: '/assets/cards/events/base/city/ce-41-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-41-f.png',
@@ -964,7 +964,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Encourage the Cragheart to move on with its life. /',
       outcome:
-        ",\\'ot fitting in with its own kind or with d city of mostly humans, the C ragheart thought it could depend on a misfit group of mercenaries for friendship. It understands (hat its adventuring life is now in the past, though, and that it should go find a new place to belong. It sadly admits that it has no idea where that would be, but the Cragheart gets up and leaves the tavern nonetheless. No effect. 4",
+        ",\\'ot fitting in with its own kind or with d city of mostly humans, the C ragheart thought it could depend on a misfit group of mercenaries for friendship. It understands (hat its adventuring life is now in the past, though, and that it should go find a new place to belong. It sadly admits that it has no idea where that would be, but the Cragheart gets up and leaves the tavern nonetheless.\n\nNo effect.",
       imageUrl: '/assets/cards/events/base/city/ce-46-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-46-f.png',
@@ -1000,7 +1000,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Begrudgingly pay For the note.',
       outcome:
-        "PAY5 COLLECTIVE GOLD: You throw the kid a few coins and grab the note. Enclosed with the note is a small medallion engraved with the image of the sun. Apparently the Sunkeeper thinks the object may help you at some point in the future. The note doesn't say exactly how and the thing has no apparent use. You stow it away in your pack. Party Achievement: “Sun-Blessed. OTHERWISE: You reach into your pocket to pay the kid. but come up empty-handed. He slinks off in indignation. No eflect.",
+        "PAY5 COLLECTIVE GOLD: You throw the kid a few coins and grab the note. Enclosed with the note is a small medallion engraved with the image of the sun. Apparently the Sunkeeper thinks the object may help you at some point in the future. The note doesn't say exactly how and the thing has no apparent use. You stow it away in your pack. Party Achievement: “Sun-Blessed. OTHERWISE: You reach into your pocket to pay the kid. but come up empty-handed. He slinks off in indignation.\n\nNo eflect.",
       imageUrl: '/assets/cards/events/base/city/ce-48-b-a.png',
     },
     optionB: {
@@ -1027,7 +1027,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Demand a finder s fee for setting him up with buyers. /',
       outcome:
-        '; The Valrath looks at you with trepidation, but after some persuasion you get him to agree* Gain 15 collective gold. Read outcome A. OTHERWISE: The Valrath recoils, insulted by the notion. He storms off, grumbling about the lost value of friendship. No effect.',
+        '; The Valrath looks at you with trepidation, but after some persuasion you get him to agree* Gain 15 collective gold. Read outcome A. OTHERWISE: The Valrath recoils, insulted by the notion. He storms off, grumbling about the lost value of friendship.\n\nNo effect.',
       imageUrl: '/assets/cards/events/base/city/ce-49-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-49-f.png',
@@ -1069,7 +1069,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Lie and claim you know nothing.',
       outcome:
-        ': You shake your head at the guard, saying you must have been mistaken. You thought the sword looked similar to one carried by a friend\\ but, looking closer, there are distinct differences. The guard shrugs and goes back to examining the scene. No effect. OTHER WISE: You laugh and make up some poor explanation about seeing a similar sword on a bandit in a crypt. The guard eyes you suspiciously. Lose 1 reputation.',
+        ': You shake your head at the guard, saying you must have been mistaken. You thought the sword looked similar to one carried by a friend\\ but, looking closer, there are distinct differences. The guard shrugs and goes back to examining the scene.\n\nNo effect.\n\nOTHERWISE: You laugh and make up some poor explanation about seeing a similar sword on a bandit in a crypt. The guard eyes you suspiciously.\n\nLose 1 reputation.',
       imageUrl: '/assets/cards/events/base/city/ce-51-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-51-f.png',
@@ -1111,7 +1111,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Stay silent and keep out of it. /',
       outcome:
-        "You casually move on, wondering how the guards found themselves on the wrong side of the Berserkers rage. It probably wasn't very difficult. No effect.",
+        "You casually move on, wondering how the guards found themselves on the wrong side of the Berserkers rage. It probably wasn't very difficult.\n\nNo effect.",
       imageUrl: '/assets/cards/events/base/city/ce-53-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-53-f.png',
@@ -1189,7 +1189,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Pay tor the note.',
       outcome:
-        'R PAY W COLLECTIVE COLD: You open the • note to discover it is from the Elcmentalist. who has soiled to the eastern continent to gain a deeper understanding of the elements. During this time, the Elementalist also spent some effort on the construction of a powerful staff and wanted to share the design. Gain "Staff of Elements" design (Item 118). OTHERWISE: You reach into your pocket to pay the kid, but come up empty-handed. He slinks off in indignation. No effect.',
+        'R PAY W COLLECTIVE COLD: You open the • note to discover it is from the Elcmentalist. who has soiled to the eastern continent to gain a deeper understanding of the elements. During this time, the Elementalist also spent some effort on the construction of a powerful staff and wanted to share the design. Gain "Staff of Elements" design (Item 118). OTHERWISE: You reach into your pocket to pay the kid, but come up empty-handed. He slinks off in indignation.\n\nNo effect.',
       imageUrl: '/assets/cards/events/base/city/ce-57-b-a.png',
     },
     optionB: {
@@ -1252,7 +1252,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Attempt to stop the men from burning down the shop.',
       outcome:
-        ": You push your way to the front of the mob and stop the men as they enter the store. Clearly emotions have gotten the better of these people. Through a calm demeanor, you are able to talk the mob down. A sense of relief washes over the crowd. Gain I reputation. OTHERWISE: You kindly entreat the crowd to back down. It gets a little rough, but it becomes clear the crowd isn't fully into it. After knocking a few heads, the mob disperses. No effect.",
+        ": You push your way to the front of the mob and stop the men as they enter the store. Clearly emotions have gotten the better of these people. Through a calm demeanor, you are able to talk the mob down. A sense of relief washes over the crowd. Gain I reputation. OTHERWISE: You kindly entreat the crowd to back down. It gets a little rough, but it becomes clear the crowd isn't fully into it. After knocking a few heads, the mob disperses.\n\nNo effect.",
       imageUrl: '/assets/cards/events/base/city/ce-60-b-a.png',
     },
     optionB: {
@@ -1399,7 +1399,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Pay off the thugs.',
       outcome:
-        "BPAY 60 COLLECTIVE GOLD: You sigh • and hand over the Sawbones' debt, plus interest. Though it feels terrible, the thugs are satisfied and walk out the same way they came in. At least it is over now. No effect. OTHERWISE: Seeing as how you don't have enough money, you decide pursue other options. Read outcome B.",
+        "PAY 60 COLLECTIVE GOLD: You sigh • and hand over the Sawbones' debt, plus interest. Though it feels terrible, the thugs are satisfied and walk out the same way they came in. At least it is over now.\n\nNo effect.\n\nOTHERWISE: Seeing as how you don't have enough money, you decide pursue other options. Read outcome B.",
       imageUrl: '/assets/cards/events/base/city/ce-67-b-a.png',
     },
     optionB: {
@@ -1426,7 +1426,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Gel the stall out ot your room and throw it into the bay. a l I',
       outcome:
-        "You race out of the inn, trying to minimize the damage caused by the never-ending stream of water. Not knowing what else to do, you head toward the river. Standing on the banks, you shrug and toss the staff into the current. You g uess you 'll never know how the staff ended up where it did or why it suddenly turned into a faucet. No effect.",
+        "You race out of the inn, trying to minimize the damage caused by the never-ending stream of water. Not knowing what else to do, you head toward the river. Standing on the banks, you shrug and toss the staff into the current. You g uess you 'll never know how the staff ended up where it did or why it suddenly turned into a faucet.\n\nNo effect.",
       imageUrl: '/assets/cards/events/base/city/ce-68-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-68-f.png',
@@ -1468,7 +1468,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: "Regretfully explain that you don't have the power to effect change like this.",
       outcome:
-        'You explain that while you do have some • power in the town, the Sinking Market may be a lost cause. More and more of the district is sinking into the sea every day; as it has been doing for as long as the town has existed. You can t convince merchants to spend money on something that will one day be underwater. No effect.',
+        'You explain that while you do have some • power in the town, the Sinking Market may be a lost cause. More and more of the district is sinking into the sea every day; as it has been doing for as long as the town has existed. You can t convince merchants to spend money on something that will one day be underwater.\n\nNo effect.',
       imageUrl: '/assets/cards/events/base/city/ce-70-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-70-f.png',
@@ -1511,7 +1511,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Refuse to go with the man. This whole situation seems,.Jishv, /',
       outcome:
-        "This suspicious old man must have seen you in here before with the rod and fashioned some elaborate con to swindle you out of something. You won i be so easily fooled. There 's no he knows what the rod does when no one else in town does. Vbi/ push him away and go back to your drink. No effect.",
+        "This suspicious old man must have seen you in here before with the rod and fashioned some elaborate con to swindle you out of something. You won i be so easily fooled. There 's no he knows what the rod does when no one else in town does. Vbi/ push him away and go back to your drink.\n\nNo effect.",
       imageUrl: '/assets/cards/events/base/city/ce-72-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-72-f.png',
@@ -1595,7 +1595,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Decline the suspicious offer and con- tinue your business. /',
       outcome:
-        'Gavin looks flabbergasted as you walk a way. "Who will protect my ships when there is no one to trust? I guess I\'ll just have to keep looking. * No effect.',
+        'Gavin looks flabbergasted as you walk a way. "Who will protect my ships when there is no one to trust? I guess I\'ll just have to keep looking.\n\nNo effect.',
       imageUrl: '/assets/cards/events/base/city/ce-76-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-76-f.png',
@@ -1610,13 +1610,13 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Do the job.',
       outcome:
-        'REPUTATION < -//; "That \'s the money-bring • criminals I know and love! Come take a walk with me, and Til explain how we can all get rich." OTHERWISE: “Oh, whoops,\' Nick stammers, “From the back you looked like. *. uh, never mind. Forget I said anything. " No effect.',
+        'REPUTATION < -//; "That \'s the money-bring • criminals I know and love! Come take a walk with me, and Til explain how we can all get rich." OTHERWISE: “Oh, whoops,\' Nick stammers, “From the back you looked like. *. uh, never mind. Forget I said anything. "\n\nNo effect.',
       imageUrl: '/assets/cards/events/base/city/ce-77-b-a.png',
     },
     optionB: {
       choice: 'Claim you’ve changed your ways and grave robbing is a step too far /',
       outcome:
-        '“A downright shame, i say," Nick shakes his head. “I guess I \'ll just have to find a group of mercenaries who actually are interested in make a mountain of money." No effect.',
+        '“A downright shame, i say," Nick shakes his head. “I guess I \'ll just have to find a group of mercenaries who actually are interested in make a mountain of money."\n\nNo effect.',
       imageUrl: '/assets/cards/events/base/city/ce-77-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-77-f.png',
@@ -1673,7 +1673,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Attempt to calm down the guards and explain the situation.',
       outcome:
-        "if* Jj : You Adopt a serious tone and do your best to communicate dun you fuid nothing to do with what was written in the Town Records. You express remorse for their hardships, and, miraculously, the mob prow's calmer and disperses. No effect. OTHERWISE: You laugh and claim that this is all some big misunderstanding. The guards don't see it that way, but your lack of aggression at least stops them from attacking you. They leave, grumbling threats. Lose I reputation.",
+        "if* Jj : You Adopt a serious tone and do your best to communicate dun you fuid nothing to do with what was written in the Town Records. You express remorse for their hardships, and, miraculously, the mob prow's calmer and disperses.\n\nNo effect.\n\nOTHERWISE: You laugh and claim that this is all some big misunderstanding. The guards don't see it that way, but your lack of aggression at least stops them from attacking you. They leave, grumbling threats. Lose I reputation.",
       imageUrl: '/assets/cards/events/base/city/ce-80-b-a.png',
     },
     optionB: {
@@ -2008,7 +2008,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Let the birds pass undisturbed.',
       outcome:
-        "The shot would be difficult, and you'd prefer P not to waste the arrow. You simply move on toward your destination. No effect.",
+        "The shot would be difficult, and you'd prefer P not to waste the arrow. You simply move on toward your destination.\n\nNo effect.",
       imageUrl: '/assets/cards/events/base/road/re-15-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-15-f.png',
@@ -2065,7 +2065,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Attempt to come to a peaceful reso lution.',
       outcome:
-        'REPUTATION < ~4: You begin to agree with the Inox that Gloomhaven is a blight on the land in need of cleansing, and the Inox seems to believe you. "Go in peace, then," the leader says. “A nd stay off my land." No effect. OTHERWISE: You try to explain that you mean the Inox no ill will, but the leader eyes you skeptically, "foul creature. I curse you and your kind.\' Run — get off my land and never come back!"\n\nAll start scenario with {Curse}.',
+        'REPUTATION < ~4: You begin to agree with the Inox that Gloomhaven is a blight on the land in need of cleansing, and the Inox seems to believe you. "Go in peace, then," the leader says. “A nd stay off my land."\n\nNo effect.\n\nOTHERWISE: You try to explain that you mean the Inox no ill will, but the leader eyes you skeptically, "foul creature. I curse you and your kind.\' Run — get off my land and never come back!"\n\nAll start scenario with {Curse}.',
       imageUrl: '/assets/cards/events/base/road/re-18-b-a.png',
     },
     optionB: {
@@ -2086,7 +2086,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Help the guards catch the escaping man.',
       outcome:
-        "REPUTATION < -4: You chase after the sprinting man, but the guards conclude you must be an accomplice trying to help him. They shoot arrows in your direction, forcing you to retreat from the situation. No effect. O THER WISE: The man's speed after spending months in a jail cell is no match for your own. With the help of the guards on horseback, you quickly have him cornered and returned to the wagon. Gain 1 reputation.",
+        "REPUTATION < -4: You chase after the sprinting man, but the guards conclude you must be an accomplice trying to help him. They shoot arrows in your direction, forcing you to retreat from the situation.\n\nNo effect.\n\nOTTHERWISE: The man's speed after spending months in a jail cell is no match for your own. With the help of the guards on horseback, you quickly have him cornered and returned to the wagon.\n\nGain 1 reputation.",
       imageUrl: '/assets/cards/events/base/road/re-19-b-a.png',
     },
     optionB: {
@@ -2170,7 +2170,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Bring the man some leaves.',
       outcome:
-        '1 You gather up a handful of leaves and walk over to him. if you weren\'t quite sure what was going on before, the smell definitely confirms it. "Thanks a lot!\' he says cheerily. "Sometimes nature calls, am I rightF” You cough in affirmation and quickly move on. No effect.',
+        '1 You gather up a handful of leaves and walk over to him. if you weren\'t quite sure what was going on before, the smell definitely confirms it. "Thanks a lot!\' he says cheerily. "Sometimes nature calls, am I rightF” You cough in affirmation and quickly move on.\n\nNo effect.',
       imageUrl: '/assets/cards/events/base/road/re-23-b-a.png',
     },
     optionB: {
@@ -2212,7 +2212,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Try to reason with the Inox',
       outcome:
-        "; 7 /70 Inox in your party talks with the leader for a while and they are able to come to an agreement They punch each other s chests, and the group lets you through. No effect. OTHERWISE: The Inox don't seem to be budging on this payment issue, so you are forced to pass along a handful of coins. The big one smiles and lets you continue on your way. Lose 5 gold each.",
+        "; 7 /70 Inox in your party talks with the leader for a while and they are able to come to an agreement They punch each other s chests, and the group lets you through.\n\nNo effect. OTHERWISE: The Inox don't seem to be budging on this payment issue, so you are forced to pass along a handful of coins. The big one smiles and lets you continue on your way. Lose 5 gold each.",
       imageUrl: '/assets/cards/events/base/road/re-25-b-a.png',
     },
     optionB: {
@@ -2233,7 +2233,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Attempt to help the man with his axle problem.',
       outcome:
-        ": The man talks the whole way through the process, but alter an hour or so, the axle is repaired and the man leaves in a radiant mood[ bestowing blessings upon you. All start scenario with {Bless} Gain 1 reputation. OTHERWISE: You happily agree to help the man, but quickly realize you don't know what you are doing. The man thanks you anyway, and you move on. No effect.",
+        ": The man talks the whole way through the process, but alter an hour or so, the axle is repaired and the man leaves in a radiant mood[ bestowing blessings upon you. All start scenario with {Bless} Gain 1 reputation. OTHERWISE: You happily agree to help the man, but quickly realize you don't know what you are doing. The man thanks you anyway, and you move on.\n\nNo effect.",
       imageUrl: '/assets/cards/events/base/road/re-26-b-a.png',
     },
     optionB: {
@@ -2254,7 +2254,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Clear the trees from the road. It is the best way through and will help other travelers.',
       outcome:
-        "▼ The trees are too massive and dense to remove through conventional means, but with elemental power, they are destroyed and swept aside in no time. No effect. OTHERWISE: The trees aren't part of an ambush, but that doesn't make them any easier to clear.: It s grueling work and by the time you arrive at your destination, you are exhausted. Discard 3 cards each.",
+        "▼ The trees are too massive and dense to remove through conventional means, but with elemental power, they are destroyed and swept aside in no time.\n\nNo effect.\n\nOTHERWISE: The trees aren't part of an ambush, but that doesn't make them any easier to clear.: It s grueling work and by the time you arrive at your destination, you are exhausted.\n\nDiscard 3 cards each.",
       imageUrl: '/assets/cards/events/base/road/re-27-b-a.png',
     },
     optionB: {
@@ -2281,7 +2281,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Politely decline and move quickly on your way.',
       outcome:
-        'There was something off-putting about that man. You are more than happy to move along and put some distance between you. No effect.',
+        'There was something off-putting about that man. You are more than happy to move along and put some distance between you.\n\nNo effect.',
       imageUrl: '/assets/cards/events/base/road/re-28-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-28-f.png',
@@ -2296,7 +2296,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Attempt to clear the stones from the path.',
       outcome:
-        '^: The Craghearts combination of raw strength and an affinity for stonework is perfect for this task. In a matter of minutes, enough stones have been destroyed or thrown aside to open a path. No effect. OTHERWISE: The situation is not ideal, but you work through the pain. By the time a path has been cleared away, you never want to see another rock in your life. Discard 2 cards each.',
+        '^: The Craghearts combination of raw strength and an affinity for stonework is perfect for this task. In a matter of minutes, enough stones have been destroyed or thrown aside to open a path.\n\nNo effect.\n\nOTHERWISE: The situation is not ideal, but you work through the pain. By the time a path has been cleared away, you never want to see another rock in your life. Discard 2 cards each.',
       imageUrl: '/assets/cards/events/base/road/re-29-b-a.png',
     },
     optionB: {
@@ -2317,7 +2317,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Help the survivors deal with the carnage.',
       outcome:
-        'You approach to help those still alive, but the woman in the road screams, gesturing at the Vcrmling in your group. You try to calm her, but it is of no use. You abanJon the cause. No effect. OTHERWISE: You disperse through the scene, tending to people s wounds and getting them back on their feet, ft takes a few supplies, but they seem grateful in the end Consume 1 fi item each. Gain I reputation.',
+        'You approach to help those still alive, but the woman in the road screams, gesturing at the Vcrmling in your group. You try to calm her, but it is of no use. You abanJon the cause.\n\nNo effect.\n\nOTHERWISE: You disperse through the scene, tending to people s wounds and getting them back on their feet, ft takes a few supplies, but they seem grateful in the end Consume 1 fi item each. Gain I reputation.',
       imageUrl: '/assets/cards/events/base/road/re-30-b-a.png',
     },
     optionB: {
@@ -2380,7 +2380,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Investigate further Whatever forces are at work must be put in check.',
       outcome:
-        '; The Acsther in your group leads you to an area off the road that feels* fuzzy* It is hard to focus your vision, as if the space in front of you is only half there. With a few words from the Aesther, the blur is gone. No effect. OTHERWISE: You wander around for a while before a massive demon suddenly appears before you, ripped from another plane. Your presence surprises it, though, and you dispatch it before too much trouble is causedl All start scenario with 1 damage. Discard 1 card each.',
+        '; The Acsther in your group leads you to an area off the road that feels* fuzzy* It is hard to focus your vision, as if the space in front of you is only half there. With a few words from the Aesther, the blur is gone.\n\nNo effect.\n\nOTHERWISE: You wander around for a while before a massive demon suddenly appears before you, ripped from another plane. Your presence surprises it, though, and you dispatch it before too much trouble is caused.\n\nAll start scenario with 1 damage.\n\nDiscard 1 card each.',
       imageUrl: '/assets/cards/events/base/road/re-33-b-a.png',
     },
     optionB: {
@@ -2401,13 +2401,13 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Quickly put out the fire and sneak out into the brush to get a look.',
       outcome:
-        '«D : Your stealth skills prove sufficient enough to remain unnoticed by a large group oflnox. You decide to let them pass by without incident. No effect. OTHERWISE: You attempt to hide and stay quiet, but a snapped twig at an unfortunate moment startles the passing band of inox, and they pull out weapons and attack. The scene turns bloody, and you are barely able fight them off. All start scenario with 4 damage.',
+        '«D : Your stealth skills prove sufficient enough to remain unnoticed by a large group oflnox. You decide to let them pass by without incident.\n\nNo effect.\n\nOTHERWISE: You attempt to hide and stay quiet, but a snapped twig at an unfortunate moment startles the passing band of inox, and they pull out weapons and attack. The scene turns bloody, and you are barely able fight them off. All start scenario with 4 damage.',
       imageUrl: '/assets/cards/events/base/road/re-34-b-a.png',
     },
     optionB: {
       choice: 'Wait by the fire for whatever comes.',
       outcome:
-        'Sw\t: A group of Inox appears at the edge of your campsite. Seeing their kind among you, they greet you in a friendly manner and stay for some time to talk. After they leave, you find the remainder of the night restful. No effect. OTHERWISE: A group of irate Inox appears at the edge of your campsite. They claim you are trespassing and force you to pack up and leave. You walk through the rest of the night and arrive at your destination tiredl Discard 2 cards each.',
+        'Sw\t: A group of Inox appears at the edge of your campsite. Seeing their kind among you, they greet you in a friendly manner and stay for some time to talk. After they leave, you find the remainder of the night restful.\n\nNo effect.\n\nOTHERWISE: A group of irate Inox appears at the edge of your campsite. They claim you are trespassing and force you to pack up and leave. You walk through the rest of the night and arrive at your destination tiredl Discard 2 cards each.',
       imageUrl: '/assets/cards/events/base/road/re-34-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-34-f.png',
@@ -2428,7 +2428,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Pay the men and be on your way.',
       outcome:
-        'BP AY 5 GOLD EACH: You smile .is non- • threateningly as you can and reach for your coin purse. You try to give them just a couple coins, but he enco urages you to donate more. Eventually the men seem satisfied and move on their way. No effect. OTHERWISE: When you try to pay with what few coins you have, the man thinks you Jre holding out on him and grows angry. Read outcome A. L A',
+        'PAY 5 GOLD EACH: You smile .is non- • threateningly as you can and reach for your coin purse. You try to give them just a couple coins, but he enco urages you to donate more. Eventually the men seem satisfied and move on their way.\n\nNo effect.\n\nOTHERWISE: When you try to pay with what few coins you have, the man thinks you Jre holding out on him and grows angry.\n\nRead outcome A. L A',
       imageUrl: '/assets/cards/events/base/road/re-35-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-35-f.png',
@@ -2464,7 +2464,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: "Brave I he storm ami continue on your way. It's not that bad.",
       outcome:
-        ': You feel positively dismal trudging through the mud and the raint until you hear the Soothsingcr s voice rise above the thunder. She s singing a song in the middle of the storm, and everyone starts to feel better No effect. OTHERWISE: Walking down the road in a storm is just awful\\ You are wet and cold and miserable and you cannot wait for the whole experience to end. By the time you reach your destination, you are not feeling well at alll Discard 2 cards each.',
+        ': You feel positively dismal trudging through the mud and the raint until you hear the Soothsingcr s voice rise above the thunder. She s singing a song in the middle of the storm, and everyone starts to feel better.\n\nNo effect.\n\nOTHERWISE: Walking down the road in a storm is just awful. You are wet and cold and miserable and you cannot wait for the whole experience to end. By the time you reach your destination, you are not feeling well at all.\n\nDiscard 2 cards each.',
       imageUrl: '/assets/cards/events/base/road/re-37-b-a.png',
     },
     optionB: {
@@ -2491,7 +2491,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Move on. That forest does not look',
       outcome:
-        "Whatever happened here could not have been good, but also it doesn't concern you and you're not about to head into that dark, dense forest ill-prepared. You find it best to move along and attend to your own matters. No effect.",
+        "Whatever happened here could not have been good, but also it doesn't concern you and you're not about to head into that dark, dense forest ill-prepared. You find it best to move along and attend to your own matters.\n\nNo effect.",
       imageUrl: '/assets/cards/events/base/road/re-38-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-38-f.png',
@@ -2512,7 +2512,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'This is clearly some sort of plague. Avoid it at all costs.',
       outcome:
-        'You recoil in terror and quickly move along. You can hear the Valrath sobbing as you do so, but you kno w well enough to avoid a plague when you see it. No effect.',
+        'You recoil in terror and quickly move along. You can hear the Valrath sobbing as you do so, but you kno w well enough to avoid a plague when you see it.\n\nNo effect.',
       imageUrl: '/assets/cards/events/base/road/re-39-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-39-f.png',
@@ -2527,7 +2527,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Ford the river where you are. It is not ideal, but it should be possible.',
       outcome:
-        '#v ; With the power of the elements on your side, crossing the river turns out to he incredibly easy. One frozen bridge later,; you are on the other side and on your way. No effect. OTHERWISE: The water is surprisingly cold, but it will take more than that to end your day. You are still water dogged and shivering when you reach your destination, however.\n\nAll start scenario with {Muddle}.\n\nAll start scenario with IMMOBILIZE',
+        '#v ; With the power of the elements on your side, crossing the river turns out to he incredibly easy. One frozen bridge later,; you are on the other side and on your way.\n\nNo effect.\n\nOTHERWISE: The water is surprisingly cold, but it will take more than that to end your day. You are still water dogged and shivering when you reach your destination, however.\n\nAll start scenario with {Muddle}.\n\nAll start scenario with IMMOBILIZE',
       imageUrl: '/assets/cards/events/base/road/re-40-b-a.png',
     },
     optionB: {
@@ -2548,7 +2548,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: '-',
       outcome:
-        '1 The Be*}st Tyrant steps forward with his hand outstretched and makes a low humming sound. The hear stops mid-charge with a perplexed look« You leave the animal there and continue on your way unharmed[ No effect. OTHERWISE: Two seconds later, you can t help but Teel this was a terrible idea. The bear wounds you severely before you are able to arm yourself and fight it off.\n\nAll start scenario with {Wound}.\n\nAll start scenario with 3 damage.',
+        '1 The Be*}st Tyrant steps forward with his hand outstretched and makes a low humming sound. The hear stops mid-charge with a perplexed look« You leave the animal there and continue on your way unharmed.\n\nNo effect.\n\nOTHERWISE: Two seconds later, you can t help but Teel this was a terrible idea. The bear wounds you severely before you are able to arm yourself and fight it off.\n\nAll start scenario with {Wound}.\n\nAll start scenario with 3 damage.',
       imageUrl: '/assets/cards/events/base/road/re-41-b-a.png',
     },
     optionB: {
@@ -2596,7 +2596,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: "Leave the core alone. You don't want anything weighing you down in battle.",
       outcome:
-        'You decide the risk is not worth the reward and walk away from the contraption before you scratch yourself on the rusted metal and give yourself some foul disease. And just the thought of haggling with the Qua try Is in the Mixed District about a fair price makes you tired and irritable. No effect.',
+        'You decide the risk is not worth the reward and walk away from the contraption before you scratch yourself on the rusted metal and give yourself some foul disease. And just the thought of haggling with the Qua try Is in the Mixed District about a fair price makes you tired and irritable.\n\nNo effect.',
       imageUrl: '/assets/cards/events/base/road/re-43-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-43-f.png',
@@ -2617,7 +2617,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Use the distraction to disengage from the demons and run away.',
       outcome:
-        "This mysterious third party seems to have things under control, and the demons appear more interested in them anyway. You take the opportunity to retreat from the fight and run off into the night. You don't Teel great about it, but at least you're alive. No effect.",
+        "This mysterious third party seems to have things under control, and the demons appear more interested in them anyway. You take the opportunity to retreat from the fight and run off into the night. You don't Teel great about it, but at least you're alive.\n\nNo effect.",
       imageUrl: '/assets/cards/events/base/road/re-44-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-44-f.png',
@@ -2638,7 +2638,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Let the bandits go.',
       outcome:
-        'The bandits seem a little disappointed as they form up and ride off in the opposite direction. No effect.',
+        'The bandits seem a little disappointed as they form up and ride off in the opposite direction.\n\nNo effect.',
       imageUrl: '/assets/cards/events/base/road/re-45-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-45-f.png',
@@ -2659,7 +2659,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Forget about the rocks and continue n your journey*',
       outcome:
-        "You shake your head ana move past the ridge. You have more important things to do than climb rocks. Still, you fed the pull of the site, even after it fades from view. You get the feeling that this won't he the last time you see it. No effect.",
+        "You shake your head ana move past the ridge. You have more important things to do than climb rocks. Still, you fed the pull of the site, even after it fades from view. You get the feeling that this won't he the last time you see it.\n\nNo effect.",
       imageUrl: '/assets/cards/events/base/road/re-46-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-46-f.png',
@@ -2674,7 +2674,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Move on, leaving the strange Vermling in peace.',
       outcome:
-        'r R \'Stink very faint " the Vermling continues as * you walk on. "Outcast no longer with your but I still smell it!" He then jumps back into the brush. Vermlings are very odd creatures. No effect.',
+        'r R \'Stink very faint " the Vermling continues as * you walk on. "Outcast no longer with your but I still smell it!" He then jumps back into the brush. Vermlings are very odd creatures.\n\nNo effect.',
       imageUrl: '/assets/cards/events/base/road/re-47-b-a.png',
     },
     optionB: {
@@ -2764,7 +2764,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Arm yourself and make a defensive retreat from the area.',
       outcome:
-        "You remember rumors of an assassins guild that places a skull on a pike outside the houses of'their victims before they strike. Fearing the worst, you pull out your weapons and survey t he scene as you back away from the pike. Everything looks clear, so you quickly get as far away from the area as possible. Perhaps the skull was not meant for you. No effect.",
+        "You remember rumors of an assassins guild that places a skull on a pike outside the houses of'their victims before they strike. Fearing the worst, you pull out your weapons and survey t he scene as you back away from the pike. Everything looks clear, so you quickly get as far away from the area as possible. Perhaps the skull was not meant for you.\n\nNo effect.",
       imageUrl: '/assets/cards/events/base/road/re-51-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-51-f.png',
@@ -2779,7 +2779,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Leave the corpses alone.',
       outcome:
-        'Knowing better Own to get too close to the machinations of the Plaguehcrald, you keep a wide berth between you and the corpses and continue down the road. No effect.',
+        'Knowing better Own to get too close to the machinations of the Plaguehcrald, you keep a wide berth between you and the corpses and continue down the road.\n\nNo effect.',
       imageUrl: '/assets/cards/events/base/road/re-52-b-a.png',
     },
     optionB: {
@@ -2842,7 +2842,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Take the clear path.',
       outcome:
-        'You walk down the dear path for a few minutes, and, just when you think the whole weird feeling was your imagination, a group of human bandits jumps out at you from the nearby brush. Before they can engage, however, an arrow suddenly spears the chest of the closest bandit, followed very quickly by a second. The bandits have paused to look around in panic when a third arrow flies into another bandit s skull. The bandits scatter and run off. You look around for the shooter, but no trace is found. No effect.',
+        'You walk down the dear path for a few minutes, and, just when you think the whole weird feeling was your imagination, a group of human bandits jumps out at you from the nearby brush. Before they can engage, however, an arrow suddenly spears the chest of the closest bandit, followed very quickly by a second. The bandits have paused to look around in panic when a third arrow flies into another bandit s skull. The bandits scatter and run off. You look around for the shooter, but no trace is found.\n\nNo effect.',
       imageUrl: '/assets/cards/events/base/road/re-55-b-a.png',
     },
     optionB: {
@@ -2884,7 +2884,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Accept the gift of the Savvas.',
       outcome:
-        'The Savvas concentrates and lays its hand on you. You suddenly Feel very warm and all the fog within ten feet of you dissipates. “There you go. That should make things easier. The effect should last for at least as long as the fog does. Have a pleasant day!" No effect.',
+        'The Savvas concentrates and lays its hand on you. You suddenly Feel very warm and all the fog within ten feet of you dissipates. “There you go. That should make things easier. The effect should last for at least as long as the fog does. Have a pleasant day!"\n\nNo effect.',
       imageUrl: '/assets/cards/events/base/road/re-57-b-a.png',
     },
     optionB: {
@@ -2905,7 +2905,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Follow the wolf.',
       outcome:
-        'Miraculously, following the wolf leads you right to the edge of the forest and back on track to your destination. The wolf howls once more and then bounds off back into the brush. You can t help but wonder who might have sent that wolf to assist you. No effect.',
+        'Miraculously, following the wolf leads you right to the edge of the forest and back on track to your destination. The wolf howls once more and then bounds off back into the brush. You can t help but wonder who might have sent that wolf to assist you.\n\nNo effect.',
       imageUrl: '/assets/cards/events/base/road/re-58-b-a.png',
     },
     optionB: {
@@ -3010,7 +3010,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Thank the Savvas for his timely assistance.',
       outcome:
-        '1Alorc and more demons around these parts these days. Stopping them from attacking travelers is becoming a time-intensive job, but at least it s fun." The Savvas smiles at you and then turns to leave. "Have a pleasant day!" No effect.',
+        '1Alorc and more demons around these parts these days. Stopping them from attacking travelers is becoming a time-intensive job, but at least it s fun." The Savvas smiles at you and then turns to leave. "Have a pleasant day!"\n\nNo effect.',
       imageUrl: '/assets/cards/events/base/road/re-63-b-a.png',
     },
     optionB: {
