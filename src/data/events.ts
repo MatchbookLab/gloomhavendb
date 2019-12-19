@@ -1830,17 +1830,17 @@ export const events: EventEntity[] = [
     type: EventType.Road,
     number: 7,
     text:
-      "Walking along •? Forest, you begin to hear strange, unfamiliar sounds coming from beyond the trees; You stop and listen closer.  There's a rhythm to the sounds, and with that established\\ you begin to pick out different human voices in the mix. You'd venture to say that the noise vaguely sounds like chanting.",
+      "Walking along the edge of a forest, you begin to hear strange, unfamiliar sounds coming from beyond the trees. You stop and listen closer.\n\nThere's a rhythm to the sounds, and with that established, you begin to pick out different human voices in the mix. You'd venture to say that the noise vaguely sounds like chanting.",
     optionA: {
       choice: 'Head into the forest to investigate the chanting.',
       outcome:
-        '1 You quietly move through the forest toward the noise. Eventualfyyou come upon a clearing where you see a circle of cultists performing some strange ritual. One of them notices you and shouts to the others. The situation devolves into a bloody battle. You arer ol course, victorious, but it saps some ol your strength. Gain 5 experience each. Lose 1 each.',
+        'You quietly move through the forest toward the noise. Eventually you come upon a clearing where you see a circle of cultists performing some strange ritual. One of them notices you and shouts to the others. The situation devolves into a bloody battle. You are, of course, victorious, but it saps some of your strength.\n\nGain 5 experience each.\n\nLose 1 {Check} each.',
       imageUrl: '/assets/cards/events/base/road/re-07-b-a.png',
     },
     optionB: {
-      choice: 'Keep moving on down the road. No eed to get mixed up in whatever is going on.',
+      choice: 'Keep moving on down the road. No need to get mixed up in whatever is going on.',
       outcome:
-        'Without a second thought, you get back onto the main road and continue moving toward your dest mat ion. No effect.',
+        'Without a second thought, you get back onto the main road and continue moving toward your destination.\n\nNo effect.',
       imageUrl: '/assets/cards/events/base/road/re-07-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-07-f.png',
