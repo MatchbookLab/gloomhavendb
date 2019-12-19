@@ -1553,7 +1553,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Visit the tamed fortune teller.',
       outcome:
-        'You enter the fortune-teller s tent and the old Orchid woman s expression immediately goes dark; She gestures you to sit at her tableT and when you do, she grabs your arm and looks deep into your eyes. *Your path is dark and cursed\\ There is a shadow around you — a Gloom. You must leave this place. Be rid of it before it con- sumes you* ml All start scenario with CURSE Gain 2 experience each.',
+        'You enter the fortune-teller s tent and the old Orchid woman s expression immediately goes dark; She gestures you to sit at her tableT and when you do, she grabs your arm and looks deep into your eyes. *Your path is dark and cursed\\ There is a shadow around you — a Gloom. You must leave this place. Be rid of it before it con- sumes you* ml.\n\nAll start scenario with {Curse}.\n\nGain 2 experience each.',
       imageUrl: '/assets/cards/events/base/city/ce-74-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-74-f.png',
@@ -2023,7 +2023,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: '-',
       outcome:
-        'You notch your how and take a few steps forward to find a better shooting position. Unfortunately; the deer notice your presence and bound off. You shoot a few arrows as they go. but nothing connects. Then an arrow flies out of the brush and into your shoulder. "Foul city-dwellers!* a voice cries out from the trees. 7 had been stalking that herd for hours and you spooked them! * More arrows rain down as you run away. All start scenario with CURSE1 ^ All start scenario with 2 damage.',
+        'You notch your how and take a few steps forward to find a better shooting position. Unfortunately; the deer notice your presence and bound off. You shoot a few arrows as they go. but nothing connects. Then an arrow flies out of the brush and into your shoulder. "Foul city-dwellers!* a voice cries out from the trees. 7 had been stalking that herd for hours and you spooked them! * More arrows rain down as you run away.\n\nAll start scenario with {Curse}.\n\nAll start scenario with 2 damage.',
       imageUrl: '/assets/cards/events/base/road/re-16-b-a.png',
     },
     optionB: {
@@ -2044,7 +2044,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Da whatever the Quatryl says.',
       outcome:
-        "You set the wings and bang out a few dents while the Quatryl repairs his pressure problem. In under an hour, the Quatryl declares the contraption airworthy and jumps in the cockpit. You stand clear and watch in awe as the thing begins flapping wildly, then sputters forward and lifts off the ground. Unfortunately, the /light is short-lived, and the second crash is not nearly as forgiving. You find the Quatryl dead on impact, and there's nothing more to do except harvest the machine for valuable parts. Gain 5 collective gold.",
+        "You set the wings and bang out a few dents while the Quatryl repairs his pressure problem. In under an hour, the Quatryl declares the contraption airworthy and jumps in the cockpit. You stand clear and watch in awe as the thing begins flapping wildly, then sputters forward and lifts off the ground. Unfortunately, the flight is short-lived, and the second crash is not nearly as forgiving. You find the Quatryl dead on impact, and there's nothing more to do except harvest the machine for valuable parts.\n\nGain 5 collective gold.",
       imageUrl: '/assets/cards/events/base/road/re-17-b-a.png',
     },
     optionB: {
@@ -2065,7 +2065,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Attempt to come to a peaceful reso lution.',
       outcome:
-        'REPUTATION < ~4: You begin to agree with the Inox that Gloomhaven is a blight on the land in need of cleansing, and the Inox seems to believe you. "Go in peace, then," the leader says. “A nd stay off my land." No effect. OTHERWISE: You try to explain that you mean the Inox no ill will, but the leader eyes you skeptically, "foul creature. I curse you and your kind.\' Run — get off my land and never come back!" All start scenario with CURSE',
+        'REPUTATION < ~4: You begin to agree with the Inox that Gloomhaven is a blight on the land in need of cleansing, and the Inox seems to believe you. "Go in peace, then," the leader says. “A nd stay off my land." No effect. OTHERWISE: You try to explain that you mean the Inox no ill will, but the leader eyes you skeptically, "foul creature. I curse you and your kind.\' Run — get off my land and never come back!"\n\nAll start scenario with {Curse}.',
       imageUrl: '/assets/cards/events/base/road/re-18-b-a.png',
     },
     optionB: {
@@ -2155,7 +2155,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Help push out the fortune-tellers wagon.',
       outcome:
-        'You take pity on an old Orchid woman trying to extricate her fortune-teller’s wagon by herself. You help her get it back on the road, and then she grabs you and looks deep into your eyes. " Your path is dark and cursed. There is a shadow around you — a Gloom. You must leave this place. Be rid of it before it consumes you. ” Gain 2 experience each. Ail start scenario with CURSE',
+        'You take pity on an old Orchid woman trying to extricate her fortune-teller’s wagon by herself. You help her get it back on the road, and then she grabs you and looks deep into your eyes. " Your path is dark and cursed. There is a shadow around you — a Gloom. You must leave this place. Be rid of it before it consumes you. ”\n\nGain 2 experience each.\n\nAll start scenario with {Curse}.',
       imageUrl: '/assets/cards/events/base/road/re-22-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-22-f.png',
@@ -2785,7 +2785,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Inspect the corpses for valuables.',
       outcome:
-        'You rifle through the corpses, grabbing stray • coins and valuables as you go. You make off with a good haul, but you start feeling sick as soon as you re done. All start scenario with {Poison} Q All start scenario with CURSE^ . Gain 10 collective gold.',
+        'You rifle through the corpses, grabbing stray • coins and valuables as you go. You make off with a good haul, but you start feeling sick as soon as you re done.\n\nAll start scenario with {Poison}.\n\nAll start scenario with {Curse}.\n\nGain 10 collective gold.',
       imageUrl: '/assets/cards/events/base/road/re-52-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-52-f.png',
@@ -2932,7 +2932,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Use whatever you can to burn a path through the swarm.',
       outcome:
-        'It takes a monumental effort, but you are eventually able to disperse the cloud of insects enough to run through to the other side. As you do so, ho we vcr. you hear an odd voice among the buzzing, cursing you for your violent actions.  Discard 2 cards each. All start scenario with CURSE',
+        'It takes a monumental effort, but you are eventually able to disperse the cloud of insects enough to run through to the other side. As you do so, ho we vcr. you hear an odd voice among the buzzing, cursing you for your violent actions.  Discard 2 cards each.\n\nAll start scenario with {Curse}.',
       imageUrl: '/assets/cards/events/base/road/re-59-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-59-f.png',
