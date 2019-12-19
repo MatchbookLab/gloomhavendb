@@ -1935,17 +1935,17 @@ export const events: EventEntity[] = [
     type: EventType.Road,
     number: 12,
     text:
-      'A rustling in a nearby thicket stops you in your tracks. You crouch down and assume a defensive stance. Suddenly It barks at you t ic and then begi fou relax your weapons. What is such a small[ defenseless puppy doing out in the wilderness? ■ ■ n\t_________ , - - -',
+      'A rustling in a nearby thicket stops you in your tracks. You crouch down and assume a defensive stance.\n\nSuddenly, a tiny ball of fur with short stubby legs leaps out at you. It barks at you twice in a ineffectual, high-pitched tone and then begins to wag its tail.\\nYou relax your weapons. What is such a small defenseless puppy doing out in the wilderness?',
     optionA: {
-      choice: 'Leave the puppy to fend for itself!',
+      choice: 'Leave the puppy to fend for itself.',
       outcome:
-        "Adorable as the puppy is, you are not the ones to care for it. You are headed into danger, and you can't let anything distract you from the task at hand. It follows you for a while, barking in indignation, but it eventually wanders off No effect.",
+        "Adorable as the puppy is, you are not the ones to care for it. You are headed into danger, and you can't let anything distract you from the task at hand. It follows you for a while, barking in indignation, but it eventually wanders off.\n\nNo effect.",
       imageUrl: '/assets/cards/events/base/road/re-12-b-a.png',
     },
     optionB: {
-      choice: 'Take the puppy and bring it back to ioomhaven.',
+      choice: 'Take the puppy and bring it back to Gloomhaven.',
       outcome:
-        'You sigh and lif t the puppy into your arms. It barks happily and licks your face. 7 his will surely prove a distraction in your upcoming battle, but once you get back to Gloomhaven, you should be able to find it a nice home. One starts scenario with IQ) x3- Gain 1 reputation.',
+        'You sigh and lift the puppy into your arms. It barks happily and licks your face. This will surely prove a distraction in your upcoming battle, but once you get back to Gloomhaven, you should be able to find it a nice home. One starts scenario with {MinusOneAttackModifier}x3.\n\nGain 1 reputation.',
       imageUrl: '/assets/cards/events/base/road/re-12-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-12-f.png',
