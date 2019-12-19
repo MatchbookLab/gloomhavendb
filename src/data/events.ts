@@ -648,7 +648,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: '-',
       outcome:
-        ': You try to turn away the woman and get back to gambling, but the Sunkeeper won t hear of it, She forces you to follow the woman outside. Read outcome A. OTHERWISE: You return to your gambling, but you feel as though a pall has fallen over the revelry. Your luck has turned[ and you end the night much poorer than when you started. Lose 10 gold each.',
+        ': You try to turn away the woman and get back to gambling, but the Sunkeeper won t hear of it, She forces you to follow the woman outside. Read outcome A.\n\nOTHERWISE: You return to your gambling, but you feel as though a pall has fallen over the revelry. Your luck has turned[ and you end the night much poorer than when you started. Lose 10 gold each.',
       imageUrl: '/assets/cards/events/base/city/ce-31-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-31-f.png',
@@ -705,7 +705,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: "Follow the man in an attempt to discover the Ravens' lair.",
       outcome:
-        ": Using the night like a cloak, you follow the man unseen and unheard. Eventually he stops at a small dwelling nestled under the west wall of the city. Unlock Sacrifice Pit'(7^)(B-I4J. OTHERWISE: You sneak forward, confident in your stealth abilities. After a few minutes, though, the man suddenly bolts around a corner. By the time you get there, he is long gone.\n\nNo effect.",
+        ": Using the night like a cloak, you follow the man unseen and unheard. Eventually he stops at a small dwelling nestled under the west wall of the city. Unlock Sacrifice Pit'(7^)(B-I4J.\n\nOTHERWISE: You sneak forward, confident in your stealth abilities. After a few minutes, though, the man suddenly bolts around a corner. By the time you get there, he is long gone.\n\nNo effect.",
       imageUrl: '/assets/cards/events/base/city/ce-34-b-a.png',
     },
     optionB: {
@@ -753,7 +753,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Do your best to stop the fighting. This is a respectable establishment. I t',
       outcome:
-        ': You get up to calm down the room, but the Berserker has other ideas, laying into the man before you can get a word out. She goes into a f urious rage, and there s really not much to be done about it except pay what you can for the damages afterward. Lose 10 collective gold. OTHERWISE: It takes some work, but you manage to calm dow n the Inox and buy off the rest of the room with some extra drinks, The proprietor looks positively relieved.\n\nGain 1 reputation.',
+        ': You get up to calm down the room, but the Berserker has other ideas, laying into the man before you can get a word out. She goes into a f urious rage, and there s really not much to be done about it except pay what you can for the damages afterward. Lose 10 collective gold.\n\nOTHERWISE: It takes some work, but you manage to calm dow n the Inox and buy off the rest of the room with some extra drinks, The proprietor looks positively relieved.\n\nGain 1 reputation.',
       imageUrl: '/assets/cards/events/base/city/ce-36-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-36-f.png',
@@ -789,13 +789,13 @@ export const events: EventEntity[] = [
     optionA: {
       choice: "Intervene on the Orchid's behalf. r",
       outcome:
-        '; The Orchid on the ground puls up no defense, but your group isa different matter. The man quickly backs down at the sight of a powerful Orchid ready to attack, and the crowd disperses, muttering disappointment.\n\nGain I prosperity. Lose I reputation. OTHERWISE: You trv to talk some sense into «* the man, and when that doesn t work, you beat him senseless. The crowd seems happy and the Orchid thanks you for your aid.\n\nGain 1 prosperity.',
+        '; The Orchid on the ground puls up no defense, but your group isa different matter. The man quickly backs down at the sight of a powerful Orchid ready to attack, and the crowd disperses, muttering disappointment.\n\nGain I prosperity. Lose I reputation.\n\nOTHERWISE: You try to talk some sense into «* the man, and when that doesn t work, you beat him senseless. The crowd seems happy and the Orchid thanks you for your aid.\n\nGain 1 prosperity.',
       imageUrl: '/assets/cards/events/base/city/ce-38-b-a.png',
     },
     optionB: {
       choice: 'Watch the fight with the crowd. /',
       outcome:
-        '# <p ; After a good beating, the crowd is riled up. Many people start looking in your direction, muttering about how you have the nerve to associate with Orchids as well. You make a quick exit. Lose I reputation. OTHERWISE: The Orchid puts up no defense and the "fight "becomes rather one-sided. A solid beating is administered, and the crowd is sated. You go about your business while the Orchid bleeds on the ground.\n\nNo effect.',
+        '# <p ; After a good beating, the crowd is riled up. Many people start looking in your direction, muttering about how you have the nerve to associate with Orchids as well. You make a quick exit. Lose I reputation.\n\nOTHERWISE: The Orchid puts up no defense and the "fight "becomes rather one-sided. A solid beating is administered, and the crowd is sated. You go about your business while the Orchid bleeds on the ground.\n\nNo effect.',
       imageUrl: '/assets/cards/events/base/city/ce-38-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-38-f.png',
@@ -853,7 +853,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Barter with the Vermling for the potion.',
       outcome:
-        'PAY 10 COLLECTIVE COLD: The Vermling knows it is valuable, but she is more interested in flirting with the Beast Tyrant. She is happy to sell the potion at a discount.\n\nGain 1 collective “Major Stamina Potion" (Item 034)* * PAY 25 COLLECTIVE GOLD: No amount of haggling can lower the Vermling s high price.\n\nGain 1 collective "Major Stamina Potion" (Item 034)* OTHERWISE: The Vermling will not accept the tiny sum you oiler. Maybe next time.',
+        'PAY 10 COLLECTIVE COLD: The Vermling knows it is valuable, but she is more interested in flirting with the Beast Tyrant. She is happy to sell the potion at a discount.\n\nGain 1 collective “Major Stamina Potion" (Item 034)* * PAY 25 COLLECTIVE GOLD: No amount of haggling can lower the Vermling s high price.\n\nGain 1 collective "Major Stamina Potion" (Item 034).\n\nOTHERWISE: The Vermling will not accept the tiny sum you oiler. Maybe next time.',
       imageUrl: '/assets/cards/events/base/city/ce-41-b-a.png',
     },
     optionB: {
@@ -895,7 +895,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Oblige the Tinkerer and send along the contraption ■',
       outcome:
-        "BPAY5 COLLECTIVE GOLD: Sure enough, * under the floorboards of his old room, you find a bunch of parts, tools, and an intricately craf ted metal spider. You package it up and ship it off to the Tinkerer. Anything for an ola friend. Add City Event 6l to the deck. OTHERWISE: You don't have the money to send him the contraption, so you decide just to keep it for yourself Read outcome B.",
+        "BPAY5 COLLECTIVE GOLD: Sure enough, * under the floorboards of his old room, you find a bunch of parts, tools, and an intricately craf ted metal spider. You package it up and ship it off to the Tinkerer. Anything for an ola friend. Add City Event 6l to the deck.\n\nOTHERWISE: You don't have the money to send him the contraption, so you decide just to keep it for yourself Read outcome B.",
       imageUrl: '/assets/cards/events/base/city/ce-43-b-a.png',
     },
     optionB: {
@@ -1000,7 +1000,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Begrudgingly pay For the note.',
       outcome:
-        "PAY5 COLLECTIVE GOLD: You throw the kid a few coins and grab the note. Enclosed with the note is a small medallion engraved with the image of the sun. Apparently the Sunkeeper thinks the object may help you at some point in the future. The note doesn't say exactly how and the thing has no apparent use. You stow it away in your pack. Party Achievement: “Sun-Blessed. OTHERWISE: You reach into your pocket to pay the kid. but come up empty-handed. He slinks off in indignation.\n\nNo eflect.",
+        "PAY5 COLLECTIVE GOLD: You throw the kid a few coins and grab the note. Enclosed with the note is a small medallion engraved with the image of the sun. Apparently the Sunkeeper thinks the object may help you at some point in the future. The note doesn't say exactly how and the thing has no apparent use. You stow it away in your pack. Party Achievement: “Sun-Blessed.\n\nOTHERWISE: You reach into your pocket to pay the kid. but come up empty-handed. He slinks off in indignation.\n\nNo eflect.",
       imageUrl: '/assets/cards/events/base/city/ce-48-b-a.png',
     },
     optionB: {
@@ -1420,7 +1420,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Kind some way to get the water to stop gushing.',
       outcome:
-        '; You take a moment to attune yourself to the staff which you feel now has a direct link another plane. The water stops and you are left with an openga Unlock Plane of Water "(88)(D-l6}. Party Achievement: “Water Staff." OTHERWISE: You figure out how to work the staff but not before your entire room is flooded. The innkeeper will not he happy Lose 15 collective gold. Unlock "Plane of Water (8&(D-l6). Party Achievement: \'Water Staff."',
+        '; You take a moment to attune yourself to the staff which you feel now has a direct link another plane. The water stops and you are left with an openga Unlock Plane of Water "(88)(D-l6}. Party Achievement: “Water Staff."\n\nOTHERWISE: You figure out how to work the staff but not before your entire room is flooded. The innkeeper will not he happy Lose 15 collective gold. Unlock "Plane of Water (8&(D-l6). Party Achievement: \'Water Staff."',
       imageUrl: '/assets/cards/events/base/city/ce-68-b-a.png',
     },
     optionB: {
@@ -1589,7 +1589,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Accept the drink.',
       outcome:
-        'REPUTATION > 14: “Excellent!Someone has been attacking my ships at sea and I need to get to the bottom of\'it. Come, I’ll tell you the details." Unlock Merchant Ship (74)0 ’4). Party Achievement: “High Sea Escort." OTHERWISE: "Oh. whoops."Gavin stammers. "From far away, you looked like someone else. Just ignore what I said.\' No elfect.',
+        'REPUTATION > 14: “Excellent!Someone has been attacking my ships at sea and I need to get to the bottom of\'it. Come, I’ll tell you the details." Unlock Merchant Ship (74)0 ’4). Party Achievement: “High Sea Escort."\n\nOTHERWISE: "Oh. whoops."Gavin stammers. "From far away, you looked like someone else. Just ignore what I said.\' No elfect.',
       imageUrl: '/assets/cards/events/base/city/ce-76-b-a.png',
     },
     optionB: {
@@ -1610,7 +1610,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Do the job.',
       outcome:
-        'REPUTATION < -//; "That \'s the money-bring • criminals I know and love! Come take a walk with me, and Til explain how we can all get rich." OTHERWISE: “Oh, whoops,\' Nick stammers, “From the back you looked like. *. uh, never mind. Forget I said anything. "\n\nNo effect.',
+        'REPUTATION < -//; "That \'s the money-bring • criminals I know and love! Come take a walk with me, and Til explain how we can all get rich."\n\nOTHERWISE: “Oh, whoops,\' Nick stammers, “From the back you looked like. *. uh, never mind. Forget I said anything. "\n\nNo effect.',
       imageUrl: '/assets/cards/events/base/city/ce-77-b-a.png',
     },
     optionB: {
@@ -2212,7 +2212,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Try to reason with the Inox',
       outcome:
-        "; 7 /70 Inox in your party talks with the leader for a while and they are able to come to an agreement They punch each other s chests, and the group lets you through.\n\nNo effect. OTHERWISE: The Inox don't seem to be budging on this payment issue, so you are forced to pass along a handful of coins. The big one smiles and lets you continue on your way. Lose 5 gold each.",
+        "; 7 /70 Inox in your party talks with the leader for a while and they are able to come to an agreement They punch each other s chests, and the group lets you through.\n\nNo effect.\n\nOTHERWISE: The Inox don't seem to be budging on this payment issue, so you are forced to pass along a handful of coins. The big one smiles and lets you continue on your way. Lose 5 gold each.",
       imageUrl: '/assets/cards/events/base/road/re-25-b-a.png',
     },
     optionB: {
@@ -2422,7 +2422,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Fight oft the men. This is highway robbery, whatever the motive.',
       outcome:
-        "If: The Plagueherald stretches out his arms and the men around him immediately double over in pain. You can almost sense it smiling, even though it doesn't have a face. The fight doesn't last long, especially once the men's wounds start bursting with maggots. All start scenario with 1 damage. OTHERWISE: The men are weakened, but they are still hardened lighters. you light them off, but it gets ugly. All start scenario with {Poison} G All start scenario with 3 damage.",
+        "If: The Plagueherald stretches out his arms and the men around him immediately double over in pain. You can almost sense it smiling, even though it doesn't have a face. The fight doesn't last long, especially once the men's wounds start bursting with maggots. All start scenario with 1 damage.\n\nOTHERWISE: The men are weakened, but they are still hardened lighters. you light them off, but it gets ugly. All start scenario with {Poison} G All start scenario with 3 damage.",
       imageUrl: '/assets/cards/events/base/road/re-35-b-a.png',
     },
     optionB: {
@@ -2443,7 +2443,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Continue down the path into the wood. You are not afraid.',
       outcome:
-        "\\wjpft\t1 : The wood is overgrown and ' rampant with all manner of insects, but with difficulty, you follow the path. Somewhere deep inside, you come across a stone pedestal with the following scratched into its base: XmWT -KKT W3T ART >-1*11, WIT -NKT M'W'lC - 8172. OTHERWISE: You follow the path into the wood and become hopelessly lost. The going is hard and painful. All start scenario with {Poison} All start scenario with 2 damage. +8%",
+        "\\wjpft\t1 : The wood is overgrown and ' rampant with all manner of insects, but with difficulty, you follow the path. Somewhere deep inside, you come across a stone pedestal with the following scratched into its base: XmWT -KKT W3T ART >-1*11, WIT -NKT M'W'lC - 8172.\n\nOTHERWISE: You follow the path into the wood and become hopelessly lost. The going is hard and painful. All start scenario with {Poison} All start scenario with 2 damage. +8%",
       imageUrl: '/assets/cards/events/base/road/re-36-b-a.png',
     },
     optionB: {
