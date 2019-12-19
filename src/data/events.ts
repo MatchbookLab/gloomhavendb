@@ -1851,17 +1851,17 @@ export const events: EventEntity[] = [
     type: EventType.Road,
     number: 8,
     text:
-      'You see a lone man walking toward you on the road. As you meet on the path, he turns toyou and begins to speak. 11Oi there. I wouldn’t suppose you lot might spare me some com?" he asks. *A lot (a coint actually." You look at him quizzically as he continues. "You see, I lead a lotta thieves and bandits in this area and we gotta make sure all the mouths are fed. * At this, a large number of bandits come out ol hiding around you, emerging from the bushes. HSo about that coin, the man says with a smile. Five gold per head oughta do it. "',
+      'You see a lone man walking toward you on the road. As you meet on the path, he turns to you and begins to speak.\n\n"Oi there. I wouldn\'t suppose you lot might spare me some coin?" he asks. "A lot of coin, actually."\n\nYou look at him quizzically as he continues. "You see, I lead a lotta thieves and bandits in this area and we gotta make sure all the mouths are fed."\n\nAt this, a large number of bandits come out of hiding around you, emerging from the bushes.\n\n"So about that coin," the man says with a smile. "Five gold per head oughta do it."',
     optionA: {
       choice: 'Pay the thieves.',
       outcome:
-        '***h\t^ /b\t. 7? You sigh and hand over what coins you have. * The man maintains his grin. “Well, thank you, kind sirs, ft was a pleasure meeting you, and have pleasant day!" The bandits move off in one direction as you continue in the other. Lose 5 gold each.',
+        'You sigh and hand over what coins you have.\n\nThe man maintains his grin. "Well, thank you, kind sirs. It was a pleasure meeting you, and have pleasant day!"\n\nThe bandits move off in one direction as you continue in the other.\n\nLose 5 gold each.',
       imageUrl: '/assets/cards/events/base/road/re-08-b-a.png',
     },
     optionB: {
       choice: 'Resist the robbery, killing as many thieves as you can.',
       outcome:
-        "Unfa zed by the ambush, you draw your weapons and attack the bandits in the bushes. The leader tries to withdraw, but you cut him down as well. There are a lot of bandits, but they don t put up too much of a fight. They seem weak and malnourished. You guess the leader wasn 't kidding about needing to buy food. All start scenario with 3 damage.",
+        "Unfazed by the ambush, you draw your weapons and attack the bandits in the bushes. The leader tries to withdraw, but you cut him down as well. There are a lot of bandits, but they don't put up too much of a fight. They seem weak and malnourished. You guess the leader wasn't kidding about needing to buy food.\n\nAll start scenario with 3 damage.",
       imageUrl: '/assets/cards/events/base/road/re-08-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-08-f.png',
