@@ -2208,17 +2208,17 @@ export const events: EventEntity[] = [
     type: EventType.Road,
     number: 25,
     text:
-      'mam when you see a small band of Inox approaching I row the west. You try to divert your path to go around them, but they are moving directly into your path. In a few minutes\' timef they overtake you. "You\'ve wandered into our territory travelers,” the biggest one says. ”We don t much like visitors. r You stare at her blankly "Such acts can be forgiven, but it will cost you. *',
+      'You are far off the main road when you see a small band of Inox approaching from the west. You try to divert your path to go around them, but they are moving directly into your path.\n\nIn a few minutes\' time they overtake you.\n\n"You\'ve wandered into our territory travelers," the biggest one says. "We don\'t much like visitors."\n\nYou stare at her blankly.\n\n"Such acts can be forgiven, but it will cost you."',
     optionA: {
       choice: 'Try to reason with the Inox',
       outcome:
-        "; 7 /70 Inox in your party talks with the leader for a while and they are able to come to an agreement They punch each other s chests, and the group lets you through.\n\nNo effect.\n\nOTHERWISE: The Inox don't seem to be budging on this payment issue, so you are forced to pass along a handful of coins. The big one smiles and lets you continue on your way. Lose 5 gold each.",
+        "{Brute}, {LightningBolts}: The Inox in your party talks with the leader for a while and they are able to come to an agreement. They punch each other's chests, and the group lets you through.\n\nNo effect.\n\nOTHERWISE: The Inox don't seem to be budging on this payment issue, so you are forced to pass along a handful of coins. The big one smiles and lets you continue on your way.\n\nLose 5 gold each.",
       imageUrl: '/assets/cards/events/base/road/re-25-b-a.png',
     },
     optionB: {
-      choice: "Fight off Inox. They'll get no rom you",
+      choice: "Fight off the Inox. They'll get no payments from you.",
       outcome:
-        'You raise your weapons and state that no payments will he made this day. The group of Inox snarls and attacks. After you land a few solid blows, though, they break off and run away back to the west, leaving you to tend to your wounds. All start scenario with 3 damage.',
+        'You raise your weapons and state that no payments will be made this day. The group of Inox snarls and attacks. After you land a few solid blows, though, they break off and run away back to the west, leaving you to tend to your wounds.\n\nAll start scenario with 3 damage.',
       imageUrl: '/assets/cards/events/base/road/re-25-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-25-f.png',
