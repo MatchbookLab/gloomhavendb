@@ -2061,17 +2061,17 @@ export const events: EventEntity[] = [
     type: EventType.Road,
     number: 18,
     text:
-      'road contains many dangers, and chief among them are the barbaric tribes of Inox that inhabit the wilderness around the city: This is why your heart sinks when you see a mounted group of them ride up to you and surround your party, “Ah, agents of that wretched monstrosity you call a town,\' the largest of the Inox says as he looks down at you, "Tell me, scum. What business do you have out here on my land? Have those fools sent you out to murder more of my people?*',
+      'The road contains many dangers, and chief among them are the barbaric tribes of Inox that inhabit the wilderness around the city. This is why your heart sinks when you see a mounted group of them ride up to you and surround your party.\n\n"Ah, agents of that wretched monstrosity you call a town," the largest of the Inox says as he looks down at you. "Tell me, scum. What business do you have out here on my land? Have those fools sent you out to murder more of my people?"',
     optionA: {
-      choice: 'Attempt to come to a peaceful reso lution.',
+      choice: 'Attempt to come to a peaceful resolution.',
       outcome:
-        'REPUTATION < ~4: You begin to agree with the Inox that Gloomhaven is a blight on the land in need of cleansing, and the Inox seems to believe you. "Go in peace, then," the leader says. “A nd stay off my land."\n\nNo effect.\n\nOTHERWISE: You try to explain that you mean the Inox no ill will, but the leader eyes you skeptically, "foul creature. I curse you and your kind.\' Run — get off my land and never come back!"\n\nAll start scenario with {Curse}.',
+        'REPUTATION < -4: You begin to agree with the Inox that Gloomhaven is a blight on the land in need of cleansing, and the Inox seems to believe you. "Go in peace, then," the leader says. “And stay off my land."\n\nNo effect.\n\nOTHERWISE: You try to explain that you mean the Inox no ill will, but the leader eyes you skeptically. "Foul creature. I curse you and your kind! Run — get off my land and never come back!"\n\nAll start scenario with {Curse}.',
       imageUrl: '/assets/cards/events/base/road/re-18-b-a.png',
     },
     optionB: {
-      choice: 'Attack the insulting, contemptuous nox.',
+      choice: 'Attack the insulting, contemptuous Inox.',
       outcome:
-        "Enraged by the Inox's insulting tongue,you take up your weapons and attack. Even the Inox were not expecting a move so bold. The fight is brutal, especially with your enemy mounted, but after felling a number of their warriors, the rest retreat. All start scenario with 3 damage.",
+        "Enraged by the Inox's insulting tongue,you take up your weapons and attack. Even the Inox were not expecting a move so bold. The fight is brutal, especially with your enemy mounted, but after felling a number of their warriors, the rest retreat.\n\nAll start scenario with 3 damage.",
       imageUrl: '/assets/cards/events/base/road/re-18-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-18-f.png',
