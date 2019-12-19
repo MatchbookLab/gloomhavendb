@@ -2250,17 +2250,17 @@ export const events: EventEntity[] = [
     type: EventType.Road,
     number: 27,
     text:
-      "Walking a path between a small grove and a steep cliff, you suddenly find blocking the road1 of felled The placement of the trees seems odd\\ and you have a wary suspicious feeling about the whole situation* --i if '\t, . ,",
+      "Walking a path between a small grove and a steep cliff, you suddenly find yourself facing a massive group of felled trees blocking the road.\n\nThe placement of the trees seems odd, and you have a wary, suspicious feeling about the whole situation.",
     optionA: {
       choice: 'Clear the trees from the road. It is the best way through and will help other travelers.',
       outcome:
-        "▼ The trees are too massive and dense to remove through conventional means, but with elemental power, they are destroyed and swept aside in no time.\n\nNo effect.\n\nOTHERWISE: The trees aren't part of an ambush, but that doesn't make them any easier to clear.: It s grueling work and by the time you arrive at your destination, you are exhausted.\n\nDiscard 3 cards each.",
+        "{Spellweaver}, {Triangles}, {Circles}: The trees are too massive and dense to remove through conventional means, but with elemental power, they are destroyed and swept aside in no time.\n\nNo effect.\n\nOTHERWISE: The trees aren't part of an ambush, but that doesn't make them any easier to clear. It' s grueling work and by the time you arrive at your destination, you are exhausted.\n\nDiscard 3 cards each.",
       imageUrl: '/assets/cards/events/base/road/re-27-b-a.png',
     },
     optionB: {
-      choice: "'ake the time to find a way around the rees.",
+      choice: "Take the time to find a way around the trees.",
       outcome:
-        'You head into the underbrush of the grove to get around the felled trees, but it is rough going. The growth is very dense and there are quite a few prickly thorns to contend with. All start scenario with 2 damage.',
+        'You head into the underbrush of the grove to get around the felled trees, but it is rough going. The growth is very dense and there are quite a few prickly thorns to contend with.\n\nAll start scenario with 2 damage.',
       imageUrl: '/assets/cards/events/base/road/re-27-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-27-f.png',
