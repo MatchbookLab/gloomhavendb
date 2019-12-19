@@ -1752,17 +1752,17 @@ export const events: EventEntity[] = [
     id: 8,
     type: EventType.Road,
     number: 3,
-    text: '',
+    text: 'You are feeling a tad hungry as you walk down the road. You are considering stopping for a meal when you come across a thicket of bushes covered in green berries.\n\nThe berries look delicious, but you hesitate. They could be poisonous.',
     optionA: {
       choice: 'Eat the berries.',
       outcome:
-        "v\t4-^y\t.\t£\t^ You shrug and grab a handful of berries to * stuff in your mouth. They are incredibly sweet and just the right amount of tart. You couldn’t feel better about your decision. That is. until you start vomiting. Your stomach is incredibly unhappy with you, and the situation doesn't improve much by the time you arrive at your destination. All start scenario with {Poison} O.",
+        'You shrug and grab a handful of berries to stuff in your mouth, they are incredibly sweet and just the right amount of tart. You couldn\'t feel better about your decision. That is, until you start vomiting. Your stomach is incredibly unhappy with you, and the situation doesn\'t improve much by the time you arrive at your destination.\n\nAll start scenario with {Poison}.',
       imageUrl: '/assets/cards/events/base/road/re-03-b-a.png',
     },
     optionB: {
       choice: 'Pass by the berries and just cat your normal rations.',
       outcome:
-        'Not wanting to regret making a stupid decision, you refrain from eating the berries and continue on down the road. No effect.',
+        'Not wanting to regret making a stupid decision, you refrain from eating the berries and continue on down the road.\n\nNo effect.',
       imageUrl: '/assets/cards/events/base/road/re-03-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-03-f.png',
