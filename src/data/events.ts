@@ -895,7 +895,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Oblige the Tinkerer and send along the contraption ■',
       outcome:
-        "BPAY5 COLLECTIVE GOLD: Sure enough, * under the floorboards of his old room, you find a bunch of parts, tools, and an intricately craf ted metal spider. You package it up and ship it off to the Tinkerer. Anything for an ola friend. Add City Event 6l to the deck.\n\nOTHERWISE: You don't have the money to send him the contraption, so you decide just to keep it for yourself.\n\nRead outcome B.",
+        "BPAY5 COLLECTIVE GOLD: Sure enough, * under the floorboards of his old room, you find a bunch of parts, tools, and an intricately craf ted metal spider. You package it up and ship it off to the Tinkerer. Anything for an ola friend.\n\nAdd City Event 61 to the deck.\n\nOTHERWISE: You don't have the money to send him the contraption, so you decide just to keep it for yourself.\n\nRead outcome B.",
       imageUrl: '/assets/cards/events/base/city/ce-43-b-a.png',
     },
     optionB: {
@@ -943,7 +943,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Be as vague and unhelpful as possible, giving no useful information.',
       outcome:
-        'fhe guard scratches his head and looks down at his notes. "Well, that wasn\'t very helpful." he sighs. But thanks lor your time, I guess. Let me know if you remember anything or get any new information." Add City Event 62 to the deck. J I',
+        'fhe guard scratches his head and looks down at his notes. "Well, that wasn\'t very helpful." he sighs. But thanks lor your time, I guess. Let me know if you remember anything or get any new information."\n\nAdd City Event 62 to the deck.',
       imageUrl: '/assets/cards/events/base/city/ce-45-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-45-f.png',
@@ -985,7 +985,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Let the guards continue their business and just continue with yours. /',
       outcome:
-        "The Mindthief flicks her tail and throws • insults around, but it doesn't seem to have any positive effect. She is led away and out of view. You get about your business, hoping that bit about the town being poisoned wasn t too serious. Add City Event 63 to the deck.",
+        "The Mindthief flicks her tail and throws • insults around, but it doesn't seem to have any positive effect. She is led away and out of view. You get about your business, hoping that bit about the town being poisoned wasn t too serious.\n\nAdd City Event 63 to the deck.",
       imageUrl: '/assets/cards/events/base/city/ce-47-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-47-f.png',
@@ -1174,7 +1174,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Tell him to follow his dreams.',
       outcome:
-        '*You re right! Vm in command of my own ■ life, and fm going to do what I want with it. Maybe IIIgo to the Capital and start my own business or something. Who knowsf He lifts his glass and looks at you. “To endless possibilities! The next rounds on me. Add City Event 66 to the deck. » *',
+        '*You re right! Vm in command of my own ■ life, and fm going to do what I want with it. Maybe IIIgo to the Capital and start my own business or something. Who knowsf He lifts his glass and looks at you. “To endless possibilities! The next rounds on me.\n\nAdd City Event 66 to the deck.',
       imageUrl: '/assets/cards/events/base/city/ce-56-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-56-f.png',
@@ -1342,7 +1342,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Claim you want nothing to do with this and walk away. /',
       outcome:
-        "*The Sin-Ra Syndicate seems to think you have something to do with this/ the Nightshroudyells at you as you leave. That s alt that matters! They II strike again, and I won 't be there to protect you!” You keep walking. Add Road Event 64 to the deck. ▼",
+        "*The Sin-Ra Syndicate seems to think you have something to do with this/ the Nightshroudyells at you as you leave. That s alt that matters! They II strike again, and I won 't be there to protect you!” You keep walking.\n\naAdd Road Event 64 to the deck.",
       imageUrl: '/assets/cards/events/base/city/ce-64-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-64-f.png',
@@ -1384,7 +1384,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Get the Sawbones on a boat across the Misty Sea. New adventures surely await there. /',
       outcome:
-        "You flatly refuse to pay off the Sawbones' debt and convince him the only way to escape his pursuers is to board a ship bound for the eastern continent, far out of their reach. He is reluctant but eventually agrees when you remind him what unknown adventures await in the land across the ocean. You see him off in the night and desperately hope that is the last you hear of this situation. Add City Event 67 to the deck.",
+        "You flatly refuse to pay off the Sawbones' debt and convince him the only way to escape his pursuers is to board a ship bound for the eastern continent, far out of their reach. He is reluctant but eventually agrees when you remind him what unknown adventures await in the land across the ocean. You see him off in the night and desperately hope that is the last you hear of this situation.\n\nAdd City Event 67 to the deck.",
       imageUrl: '/assets/cards/events/base/city/ce-66-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-66-f.png',
@@ -1484,7 +1484,7 @@ export const events: EventEntity[] = [
       choice:
         "Let the sphere go. Option 6: | limp into the river and continue to follow the sphere's pulh ■ /  Option A: -",
       outcome:
-        "The sphere leaps from your hand, hovers * over the water, and then emits an intense beam of light straight down into the river, illuminating something below. You shrug and jump into the river, following the beam of light down to the bottom. There you ftnd a wooden chest hall buried under the rocks. You bring it back to shore and open it to find a small metal rod covered in strange carvings. When you pick it up, the sphere immediately flics back over to you and attaches itself to the rod's end. Add City Event J2 to the deck. r\t'",
+        "The sphere leaps from your hand, hovers * over the water, and then emits an intense beam of light straight down into the river, illuminating something below. You shrug and jump into the river, following the beam of light down to the bottom. There you ftnd a wooden chest hall buried under the rocks. You bring it back to shore and open it to find a small metal rod covered in strange carvings. When you pick it up, the sphere immediately flics back over to you and attaches itself to the rod's end.\n\nAdd City Event J2 to the deck.",
       imageUrl: '/assets/cards/events/base/city/ce-71-b-a.png',
     },
     optionB: {
@@ -2575,7 +2575,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Regretfully leave the Brute to his duties and continue on your way.',
       outcome:
-        "You explain to the Brute that you have a long day's travel ahead of you and cannot take the time to travel in the other direction. As you make your good-byes, a shadow falls over him. He walks away forlorn. Add Road Event 60 to the deck.",
+        "You explain to the Brute that you have a long day's travel ahead of you and cannot take the time to travel in the other direction. As you make your good-byes, a shadow falls over him. He walks away forlorn.\n\nAdd Road Event 60 to the deck.",
       imageUrl: '/assets/cards/events/base/road/re-42-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-42-f.png',
@@ -2695,7 +2695,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Give them whatever information you can on the Sunkeepers whereabouts.',
       outcome:
-        "You're not sure exactly what happened to the Sunkceper after she left the party, but you tell the demons everything you know: They seem satished with your response and even offer a bitter thanks as they fly off to the west. Add Road Event 6l to the deck.",
+        "You're not sure exactly what happened to the Sunkceper after she left the party, but you tell the demons everything you know: They seem satished with your response and even offer a bitter thanks as they fly off to the west.\n\nAdd Road Event 61 to the deck.",
       imageUrl: '/assets/cards/events/base/road/re-48-b-a.png',
     },
     optionB: {
@@ -2737,7 +2737,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Take the staff and move on.',
       outcome:
-        "-'v'V*'\t;! You shrug and grab the staff, half expecting • something exciting to happen when you do. Instead, nothing happens at all. In fact, the staff seems rather mundane. You feel no power running through it at all. Still, no sense in leaving it behind. It could be important. Add City Event 68 to the deck.",
+        "-'v'V*'\t;! You shrug and grab the staff, half expecting • something exciting to happen when you do. Instead, nothing happens at all. In fact, the staff seems rather mundane. You feel no power running through it at all. Still, no sense in leaving it behind. It could be important.\n\nAdd City Event 68 to the deck.",
       imageUrl: '/assets/cards/events/base/road/re-50-b-a.png',
     },
     optionB: {
@@ -2890,7 +2890,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Downplay your struggle and politely decline the Savvass offer.',
       outcome:
-        "“Aht l seet ° the Savvas says. “You'd rather grow from an experience than take the easy way out. A noble path.* The Savvas slaps you on the back. 'Well, get to it, then! It s just fog after all. You'll survive.\"\n\nDiscard 2 cards each. Add Road Event 63 to the deck.",
+        "“Aht l seet ° the Savvas says. “You'd rather grow from an experience than take the easy way out. A noble path.* The Savvas slaps you on the back. 'Well, get to it, then! It s just fog after all. You'll survive.\"\n\nDiscard 2 cards each.\n\nAdd Road Event 63 to the deck.",
       imageUrl: '/assets/cards/events/base/road/re-57-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-57-f.png',
@@ -2968,7 +2968,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Leave the scene quietly and return to your own business.',
       outcome:
-        '1 Not wanting to get involved, you simply move • on. Eventually the screams of the Sunkeeper fade away. Add Road Event 62 to the deck.',
+        '1 Not wanting to get involved, you simply move • on. Eventually the screams of the Sunkeeper fade away.\n\nAdd Road Event 62 to the deck.',
       imageUrl: '/assets/cards/events/base/road/re-61-b-a.png',
     },
     optionB: {
