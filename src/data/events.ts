@@ -2313,17 +2313,17 @@ export const events: EventEntity[] = [
     type: EventType.Road,
     number: 30,
     text:
-      'You see smoke on the horizon and catch the vague stench of burning flesh. You hasten your step see what catastrophe lies ahead of you on the road After a few minutes, you come upon a trade caravanr ravaged by a pack ofVermlings, if the tracks in the mud are any indication. Dead bodies and broken, upturned carts lie across the path„ but you can also see a few survivors, wounded and bloody on the ground. A woman limps across the road, carrying pieces of wreckage.',
+      'You see smoke on the horizon and catch the vague stench of burning flesh. You hasten your step see what catastrophe lies ahead of you on the road.\n\nAfter a few minutes, you come upon a trade caravan ravaged by a pack of Vermlings, if the tracks in the mud are any indication.\n\nDead bodies and broken, upturned carts lie across the path, but you can also see a few survivors, wounded and bloody on the ground. A woman limps across the road, carrying pieces of wreckage.',
     optionA: {
       choice: 'Help the survivors deal with the carnage.',
       outcome:
-        'You approach to help those still alive, but the woman in the road screams, gesturing at the Vcrmling in your group. You try to calm her, but it is of no use. You abanJon the cause.\n\nNo effect.\n\nOTHERWISE: You disperse through the scene, tending to people s wounds and getting them back on their feet, ft takes a few supplies, but they seem grateful in the end Consume 1 fi item each.\n\nGain 1 reputation.',
+        '{Mindthief}, {TwoMinis}: You approach to help those still alive, but the woman in the road screams, gesturing at the Vermling in your group. You try to calm her, but it is of no use. You abandon the cause.\n\nNo effect.\n\nOTHERWISE: You disperse through the scene, tending to people\'s wounds and getting them back on their feet. It takes a few supplies, but they seem grateful in the end.\n\nConsume 1 {SmallItem} item each.\n\nGain 1 reputation.',
       imageUrl: '/assets/cards/events/base/road/re-30-b-a.png',
     },
     optionB: {
-      choice: 'Finish the job the Vernilirtgs started nd loot whatever is lelt.',
+      choice: 'Finish the job the Vernilirtgs started and loot whatever is left.',
       outcome:
-        'It takes very little effort to finish off those who survived and put them out of their misery. Unfortunately, the Vermlings were quite thorough in their raid. You only manage to find a handful of goodsf with the rest presumably either taken or burned.\n\nGain 2 gold each.',
+        'It takes very little effort to finish off those who survived and put them out of their misery. Unfortunately, the Vermlings were quite thorough in their raid. You only manage to find a handful of goods, with the rest presumably either taken or burned.\n\nGain 2 gold each.',
       imageUrl: '/assets/cards/events/base/road/re-30-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-30-f.png',
