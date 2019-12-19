@@ -1914,17 +1914,17 @@ export const events: EventEntity[] = [
     type: EventType.Road,
     number: 11,
     text:
-      'You are headed through „ mountainous region when the ground begins to shift and shake beneath you. Taken guardr you fall to your knees. The tremors continue unabated and grow stronger You hear rumbling as rocks begin to tumble down the mountainside. 1 ......, - ,',
+      'You are headed through a mountainous region when the ground begins to shift and shake beneath you. Taken off guard you fall to your knees.\n\nThe tremors continue unabated and grow stronger. You hear rumbling as rocks begin to tumble down the mountainside.',
     optionA: {
       choice: 'Try to find a clearing where you can avoid the falling rocks.',
       outcome:
-        'You race forward\\ scanning the area for an # open space where the danger from rock slides will be less severe. After dodging some rocks and getting hit by others, you fmd a relatively safe area and wait for the chaos to subside. All start scenario with 2 damage.',
+        'You race forward, scanning the area for an open space where the danger from rock slides will be less severe. After dodging some rocks and getting hit by others, you find a relatively safe area and wait for the chaos to subside.\n\All start scenario with 2 damage.',
       imageUrl: '/assets/cards/events/base/road/re-11-b-a.png',
     },
     optionB: {
-      choice: 'Take cover under a nearby outcropping ml wait out the earthquake.',
+      choice: 'Take cover under a nearby outcropping and wait out the earthquake.',
       outcome:
-        '♦# f Vbu jump under an outcropping/but something is not right. Those among you attuned to the elements turn towardthe face of the mountain and step into it, as though the rocks were gone, Inside, you see an odd crystal jutting out of the earth. Vbu snatch it upt and the tremors stop. Add City Event 73 to the deck. OTHERWISE: The outcropping proves to be an unstable place to hide. You are quickly buried in rubble. All start scenario with 4 damage.',
+        '{Cragheart}, {Spellweaver}, {Triangles}, {Circles}: You jump under an outcropping, but something is not right. Those among you attuned to the elements turn toward the face of the mountain and step into it, as though the rocks were gone. Inside, you see an odd crystal jutting out of the earth. You snatch it up and the tremors stop.\n\nAdd City Event 73 to the deck.\n\nOTHERWISE: The outcropping proves to be an unstable place to hide. You are quickly buried in rubble.\n\nAll start scenario with 4 damage.',
       imageUrl: '/assets/cards/events/base/road/re-11-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-11-f.png',
