@@ -2128,7 +2128,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Keep moving forward.',
       outcome:
-        "By the time you see the flames, it is too late. A great forest fire is raging around you. You try to run, but you don't make it out of the blaze without serious injuries and smoke inhalation. All start scenario with WOUND All start scenario with 3 damage. Lose 1 v each.",
+        "By the time you see the flames, it is too late. A great forest fire is raging around you. You try to run, but you don't make it out of the blaze without serious injuries and smoke inhalation.\n\nAll start scenario with {Wound}\n\nAll start scenario with 3 damage.\n\nLose 1 {Check} each.",
       imageUrl: '/assets/cards/events/base/road/re-21-b-a.png',
     },
     optionB: {
@@ -2302,7 +2302,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Backtrack and find a way around the tone-filled valley.',
       outcome:
-        "You sigh and turn around' After some backward progress, you find another path through the foothills and work your way through it. Unfortunately it leads you directly into a den of wolves, and they don ’t seem too happy about your sudden arrival. You fend them off, but they leave you wo it ruled. All start scenario with WOUND",
+        "You sigh and turn around' After some backward progress, you find another path through the foothills and work your way through it. Unfortunately it leads you directly into a den of wolves, and they don ’t seem too happy about your sudden arrival. You fend them off, but they leave you wo it ruled.\n\nAll start scenario with {Wound}.",
       imageUrl: '/assets/cards/events/base/road/re-29-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-29-f.png',
@@ -2548,7 +2548,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: '-',
       outcome:
-        '1 The Be*}st Tyrant steps forward with his hand outstretched and makes a low humming sound. The hear stops mid-charge with a perplexed look« You leave the animal there and continue on your way unharmed[ No effect. OTHERWISE: Two seconds later, you can t help but Teel this was a terrible idea. The bear wounds you severely before you are able to arm yourself and fight it off. All start scenario with WOUND 0 . All start scenario with 3 damage.',
+        '1 The Be*}st Tyrant steps forward with his hand outstretched and makes a low humming sound. The hear stops mid-charge with a perplexed look« You leave the animal there and continue on your way unharmed[ No effect. OTHERWISE: Two seconds later, you can t help but Teel this was a terrible idea. The bear wounds you severely before you are able to arm yourself and fight it off.\n\nAll start scenario with {Wound}.\n\nAll start scenario with 3 damage.',
       imageUrl: '/assets/cards/events/base/road/re-41-b-a.png',
     },
     optionB: {
@@ -2701,7 +2701,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Attack the demons. There are a lot of them, but you do not take kindly to threats.',
       outcome:
-        'Without even speaking, you draw your weapons and attack. The demons are caught off guard, but they bounce back with great ferocity, ft is a long, brutal battle, and you continue on in your adventure greatly wounded and bloody. All start scenario with MUDDLE All start scenario with WOUND All start scenario with 3 damage.',
+        'Without even speaking, you draw your weapons and attack. The demons are caught off guard, but they bounce back with great ferocity, ft is a long, brutal battle, and you continue on in your adventure greatly wounded and bloody.\n\nAll start scenario with MUDDLE.\n\nAll start scenario with {Wound}.\n\nAll start scenario with 3 damage.',
       imageUrl: '/assets/cards/events/base/road/re-48-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-48-f.png',
@@ -2995,7 +2995,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Attack the Sun Demons. It may be the only way to stop them from bothering you.',
       outcome:
-        'Without even speaking, you draw your weapons and attack. The demons are caught offguard, but they bounce back with great ferocity, ft is a long, brutal battle, and you continue on in your adventure greatly wounded and bloody. All start scenario with MUDDLE ^. All start scenario with WOUND All start scenario with 3 damage.',
+        'Without even speaking, you draw your weapons and attack. The demons are caught offguard, but they bounce back with great ferocity, ft is a long, brutal battle, and you continue on in your adventure greatly wounded and bloody. All start scenario with MUDDLE ^.\n\nAll start scenario with {Wound}/\n\nAll start scenario with 3 damage.',
       imageUrl: '/assets/cards/events/base/road/re-62-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-62-f.png',
@@ -3079,7 +3079,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Attack the Inox.',
       outcome:
-        'You attack the large group of Inox while they are distracted by giant creature above you. Things suddenly get very hot, however, when the drake begins spitting hre into the melee. The Inox scatter and you are suffering from severe burns when the Elder Drake lands in front of you. "My apologies, I was only trying to help. Gain 25 gold each. All start scenario with WOUND All start scenario with 2 damage.',
+        'You attack the large group of Inox while they are distracted by giant creature above you. Things suddenly get very hot, however, when the drake begins spitting hre into the melee. The Inox scatter and you are suffering from severe burns when the Elder Drake lands in front of you. "My apologies, I was only trying to help.\n\nGain 25 gold each.\n\nAll start scenario with {Wound}.\n\nAll start scenario with 2 damage.',
       imageUrl: '/assets/cards/events/base/road/re-66-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-66-f.png',
