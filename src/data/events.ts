@@ -2082,17 +2082,17 @@ export const events: EventEntity[] = [
     type: EventType.Road,
     number: 19,
     text:
-      'Heading down the main road[ you of you. It is covered in metal bars and a number ragge side of the wagon, you see city guards on horseback eye You get closer and one of the guards calls out to you. Keep your distance! We are transporting dangerous criminals." A moment later, one of the prisoners in back slips out of his manacles and begins to sprint full speed into the tall grass.',
+      'Heading down the main road, you see an odd-looking wagon in front of you. It is covered in metal bars and a number ragged men in chains walk behind it. On either side of the wagon, you see city guards on horseback keeping a watchful eye on everything.\n\nYou get closer and one of the guards calls out to you. "Keep your distance! We are transporting dangerous criminals."\n\nA moment later, one of the prisoners in back slips out of his manacles and begins to sprint full speed into the tall grass.',
     optionA: {
       choice: 'Help the guards catch the escaping man.',
       outcome:
-        "REPUTATION < -4: You chase after the sprinting man, but the guards conclude you must be an accomplice trying to help him. They shoot arrows in your direction, forcing you to retreat from the situation.\n\nNo effect.\n\nOTTHERWISE: The man's speed after spending months in a jail cell is no match for your own. With the help of the guards on horseback, you quickly have him cornered and returned to the wagon.\n\nGain 1 reputation.",
+        "REPUTATION < -4: You chase after the sprinting man, but the guards conclude you must be an accomplice trying to help him. They shoot arrows in your direction, forcing you to retreat from the situation.\n\nNo effect.\n\nOTHERWISE: The man's speed after spending months in a jail cell is no match for your own. With the help of the guards on horseback, you quickly have him cornered and returned to the wagon.\n\nGain 1 reputation.",
       imageUrl: '/assets/cards/events/base/road/re-19-b-a.png',
     },
     optionB: {
       choice: 'Interfere with the guards to help the an escape.',
       outcome:
-        'Criminals deserve freedom as much as the next man. While the guards are distracted by the one escapee, you rush to the wagon and release the others. Chaos erupts as the prisoners scatter in every direction. Many manage to escape, and you find a mysterious gift of thanks waiting on your doorstep when you return to Gloomhaven.\n\nLose 2 reputation.\n\nReputation < -9: Gain 1 collective "Major Power Potion” (Item 04l).',
+        'Criminals deserve freedom as much as the next man. While the guards are distracted by the one escapee, you rush to the wagon and release the others. Chaos erupts as the prisoners scatter in every direction. Many manage to escape, and you find a mysterious gift of thanks waiting on your doorstep when you return to Gloomhaven.\n\nLose 2 reputation.\n\nReputation < -9: Gain 1 collective "Major Power Potion" (Item 041).',
       imageUrl: '/assets/cards/events/base/road/re-19-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-19-f.png',
