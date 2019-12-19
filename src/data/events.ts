@@ -365,7 +365,7 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 18,
     text:
-      'You are attending to business in the Sinking Market when a frail white-haired woman approaches you and grabs you by the arm.\n\n"Oh my, don\'t you lot look strong." she says. "Could you possibly assist me with a small problem I am having in mv cellar?"\n\nHer eyes grow narrow. "Rats! So many rats! I don\'t know where they\'re coming from, but they are a right nuisance. Ruined three jars of preserves just yesterday!"\n\nShe tugs weakly at your sleeve. "Please, can you help me?"',
+      'You are attending to business in the Sinking Market when a frail white-haired woman approaches you and grabs you by the arm.\n\n"Oh my, don\'t you lot look strong." she says. "Could you possibly assist me with a small problem I am having in my cellar?"\n\nHer eyes grow narrow. "Rats! So many rats! I don\'t know where they\'re coming from, but they are a right nuisance. Ruined three jars of preserves just yesterday!"\n\nShe tugs weakly at your sleeve. "Please, can you help me?"',
     optionA: {
       choice: 'Decline to help the old woman.',
       outcome:
@@ -870,7 +870,7 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 42,
     text:
-      'Walking near the West Gate, you are approached by a scrawny kid in a guard uniform, which is dearly too big for his small frame. "Hey, you all are famous! " he says with a big smile. "I worked as a caravan guard before I got this job. Met with a big Inox guv who always talked about you. He made you seem like the nicest, most amazing people." His smile and excitement doesn’t waver. "Say, mv detail is doing some work to repair the wall damage from the last Vcrmling attack. Would you mind helping us! It \'ll be fun!"',
+      'Walking near the West Gate, you are approached by a scrawny kid in a guard uniform, which is dearly too big for his small frame. "Hey, you all are famous! " he says with a big smile. "I worked as a caravan guard before I got this job. Met with a big Inox guv who always talked about you. He made you seem like the nicest, most amazing people." His smile and excitement doesn’t waver. "Say, my detail is doing some work to repair the wall damage from the last Vermling attack. Would you mind helping us! It \'ll be fun!"',
     optionA: {
       choice: 'Agree to help the presumptuous kid.',
       outcome:
@@ -912,7 +912,7 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 44,
     text:
-      "In the very early morning, you are wakened by a knock at your door. Standing behind it is giant, dirty In ox wearing a leather apron. “Oh, uh'.ahem, he coughs. Sorry; I was looking for a female Orchid. She used to help me on occasion with my forge. Her control over fire was astounding and I paid her well for her assistance completing some of mv specialty work.rJ He scratches his head. 'I guess shes not around anymore. You wouldn't happen to know where I could hnd someone who could help me in her absence, would vow?\"",
+      "In the very early morning, you are wakened by a knock at your door. Standing behind it is giant, dirty In ox wearing a leather apron. “Oh, uh'.ahem, he coughs. Sorry; I was looking for a female Orchid. She used to help me on occasion with my forge. Her control over fire was astounding and I paid her well for her assistance completing some of my specialty work.rJ He scratches his head. 'I guess shes not around anymore. You wouldn't happen to know where I could hnd someone who could help me in her absence, would vow?\"",
     optionA: {
       choice: 'Offer to help the blacksmith yourself',
       outcome:
@@ -1574,7 +1574,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Tell the Captain you decided not to kill the Elder Drake.',
       outcome:
-        '"Oh, mv...well, okay." The Captain looks at you with stunned curiosity. "So there is a massive, fire-breathing drake up in the moun- tains, and you decided there was no reason to kill it? Interesting." The Captain wanders off. mumbling about needing to find better help.\n\nLose 2 reputation.',
+        '"Oh, my...well, okay." The Captain looks at you with stunned curiosity. "So there is a massive, fire-breathing drake up in the moun- tains, and you decided there was no reason to kill it? Interesting." The Captain wanders off. mumbling about needing to find better help.\n\nLose 2 reputation.',
       imageUrl: '/assets/cards/events/base/city/ce-75-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-75-f.png',
@@ -1627,7 +1627,7 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 78,
     text:
-      'The scene is typical A nervous looking man stands in front of your table at the Sleeping lion. You eye him lazily until he speaks. 7 was, um, told you might be able to help me," he starts. 7 was in the Corpse wood conduct- ing some, uh, business, when my partners and I ivcrc attacked by Vermlings. I barely escaped with my life, but mv partners weren\'t so lucky. One of them was carrying something valuable — an artifact we managed to find in our, uh, business. It s very important I get it back. I fol- lowed the Vermlings back to their nest, and I can assure you they have many valuables. I\'ll show you where it is, and you can take whatever you * . *• ■* want. Just bring me back the artifact."',
+      'The scene is typical A nervous looking man stands in front of your table at the Sleeping lion. You eye him lazily until he speaks. 7 was, um, told you might be able to help me," he starts. 7 was in the Corpse wood conduct- ing some, uh, business, when my partners and I ivcrc attacked by Vermlings. I barely escaped with my life, but my partners weren\'t so lucky. One of them was carrying something valuable — an artifact we managed to find in our, uh, business. It s very important I get it back. I fol- lowed the Vermlings back to their nest, and I can assure you they have many valuables. I\'ll show you where it is, and you can take whatever you * . *• ■* want. Just bring me back the artifact."',
     optionA: {
       choice: "Accept the man's deal.",
       outcome:
