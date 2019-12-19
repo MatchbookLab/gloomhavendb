@@ -390,7 +390,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Attend the wedding with an expensive gift.',
       outcome:
-        'REPUTATION > 9. PAY 20 COLLECTIVE COLD: You head to the New Market and find a magnificent vase to bring as a gift. When the father of the bride sees it, he declares it the most wonderful piece he\'s ever encountered. You are the talk ol the town.\n\nGain 2 reputation.\n\nREPUTATION < 10, PAY 20 COLLECTIVE COLD: You bring a very expensive vase as a gift, but you can\'t seem to catch the father of the bride\'s eve to present it at the right time.\n\nNo effect.\n\nOTHERWISE: Read outcome B.',
+        'REPUTATION > 9. PAY 20 COLLECTIVE COLD: You head to the New Market and find a magnificent vase to bring as a gift. When the father of the bride sees it, he declares it the most wonderful piece he\'s ever encountered. You are the talk of the town.\n\nGain 2 reputation.\n\nREPUTATION < 10, PAY 20 COLLECTIVE COLD: You bring a very expensive vase as a gift, but you can\'t seem to catch the father of the bride\'s eve to present it at the right time.\n\nNo effect.\n\nOTHERWISE: Read outcome B.',
       imageUrl: '/assets/cards/events/base/city/ce-19-b-a.png',
     },
     optionB: {
@@ -690,7 +690,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Watch what happens with morbid curio&itv.',
       outcome:
-        'Unable to resist, you watch to see what will happen to the girl. Her skin turns ashen and begins to flake away. She stops screaming eventually and begins coughing up a black bile. She tries to stand, but her legs crumble away into dust. She makes a pitiful croak and then falls over into a cloud of sand. When the cloud settles, no evidence ol her presence remains.',
+        'Unable to resist, you watch to see what will happen to the girl. Her skin turns ashen and begins to flake away. She stops screaming eventually and begins coughing up a black bile. She tries to stand, but her legs crumble away into dust. She makes a pitiful croak and then falls over into a cloud of sand. When the cloud settles, no evidence of her presence remains.',
       imageUrl: '/assets/cards/events/base/city/ce-33-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-33-f.png',
@@ -954,7 +954,7 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 46,
     text:
-      'Anticipating an enjoyable night ol drinks at the Sleeping Lion, you enter the tavern to see a familiar Savvas sitting at your usual table. The Cragbeart stands and extends both its arms. “Ah, friends! So good to see youf it says. “Sit! Have a drink with me!',
+      'Anticipating an enjoyable night of drinks at the Sleeping Lion, you enter the tavern to see a familiar Savvas sitting at your usual table. The Cragbeart stands and extends both its arms. “Ah, friends! So good to see youf it says. “Sit! Have a drink with me!',
     optionA: {
       choice: 'Have a drink with the Cragheart. 1 . _\tp| ^\t•',
       outcome:
@@ -1206,7 +1206,7 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 58,
     text:
-      '"There were fifty of them, / / * swear. Tearing my mates apart! You look over to the bar where a group of drunkards are all laughing at a disheveled man in the middle of a story; "And commanding them all riding atop a giant armored bear, there was a Vermling with a staff that shot lightning!0 At this the crowd erupts into more laughter, drowning out the rest of the mans story ‘ I his man\'s had too much to drink, I d say ridicules one ol the crowd. “Vermlings riding bears! I thought I’d heard of everything!"',
+      '"There were fifty of them, / / * swear. Tearing my mates apart! You look over to the bar where a group of drunkards are all laughing at a disheveled man in the middle of a story; "And commanding them all riding atop a giant armored bear, there was a Vermling with a staff that shot lightning!0 At this the crowd erupts into more laughter, drowning out the rest of the mans story ‘ I his man\'s had too much to drink, I d say ridicules one of the crowd. “Vermlings riding bears! I thought I’d heard of everything!"',
     optionA: {
       choice: 'Join the crowd in laughing at the man.',
       outcome:
@@ -1216,7 +1216,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Calm down the crowd and get more details from the man about the attack. /',
       outcome:
-        'ft s not easy, but you quiet down the crowd and take the staggering man over to a secluded corner ol the tavern to get the full story out of him. Apparently he was part of a group of ruffians working to harvest the Dagger Forest for wood. In the middle of their logging expedition, however, they were attacked by the Beast Tyrant and an army of forest animals. Though he ran off in the middle of the fightf the man swears he also heard the howl of angry spirits in the chaos„',
+        'ft s not easy, but you quiet down the crowd and take the staggering man over to a secluded corner of the tavern to get the full story out of him. Apparently he was part of a group of ruffians working to harvest the Dagger Forest for wood. In the middle of their logging expedition, however, they were attacked by the Beast Tyrant and an army of forest animals. Though he ran off in the middle of the fightf the man swears he also heard the howl of angry spirits in the chaos„',
       imageUrl: '/assets/cards/events/base/city/ce-58-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-58-f.png',
@@ -1468,7 +1468,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: "Regretfully explain that you don't have the power to effect change like this.",
       outcome:
-        'You explain that while you do have some • power in the town, the Sinking Market may be a lost cause. More and more ol the district is sinking into the sea every day; as it has been doing for as long as the town has existed. You can t convince merchants to spend money on something that will one day be underwater. No effect.',
+        'You explain that while you do have some • power in the town, the Sinking Market may be a lost cause. More and more of the district is sinking into the sea every day; as it has been doing for as long as the town has existed. You can t convince merchants to spend money on something that will one day be underwater. No effect.',
       imageUrl: '/assets/cards/events/base/city/ce-70-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-70-f.png',
@@ -1511,7 +1511,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Refuse to go with the man. This whole situation seems,.Jishv, /',
       outcome:
-        "This suspicious old man must have seen you in here before with the rod and fashioned some elaborate con to swindle you out ol something. You won i be so easily fooled. There 's no he knows what the rod does when no one else in town does. Vbi/ push him away and go back to your drink. No effect.",
+        "This suspicious old man must have seen you in here before with the rod and fashioned some elaborate con to swindle you out of something. You won i be so easily fooled. There 's no he knows what the rod does when no one else in town does. Vbi/ push him away and go back to your drink. No effect.",
       imageUrl: '/assets/cards/events/base/city/ce-72-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-72-f.png',
@@ -1627,7 +1627,7 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 78,
     text:
-      'The scene is typical A nervous looking man stands in front of your table at the Sleeping lion. You eye him lazily until he speaks. 7 was, um, told you might be able to help me," he starts. 7 was in the Corpse wood conduct- ing some, uh, business, when my partners and I ivcrc attacked by Vermlings. I barely escaped with my life, but mv partners weren\'t so lucky. One ol them was carrying something valuable — an artifact we managed to find in our, uh, business. It s very important I get it back. I fol- lowed the Vermlings back to their nest, and I can assure you they have many valuables. I\'ll show you where it is, and you can take whatever you * . *• ■* want. Just bring me back the artifact."',
+      'The scene is typical A nervous looking man stands in front of your table at the Sleeping lion. You eye him lazily until he speaks. 7 was, um, told you might be able to help me," he starts. 7 was in the Corpse wood conduct- ing some, uh, business, when my partners and I ivcrc attacked by Vermlings. I barely escaped with my life, but mv partners weren\'t so lucky. One of them was carrying something valuable — an artifact we managed to find in our, uh, business. It s very important I get it back. I fol- lowed the Vermlings back to their nest, and I can assure you they have many valuables. I\'ll show you where it is, and you can take whatever you * . *• ■* want. Just bring me back the artifact."',
     optionA: {
       choice: "Accept the man's deal.",
       outcome:
@@ -1669,7 +1669,7 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 80,
     text:
-      "As you prepare to leave the city on another journey, you are sud- denly surrounded by a large group of guards near the west gate. 'He hear you've been spreading rumors, one ol them says. \"Claiming that the guards are causing the Vermling attacks on the city. That‘s some high-grade garbage you 're spewing. “My best friend died in the last Vermling raid!'’ another one veils. You got something smart to say about that? ”",
+      "As you prepare to leave the city on another journey, you are sud- denly surrounded by a large group of guards near the west gate. 'He hear you've been spreading rumors, one of them says. \"Claiming that the guards are causing the Vermling attacks on the city. That‘s some high-grade garbage you 're spewing. “My best friend died in the last Vermling raid!'’ another one veils. You got something smart to say about that? ”",
     optionA: {
       choice: 'Attempt to calm down the guards and explain the situation.',
       outcome:
@@ -1956,7 +1956,7 @@ export const events: EventEntity[] = [
     type: EventType.Road,
     number: 13,
     text:
-      'Traveling off the beaten path, you are surprised to see a large group ol figures on the horizon. You take out your weapons and move cautiously forward. As you get closer; it becomes clear that the figures are not aliver but sculptures of some kind\\ made haphazardly out of branches, garbage, and scrap metal There are fifty or so in the middle of a field, with no other signs of life as far as you can see. You see a necklace that may be valuable on one of them and go to grab it. "Don\'t touch her!" You wheel around to see an old man in rags emerge from a hole in the ground and charge at you with a broken broom handle. "These women are all mine!"',
+      'Traveling off the beaten path, you are surprised to see a large group of figures on the horizon. You take out your weapons and move cautiously forward. As you get closer; it becomes clear that the figures are not aliver but sculptures of some kind\\ made haphazardly out of branches, garbage, and scrap metal There are fifty or so in the middle of a field, with no other signs of life as far as you can see. You see a necklace that may be valuable on one of them and go to grab it. "Don\'t touch her!" You wheel around to see an old man in rags emerge from a hole in the ground and charge at you with a broken broom handle. "These women are all mine!"',
     optionA: {
       choice: 'Defend yourself with lethal force.',
       outcome:
@@ -2271,7 +2271,7 @@ export const events: EventEntity[] = [
     type: EventType.Road,
     number: 28,
     text:
-      "As you walk down a dirt path, you see a hard-looking mercenary sitting in a patch ol grass. He nods as you pass. i a\tI ml ley, f riends,\" he says. There is something off about his tone, though. 7 don't suppose one of you might he willing to part with a stamina potion, would you? Tm headed toward Gloomhavenf but I've just come such a long way and I'm not feeling too good about the stretch I have left * With the clank ol his sword sheath against his armor and a loud groan, the man stands up. 771 pay you well for it.,f «««■ - -mwf mtm —r '• mu\thi ■■ n MfcaM——— ■ ■ ■ M",
+      "As you walk down a dirt path, you see a hard-looking mercenary sitting in a patch of grass. He nods as you pass. i a\tI ml ley, f riends,\" he says. There is something off about his tone, though. 7 don't suppose one of you might he willing to part with a stamina potion, would you? Tm headed toward Gloomhavenf but I've just come such a long way and I'm not feeling too good about the stretch I have left * With the clank of his sword sheath against his armor and a loud groan, the man stands up. 771 pay you well for it.,f «««■ - -mwf mtm —r '• mu\thi ■■ n MfcaM——— ■ ■ ■ M",
     optionA: {
       choice: 'Sell the man a stamina potion.',
       outcome:
@@ -2317,7 +2317,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Help the survivors deal with the carnage.',
       outcome:
-        'You approach to help those still alive, but the woman in the road screams, gesturing at the Vcrmling in your group. You try to calm her, but it is ol no use. You abanJon the cause. No effect. OTHERWISE: You disperse through the scene, tending to people s wounds and getting them back on their feet, ft takes a few supplies, but they seem grateful in the end Consume 1 fi item each. Gain I reputation.',
+        'You approach to help those still alive, but the woman in the road screams, gesturing at the Vcrmling in your group. You try to calm her, but it is of no use. You abanJon the cause. No effect. OTHERWISE: You disperse through the scene, tending to people s wounds and getting them back on their feet, ft takes a few supplies, but they seem grateful in the end Consume 1 fi item each. Gain I reputation.',
       imageUrl: '/assets/cards/events/base/road/re-30-b-a.png',
     },
     optionB: {
@@ -2649,7 +2649,7 @@ export const events: EventEntity[] = [
     type: EventType.Road,
     number: 46,
     text:
-      'Walking among the foothills, you see a steep ridge in Iront of you and on top ol it, a very odd rock formation. The formation calls to you somehow, but the way up is not readily apparent. In fact, climbing the ridge looks pretty dangerous, but you just feel like you need to get up there and look at the rocks.',
+      'Walking among the foothills, you see a steep ridge in Iront of you and on top of it, a very odd rock formation. The formation calls to you somehow, but the way up is not readily apparent. In fact, climbing the ridge looks pretty dangerous, but you just feel like you need to get up there and look at the rocks.',
     optionA: {
       choice: 'Take the risk to climb tbe ridge and investigate the rocks*',
       outcome:
@@ -2691,7 +2691,7 @@ export const events: EventEntity[] = [
     type: EventType.Road,
     number: 48,
     text:
-      'You see them long before they get close to you radiant balls ol light blazing against the horizon. Sun Demons, As they approach, you prepare for an attackr but the demons have other plans. They menace you with their glowing clawsr but they would rather have information than kill you. "Where is the one you call a Sunkeeper?" one ol them hisses. \' The Valrath neglects her duties, and now we must resolve matters personally * You press for further information, but the demons get angry *These are not your concerns! Tell us where she is or die at our hands!\'',
+      'You see them long before they get close to you radiant balls of light blazing against the horizon. Sun Demons, As they approach, you prepare for an attackr but the demons have other plans. They menace you with their glowing clawsr but they would rather have information than kill you. "Where is the one you call a Sunkeeper?" one of them hisses. \' The Valrath neglects her duties, and now we must resolve matters personally * You press for further information, but the demons get angry *These are not your concerns! Tell us where she is or die at our hands!\'',
     optionA: {
       choice: 'Give them whatever information you can on the Sunkeepers whereabouts.',
       outcome:
