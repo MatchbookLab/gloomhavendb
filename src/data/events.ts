@@ -1755,8 +1755,7 @@ export const events: EventEntity[] = [
     text: 'You are feeling a tad hungry as you walk down the road. You are considering stopping for a meal when you come across a thicket of bushes covered in green berries.\n\nThe berries look delicious, but you hesitate. They could be poisonous.',
     optionA: {
       choice: 'Eat the berries.',
-      outcome:
-        'You shrug and grab a handful of berries to stuff in your mouth, they are incredibly sweet and just the right amount of tart. You couldn\'t feel better about your decision. That is, until you start vomiting. Your stomach is incredibly unhappy with you, and the situation doesn\'t improve much by the time you arrive at your destination.\n\nAll start scenario with {Poison}.',
+      outcome: 'You shrug and grab a handful of berries to stuff in your mouth, they are incredibly sweet and just the right amount of tart. You couldn\'t feel better about your decision. That is, until you start vomiting. Your stomach is incredibly unhappy with you, and the situation doesn\'t improve much by the time you arrive at your destination.\n\nAll start scenario with {Poison}.',
       imageUrl: '/assets/cards/events/base/road/re-03-b-a.png',
     },
     optionB: {
@@ -1776,14 +1775,12 @@ export const events: EventEntity[] = [
       'You see fresh wagon tracks in the dirt as you walk along the road. You continue forward and begin to pick out a number of distinct tracks. They must be from a large caravan.\n\nSure enough, as you crest a hill, you see a group of four wagons headed down the road in the same direction as you. You count perhaps three or four guards among them.',
     optionA: {
       choice: 'Approach the caravan and offer to travel with them until your paths diverge.',
-      outcome:
-        'The merchants in the caravan seem grateful, though the guards eye you skeptically. After traveling for half a day without event, you head off down a side road and wave good bye. The merchants express their appreciation with a bit of coin.\n\nGain 2 gold each.\n\nReputation > 9: Gain 1 additional gold each.',
+      outcome: 'The merchants in the caravan seem grateful, though the guards eye you skeptically. After traveling for half a day without event, you head off down a side road and wave good bye. The merchants express their appreciation with a bit of coin.\n\nGain 2 gold each.\n\nReputation > 9: Gain 1 additional gold each.',
       imageUrl: '/assets/cards/events/base/road/re-04-b-a.png',
     },
     optionB: {
       choice: 'Attack the caravan.',
-      outcome:
-        'With so few guards protecting it, the caravan makes an ideal mark. You charge down the hill, weapons at the ready. The merchants scatter, and the guards are easily dispatched, leaving you with a nice stash of valuables.\n\nGain 10 gold each.\n\nLose 2 reputation.',
+      outcome: 'With so few guards protecting it, the caravan makes an ideal mark. You charge down the hill, weapons at the ready. The merchants scatter, and the guards are easily dispatched, leaving you with a nice stash of valuables.\n\nGain 10 gold each.\n\nLose 2 reputation.',
       imageUrl: '/assets/cards/events/base/road/re-04-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-04-f.png',
@@ -1793,18 +1790,15 @@ export const events: EventEntity[] = [
     id: 11,
     type: EventType.Road,
     number: 5,
-    text:
-      "You are traveling through a small wooded area when you round a bend and find a group of Inox warriors fighting a band of armored humans.\n\nWith all the commotion, it 's hard to discern more details, but the humans look like guards from Gloomhaven. You are not sure why they would be out here fighting the Inox, though.",
+    text: "You are traveling through a small wooded area when you round a bend and find a group of Inox warriors fighting a band of armored humans.\n\nWith all the commotion, it's hard to discern more details, but the humans look like guards from Gloomhaven. You are not sure why they would be out here fighting the Inox, though.",
     optionA: {
       choice: 'Help the Inox fight off the humans.',
-      outcome:
-        'Fearing the battle could go either way, you charge into the fray laying low the human attackers. When the dust settles, the Inox offer you a skeptical thanks.\n\n"Humans think they own all this land." one of the Inox says as he spits on the ground. "We thank you for helping us with the nuisance. Allow us to bless you with a gift."\n\nGain 1 collective "Necklace of Teeth" (Item 106).',
+      outcome: 'Fearing the battle could go either way, you charge into the fray laying low the human attackers. When the dust settles, the Inox offer you a skeptical thanks.\n\n"Humans think they own all this land." one of the Inox says as he spits on the ground. "We thank you for helping us with the nuisance. Allow us to bless you with a gift."\n\nGain 1 collective "Necklace of Teeth" (Item 106).',
       imageUrl: '/assets/cards/events/base/road/re-05-b-a.png',
     },
     optionB: {
       choice: 'Help the humans fight off the Inox.',
-      outcome:
-        'With your arrival, the Inox retreat back into the woods, one of them casting hexes as he flees.\n\n"Blast it all." one of the guards says. "Patrol duty is the absolute worst. No matter what we tell those savages, they\'re convinced were going to take over their forest. Anyway, thanks for your help. I thought we were done for"\n\nAll start scenario with {Curse}\n\n.Gain 1 reputation.',
+      outcome: 'With your arrival, the Inox retreat back into the woods, one of them casting hexes as he flees.\n\n"Blast it all." one of the guards says. "Patrol duty is the absolute worst. No matter what we tell those savages, they\'re convinced were going to take over their forest. Anyway, thanks for your help. I thought we were done for"\n\nAll start scenario with {Curse}\n\n.Gain 1 reputation.',
       imageUrl: '/assets/cards/events/base/road/re-05-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-05-f.png',
