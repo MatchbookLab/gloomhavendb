@@ -480,7 +480,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'The thief had the right idea. Grab some vegetables for yourself.',
       outcome:
-        'In an area cut off from civilization with no viable farmland, fresh vegetables are a rare commodity. The thief already made off with an armful so what\'s the harm in taking some more? When you get back to your room, you cook up a nice hearty soup and have a great meal. All start scenario with {Bless}',
+        'In an area cut off from civilization with no viable farmland, fresh vegetables are a rare commodity. The thief already made off with an armful so what\'s the harm in taking some more? When you get back to your room, you cook up a nice hearty soup and have a great meal.\n\nAll start scenario with {Bless}',
       imageUrl: '/assets/cards/events/base/city/ce-23-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-23-f.png',
@@ -1736,7 +1736,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Eat the berries.',
       outcome:
-        "You shrug and grab a handful of berries to stuff in your mouth, they are incredibly sweet and just the right amount of tart. You couldn't feel better about your decision. All start scenario with {Bless}.",
+        "You shrug and grab a handful of berries to stuff in your mouth, they are incredibly sweet and just the right amount of tart. You couldn't feel better about your decision.\n\nAll start scenario with {Bless}.",
       imageUrl: '/assets/cards/events/base/road/re-02-b-a.png',
     },
     optionB: {
@@ -2338,13 +2338,13 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Charge into the fray to protect the caravan from the savage attack.',
       outcome:
-        '.•Fortunately, some of your group excels when in a defensive position, and the tide of the battle clearly turns once they take command of the situation. The Vermlings are driven off and the caravan is saved.\n\nGain 2 reputation.\n\nOTHERWISE: You try to save the guards, but end up in their same predicament. You manage to fight off the Vermlings, but not before all the guards and merchants are killed. All start scenario with 3 damage.\n\nGain 5 gold each.',
+        '.•Fortunately, some of your group excels when in a defensive position, and the tide of the battle clearly turns once they take command of the situation. The Vermlings are driven off and the caravan is saved.\n\nGain 2 reputation.\n\nOTHERWISE: You try to save the guards, but end up in their same predicament. You manage to fight off the Vermlings, but not before all the guards and merchants are killed.\n\nAll start scenario with 3 damage.\n\nGain 5 gold each.',
       imageUrl: '/assets/cards/events/base/road/re-31-b-a.png',
     },
     optionB: {
       choice: 'Watch lor a while and wait for an pportune moment to strike.',
       outcome:
-        "You wait for a good long while, until after the guards have all been slaughtered and the Verm lings are softened up a bit. They're going through the goods in the wagons when you hit them with a surprise attack. Caught offguard, they go down without much of a fight. All start scenario with 1 damage.\n\nGain 5 gold each.",
+        "You wait for a good long while, until after the guards have all been slaughtered and the Verm lings are softened up a bit. They're going through the goods in the wagons when you hit them with a surprise attack. Caught offguard, they go down without much of a fight.\n\nAll start scenario with 1 damage.\n\nGain 5 gold each.",
       imageUrl: '/assets/cards/events/base/road/re-31-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-31-f.png',
@@ -2386,7 +2386,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Get out of this place as quickly as you an.',
       outcome:
-        'You head forward with all haste, eager to get bach your bearings. You seem to be out of the worst of it when you are suddenly ambushed by a giant demon from behind. You fight it off, but not before it tears into you and burns your flesh. All start scenario with 3 damage.',
+        'You head forward with all haste, eager to get bach your bearings. You seem to be out of the worst of it when you are suddenly ambushed by a giant demon from behind. You fight it off, but not before it tears into you and burns your flesh.\n\nAll start scenario with 3 damage.',
       imageUrl: '/assets/cards/events/base/road/re-33-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-33-f.png',
@@ -2401,7 +2401,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Quickly put out the fire and sneak out into the brush to get a look.',
       outcome:
-        '«D : Your stealth skills prove sufficient enough to remain unnoticed by a large group oflnox. You decide to let them pass by without incident.\n\nNo effect.\n\nOTHERWISE: You attempt to hide and stay quiet, but a snapped twig at an unfortunate moment startles the passing band of inox, and they pull out weapons and attack. The scene turns bloody, and you are barely able fight them off. All start scenario with 4 damage.',
+        '«D : Your stealth skills prove sufficient enough to remain unnoticed by a large group oflnox. You decide to let them pass by without incident.\n\nNo effect.\n\nOTHERWISE: You attempt to hide and stay quiet, but a snapped twig at an unfortunate moment startles the passing band of inox, and they pull out weapons and attack. The scene turns bloody, and you are barely able fight them off.\n\nAll start scenario with 4 damage.',
       imageUrl: '/assets/cards/events/base/road/re-34-b-a.png',
     },
     optionB: {
@@ -2422,7 +2422,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Fight oft the men. This is highway robbery, whatever the motive.',
       outcome:
-        "If: The Plagueherald stretches out his arms and the men around him immediately double over in pain. You can almost sense it smiling, even though it doesn't have a face. The fight doesn't last long, especially once the men's wounds start bursting with maggots. All start scenario with 1 damage.\n\nOTHERWISE: The men are weakened, but they are still hardened lighters. you light them off, but it gets ugly. All start scenario with {Poison} G All start scenario with 3 damage.",
+        "If: The Plagueherald stretches out his arms and the men around him immediately double over in pain. You can almost sense it smiling, even though it doesn't have a face. The fight doesn't last long, especially once the men's wounds start bursting with maggots.\n\nAll start scenario with 1 damage.\n\nOTHERWISE: The men are weakened, but they are still hardened lighters. you light them off, but it gets ugly.\n\nAll start scenario with {Poison}.\n\nAll start scenario with 3 damage.",
       imageUrl: '/assets/cards/events/base/road/re-35-b-a.png',
     },
     optionB: {
@@ -2443,7 +2443,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Continue down the path into the wood. You are not afraid.',
       outcome:
-        "\\wjpft\t1 : The wood is overgrown and ' rampant with all manner of insects, but with difficulty, you follow the path. Somewhere deep inside, you come across a stone pedestal with the following scratched into its base: XmWT -KKT W3T ART >-1*11, WIT -NKT M'W'lC - 8172.\n\nOTHERWISE: You follow the path into the wood and become hopelessly lost. The going is hard and painful. All start scenario with {Poison} All start scenario with 2 damage. +8%",
+        "\\wjpft\t1 : The wood is overgrown and ' rampant with all manner of insects, but with difficulty, you follow the path. Somewhere deep inside, you come across a stone pedestal with the following scratched into its base: XmWT -KKT W3T ART >-1*11, WIT -NKT M'W'lC - 8172.\n\nOTHERWISE: You follow the path into the wood and become hopelessly lost. The going is hard and painful.\n\nAll start scenario with {Poison}.\n\nAll start scenario with 2 damage. +8%",
       imageUrl: '/assets/cards/events/base/road/re-36-b-a.png',
     },
     optionB: {
@@ -2470,7 +2470,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Wait out the storm under the out- cropping',
       outcome:
-        'ft is hr from ideal, but the outcropping keeps you mostly dry and protects you from the bowling wind[ You wait hours and hours, huddled up under the rock until the storm passes. By the time you arrive at your destination, you are a bit slow on your feet due to lack of sleep. All start scenario with DISARM V',
+        'ft is hr from ideal, but the outcropping keeps you mostly dry and protects you from the bowling wind[ You wait hours and hours, huddled up under the rock until the storm passes. By the time you arrive at your destination, you are a bit slow on your feet due to lack of sleep.\n\nAll start scenario with DISARM V',
       imageUrl: '/assets/cards/events/base/road/re-37-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-37-f.png',
@@ -2554,7 +2554,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: '-',
       outcome:
-        'You quickly grab your weapons as (he bear comes down on you. The fight is brutal and ugly but it could have been much worse, All start scenario with 2 damage.',
+        'You quickly grab your weapons as (he bear comes down on you. The fight is brutal and ugly but it could have been much worse.\n\nAll start scenario with 2 damage.',
       imageUrl: '/assets/cards/events/base/road/re-41-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-41-f.png',
@@ -2632,7 +2632,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Attack. Friend or not, those who prey on the weak should be brought to justice.',
       outcome:
-        '1 You see the bandits relax a little and begin to • form up. That is when you strike. Some are scared off by the sudden attack but others engage you hungrily. The Scoundrel throws a few good daggers, too, before she rides off, criticizing your poor decision-making. All start scenario with PO!SON<^. All start scenario with 2 damage.',
+        '1 You see the bandits relax a little and begin to • form up. That is when you strike. Some are scared off by the sudden attack but others engage you hungrily. The Scoundrel throws a few good daggers, too, before she rides off, criticizing your poor decision-making.\n\nAll start scenario with {Poison}.\n\nAll start scenario with 2 damage.',
       imageUrl: '/assets/cards/events/base/road/re-45-b-a.png',
     },
     optionB: {
@@ -2680,7 +2680,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Kill the savage little beast.',
       outcome:
-        'You attack the Vermling anyway; despite his protests. It t urns out he wasn *t lying about his "brothers" nearby, though. As you wipe the blood from your blade, ten more of the little furry creatures jump out at youf brandishing small knives. They are not nearly as easy to dispatch. All start scenario with {Poison} All start scenario with 2 damage.',
+        'You attack the Vermling anyway; despite his protests. It t urns out he wasn *t lying about his "brothers" nearby, though. As you wipe the blood from your blade, ten more of the little furry creatures jump out at youf brandishing small knives. They are not nearly as easy to dispatch.\n\nAll start scenario with {Poison}.\n\nAll start scenario with 2 damage.',
       imageUrl: '/assets/cards/events/base/road/re-47-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-47-f.png',
@@ -2722,7 +2722,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Claim allegiance to the merchant guilds.',
       outcome:
-        'Well then, today \'s your unlucky day, the man in front says. “Because we of the Vigil make it a point to execute any and all commerce sympathizers we can find in this land[ * The men grimly draw swords and advance. After a hard battle, the survivors retreat, leaving you to pick through the corpses. Among the loot you find a map. Unlock "Vigil Keep\\8(j)(K-l). All start scenario with 4 damage.\n\nGain 5 gold each.',
+        'Well then, today \'s your unlucky day, the man in front says. “Because we of the Vigil make it a point to execute any and all commerce sympathizers we can find in this land[ * The men grimly draw swords and advance. After a hard battle, the survivors retreat, leaving you to pick through the corpses. Among the loot you find a map. Unlock "Vigil Keep\\8(j)(K-l).\n\nAll start scenario with 4 damage.\n\nGain 5 gold each.',
       imageUrl: '/assets/cards/events/base/road/re-49-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-49-f.png',
@@ -2800,7 +2800,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Help the Berserker fight oH the guards.',
       outcome:
-        "iJ > .i i\ty*. M i TO You enter the battle to aid the Berserker, but in her blood rage, she can't distinguish ftriend from foe. She begins hacking away at you with her axe as much as she swings at the guards. You concentrate on taking out the remaining guards, but when you turn back to the Berserker, she seems to have vanished into the nearby forest. All start scenario with 3 damage.",
+        "iJ > .i i\ty*. M i TO You enter the battle to aid the Berserker, but in her blood rage, she can't distinguish ftriend from foe. She begins hacking away at you with her axe as much as she swings at the guards. You concentrate on taking out the remaining guards, but when you turn back to the Berserker, she seems to have vanished into the nearby forest.\n\nAll start scenario with 3 damage.",
       imageUrl: '/assets/cards/events/base/road/re-53-b-a.png',
     },
     optionB: {
@@ -2848,7 +2848,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Take the overgrown path.',
       outcome:
-        'The trek through the overgrown path is unpleasant. You are constantly getting pricked by sharp thorns covered in a strange sap. You think you recognize them f rom a previous foray into harsh, unforgiving foliage. Sure enough, you start feeling sick pretty soon after you emerge from the bushes. All start scenario with {Poison}',
+        'The trek through the overgrown path is unpleasant. You are constantly getting pricked by sharp thorns covered in a strange sap. You think you recognize them f rom a previous foray into harsh, unforgiving foliage. Sure enough, you start feeling sick pretty soon after you emerge from the bushes.\n\nAll start scenario with {Poison}',
       imageUrl: '/assets/cards/events/base/road/re-55-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-55-f.png',
@@ -3031,13 +3031,13 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Investigate further.',
       outcome:
-        'Against your better judgment; you approach the skull[ which looks suspiciously like the Sin-Ras calling cardl Sure enough, a group of dark-clad warriors appears before you from out of thin air. Wordlessly they draw their long, curved blades and attack* Caught by surprise, you don t fare well in the battle. You do fight them off, but in the end[ you are severely woundedexhausted, and demoralized. Lose 1 V each. Discard 4 cards each. All start scenario with 4 damage.',
+        'Against your better judgment; you approach the skull[ which looks suspiciously like the Sin-Ras calling cardl Sure enough, a group of dark-clad warriors appears before you from out of thin air. Wordlessly they draw their long, curved blades and attack* Caught by surprise, you don t fare well in the battle. You do fight them off, but in the end[ you are severely woundedexhausted, and demoralized. Lose 1 V each. Discard 4 cards each.\n\nAll start scenario with 4 damage.',
       imageUrl: '/assets/cards/events/base/road/re-64-b-a.png',
     },
     optionB: {
       choice: 'Arm yourself and make a defensive retreat from the area.',
       outcome:
-        "Recognizing the pike as a symbol of the Sin-Ra Syndicate, you arm yourself and run from the area. Unfortunately you don't make it far before you see a number of black-clad assassins bearing down on you. You move into a defensive position and prepare for battle. The fight is arduous, but in the end[ the assassins are dead[ and you hope they don t come back, Lose 1 V each. Discard 2 cards each. All start scenario with 2 damage.",
+        "Recognizing the pike as a symbol of the Sin-Ra Syndicate, you arm yourself and run from the area. Unfortunately you don't make it far before you see a number of black-clad assassins bearing down on you. You move into a defensive position and prepare for battle. The fight is arduous, but in the end[ the assassins are dead[ and you hope they don t come back, Lose 1 V each. Discard 2 cards each.\n\nAll start scenario with 2 damage.",
       imageUrl: '/assets/cards/events/base/road/re-64-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-64-f.png',
