@@ -1893,17 +1893,17 @@ export const events: EventEntity[] = [
     type: EventType.Road,
     number: 10,
     text:
-      'What was once solid now gives way and you find yoursell falling down into a dark pit. You land twenty feet down, cushioned by the soil that fell with you. You stand up with alert ness and look around, trying to get your bearings. You have fallen into a wan made cavern with smooth stone walls and floors, This could be a trap or just some long-forgotten structure* MM',
+      'You have only wandered off the main road in search of your destination when the ground begins to shift, beneath your feet.\n\nWhat was once solid now gives way, and you find yourself falling down into a dark pit. You land twenty feet down, cushioned by the soil that fell with you.\n\nYou stand up with alertness and look around, trying to get your bearings. You have fallen into a man made cavern with smooth stone walls and floors.\n\nThis could be a trap or just some long-forgotten structure.',
     optionA: {
       choice: 'Use weights and ropes to climb out of tbe hole as quickly as possible.',
       outcome:
-        'You tie one of your weapons to a long rope and manage to hook it onto a sturdy tree root hanging over the pit. With enough effort, you are able to extricate yourself from the pit and get as far away as possible before the situation gets worse. You suffered some minor scrapes and bruises in the fall[ but you count yourself lucky. All start scenario with 1 damage.',
+        'You tie one of your weapons to a long rope and manage to hook it onto a sturdy tree root hanging over the pit. With enough effort, you are able to extricate yourself from the pit and get as far away as possible before the situation gets worse. You suffered some minor scrapes and bruises in the fall, but you count yourself lucky.\n\nAll start scenario with 1 damage.',
       imageUrl: '/assets/cards/events/base/road/re-10-b-a.png',
     },
     optionB: {
       choice: 'Explore the area.',
       outcome:
-        'Lighting a torch, you see a number of passages leading out of the stone room. Unlazed, you head down one of them and begin exploring the network of chambers. In one, you find a pedestal and. sitting atop that, a small, metal sphere. You take the strange sphere and continue your search, but the only other remarkable thing you find is an exit. Add City Event J\\ to the deck. All start scenario with 1 damage.',
+        'Lighting a torch, you see a number of passages leading out of the stone room. Unfazed, you head down one of them and begin exploring the network of chambers. In one, you find a pedestal and, sitting atop that, a small, metal sphere.\n\nYou take the strange sphere and continue your search, but the only other remarkable thing you find is an exit.\n\nAdd City Event 71 to the deck.\n\nAll start scenario with 1 damage.',
       imageUrl: '/assets/cards/events/base/road/re-10-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-10-f.png',
