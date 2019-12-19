@@ -2019,17 +2019,17 @@ export const events: EventEntity[] = [
     type: EventType.Road,
     number: 16,
     text:
-      "The route to your destitution is less direct than you had hoped\\ and you end up taking a shortcut through a small forest. There you happen upon a family of deer. They are still a ways off in the distance and haven't noticed you. You approach cautiously",
+      "The route to your destination is less direct than you had hoped, and you end up taking a shortcut through a small forest.\n\nThere you happen upon a family of deer. They are still a ways off in the distance and haven't noticed you.\n\nYou approach cautiously",
     optionA: {
-      choice: '-',
+      choice: 'Shoot at one of the deer.',
       outcome:
-        'You notch your how and take a few steps forward to find a better shooting position. Unfortunately; the deer notice your presence and bound off. You shoot a few arrows as they go. but nothing connects. Then an arrow flies out of the brush and into your shoulder. "Foul city-dwellers!* a voice cries out from the trees. 7 had been stalking that herd for hours and you spooked them! * More arrows rain down as you run away.\n\nAll start scenario with {Curse}.\n\nAll start scenario with 2 damage.',
+        'You notch your bow and take a few steps forward to find a better shooting position. Unfortunately, the deer notice your presence and bound off. You shoot a few arrows as they go, but nothing connects.\n\nThen an arrow flies out of the brush and into your shoulder. "Foul city-dwellers!" a voice cries out from the trees. "I had been stalking that herd for hours and you spooked them!" More arrows rain down as you run away.\n\nAll start scenario with {Curse}.\n\nAll start scenario with 2 damage.',
       imageUrl: '/assets/cards/events/base/road/re-16-b-a.png',
     },
     optionB: {
-      choice: '-',
+      choice: 'Just watch the deer for a litte bit.',
       outcome:
-        'You are enjoying watching the animals graze when an arrow flies out and hits the larger of the deer in its center chest, ft bolts away, but doesn\'t make it very far before collapsing. Then you see a large fnox emerge from the brush and turn toward you. 7 thought you were going to do something stupid there for a second. Thanks for not scaring away my quarry. Allow me to share some of the spoils with you," All start scenario with {Bless} J',
+        'You are enjoying watching the animals graze when an arrow flies out and hits the larger of the deer in its center chest. It bolts away, but doesn\'t make it very far before collapsing. Then you see a large Inox emerge from the brush and turn toward you. "I thought you were going to do something stupid there for a second. Thanks for not scaring away my quarry. Allow me to share some of the spoils with you."\n\nAll start scenario with {Bless}.',
       imageUrl: '/assets/cards/events/base/road/re-16-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-16-f.png',
