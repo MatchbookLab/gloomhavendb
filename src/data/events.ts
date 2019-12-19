@@ -2124,7 +2124,7 @@ export const events: EventEntity[] = [
     type: EventType.Road,
     number: 21,
     text:
-      "You find yourself cutung through the dense underbrush of a *st when you notice a number of small forest when you notice woodland animals opposite Mice, squirrels, ferrets they all appear to be running from something up ahead of you. You are filled with a troubling sense of foreboding as you catch a whiff of smoke in the air —*•■►** •** - -i r1 rni'BiW WI\tii\t■» wm\t■«*— - -V**- •»\t— i ii w h",
+      "You find yourself cutting through the dense underbrush of a forest when you notice a number of small woodland animals running along the forest floor in opposite direction.\n\nMice, squirrels, ferrets — they all appear to be running from something up ahead of you. You are filled with a troubling sense of foreboding as you catch a whiff of smoke in the air.",
     optionA: {
       choice: 'Keep moving forward.',
       outcome:
@@ -2134,7 +2134,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: "Follow the animals' cue and run in the opposite direction.",
       outcome:
-        'Fearing the worst, you turn around and head out of the forest the way you came in. You reach a clearing just before a great fire consumes everything with its blaze, ft takes a while to orient yourself and find the road again, but considering the alternative, you feel lucky. Discard 2 cards each.',
+        'Fearing the worst, you turn around and head out of the forest the way you came in. You reach a clearing just before a great fire consumes everything with its blaze. It takes a while to orient yourself and find the road again, but considering the alternative, you feel lucky.\n\nDiscard 2 cards each.',
       imageUrl: '/assets/cards/events/base/road/re-21-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-21-f.png',
