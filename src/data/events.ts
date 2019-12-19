@@ -2292,17 +2292,17 @@ export const events: EventEntity[] = [
     type: EventType.Road,
     number: 29,
     text:
-      'Walking among some foothills, you enters narrow valley and finds large pile of stones blocking your way. Clearly a rock slide occurred here recently. You move closer to the pile and despair at just how large the stones are. Only someone of great strength and skill could clear a path efficiently; * ■ -• . *',
+      'Walking among some foothills, you enter a narrow valley and find a large pile of stones blocking your way. Clearly a rock slide occurred here recently.\n\nYou move closer to the pile and despair at just how large the stones are. Only someone of great strength and skill could clear a path efficiently.',
     optionA: {
       choice: 'Attempt to clear the stones from the path.',
       outcome:
-        '^: The Craghearts combination of raw strength and an affinity for stonework is perfect for this task. In a matter of minutes, enough stones have been destroyed or thrown aside to open a path.\n\nNo effect.\n\nOTHERWISE: The situation is not ideal, but you work through the pain. By the time a path has been cleared away, you never want to see another rock in your life.\n\nDiscard 2 cards each.',
+        '{Cragheart}: The Cragheart\'s combination of raw strength and an affinity for stonework is perfect for this task. In a matter of minutes, enough stones have been destroyed or thrown aside to open a path.\n\nNo effect.\n\nOTHERWISE: The situation is not ideal, but you work through the pain. By the time a path has been cleared away, you never want to see another rock in your life.\n\nDiscard 2 cards each.',
       imageUrl: '/assets/cards/events/base/road/re-29-b-a.png',
     },
     optionB: {
-      choice: 'Backtrack and find a way around the tone-filled valley.',
+      choice: 'Backtrack and find a way around the stone-filled valley.',
       outcome:
-        "You sigh and turn around' After some backward progress, you find another path through the foothills and work your way through it. Unfortunately it leads you directly into a den of wolves, and they don ’t seem too happy about your sudden arrival. You fend them off, but they leave you wo it ruled.\n\nAll start scenario with {Wound}.",
+        "You sigh and turn around. After some backward progress, you find another path through the foothills and work your way through it. Unfortunately it leads you directly into a den of wolves, and they don't seem too happy about your sudden arrival. You fend them off, but they leave you wounded.\n\nAll start scenario with {Wound}.",
       imageUrl: '/assets/cards/events/base/road/re-29-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-29-f.png',
