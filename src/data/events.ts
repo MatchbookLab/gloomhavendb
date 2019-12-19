@@ -1977,17 +1977,17 @@ export const events: EventEntity[] = [
     type: EventType.Road,
     number: 14,
     text:
-      'You are walking down the road when the sound of many wings pulls your gaze to the sky Above you, you see a flock of white birds flying southwardl At that height, you figure a well-aimed arrow could bring one of them down to make a nice meal',
+      'You are walking down the road when the sound of many wings pulls your gaze to the sky. Above you, you see a flock of white birds flying southward.\n\nAt that height, you figure a well-aimed arrow could bring one of them down to make a nice meal',
     optionA: {
-      choice: '-',
+      choice: 'Shoot at the birds.',
       outcome:
-        'You pull back your bow 3ml take aim. The arrow flies true and connects with one of the birds. You retrieve it, pluck it, cook itr and eat it. Definitely beats the field rations you carry with you. All start scenario with {Bless}',
+        'You pull back your bow and take aim. The arrow flies true and connects with one of the birds. You retrieve it, pluck it, cook it, and eat it. Definitely beats the field rations you carry with you.\n\nAll start scenario with {Bless}',
       imageUrl: '/assets/cards/events/base/road/re-14-b-a.png',
     },
     optionB: {
       choice: 'Let the birds pass undisturbed.',
       outcome:
-        "The shot would be difficult, and you'd prefer not to waste the arrow. You simply move on toward your destination. No effect.",
+        "The shot would be difficult, and you'd prefer not to waste the arrow. You simply move on toward your destination.\n\nNo effect.",
       imageUrl: '/assets/cards/events/base/road/re-14-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-14-f.png',
