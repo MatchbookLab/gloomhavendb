@@ -2296,7 +2296,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Attempt to clear the stones from the path.',
       outcome:
-        '^: The Craghearts combination of raw strength and an affinity for stonework is perfect for this task. In a matter of minutes, enough stones have been destroyed or thrown aside to open a path.\n\nNo effect.\n\nOTHERWISE: The situation is not ideal, but you work through the pain. By the time a path has been cleared away, you never want to see another rock in your life. Discard 2 cards each.',
+        '^: The Craghearts combination of raw strength and an affinity for stonework is perfect for this task. In a matter of minutes, enough stones have been destroyed or thrown aside to open a path.\n\nNo effect.\n\nOTHERWISE: The situation is not ideal, but you work through the pain. By the time a path has been cleared away, you never want to see another rock in your life.\n\nDiscard 2 cards each.',
       imageUrl: '/assets/cards/events/base/road/re-29-b-a.png',
     },
     optionB: {
@@ -2407,7 +2407,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Wait by the fire for whatever comes.',
       outcome:
-        'Sw\t: A group of Inox appears at the edge of your campsite. Seeing their kind among you, they greet you in a friendly manner and stay for some time to talk. After they leave, you find the remainder of the night restful.\n\nNo effect.\n\nOTHERWISE: A group of irate Inox appears at the edge of your campsite. They claim you are trespassing and force you to pack up and leave. You walk through the rest of the night and arrive at your destination tiredl Discard 2 cards each.',
+        'Sw\t: A group of Inox appears at the edge of your campsite. Seeing their kind among you, they greet you in a friendly manner and stay for some time to talk. After they leave, you find the remainder of the night restful.\n\nNo effect.\n\nOTHERWISE: A group of irate Inox appears at the edge of your campsite. They claim you are trespassing and force you to pack up and leave. You walk through the rest of the night and arrive at your destination tired.\n\nDiscard 2 cards each.',
       imageUrl: '/assets/cards/events/base/road/re-34-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-34-f.png',
@@ -2449,7 +2449,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Find another way to your destination.',
       outcome:
-        'The wood is large and you spend a little more lime than you d like trying to get around it. With enough effort, you arrive at your destination just a little bit more tired than you d like. Discard 1 card each.',
+        'The wood is large and you spend a little more lime than you d like trying to get around it. With enough effort, you arrive at your destination just a little bit more tired than you d like.\n\nDiscard 1 card each.',
       imageUrl: '/assets/cards/events/base/road/re-36-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-36-f.png',
@@ -2485,7 +2485,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Head off into the forest to find out what happened.',
       outcome:
-        '^ ^ W, You are able to track the trail with ease. It leads to a couple of priests, bloody and unconscious, but still alive. You revive them and bring them back to the main road. They are very grate fullH\tI.\n\nGain 1 prosperity.\n\nOTHERWISE: You try to follow the trail, but end up getting turned around and lost. Then you have an incredibly difficult and painful way back out. Discard 1 card each. time just finding your.\n\nLose 1 {Check} each.',
+        '^ ^ W, You are able to track the trail with ease. It leads to a couple of priests, bloody and unconscious, but still alive. You revive them and bring them back to the main road. They are very grate fullH\tI.\n\nGain 1 prosperity.\n\nOTHERWISE: You try to follow the trail, but end up getting turned around and lost. Then you have an incredibly difficult and painful way back out.\n\nDiscard 1 card each. time just finding your.\n\nLose 1 {Check} each.',
       imageUrl: '/assets/cards/events/base/road/re-38-b-a.png',
     },
     optionB: {
@@ -2533,7 +2533,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Head downriver and find a better place to cross.',
       outcome:
-        'It takes an hour, but you finally find a rocky area where the river has been diverted into many smaller streams. It is no problem to cross, but just finding the spot and then getting back on track takes some of the fire out or you. Discard 2 cards each.',
+        'It takes an hour, but you finally find a rocky area where the river has been diverted into many smaller streams. It is no problem to cross, but just finding the spot and then getting back on track takes some of the fire out or you.\n\nDiscard 2 cards each.',
       imageUrl: '/assets/cards/events/base/road/re-40-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-40-f.png',
@@ -2569,7 +2569,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Agree to travel with the Brute for a little while. So what if its in the wrong direction?',
       outcome:
-        '1 As you walk with the Brute and talk with him about your early adventuring days, you find a hint of sadness behind his enthusiasm. He explains how he fell on hard times after leaving the group and had to resort to jobs like this to make ends meet. The Brute seems uplifted by your conversation, but the day grows late. By the time you head baek and arrive at your destination, you are incredibly tired[ Discard 3 cards each.',
+        '1 As you walk with the Brute and talk with him about your early adventuring days, you find a hint of sadness behind his enthusiasm. He explains how he fell on hard times after leaving the group and had to resort to jobs like this to make ends meet. The Brute seems uplifted by your conversation, but the day grows late. By the time you head baek and arrive at your destination, you are incredibly tired.\n\nDiscard 3 cards each.',
       imageUrl: '/assets/cards/events/base/road/re-42-b-a.png',
     },
     optionB: {
@@ -2743,7 +2743,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Investigate the area and get to the bottom of this.',
       outcome:
-        'You spend a good hour looking over (he area, scouring every bush dm! divot you can find. Unfortunately, you find no other clues about what happened here and end up fust tiring yourself out. Discard 2 cards each. Read outcome A. L A',
+        'You spend a good hour looking over (he area, scouring every bush dm! divot you can find. Unfortunately, you find no other clues about what happened here and end up fust tiring yourself out.\n\nDiscard 2 cards each. Read outcome A.',
       imageUrl: '/assets/cards/events/base/road/re-50-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-50-f.png',
@@ -2890,7 +2890,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Downplay your struggle and politely decline the Savvass offer.',
       outcome:
-        "“Aht l seet ° the Savvas says. “You'd rather grow from an experience than take the easy way out. A noble path.* The Savvas slaps you on the back. 'Well, get to it, then! It s just fog after all. You'll survive.\" Discard 2 cards each. Add Road Event 63 to the deck.",
+        "“Aht l seet ° the Savvas says. “You'd rather grow from an experience than take the easy way out. A noble path.* The Savvas slaps you on the back. 'Well, get to it, then! It s just fog after all. You'll survive.\"\n\nDiscard 2 cards each. Add Road Event 63 to the deck.",
       imageUrl: '/assets/cards/events/base/road/re-57-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-57-f.png',
@@ -2911,7 +2911,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Find your own way through the forest.',
       outcome:
-        'Not willing to trusta wild animal, you ref use to go in the same direction as the wolf and continue down an ill-fated path of your own choosing. It doesn t go well, and by the time you emerge from the dense forest and find your bearings, you are exhausted. Discard 3 cards each.',
+        'Not willing to trusta wild animal, you ref use to go in the same direction as the wolf and continue down an ill-fated path of your own choosing. It doesn t go well, and by the time you emerge from the dense forest and find your bearings, you are exhausted.\n\nDiscard 3 cards each.',
       imageUrl: '/assets/cards/events/base/road/re-58-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-58-f.png',
@@ -2932,7 +2932,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Use whatever you can to burn a path through the swarm.',
       outcome:
-        'It takes a monumental effort, but you are eventually able to disperse the cloud of insects enough to run through to the other side. As you do so, ho we vcr. you hear an odd voice among the buzzing, cursing you for your violent actions.  Discard 2 cards each.\n\nAll start scenario with {Curse}.',
+        'It takes a monumental effort, but you are eventually able to disperse the cloud of insects enough to run through to the other side. As you do so, ho we vcr. you hear an odd voice among the buzzing, cursing you for your violent actions.\n\nDiscard 2 cards each.\n\nAll start scenario with {Curse}.',
       imageUrl: '/assets/cards/events/base/road/re-59-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-59-f.png',
@@ -3031,13 +3031,13 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Investigate further.',
       outcome:
-        'Against your better judgment; you approach the skull[ which looks suspiciously like the Sin-Ras calling cardl Sure enough, a group of dark-clad warriors appears before you from out of thin air. Wordlessly they draw their long, curved blades and attack* Caught by surprise, you don t fare well in the battle. You do fight them off, but in the end[ you are severely woundedexhausted, and demoralized.\n\nLose 1 {Check} each. Discard 4 cards each.\n\nAll start scenario with 4 damage.',
+        'Against your better judgment; you approach the skull[ which looks suspiciously like the Sin-Ras calling cardl Sure enough, a group of dark-clad warriors appears before you from out of thin air. Wordlessly they draw their long, curved blades and attack* Caught by surprise, you don t fare well in the battle. You do fight them off, but in the end[ you are severely woundedexhausted, and demoralized.\n\nLose 1 {Check} each.\n\nDiscard 4 cards each.\n\nAll start scenario with 4 damage.',
       imageUrl: '/assets/cards/events/base/road/re-64-b-a.png',
     },
     optionB: {
       choice: 'Arm yourself and make a defensive retreat from the area.',
       outcome:
-        "Recognizing the pike as a symbol of the Sin-Ra Syndicate, you arm yourself and run from the area. Unfortunately you don't make it far before you see a number of black-clad assassins bearing down on you. You move into a defensive position and prepare for battle. The fight is arduous, but in the end[ the assassins are dead[ and you hope they don t come back.\n\nLose 1 {Check} each. Discard 2 cards each.\n\nAll start scenario with 2 damage.",
+        "Recognizing the pike as a symbol of the Sin-Ra Syndicate, you arm yourself and run from the area. Unfortunately you don't make it far before you see a number of black-clad assassins bearing down on you. You move into a defensive position and prepare for battle. The fight is arduous, but in the end[ the assassins are dead[ and you hope they don t come back.\n\nLose 1 {Check} each.\n\nDiscard 2 cards each.\n\nAll start scenario with 2 damage.",
       imageUrl: '/assets/cards/events/base/road/re-64-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-64-f.png',
