@@ -2197,7 +2197,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Ignore the Shamans ramblings.',
       outcome:
-        'You brush off the plight of the Inox tribe, but as you continue to your destination, you begin to feel a certain amount of uncase. There is a slight tremble in the soles of your feet, and, in the distance, the black cloud of smoke grows. Unlock “Burning Mountain" (M-6).',
+        'You brush off the plight of the Inox tribe, but as you continue to your destination, you begin to feel a certain amount of uncase. There is a slight tremble in the soles of your feet, and, in the distance, the black cloud of smoke grows.\n\nUnlock "Burning Mountain" (M-6).',
       imageUrl: '/assets/cards/events/base/road/re-24-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-24-f.png',
