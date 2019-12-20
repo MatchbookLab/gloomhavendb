@@ -1813,7 +1813,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Take the opportunity to run from the bear before it gets any closer.',
       outcome:
-        'You holt from hiding as fast as you can. Luckily the hear was still a ways off, and it gets bored with the chase before it can catch you. Still, you keep running and running until you can\'t catch your breath.',
+        'You bolt from hiding as fast as you can. Luckily the hear was still a ways off, and it gets bored with the chase before it can catch you. Still, you keep running and running until you can\'t catch your breath.',
       imageUrl: '/assets/cards/events/base/road/re-06-b-a.png',
     },
     optionB: {
