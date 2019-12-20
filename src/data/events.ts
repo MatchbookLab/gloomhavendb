@@ -2019,7 +2019,7 @@ export const events: EventEntity[] = [
     type: EventType.Road,
     number: 16,
     text:
-      "The route to your destination is less direct than you had hoped, and you end up taking a shortcut through a small forest.\n\nThere you happen upon a family of deer. They are still a ways off in the distance and haven't noticed you.\n\nYou approach cautiously",
+      "The route to your destination is less direct than you had hoped, and you end up taking a shortcut through a small forest.\n\nThere you happen upon a family of deer. They are still a ways off in the distance and haven't noticed you.\n\nYou approach cautiously.",
     optionA: {
       choice: 'Shoot at one of the deer.',
       outcome:
