@@ -1945,7 +1945,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Take the puppy and bring it back to Gloomhaven.',
       outcome:
-        'You sigh and lift the puppy into your arms. It barks happily and licks your face. This will surely prove a distraction in your upcoming battle, but once you get back to Gloomhaven, you should be able to find it a nice home. One starts scenario with {MinusOneAttackModifier}x3.\n\nGain 1 reputation.',
+        'You sigh and lift the puppy into your arms. It barks happily and licks your face. This will surely prove a distraction in your upcoming battle, but once you get back to Gloomhaven, you should be able to find it a nice home.\n\nOne starts scenario with {MinusOneAttackModifier}x3.\n\nGain 1 reputation.',
       imageUrl: '/assets/cards/events/base/road/re-12-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-12-f.png',
