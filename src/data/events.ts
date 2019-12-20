@@ -2128,7 +2128,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Keep moving forward.',
       outcome:
-        "By the time you see the flames, it is too late. A great forest fire is raging around you. You try to run, but you don't make it out of the blaze without serious injuries and smoke inhalation.\n\nAll start scenario with {Wound}\n\nAll start scenario with 3 damage.\n\nLose 1 {Check} each.",
+        "By the time you see the flames, it is too late. A great forest fire is raging around you. You try to run, but you don't make it out of the blaze without serious injuries and smoke inhalation.\n\nAll start scenario with {Wound}.\n\nAll start scenario with 3 damage.\n\nLose 1 {Check} each.",
       imageUrl: '/assets/cards/events/base/road/re-21-b-a.png',
     },
     optionB: {
