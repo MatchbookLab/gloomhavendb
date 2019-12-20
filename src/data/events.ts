@@ -459,7 +459,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Leave the criminal element alone and continue enjoying the show.',
       outcome:
-        'The music is too good to be interrupted You ignore the men in the back and simply have a great time.\n\nGain 1 {Check} each.',
+        'The music is too good to be interrupted. You ignore the men in the back and simply have a great time.\n\nGain 1 {Check} each.',
       imageUrl: '/assets/cards/events/base/city/ce-22-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-22-f.png',
