@@ -1798,7 +1798,7 @@ export const events: EventEntity[] = [
     },
     optionB: {
       choice: 'Help the humans fight off the Inox.',
-      outcome: 'With your arrival, the Inox retreat back into the woods, one of them casting hexes as he flees.\n\n"Blast it all." one of the guards says. "Patrol duty is the absolute worst. No matter what we tell those savages, they\'re convinced were going to take over their forest. Anyway, thanks for your help. I thought we were done for"\n\nAll start scenario with {Curse}\n\n.Gain 1 reputation.',
+      outcome: 'With your arrival, the Inox retreat back into the woods, one of them casting hexes as he flees.\n\n"Blast it all." one of the guards says. "Patrol duty is the absolute worst. No matter what we tell those savages, they\'re convinced were going to take over their forest. Anyway, thanks for your help. I thought we were done for"\n\nAll start scenario with {Curse}.\n\nGain 1 reputation.',
       imageUrl: '/assets/cards/events/base/road/re-05-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-05-f.png',
