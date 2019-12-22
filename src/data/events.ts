@@ -1876,7 +1876,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Help out the guard.',
       outcome:
-        'You happily oblige the request; letting the man partake of some of your supplies. He slowly stands up, thanks you, and then heads toward Gloomhaven as you head in the opposite direction.\n\nConsume 1 collective item.',
+        'You happily oblige the request; letting the man partake of some of your supplies. He slowly stands up, thanks you, and then heads toward Gloomhaven as you head in the opposite direction.\n\nConsume 1 collective {SmallItem} item.',
       imageUrl: '/assets/cards/events/base/road/re-09-b-a.png',
     },
     optionB: {
