@@ -1918,7 +1918,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Try to find a clearing where you can avoid the falling rocks.',
       outcome:
-        'You race forward, scanning the area for an open space where the danger from rock slides will be less severe. After dodging some rocks and getting hit by others, you find a relatively safe area and wait for the chaos to subside.\n\All start scenario with 2 damage.',
+        'You race forward, scanning the area for an open space where the danger from rock slides will be less severe. After dodging some rocks and getting hit by others, you find a relatively safe area and wait for the chaos to subside.\n\nAll start scenario with 2 damage.',
       imageUrl: '/assets/cards/events/base/road/re-11-b-a.png',
     },
     optionB: {
