@@ -2191,13 +2191,13 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Aid the Inox with what they are carrying.',
       outcome:
-        'You take pity on the disheveled group of Inox, forced from their home by a natural disaster. You travel with them fora time, treating their wounds and helping to lighten their loads.\n\nThe Shaman thanks you and hands you an amulet. "We can\'t return to our homes until the beast rests. I fear what this may mean for us all. I hope this keeps you safe."\n\nGain 10 collective gold.\n\nDiscard 2 cards each.\n\nUnlock "Burning Mountain" (M-6).',
+        'You take pity on the disheveled group of Inox, forced from their home by a natural disaster. You travel with them fora time, treating their wounds and helping to lighten their loads.\n\nThe Shaman thanks you and hands you an amulet. "We can\'t return to our homes until the beast rests. I fear what this may mean for us all. I hope this keeps you safe."\n\nGain 10 collective gold.\n\nDiscard 2 cards each.\n\nUnlock "Burning Mountain" 82 (M-6).',
       imageUrl: '/assets/cards/events/base/road/re-24-b-a.png',
     },
     optionB: {
       choice: 'Ignore the Shamans ramblings.',
       outcome:
-        'You brush off the plight of the Inox tribe, but as you continue to your destination, you begin to feel a certain amount of uncase. There is a slight tremble in the soles of your feet, and, in the distance, the black cloud of smoke grows.\n\nUnlock "Burning Mountain" (M-6).',
+        'You brush off the plight of the Inox tribe, but as you continue to your destination, you begin to feel a certain amount of uncase. There is a slight tremble in the soles of your feet, and, in the distance, the black cloud of smoke grows.\n\nUnlock "Burning Mountain" 82 (M-6).',
       imageUrl: '/assets/cards/events/base/road/re-24-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-24-f.png',
