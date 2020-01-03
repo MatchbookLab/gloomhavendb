@@ -2565,11 +2565,11 @@ export const events: EventEntity[] = [
     type: EventType.Road,
     number: 42,
     text:
-      'At the sight of you, the Brute lights up and gives you a big wave, then rushes over to greet you. He is positively joyful to see you and immediately starts to reminisce about all the exciting battles you fought together Slapping you on the back, he implores you to travel with the caravan fora while to give you all a chance to catch up. ^ — JJW i\t^ vw*\t* HI • - +4* W',
+      'A trade caravan passes by you on the road. This event isn\'t too uncommon, but what catches your eye is a familiar-looking Inox traveliing with the caravan as a guard.\n\nAt the sight of you, the Brute lights up and gives you a big wave, then rushes over to greet you. He is positively joyful to see you and immediately starts to reminisce about all the exciting battles you fought together.\n\nSlapping you on the back, he implores you to travel with the caravan for a while to give you all a chance to catch up.',
     optionA: {
-      choice: 'Agree to travel with the Brute for a little while. So what if its in the wrong direction?',
+      choice: 'Agree to travel with the Brute for a little while. So what if it\'s in the wrong direction?',
       outcome:
-        '1 As you walk with the Brute and talk with him about your early adventuring days, you find a hint of sadness behind his enthusiasm. He explains how he fell on hard times after leaving the group and had to resort to jobs like this to make ends meet. The Brute seems uplifted by your conversation, but the day grows late. By the time you head baek and arrive at your destination, you are incredibly tired.\n\nDiscard 3 cards each.',
+        'As you walk with the Brute and talk with him about your early adventuring days, you find a hint of sadness behind his enthusiasm. He explains how he fell on hard times after leaving the group and had to resort to jobs like this to make ends meet. The Brute seems uplifted by your conversation, but the day grows late. By the time you head back and arrive at your destination, you are incredibly tired.\n\nDiscard 3 cards each.',
       imageUrl: '/assets/cards/events/base/road/re-42-b-a.png',
     },
     optionB: {
