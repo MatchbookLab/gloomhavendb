@@ -2397,17 +2397,17 @@ export const events: EventEntity[] = [
     type: EventType.Road,
     number: 34,
     text:
-      'Your travels leave you out in the wilderness overnight, so you make camp and start a fire. It s hard to sleep outside of the comfort of the cityf always on guard, looking For the next fatal threat, Luckily the night proves fairly dull That is. until you hear the sound of voices approaching your camp. They are faint and low almost like growling, but you can hear indications of language.',
+      'Your travels leave you out in the wilderness overnight, so you make camp and start a fire.\n\nIt\'s hard to sleep outside of the comfort of the city, always on guard, looking for the next fatal threat. Luckily the night proves fairly dull. That is, until you hear the sound of voices approaching your camp.\n\nThey are faint and low — almost like growling, but you can hear indications of language.',
     optionA: {
       choice: 'Quickly put out the fire and sneak out into the brush to get a look.',
       outcome:
-        '«D : Your stealth skills prove sufficient enough to remain unnoticed by a large group oflnox. You decide to let them pass by without incident.\n\nNo effect.\n\nOTHERWISE: You attempt to hide and stay quiet, but a snapped twig at an unfortunate moment startles the passing band of inox, and they pull out weapons and attack. The scene turns bloody, and you are barely able fight them off.\n\nAll start scenario with 4 damage.',
+        '{Scoundrel} {Mindthief} {Eclipse}: Your stealth skills prove sufficient enough to remain unnoticed by a large group of Inox. You decide to let them pass by without incident.\n\nNo effect.\n\nOTHERWISE: You attempt to hide and stay quiet, but a snapped twig at an unfortunate moment startles the passing band of inox, and they pull out weapons and attack. The scene turns bloody, and you are barely able fight them off.\n\nAll start scenario with 4 damage.',
       imageUrl: '/assets/cards/events/base/road/re-34-b-a.png',
     },
     optionB: {
       choice: 'Wait by the fire for whatever comes.',
       outcome:
-        'Sw\t: A group of Inox appears at the edge of your campsite. Seeing their kind among you, they greet you in a friendly manner and stay for some time to talk. After they leave, you find the remainder of the night restful.\n\nNo effect.\n\nOTHERWISE: A group of irate Inox appears at the edge of your campsite. They claim you are trespassing and force you to pack up and leave. You walk through the rest of the night and arrive at your destination tired.\n\nDiscard 2 cards each.',
+        '{Brute} {LightningBolts}: A group of Inox appears at the edge of your campsite. Seeing their kind among you, they greet you in a friendly manner and stay for some time to talk. After they leave, you find the remainder of the night restful.\n\nNo effect.\n\nOTHERWISE: A group of irate Inox appears at the edge of your campsite. They claim you are trespassing and force you to pack up and leave. You walk through the rest of the night and arrive at your destination tired.\n\nDiscard 2 cards each.',
       imageUrl: '/assets/cards/events/base/road/re-34-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-34-f.png',
