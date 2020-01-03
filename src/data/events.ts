@@ -2502,17 +2502,17 @@ export const events: EventEntity[] = [
     type: EventType.Road,
     number: 39,
     text:
-      "You see movement in the tall grass to your left, am! a weak voice calls out. Help... me...please. „ You approach the stirring to see a Valrath man writhing on the ground[ his skin covered in boils and pus-filled sores. -The sickness burns...' he moans at you. *Please... help... *",
+      "You see movement in the tall grass to your left, and a weak voice calls out.\n\n\"Help... me...please...\"\n\nYou approach the stirring to see a Valrath man writhing on the ground, his skin covered in boils and pus-filled sores.\n\n\"The sickness burns...\" he moans at you. \"Please... help...\"",
     optionA: {
       choice: 'Help the poor Valrath.',
       outcome:
-        'The Sawbones knows exactly what to do, covering his hands and face as he cleans the wounds. After an hour of tending to him, the Valrath seems good enough to travell.\n\nGain 1 reputation.\n\nOTHERWISE: Yon help the Valrath as best you can, but it takes many supplies and potions. When he finally looks better, you realize you are starting to feel sick as a result.\n\nAll start scenario with {Poison}.\n\nLose 10 collective gold.\n\nGain 1 reputation.',
+        '{Saw}: The Sawbones knows exactly what to do, covering his hands and face as he cleans the wounds. After an hour of tending to him, the Valrath seems good enough to travel.\n\nGain 1 reputation.\n\nOTHERWISE: You help the Valrath as best you can, but it takes many supplies and potions. When he finally looks better, you realize you are starting to feel sick as a result.\n\nAll start scenario with {Poison}.\n\nLose 10 collective gold.\n\nGain 1 reputation.',
       imageUrl: '/assets/cards/events/base/road/re-39-b-a.png',
     },
     optionB: {
       choice: 'This is clearly some sort of plague. Avoid it at all costs.',
       outcome:
-        'You recoil in terror and quickly move along. You can hear the Valrath sobbing as you do so, but you kno w well enough to avoid a plague when you see it.\n\nNo effect.',
+        'You recoil in terror and quickly move along. You can hear the Valrath sobbing as you do so, but you know well enough to avoid a plague when you see it.\n\nNo effect.',
       imageUrl: '/assets/cards/events/base/road/re-39-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-39-f.png',
