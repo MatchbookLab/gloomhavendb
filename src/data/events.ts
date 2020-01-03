@@ -933,17 +933,17 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 45,
     text:
-      'You there! Stop! You turn to see a city guard walking briskly toward you. ")ou are known associates of this woman, yes?" He holds up a crude sketch of the Scoundrel. "We believe she is behind a number of high profile robberies and demand (hat you give us any information you have on her whereabouts and activities.” His face softens a bit. Look. / know you guys do a lot of good for the city, but the merchant guild is breathing down my neck on this one, and I could really use a lead." £ ag, "\tT.\t,\ti\t- A; V;',
+      '"You there! Stop!"\n\nYou turn to see a city guard walking briskly toward you.\n\n"You are known associates of this woman, yes?" He holds up a crude sketch of the Scoundrel. "We believe she is behind a number of high profile robberies and demand that you give us any information you have on her whereabouts and activities."\n\nHis face softens a bit. Look, I know you guys do a lot of good for the city, but the merchant guild is breathing down my neck on this one, and I could really use a lead."',
     optionA: {
       choice: 'Cooperate with the guard and tell him everything you know.',
       outcome:
-        'The guard taps his notes with a smile on his • lace, "This is great, he says. 7 understand that you haven\'t seen her in a while, but the information you\'ve provided should still be useful. Have a nice day!" ^ . «\n\nGain 1 reputation.',
+        'The guard taps his notes with a smile on his face/\n\n"This is great," he says. "I understand that you haven\'t seen her in a while, but the information you\'ve provided should still be useful. Have a nice day!"\n\nGain 1 reputation.',
       imageUrl: '/assets/cards/events/base/city/ce-45-b-a.png',
     },
     optionB: {
       choice: 'Be as vague and unhelpful as possible, giving no useful information.',
       outcome:
-        'fhe guard scratches his head and looks down at his notes. "Well, that wasn\'t very helpful." he sighs. But thanks lor your time, I guess. Let me know if you remember anything or get any new information."\n\nAdd City Event 62 to the deck.',
+        'The guard scratches his head and looks down at his notes.\n\n"Well, that wasn\'t very helpful." he sighs. But thanks lor your time, I guess. Let me know if you remember anything or get any new information."\n\nAdd City Event 62 to the deck.',
       imageUrl: '/assets/cards/events/base/city/ce-45-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-45-f.png',
