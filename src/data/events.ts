@@ -827,18 +827,18 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 40,
     text:
-      'You are shopping for supplies in the Boilers District when an intense explosion knocks you off your feet You look in the direction of the heat waves to see plumes of fire and smoke rising from a building less than a block a way, The fire rages uncontrollably and there are many wounded residents laying near the blast, screaming in pain. You also spot something else — a hooded figure in a dark robe fleeing from the scene.',
+      'You are shopping for supplies in the Boiler\'s District when an intense explosion knocks you off your feet. You look in the direction of the heat waves to see plumes of fire and smoke rising from a building less than a block a way.\n\nThe fire rages uncontrollably and there are many wounded residents laying near the blast, screaming in pain.\n\nYou also spot something else — a hooded figure in a dark robe fleeing from the scene.',
     optionA: {
       choice:
-        'Rush to the aid of the residents and help put out the fire. Bv Bff ~ *T MJLJ\tm « V -\t|\t■ ■\t^\tI. -\t|',
+        'Rush to the aid of the residents and help put out the fire.',
       outcome:
-        "; Some ofyour group immediately begin to tend to the wounded, bandaging cuts and administering potions.\n\nGain 2 reputation. #\t(ygj); Some of your group begin to controfthe fire and snulf it with their elemental prowess, preventing further damage.\n\nGain 1 prosperity.\n\nOTHERWISE: You do your best, but without the proper skills, it isn't much. No etleet.",
+        "{Tinkerer} {Saw} {Sun}: Some of your group immediately begin to tend to the wounded, bandaging cuts and administering potions.\n\nGain 2 reputation.\n\n{Spellweaver} {Triangles} {Circles}: Some of your group begin to controfthe fire and snuff it with their elemental prowess, preventing further damage.\n\nGain 1 prosperity.\n\nOTHERWISE: You do your best, but without the proper skills, it isn't much.\n\nNo effect.",
       imageUrl: '/assets/cards/events/base/city/ce-40-b-a.png',
     },
     optionB: {
       choice: 'Pursue the hooded figure and make him answer for this attack.',
       outcome:
-        'You jump to your feet and sprint as fast as you can in pursuit. The figure races toward the city wall and begins to climb the stairs. You close the gap. But look on in frustration as he moves to jump over the wall and out of the city. You lunge and grab his robe as be falls. His body twists awkwardly, freeing him of the robe. You look over the edge to see him land face-first on the ground and not get up.\n\nGain 1 collective "Sacrificial Robes” (Item 102).\n\nGain 1 reputation.',
+        'You jump to your feet and sprint as fast as you can in pursuit. The figure races toward the city wall and begins to climb the stairs. You close the gap, but look on in frustration as he moves to jump over the wall and out of the city. You lunge and grab his robe as be falls. His body twists awkwardly, freeing him of the robe. You look over the edge to see him land face-first on the ground and not get up.\n\nGain 1 collective "Sacrificial Robes" (Item 102).\n\nGain 1 reputation.',
       imageUrl: '/assets/cards/events/base/city/ce-40-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-40-f.png',
