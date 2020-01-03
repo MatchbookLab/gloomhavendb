@@ -264,7 +264,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Stop and try the food.',
       outcome:
-        'You decide to indulge in the unknown and see what the Quatryl is offering. He looks very pleased at your approach and instructs you to inhale a tube of vapors, then take a bite from a bowl full of tiny golden spheres. As the spheres melt in your mouth, the taste mixes with the aroma of the vapors to create a wonderful experience. You pay what you can, but the Quatryl seems solely focused on how much you enjoyed the meal.\n\nAll start scenario with BLESS {Bless}.\n\nLose 3 gold each.',
+        'You decide to indulge in the unknown and see what the Quatryl is offering. He looks very pleased at your approach and instructs you to inhale a tube of vapors, then take a bite from a bowl full of tiny golden spheres. As the spheres melt in your mouth, the taste mixes with the aroma of the vapors to create a wonderful experience. You pay what you can, but the Quatryl seems solely focused on how much you enjoyed the meal.\n\nAll start scenario with {Bless}.\n\nLose 3 gold each.',
       imageUrl: '/assets/cards/events/base/city/ce-13-b-a.png',
     },
     optionB: {
@@ -480,7 +480,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'The thief had the right idea. Grab some vegetables for yourself.',
       outcome:
-        'In an area cut off from civilization with no viable farmland, fresh vegetables are a rare commodity. The thief already made off with an armful so what\'s the harm in taking some more? When you get back to your room, you cook up a nice hearty soup and have a great meal.\n\nAll start scenario with BLESS {Bless}.',
+        'In an area cut off from civilization with no viable farmland, fresh vegetables are a rare commodity. The thief already made off with an armful so what\'s the harm in taking some more? When you get back to your room, you cook up a nice hearty soup and have a great meal.\n\nAll start scenario with {Bless}.',
       imageUrl: '/assets/cards/events/base/city/ce-23-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-23-f.png',
@@ -1000,7 +1000,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Begrudgingly pay For the note.',
       outcome:
-        "PAY 5 COLLECTIVE GOLD: You throw the kid a few coins and grab the note. Enclosed with the note is a small medallion engraved with the image of the sun. Apparently the Sunkeeper thinks the object may help you at some point in the future. The note doesn't say exactly how and the thing has no apparent use. You stow it away in your pack. Party Achievement: “Sun-Blessed.\n\nOTHERWISE: You reach into your pocket to pay the kid. but come up empty-handed. He slinks off in indignation.\n\nNo eflect.",
+        "PAY5 COLLECTIVE GOLD: You throw the kid a few coins and grab the note. Enclosed with the note is a small medallion engraved with the image of the sun. Apparently the Sunkeeper thinks the object may help you at some point in the future. The note doesn't say exactly how and the thing has no apparent use. You stow it away in your pack. Party Achievement: “Sun-Blessed.\n\nOTHERWISE: You reach into your pocket to pay the kid. but come up empty-handed. He slinks off in indignation.\n\nNo eflect.",
       imageUrl: '/assets/cards/events/base/city/ce-48-b-a.png',
     },
     optionB: {
@@ -1553,7 +1553,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Visit the tamed fortune teller.',
       outcome:
-        'You enter the fortune-teller s tent and the old Orchid woman s expression immediately goes dark; She gestures you to sit at her tableT and when you do, she grabs your arm and looks deep into your eyes. *Your path is dark and cursed\\ There is a shadow around you — a Gloom. You must leave this place. Be rid of it before it con- sumes you* ml.\n\nAll start scenario with CURSE {Curse}.\n\nGain 2 experience each.',
+        'You enter the fortune-teller s tent and the old Orchid woman s expression immediately goes dark; She gestures you to sit at her tableT and when you do, she grabs your arm and looks deep into your eyes. *Your path is dark and cursed\\ There is a shadow around you — a Gloom. You must leave this place. Be rid of it before it con- sumes you* ml.\n\nAll start scenario with {Curse}.\n\nGain 2 experience each.',
       imageUrl: '/assets/cards/events/base/city/ce-74-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-74-f.png',
@@ -1715,7 +1715,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Run from the howling to safety.',
       outcome:
-        'You pick up and run as fast as you can through the underbrush and away from the ominous sounds. They seem to be receding as you stumble headlong into some sort of thicket filled with sticky spines.\n\nYou pull yourself out, but not before your skin is pierced in numerous places and becomes inflamed. Best to avoid this plant in the future.\n\nAll start scenario with POISON {Poison}.',
+        'You pick up and run as fast as you can through the underbrush and away from the ominous sounds. They seem to be receding as you stumble headlong into some sort of thicket filled with sticky spines.\n\nYou pull yourself out, but not before your skin is pierced in numerous places and becomes inflamed. Best to avoid this plant in the future.\n\nAll start scenario with {Poison}.',
       imageUrl: '/assets/cards/events/base/road/re-01-b-a.png',
     },
     optionB: {
@@ -1736,7 +1736,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Eat the berries.',
       outcome:
-        "You shrug and grab a handful of berries to stuff in your mouth, they are incredibly sweet and just the right amount of tart. You couldn't feel better about your decision.\n\nAll start scenario with BLESS {Bless}.",
+        "You shrug and grab a handful of berries to stuff in your mouth, they are incredibly sweet and just the right amount of tart. You couldn't feel better about your decision.\n\nAll start scenario with {Bless}.",
       imageUrl: '/assets/cards/events/base/road/re-02-b-a.png',
     },
     optionB: {
@@ -1755,7 +1755,7 @@ export const events: EventEntity[] = [
     text: 'You are feeling a tad hungry as you walk down the road. You are considering stopping for a meal when you come across a thicket of bushes covered in green berries.\n\nThe berries look delicious, but you hesitate. They could be poisonous.',
     optionA: {
       choice: 'Eat the berries.',
-      outcome: 'You shrug and grab a handful of berries to stuff in your mouth, they are incredibly sweet and just the right amount of tart. You couldn\'t feel better about your decision. That is, until you start vomiting. Your stomach is incredibly unhappy with you, and the situation doesn\'t improve much by the time you arrive at your destination.\n\nAll start scenario with POISON {Poison}.',
+      outcome: 'You shrug and grab a handful of berries to stuff in your mouth, they are incredibly sweet and just the right amount of tart. You couldn\'t feel better about your decision. That is, until you start vomiting. Your stomach is incredibly unhappy with you, and the situation doesn\'t improve much by the time you arrive at your destination.\n\nAll start scenario with {Poison}.',
       imageUrl: '/assets/cards/events/base/road/re-03-b-a.png',
     },
     optionB: {
@@ -1798,7 +1798,7 @@ export const events: EventEntity[] = [
     },
     optionB: {
       choice: 'Help the humans fight off the Inox.',
-      outcome: 'With your arrival, the Inox retreat back into the woods, one of them casting hexes as he flees.\n\n"Blast it all." one of the guards says. "Patrol duty is the absolute worst. No matter what we tell those savages, they\'re convinced were going to take over their forest. Anyway, thanks for your help. I thought we were done for"\n\nAll start scenario with CURSE {Curse}.\n\nGain 1 reputation.',
+      outcome: 'With your arrival, the Inox retreat back into the woods, one of them casting hexes as he flees.\n\n"Blast it all." one of the guards says. "Patrol duty is the absolute worst. No matter what we tell those savages, they\'re convinced were going to take over their forest. Anyway, thanks for your help. I thought we were done for"\n\nAll start scenario with {Curse}.\n\nGain 1 reputation.',
       imageUrl: '/assets/cards/events/base/road/re-05-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-05-f.png',
@@ -1819,7 +1819,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Attack the bear, hopefully catching it by surprise.',
       outcome:
-        'The bear roars as you approach, making powerful swipes with its claws. Still, with the surprise and the commotion, the bear is not all that committed to the fight. After a bit of back and forth, the animal grunts and runs off into the trees.\n\nAll start scenario with WOUND {Wound}.',
+        'The bear roars as you approach, making powerful swipes with its claws. Still, with the surprise and the commotion, the bear is not all that committed to the fight. After a bit of back and forth, the animal grunts and runs off into the trees.\n\nAll start scenario with {Wound}.',
       imageUrl: '/assets/cards/events/base/road/re-06-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-06-f.png',
@@ -1966,7 +1966,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Attempt to calm down the hermit and resolve the situation peacefully.',
       outcome:
-        'You grab the broom handle and wrestle the old man to the ground, attempting to restrain bis flailing limbs. You try to explain that this is all a misunderstanding, but he just keeps warning you not to defecate on bis wives. The man is surprisingly agile and the stench of his rags also makes keeping him pinned difficult. He slips free and scrambles around for his broom handle, muttering about the "stars" gift. You run away with all haste, but his odor is much harder to escape.\n\nAll start scenario with CURSE {Curse}.',
+        'You grab the broom handle and wrestle the old man to the ground, attempting to restrain bis flailing limbs. You try to explain that this is all a misunderstanding, but he just keeps warning you not to defecate on bis wives. The man is surprisingly agile and the stench of his rags also makes keeping him pinned difficult. He slips free and scrambles around for his broom handle, muttering about the "stars" gift. You run away with all haste, but his odor is much harder to escape.\n\nAll start scenario with {Curse}.',
       imageUrl: '/assets/cards/events/base/road/re-13-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-13-f.png',
@@ -1981,7 +1981,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Shoot at the birds.',
       outcome:
-        'You pull back your bow and take aim. The arrow flies true and connects with one of the birds. You retrieve it, pluck it, cook it, and eat it. Definitely beats the field rations you carry with you.\n\nAll start scenario with BLESS {Bless}.',
+        'You pull back your bow and take aim. The arrow flies true and connects with one of the birds. You retrieve it, pluck it, cook it, and eat it. Definitely beats the field rations you carry with you.\n\nAll start scenario with {Bless}.',
       imageUrl: '/assets/cards/events/base/road/re-14-b-a.png',
     },
     optionB: {
@@ -2002,7 +2002,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Shoot at the birds.',
       outcome:
-        'You pull back your bow and take aim. The instant you loose the arrow, however you notice something odd about the birds. They are much farther away than you realized and much bigger. The arrow misses, but it gets their attention. As the flock turns and descends toward your you realize you just shot at a group of drakes. You run for cover among the trees, but are hit by their acidic spit a number of times in the process.\n\nAll start scenario with MUDDLE {Muddle}.\n\nAll start scenario with 2 damage.',
+        'You pull back your bow and take aim. The instant you loose the arrow, however you notice something odd about the birds. They are much farther away than you realized and much bigger. The arrow misses, but it gets their attention. As the flock turns and descends toward your you realize you just shot at a group of drakes. You run for cover among the trees, but are hit by their acidic spit a number of times in the process.\n\nAll start scenario with {Muddle}.\n\nAll start scenario with 2 damage.',
       imageUrl: '/assets/cards/events/base/road/re-15-b-a.png',
     },
     optionB: {
@@ -2023,13 +2023,13 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Shoot at one of the deer.',
       outcome:
-        'You notch your bow and take a few steps forward to find a better shooting position. Unfortunately, the deer notice your presence and bound off. You shoot a few arrows as they go, but nothing connects.\n\nThen an arrow flies out of the brush and into your shoulder. "Foul city-dwellers!" a voice cries out from the trees. "I had been stalking that herd for hours and you spooked them!" More arrows rain down as you run away.\n\nAll start scenario with CURSE {Curse}.\n\nAll start scenario with 2 damage.',
+        'You notch your bow and take a few steps forward to find a better shooting position. Unfortunately, the deer notice your presence and bound off. You shoot a few arrows as they go, but nothing connects.\n\nThen an arrow flies out of the brush and into your shoulder. "Foul city-dwellers!" a voice cries out from the trees. "I had been stalking that herd for hours and you spooked them!" More arrows rain down as you run away.\n\nAll start scenario with {Curse}.\n\nAll start scenario with 2 damage.',
       imageUrl: '/assets/cards/events/base/road/re-16-b-a.png',
     },
     optionB: {
       choice: 'Just watch the deer for a litte bit.',
       outcome:
-        'You are enjoying watching the animals graze when an arrow flies out and hits the larger of the deer in its center chest. It bolts away, but doesn\'t make it very far before collapsing. Then you see a large Inox emerge from the brush and turn toward you. "I thought you were going to do something stupid there for a second. Thanks for not scaring away my quarry. Allow me to share some of the spoils with you."\n\nAll start scenario with BLESS {Bless}.',
+        'You are enjoying watching the animals graze when an arrow flies out and hits the larger of the deer in its center chest. It bolts away, but doesn\'t make it very far before collapsing. Then you see a large Inox emerge from the brush and turn toward you. "I thought you were going to do something stupid there for a second. Thanks for not scaring away my quarry. Allow me to share some of the spoils with you."\n\nAll start scenario with {Bless}.',
       imageUrl: '/assets/cards/events/base/road/re-16-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-16-f.png',
@@ -2065,7 +2065,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Attempt to come to a peaceful resolution.',
       outcome:
-        'REPUTATION < -4: You begin to agree with the Inox that Gloomhaven is a blight on the land in need of cleansing, and the Inox seems to believe you. "Go in peace, then," the leader says. “And stay off my land."\n\nNo effect.\n\nOTHERWISE: You try to explain that you mean the Inox no ill will, but the leader eyes you skeptically. "Foul creature. I curse you and your kind! Run — get off my land and never come back!"\n\nAll start scenario with CURSE {Curse}.',
+        'REPUTATION < -4: You begin to agree with the Inox that Gloomhaven is a blight on the land in need of cleansing, and the Inox seems to believe you. "Go in peace, then," the leader says. “And stay off my land."\n\nNo effect.\n\nOTHERWISE: You try to explain that you mean the Inox no ill will, but the leader eyes you skeptically. "Foul creature. I curse you and your kind! Run — get off my land and never come back!"\n\nAll start scenario with {Curse}.',
       imageUrl: '/assets/cards/events/base/road/re-18-b-a.png',
     },
     optionB: {
@@ -2107,7 +2107,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'The song must serve some nefarious purpose. Attack the Vermlings.',
       outcome:
-        'You take the pack by surprise. Fully distracted by their ritual they don\'t even see you coming. The Vermlings still get in a few good attacks before they are slain, though.\n\nAll start scenario with POISON {Poison}.\n\nAll start scenario with 2 damage.',
+        'You take the pack by surprise. Fully distracted by their ritual they don\'t even see you coming. The Vermlings still get in a few good attacks before they are slain, though.\n\nAll start scenario with {Poison}.\n\nAll start scenario with 2 damage.',
       imageUrl: '/assets/cards/events/base/road/re-20-b-a.png',
     },
     optionB: {
@@ -2128,7 +2128,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Keep moving forward.',
       outcome:
-        "By the time you see the flames, it is too late. A great forest fire is raging around you. You try to run, but you don't make it out of the blaze without serious injuries and smoke inhalation.\n\nAll start scenario with WOUND {Wound}.\n\nAll start scenario with 3 damage.\n\nLose 1 {Check} each.",
+        "By the time you see the flames, it is too late. A great forest fire is raging around you. You try to run, but you don't make it out of the blaze without serious injuries and smoke inhalation.\n\nAll start scenario with {Wound}.\n\nAll start scenario with 3 damage.\n\nLose 1 {Check} each.",
       imageUrl: '/assets/cards/events/base/road/re-21-b-a.png',
     },
     optionB: {
@@ -2155,7 +2155,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Help push out the fortune-tellers wagon.',
       outcome:
-        'You take pity on an old Orchid woman trying to extricate her fortune-teller\'s wagon by herself. You help her get it back on the road, and then she grabs you and looks deep into your eyes.\n\n"Your path is dark and cursed. There is a shadow around you — a Gloom. You must leave this place. Be rid of it before it consumes you."\n\nGain 2 experience each.\n\nAll start scenario with CURSE {Curse}.',
+        'You take pity on an old Orchid woman trying to extricate her fortune-teller\'s wagon by herself. You help her get it back on the road, and then she grabs you and looks deep into your eyes.\n\n"Your path is dark and cursed. There is a shadow around you — a Gloom. You must leave this place. Be rid of it before it consumes you."\n\nGain 2 experience each.\n\nAll start scenario with {Curse}.',
       imageUrl: '/assets/cards/events/base/road/re-22-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-22-f.png',
@@ -2233,7 +2233,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Attempt to help the man with his axle problem.',
       outcome:
-        "{Tinkerer} {ThreeSpears}: The man talks the whole way through the process, but after an hour or so, the axle is repaired and the man leaves in a radiant mood, bestowing blessings upon you.\n\nAll start scenario with BLESS {Bless}.\n\nGain 1 reputation.\n\nOTHERWISE: You happily agree to help the man, but quickly realize you don't know what you are doing. The man thanks you anyway, and you move on.\n\nNo effect.",
+        "{Tinkerer} {ThreeSpears}: The man talks the whole way through the process, but after an hour or so, the axle is repaired and the man leaves in a radiant mood, bestowing blessings upon you.\n\nAll start scenario with {Bless}.\n\nGain 1 reputation.\n\nOTHERWISE: You happily agree to help the man, but quickly realize you don't know what you are doing. The man thanks you anyway, and you move on.\n\nNo effect.",
       imageUrl: '/assets/cards/events/base/road/re-26-b-a.png',
     },
     optionB: {
@@ -2302,7 +2302,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Backtrack and find a way around the stone-filled valley.',
       outcome:
-        "You sigh and turn around. After some backward progress, you find another path through the foothills and work your way through it. Unfortunately it leads you directly into a den of wolves, and they don't seem too happy about your sudden arrival. You fend them off, but they leave you wounded.\n\nAll start scenario with WOUND {Wound}.",
+        "You sigh and turn around. After some backward progress, you find another path through the foothills and work your way through it. Unfortunately it leads you directly into a den of wolves, and they don't seem too happy about your sudden arrival. You fend them off, but they leave you wounded.\n\nAll start scenario with {Wound}.",
       imageUrl: '/assets/cards/events/base/road/re-29-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-29-f.png',
@@ -2422,7 +2422,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Fight oft the men. This is highway robbery, whatever the motive.',
       outcome:
-        "{Cthulu}: The Plagueherald stretches out his arms and the men around him immediately double over in pain. You can almost sense it smiling, even though it doesn't have a face. The fight doesn't last long, especially once the men's wounds start bursting with maggots.\n\nAll start scenario with 1 damage.\n\nOTHERWISE: The men are weakened, but they are still hardened fighters. You fight them off, but it gets ugly.\n\nAll start scenario with POISON {Poison}.\n\nAll start scenario with 3 damage.",
+        "{Cthulu}: The Plagueherald stretches out his arms and the men around him immediately double over in pain. You can almost sense it smiling, even though it doesn't have a face. The fight doesn't last long, especially once the men's wounds start bursting with maggots.\n\nAll start scenario with 1 damage.\n\nOTHERWISE: The men are weakened, but they are still hardened fighters. You fight them off, but it gets ugly.\n\nAll start scenario with {Poison}.\n\nAll start scenario with 3 damage.",
       imageUrl: '/assets/cards/events/base/road/re-35-b-a.png',
     },
     optionB: {
@@ -2443,7 +2443,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Continue down the path into the wood. You are not afraid.',
       outcome:
-        "{LightningBolts} {TwoMinis} {PointyHead}: The wood is overgrown and rampant with all manner of insects, but with difficulty, you follow the path. Somewhere deep inside, you come across a stone pedestal with the following scratched into its base: {RuneR}{RuneE}{RuneC}{RuneO}{RuneR}{RuneD} {RuneT}{RuneH}{RuneE} {RuneP}{RuneA}{RuneG}{RuneE}, {RuneT}{RuneH}{RuneE} {RuneW}{RuneO}{RuneD}{RuneD}, {RuneA}{RuneN}{RuneD} {RuneT}{RuneH}{RuneE} {RuneL}{RuneR}{RuneT}{RuneT}{RuneE}{RuneR} - {Rune8}{Rune3}{Rune4}.\n\nOTHERWISE: You follow the path into the wood and become hopelessly lost. The going is hard and painful.\n\nAll start scenario with POISON {Poison}.\n\nAll start scenario with 2 damage.",
+        "{LightningBolts} {TwoMinis} {PointyHead}: The wood is overgrown and rampant with all manner of insects, but with difficulty, you follow the path. Somewhere deep inside, you come across a stone pedestal with the following scratched into its base: {RuneR}{RuneE}{RuneC}{RuneO}{RuneR}{RuneD} {RuneT}{RuneH}{RuneE} {RuneP}{RuneA}{RuneG}{RuneE}, {RuneT}{RuneH}{RuneE} {RuneW}{RuneO}{RuneD}{RuneD}, {RuneA}{RuneN}{RuneD} {RuneT}{RuneH}{RuneE} {RuneL}{RuneR}{RuneT}{RuneT}{RuneE}{RuneR} - {Rune8}{Rune3}{Rune4}.\n\nOTHERWISE: You follow the path into the wood and become hopelessly lost. The going is hard and painful.\n\nAll start scenario with {Poison}.\n\nAll start scenario with 2 damage.",
       imageUrl: '/assets/cards/events/base/road/re-36-b-a.png',
     },
     optionB: {
@@ -2470,7 +2470,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Wait out the storm under the outcropping',
       outcome:
-        'It is far from ideal, but the outcropping keeps you mostly dry and protects you from the howling wind. You wait hours and hours, huddled up under the rock until the storm passes. By the time you arrive at your destination, you are a bit slow on your feet due to lack of sleep.\n\nAll start scenario with DISARM {Disarm}.',
+        'It is far from ideal, but the outcropping keeps you mostly dry and protects you from the howling wind. You wait hours and hours, huddled up under the rock until the storm passes. By the time you arrive at your destination, you are a bit slow on your feet due to lack of sleep.\n\nAll start scenario with {Disarm}.',
       imageUrl: '/assets/cards/events/base/road/re-37-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-37-f.png',
@@ -2506,7 +2506,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Help the poor Valrath.',
       outcome:
-        '{Saw}: The Sawbones knows exactly what to do, covering his hands and face as he cleans the wounds. After an hour of tending to him, the Valrath seems good enough to travel.\n\nGain 1 reputation.\n\nOTHERWISE: You help the Valrath as best you can, but it takes many supplies and potions. When he finally looks better, you realize you are starting to feel sick as a result.\n\nAll start scenario with POISON {Poison}.\n\nLose 10 collective gold.\n\nGain 1 reputation.',
+        '{Saw}: The Sawbones knows exactly what to do, covering his hands and face as he cleans the wounds. After an hour of tending to him, the Valrath seems good enough to travel.\n\nGain 1 reputation.\n\nOTHERWISE: You help the Valrath as best you can, but it takes many supplies and potions. When he finally looks better, you realize you are starting to feel sick as a result.\n\nAll start scenario with {Poison}.\n\nLose 10 collective gold.\n\nGain 1 reputation.',
       imageUrl: '/assets/cards/events/base/road/re-39-b-a.png',
     },
     optionB: {
@@ -2527,7 +2527,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Ford the river where you are. It is not ideal, but it should be possible.',
       outcome:
-        '{Spellweaver} {Triangles} {Circles}: With the power of the elements on your side, crossing the river turns out to be incredibly easy. One frozen bridge later, you are on the other side and on your way.\n\nNo effect.\n\nOTHERWISE: The water is surprisingly cold, but it will take more than that to end your day. You are still water-logged and shivering when you reach your destination, however.\n\nAll start scenario with MUDDLE {Muddle}.\n\nAll start scenario with IMMOBILIZE {Immobilize}.',
+        '{Spellweaver} {Triangles} {Circles}: With the power of the elements on your side, crossing the river turns out to be incredibly easy. One frozen bridge later, you are on the other side and on your way.\n\nNo effect.\n\nOTHERWISE: The water is surprisingly cold, but it will take more than that to end your day. You are still water-logged and shivering when you reach your destination, however.\n\nAll start scenario with {Muddle}.\n\nAll start scenario with {Immobilize}.',
       imageUrl: '/assets/cards/events/base/road/re-40-b-a.png',
     },
     optionB: {
@@ -2548,7 +2548,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Attemp to calm the bear and back away slowly.',
       outcome:
-        '{TwoMinis}: The Beast Tyrant steps forward with his hand outstretched and makes a low humming sound. The bear stops mid-charge with a perplexed look. You leave the animal there and continue on your way unharmed.\n\nNo effect.\n\nOTHERWISE: Two seconds later, you can\'t help, but feel this was a terrible idea. The bear wounds you severely before you are able to arm yourself and fight it off.\n\nAll start scenario with WOUND {Wound}.\n\nAll start scenario with 3 damage.',
+        '{TwoMinis}: The Beast Tyrant steps forward with his hand outstretched and makes a low humming sound. The bear stops mid-charge with a perplexed look. You leave the animal there and continue on your way unharmed.\n\nNo effect.\n\nOTHERWISE: Two seconds later, you can\'t help, but feel this was a terrible idea. The bear wounds you severely before you are able to arm yourself and fight it off.\n\nAll start scenario with {Wound}.\n\nAll start scenario with 3 damage.',
       imageUrl: '/assets/cards/events/base/road/re-41-b-a.png',
     },
     optionB: {
@@ -2632,7 +2632,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Attack. Friend or not, those who prey on the weak should be brought to justice.',
       outcome:
-        'You see the bandits relax a little and begin to form up. That is when you strike. Some are scared off by the sudden attack, but others engage you hungrily. The Scoundrel throws a few good daggers, too, before she rides off, criticizing your poor decision-making.\n\nAll start scenario with POISON {Poison}.\n\nAll start scenario with 2 damage.',
+        'You see the bandits relax a little and begin to form up. That is when you strike. Some are scared off by the sudden attack, but others engage you hungrily. The Scoundrel throws a few good daggers, too, before she rides off, criticizing your poor decision-making.\n\nAll start scenario with {Poison}.\n\nAll start scenario with 2 damage.',
       imageUrl: '/assets/cards/events/base/road/re-45-b-a.png',
     },
     optionB: {
@@ -2680,7 +2680,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Kill the savage little beast.',
       outcome:
-        'You attack the Vermling anyway; despite his protests. It t urns out he wasn *t lying about his "brothers" nearby, though. As you wipe the blood from your blade, ten more of the little furry creatures jump out at youf brandishing small knives. They are not nearly as easy to dispatch.\n\nAll start scenario with POISON {Poison}.\n\nAll start scenario with 2 damage.',
+        'You attack the Vermling anyway; despite his protests. It t urns out he wasn *t lying about his "brothers" nearby, though. As you wipe the blood from your blade, ten more of the little furry creatures jump out at youf brandishing small knives. They are not nearly as easy to dispatch.\n\nAll start scenario with {Poison}.\n\nAll start scenario with 2 damage.',
       imageUrl: '/assets/cards/events/base/road/re-47-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-47-f.png',
@@ -2701,7 +2701,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Attack the demons. There are a lot of them, but you do not take kindly to threats.',
       outcome:
-        'Without even speaking, you draw your weapons and attack. The demons are caught off guard, but they bounce back with great ferocity, ft is a long, brutal battle, and you continue on in your adventure greatly wounded and bloody.\n\nAll start scenario with MUDDLE {Muddle}.\n\nAll start scenario with WOUND {Wound}.\n\nAll start scenario with 3 damage.',
+        'Without even speaking, you draw your weapons and attack. The demons are caught off guard, but they bounce back with great ferocity, ft is a long, brutal battle, and you continue on in your adventure greatly wounded and bloody.\n\nAll start scenario with {Muddle}.\n\nAll start scenario with {Wound}.\n\nAll start scenario with 3 damage.',
       imageUrl: '/assets/cards/events/base/road/re-48-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-48-f.png',
@@ -2785,7 +2785,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Inspect the corpses for valuables.',
       outcome:
-        'You rifle through the corpses, grabbing stray • coins and valuables as you go. You make off with a good haul, but you start feeling sick as soon as you re done.\n\nAll start scenario with POISON {Poison}.\n\nAll start scenario with CURSE {Curse}.\n\nGain 10 collective gold.',
+        'You rifle through the corpses, grabbing stray • coins and valuables as you go. You make off with a good haul, but you start feeling sick as soon as you re done.\n\nAll start scenario with {Poison}.\n\nAll start scenario with {Curse}.\n\nGain 10 collective gold.',
       imageUrl: '/assets/cards/events/base/road/re-52-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-52-f.png',
@@ -2848,7 +2848,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Take the overgrown path.',
       outcome:
-        'The trek through the overgrown path is unpleasant. You are constantly getting pricked by sharp thorns covered in a strange sap. You think you recognize them f rom a previous foray into harsh, unforgiving foliage. Sure enough, you start feeling sick pretty soon after you emerge from the bushes.\n\nAll start scenario with POISON {Poison}.',
+        'The trek through the overgrown path is unpleasant. You are constantly getting pricked by sharp thorns covered in a strange sap. You think you recognize them f rom a previous foray into harsh, unforgiving foliage. Sure enough, you start feeling sick pretty soon after you emerge from the bushes.\n\nAll start scenario with {Poison}.',
       imageUrl: '/assets/cards/events/base/road/re-55-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-55-f.png',
@@ -2926,13 +2926,13 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Cover yourself as best you can and try to walk through the swarm.',
       outcome:
-        'If you were to list the top ten worst moments • of your fife, this would probably be up there. You walk into the swarm and the insects are everywhere, biting and clawing at your flesh. You move as quickly as you can, emerging from the other side with your life intact, but your sanity in shambles. Oddly though, you also feel as though you were just in the presence of a powerful, divine force.\n\nAll start scenario with 2 damage.\n\nAll start scenario with POISON {Poison}, MUDDLE {Muddle}, and BLESS {Bless}.',
+        'If you were to list the top ten worst moments • of your fife, this would probably be up there. You walk into the swarm and the insects are everywhere, biting and clawing at your flesh. You move as quickly as you can, emerging from the other side with your life intact, but your sanity in shambles. Oddly though, you also feel as though you were just in the presence of a powerful, divine force.\n\nAll start scenario with 2 damage.\n\nAll start scenario with {Poison}, {Muddle}, and {Bless}.',
       imageUrl: '/assets/cards/events/base/road/re-59-b-a.png',
     },
     optionB: {
       choice: 'Use whatever you can to burn a path through the swarm.',
       outcome:
-        'It takes a monumental effort, but you are eventually able to disperse the cloud of insects enough to run through to the other side. As you do so, ho we vcr. you hear an odd voice among the buzzing, cursing you for your violent actions.\n\nDiscard 2 cards each.\n\nAll start scenario with CURSE {Curse}.',
+        'It takes a monumental effort, but you are eventually able to disperse the cloud of insects enough to run through to the other side. As you do so, ho we vcr. you hear an odd voice among the buzzing, cursing you for your violent actions.\n\nDiscard 2 cards each.\n\nAll start scenario with {Curse}.',
       imageUrl: '/assets/cards/events/base/road/re-59-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-59-f.png',
@@ -2995,7 +2995,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Attack the Sun Demons. It may be the only way to stop them from bothering you.',
       outcome:
-        'Without even speaking, you draw your weapons and attack. The demons are caught offguard, but they bounce back with great ferocity, ft is a long, brutal battle, and you continue on in your adventure greatly wounded and bloody.\n\nAll start scenario with MUDDLE {Muddle}.\n\nAll start scenario with WOUND {Wound}.\n\nAll start scenario with 3 damage.',
+        'Without even speaking, you draw your weapons and attack. The demons are caught offguard, but they bounce back with great ferocity, ft is a long, brutal battle, and you continue on in your adventure greatly wounded and bloody.\n\nAll start scenario with {Muddle}.\n\nAll start scenario with {Wound}/\n\nAll start scenario with 3 damage.',
       imageUrl: '/assets/cards/events/base/road/re-62-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-62-f.png',
@@ -3079,7 +3079,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Attack the Inox.',
       outcome:
-        'You attack the large group of Inox while they are distracted by giant creature above you. Things suddenly get very hot, however, when the drake begins spitting hre into the melee. The Inox scatter and you are suffering from severe burns when the Elder Drake lands in front of you. "My apologies, I was only trying to help.\n\nGain 25 gold each.\n\nAll start scenario with WOUND {Wound}.\n\nAll start scenario with 2 damage.',
+        'You attack the large group of Inox while they are distracted by giant creature above you. Things suddenly get very hot, however, when the drake begins spitting hre into the melee. The Inox scatter and you are suffering from severe burns when the Elder Drake lands in front of you. "My apologies, I was only trying to help.\n\nGain 25 gold each.\n\nAll start scenario with {Wound}.\n\nAll start scenario with 2 damage.',
       imageUrl: '/assets/cards/events/base/road/re-66-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-66-f.png',
