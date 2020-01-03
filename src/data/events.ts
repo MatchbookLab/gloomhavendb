@@ -2481,15 +2481,15 @@ export const events: EventEntity[] = [
     type: EventType.Road,
     number: 38,
     text:
-      'It is something small that catches your eye; a button on the ground glinting in the sun♦ A button in the shape of an Oak Leaf You stop to investigate, and then you begin to see the bigger things. Splatters at blood in the dirt. Signs of multiple bodies being dragged into the forest; You stand and peer into the underbrush. You see a few broken branches and crushed plants. Maybe you could track the bodies through the forest t i\tthn>tbiit >11 o s •, j j*., i •:*.-hm>i ii • r mill',
+      'It is something small that catches your eye: a button on the ground glinting in the sun. A button in the shape of an Oak Leaf.\n\nYou stop to investigate, and then you begin to see the bigger things. Splatters of blood in the dirt. Signs of multiple bodies being dragged into the forest.\n\nYou stand and peer into the underbrush. You see a few broken branches and crushed plants. Maybe you could track the bodies through the forest.',
     optionA: {
       choice: 'Head off into the forest to find out what happened.',
       outcome:
-        '^ ^ W, You are able to track the trail with ease. It leads to a couple of priests, bloody and unconscious, but still alive. You revive them and bring them back to the main road. They are very grate fullH\tI.\n\nGain 1 prosperity.\n\nOTHERWISE: You try to follow the trail, but end up getting turned around and lost. Then you have an incredibly difficult and painful way back out.\n\nDiscard 1 card each. time just finding your.\n\nLose 1 {Check} each.',
+        '{LightningBolts} {TwoMinis} {PointyHead}: You are able to track the trail with ease. It leads to a couple of priests, bloody and unconscious, but still alive. You revive them and bring them back to the main road. They are very grateful.\n\nGain 1 prosperity.\n\nOTHERWISE: You try to follow the trail, but end up getting turned around and lost. Then you have an incredibly difficult and painful way back out.\n\nLose 1 {Check} each.\n\nDiscard 1 card each.',
       imageUrl: '/assets/cards/events/base/road/re-38-b-a.png',
     },
     optionB: {
-      choice: 'Move on. That forest does not look',
+      choice: 'Move on. That forest does not look friendly.',
       outcome:
         "Whatever happened here could not have been good, but also it doesn't concern you and you're not about to head into that dark, dense forest ill-prepared. You find it best to move along and attend to your own matters.\n\nNo effect.",
       imageUrl: '/assets/cards/events/base/road/re-38-b-b.png',
