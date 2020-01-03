@@ -2460,17 +2460,17 @@ export const events: EventEntity[] = [
     type: EventType.Road,
     number: 37,
     text:
-      "What starts as a fight rain quickly turns into something much worse, with torrents of water battering your skin and lightning piercing the sky You're able to find a small rock outcropping and rush under it as thunder shakes the ground. This should protect you from the worst of it, but you don't know how long the storm will last.",
+      "What starts as a light rain quickly turns into something much worse, with torrents of water battering your skin and lightning piercing the sky.\n\nYou're able to find a small rock outcropping and rush under it as thunder shakes the ground. This should protect you from the worst of it, but you don't know how long the storm will last.",
     optionA: {
-      choice: "Brave I he storm ami continue on your way. It's not that bad.",
+      choice: "Brave the storm and continue on your way. It's not that bad.",
       outcome:
-        ': You feel positively dismal trudging through the mud and the raint until you hear the Soothsingcr s voice rise above the thunder. She s singing a song in the middle of the storm, and everyone starts to feel better.\n\nNo effect.\n\nOTHERWISE: Walking down the road in a storm is just awful. You are wet and cold and miserable and you cannot wait for the whole experience to end. By the time you reach your destination, you are not feeling well at all.\n\nDiscard 2 cards each.',
+        '{MusicNote}: You feel positively dismal trudging through the mud and the rain, until you hear the Soothsinger\'s voice rise above the thunder. She\'s singing a song in the middle of the storm, and everyone starts to feel better.\n\nNo effect.\n\nOTHERWISE: Walking down the road in a storm is just awful. You are wet and cold and miserable and you cannot wait for the whole experience to end. By the time you reach your destination, you are not feeling well at all.\n\nDiscard 2 cards each.',
       imageUrl: '/assets/cards/events/base/road/re-37-b-a.png',
     },
     optionB: {
-      choice: 'Wait out the storm under the out- cropping',
+      choice: 'Wait out the storm under the outcropping',
       outcome:
-        'ft is hr from ideal, but the outcropping keeps you mostly dry and protects you from the bowling wind[ You wait hours and hours, huddled up under the rock until the storm passes. By the time you arrive at your destination, you are a bit slow on your feet due to lack of sleep.\n\nAll start scenario with DISARM V',
+        'It is far from ideal, but the outcropping keeps you mostly dry and protects you from the howling wind. You wait hours and hours, huddled up under the rock until the storm passes. By the time you arrive at your destination, you are a bit slow on your feet due to lack of sleep.\n\nAll start scenario with {Disarm}.',
       imageUrl: '/assets/cards/events/base/road/re-37-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-37-f.png',
