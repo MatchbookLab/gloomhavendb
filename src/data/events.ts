@@ -870,7 +870,7 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 42,
     text:
-      'Walking near the West Gate, you are approached by a scrawny kid in a guard uniform, which is clearly too big for his small frame.\n\n"Hey, you all are famous!" he says with a big smile. "I worked as a caravan guard before I got this job. Met with a big Inox guy who always talked about you. He made you seem like the nicest, most amazing people."\n\nHis smile and excitement doesn’t waver. "Say, my detail is doing some work to repair the wall damage from the last Vermling attack. Would you mind helping us! It''ll be fun!"',
+      'Walking near the West Gate, you are approached by a scrawny kid in a guard uniform, which is clearly too big for his small frame.\n\n"Hey, you all are famous!" he says with a big smile. "I worked as a caravan guard before I got this job. Met with a big Inox guy who always talked about you. He made you seem like the nicest, most amazing people."\n\nHis smile and excitement doesn’t waver. "Say, my detail is doing some work to repair the wall damage from the last Vermling attack. Would you mind helping us! It\'ll be fun!"',
     optionA: {
       choice: 'Agree to help the presumptuous kid.',
       outcome:
