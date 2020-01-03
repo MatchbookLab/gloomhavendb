@@ -701,17 +701,17 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 34,
     text:
-      "After a night of revelry at the Sleeping L ion, you head out into the streets and notice a suspicious man in black robes skulking toward an allevway; J I\t^\t✓ You've been hearing reports about a cult inside the city, calling themselves the Ravens and performing all sort of terrible acts. Perhaps this is one of them.",
+      "After a night of revelry at the Sleeping Lion, you head out into the streets and notice a suspicious man in black robes skulking toward an allevway\n\nYou've been hearing reports about a cult inside the city, calling themselves the Ravens and performing all sort of terrible acts.\n\nPerhaps this is one of them.",
     optionA: {
       choice: "Follow the man in an attempt to discover the Ravens' lair.",
       outcome:
-        ": Using the night like a cloak, you follow the man unseen and unheard. Eventually he stops at a small dwelling nestled under the west wall of the city. Unlock Sacrifice Pit'(7^)(B-I4J.\n\nOTHERWISE: You sneak forward, confident in your stealth abilities. After a few minutes, though, the man suddenly bolts around a corner. By the time you get there, he is long gone.\n\nNo effect.",
+        "{Eclipse}: Using the night like a cloak, you follow the man unseen and unheard. Eventually he stops at a small dwelling nestled under the west wall of the city.\n\nUnlock Sacrifice Pit (78) (B-14).\n\nOTHERWISE: You sneak forward, confident in your stealth abilities. After a few minutes, though, the man suddenly bolts around a corner. By the time you get there, he is long gone.\n\nNo effect.",
       imageUrl: '/assets/cards/events/base/city/ce-34-b-a.png',
     },
     optionB: {
-      choice: 'Confront him on the spot and turn him over to the authorities. / / I',
+      choice: 'Confront him on the spot and turn him over to the authorities',
       outcome:
-        "Not confident in your stealth abilities, you J\t✓ decide speed and force are a better way to go. You charge forward\\ catching the man completely by surprise. You block oil all avenues of escape and surround him. He snarls as you tie him up and hand him over to the city guards. Hopefully they'll he able to get some useful information out of him.\n\nGain 1 reputation.",
+        "Not confident in your stealth abilities, you decide speed and force are a better way to go. You charge forward, catching the man completely by surprise. You block off all avenues of escape and surround him. He snarls as you tie him up and hand him over to the city guards. Hopefully they'll be able to get some useful information out of him.\n\nGain 1 reputation.",
       imageUrl: '/assets/cards/events/base/city/ce-34-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-34-f.png',
