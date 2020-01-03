@@ -891,11 +891,11 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 43,
     text:
-      'You return to your rooms for the evening to find a small note resting on the ground in front of your door. It is from the Tinkerer, explaining that he has been pursuing further studies in flammable liquid delivery methods. He asks for your help in delivering to him a small robotic contraption that he absentmindedlv left behind in a secret stash under the floorboards of his old room. He details the device’s location and gives an address to deliver it to some small village far to the northwest. »',
+      'You return to your rooms for the evening to find a small note resting on the ground in front of your door.\n\nIt is from the Tinkerer, explaining that he has been pursuing further studies in flammable liquid delivery methods. He asks for your help in delivering to him a small robotic contraption that he absentmindedlv left behind in a secret stash under the floorboards of his old room.\n\nHe details the device’s location and gives an address to deliver it to some small village far to the northwest.',
     optionA: {
-      choice: 'Oblige the Tinkerer and send along the contraption ■',
+      choice: 'Oblige the Tinkerer and send along the contraption.',
       outcome:
-        "BPAY5 COLLECTIVE GOLD: Sure enough, * under the floorboards of his old room, you find a bunch of parts, tools, and an intricately craf ted metal spider. You package it up and ship it off to the Tinkerer. Anything for an ola friend.\n\nAdd City Event 61 to the deck.\n\nOTHERWISE: You don't have the money to send him the contraption, so you decide just to keep it for yourself.\n\nRead outcome B.",
+        "PAY 5 COLLECTIVE GOLD: Sure enough, under the floorboards of his old room, you find a bunch of parts, tools, and an intricately crafted metal spider. You package it up and ship it off to the Tinkerer. Anything for an ola friend.\n\nAdd City Event 61 to the deck.\n\nOTHERWISE: You don't have the money to send him the contraption, so you decide just to keep it for yourself.\n\nRead outcome B.",
       imageUrl: '/assets/cards/events/base/city/ce-43-b-a.png',
     },
     optionB: {
