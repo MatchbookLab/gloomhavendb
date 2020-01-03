@@ -2544,17 +2544,17 @@ export const events: EventEntity[] = [
     type: EventType.Road,
     number: 41,
     text:
-      'Your path is taking you through a small wooded area when you suddenly see a large hear charging directly at you through the trees.  You may have gotten too close to its den, but you canrl know for sure. All you know is that it is clearly enraged, and you have very little time to react.',
+      'Your path is taking you through a small wooded area when you suddenly see a large bear charging directly at you through the trees.\n\nYou may have gotten too close to its den, but you can\'t know for sure. All you know is that it is clearly enraged, and you have very little time to react.',
     optionA: {
-      choice: '-',
+      choice: 'Attemp to calm the bear and back away slowly.',
       outcome:
-        '1 The Be*}st Tyrant steps forward with his hand outstretched and makes a low humming sound. The hear stops mid-charge with a perplexed look« You leave the animal there and continue on your way unharmed.\n\nNo effect.\n\nOTHERWISE: Two seconds later, you can t help, but Teel this was a terrible idea. The bear wounds you severely before you are able to arm yourself and fight it off.\n\nAll start scenario with {Wound}.\n\nAll start scenario with 3 damage.',
+        '{TwoMinis}: The Beast Tyrant steps forward with his hand outstretched and makes a low humming sound. The bear stops mid-charge with a perplexed look. You leave the animal there and continue on your way unharmed.\n\nNo effect.\n\nOTHERWISE: Two seconds later, you can\'t help, but feel this was a terrible idea. The bear wounds you severely before you are able to arm yourself and fight it off.\n\nAll start scenario with {Wound}.\n\nAll start scenario with 3 damage.',
       imageUrl: '/assets/cards/events/base/road/re-41-b-a.png',
     },
     optionB: {
-      choice: '-',
+      choice: 'Arm yourself and fight off the bear.',
       outcome:
-        'You quickly grab your weapons as (he bear comes down on you. The fight is brutal and ugly, but it could have been much worse.\n\nAll start scenario with 2 damage.',
+        'You quickly grab your weapons as the bear comes down on you. The fight is brutal and ugly, but it could have been much worse.\n\nAll start scenario with 2 damage.',
       imageUrl: '/assets/cards/events/base/road/re-41-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-41-f.png',
