@@ -764,17 +764,17 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 37,
     text:
-      "As you return to town after your latest adventure, you see 5/770Ac rising from the walls of the city: You enter the broken gates and see a scene of despair as the citizens of Gloomhaven recover from a catastrophic attack. 'Demons, a wounded guard at the gate says. \"Wish you lot could have been around to help fight them off Now look at the place, Luckily the rest of the city remained safe.'",
+      "As you return to town after your latest adventure, you see smoke rising from the walls of the city. You enter the broken gates and see a scene of despair as the citizens of Gloomhaven recover from a catastrophic attack.\n\n\"Demons,\" a wounded guard at the gate says. \"Wish you lot could have been around to help fight them off. Now look at the place. Luckily the rest of the city remained safe.\"",
     optionA: {
       choice: 'Attempt to console and cheer up those affected by the attack.',
       outcome:
-        "; The citizens are downtrodden, but the uncanny pen'or of the Soothsingcr’s music seems to lif t their spirits considerably. Still far f rom cheerful, the people find new resolve in repairing the damage and rebuilding.\n\nGain 1 prosperity.\n\nOTHERWISE: The citizens view you with a cynical eye as you walk around, attempting to encourage them and lift their spirits. Despite the effort, it seems as though they are in a worse mood than when you arrived.\n\nLose 1 reputation.",
+        "{MusicNote}: The citizens are downtrodden, but the uncanny power of the Soothsinger’s music seems to lift their spirits considerably. Still far from cheerful, the people find new resolve in repairing the damage and rebuilding.\n\nGain 1 prosperity.\n\nOTHERWISE: The citizens view you with a cynical eye as you walk around, attempting to encourage them and lift their spirits. Despite the effort, it seems as though they are in a worse mood than when you arrived.\n\nLose 1 reputation.",
       imageUrl: '/assets/cards/events/base/city/ce-37-b-a.png',
     },
     optionB: {
       choice: 'Help repair the gate. You wouldn’t want another attack to further cripple the town.',
       outcome:
-        'Bi\tt|!\t^ You set to work # repairing the gate, and by the time night falls, it is at least functional1 The downtrodden citizens are inspired by your work, and you have little doubt that the community will «§> bounce bock with little permanent damage.\n\nGain 1 prosperity.\n\nOTHERWISE: You fiddle with the gate fora bit until it becomes dear that you are doing nothing to help. You decide to head back to your rooms instead and get some rest.\n\nNo effect.',
+        '{ThreeSpears}, {Spellweaver}, {Tinkerer}, {Triangles}, {Circles}: You set to work repairing the gate, and by the time night falls, it is at least functional. The downtrodden citizens are inspired by your work, and you have little doubt that the community will bounce bock with little permanent damage.\n\nGain 1 prosperity.\n\nOTHERWISE: You fiddle with the gate for a bit until it becomes clear that you are doing nothing to help. You decide to head back to your rooms instead and get some rest.\n\nNo effect.',
       imageUrl: '/assets/cards/events/base/city/ce-37-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-37-f.png',
