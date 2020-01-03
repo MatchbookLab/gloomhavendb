@@ -642,7 +642,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Leave with the woman to help her find her missing daughter.',
       outcome:
-        'Once outside, the woman hands you a large pouch of gold. "My father saw the whole thing, but then he went mad and ran toward the Silent Bridge. Please find him and he\'ll help you find my daughter!"\n\nGain 20 collective gold.\n\nUnlock "Shadows Within (83) (C-15)\n\nParty Achievement: "Bad Business."',
+        'Once outside, the woman hands you a large pouch of gold. "My father saw the whole thing, but then he went mad and ran toward the Silent Bridge. Please find him and he\'ll help you find my daughter!"\n\nGain 20 collective gold.\n\nUnlock "Shadows Within 83" (C-15)\n\nParty Achievement: "Bad Business."',
       imageUrl: '/assets/cards/events/base/city/ce-31-b-a.png',
     },
     optionB: {
@@ -705,7 +705,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: "Follow the man in an attempt to discover the Ravens' lair.",
       outcome:
-        "{Eclipse}: Using the night like a cloak, you follow the man unseen and unheard. Eventually he stops at a small dwelling nestled under the west wall of the city.\n\nUnlock Sacrifice Pit (78) (B-14).\n\nOTHERWISE: You sneak forward, confident in your stealth abilities. After a few minutes, though, the man suddenly bolts around a corner. By the time you get there, he is long gone.\n\nNo effect.",
+        "{Eclipse}: Using the night like a cloak, you follow the man unseen and unheard. Eventually he stops at a small dwelling nestled under the west wall of the city.\n\nUnlock \"Sacrifice Pit\" 78 (B-14).\n\nOTHERWISE: You sneak forward, confident in your stealth abilities. After a few minutes, though, the man suddenly bolts around a corner. By the time you get there, he is long gone.\n\nNo effect.",
       imageUrl: '/assets/cards/events/base/city/ce-34-b-a.png',
     },
     optionB: {
