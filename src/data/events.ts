@@ -2523,11 +2523,11 @@ export const events: EventEntity[] = [
     type: EventType.Road,
     number: 40,
     text:
-      'This river is no small matter either it is several feet deep and fast-flowing, h s rather troubling; toor since you have no idea how long it might take to find a decent crossing point. "m —\t, — r - ■-! i ■ ■■ MfMl———I—nmiii - ■ | u',
+      'There were heavy rains last night for sure, but you didn\'t realize the full extent of it until you come face-to-face with a river raging right through the middle of the road.\n\nThis river is no small matter, either — it is several feet deep and fast-flowing. It\'s rather troubling, too, since you have no idea how long it might take to find a decent crossing point.',
     optionA: {
       choice: 'Ford the river where you are. It is not ideal, but it should be possible.',
       outcome:
-        '#v ; With the power of the elements on your side, crossing the river turns out to he incredibly easy. One frozen bridge later,; you are on the other side and on your way.\n\nNo effect.\n\nOTHERWISE: The water is surprisingly cold, but it will take more than that to end your day. You are still water dogged and shivering when you reach your destination, however.\n\nAll start scenario with {Muddle}.\n\nAll start scenario with IMMOBILIZE',
+        '{Spellweaver} {Triangles} {Circles}: With the power of the elements on your side, crossing the river turns out to be incredibly easy. One frozen bridge later, you are on the other side and on your way.\n\nNo effect.\n\nOTHERWISE: The water is surprisingly cold, but it will take more than that to end your day. You are still water-logged and shivering when you reach your destination, however.\n\nAll start scenario with {Muddle}.\n\nAll start scenario with {Immobilize}.',
       imageUrl: '/assets/cards/events/base/road/re-40-b-a.png',
     },
     optionB: {
