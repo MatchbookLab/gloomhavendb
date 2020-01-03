@@ -2443,7 +2443,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Continue down the path into the wood. You are not afraid.',
       outcome:
-        "{LightningBolts} {TwoMinis} {PointyHead}: The wood is overgrown and rampant with all manner of insects, but with difficulty, you follow the path. Somewhere deep inside, you come across a stone pedestal with the following scratched into its base: {RuneR}{RuneE}{RuneC}{RuneO}{RuneR}{RuneD} {RuneT}{RuneH}{RuneE} {RuneP}{RuneA}{RuneG}{RuneE}, {RuneT}{RuneH}{RuneE} {RuneW}{RuneO}{RuneD}{RuneD}, {RuneA}{RuneN}{RuneD} {RuneT}{RuneH}{RuneE} {RuneL}{RuneR}{RuneT}{RuneT}{RuneE}{RuneR} - {Rune8}{Rune3}{Rune4}.\n\nOTHERWISE: You follow the path into the wood and become hopelessly lost. The going is hard and painful.\n\nAll start scenario with {Poison}.\n\nAll start scenario with 2 damage.",
+        "{LightningBolts} {TwoMinis} {PointyHead}: The wood is overgrown and rampant with all manner of insects, but with difficulty, you follow the path. Somewhere deep inside, you come across a stone pedestal with the following scratched into its base:\n\n{RuneR}{RuneE}{RuneC}{RuneO}{RuneR}{RuneD} {RuneT}{RuneH}{RuneE} {RuneP}{RuneA}{RuneG}{RuneE}, {RuneT}{RuneH}{RuneE} {RuneW}{RuneO}{RuneD}{RuneD}, {RuneA}{RuneN}{RuneD} {RuneT}{RuneH}{RuneE} {RuneL}{RuneR}{RuneT}{RuneT}{RuneE}{RuneR} - {Rune8}{Rune3}{Rune4}.\n\nOTHERWISE: You follow the path into the wood and become hopelessly lost. The going is hard and painful.\n\nAll start scenario with {Poison}.\n\nAll start scenario with 2 damage.",
       imageUrl: '/assets/cards/events/base/road/re-36-b-a.png',
     },
     optionB: {
@@ -2653,7 +2653,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Take the risk to climb tbe ridge and investigate the rocks.',
       outcome:
-        'Fearing the possibility of falling from a great height, you choose your steps carefully. Still, the climb to the top takes a long time and is exhausting. Reaching the top, you approach the unnatural rock formation, a giant mound of stones stacked one on top of another. At the base of the bottom stone, you see the following etched with charcoal: {RuneT}{RuneH}{RuneE} {RuneR}{RuneU}{RuneI}{RuneN}{RuneS} {RuneO}{RuneF} {RuneT}{RuneH}{RuneE} {RuneD}{RuneE}{RuneE}{RuneP} {RuneT}{RuneA}{RuneK}{RuneE} {RuneS}{RuneH}{RuneA}{RuneP}{RuneE}',
+        'Fearing the possibility of falling from a great height, you choose your steps carefully. Still, the climb to the top takes a long time and is exhausting. Reaching the top, you approach the unnatural rock formation, a giant mound of stones stacked one on top of another. At the base of the bottom stone, you see the following etched with charcoal:\n\n{RuneT}{RuneH}{RuneE} {RuneR}{RuneU}{RuneI}{RuneN}{RuneS} {RuneO}{RuneF} {RuneT}{RuneH}{RuneE} {RuneD}{RuneE}{RuneE}{RuneP} {RuneT}{RuneA}{RuneK}{RuneE} {RuneS}{RuneH}{RuneA}{RuneP}{RuneE}',
       imageUrl: '/assets/cards/events/base/road/re-46-b-a.png',
     },
     optionB: {
