@@ -849,17 +849,17 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 41,
     text:
-      'The Sinking Market is a varied area or decrepit huts and merchants unable to sell their wares anywhere else. It doesnt surprise you as you walk through to see a scraggly Vermling approach with a small sack. "A potion for the big, strong adventurers! she says as she ivjyes you down. “Help you in battle, it will!" You are about to push her aside and keep walking when she pulls the potion out of the sack« It glows green in the daylight — an impressive, large flask of master craftsmanship. “Aha, I knew it catch your eye! How much you pay?"',
+      'The Sinking Market is a varied area or decrepit huts and merchants unable to sell their wares anywhere else. It doesn\'t surprise you as you walk through to see a scraggly Vermling approach with a small sack.\n\n"A potion for the big, strong adventurers!" she says as she waves you down. “Help you in battle, it will!"\n\nYou are about to push her aside and keep walking when she pulls the potion out of the sack. It glows green in the daylight — an impressive, large flask of master craftsmanship.\n\n"Aha, I knew it catch your eye! How much you pay?"',
     optionA: {
       choice: 'Barter with the Vermling for the potion.',
       outcome:
-        'PAY 10 COLLECTIVE COLD: The Vermling knows it is valuable, but she is more interested in flirting with the Beast Tyrant. She is happy to sell the potion at a discount.\n\nGain 1 collective “Major Stamina Potion" (Item 034)* * PAY 25 COLLECTIVE GOLD: No amount of haggling can lower the Vermling s high price.\n\nGain 1 collective "Major Stamina Potion" (Item 034).\n\nOTHERWISE: The Vermling will not accept the tiny sum you oiler. Maybe next time.',
+        '{TwoMinis}, PAY 10 COLLECTIVE COLD: The Vermling knows it is valuable, but she is more interested in flirting with the Beast Tyrant. She is happy to sell the potion at a discount.\n\nGain 1 collective “Major Stamina Potion" (Item 034)\n\nPAY 25 COLLECTIVE GOLD: No amount of haggling can lower the Vermling\'s high price.\n\nGain 1 collective "Major Stamina Potion" (Item 034).\n\nOTHERWISE: The Vermling will not accept the tiny sum you offer. Maybe next time.',
       imageUrl: '/assets/cards/events/base/city/ce-41-b-a.png',
     },
     optionB: {
       choice: "Move along. You don't need any more potions.",
       outcome:
-        'Shaking your head, you move past the % Vermling and get back to your business. She begins to make sobbing sounds behind you. But, but you die without potion! Is life worth nothing?"\n\nNo effect.',
+        'Shaking your head, you move past the Vermling and get back to your business. She begins to make sobbing sounds behind you. "But, but you die without potion! Is life worth nothing?"\n\nNo effect.',
       imageUrl: '/assets/cards/events/base/city/ce-41-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-41-f.png',
