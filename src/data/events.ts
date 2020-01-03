@@ -659,17 +659,17 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 32,
     text:
-      'As you return to town after * your latest adventure, a high- ranking guard approaches and gestures you to the side of the road. 7 am embarrassed to admit this," he begins in a low voice, "but we could really use some help. With all the attacks recently and very little support from the capital the city guard finds itself woefully lacking in both equipment and training for the new recruits." The guard looks you over. You are experienced warriors, and anything you could do to help the situation would be greatly appreciatedl',
+      'As you return to town after your latest adventure, a high-ranking guard approaches and gestures you to the side of the road.\n\n"I am embarrassed to admit this," he begins in a low voice,  but we could really use some help. With all the attacks recently and very little support from the capital the city guard finds itself woefully lacking in both equipment and training for the new recruits."\n\nThe guard looks you over. You are experienced warriors, and anything you could do to help the situation would be greatly appreciated."',
     optionA: {
       choice: 'Agree to help the city guard.',
       outcome:
-        "Ill: You not only help to train the new recruits, but the Quartermaster is able to repair a lot of the guards' damaged armor and weaponry. At the end of the day, the city is very pleased with your contribution.\n\nGain 15 collective gold.\n\nGain 1 reputation.\n\nOTHERWISE: You spend the day training the new recruits. By the time the sun goes down, their skills are much improved, and they are grateful to you because of it.\n\nGain 1 reputation.",
+        "{ThreeSpears}: You not only help to train the new recruits, but the Quartermaster is able to repair a lot of the guards' damaged armor and weaponry. At the end of the day, the city is very pleased with your contribution.\n\nGain 15 collective gold.\n\nGain 1 reputation.\n\nOTHERWISE: You spend the day training the new recruits. By the time the sun goes down, their skills are much improved, and they are grateful to you because of it.\n\nGain 1 reputation.",
       imageUrl: '/assets/cards/events/base/city/ce-32-b-a.png',
     },
     optionB: {
       choice: 'Decline to help and instead sell this information to interested parties.',
       outcome:
-        'Whenever there is bad news, there is always $ someone who delights in it and profits from it. Who would be happy to hear the city guards are having trouble? Thieves. And they pay surprisingly well for the information.\n\nGain 15 collective gold.',
+        'Whenever there is bad news, there is always someone who delights in it and profits from it. Who would be happy to hear the city guards are having trouble? Thieves. And they pay surprisingly well for the information.\n\nGain 15 collective gold.',
       imageUrl: '/assets/cards/events/base/city/ce-32-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-32-f.png',
