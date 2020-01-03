@@ -2355,11 +2355,11 @@ export const events: EventEntity[] = [
     type: EventType.Road,
     number: 32,
     text:
-      'You encounter two Valraths with a small horse and cart on the side of the road. They seem a little uncomfortable at your approach, their hands instinctively going for their weapons. You make a sign of peace and they relax a little. M Perhaps it is good that you happen by, travelers, " the one on the left says. "Our horse is completely spent and we fare little better. We are in desperate need ofsome supplies to finish our journey.\' The Valrath offers a crude smile. uDo you think you could help us in this matter?\'',
+      'You encounter two Valraths with a small horse and cart on the side of the road. They seem a little uncomfortable at your approach, their hands instinctively going for their weapons.\n\nYou make a sign of peace and they relax a little.\n\n"Perhaps it is good that you happen by, travelers, " the one on the left says. "Our horse is completely spent and we fare little better. We are in desperate need of some supplies to finish our journey."\n\n The Valrath offers a crude smile. "Do you think you could help us in this matter?"',
     optionA: {
       choice: 'Give the Valraths a portion of your supplies.',
       outcome:
-        ': The Quartermaster steps forward with smile and hands over a sack of food and gear. He is always well-stocked and the Valraths are grateful for the aid.\n\nGain 1 reputation.\n\nOTHERWISE: You 7/ need to replace the supplies the next time you re in town, but you decide you can spare them. The Valraths thank you with relief.\n\nLose 5 gold each.\n\nGain 1 reputation.',
+        '{ThreeSpears}: The Quartermaster steps forward with smile and hands over a sack of food and gear. He is always well-stocked and the Valraths are grateful for the aid.\n\nGain 1 reputation.\n\nOTHERWISE: You\'ll need to replace the supplies the next time you\'re in town, but you decide you can spare them. The Valraths thank you with relief.\n\nLose 5 gold each.\n\nGain 1 reputation.',
       imageUrl: '/assets/cards/events/base/road/re-32-b-a.png',
     },
     optionB: {
