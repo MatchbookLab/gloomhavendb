@@ -2439,17 +2439,17 @@ export const events: EventEntity[] = [
     type: EventType.Road,
     number: 36,
     text:
-      "Up abead you see the path you are on leads into a dark and unfamiliar wood[ It gives you an eerie feeling. As you step closer,; you can fee/your skin crawl and it forces you to pause, you can 't help, but think that this wood might best be avoided.",
+      "Up abead, you see the path you are on leads into a dark and unfamiliar wood. It gives you an eerie feeling.\n\nAs you step closer, you can feel your skin crawl and it forces you to pause, you can't help, but think that this wood might best be avoided.",
     optionA: {
       choice: 'Continue down the path into the wood. You are not afraid.',
       outcome:
-        "\\wjpft\t1 : The wood is overgrown and ' rampant with all manner of insects, but with difficulty, you follow the path. Somewhere deep inside, you come across a stone pedestal with the following scratched into its base: XmWT -KKT W3T ART >-1*11, WIT -NKT M'W'lC - 8172.\n\nOTHERWISE: You follow the path into the wood and become hopelessly lost. The going is hard and painful.\n\nAll start scenario with {Poison}.\n\nAll start scenario with 2 damage. +8%",
+        "{LightningBolts} {TwoMinis} {PointyHead}: The wood is overgrown and rampant with all manner of insects, but with difficulty, you follow the path. Somewhere deep inside, you come across a stone pedestal with the following scratched into its base: {RuneR}{RuneE}{RuneC}{RuneO}{RuneR}{RuneD} {RuneT}{RuneH}{RuneE} {RuneP}{RuneA}{RuneG}{RuneE}, {RuneT}{RuneH}{RuneE} {RuneW}{RuneO}{RuneD}{RuneD}, {RuneA}{RuneN}{RuneD} {RuneT}{RuneH}{RuneE} {RuneL}{RuneR}{RuneT}{RuneT}{RuneE}{RuneR} - {Rune8}{Rune3}{Rune4}.\n\nOTHERWISE: You follow the path into the wood and become hopelessly lost. The going is hard and painful.\n\nAll start scenario with {Poison}.\n\nAll start scenario with 2 damage.",
       imageUrl: '/assets/cards/events/base/road/re-36-b-a.png',
     },
     optionB: {
       choice: 'Find another way to your destination.',
       outcome:
-        'The wood is large and you spend a little more lime than you d like trying to get around it. With enough effort, you arrive at your destination just a little bit more tired than you d like.\n\nDiscard 1 card each.',
+        'The wood is large and you spend a little more time than you \'d like trying to get around it. With enough effort, you arrive at your destination just a little bit more tired than you d like.\n\nDiscard 1 card each.',
       imageUrl: '/assets/cards/events/base/road/re-36-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-36-f.png',
