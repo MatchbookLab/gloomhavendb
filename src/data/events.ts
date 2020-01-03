@@ -2649,17 +2649,17 @@ export const events: EventEntity[] = [
     type: EventType.Road,
     number: 46,
     text:
-      'Walking among the foothills, you see a steep ridge in Iront of you and on top of it, a very odd rock formation. The formation calls to you somehow, but the way up is not readily apparent. In fact, climbing the ridge looks pretty dangerous, but you just feel like you need to get up there and look at the rocks.',
+      'Walking among the foothills, you see a steep ridge in front of you and on top of it, a very odd rock formation.\n\n The formation calls to you somehow, but the way up is not readily apparent. In fact, climbing the ridge looks pretty dangerous, but you just feel like you need to get up there and look at the rocks.',
     optionA: {
-      choice: 'Take the risk to climb tbe ridge and investigate the rocks*',
+      choice: 'Take the risk to climb tbe ridge and investigate the rocks.',
       outcome:
-        'Fearing the possibility of falling from a great « height, you choose your steps caref ully Still the climb to the top takes a long time and is exhausting. Reaching the top, you approach the unnatural rock formation, a giant mound of stones stacked one on top of another. At the base of the bottom stone, you see the following etched with charcoal: ■KRT It -NRr Trm M7t nmr.',
+        'Fearing the possibility of falling from a great height, you choose your steps carefully. Still, the climb to the top takes a long time and is exhausting. Reaching the top, you approach the unnatural rock formation, a giant mound of stones stacked one on top of another. At the base of the bottom stone, you see the following etched with charcoal: {RuneT}{RuneH}{RuneE} {RuneR}{RuneU}{RuneI}{RuneN}{RuneS} {RuneO}{RuneF} {RuneT}{RuneH}{RuneE} {RuneD}{RuneE}{RuneE}{RuneP} {RuneT}{RuneA}{RuneK}{RuneE} {RuneS}{RuneH}{RuneA}{RuneP}{RuneE}',
       imageUrl: '/assets/cards/events/base/road/re-46-b-a.png',
     },
     optionB: {
-      choice: 'Forget about the rocks and continue n your journey*',
+      choice: 'Forget about the rocks and continue on your journey.',
       outcome:
-        "You shake your head ana move past the ridge. You have more important things to do than climb rocks. Still, you fed the pull of the site, even after it fades from view. You get the feeling that this won't he the last time you see it.\n\nNo effect.",
+        "You shake your head and move past the ridge. You have more important things to do than climb rocks. Still, you fed the pull of the site, even after it fades from view. You get the feeling that this won't he the last time you see it.\n\nNo effect.",
       imageUrl: '/assets/cards/events/base/road/re-46-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-46-f.png',
