@@ -912,17 +912,17 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 44,
     text:
-      "In the very early morning, you are wakened by a knock at your door. Standing behind it is giant, dirty In ox wearing a leather apron. “Oh, uh'.ahem, he coughs. Sorry; I was looking for a female Orchid. She used to help me on occasion with my forge. Her control over fire was astounding and I paid her well for her assistance completing some of my specialty work.rJ He scratches his head. 'I guess shes not around anymore. You wouldn't happen to know where I could hnd someone who could help me in her absence, would vow?\"",
+      "In the very early morning, you are wakened by a knock at your door. Standing behind it is giant, dirty Inox wearing a leather apron.\n\n\"Oh, uh...ahem,'\" he coughs. \"Sorry, I was looking for a female Orchid. She used to help me on occasion with my forge. Her control over fire was astounding and I paid her well for her assistance completing some of my specialty work.\"\n\nHe scratches his head. \"I guess she's not around anymore. You wouldn't happen to know where I could find someone who could help me in her absence, would you?\"",
     optionA: {
-      choice: 'Offer to help the blacksmith yourself',
+      choice: 'Offer to help the blacksmith yourself.',
       outcome:
-        '^\t• Despite the early hour, you * head down to the Inox s forge and get an incredibly strong fire going for him so he can complete his order; He seems very pleased.\n\nGain 1 reputation.\n\nGain 10 collective gold.\n\nOTHERWISE: The Inox is completely dumbfounded when you walk all the way down to his forge and then proceed to exhibit zero aptitude at manipulating or controlling fire.\n\nLose 1 reputation.',
+        '{Spellweaver} {Triangles} {Circles}: Despite the early hour, you head down to the Inox\'s forge and get an incredibly strong fire going for him so he can complete his order. He seems very pleased.\n\nGain 1 reputation.\n\nGain 10 collective gold.\n\nOTHERWISE: The Inox is completely dumbfounded when you walk all the way down to his forge and then proceed to exhibit zero aptitude at manipulating or controlling fire.\n\nLose 1 reputation.',
       imageUrl: '/assets/cards/events/base/city/ce-44-b-a.png',
     },
     optionB: {
-      choice: 'Direct him to the Savvas Elemental Guild and go back to sleep*',
+      choice: 'Direct him to the Savvas Elemental Guild and go back to sleep.',
       outcome:
-        '“Ah, yes, that is probably a good idea," he 0 says. "Thanks for your time and I hope your friend the Spellweaver is doing wed!"\n\nGain 1 reputation.',
+        '"Ah, yes, that is probably a good idea," he says. "Thanks for your time and I hope your friend the Spellweaver is doing well!"\n\nGain 1 reputation.',
       imageUrl: '/assets/cards/events/base/city/ce-44-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-44-f.png',
