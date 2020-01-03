@@ -596,7 +596,7 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 29,
     text:
-      'You get word from a contact that there is trouble brewing down at the East Walls and decide to investigate.\n\nWhat you find is a large contingency of the city\'s Savvas workforce — the best builders you\'ll find anywhere — in open rebellion against the construction managers, demanding better pay for the specialized work they perform. "This city would he a lifeless pile of rocks without us!" one of the Savvas yells. "Its time we see some of its prosperity!"\n\nThe manager on the other side of the argument looks like a captured mouse, not sure at all how to get out of the situation.',
+      'You get word from a contact that there is trouble brewing down at the East Walls and decide to investigate.\n\nWhat you find is a large contingency of the city\'s Savvas workforce — the best builders you\'ll find anywhere — in open rebellion against the construction managers, demanding better pay for the specialized work they perform. "This city would he a lifeless pile of rocks without us!" one of the Savvas yells. "It\'s time we see some of its prosperity!"\n\nThe manager on the other side of the argument looks like a captured mouse, not sure at all how to get out of the situation.',
     optionA: {
       choice: 'Talk to the Savvas, appealing to their sense of duty and community.',
       outcome:
