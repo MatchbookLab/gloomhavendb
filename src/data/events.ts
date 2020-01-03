@@ -638,17 +638,17 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 31,
     text:
-      'You find yourself incredibly drunk and gambling away your hard-earned gold at the Brown Door when a robed woman approaches you. Please, she says. "You must help me. Thev\'ve taken my only daughter. I beg you!" She slides a parchment toward you. "They left this behind..." You look down to see nothing, but the symbol of an upside-down black bird. "The Ravens!"a man mutters. "Bad business." A bouncer approaches. "Take that garbage outside. You\'re troubling the customers."',
+      'You find yourself incredibly drunk and gambling away your hard-earned gold at the Brown Door when a robed woman approaches you.\n\n"Please," she says. "You must help me. They\'ve taken my only daughter. I beg you!"\n\nShe slides a parchment toward you. "They left this behind..."\n\nYou look down to see nothing, but the symbol of an upside-down black bird.\n\n"The Ravens!" a man mutters. "Bad business."\n\nA bouncer approaches. "Take that garbage outside. You\'re troubling the customers."',
     optionA: {
       choice: 'Leave with the woman to help her find her missing daughter.',
       outcome:
-        "Once outside, the woman hands you a large • pouch of gold. “My father saw the whole thing, but then he went mad and ran toward the Silent Bridge. Please find him and he'll help you find my daughter!'\n\nGain 20 collective gold.\n\nUnlock “Shadows Within (83) (c-15 Party Achievement: Bad Business.\"",
+        'Once outside, the woman hands you a large pouch of gold. "My father saw the whole thing, but then he went mad and ran toward the Silent Bridge. Please find him and he\'ll help you find my daughter!"\n\nGain 20 collective gold.\n\nUnlock "Shadows Within (83) (C-15)\n\nParty Achievement: "Bad Business."',
       imageUrl: '/assets/cards/events/base/city/ce-31-b-a.png',
     },
     optionB: {
-      choice: '-',
+      choice: 'Refuse to help the woman and go back to gambling.',
       outcome:
-        ': You try to turn away the woman and get back to gambling, but the Sunkeeper won t hear of it, She forces you to follow the woman outside.\n\nRead outcome A.\n\nOTHERWISE: You return to your gambling, but you feel as though a pall has fallen over the revelry. Your luck has turned[ and you end the night much poorer than when you started.\n\nLose 10 gold each.',
+        '{Sun}: You try to turn away the woman and get back to gambling, but the Sunkeeper won t hear of it. She forces you to follow the woman outside.\n\nRead outcome A.\n\nOTHERWISE: You return to your gambling, but you feel as though a pall has fallen over the revelry. Your luck has turned and you end the night much poorer than when you started.\n\nLose 10 gold each.',
       imageUrl: '/assets/cards/events/base/city/ce-31-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-31-f.png',
