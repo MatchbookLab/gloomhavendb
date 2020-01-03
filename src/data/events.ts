@@ -680,15 +680,15 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 33,
     text:
-      'The Void is a troubling area in Gloomhaven — a vast, barren expanse of black sand amid the bustling streets of the city. No one enters its «• perimeter. On a trip to the University, however, you see a young girl playing near the edge of the Void Before you can warn her, she trips and falls onto the sandl She immediately emits a blood-curdling scream and begins to tear at her skin.',
+      'The Void is a troubling area in Gloomhaven — a vast, barren expanse of black sand amid the bustling streets of the city. No one enters its perimeter.\n\nOn a trip to the University, however, you see a young girl playing near the edge of the Void. Before you can warn her, she trips and falls onto the sand.\n\nShe immediately emits a blood-curdling scream and begins to tear at her skin.',
     optionA: {
       choice: 'Run to the girl and attempt to pull her out of the Void.',
       outcome:
-        "w); You grab the child and lift her clear e haunting area. She is still screaming oTthe haunting madly when the Aesther in your group lays a hand upon the child in deep concentration. Slowly, the crying subsides, and the child gets up and runs off.\n\nGain 2 reputation.\n\nOTHERWISE: You get the child off the sand as quickly as you can, but it doesn't do much good. The girl screams and screams no matter what aid is administered.\n\nNo effect.",
+        "{Circles}, {Eclipse}: You grab the child and lift her clear of the haunting area. She is still screaming madly when the Aesther in your group lays a hand upon the child in deep concentration. Slowly, the crying subsides, and the child gets up and runs off.\n\nGain 2 reputation.\n\nOTHERWISE: You get the child off the sand as quickly as you can, but it doesn't do much good. The girl screams and screams no matter what aid is administered.\n\nNo effect.",
       imageUrl: '/assets/cards/events/base/city/ce-33-b-a.png',
     },
     optionB: {
-      choice: 'Watch what happens with morbid curio&itv.',
+      choice: 'Watch what happens with morbid curiosity.',
       outcome:
         'Unable to resist, you watch to see what will happen to the girl. Her skin turns ashen and begins to flake away. She stops screaming eventually and begins coughing up a black bile. She tries to stand, but her legs crumble away into dust. She makes a pitiful croak and then falls over into a cloud of sand. When the cloud settles, no evidence of her presence remains.',
       imageUrl: '/assets/cards/events/base/city/ce-33-b-b.png',
