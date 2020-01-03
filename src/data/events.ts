@@ -2418,17 +2418,17 @@ export const events: EventEntity[] = [
     type: EventType.Road,
     number: 35,
     text:
-      'You are enjoying a pleasant, peaceful stroll down the road when you find yourself suddenly surrounded by a beleaguered group of men. One of them steps forward, a pox covering half his face. ‘ Good day to you. * He smiles weakly We hate to he a burden, but you seer my camp has been taken ill with a strange malady, and ive must kindly beg you for some money for medicine," You look around to see that some disfiguring disease has indeed come over the lot of them« The man scratches the side of his face with one hand while be slowly pulls out a sword with the other 7 m afraid we cant take no for an answer/\'',
+      'You are enjoying a pleasant, peaceful stroll down the road when you find yourself suddenly surrounded by a beleaguered group of men. One of them steps forward, a pox covering half his face.\n\n"Good day to you." He smiles weakly. "We hate to be a burden, but you see, my camp has been taken ill with a strange malady, and we must kindly beg you for some money for medicine."\n\nYou look around to see that some disfiguring disease has indeed come over the lot of them.\n\nThe man scratches the side of his face with one hand while he slowly pulls out a sword with the other. "I\'m afraid we can\'t take no for an answer."',
     optionA: {
       choice: 'Fight oft the men. This is highway robbery, whatever the motive.',
       outcome:
-        "If: The Plagueherald stretches out his arms and the men around him immediately double over in pain. You can almost sense it smiling, even though it doesn't have a face. The fight doesn't last long, especially once the men's wounds start bursting with maggots.\n\nAll start scenario with 1 damage.\n\nOTHERWISE: The men are weakened, but they are still hardened lighters. you light them off, but it gets ugly.\n\nAll start scenario with {Poison}.\n\nAll start scenario with 3 damage.",
+        "{Cthulu}: The Plagueherald stretches out his arms and the men around him immediately double over in pain. You can almost sense it smiling, even though it doesn't have a face. The fight doesn't last long, especially once the men's wounds start bursting with maggots.\n\nAll start scenario with 1 damage.\n\nOTHERWISE: The men are weakened, but they are still hardened fighters. You fight them off, but it gets ugly.\n\nAll start scenario with {Poison}.\n\nAll start scenario with 3 damage.",
       imageUrl: '/assets/cards/events/base/road/re-35-b-a.png',
     },
     optionB: {
       choice: 'Pay the men and be on your way.',
       outcome:
-        'PAY 5 GOLD EACH: You smile .is non- • threateningly as you can and reach for your coin purse. You try to give them just a couple coins, but he enco urages you to donate more. Eventually the men seem satisfied and move on their way.\n\nNo effect.\n\nOTHERWISE: When you try to pay with what few coins you have, the man thinks you Jre holding out on him and grows angry.\n\nRead outcome A. L A',
+        'PAY 5 GOLD EACH: You smile as non-threateningly as you can and reach for your coin purse. You try to give them just a couple coins, but he encourages you to donate more. Eventually the men seem satisfied and move on their way.\n\nNo effect.\n\nOTHERWISE: When you try to pay with what few coins you have, the man thinks you are holding out on him and grows angry.\n\nRead outcome A.',
       imageUrl: '/assets/cards/events/base/road/re-35-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-35-f.png',
