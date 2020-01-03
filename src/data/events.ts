@@ -2586,17 +2586,17 @@ export const events: EventEntity[] = [
     type: EventType.Road,
     number: 43,
     text:
-      "Vo// probably wouldn't normally noticed it, sometimes nature calls and you need to head off the beaten path to get some privacy Hidden in the bushes, you come across the smoking wreckage of some crude machine. It looks to have broken down at some point and was left here to rust and decay Most of it is scrap, but thanks to your time with the Tinkerer, you know a good power core when you see one. Its a bit heavier than you d hoped, but it should fetch a good price back in Gloomhaven,",
+      "You probably wouldn't normally noticed it, but sometimes nature calls and you need to head off the beaten path to get some privacy.\n\nHidden in the bushes, you come across the smoking wreckage of some crude machine. It looks to have broken down at some point and was left here to rust and decay.\n\nMost of it is scrap, but thanks to your time with the Tinkerer, you know a good power core when you see one. Its a bit heavier than you\'d hoped, but it should fetch a good price back in Gloomhaven.",
     optionA: {
       choice: 'Take the core with you.',
       outcome:
-        'The core sure is heavy. You manage it rather well, but it will be a bit of hindrance in battle. Yo11 hope the payoff is worth the trouble.  One starts scenario with O *3.\n\nGain 10 collective gold.',
+        'The core sure is heavy. You manage it rather well, but it will be a bit of hindrance in battle. You hope the payoff is worth the trouble.\n\nOne starts scenario with {MinusOneAttackModifier}x3.\n\nGain 10 collective gold.',
       imageUrl: '/assets/cards/events/base/road/re-43-b-a.png',
     },
     optionB: {
       choice: "Leave the core alone. You don't want anything weighing you down in battle.",
       outcome:
-        'You decide the risk is not worth the reward and walk away from the contraption before you scratch yourself on the rusted metal and give yourself some foul disease. And just the thought of haggling with the Qua try Is in the Mixed District about a fair price makes you tired and irritable.\n\nNo effect.',
+        'You decide the risk is not worth the reward and walk away from the contraption before you scratch yourself on the rusted metal and give yourself some foul disease. And just the thought of haggling with the Quatryls in the Mixed District about a fair price makes you tired and irritable.\n\nNo effect.',
       imageUrl: '/assets/cards/events/base/road/re-43-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-43-f.png',
