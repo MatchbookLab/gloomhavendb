@@ -743,17 +743,17 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 36,
     text:
-      ')ou decide to unwind at the Sleeping Lion, but fust os you ore storting to relax, .1 hear of o man crashes into your table, scattering your drinks across the floor. Towering over him is a massive Inox. W hat did you sjv about my horns\'" the inox shouts. y\t*\t/ The man stands up and brushes shards of glass from his tunic. 7 said the sight of them makes me want to vomit! ’ The Inox roars and charges headlong into the manr crashing through more tables in the process. At this, the entire tavern erupts into violence. After all when a man is deep into his drink, the last thing you want to do is knock that drink oven',
+      'You decide to unwind at the Sleeping Lion, but just as you are starting to relax, a bear of a man crashes into your table, scattering your drinks across the floor.\n\nTowering over him is a massive Inox. "What did you say about my horns?" the Inox shouts.\n\nThe man stands up and brushes shards of glass from his tunic. "I said the sight of them makes me want to vomit!"\n\nthe Inox roars and charges headlong into the man, crashing through more tables in the process. At this, the entire tavern erupts into violence. After all when a man is deep into his drink, the last thing you want to do is knock that drink over.',
     optionA: {
       choice: 'Join the fray! These insults will not go unanswered!',
       outcome:
-        "1,75 ■' Y°u break a chair over the mans back, kick him in the teeth, and then you really get into it. It 's a bar brawl that could only be described as \"epic,' fueled by pure, raw rage. The carnage is extreme.\n\nGain 5 experience each.\n\nLose 2 reputation.\n\nOTHERWISE: You jump into the melee, breaking heads and chairs in equal measure. You’ve seen worse brawls, but the proprietor st ill isn t very happy when it s over.\n\nLose 1 reputation.",
+        "{LightningBolts}: You break a chair over the man's back, kick him in the teeth, and then you really get into it. It's a bar brawl that could only be described as \"epic\" fueled by pure, raw rage. The carnage is extreme.\n\nGain 5 experience each.\n\nLose 2 reputation.\n\nOTHERWISE: You jump into the melee, breaking heads and chairs in equal measure. You’ve seen worse brawls, but the proprietor still isn’t very happy when it’s over.\n\nLose 1 reputation.",
       imageUrl: '/assets/cards/events/base/city/ce-36-b-a.png',
     },
     optionB: {
-      choice: 'Do your best to stop the fighting. This is a respectable establishment. I t',
+      choice: 'Do your best to stop the fighting. This is a respectable establishment.',
       outcome:
-        ': You get up to calm down the room, but the Berserker has other ideas, laying into the man before you can get a word out. She goes into a f urious rage, and there s really not much to be done about it except pay what you can for the damages afterward.\n\nLose 10 collective gold.\n\nOTHERWISE: It takes some work, but you manage to calm dow n the Inox and buy off the rest of the room with some extra drinks, The proprietor looks positively relieved.\n\nGain 1 reputation.',
+        '{LightningBolts}: You get up to calm down the room, but the Berserker has other ideas, laying into the man before you can get a word out. She goes into a furious rage, and there’s really not much to be done about it except pay what you can for the damages afterward.\n\nLose 10 collective gold.\n\nOTHERWISE: It takes some work, but you manage to calm down the Inox and buy off the rest of the room with some extra drinks. The proprietor looks positively relieved.\n\nGain 1 reputation.',
       imageUrl: '/assets/cards/events/base/city/ce-36-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-36-f.png',
