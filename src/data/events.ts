@@ -722,17 +722,17 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 35,
     text:
-      "Harrowers are a rare sight, both outside of Gloomhaven and within. Which explains why you are bit surprised when you find yourself standing before three Harrowers in ornate robes unlike any you've ever seen. * l¥ \"We require spices from across the sea,' one chitters at you. 'Can you direct us to the appropriate merchant?'' A bit caught offguard, you ask about the specihc kind of spice, but the Harrower makes only unintelligible hisses. \"It is hard to describe, lie will know it when we see it. It is very important to our hive. ”",
+      "Harrowers are a rare sight, both outside of Gloomhaven and within. Which explains why you are bit surprised when you find yourself standing before three Harrowers in ornate robes unlike any you've ever seen.\n\n\"We require spices from across the sea,\" one chitters at you. 'Can you direct us to the appropriate merchant?\"\n\nA bit caught offguard, you ask about the specihc kind of spice, but the Harrower makes only unintelligible hisses.\n\n\"It is hard to describe. We will know it when we see it. It is very important to our hive.\"",
     optionA: {
-      choice: 'Point (lie way to the Sinking Market — the only place that would deal with them. 9',
+      choice: 'Point the way to the Sinking Market — the only place that would deal with them.',
       outcome:
-        'You quickly point in the direction of the Sinking Market, assuring the Harrowers they will find exactly what they need there. They chitter and hand you a gold piece, then move on their way.\n\nGain I collective gold.',
+        'You quickly point in the direction of the Sinking Market, assuring the Harrowers they will find exactly what they need there. They chitter and hand you a gold piece, then move on their way.\n\nGain 1 collective gold.',
       imageUrl: '/assets/cards/events/base/city/ce-35-b-a.png',
     },
     optionB: {
       choice: 'Escort the Harrowers to the New Market and help them find a spice merchant.',
       outcome:
-        '™: You make your way to the market with the Harrowers in fcnv. It s easy to find a reputable spice merchant, but difficult to get the merchant and the Harrowers to trust each other. In the end. they find common ground through the Plagueherald and make a deal.\n\nGain 1 prosperity.\n\nOTHERWISE: You bring the Harrowers to the market, but even after great effort, you cannot find any merchants willing to deal with them, fhey depart empty handed.\n\nNo effect.',
+        '{Cthulu}: You make your way to the market with the Harrowers in tow. It\'s easy to find a reputable spice merchant, but difficult to get the merchant and the Harrowers to trust each other. In the end, they find common ground through the Plagueherald and make a deal.\n\nGain 1 prosperity.\n\nOTHERWISE: You bring the Harrowers to the market, but even after great effort, you cannot find any merchants willing to deal with them, they depart empty handed.\n\nNo effect.',
       imageUrl: '/assets/cards/events/base/city/ce-35-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-35-f.png',
@@ -789,7 +789,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: "Intervene on the Orchid's behalf. r",
       outcome:
-        '; The Orchid on the ground puls up no defense, but your group isa different matter. The man quickly backs down at the sight of a powerful Orchid ready to attack, and the crowd disperses, muttering disappointment.\n\nGain I prosperity.\n\nLose 1 reputation.\n\nOTHERWISE: You try to talk some sense into «* the man, and when that doesn t work, you beat him senseless. The crowd seems happy and the Orchid thanks you for your aid.\n\nGain 1 prosperity.',
+        '; The Orchid on the ground puls up no defense, but your group isa different matter. The man quickly backs down at the sight of a powerful Orchid ready to attack, and the crowd disperses, muttering disappointment.\n\nGain 1 prosperity.\n\nLose 1 reputation.\n\nOTHERWISE: You try to talk some sense into «* the man, and when that doesn t work, you beat him senseless. The crowd seems happy and the Orchid thanks you for your aid.\n\nGain 1 prosperity.',
       imageUrl: '/assets/cards/events/base/city/ce-38-b-a.png',
     },
     optionB: {
