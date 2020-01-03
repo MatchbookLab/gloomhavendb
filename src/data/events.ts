@@ -2607,17 +2607,17 @@ export const events: EventEntity[] = [
     type: EventType.Road,
     number: 44,
     text:
-      'Due to a hie start, night falls before you con get to where you are going. You are on your guard throughout the night, but nothing can quite prepare you fora Night Demon attack. They come upon you silent and invisible, so you are unaware of their presence until their claws sink into your flesh. The darkness erupts into chaos with flashing swords and horrific shrieks. And then a bolt of fire streaks through the darkness and incinerates one of the demons. Someone else is out there.',
+      'Due to a late start, night falls before you can get to where you are going. You are on your guard throughout the night, but nothing can quite prepare you for Night Demon attack.\n\nThey come upon you silent and invisible, so you are unaware of their presence until their claws sink into your flesh.\n\nThe darkness erupts into chaos with flashing swords and horrific shrieks. And then a bolt of fire streaks through the darkness and incinerates one of the demons.\n\nSomeone else is out there.',
     optionA: {
       choice: 'Renew your efforts to slay the demons.',
       outcome:
-        'With the help of the mysterious forecaster, the battle turns and the demons are slain without much pain. Out of the darkness steps t he familiar face of a female Orchid. "Sorry about that. I think they were looking for this. ” The Spell weaver holds up a black censer, “ft s a good thing I ran into you, though. I could use your help." She draws out a crude map. "Meet me here as soon as you can, and I ’ll explain more," Unlock “Demonic Rift" (5^) 0-7).',
+        'With the help of the mysterious firecaster, the battle turns and the demons are slain without much pain. Out of the darkness steps the familiar face of a female Orchid.\n\n"Sorry about that. I think they were looking for this." The Spell weaver holds up a black censer. "It\'s a good thing I ran into you, though. I could use your help."\n\nShe draws out a crude map. "Meet me here as soon as you can, and I’ll explain more."\n\nUnlock "Demonic Rift" 90 (J-7).',
       imageUrl: '/assets/cards/events/base/road/re-44-b-a.png',
     },
     optionB: {
       choice: 'Use the distraction to disengage from the demons and run away.',
       outcome:
-        "This mysterious third party seems to have things under control, and the demons appear more interested in them anyway. You take the opportunity to retreat from the fight and run off into the night. You don't Teel great about it, but at least you're alive.\n\nNo effect.",
+        "This mysterious third party seems to have things under control, and the demons appear more interested in them anyway. You take the opportunity to retreat from the fight and run off into the night. You don't feel great about it, but at least you're alive.\n\nNo effect.",
       imageUrl: '/assets/cards/events/base/road/re-44-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-44-f.png',
