@@ -785,17 +785,17 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 38,
     text:
-      'Walking through the crowded streets of the Ward of Scales, you suddenly hear a commotion behind you, You turn to see a gruff shirtless man badgering a male Orchid. 7 assure you, I did nothing of the sort." the Orchid says calm/v. “You calling me a liar now?” bellows the man. "I think somebody needs to teach you a lesson. The man careens forward with his fist and knocks the Orchid to the ground. A gasp emerges from the crowd, but very quickly the attitude turns to excitement and encouragement. Nothing like a good fight to get a crowd worked up.',
+      'Walking through the crowded streets of the Ward of Scales, you suddenly hear a commotion behind you. You turn to see a gruff shirtless man badgering a male Orchid.\n\n"I assure you, I did nothing of the sort." the Orchid says calmly.\n\n"You calling me a liar now?" bellows the man. "I think somebody needs to teach you a lesson." The man careens forward with his fist and knocks the Orchid to the ground.\n\nA gasp emerges from the crowd, but very quickly the attitude turns to excitement and encouragement. Nothing like a good fight to get a crowd worked up.',
     optionA: {
-      choice: "Intervene on the Orchid's behalf. r",
+      choice: "Intervene on the Orchid's behalf.",
       outcome:
-        '; The Orchid on the ground puls up no defense, but your group isa different matter. The man quickly backs down at the sight of a powerful Orchid ready to attack, and the crowd disperses, muttering disappointment.\n\nGain 1 prosperity.\n\nLose 1 reputation.\n\nOTHERWISE: You try to talk some sense into «* the man, and when that doesn t work, you beat him senseless. The crowd seems happy and the Orchid thanks you for your aid.\n\nGain 1 prosperity.',
+        '{Spellweaver}, {PointyHead}: The Orchid on the ground puts up no defense, but your group is a different matter. The man quickly backs down at the sight of a powerful Orchid ready to attack, and the crowd disperses, muttering disappointment.\n\nGain 1 prosperity.\n\nLose 1 reputation.\n\nOTHERWISE: You try to talk some sense into the man, and when that doesn\'t work, you beat him senseless. The crowd seems happy and the Orchid thanks you for your aid.\n\nGain 1 prosperity.',
       imageUrl: '/assets/cards/events/base/city/ce-38-b-a.png',
     },
     optionB: {
-      choice: 'Watch the fight with the crowd. /',
+      choice: 'Watch the fight with the crowd.',
       outcome:
-        '# <p ; After a good beating, the crowd is riled up. Many people start looking in your direction, muttering about how you have the nerve to associate with Orchids as well. You make a quick exit.\n\nLose 1 reputation.\n\nOTHERWISE: The Orchid puts up no defense and the "fight "becomes rather one-sided. A solid beating is administered, and the crowd is sated. You go about your business while the Orchid bleeds on the ground.\n\nNo effect.',
+        '{Spellweaver}, {PointyHead}: After a good beating, the crowd is riled up. Many people start looking in your direction, muttering about how you have the nerve to associate with Orchids as well. You make a quick exit.\n\nLose 1 reputation.\n\nOTHERWISE: The Orchid puts up no defense and the "fight "becomes rather one-sided. A solid beating is administered, and the crowd is sated. You go about your business while the Orchid bleeds on the ground.\n\nNo effect.',
       imageUrl: '/assets/cards/events/base/city/ce-38-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-38-f.png',
