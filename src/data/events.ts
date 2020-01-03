@@ -2376,17 +2376,17 @@ export const events: EventEntity[] = [
     type: EventType.Road,
     number: 33,
     text:
-      'Something is.,.off There is a faint whisper on the wind and you feel as though at any moment, one step could send you plummeting off the face of the earth,',
+      'Something is..off.\n\nYou step in the middle of the road and feel a rippling in your skin. You\'re not sure what it is, but some strange forces are at work.\n\nThere is a faint whisper on the wind and you feel as though at any moment, one step could send you plummeting off the face of the earth.',
     optionA: {
-      choice: 'Investigate further Whatever forces are at work must be put in check.',
+      choice: 'Investigate further. Whatever forces are at work must be put in check.',
       outcome:
-        '; The Acsther in your group leads you to an area off the road that feels* fuzzy* It is hard to focus your vision, as if the space in front of you is only half there. With a few words from the Aesther, the blur is gone.\n\nNo effect.\n\nOTHERWISE: You wander around for a while before a massive demon suddenly appears before you, ripped from another plane. Your presence surprises it, though, and you dispatch it before too much trouble is caused.\n\nAll start scenario with 1 damage.\n\nDiscard 1 card each.',
+        '{Eclipse} {Circles}: The Aesther in your group leads you to an area off the road that feels...fuzzy. It is hard to focus your vision, as if the space in front of you is only half there. With a few words from the Aesther, the blur is gone.\n\nNo effect.\n\nOTHERWISE: You wander around for a while before a massive demon suddenly appears before you, ripped from another plane. Your presence surprises it, though, and you dispatch it before too much trouble is caused.\n\nAll start scenario with 1 damage.\n\nDiscard 1 card each.',
       imageUrl: '/assets/cards/events/base/road/re-33-b-a.png',
     },
     optionB: {
-      choice: 'Get out of this place as quickly as you an.',
+      choice: 'Get out of this place as quickly as you can.',
       outcome:
-        'You head forward with all haste, eager to get bach your bearings. You seem to be out of the worst of it when you are suddenly ambushed by a giant demon from behind. You fight it off, but not before it tears into you and burns your flesh.\n\nAll start scenario with 3 damage.',
+        'You head forward with all haste, eager to get back your bearings. You seem to be out of the worst of it when you are suddenly ambushed by a giant demon from behind. You fight it off, but not before it tears into you and burns your flesh.\n\nAll start scenario with 3 damage.',
       imageUrl: '/assets/cards/events/base/road/re-33-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-33-f.png',
