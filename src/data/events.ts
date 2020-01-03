@@ -870,17 +870,17 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 42,
     text:
-      'Walking near the West Gate, you are approached by a scrawny kid in a guard uniform, which is dearly too big for his small frame. "Hey, you all are famous! " he says with a big smile. "I worked as a caravan guard before I got this job. Met with a big Inox guv who always talked about you. He made you seem like the nicest, most amazing people." His smile and excitement doesn’t waver. "Say, my detail is doing some work to repair the wall damage from the last Vermling attack. Would you mind helping us! It \'ll be fun!"',
+      'Walking near the West Gate, you are approached by a scrawny kid in a guard uniform, which is clearly too big for his small frame.\n\n"Hey, you all are famous!" he says with a big smile. "I worked as a caravan guard before I got this job. Met with a big Inox guy who always talked about you. He made you seem like the nicest, most amazing people."\n\nHis smile and excitement doesn’t waver. "Say, my detail is doing some work to repair the wall damage from the last Vermling attack. Would you mind helping us! It''ll be fun!"',
     optionA: {
       choice: 'Agree to help the presumptuous kid.',
       outcome:
-        "It's hard work, but the kid's enthusiasm is • infectious. He wants to know all about your exploits and adventures, and he and his detail prove to be a great audience. By the end of the day, it hardly feels like you’ve worked at all.\n\nGain 1 prosperity.\n\nGain 1 reputation.",
+        "It's hard work, but the kid's enthusiasm is infectious. He wants to know all about your exploits and adventures, and he and his detail prove to be a great audience. By the end of the day, it hardly feels like you’ve worked at all.\n\nGain 1 prosperity.\n\nGain 1 reputation.",
       imageUrl: '/assets/cards/events/base/city/ce-42-b-a.png',
     },
     optionB: {
       choice: 'Tell this kid that he must have the wrong group of adventurers.',
       outcome:
-        'You shake your head and avert your gaze. You claim that the kid must have you conf used with a different adventuring party. He looks crushed as you walk a way.\n\nLose 1 reputation.',
+        'You shake your head and avert your gaze. You claim that the kid must have you confused with a different adventuring party. He looks crushed as you walk a way.\n\nLose 1 reputation.',
       imageUrl: '/assets/cards/events/base/city/ce-42-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-42-f.png',
