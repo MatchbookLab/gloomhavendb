@@ -996,7 +996,7 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 48,
     text:
-      'You are haggling over the price ot road rations with an irritating Valrath merchant when a messenger boy approaches you holding a note. "Sir, I have a pressing letter from an important Valrath Sunkeeper, "the messenger says. 7 was told to deliver it to you." You reach for it, but the messenger moves back a little. "Sir, this note has traveled a long distance to get to you. If you could, please pay a small fee to take possession of it."',
+      'You are haggling over the price ot road rations with an irritating Valrath merchant when a messenger boy approaches you holding a note. "Sir, I have a pressing letter from an important Valrath Sunkeeper, "the messenger says. I was told to deliver it to you." You reach for it, but the messenger moves back a little. "Sir, this note has traveled a long distance to get to you. If you could, please pay a small fee to take possession of it."',
     optionA: {
       choice: 'Begrudgingly pay For the note.',
       outcome:
@@ -1017,7 +1017,7 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 49,
     text:
-      '"Vcu/r Quartermaster friend sent me. You look quizzically at the Valrath standing at your door "I\'m from the Capital and I deal in arms and armor/\' he says. 7 m looking to set up a contract with the Gloomhaven military; •L\tm\t^ and our friend says that you may have some contacts with them. He suggested I meet up with you once I sot here/\' w\t*\tillf I The Valrath shifts his feet nervously. So, can you help mer "',
+      '"Vcu/r Quartermaster friend sent me. You look quizzically at the Valrath standing at your door "I\'m from the Capital and I deal in arms and armor/\' he says. 7 m looking to set up a contract with the Gloomhaven military; •L\tm\t^ and our friend says that you may have some contacts with them. He suggested I meet up with you once I sot here/\' w\t*\tillf I The Valrath shifts his feet nervously. So, can you help me?"',
     optionA: {
       choice: 'Agree to help him make contact with the military.',
       outcome:
@@ -1105,7 +1105,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Let the guards know you recognize the Berserker s axe.',
       outcome:
-        'You approach (he wounded detail, explaining • how that axe belonged to a former member of your party. "Yeah, we know," one of them says with an icy stare. “Said »ve were desecrating her land or some such nonsense and just went crazy. But we weren\'t doing anything, but patrolling! Quite a piece of work your friend, fust take the axe if you want and get out of here."\n\nLose 1 reputation.\n\nGain I collective Bloody Axe (Item 117).',
+        'You approach (he wounded detail, explaining • how that axe belonged to a former member of your party. "Yeah, we know," one of them says with an icy stare. “Said »ve were desecrating her land or some such nonsense and just went crazy. But we weren\'t doing anything, but patrolling! Quite a piece of work your friend, fust take the axe if you want and get out of here."\n\nLose 1 reputation.\n\nGain 1 collective Bloody Axe (Item 117).',
       imageUrl: '/assets/cards/events/base/city/ce-53-b-a.png',
     },
     optionB: {
