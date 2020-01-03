@@ -2628,11 +2628,11 @@ export const events: EventEntity[] = [
     type: EventType.Road,
     number: 45,
     text:
-      "Riding up on horses, a band of dirty, rough men quickly overtake and surround your group. t hey look hard and dangerous, and you immediately pull out your weapons as they approach. Then you hear a familiar laugh. ' Well, if it isn't my old crew.\" A woman in dark leather armor leaps off her horse to comes greet you. 'You know whatt boys? This lot gets a pass.' She winks at you and turns around. 'Plus, they’d probably kill you all if things turned ugly:* Jumping back onto her horse, the Scoundrel looks back at you. *Well[ it was nice seeing you. Just remember — you never saw me. *",
+      "Riding up on horses, a band of dirty, rough men quickly overtake and surround your group. They look hard and dangerous, and you immediately pull out your weapons as they approach.\n\nThen you hear a familiar laugh.\n\n\"Well, if it isn't my old crew.\" A woman in dark leather armor leaps off her horse to comes greet you. \"You know whatt boys? This lot gets a pass.\"\n\nShe winks at you and turns around. \"Plus, they’d probably kill you all if things turned ugly.\"\n\nJumping back onto her horse, the Scoundrel looks back at you. \"Well, it was nice seeing you. Just remember — you never saw me.\"",
     optionA: {
       choice: 'Attack. Friend or not, those who prey on the weak should be brought to justice.',
       outcome:
-        '1 You see the bandits relax a little and begin to • form up. That is when you strike. Some are scared off by the sudden attack, but others engage you hungrily. The Scoundrel throws a few good daggers, too, before she rides off, criticizing your poor decision-making.\n\nAll start scenario with {Poison}.\n\nAll start scenario with 2 damage.',
+        'You see the bandits relax a little and begin to form up. That is when you strike. Some are scared off by the sudden attack, but others engage you hungrily. The Scoundrel throws a few good daggers, too, before she rides off, criticizing your poor decision-making.\n\nAll start scenario with {Poison}.\n\nAll start scenario with 2 damage.',
       imageUrl: '/assets/cards/events/base/road/re-45-b-a.png',
     },
     optionB: {
