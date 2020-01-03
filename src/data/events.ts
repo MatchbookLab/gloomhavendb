@@ -516,7 +516,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Attempt to catch the vase.',
       outcome:
-        "{Brute}, {Cragheart}, {LightningBolts}: You race forward and wrap your arms around the vase. You manage to keep grip of it, preventing tragedy. The Valrath is relieved and offers to pay you for your trouble if you carry it the rest of the way.\n\nGain 5 collective gold.\n\nOTHERWISE: You race forward and attempt to catch the vase, but it is too much for you. Your grip loosens and the vase shatters into a hundred pieces. The Valrath is irate, demanding compensation from you for breaking it. You pay him what you can.\n\nLose 10 collective gold.",
+        "{Brute} {Cragheart} {LightningBolts}: You race forward and wrap your arms around the vase. You manage to keep grip of it, preventing tragedy. The Valrath is relieved and offers to pay you for your trouble if you carry it the rest of the way.\n\nGain 5 collective gold.\n\nOTHERWISE: You race forward and attempt to catch the vase, but it is too much for you. Your grip loosens and the vase shatters into a hundred pieces. The Valrath is irate, demanding compensation from you for breaking it. You pay him what you can.\n\nLose 10 collective gold.",
       imageUrl: '/assets/cards/events/base/city/ce-25-b-a.png',
     },
     optionB: {
@@ -543,7 +543,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Take the opportunity to steal some valuables from drunk patrons in the dark.',
       outcome:
-        '{Scoundrel}, {Mindthief}, {Eclipse}: The darkness gives the less scrupulous among you a good chance to perform their craft. Within a matter of minutes, your coin purses are much heavier.\n\nGain 10 collective gold.\n\nOTHERWISE: You attempt to lighten some purses, but even in the dark, you find the task a little outside your skill set. One patron catches your hand as it searches his belt. He starts yelling, and you flee as quickly as possible.\n\nLose 1 reputation.',
+        '{Scoundrel} {Mindthief} {Eclipse}: The darkness gives the less scrupulous among you a good chance to perform their craft. Within a matter of minutes, your coin purses are much heavier.\n\nGain 10 collective gold.\n\nOTHERWISE: You attempt to lighten some purses, but even in the dark, you find the task a little outside your skill set. One patron catches your hand as it searches his belt. He starts yelling, and you flee as quickly as possible.\n\nLose 1 reputation.',
       imageUrl: '/assets/cards/events/base/city/ce-26-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-26-f.png',
@@ -558,7 +558,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Attempt to stop the crowd from hanging the Vermling,',
       outcome:
-        "{Spellweaver}, {PointyHead}, {MusicNote}: You keep a calm demeanor as you try to talk down the mob. It takes some effort, but the men finally agree to turn the thief over to the authorities, which stops the situation from devolving into chaos.\n\nGain 1 prosperity.\n\nOTHERWISE: You kindly entreat the crowd to back down, and when that doesn't work, you resort to force. No one seems happy that you stopped the hanging, but it was the right thing to do.\n\nLose 1 reputation.",
+        "{Spellweaver} {PointyHead} {MusicNote}: You keep a calm demeanor as you try to talk down the mob. It takes some effort, but the men finally agree to turn the thief over to the authorities, which stops the situation from devolving into chaos.\n\nGain 1 prosperity.\n\nOTHERWISE: You kindly entreat the crowd to back down, and when that doesn't work, you resort to force. No one seems happy that you stopped the hanging, but it was the right thing to do.\n\nLose 1 reputation.",
       imageUrl: '/assets/cards/events/base/city/ce-27-b-a.png',
     },
     optionB: {
@@ -579,7 +579,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Accept the mysterious job. You can handle anything.',
       outcome:
-        "{Scoundrel}, {Mindthief}, {Eclipse}: The job proves easy enough with the proper expertise. The plans are simple, and you are in and out of the estate easily, free to meet up with the Inox and claim your payment.\n\nGain 10 gold each.\n\nOTHERWISE: It turns out confidence isn't enough when it comes to sneaking in and out of a well-guarded estate without being seen. You didn't get the figurine, and one of the guards got a pretty good look at you.\n\nLose 3 reputation.",
+        "{Scoundrel} {Mindthief} {Eclipse}: The job proves easy enough with the proper expertise. The plans are simple, and you are in and out of the estate easily, free to meet up with the Inox and claim your payment.\n\nGain 10 gold each.\n\nOTHERWISE: It turns out confidence isn't enough when it comes to sneaking in and out of a well-guarded estate without being seen. You didn't get the figurine, and one of the guards got a pretty good look at you.\n\nLose 3 reputation.",
       imageUrl: '/assets/cards/events/base/city/ce-28-b-a.png',
     },
     optionB: {
@@ -600,13 +600,13 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Talk to the Savvas, appealing to their sense of duty and community.',
       outcome:
-        "{Cragheart}, {Triangles}: The workers' hard expressions soften a bit when they see a Savvas among you. You talk for a while and explain that they need the city just as much as the city needs them. In the end, you sell them on a smaller wage increase, and everyone returns to work.\n\nGain 1 prosperity.\n\nOTHERWISE: Even after much effort, the workers won't speak to you at all, calling you part of the problem. The strike is eventually resolved, but no one seems happy.\n\nNo effect.",
+        "{Cragheart} {Triangles}: The workers' hard expressions soften a bit when they see a Savvas among you. You talk for a while and explain that they need the city just as much as the city needs them. In the end, you sell them on a smaller wage increase, and everyone returns to work.\n\nGain 1 prosperity.\n\nOTHERWISE: Even after much effort, the workers won't speak to you at all, calling you part of the problem. The strike is eventually resolved, but no one seems happy.\n\nNo effect.",
       imageUrl: '/assets/cards/events/base/city/ce-29-b-a.png',
     },
     optionB: {
       choice: 'Talk to the managers and attempt to get the Savvas better pay.',
       outcome:
-        '{Scoundrel}, {Saw}, {MusicNote}: "I-I just can\'t give them more money!" the manager pleads. After some persuasion, though, he seems to open up to negotiation, The workers and management meet halfway and everyone seems content.\n\nGain 1 prosperity.\n\nOTHERWISE: You just can\'t get the manager to budge on his position, and he only gets angrier with continued pushing. The Savvas eventually agree tentatively to continue work, but the underlying problem remains.\n\nNo effect.',
+        '{Scoundrel} {Saw} {MusicNote}: "I-I just can\'t give them more money!" the manager pleads. After some persuasion, though, he seems to open up to negotiation, The workers and management meet halfway and everyone seems content.\n\nGain 1 prosperity.\n\nOTHERWISE: You just can\'t get the manager to budge on his position, and he only gets angrier with continued pushing. The Savvas eventually agree tentatively to continue work, but the underlying problem remains.\n\nNo effect.',
       imageUrl: '/assets/cards/events/base/city/ce-29-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-29-f.png',
@@ -684,7 +684,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Run to the girl and attempt to pull her out of the Void.',
       outcome:
-        "{Circles}, {Eclipse}: You grab the child and lift her clear of the haunting area. She is still screaming madly when the Aesther in your group lays a hand upon the child in deep concentration. Slowly, the crying subsides, and the child gets up and runs off.\n\nGain 2 reputation.\n\nOTHERWISE: You get the child off the sand as quickly as you can, but it doesn't do much good. The girl screams and screams no matter what aid is administered.\n\nNo effect.",
+        "{Circles} {Eclipse}: You grab the child and lift her clear of the haunting area. She is still screaming madly when the Aesther in your group lays a hand upon the child in deep concentration. Slowly, the crying subsides, and the child gets up and runs off.\n\nGain 2 reputation.\n\nOTHERWISE: You get the child off the sand as quickly as you can, but it doesn't do much good. The girl screams and screams no matter what aid is administered.\n\nNo effect.",
       imageUrl: '/assets/cards/events/base/city/ce-33-b-a.png',
     },
     optionB: {
@@ -774,7 +774,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Help repair the gate. You wouldn’t want another attack to further cripple the town.',
       outcome:
-        '{ThreeSpears}, {Spellweaver}, {Tinkerer}, {Triangles}, {Circles}: You set to work repairing the gate, and by the time night falls, it is at least functional. The downtrodden citizens are inspired by your work, and you have little doubt that the community will bounce bock with little permanent damage.\n\nGain 1 prosperity.\n\nOTHERWISE: You fiddle with the gate for a bit until it becomes clear that you are doing nothing to help. You decide to head back to your rooms instead and get some rest.\n\nNo effect.',
+        '{ThreeSpears} {Spellweaver} {Tinkerer} {Triangles} {Circles}: You set to work repairing the gate, and by the time night falls, it is at least functional. The downtrodden citizens are inspired by your work, and you have little doubt that the community will bounce bock with little permanent damage.\n\nGain 1 prosperity.\n\nOTHERWISE: You fiddle with the gate for a bit until it becomes clear that you are doing nothing to help. You decide to head back to your rooms instead and get some rest.\n\nNo effect.',
       imageUrl: '/assets/cards/events/base/city/ce-37-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-37-f.png',
@@ -789,13 +789,13 @@ export const events: EventEntity[] = [
     optionA: {
       choice: "Intervene on the Orchid's behalf.",
       outcome:
-        '{Spellweaver}, {PointyHead}: The Orchid on the ground puts up no defense, but your group is a different matter. The man quickly backs down at the sight of a powerful Orchid ready to attack, and the crowd disperses, muttering disappointment.\n\nGain 1 prosperity.\n\nLose 1 reputation.\n\nOTHERWISE: You try to talk some sense into the man, and when that doesn\'t work, you beat him senseless. The crowd seems happy and the Orchid thanks you for your aid.\n\nGain 1 prosperity.',
+        '{Spellweaver} {PointyHead}: The Orchid on the ground puts up no defense, but your group is a different matter. The man quickly backs down at the sight of a powerful Orchid ready to attack, and the crowd disperses, muttering disappointment.\n\nGain 1 prosperity.\n\nLose 1 reputation.\n\nOTHERWISE: You try to talk some sense into the man, and when that doesn\'t work, you beat him senseless. The crowd seems happy and the Orchid thanks you for your aid.\n\nGain 1 prosperity.',
       imageUrl: '/assets/cards/events/base/city/ce-38-b-a.png',
     },
     optionB: {
       choice: 'Watch the fight with the crowd.',
       outcome:
-        '{Spellweaver}, {PointyHead}: After a good beating, the crowd is riled up. Many people start looking in your direction, muttering about how you have the nerve to associate with Orchids as well. You make a quick exit.\n\nLose 1 reputation.\n\nOTHERWISE: The Orchid puts up no defense and the "fight "becomes rather one-sided. A solid beating is administered, and the crowd is sated. You go about your business while the Orchid bleeds on the ground.\n\nNo effect.',
+        '{Spellweaver} {PointyHead}: After a good beating, the crowd is riled up. Many people start looking in your direction, muttering about how you have the nerve to associate with Orchids as well. You make a quick exit.\n\nLose 1 reputation.\n\nOTHERWISE: The Orchid puts up no defense and the "fight "becomes rather one-sided. A solid beating is administered, and the crowd is sated. You go about your business while the Orchid bleeds on the ground.\n\nNo effect.',
       imageUrl: '/assets/cards/events/base/city/ce-38-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-38-f.png',
@@ -810,7 +810,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Agree to help the priest and accompany him to the sanctuary.',
       outcome:
-        "The pious man seems incredibly happy you've decided to help the sanctuary. When you arrive at the great building, he explains in detail all that has happened. Using that information, you inquire around town, putting out feelers to possible fences for the goods.\n\n{Scoundrel}, {Mindthief}, {Eclipse}, {Saw}, {MusicNote}: Add City Event 65 to the deck.\n\nOtherwise:\n\nNo effect.",
+        "The pious man seems incredibly happy you've decided to help the sanctuary. When you arrive at the great building, he explains in detail all that has happened. Using that information, you inquire around town, putting out feelers to possible fences for the goods.\n\n{Scoundrel} {Mindthief} {Eclipse} {Saw} {MusicNote}: Add City Event 65 to the deck.\n\nOtherwise:\n\nNo effect.",
       imageUrl: '/assets/cards/events/base/city/ce-39-b-a.png',
     },
     optionB: {
@@ -1924,7 +1924,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Take cover under a nearby outcropping and wait out the earthquake.',
       outcome:
-        '{Cragheart}, {Spellweaver}, {Triangles}, {Circles}: You jump under an outcropping, but something is not right. Those among you attuned to the elements turn toward the face of the mountain and step into it, as though the rocks were gone. Inside, you see an odd crystal jutting out of the earth. You snatch it up and the tremors stop.\n\nAdd City Event 73 to the deck.\n\nOTHERWISE: The outcropping proves to be an unstable place to hide. You are quickly buried in rubble.\n\nAll start scenario with 4 damage.',
+        '{Cragheart} {Spellweaver} {Triangles} {Circles}: You jump under an outcropping, but something is not right. Those among you attuned to the elements turn toward the face of the mountain and step into it, as though the rocks were gone. Inside, you see an odd crystal jutting out of the earth. You snatch it up and the tremors stop.\n\nAdd City Event 73 to the deck.\n\nOTHERWISE: The outcropping proves to be an unstable place to hide. You are quickly buried in rubble.\n\nAll start scenario with 4 damage.',
       imageUrl: '/assets/cards/events/base/road/re-11-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-11-f.png',
@@ -2212,7 +2212,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Try to reason with the Inox',
       outcome:
-        "{Brute}, {LightningBolts}: The Inox in your party talks with the leader for a while and they are able to come to an agreement. They punch each other's chests, and the group lets you through.\n\nNo effect.\n\nOTHERWISE: The Inox don't seem to be budging on this payment issue, so you are forced to pass along a handful of coins. The big one smiles and lets you continue on your way.\n\nLose 5 gold each.",
+        "{Brute} {LightningBolts}: The Inox in your party talks with the leader for a while and they are able to come to an agreement. They punch each other's chests, and the group lets you through.\n\nNo effect.\n\nOTHERWISE: The Inox don't seem to be budging on this payment issue, so you are forced to pass along a handful of coins. The big one smiles and lets you continue on your way.\n\nLose 5 gold each.",
       imageUrl: '/assets/cards/events/base/road/re-25-b-a.png',
     },
     optionB: {
@@ -2233,7 +2233,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Attempt to help the man with his axle problem.',
       outcome:
-        "{Tinkerer}, {ThreeSpears}: The man talks the whole way through the process, but after an hour or so, the axle is repaired and the man leaves in a radiant mood, bestowing blessings upon you.\n\nAll start scenario with {Bless}.\n\nGain 1 reputation.\n\nOTHERWISE: You happily agree to help the man, but quickly realize you don't know what you are doing. The man thanks you anyway, and you move on.\n\nNo effect.",
+        "{Tinkerer} {ThreeSpears}: The man talks the whole way through the process, but after an hour or so, the axle is repaired and the man leaves in a radiant mood, bestowing blessings upon you.\n\nAll start scenario with {Bless}.\n\nGain 1 reputation.\n\nOTHERWISE: You happily agree to help the man, but quickly realize you don't know what you are doing. The man thanks you anyway, and you move on.\n\nNo effect.",
       imageUrl: '/assets/cards/events/base/road/re-26-b-a.png',
     },
     optionB: {
@@ -2254,7 +2254,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Clear the trees from the road. It is the best way through and will help other travelers.',
       outcome:
-        "{Spellweaver}, {Triangles}, {Circles}: The trees are too massive and dense to remove through conventional means, but with elemental power, they are destroyed and swept aside in no time.\n\nNo effect.\n\nOTHERWISE: The trees aren't part of an ambush, but that doesn't make them any easier to clear. It' s grueling work and by the time you arrive at your destination, you are exhausted.\n\nDiscard 3 cards each.",
+        "{Spellweaver} {Triangles} {Circles}: The trees are too massive and dense to remove through conventional means, but with elemental power, they are destroyed and swept aside in no time.\n\nNo effect.\n\nOTHERWISE: The trees aren't part of an ambush, but that doesn't make them any easier to clear. It' s grueling work and by the time you arrive at your destination, you are exhausted.\n\nDiscard 3 cards each.",
       imageUrl: '/assets/cards/events/base/road/re-27-b-a.png',
     },
     optionB: {
@@ -2275,7 +2275,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Sell the man a stamina potion.',
       outcome:
-        'PAY 1 COLLECTIVE "MINOR STAMINA POTION" (ITEM 013): After some oddly tense negotiations, you are able to agree upon a price. With one hand firmly on his sword hilt, the man grabs a coin pouch with the other hand and extends it toward you. You exchange goods and continue on your journey without further incident.\n\nGain 10 collective gold.\n\n{Scoundrel}, {Saw}, {MusicNote}: Gain 10 additional collective gold.\n\nOTHERWISE: Read outcome B.',
+        'PAY 1 COLLECTIVE "MINOR STAMINA POTION" (ITEM 013): After some oddly tense negotiations, you are able to agree upon a price. With one hand firmly on his sword hilt, the man grabs a coin pouch with the other hand and extends it toward you. You exchange goods and continue on your journey without further incident.\n\nGain 10 collective gold.\n\n{Scoundrel} {Saw} {MusicNote}: Gain 10 additional collective gold.\n\nOTHERWISE: Read outcome B.',
       imageUrl: '/assets/cards/events/base/road/re-28-b-a.png',
     },
     optionB: {
@@ -2317,7 +2317,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Help the survivors deal with the carnage.',
       outcome:
-        '{Mindthief}, {TwoMinis}: You approach to help those still alive, but the woman in the road screams, gesturing at the Vermling in your group. You try to calm her, but it is of no use. You abandon the cause.\n\nNo effect.\n\nOTHERWISE: You disperse through the scene, tending to people\'s wounds and getting them back on their feet. It takes a few supplies, but they seem grateful in the end.\n\nConsume 1 {SmallItem} item each.\n\nGain 1 reputation.',
+        '{Mindthief} {TwoMinis}: You approach to help those still alive, but the woman in the road screams, gesturing at the Vermling in your group. You try to calm her, but it is of no use. You abandon the cause.\n\nNo effect.\n\nOTHERWISE: You disperse through the scene, tending to people\'s wounds and getting them back on their feet. It takes a few supplies, but they seem grateful in the end.\n\nConsume 1 {SmallItem} item each.\n\nGain 1 reputation.',
       imageUrl: '/assets/cards/events/base/road/re-30-b-a.png',
     },
     optionB: {
@@ -2926,7 +2926,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Cover yourself as best you can and try to walk through the swarm.',
       outcome:
-        'If you were to list the top ten worst moments • of your fife, this would probably be up there. You walk into the swarm and the insects are everywhere, biting and clawing at your flesh. You move as quickly as you can, emerging from the other side with your life intact, but your sanity in shambles. Oddly though, you also feel as though you were just in the presence of a powerful, divine force.\n\nAll start scenario with 2 damage.\n\nAll start scenario with {Poison}, {Muddle} , and {Bless}.',
+        'If you were to list the top ten worst moments • of your fife, this would probably be up there. You walk into the swarm and the insects are everywhere, biting and clawing at your flesh. You move as quickly as you can, emerging from the other side with your life intact, but your sanity in shambles. Oddly though, you also feel as though you were just in the presence of a powerful, divine force.\n\nAll start scenario with 2 damage.\n\nAll start scenario with {Poison}, {Muddle}, and {Bless}.',
       imageUrl: '/assets/cards/events/base/road/re-59-b-a.png',
     },
     optionB: {
