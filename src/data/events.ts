@@ -2334,17 +2334,17 @@ export const events: EventEntity[] = [
     type: EventType.Road,
     number: 31,
     text:
-      'approach the crest of a hill to the sound of yelling and swords clashing. Advancing, you see a trade caravan fighting off a swarm ofVermlings. You can easily see that the caravan guards are not doing well1 They are vastly outnumbered and forced to remain in a defensive position to protect their employers. You expect they will be overwhelmed and killed in a manner of minutes. 1       g     ■\tII -|',
+      'You approach the crest of a hill to the sound of yelling and swords clashing. Advancing, you see a trade caravan fighting off a swarm of Vermlings.\n\nYou can easily see that the caravan guards are not doing well. They are vastly outnumbered and forced to remain in a defensive position to protect their employers. You expect they will be overwhelmed and killed in a manner of minutes.',
     optionA: {
       choice: 'Charge into the fray to protect the caravan from the savage attack.',
       outcome:
-        '.•Fortunately, some of your group excels when in a defensive position, and the tide of the battle clearly turns once they take command of the situation. The Vermlings are driven off and the caravan is saved.\n\nGain 2 reputation.\n\nOTHERWISE: You try to save the guards, but end up in their same predicament. You manage to fight off the Vermlings, but not before all the guards and merchants are killed.\n\nAll start scenario with 3 damage.\n\nGain 5 gold each.',
+        '{Brute} {Sun} {ThreeSpears}: Fortunately, some of your group excels when in a defensive position, and the tide of the battle clearly turns once they take command of the situation. The Vermlings are driven off and the caravan is saved.\n\nGain 2 reputation.\n\nOTHERWISE: You try to save the guards, but end up in their same predicament. You manage to fight off the Vermlings, but not before all the guards and merchants are killed.\n\nAll start scenario with 3 damage.\n\nGain 5 gold each.',
       imageUrl: '/assets/cards/events/base/road/re-31-b-a.png',
     },
     optionB: {
-      choice: 'Watch lor a while and wait for an pportune moment to strike.',
+      choice: 'Watch lor a while and wait for an opportune moment to strike.',
       outcome:
-        "You wait for a good long while, until after the guards have all been slaughtered and the Verm lings are softened up a bit. They're going through the goods in the wagons when you hit them with a surprise attack. Caught offguard, they go down without much of a fight.\n\nAll start scenario with 1 damage.\n\nGain 5 gold each.",
+        "You wait for a good long while, until after the guards have all been slaughtered and the Vermlings are softened up a bit. They're going through the goods in the wagons when you hit them with a surprise attack. Caught off guard, they go down without much of a fight.\n\nAll start scenario with 1 damage.\n\nGain 5 gold each.",
       imageUrl: '/assets/cards/events/base/road/re-31-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-31-f.png',
