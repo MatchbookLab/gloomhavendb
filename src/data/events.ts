@@ -806,17 +806,17 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 39,
     text:
-      'You are awakened in your room by a decisive knock at the door: You answer it to find a man in the robes of the Great Oak. "Greetings," the man begins. \'Our sanctuary is having a bit of trouble, and Vve been directed to you as persons who could possibly help. ‘ You see, some of our relics have gone missing, and we suspect the worst We are hoping you might grace us with your assistance in investigating this matter.w',
+      'You are awakened in your room by a decisive knock at the door. You answer it to find a man in the robes of the Great Oak.\n\n"Greetings," the man begins. "Our sanctuary is having a bit of trouble, and I\'ve been directed to you as persons who could possibly help.\n\n"You see, some of our relics have gone missing, and we suspect the worst. We are hoping you might grace us with your assistance in investigating this matter.\"',
     optionA: {
       choice: 'Agree to help the priest and accompany him to the sanctuary.',
       outcome:
-        "The pious man seems incredibly happy • you've decided to help the sanctuary. When you arrive at the great building, he explains in detail all that has happened. Using that information, you inquire around town, putting out heelers to possible Fences For the goods.\n\nAdd City Event 65 to the deck.\n\nOtherwise:\n\nNo effect.",
+        "The pious man seems incredibly happy you've decided to help the sanctuary. When you arrive at the great building, he explains in detail all that has happened. Using that information, you inquire around town, putting out feelers to possible fences for the goods.\n\n{Scoundrel}, {Mindthief}, {Eclipse}, {Saw}, {MusicNote}: Add City Event 65 to the deck.\n\nOtherwise:\n\nNo effect.",
       imageUrl: '/assets/cards/events/base/city/ce-39-b-a.png',
     },
     optionB: {
-      choice: 'Refuse to help, making some excuse about being too busy, & /',
+      choice: 'Refuse to help, making some excuse about being too busy.',
       outcome:
-        "You mutter something about hunting drakes and close the door on the priest. He becomes rather distraught as the door slams shut in his face, but surely he 'll get over it. You ve got much more important things to do anyway. \\'o effect.",
+        "You mutter something about hunting drakes and close the door on the priest. He becomes rather distraught as the door slams shut in his face, but surely he'll get over it. You've got much more important things to do anyway.\n\nNo effect.",
       imageUrl: '/assets/cards/events/base/city/ce-39-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-39-f.png',
