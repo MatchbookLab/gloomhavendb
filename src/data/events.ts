@@ -1648,17 +1648,17 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 79,
     text:
-      'The sun is out and you are en- joying j pleasant stroll across the Silent Bridge until you see two demons attacking a man ahead of you. You get closer and can hear the demons be- rating the man as they swipe at him with their da W5. “You dare spit on us as we walk past? One of them yells. "We will show you the consequences of defying authority!',
+      'The sun is out and you are enjoying a pleasant stroll across the Silent Bridge until you see two demons attacking a man ahead of you.\n\nYou get closer and can hear the demons berating the man as they swipe at him with their claws.\n\n"You dare spit on us as we walk past?" One of them yells. "We will show you the consequences of defying authority!"',
     optionA: {
       choice: "Intervene on the man's behalf.",
       outcome:
-        'There is only one method these demons respect: violence. You run forward and hack at one of the demons\' arms as it comes down to strike at the man. The arm falls limp to the ground and the rest of the demon soon follows. The other demon looks at you with seething rage as you face it with raised weapons. n This grave insult will not go unpunished! This city will feel our wrath!"\n\nLose 1 prosperity.',
+        'There is only one method these demons respect: violence. You run forward and hack at one of the demons\' arms as it comes down to strike at the man. The arm falls limp to the ground and the rest of the demon soon follows.\n\nThe other demon looks at you with seething rage as you face it with raised weapons. "This grave insult will not go unpunished! This city will feel our wrath!"\n\nLose 1 prosperity.',
       imageUrl: '/assets/cards/events/base/city/ce-79-b-a.png',
     },
     optionB: {
       choice: 'Keep walking.',
       outcome:
-        'You continue your stroll, trying to block the • unpleasantness from your mind Unfortu- nately, others around you cannot, and they are reminded of the actions you took that caused this horrible and afl-too-frequent occurrence.\n\nLose 1 reputation.',
+        'You continue your stroll, trying to block the unpleasantness from your mind. Unfortunately, others around you cannot, and they are reminded of the actions you took that caused this horrible and all-too-frequent occurrence.\n\nLose 1 reputation.',
       imageUrl: '/assets/cards/events/base/city/ce-79-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-79-f.png',
