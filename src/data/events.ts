@@ -1395,17 +1395,17 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 67,
     text:
-      "You are trying to enjoy a relaxing drink at the Sleeping Lion when a number of large men and Inox burst into the tavern and approach your table. 'So, you must be that little creeps collateral/ one of the Inox says. Were here to collect/' When you stare at her in silencef she tries again, Little grey bearded man. Wore symbols of the Great Oak. He said you lot would pay oil his debt if he couldn ft. * She pats an axe at her side. ''Now, seeing as how he apparently skipped town, you can pay us, or things are gonna get ugly.H",
+      "You are trying to enjoy a relaxing drink at the Sleeping Lion when a number of large men and Inox burst into the tavern and approach your table.\n\n\"So, you must be that little creep's collateral,\" one of the Inox says.\"We're here to collect.\"\n\nWhen you stare at her in silence, she tries again. \"Little grey-bearded man. Wore symbols of the Great Oak. He said you lot would pay off his debt if he couldn't.\"\n\nShe pats an axe at her side. \"Now, seeing as how he apparently skipped town, you can pay us, or things are gonna get ugly.\"",
     optionA: {
       choice: 'Pay off the thugs.',
       outcome:
-        "PAY 60 COLLECTIVE GOLD: You sigh • and hand over the Sawbones' debt, plus interest. Though it feels terrible, the thugs are satisfied and walk out the same way they came in. At least it is over now.\n\nNo effect.\n\nOTHERWISE: Seeing as how you don't have enough money, you decide pursue other options.\n\nRead outcome B.",
+        "PAY 60 COLLECTIVE GOLD: You sigh and hand over the Sawbones' debt, plus interest. Though it feels terrible, the thugs are satisfied and walk out the same way they came in. At least it is over now.\n\nNo effect.\n\nOTHERWISE: Seeing as how you don't have enough money, you decide to pursue other options.\n\nRead outcome B.",
       imageUrl: '/assets/cards/events/base/city/ce-67-b-a.png',
     },
     optionB: {
       choice: 'Refuse to pay. You won\'t be strongarmed by anyone.',
       outcome:
-        'You laugh and wave your hand dismissively. I here \'s no way you will be paying such a large amount of money to these thugs. Unfortunately, the Inox is not amused. m " Then your payment will he blood! she says "Meet us in the back alley, and ivc \'ll see if "we can t come to terms.\n\nUnlock "Back Alley Brawi" 92 (C-14).\n\nParty Achievement: "Debt Collection."',
+        'You laugh and wave your hand dismissively. There\'s no way you will be paying such a large amount of money to these thugs. Unfortunately, the Inox is not amused.\n\n"Then your payment will be blood!" she says. "Meet us in the back alley, and we\'ll see if we can\'t come to terms.\n\nUnlock "Back Alley Brawl" 92 (C-14).\n\nParty Achievement: "Debt Collection."',
       imageUrl: '/assets/cards/events/base/city/ce-67-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-67-f.png',
