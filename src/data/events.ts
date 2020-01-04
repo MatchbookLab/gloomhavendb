@@ -2733,17 +2733,17 @@ export const events: EventEntity[] = [
     type: EventType.Road,
     number: 50,
     text:
-      'Up ahead of you, you see a staff7 stuck in the very center of the road pointing straight up out of the ground You get closer, and an odd sense of foreboding comes ove you. You recognize the staff as the one wielded by the Summoner The fact that it now in front ofyou with w such a strange and ominous placement makes you very wary. You quickly look around, Lwt nothing else of note is in sight.',
+      'Up ahead of you, you see a staff stuck in the very center of the road pointing straight up out of the ground. You get closer, and an odd sense of foreboding comes over you.\n\nYou recognize the staff as the one wielded by the Summoner. The fact that it is now in front of you with such a strange and ominous placement makes you very wary.\n\nYou quickly look around, but nothing else of note is in sight.',
     optionA: {
       choice: 'Take the staff and move on.',
       outcome:
-        "-'v'V*'\t;! You shrug and grab the staff, half expecting • something exciting to happen when you do. Instead, nothing happens at all. In fact, the staff seems rather mundane. You feel no power running through it at all. Still, no sense in leaving it behind. It could be important.\n\nAdd City Event 68 to the deck.",
+        'You shrug and grab the staff, half expecting something exciting to happen when you do. Instead, nothing happens at all. In fact, the staff seems rather mundane. You feel no power running through it at all. Still, no sense in leaving it behind. It could be important.\n\nAdd City Event 68 to the deck.',
       imageUrl: '/assets/cards/events/base/road/re-50-b-a.png',
     },
     optionB: {
       choice: 'Investigate the area and get to the bottom of this.',
       outcome:
-        'You spend a good hour looking over (he area, scouring every bush dm! divot you can find. Unfortunately, you find no other clues about what happened here and end up fust tiring yourself out.\n\nDiscard 2 cards each.\n\nRead outcome A.',
+        'You spend a good hour looking over the area, scouring every bush and divot you can find. Unfortunately, you find no other clues about what happened here and end up just tiring yourself out.\n\nDiscard 2 cards each.\n\nRead outcome A.',
       imageUrl: '/assets/cards/events/base/road/re-50-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-50-f.png',
