@@ -1017,17 +1017,17 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 49,
     text:
-      '"Vcu/r Quartermaster friend sent me. You look quizzically at the Valrath standing at your door "I\'m from the Capital and I deal in arms and armor/\' he says. 7 m looking to set up a contract with the Gloomhaven military; •L\tm\t^ and our friend says that you may have some contacts with them. He suggested I meet up with you once I sot here/\' w\t*\tillf I The Valrath shifts his feet nervously. So, can you help me?"',
+      '"Your Quartermaster friend sent me." You look quizzically at the Valrath standing at your door.\n\n"I\'m from the Capital and I deal in arms and armor," he says. "I\'m looking to set up a contract with the Gloomhaven military and our friend says that you may have some contacts with them. He suggested I meet up with you once I got here"\n\nThe Valrath shifts his feet nervously. "So, can you help me?"',
     optionA: {
       choice: 'Agree to help him make contact with the military.',
       outcome:
-        'You take the Valrath over to the Ghost Fortress, where you make introductions to the Captain of the Guard The Captain seems skeptical at first, but admits that they could use an additional supply of weapons. Terms are made, and a contract is signed.\n\nGain 1 prosperity.',
+        'You take the Valrath over to the Ghost Fortress, where you make introductions to the Captain of the Guard. The Captain seems skeptical at first, but admits that they could use an additional supply of weapons. Terms are made, and a contract is signed.\n\nGain 1 prosperity.',
       imageUrl: '/assets/cards/events/base/city/ce-49-b-a.png',
     },
     optionB: {
-      choice: 'Demand a finder s fee for setting him up with buyers. /',
+      choice: 'Demand a finder\'s fee for setting him up with buyers.',
       outcome:
-        '; The Valrath looks at you with trepidation, but after some persuasion you get him to agree.\n\nGain 15 collective gold.\n\nRead outcome A.\n\nOTHERWISE: The Valrath recoils, insulted by the notion. He storms off, grumbling about the lost value of friendship.\n\nNo effect.',
+        '{Scoundrel} {Saw} {MusicNote}: The Valrath looks at you with trepidation, but after some persuasion you get him to agree.\n\nGain 15 collective gold.\n\nRead outcome A.\n\nOTHERWISE: The Valrath recoils, insulted by the notion. He storms off, grumbling about the lost value of friendship.\n\nNo effect.',
       imageUrl: '/assets/cards/events/base/city/ce-49-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-49-f.png',
