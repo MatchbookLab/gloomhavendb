@@ -1101,15 +1101,15 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 53,
     text:
-      "Walking near the northern gates, you see some commotion as a group of wounded guards is ushered into town. They look pretty bad off. suffering from many severe wounds. Some even have lost limbs. Bringing up the rear, one guard is carried in bv a couple of others. He's missing a leg and has a vicious looking axe embedded in his side. You realize that the axe looks kind of familiar.",
+      "Walking near the northern gates, you see some commotion as a group of wounded guards is ushered into town.\n\nThey look pretty bad off, suffering from many severe wounds. Some even have lost limbs.\n\nBringing up the rear, one guard is carried in by a couple of others. He's missing a leg and has a vicious looking axe embedded in his side. You realize that the axe looks kind of familiar.",
     optionA: {
-      choice: 'Let the guards know you recognize the Berserker s axe.',
+      choice: 'Let the guards know you recognize the Berserker\'s axe.',
       outcome:
-        'You approach (he wounded detail, explaining • how that axe belonged to a former member of your party. "Yeah, we know," one of them says with an icy stare. “Said »ve were desecrating her land or some such nonsense and just went crazy. But we weren\'t doing anything, but patrolling! Quite a piece of work your friend, fust take the axe if you want and get out of here."\n\nLose 1 reputation.\n\nGain 1 collective Bloody Axe (Item 117).',
+        'You approach the wounded detail, explaining how that axe belonged to a former member of your party.\n\n"Yeah, we know," one of them says with an icy stare. "Said we were desecrating her land or some such nonsense and just went crazy. But we weren\'t doing anything, but patrolling! Quite a piece of work your friend, just take the axe if you want and get out of here."\n\nLose 1 reputation.\n\nGain 1 collective Bloody Axe (Item 117).',
       imageUrl: '/assets/cards/events/base/city/ce-53-b-a.png',
     },
     optionB: {
-      choice: 'Stay silent and keep out of it. /',
+      choice: 'Stay silent and keep out of it.',
       outcome:
         "You casually move on, wondering how the guards found themselves on the wrong side of the Berserkers rage. It probably wasn't very difficult.\n\nNo effect.",
       imageUrl: '/assets/cards/events/base/city/ce-53-b-b.png',
