@@ -1000,7 +1000,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Begrudgingly pay for the note.',
       outcome:
-        "PAY 5 COLLECTIVE GOLD: You throw the kid a few coins and grab the note. Enclosed with the note is a small medallion engraved with the image of the sun. Apparently the Sunkeeper thinks the object may help you at some point in the future. The note doesn't say exactly how and the thing has no apparent use. You stow it away in your pack.\n\nParty Achievement: \"Sun-Blessed.\".\n\nOTHERWISE: You reach into your pocket to pay the kid, but come up empty-handed. He slinks off in indignation.\n\nNo eflect.",
+        "PAY 5 COLLECTIVE GOLD: You throw the kid a few coins and grab the note. Enclosed with the note is a small medallion engraved with the image of the sun. Apparently the Sunkeeper thinks the object may help you at some point in the future. The note doesn't say exactly how and the thing has no apparent use. You stow it away in your pack.\n\nParty Achievement: \"Sun-Blessed.\".\n\nOTHERWISE: You reach into your pocket to pay the kid, but come up empty-handed. He slinks off in indignation.\n\nNo effect.",
       imageUrl: '/assets/cards/events/base/city/ce-48-b-a.png',
     },
     optionB: {
