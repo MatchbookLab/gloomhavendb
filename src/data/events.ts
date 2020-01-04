@@ -954,17 +954,17 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 46,
     text:
-      'Anticipating an enjoyable night of drinks at the Sleeping Lion, you enter the tavern to see a familiar Savvas sitting at your usual table. The Cragbeart stands and extends both its arms. “Ah, friends! So good to see youf it says. “Sit! Have a drink with me!',
+      'Anticipating an enjoyable night of drinks at the Sleeping Lion, you enter the tavern to see a familiar Savvas sitting at your usual table. The Cragheart stands and extends both its arms.\n\n"Ah, friends! So good to see you," it says. "Sit! Have a drink with me!"',
     optionA: {
-      choice: 'Have a drink with the Cragheart. 1 . _\tp| ^\t•',
+      choice: 'Have a drink with the Cragheart.',
       outcome:
-        "One drink turns into five, and five turns 9 into even more. It is a great night of revelry at the Sleeping Lion. You see sadness in the Cragheart's eyes when you finally stand up to leave. It tells you it s been hard to find people to relate to since leaving the party and it thanks you for your continued friendship.\n\nGain 1 reputation.\n\nLose 5 gold each.",
+        "One drink turns into five, and five turns into even more. It is a great night of revelry at the Sleeping Lion. You see sadness in the Cragheart's eyes when you finally stand up to leave. It tells you it's been hard to find people to relate to since leaving the party and it thanks you for your continued friendship.\n\nGain 1 reputation.\n\nLose 5 gold each.",
       imageUrl: '/assets/cards/events/base/city/ce-46-b-a.png',
     },
     optionB: {
-      choice: 'Encourage the Cragheart to move on with its life. /',
+      choice: 'Encourage the Cragheart to move on with its life.',
       outcome:
-        ",\\'ot fitting in with its own kind or with d city of mostly humans, the C ragheart thought it could depend on a misfit group of mercenaries for friendship. It understands (hat its adventuring life is now in the past, though, and that it should go find a new place to belong. It sadly admits that it has no idea where that would be, but the Cragheart gets up and leaves the tavern nonetheless.\n\nNo effect.",
+        "Not fitting in with its own kind or with a city of mostly humans, the Cragheart thought it could depend on a misfit group of mercenaries for friendship. It understands that its adventuring life is now in the past, though, and that it should go find a new place to belong. It sadly admits that it has no idea where that would be, but the Cragheart gets up and leaves the tavern nonetheless.\n\nNo effect.",
       imageUrl: '/assets/cards/events/base/city/ce-46-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-46-f.png',
