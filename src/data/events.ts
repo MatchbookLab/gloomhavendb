@@ -1501,17 +1501,17 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 72,
     text:
-      "The metal sphere and rod — you 've had them in your possession for a while non and occasionally pull them out to mull o\\er the can ings. Youve brought it to the University, but they can't make any sense of it either you are fiddling with the device in the Sleeping Lion when you are tapped on the shoulder. )ou turn to see a wicked grin on the dirt\\ face of a old bandit. They call me Fish and that there is a Lev, friend a ke\\ of the ancient sort. . * ^ Before you can ask, Fish pulls out a similar black sphere atop a metal rod. \"They're twins, ain't they, and Fish knows just what they open. \\ tomb of treasure, friend Come, come, Fish will show you the * w\t*r *1",
+      "The metal sphere and rod — you've had them in your possession for a while now and occasionally pull them out to mull over the carvings. You've brought it to the University, but they can't make any sense of it either.\n\nYou are fiddling with the device in the Sleeping Lion when you are tapped on the shoulder. You turn to see a wicked grin on the dirty face of an old bandit. \"They call me Fish, and that there is a key, friend — a key of the ancient sort.\"\n\nBefore you can ask, Fish pulls out a similar black sphere atop a metal rod. \"They're twins, ain't they, and Fish knows just what they open. A tomb of treasure, friend. Come, come, Fish will show you the way.\"",
     optionA: {
       choice: 'Follow the smelly old bandit.',
       outcome:
-        'Your curiosity gets the better of your judg- • ment. You need to know the purpose of the device you found, so you follow Fish into«) derelict shock where he pulls out a map of the area ond lays it on o table. Fish directs you to pull out your rod ond both you and he hold your respective rods over the toble. 4 specific location on the mop glows brightly ond Fish loughs. ‘See? I toldya. didn \'t I? Meet me there with your rod and we ll get rich!\n\nUnlock "Lost Temple" 79 (K-I2).\n\nParty Achievement: "Fish\'s Aid."',
+        'Your curiosity gets the better of your judgment. You need to know the purpose of the device you found, so you follow Fish into a derelict shack where he pulls out a map of the area and lays it on a table. Fish directs you to pull out your rod and both you and he hold your respective rods over the table.\n\nA specific location on the map glows brightly ond Fish laughs. "See? I told ya, didn\'t I? Meet me there with your rod and we\'ll get rich!"\n\nUnlock "Lost Temple" 79 (K-12).\n\nParty Achievement: "Fish\'s Aid."',
       imageUrl: '/assets/cards/events/base/city/ce-72-b-a.png',
     },
     optionB: {
-      choice: 'Refuse to go with the man. This whole situation seems fishy.',
+      choice: 'Refuse to go with the man. This whole situation seems...fishy.',
       outcome:
-        "This suspicious old man must have seen you in here before with the rod and fashioned some elaborate con to swindle you out of something. You won i be so easily fooled. There's no he knows what the rod does when no one else in town does. Vbi/ push him away and go back to your drink.\n\nNo effect.",
+        "This suspicious old man must have seen you in here before with the rod and fashioned some elaborate con to swindle you out of something. You won't be so easily fooled. There's no way he knows what the rod does when no one else in town does. You push him away and go back to your drink.\n\nNo effect.",
       imageUrl: '/assets/cards/events/base/city/ce-72-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-72-f.png',
