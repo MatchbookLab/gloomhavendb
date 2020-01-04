@@ -1606,15 +1606,15 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 77,
     text:
-      "*Well, well, well. If it isn't the most notorious band o( mercenar- , ♦*» ies in all of Gloomhaven. The guards looking to throw you in the Ghost Fortress yet, or are they on the payroll?' You turn around to see Red Nick, a well known fence, leaning up against the walk You've had certain dealings with him in the past. Fancy seeing you, actually he says. 7ve got a big job, and I figure if anyone wouldn ’t mind digging up graves, it would be you miscreants*\"",
+      '"Well, well, well. If it isn\'t the most notorious band of mercenaries in all of Gloomhaven. The guards looking to throw you in the Ghost Fortress yet, or are they on the payroll?"\n\nYou turn around to see Red Nick, a well-known fence, leaning up against the wall. You\'ve had certain dealings with him in the past.\n\n"Fancy seeing you, actually," he says. "I\'ve got a big job, and I figure if anyone wouldn\'t mind digging up graves, it would be you miscreants."',
     optionA: {
       choice: 'Do the job.',
       outcome:
-        'REPUTATION < -//; "That \'s the money-bring • criminals I know and love! Come take a walk with me, and Til explain how we can all get rich."\n\nOTHERWISE: “Oh, whoops,\' Nick stammers, “From the back you looked like. *. uh, never mind. Forget I said anything. "\n\nNo effect.',
+        'REPUTATION < -14 "That\'s the money-loving criminals I know and love! Come take a walk with me, and I\'ll explain how we can all get rich."\n\nUnlock "Overgrown Graveyard" 75 (G-12).\n\nParty Achievement: "Grave Job."\n\nOTHERWISE: "Oh, whoops," Nick stammers. "From the back you looked like...uh, never mind. Forget I said anything."\n\nNo effect.',
       imageUrl: '/assets/cards/events/base/city/ce-77-b-a.png',
     },
     optionB: {
-      choice: 'Claim you’ve changed your ways and graverobbing is a step too far.',
+      choice: 'Claim you\'ve changed your ways and graverobbing is a step too far.',
       outcome:
         '“A downright shame, i say," Nick shakes his head. “I guess I \'ll just have to find a group of mercenaries who actually are interested in make a mountain of money."\n\nNo effect.',
       imageUrl: '/assets/cards/events/base/city/ce-77-b-b.png',
