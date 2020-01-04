@@ -53,7 +53,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Pay for the thing. You never know.',
       outcome:
-        'PAY 10 COLLECTIVE COLD: You hand over the gold and take hold of the metal. You wipe off the grime and slop to discover a foreign contraption made of large gears and many moving parts. If you can figure out what it is, this device might actually be of some worth.\n\nGain 1 collective "Curious Gear" (Item 125).\n\nGlobal Achievement: "Ancient Technology."\n\nOTHERWISE: "Bah! You don\'t have enough. Come back when you do!"',
+        'PAY 10 COLLECTIVE GOLD: You hand over the gold and take hold of the metal. You wipe off the grime and slop to discover a foreign contraption made of large gears and many moving parts. If you can figure out what it is, this device might actually be of some worth.\n\nGain 1 collective "Curious Gear" (Item 125).\n\nGlobal Achievement: "Ancient Technology."\n\nOTHERWISE: "Bah! You don\'t have enough. Come back when you do!"',
       imageUrl: '/assets/cards/events/base/city/ce-03-b-a.png',
     },
     optionB: {
@@ -159,7 +159,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'The map docs look valuable. Decide to bargain for it.',
       outcome:
-        'PAY 20 (reputation < 10) or 15 (reputation > 9) COLLECTIVE COLD: After some amount of haggling back and forth, you settle on a price and pay for the map. You recognize some of the landmarks and should be able to find this place of "untold treasure "by hiring a ship.\n\nUnlock "Sunken Vessel" 93 (N-17)\n\nParty Achievement: "A Map to Treasure."\n\nOTHERWISE: Despite your valiant efforts, you cannot get the merchant to lower his price to something you can afford.\n\nNo effect.',
+        'PAY 20 (reputation < 10) or 15 (reputation > 9) COLLECTIVE GOLD: After some amount of haggling back and forth, you settle on a price and pay for the map. You recognize some of the landmarks and should be able to find this place of "untold treasure "by hiring a ship.\n\nUnlock "Sunken Vessel" 93 (N-17)\n\nParty Achievement: "A Map to Treasure."\n\nOTHERWISE: Despite your valiant efforts, you cannot get the merchant to lower his price to something you can afford.\n\nNo effect.',
       imageUrl: '/assets/cards/events/base/city/ce-08-b-a.png',
     },
     optionB: {
@@ -327,7 +327,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: "Intervene on the boy's behalf.",
       outcome:
-        "PAY 10 COLLECTIVE COLD: You entreat the guards to let the boy go, but they are unmoved. With further pressing, they agree to do so only if you pay his criminal fine. The guards cuff the boy's ear and set him free.\n\nAdd City Event 70 to the deck.\n\nOTHERWISE: You entreat the guards to let the boy go, but they are unmoved. It seems like you may be able to grease their palms a bit, but, unfortunately, you do not have enough money to sway their minds. The boy is hauled off to the Ghost Fortress.\n\nNo effect.",
+        "PAY 10 COLLECTIVE GOLD: You entreat the guards to let the boy go, but they are unmoved. With further pressing, they agree to do so only if you pay his criminal fine. The guards cuff the boy's ear and set him free.\n\nAdd City Event 70 to the deck.\n\nOTHERWISE: You entreat the guards to let the boy go, but they are unmoved. It seems like you may be able to grease their palms a bit, but, unfortunately, you do not have enough money to sway their minds. The boy is hauled off to the Ghost Fortress.\n\nNo effect.",
       imageUrl: '/assets/cards/events/base/city/ce-16-b-a.png',
     },
     optionB: {
@@ -390,7 +390,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Attend the wedding with an expensive gift.',
       outcome:
-        'REPUTATION > 9. PAY 20 COLLECTIVE COLD: You head to the New Market and find a magnificent vase to bring as a gift. When the father of the bride sees it, he declares it the most wonderful piece he\'s ever encountered. You are the talk of the town.\n\nGain 2 reputation.\n\nREPUTATION < 10, PAY 20 COLLECTIVE COLD: You bring a very expensive vase as a gift, but you can\'t seem to catch the father of the bride\'s eve to present it at the right time.\n\nNo effect.\n\nOTHERWISE: Read outcome B.',
+        'REPUTATION > 9. PAY 20 COLLECTIVE GOLD: You head to the New Market and find a magnificent vase to bring as a gift. When the father of the bride sees it, he declares it the most wonderful piece he\'s ever encountered. You are the talk of the town.\n\nGain 2 reputation.\n\nREPUTATION < 10, PAY 20 COLLECTIVE GOLD: You bring a very expensive vase as a gift, but you can\'t seem to catch the father of the bride\'s eve to present it at the right time.\n\nNo effect.\n\nOTHERWISE: Read outcome B.',
       imageUrl: '/assets/cards/events/base/city/ce-19-b-a.png',
     },
     optionB: {
@@ -853,7 +853,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Barter with the Vermling for the potion.',
       outcome:
-        '{TwoMinis}, PAY 10 COLLECTIVE COLD: The Vermling knows it is valuable, but she is more interested in flirting with the Beast Tyrant. She is happy to sell the potion at a discount.\n\nGain 1 collective “Major Stamina Potion" (Item 034)\n\nPAY 25 COLLECTIVE GOLD: No amount of haggling can lower the Vermling\'s high price.\n\nGain 1 collective "Major Stamina Potion" (Item 034).\n\nOTHERWISE: The Vermling will not accept the tiny sum you offer. Maybe next time.',
+        '{TwoMinis}, PAY 10 COLLECTIVE GOLD: The Vermling knows it is valuable, but she is more interested in flirting with the Beast Tyrant. She is happy to sell the potion at a discount.\n\nGain 1 collective “Major Stamina Potion" (Item 034)\n\nPAY 25 COLLECTIVE GOLD: No amount of haggling can lower the Vermling\'s high price.\n\nGain 1 collective "Major Stamina Potion" (Item 034).\n\nOTHERWISE: The Vermling will not accept the tiny sum you offer. Maybe next time.',
       imageUrl: '/assets/cards/events/base/city/ce-41-b-a.png',
     },
     optionB: {
