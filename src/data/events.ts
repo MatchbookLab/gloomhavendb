@@ -2796,17 +2796,17 @@ export const events: EventEntity[] = [
     type: EventType.Road,
     number: 53,
     text:
-      'fau hear the distinctive sound of metal on metal in the distance and race up a hill in the road to investigate. In front of you, you see a familiar female Inox in heated battle with a group of Gloomhaven guards. Though outnumbered and bloodied\\ youve never seen that stop the Berserker before. With every wound they inflict, she becomes more and more enraged[ cleaving off limbs with the ease of cutting grass< ■v Iff* all',
+      'You hear the distinctive sound of metal on metal in the distance and race up a hill in the road to investigate.\n\nIn front of you, you see a familiar female Inox in heated battle with a group of Gloomhaven guards. Though outnumbered and bloodied, you\'ve never seen that stop the Berserker before. With every wound they inflict, she becomes more and more enraged, cleaving off limbs with the ease of cutting grass.',
     optionA: {
-      choice: 'Help the Berserker fight oH the guards.',
+      choice: 'Help the Berserker fight off the guards.',
       outcome:
-        "iJ > .i i\ty*. M i TO You enter the battle to aid the Berserker, but in her blood rage, she can't distinguish ftriend from foe. She begins hacking away at you with her axe as much as she swings at the guards. You concentrate on taking out the remaining guards, but when you turn back to the Berserker, she seems to have vanished into the nearby forest.\n\nAll start scenario with 3 damage.",
+        "You enter the battle to aid the Berserker, but in her blood rage, she can't distinguish friend from foe. She begins hacking away at you with her axe as much as she swings at the guards. You concentrate on taking out the remaining guards, but when you turn back to the Berserker, she seems to have vanished into the nearby forest.\n\nAll start scenario with 3 damage.",
       imageUrl: '/assets/cards/events/base/road/re-53-b-a.png',
     },
     optionB: {
       choice: "Wait and see what happens. It looks like she's handling herself well enough.",
       outcome:
-        'After a brutal and bloody fight, only the After her blood rage subsides, she collapses from exhaustion. You race to her side and attempt to revive her using a number of powerful potions. She finally awakes and expresses her begrudging gratitude. You ask about the fight, but she just shakes her headl She offers her axe as thanks and then dashes off into the forest. Consume 1 gg item each.\n\nGain 1 collective "Bloody Axe" (Item 117).',
+        'After a brutal and bloody fight, only the Berserker remains standing. After her blood rage subsides, she collapses from exhaustion. You race to her side and attempt to revive her using a number of powerful potions. She finally awakes and expresses her begrudging gratitude. You ask about the fight, but she just shakes her head. She offers her axe as thanks and then dashes off into the forest. Consume {SmallItem} item each.\n\nGain 1 collective "Bloody Axe" (Item 117).',
       imageUrl: '/assets/cards/events/base/road/re-53-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-53-f.png',
