@@ -1416,17 +1416,17 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 68,
     text:
-      "You wake in the middle of the night to the sound of rushing water. In the corner ofyour room, you see a flood gushing out of the head of the Summoner's staff which you had previously picked up in your travels. You jump out of bed and splash through a growing puddle of water to investigate the staff, but you can't make any sense of it. ft seems to be materializing the water out of thin air, possibly channeling it from another plane of existence. You scratch your head, unsure of what to do next.",
+      "You wake in the middle of the night to the sound of rushing water. In the corner of your room, you see a flood gushing out of the head of the Summoner's staff which you had previously picked up in your travels.\n\nYou jump out of bed and splash through a growing puddle of water to investigate the staff, but you can't make any sense of it. It seems to be materializing the water out of thin air, possibly channeling it from another plane of existence. You scratch your head, unsure of what to do next.",
     optionA: {
-      choice: 'Kind some way to get the water to stop gushing.',
+      choice: 'Find some way to get the water to stop gushing.',
       outcome:
-        '; You take a moment to attune yourself to the staff which you feel now has a direct link another plane. The water stops and you are left with an open gate.\n\nUnlock "Plane of Water" 88 (D-l6).\n\nParty Achievement: "Water Staff."\n\nOTHERWISE: You figure out how to work the staff but not before your entire room is flooded. The innkeeper will not be happy.\n\nLose 15 collective gold.\n\nUnlock "Plane of Water" 88 (D-l6).\n\nParty Achievement: "Water Staff."',
+        '{Circles} {Eclipse}: You take a moment to attune yourself to the staff, which you feel now has a direct link another plane. The water stops and you are left with an open gate.\n\nUnlock "Plane of Water" 88 (D-16).\n\nParty Achievement: "Water Staff."\n\nOTHERWISE: You figure out how to work the staff but not before your entire room is flooded. The innkeeper will not be happy.\n\nLose 15 collective gold.\n\nUnlock "Plane of Water" 88 (D-16).\n\nParty Achievement: "Water Staff."',
       imageUrl: '/assets/cards/events/base/city/ce-68-b-a.png',
     },
     optionB: {
-      choice: 'Gel the stall out of your room and throw it into the bay. a l I',
+      choice: 'Get the staff out of your room and throw it into the bay.',
       outcome:
-        "You race out of the inn, trying to minimize the damage caused by the never-ending stream of water. Not knowing what else to do, you head toward the river. Standing on the banks, you shrug and toss the staff into the current. You g uess you 'll never know how the staff ended up where it did or why it suddenly turned into a faucet.\n\nNo effect.",
+        "You race out of the inn, trying to minimize the damage caused by the never-ending stream of water. Not knowing what else to do, you head toward the river. Standing on the banks, you shrug and toss the staff into the current. You guess you'll never know how the staff ended up where it did or why it suddenly turned into a faucet.\n\nNo effect.",
       imageUrl: '/assets/cards/events/base/city/ce-68-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-68-f.png',
