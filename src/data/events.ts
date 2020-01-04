@@ -1332,17 +1332,17 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 64,
     text:
-      'Late in the evening, you are returning to your rooms when you hear a cry for help coming from a nearby alleyway. Racing into the shadows, you expect to find someone in distress, but instead find a group of men clad in black leather armor eying you maliciously. ‘ We have a message lor your Nightshroud friend, " one of them says, drawing a wicked looking curved blade. Suddenly, the Nightshroud appears among them in a flash of fatal sword strikes. Before the men even have a chance to react, hall of them lie dead on the ground. The other half quickly flee. ‘‘Well, it looks like you\'re into it now, too. Which is good, because I need help taking them down."',
+      'Late in the evening, you are returning to your rooms when you hear a cry for help coming from a nearby alleyway. Racing into the shadows, you expect to find someone in distress, but instead find a group of men clad in black leather armor eying you maliciously.\n\n"We have a message for your Nightshroud friend," one of them says, drawing a wicked looking curved blade. Suddenly, the Nightshroud appears among them in a flash of fatal sword strikes. Before the men even have a chance to react, half of them lie dead on the ground. The other half quickly flee.\n\n"Well, it looks like you\'re into it now, too. Which is good, because I need help taking them down."',
     optionA: {
       choice: 'Stay and listen to what the Nightshroud has to say.',
       outcome:
-        'The Nightshroud kicks one of the corpses. " This is the SinRa Syndicate, a group of assassins trying to gain a foothold in the region. I \'m trying to stop them, and somehow they found out you and I u ere friends. They decided logo after you as retribution. Lucky for you. I\'ve locatcJ their hideout, so were going to sneak in there and end this whole business once and for all. “ Unlock “Syndicate Hideout (89 (C-17). Party Achievement: "Sin-Ra."',
+        'The Nightshroud kicks one of the corpses. " This is the Sin-Ra Syndicate, a group of assassins trying to gain a foothold in the region. I\'m trying to stop them, and somehow they found out you and I were friends. They decided to go after you as retribution. Lucky for you. I\'ve located their hideout, so were going to sneak in there and end this whole business once and for all.\n\nUnlock "Syndicate Hideout 89 (C-17).\n\nParty Achievement: "Sin-Ra."',
       imageUrl: '/assets/cards/events/base/city/ce-64-b-a.png',
     },
     optionB: {
       choice: 'Claim you want nothing to do with this and walk away.',
       outcome:
-        "*The Sin-Ra Syndicate seems to think you have something to do with this/ the Nightshroudyells at you as you leave. That s alt that matters! They II strike again, and I won 't be there to protect you!” You keep walking.\n\naAdd Road Event 64 to the deck.",
+        "The Sin-Ra Syndicate seems to think you have something to do with this,\" the Nightshroud yells at you as you leave. \"That's all that matters! They'll strike again, and I won't be there to protect you!\" You keep walking.\n\naAdd Road Event 64 to the deck.",
       imageUrl: '/assets/cards/events/base/city/ce-64-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-64-f.png',
