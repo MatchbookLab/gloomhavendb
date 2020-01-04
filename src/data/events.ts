@@ -1248,17 +1248,17 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 60,
     text:
-      'You are wandering the Ward of Seales in the evening when a crowd of people begins to form outside one of the shops, growing louder and more dense hv the second. /Is you approach, you see a terrified family of Quatrvls through a familiar angry mob. The father pleads with a group of disheveled men with torches. "C heats! A woman next to you screams, \'Burn the store down!" One of the men — clearly not a guard — backhands the father away from the door and pushes his way inside the shop.',
+      'You are wandering the Ward of Scales in the evening when a crowd of people begins to form outside one of the shops, growing louder and more dense by the second.\n\nAs you approach, you see a terrified family of Quatryls through a familiar angry mob. The father pleads with a group of disheveled men with torches.\n\n"Cheats!" A woman next to you screams. "Burn the store down!"\n\nOne of the men — clearly not a guard — backhands the father away from the door and pushes his way inside the shop.',
     optionA: {
       choice: 'Attempt to stop the men from burning down the shop.',
       outcome:
-        ": You push your way to the front of the mob and stop the men as they enter the store. Clearly emotions have gotten the better of these people. Through a calm demeanor, you are able to talk the mob down. A sense of relief washes over the crowd.\n\nGain 1 reputation.\n\nOTHERWISE: You kindly entreat the crowd to back down. It gets a little rough, but it becomes clear the crowd isn't fully into it. After knocking a few heads, the mob disperses.\n\nNo effect.",
+        "{Spellweaver} {PointyHead} {MusicNote}: You push your way to the front of the mob and stop the men as they enter the store. Clearly emotions have gotten the better of these people. Through a calm demeanor, you are able to talk the mob down. A sense of relief washes over the crowd.\n\nGain 1 reputation.\n\nOTHERWISE: You kindly entreat the crowd to back down. It gets a little rough, but it becomes clear the crowd isn't fully into it. After knocking a few heads, the mob disperses.\n\nNo effect.",
       imageUrl: '/assets/cards/events/base/city/ce-60-b-a.png',
     },
     optionB: {
-      choice: 'fake part in the looting and burning of the store.',
+      choice: 'Take part in the looting and burning of the store.',
       outcome:
-        'You watch as one of the men picks up a wooden crate and throws it through the shop window. In a frenzy, the crowd rushes into the storer breaking and looting with mad glee. It s easy enough to move in with the crowd and pick up a few valuable items in the chaos. After you get clear of the crowd, you look back to see billows of smoke rising up from the door and broken window. Not a good day to be a Quatryl.\n\nGain 5 gold each.\n\nLose 1 prosperity.',
+        'You watch as one of the men picks up a wooden crate and throws it through the shop window. In a frenzy, the crowd rushes into the store, breaking and looting with mad glee. It\'s easy enough to move in with the crowd and pick up a few valuable items in the chaos. After you get clear of the crowd, you look back to see billows of smoke rising up from the door and broken window. Not a good day to be a Quatryl.\n\nGain 5 gold each.\n\nLose 1 prosperity.',
       imageUrl: '/assets/cards/events/base/city/ce-60-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-60-f.png',
