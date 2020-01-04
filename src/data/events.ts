@@ -1458,7 +1458,7 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 70,
     text:
-      'You are wandering the Sink- ing Market looking for possible work when you are approached bv a dirty-looking bov with a scar on his check. You greet him warmly. He has given you leads on a number of mercenary jobs and you re- cently helped him avoid a jail ceil. "I need some help, and I really don\'t know who else to turn to, " he begins. \'All of us here in (he Sinking Market are in a had way; Our houses are collapsing, our water is foul\\ and we den t even have enough money for food[ "We are dying here. and the city is doing nothing to help us. You have friends in high places, right? Please, there \'s gotta he someone you can talk to.',
+      'You are wandering the Sink- ing Market looking for possible work when you are approached by a dirty-looking bov with a scar on his check. You greet him warmly. He has given you leads on a number of mercenary jobs and you re- cently helped him avoid a jail ceil. "I need some help, and I really don\'t know who else to turn to, " he begins. \'All of us here in (he Sinking Market are in a had way; Our houses are collapsing, our water is foul\\ and we den t even have enough money for food[ "We are dying here. and the city is doing nothing to help us. You have friends in high places, right? Please, there \'s gotta he someone you can talk to.',
     optionA: {
       choice: 'Talk to some merchants about revital- izing the area.',
       outcome:
