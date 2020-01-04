@@ -1505,7 +1505,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Follow the smelly old bandit.',
       outcome:
-        'Your curiosity gets the better of your judg- • ment. You need to know the purpose of the device you found, so you follow Fish into«) derelict shock where he pulls out a mop of the oreo ond lo vs it on o table. Fish directs you to pull out your rod ond both you ond he hold your respective rods over the toble. 4 specific location on the mop glows brightly ond Fish loughs. ‘See? I toldya. didn \'t I? Meet me there with your rod and we ll get rich!" Unlock Lost Temple (79)(K-I2). Party Achievement: "Fish\'s Aid.”',
+        'Your curiosity gets the better of your judg- • ment. You need to know the purpose of the device you found, so you follow Fish into«) derelict shock where he pulls out a mop of the area ond lo vs it on o table. Fish directs you to pull out your rod ond both you ond he hold your respective rods over the toble. 4 specific location on the mop glows brightly ond Fish loughs. ‘See? I toldya. didn \'t I? Meet me there with your rod and we ll get rich!" Unlock Lost Temple (79)(K-I2). Party Achievement: "Fish\'s Aid.”',
       imageUrl: '/assets/cards/events/base/city/ce-72-b-a.png',
     },
     optionB: {
