@@ -1038,17 +1038,17 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 50,
     text:
-      '“A monstrous creature ap- proaches the walls!" A guard with a truly terrified look runs toward you, waving his arms with manic energy. "Please! You must help!" Before you can even agree, he grabs you by the wrist and pulls you toward the East Gate. You hear the beast before you see it, bellowing with rage and pounding at the gates. Each time it hits, the entire city shakes. You climb the ramparts and look down at the massive creature with six legs as thick as trees, two spiraling horns, and a spiked tail. This is truly a demon horn the abyss, \' the guard laments. It must be from another plane, so he\'s not too far off.',
+      '"A monstrous creature approaches the walls!" A guard with a truly terrified look runs toward you, waving his arms with manic energy. "Please! You must help!" Before you can even agree, he grabs you by the wrist and pulls you toward the East Gate.\n\nYou hear the beast before you see it, bellowing with rage and pounding at the gates. Each time it hits, the entire city shakes. You climb the ramparts and look down at the massive creature with six legs as thick as trees, two spiraling horns, and a spiked tail.\n\nThis is truly a demon from the abyss,\" the guard laments. It must be from another plane, so he\'s not too far off.',
     optionA: {
       choice: 'Attack the beast from the wall, shooting arrows at it until it stops moving.',
       outcome:
-        "HYou grab a bow and start sending arrows • down into the things thick hide. Each individual arrow doesn 't do much, but over time the creature slows. By the time it manages to break through the gatet it has been considerably hobbled as black blood pours from its countless wounds. It charges forward, laying waste to a small shop, but as more arrows continue to rain down upon it, it soon stops and falls over lifeless.\n\nGain 5 experience each.\n\nGain 1 reputation.",
+        "You grab a bow and start sending arrows down into the things thick hide. Each individual arrow doesn't do much, but over time the creature slows. By the time it manages to break through the gates it has been considerably hobbled as black blood pours from its countless wounds. It charges forward, laying waste to a small shop, but as more arrows continue to rain down upon it, it soon stops and falls over lifeless.\n\nGain 5 experience each.\n\nGain 1 reputation.",
       imageUrl: '/assets/cards/events/base/city/ce-50-b-a.png',
     },
     optionB: {
-      choice: 'Work on reinforcing the walls. I lold it off for as long as possible.',
+      choice: 'Work on reinforcing the walls. Hold it off for as long as possible.',
       outcome:
-        'You set to work reinforcing the gate with anything you can find — planks of wood[ carts full of stones, your own bodies. Due to your tremendous effort, the guards on the walls manage to bring down the beast before it breaks through. The various merchants of the Boilers District thank you for your valiant service.\n\nGain 10 gold each.',
+        'You set to work reinforcing the gate with anything you can find — planks of wood, carts full of stones, your own bodies. Due to your tremendous effort, the guards on the walls manage to bring down the beast before it breaks through. The various merchants of the Boilers District thank you for your valiant service.\n\nGain 10 gold each.',
       imageUrl: '/assets/cards/events/base/city/ce-50-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-50-f.png',
