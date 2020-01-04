@@ -1185,17 +1185,17 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 57,
     text:
-      'You ore haggling over the price of road rations with an irritating Valrath merchant when a messenger boy approaches you holding a note. “Sir, I have a pressing letter written by a powerful Savvas that has come to you from all the way across the Misty Sea/ the messenger says. 7 ivas told to deliver it directly, ” You reach for it, but the messenger moves back a little. \'.Sir, this note has traveled a very long distance to get to you. If you could, please pay a small fee to take possession of it."',
+      'You are haggling over the price of road rations with an irritating Valrath merchant when a messenger boy approaches you holding a note.\n\n"Sir, I have a pressing letter written by a powerful Savvas that has come to you from all the way across the Misty Sea," the messenger says. "I was told to deliver it directly."\n\nYou reach for it, but the messenger moves back a little. "Sir, this note has traveled a very long distance to get to you. If you could, please pay a small fee to take possession of it."',
     optionA: {
       choice: 'Pay tor the note.',
       outcome:
-        'R PAY W COLLECTIVE COLD: You open the • note to discover it is from the Elcmentalist. who has soiled to the eastern continent to gain a deeper understanding of the elements. During this time, the Elementalist also spent some effort on the construction of a powerful staff and wanted to share the design.\n\nGain "Staff of Elements" design (Item 118).\n\nOTHERWISE: You reach into your pocket to pay the kid, but come up empty-handed. He slinks off in indignation.\n\nNo effect.',
+        'PAY 10 COLLECTIVE GOLD: You open the note to discover it is from the Elementalist, who has sailed to the eastern continent to gain a deeper understanding of the elements. During this time, the Elementalist also spent some effort on the construction of a powerful staff and wanted to share the design.\n\nGain "Staff of Elements" design (Item 118).\n\nOTHERWISE: You reach into your pocket to pay the kid, but come up empty-handed. He slinks off in indignation.\n\nNo effect.',
       imageUrl: '/assets/cards/events/base/city/ce-57-b-a.png',
     },
     optionB: {
-      choice: 'Refuse to pay for the note. f /',
+      choice: 'Refuse to pay for the note.',
       outcome:
-        'You laugh in indignation and fyush the messenger away. He opens his mouth to object, then thinks better of it and runs off. * t You turn back to bartering, now leveraging the proof of your extreme thriftiness against the merchant.\n\nGain 3 collective gold.',
+        'You laugh in indignation and push the messenger away. He opens his mouth to object, then thinks better of it and runs off. You turn back to bartering, now leveraging the proof of your extreme thriftiness against the merchant.\n\nGain 3 collective gold.',
       imageUrl: '/assets/cards/events/base/city/ce-57-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-57-f.png',
