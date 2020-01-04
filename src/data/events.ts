@@ -1616,7 +1616,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Claim you\'ve changed your ways and graverobbing is a step too far.',
       outcome:
-        '“A downright shame, i say," Nick shakes his head. “I guess I \'ll just have to find a group of mercenaries who actually are interested in make a mountain of money."\n\nNo effect.',
+        '"A downright shame, I say," Nick shakes his head. "I guess I\'ll just have to find a group of mercenaries who actually are interested in making a mountain of money."\n\nNo effect.',
       imageUrl: '/assets/cards/events/base/city/ce-77-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-77-f.png',
