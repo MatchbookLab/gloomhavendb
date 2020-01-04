@@ -2712,17 +2712,17 @@ export const events: EventEntity[] = [
     type: EventType.Road,
     number: 49,
     text:
-      'You are approached on the road by a group of men on horseback. They don t immediately seem menacing, but they are formidable and well organized. One of the men, who wears plate armor and has a sword at his side, addresses you coldly You hail from Gloomhaven, correct? What say you about the politics of the place? Are you for or against military rule in the region? Do you think those loot merchants could do a better job, like they \'re doing with the rest of this doomed land?" Looking closer; you see all the men wear the signet of a tower with an eye at its center',
+      'You are approached on the road by a group of men on horseback. They don\'t immediately seem menacing, but they are formidable and well organized.\n\nOne of the men, who wears plate armor and has a sword at his side, addresses you coldly. "You hail from Gloomhaven, correct? What say you about the politics of the place? Are you for or against military rule in the region? Do you think those fool merchants could do a better job, like they\'re doing with the rest of this doomed land?"\n\nLooking closer, you see all the men wear the signet of a tower with an eye at its center',
     optionA: {
       choice: 'Claim allegiance to the military.',
       outcome:
-        'The armored men seem satisfied with your response and take their hands off their weapons. “Good to find some fellow patriots, ” the one in front says with a disturbing smile. "You know, we have a stronghold not far from here up in the mountains. Feel free to visit there if you ever get serious about your loyalties.\n\nUnlock "Vigil Keep" 80 (K-1).',
+        'The armored men seem satisfied with your response and take their hands off their weapons.\n\n"Good to find some fellow patriots,” the one in front says with a disturbing smile. "You know, we have a stronghold not far from here up in the mountains. Feel free to visit there if you ever get serious about your loyalties.\n\nUnlock "Vigil Keep" 80 (K-1).',
       imageUrl: '/assets/cards/events/base/road/re-49-b-a.png',
     },
     optionB: {
       choice: 'Claim allegiance to the merchant guilds.',
       outcome:
-        'Well then, today \'s your unlucky day, the man in front says. “Because we of the Vigil make it a point to execute any and all commerce sympathizers we can find in this land[ * The men grimly draw swords and advance. After a hard battle, the survivors retreat, leaving you to pick through the corpses. Among the loot you find a map.\n\nUnlock "Vigil Keep" 80 (K-1).\n\nAll start scenario with 4 damage.\n\nGain 5 gold each.',
+        'Well then, today\'s your unlucky day, the man in front says. "Because we of the Vigil make it a point to execute any and all commerce sympathizers we can find in this land."\n\nThe men grimly draw swords and advance. After a hard battle, the survivors retreat, leaving you to pick through the corpses. Among the loot you find a map.\n\nUnlock "Vigil Keep" 80 (K-1).\n\nAll start scenario with 4 damage.\n\nGain 5 gold each.',
       imageUrl: '/assets/cards/events/base/road/re-49-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-49-f.png',
