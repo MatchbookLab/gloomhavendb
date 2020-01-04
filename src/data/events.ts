@@ -1311,7 +1311,7 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 63,
     text:
-      '7 assume you are aware of an increased amount of sickness in the * city. )ou were summoned to the Ghost fortress and now stand before the Captain ot the Guard, "ItV believe it could have something to do with a poisoning threat brought to our attention by your Mindthief friend a while ago. We ignored it, but now she is nowhere to he found, the Hook Coast is a bed of disease, and Gloomhaven proper is on its way there, too. He looks at you firmly. “I need you to head dow n to the Hook Coast and figure out what is going on. Then eliminate the source of the poison.',
+      '"I assume you are aware of an increased amount of sickness in the city."\n\nYou were summoned to the Ghost Fortress and now stand before the Captain of the Guard.\n\n"We believe it could have something to do with a poisoning threat brought to our attention by your Mindthief friend a while ago. We ignored it, but now she is nowhere to be found, the Hook Coast is a bed of disease, and Gloomhaven proper is on its way there, too."\n\nHe looks at you firmly. "I need you to head down to the Hook Coast and figure out what is going on. Then eliminate the source of the poison."',
     optionA: {
       choice: 'Agree to help.',
       outcome:
@@ -1340,7 +1340,7 @@ export const events: EventEntity[] = [
       imageUrl: '/assets/cards/events/base/city/ce-64-b-a.png',
     },
     optionB: {
-      choice: 'Claim you want nothing to do with this and walk away. /',
+      choice: 'Claim you want nothing to do with this and walk away.',
       outcome:
         "*The Sin-Ra Syndicate seems to think you have something to do with this/ the Nightshroudyells at you as you leave. That s alt that matters! They II strike again, and I won 't be there to protect you!” You keep walking.\n\naAdd Road Event 64 to the deck.",
       imageUrl: '/assets/cards/events/base/city/ce-64-b-b.png',
@@ -1353,7 +1353,7 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 65,
     text:
-      "In the middle of the night, you tire wakened by a hard knocking at your door. You answer and it takes you *\tv a second to recognize the man standing on the other side. t hose Oak relics you was look in for, the man J\t* says as he scratches a blister on the side of his lace. Some cut purses tried to sell them to me. I can take you to their place, but we gotta move fast, and / want a cut of the loot. ” You hurriedly agree and make your way to a ramshackle warehouse next to the old docks. ' This is it/' the man says. \"Looks like no one s V* home, though/",
+      "In the middle of the night, you tire wakened by a hard knocking at your door. You answer and it takes you *\tv a second to recognize the man standing on the other side. t hose Oak relics you was look in for, the man J\t* says as he scratches a blister on the side of his lace. Some cut purses tried to sell them to me. I can take you to their place, but we gotta move fast, and I want a cut of the loot. ” You hurriedly agree and make your way to a ramshackle warehouse next to the old docks. ' This is it/' the man says. \"Looks like no one s V* home, though/",
     optionA: {
       choice: 'Raid the warehouse and recover the stolen goods.',
       outcome:
@@ -1382,7 +1382,7 @@ export const events: EventEntity[] = [
       imageUrl: '/assets/cards/events/base/city/ce-66-b-a.png',
     },
     optionB: {
-      choice: 'Get the Sawbones on a boat across the Misty Sea. New adventures surely await there. /',
+      choice: 'Get the Sawbones on a boat across the Misty Sea. New adventures surely await there.',
       outcome:
         "You flatly refuse to pay off the Sawbones' debt and convince him the only way to escape his pursuers is to board a ship bound for the eastern continent, far out of their reach. He is reluctant but eventually agrees when you remind him what unknown adventures await in the land across the ocean. You see him off in the night and desperately hope that is the last you hear of this situation.\n\nAdd City Event 67 to the deck.",
       imageUrl: '/assets/cards/events/base/city/ce-66-b-b.png',
@@ -1403,7 +1403,7 @@ export const events: EventEntity[] = [
       imageUrl: '/assets/cards/events/base/city/ce-67-b-a.png',
     },
     optionB: {
-      choice: 'Refuse to pay. You won t be strong- armed by anyone. A /',
+      choice: 'Refuse to pay. You won\'t be strongarmed by anyone.',
       outcome:
         'You laugh and wave your hand dismissively. I here \'s no way you will be paying such a large amount of money to these thugs. Unfortunately, the Inox is not amused. m " Then your payment will he blood! she says "Meet us in the back alley, and ivc \'ll see if "we can t come to terms. “ Unlock "Back Alley Brawi"(92 (C-14). Party Achievement: "Debt Collection.\'"',
       imageUrl: '/assets/cards/events/base/city/ce-67-b-b.png',
@@ -1445,7 +1445,7 @@ export const events: EventEntity[] = [
       imageUrl: '/assets/cards/events/base/city/ce-69-b-a.png',
     },
     optionB: {
-      choice: 'Leave the bar before someone recog- nizes you. /',
+      choice: 'Leave the bar before someone recognizes you.',
       outcome:
         "You flee the bar to escape the tune, but it doesn't prove to be that simple. The next day, everyone on the street is humming the tune, They all seems to be looking at you and laughing. It 's a nightmare.\n\nLose 1 reputation.",
       imageUrl: '/assets/cards/events/base/city/ce-69-b-b.png',
@@ -1482,7 +1482,7 @@ export const events: EventEntity[] = [
       "You are walking along the riv- er's edge in the Mixed District late at night when something in votir pack begins to vibrate. The sensation is odd and you quickly fish out the small metal sphere you found out on the road. It shakes uncon- w trollably and then begins pulling your arm toward the river. You walk to the bank, but still the sphere pulls. It is drawn to something in the water.",
     optionA: {
       choice:
-        "Let the sphere go. Option 6: | limp into the river and continue to follow the sphere's pulh ■ /  Option A: -",
+        "Let the sphere go. Option 6: | limp into the river and continue to follow the sphere's pulh  Option A: -",
       outcome:
         "The sphere leaps from your hand, hovers * over the water, and then emits an intense beam of light straight down into the river, illuminating something below. You shrug and jump into the river, following the beam of light down to the bottom. There you ftnd a wooden chest hall buried under the rocks. You bring it back to shore and open it to find a small metal rod covered in strange carvings. When you pick it up, the sphere immediately flics back over to you and attaches itself to the rod's end.\n\nAdd City Event J2 to the deck.",
       imageUrl: '/assets/cards/events/base/city/ce-71-b-a.png',
@@ -1526,11 +1526,11 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Seek help from the University.',
       outcome:
-        "“Yes, verv interesting, ' a bookish Quatryl says as he rolls the crystal over in his hand. “It seems os if this crystal is attuned to a specific location, and once removed, it begins vibrating until mountains and houses start falling down. I'd say you need to return it to its proper home. \\ \\ ith the proper tools — which I II need help pa ving for — / should be able to triangulate that location for you.\n\nLose 5 collective gold. Unlock Crystalline Cave\" 84 (CM2:. Partv Achievement: \"Tremors.'",
+        "“Yes, verv interesting, ' a bookish Quatryl says as he rolls the crystal over in his hand. “It seems os if this crystal is attuned to a specific location, and once removed, it begins vibrating until mountains and houses start falling down. I'd say you need to return it to its proper home. \\ \\ ith the proper tools — which I'll need help paying for — I should be able to triangulate that location for you.\n\nLose 5 collective gold. Unlock Crystalline Cave\" 84 (CM2:. Partv Achievement: \"Tremors.'",
       imageUrl: '/assets/cards/events/base/city/ce-73-b-a.png',
     },
     optionB: {
-      choice: '1 hrow the crystal into the boy. /',
+      choice: 'Throw the crystal into the bay.',
       outcome:
         'Not wanting to waste your time with the problem, you walk to the Jocks anJ throw the crystal into the bay. When you hear reports of harsher weather anJ larger waves hitting the Jocks, you try not to pay them any mind.\n\nLose 1 prosperity.',
       imageUrl: '/assets/cards/events/base/city/ce-73-b-b.png',
@@ -1593,7 +1593,7 @@ export const events: EventEntity[] = [
       imageUrl: '/assets/cards/events/base/city/ce-76-b-a.png',
     },
     optionB: {
-      choice: 'Decline the suspicious offer and con- tinue your business. /',
+      choice: 'Decline the suspicious offer and continue your business.',
       outcome:
         'Gavin looks flabbergasted as you walk a way. "Who will protect my ships when there is no one to trust? I guess I\'ll just have to keep looking.\n\nNo effect.',
       imageUrl: '/assets/cards/events/base/city/ce-76-b-b.png',
@@ -1614,7 +1614,7 @@ export const events: EventEntity[] = [
       imageUrl: '/assets/cards/events/base/city/ce-77-b-a.png',
     },
     optionB: {
-      choice: 'Claim you’ve changed your ways and grave robbing is a step too far /',
+      choice: 'Claim you’ve changed your ways and graverobbing is a step too far.',
       outcome:
         '“A downright shame, i say," Nick shakes his head. “I guess I \'ll just have to find a group of mercenaries who actually are interested in make a mountain of money."\n\nNo effect.',
       imageUrl: '/assets/cards/events/base/city/ce-77-b-b.png',
@@ -1635,7 +1635,7 @@ export const events: EventEntity[] = [
       imageUrl: '/assets/cards/events/base/city/ce-78-b-a.png',
     },
     optionB: {
-      choice: 'Demand payment for the job up-front. /',
+      choice: 'Demand payment for the job up-front.',
       outcome:
         '“Look...!, ah, don\'t have a whole lot of capital * right now, but I will give you everything I have once you get back with that artifact.“ You narrow your eyes at him. He coughs nervously and produces a small handful of coins. "All right, fine. Look, here. This is all I can offer you. Now can we get to the part where you go do your job? ”\n\nGain 5 collective gold.\n\nRead outcome A.',
       imageUrl: '/assets/cards/events/base/city/ce-78-b-b.png',
@@ -1677,7 +1677,7 @@ export const events: EventEntity[] = [
       imageUrl: '/assets/cards/events/base/city/ce-80-b-a.png',
     },
     optionB: {
-      choice: '1 hesc guards are not interested in a Iricndly discourse. Prepare to defend yourself. /',
+      choice: 'The guards are not interested in a friendly discourse. Prepare to defend yourself.',
       outcome:
         'Seeing the situation turning south, you waste no time pulling your weapons and prepare for an attack. The guards are more than happy to oblige. Luckily your foes sustain only some minor injuries in the time it takes for another squad of guards to arrive and break up the scuffle. They let you go on your wayf, but you can see the disdain in all of their eves.\n\nLose 2 reputation.',
       imageUrl: '/assets/cards/events/base/city/ce-80-b-b.png',
@@ -1698,7 +1698,7 @@ export const events: EventEntity[] = [
       imageUrl: '/assets/cards/events/base/city/ce-81-b-a.png',
     },
     optionB: {
-      choice: 'Claim it wasn’t you and leave quickly. /',
+      choice: 'Claim it wasn’t you and leave quickly.',
       outcome:
         'You brusquely shake your head and wave • your hand away saying the man has the wrong person. His excited face immediately turns to one of disappointment. And audible sigh of dejection emerges from the crowd as you rush away. * “There s no need to be rude about it!* the dockworker yells at your back.\n\nLose 2 reputation.',
       imageUrl: '/assets/cards/events/base/city/ce-81-b-b.png',
@@ -2817,7 +2817,7 @@ export const events: EventEntity[] = [
     type: EventType.Road,
     number: 54,
     text:
-      "Deep inside a dense forest, you begin to hear the jangling of bells and see a small troupe of performers approaching you through the trees. 'Well, look who it is! * The small voice belongs to a garishly dressed female Qua try I with a lute and a feathered hat. fancy running into you out here. “This actually may be a stroke of luckf the Soothsingcr says. *You see, my compatriots and I seem to be a bit lost. We were beaded toward the Capital when my drummer said he knew a shortcut. Now here wc are in the middle of a forest without an inkling of a clue. / don't suppose you could find it in your heart to escort us back to the main road„ could you?",
+      "Deep inside a dense forest, you begin to hear the jangling of bells and see a small troupe of performers approaching you through the trees. 'Well, look who it is! * The small voice belongs to a garishly dressed female Qua try I with a lute and a feathered hat. fancy running into you out here. “This actually may be a stroke of luckf the Soothsingcr says. *You see, my compatriots and I seem to be a bit lost. We were beaded toward the Capital when my drummer said he knew a shortcut. Now here wc are in the middle of a forest without an inkling of a clue. I don't suppose you could find it in your heart to escort us back to the main road„ could you?",
     optionA: {
       choice: 'Take the time to escort the troupe back out of the forest.',
       outcome:
@@ -3073,7 +3073,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Take cover.',
       outcome:
-        ':\tl! You jump into a ditch and cover your head • just as the Elder Drake glides over the raiding party, breathing a heavy gout of flame into their midst. Those not incinerated scream and flee for their lives. The drake lands in front of you. "Intrepid adventurers! I hope / was able to offer you some aid against your aggressors. It really was my pleasure after all you have done for me. I hope you find some things of value among the corpses. It is my gift to you.\n\nGain 25 gold each.',
+        ':\tl! You jump into a ditch and cover your head • just as the Elder Drake glides over the raiding party, breathing a heavy gout of flame into their midst. Those not incinerated scream and flee for their lives. The drake lands in front of you. "Intrepid adventurers! I hope I was able to offer you some aid against your aggressors. It really was my pleasure after all you have done for me. I hope you find some things of value among the corpses. It is my gift to you.\n\nGain 25 gold each.',
       imageUrl: '/assets/cards/events/base/road/re-66-b-a.png',
     },
     optionB: {
@@ -3100,7 +3100,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Demonstrate your lack of virtue by robbing the merchant.',
       outcome:
-        '"Well I just — / mean, I’d never,.,” the merchant trails ofTincredulously. “To think there are places in the world where such barbarism still exists. It boggles the mind. 7 m going to tell everyone back in the Capital what a horrible, backward shrrggggllg..." Blood bubbles up into his mouth as you slit his throat, making it very difficult for him to continue complaining.\n\nGain 20 gold each.',
+        '"Well I just — I mean, I’d never...” the merchant trails ofTincredulously. “To think there are places in the world where such barbarism still exists. It boggles the mind. 7 m going to tell everyone back in the Capital what a horrible, backward shrrggggllg..." Blood bubbles up into his mouth as you slit his throat, making it very difficult for him to continue complaining.\n\nGain 20 gold each.',
       imageUrl: '/assets/cards/events/base/road/re-67-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-67-f.png',
