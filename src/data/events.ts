@@ -1479,18 +1479,18 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 71,
     text:
-      "You are walking along the riv- er's edge in the Mixed District late at night when something in votir pack begins to vibrate. The sensation is odd and you quickly fish out the small metal sphere you found out on the road. It shakes uncon- w trollably and then begins pulling your arm toward the river. You walk to the bank, but still the sphere pulls. It is drawn to something in the water.",
+      "You are walking along the river's edge in the Mixed District late at night when something in your pack begins to vibrate. The sensation is odd and you quickly fish out the small metal sphere you found out on the road. It shakes uncontrollably and then begins pulling your arm toward the river.\n\nYou walk to the bank, but still the sphere pulls. It is drawn to something in the water.",
     optionA: {
       choice:
-        "Let the sphere go. Option 6: | limp into the river and continue to follow the sphere's pulh  Option A: -",
+        "Let the sphere go.",
       outcome:
-        "The sphere leaps from your hand, hovers * over the water, and then emits an intense beam of light straight down into the river, illuminating something below. You shrug and jump into the river, following the beam of light down to the bottom. There you ftnd a wooden chest hall buried under the rocks. You bring it back to shore and open it to find a small metal rod covered in strange carvings. When you pick it up, the sphere immediately flics back over to you and attaches itself to the rod's end.\n\nAdd City Event J2 to the deck.",
+        "The sphere leaps from your hand, hovers over the water, and then emits an intense beam of light straight down into the river, illuminating something below.\n\nYou shrug and jump into the river, following the beam of light down to the bottom. There you find a wooden chest half buried under the rocks. You bring it back to shore and open it to find a small metal rod covered in strange carvings. When you pick it up, the sphere immediately flies back over to you and attaches itself to the rod's end.\n\nAdd City Event 72 to the deck.",
       imageUrl: '/assets/cards/events/base/city/ce-71-b-a.png',
     },
     optionB: {
-      choice: '-',
+      choice: 'Jump into the river and continue the sphere\'s pull.',
       outcome:
-        'As soon as you jump into the cold, brackish • waters, (he sphere stops vibrating or pulling. You swim for a while in the direction it was pulling, but eventually you realize you are on a fools errand. You emerge from the river wet and miserable with absolutely nothing (o show for it.',
+        'As soon as you jump into the cold, brackish waters, the sphere stops vibrating or pulling. You swim for a while in the direction it was pulling, but eventually you realize you are on a fool\'s errand. You emerge from the river wet and miserable with absolutely nothing to show for it.\n\nLose 1 {Check}.',
       imageUrl: '/assets/cards/events/base/city/ce-71-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-71-f.png',
