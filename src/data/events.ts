@@ -1227,17 +1227,17 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 59,
     text:
-      'You head to the Sinking Market, hoping to find some cheap supplies, when you are surprised to see a crowd gathering in the distance. You push your way through and see a host of dead bodies in the street, covered in insects and strange pustules in their skin. \\!earby, a woman screams in terror and runs away. Other more curious onlookers inch clos- er, trying to get a better view of the grotesque scene.',
+      'You head to the Sinking Market, hoping to find some cheap supplies, when you are surprised to see a crowd gathering in the distance. You push your way through and see a host of dead bodies in the street, covered in insects and strange pustules in their skin.\n\nNearby, a woman screams in terror and runs away. Other more curious onlookers inch closer, trying to get a better view of the grotesque scene.',
     optionA: {
       choice: 'Help to dispose of the corpses as quickly as possible.',
       outcome:
-        'Finding it probable that these corpses harbor some sort of disease, you ward c veryone away while you carefully load the bodies onto a cart, take them outside the city, and burn them. The crowd is a little disappointed that you took away the morning entertainment. Especially annoyed are the guards, who don l appreciate you disposing of dead bodies before they can investigate them.\n\nLose 1 reputation.',
+        'Finding it probable that these corpses harbor some sort of disease, you ward everyone away while you carefully load the bodies onto a cart, take them outside the city, and burn them.\n\nThe crowd is a little disappointed that you took away the morning entertainment. Especially annoyed are the guards, who don\'t appreciate you disposing of dead bodies before they can investigate them.\n\nLose 1 reputation.',
       imageUrl: '/assets/cards/events/base/city/ce-59-b-a.png',
     },
     optionB: {
-      choice: 'Investigate the corpses. / I',
+      choice: 'Investigate the corpses.',
       outcome:
-        'Curiosity gets the better of you, as well and you approach the corpses with morbid fascination# hoping to find some clue about what happened\\ The number of insects is alarming, as is the diseased nature of the skin. If you had to guess, a Harrower could be responsible, or perhaps Xorn, who you so helpfully revived. Over the next few days, the disease spreads throughout the Sinking Market, killing many more people.\n\nLose 1 prosperity.',
+        'Curiosity gets the better of you, as well and you approach the corpses with morbid fascination, hoping to find some clue about what happened. The number of insects is alarming, as is the diseased nature of the skin. If you had to guess, a Harrower could be responsible, or perhaps Xorn, who you so helpfully revived. Over the next few days, the disease spreads throughout the Sinking Market, killing many more people.\n\nLose 1 prosperity.',
       imageUrl: '/assets/cards/events/base/city/ce-59-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-59-f.png',
