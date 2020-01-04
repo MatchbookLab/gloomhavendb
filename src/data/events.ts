@@ -1059,17 +1059,17 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 51,
     text:
-      'You are wandering through the city streets late at night when you hear a terrifying scream high above you. >ou look up /ust in time to see a body falling toward you and jump out of the way. It lands with a wet thud on the ground. You were not the only ones to hear the scream, and quickly a small crowd forms around the corpse, including a couple of city guards. The body is clad in black leather armor, and a long, thin blade conspicuously protrudes from its back. You remark that the sword somehow looks familiar. “What?" asks a guard. “This is the third murder like this in a week. Tell me everything you know! "',
+      'You are wandering through the city streets late at night when you hear a terrifying scream high above you. You look up just in time to see a body falling toward you and jump out of the way.\n\nIt lands with a wet thud on the ground. You were not the only ones to hear the scream, and quickly a small crowd forms around the corpse, including a couple of city guards.\n\nThe body is clad in black leather armor, and a long, thin blade conspicuously protrudes from its back. You remark that the sword somehow looks familiar.\n\n"What?" asks a guard. "This is the third murder like this in a week. Tell me everything you know!"',
     optionA: {
       choice: 'Tell the guard that the sword belongs to the Nightshroud, your former party member.',
       outcome:
-        'You explain that you recognize the sword from the time you spent traveling with the Nightshroud. As a capable assassin, he is likely to he the one behind the murders. You explain, however, that since he left the group, you have no knowledge of his whereabouts or dealings. The guard thanks you for the information.\n\nGain 1 reputation.\n\nAdd City Event 64 to the deck.',
+        'You explain that you recognize the sword from the time you spent traveling with the Nightshroud. As a capable assassin, he is likely to be the one behind the murders. You explain, however, that since he left the group, you have no knowledge of his whereabouts or dealings. The guard thanks you for the information.\n\nGain 1 reputation.\n\nAdd City Event 64 to the deck.',
       imageUrl: '/assets/cards/events/base/city/ce-51-b-a.png',
     },
     optionB: {
       choice: 'Lie and claim you know nothing.',
       outcome:
-        ': You shake your head at the guard, saying you must have been mistaken. You thought the sword looked similar to one carried by a friend, but, looking closer, there are distinct differences. The guard shrugs and goes back to examining the scene.\n\nNo effect.\n\nOTHERWISE: You laugh and make up some poor explanation about seeing a similar sword on a bandit in a crypt. The guard eyes you suspiciously.\n\nLose 1 reputation.',
+        '{Scoundrel} {Saw} {MusicNote}: You shake your head at the guard, saying you must have been mistaken. You thought the sword looked similar to one carried by a friend, but, looking closer, there are distinct differences. The guard shrugs and goes back to examining the scene.\n\nNo effect.\n\nOTHERWISE: You laugh and make up some poor explanation about seeing a similar sword on a bandit in a crypt. The guard eyes you suspiciously.\n\nLose 1 reputation.',
       imageUrl: '/assets/cards/events/base/city/ce-51-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-51-f.png',
