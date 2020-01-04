@@ -1122,17 +1122,17 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 54,
     text:
-      'Posters spring up in town announcing the performance of a master Quatrvl musician and her merry hand of performers. Looking closely at the image, you re pretty sure you recognize that foppish feathered hat. The poster says the next show is tonight. You decide to attend for one purpose or another.',
+      'Posters spring up in town announcing the performance of a master Quatrvl musician and her merry band of performers. Looking closely at the image, you\'re pretty sure you recognize that foppish feathered hat.\n\nThe poster says the next show is tonight. You decide to attend for one purpose or another.',
     optionA: {
       choice: 'Go to the show and cheer on the Soothsinger.',
       outcome:
-        'enjoy the Soothsingers concert There is even a song or two party and its adventures arount Gloomhaven.\n\nGain 1 reputation.',
+        'You go and enjoy the Soothsinger\'s concert. There is even a song or two party and its adventures arount Gloomhaven.\n\nGain 1 reputation.',
       imageUrl: '/assets/cards/events/base/city/ce-54-b-a.png',
     },
     optionB: {
-      choice: 'Seems like a good opportunity to pick some pockets while people are distracted. _____________',
+      choice: 'Seems like a good opportunity to pick some pockets while people are distracted.',
       outcome:
-        'jjlf ®): The rubes are much too distracted to mind their coin purses. You make off with a good amount of cash and gel to listen to some nice music as well.\n\nGain 20 collective gold.\n\nOTHERWISE: )ou put forth ,? valiant effort, but, due to a lack of skill, you don t make much headway parting people from their money. At least the music is good. \\o effect.',
+        '{Scoundrel} {Mindthief} {Eclipse}: The rubes are much too distracted to mind their coin purses. You make off with a good amount of cash and get to listen to some nice music as well.\n\nGain 20 collective gold.\n\nOTHERWISE: You put forth a valiant effort, but, due to a lack of skill, you don\'t make much headway parting people from their money. At least the music is good.\n\nNo effect.',
       imageUrl: '/assets/cards/events/base/city/ce-54-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-54-f.png',
