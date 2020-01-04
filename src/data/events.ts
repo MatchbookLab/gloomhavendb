@@ -2754,7 +2754,7 @@ export const events: EventEntity[] = [
     type: EventType.Road,
     number: 51,
     text:
-      'You move closer, and what you thought wjs a signpost turns out to be a human skull impaled on a spike. there is something sticking out of the skulls mouth. m mwmi w •',
+      'You reach a crossroad and decide to rest for a bit. As you eat some of your rations, something sticking up out of the ground in the distance catches your attention.\n\nYou move closer, and what you thought was a signpost turns out to be a human skull impaled on a spike.\n\nThere is something sticking out of the skulls mouth.',
     optionA: {
       choice: 'Investigate further.',
       outcome:
@@ -2764,7 +2764,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Arm yourself and make a defensive retreat from the area.',
       outcome:
-        "You remember rumors of an assassins guild that places a skull on a pike outside the houses of'their victims before they strike. Fearing the worst, you pull out your weapons and survey the scene as you back away from the pike. Everything looks clear, so you quickly get as far away from the area as possible. Perhaps the skull was not meant for you.\n\nNo effect.",
+        "You remember rumors of an assassins' guild that places a skull on a pike outside the houses of their victims before they strike. Fearing the worst, you pull out your weapons and survey the scene as you back away from the pike. Everything looks clear, so you quickly get as far away from the area as possible. Perhaps the skull was not meant for you.\n\nNo effect.",
       imageUrl: '/assets/cards/events/base/road/re-51-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-51-f.png',
