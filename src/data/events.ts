@@ -1441,7 +1441,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Embrace the joke and go with it.',
       outcome:
-        'You nuke your way to the front of the crowd and join in the fun. When the Soothsinger notices you in the crowd, she brings you up on stage for the chorus, ft s a lit tie embarrassing, but people are enjoying your positive attitude about it.\n\nGain 1 reputation.',
+        'You make your way to the front of the crowd and join in the fun. When the Soothsinger notices you in the crowd, she brings you up on stage for the chorus, ft s a lit tie embarrassing, but people are enjoying your positive attitude about it.\n\nGain 1 reputation.',
       imageUrl: '/assets/cards/events/base/city/ce-69-b-a.png',
     },
     optionB: {
