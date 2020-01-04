@@ -1269,17 +1269,17 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 61,
     text:
-      'The day proves uneventful until you head back to your room in the evening to find a small package waiting at your doorstep. Resting on it is another note from the Tinkerer: He thanks you profusely for sending along the mechanical spider, saying it was a great help in his work. He doesn t need it any longer, however and decided to send it back. He explains that he made a few improvements to it as well while it was in his possession, and that it should help you significantly in your adventures.',
+      'The day proves uneventful until you head back to your room in the evening to find a small package waiting at your doorstep. Resting on it is another note from the Tinkerer.\n\nHe thanks you profusely for sending along the mechanical spider, saying it was a great help in his work. He doesn\'t need it any longer, however and decided to send it back.\n\nHe explains that he made a few improvements to it as well while it was in his possession, and that it should help you significantly in your adventures.',
     optionA: {
-      choice: 'Gratefully keep the spider*',
+      choice: 'Gratefully keep the spider.',
       outcome:
-        'a You open the package to find a much larger, but equally intricate robotic spider staring back at you. This one appears to specialize in scurrying around its user, picking up and returning anything that might have been dropped. Should prove use ful.\n\nGain 1 collective "Giant Remote Spider" (Item 127).',
+        'You open the package to find a much larger, but equally intricate robotic spider staring back at you. This one appears to specialize in scurrying around its user, picking up and returning anything that might have been dropped. Should prove useful.\n\nGain 1 collective "Giant Remote Spider" (Item 127).',
       imageUrl: '/assets/cards/events/base/city/ce-61-b-a.png',
     },
     optionB: {
-      choice: 'You can t decide who should keep itr so sell the spider and split the money.',
+      choice: 'You can\'t decide who should keep it, so sell the spider and split the money.',
       outcome:
-        'You head down to the Mixed District with the newly improved spider and barter with some Qua try Is who seem incredibly impressed with the craftsmanship. After some back- and-forth, you walk away with a nice sum of gold coins.\n\nGain 30 collective gold.',
+        'You head down to the Mixed District with the newly improved spider and barter with some Quatryls who seem incredibly impressed with the craftsmanship. After some back-and-forth, you walk away with a nice sum of gold coins.\n\nGain 30 collective gold.',
       imageUrl: '/assets/cards/events/base/city/ce-61-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-61-f.png',
