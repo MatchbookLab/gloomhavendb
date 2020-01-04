@@ -1290,17 +1290,17 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 62,
     text:
-      '\' So, I hear you stood up for me with the city guards the other day. Such annoy ing pests, aren \'t they?" You turn around in the street to see the Scoundrel emerge from a dark alley with a smile on her face. 7 just wanted to thank you in person, she says. 7 ve known quite a few persons who would have ratted me out lor their chance at a piece of gold. It s good to know some friendships last, She looks over her shoulder. *Listen, l m leaving town for a good long while, You wanna grab a drink before I take off?"',
+      '"So, I hear you stood up for me with the city guards the other day. Such annoying pests, aren\'t they?"\n\nYou turn around in the street to see the Scoundrel emerge from a dark alley with a smile on her face.\n\n"I just wanted to thank you in person," she says. "I\'ve known quite a few persons who would have ratted me out for their chance at a piece of gold. It\'s good to know some friendships last."\n\nShe looks over her shoulder. "Listen, I\'m leaving town for a good long while. You wanna grab a drink before I take off?"',
     optionA: {
       choice: 'Have a drink and reminisce about old times.',
       outcome:
-        'You faugh for a while and trade tales, ,4s the sun drops below the tavern windows, the Scoundrel gets up to leave. "Listen, I really did enjoy our time together, and, well, I just wanted to leave you with something to remember me by." A piece of black cloth flutters down onto the table. When you look back up, the Scoundrel is gone. (Item 109)- 11 Ihief s l lood',
+        'You laugh for a while and trade tales. As the sun drops below the tavern windows, the Scoundrel gets up to leave.\n\n"Listen, I really did enjoy our time together, and, well, I just wanted to leave you with something to remember me by."\n\nA piece of black cloth flutters down onto the table. When you look back up, the Scoundrel is gone.\n\nGain 1 collective "Thief\'s Hood" (Item 109).',
       imageUrl: '/assets/cards/events/base/city/ce-62-b-a.png',
     },
     optionB: {
-      choice: 'Overpower the Scoundrel and deliver her to the city guards. /',
+      choice: 'Overpower the Scoundrel and deliver her to the city guards.',
       outcome:
-        "A look of horrid surprise flashes in the Scoundrel's eyes as you leap forward and throw her to the ground. She doesn’t even speak as you bind her arms and take her to the city guard. They thank you for your service, but their words aren’t much counter to the cold\\ angry stare of the Scoundrel as she s taken away.\n\nGain 3 reputation.",
+        "A look of horrid surprise flashes in the Scoundrel's eyes as you leap forward and throw her to the ground. She doesn’t even speak as you bind her arms and take her to the city guard. They thank you for your service, but their words aren’t much counter to the cold angry stare of the Scoundrel as she\'s taken away.\n\nGain 3 reputation.",
       imageUrl: '/assets/cards/events/base/city/ce-62-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-62-f.png',
