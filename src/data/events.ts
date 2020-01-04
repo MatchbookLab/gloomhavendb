@@ -1690,17 +1690,17 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 81,
     text:
-      'Hey aren t you the mercenar- ies who stopped that weird tornado f rom destroying the city?” You turn to see a dirt* dock worker point- ing at you w ith wonder in his eves. What was that all about anyway? \\ tore people stop and stare at you. This has become and unfortunately common occurrence * since the Gloom was destroyed. )ou have be- come something of a minor celebrity in Gloom- haven.',
+      '"Hey aren\'t you the mercenaries who stopped that weird tornado from destroying the city?"\n\nYou turn to see a dirty dock worker pointing at you with wonder in his eyes. What was that all about anyway?"\n\nMore people stop and stare at you. This has become and unfortunately common occurrence since the Gloom was destroyed. You have become something of a minor celebrity in Gloomhaven.',
     optionA: {
       choice: 'Take the time to relate the story of what happened.',
       outcome:
-        'You smile and nod[ explaining how an ancient force attempted to destroy the city, but it was banished to another plane. Everyone around you stands enraptured by your story and cheers and claps at its conclusion. After a few additional questions, you are finally able extricate yourself from the crowd and continue your business.\n\nGain 2 reputation.',
+        'You smile and nod explaining how an ancient force attempted to destroy the city, but it was banished to another plane. Everyone around you stands enraptured by your story and cheers and claps at its conclusion. After a few additional questions, you are finally able extricate yourself from the crowd and continue your business.\n\nGain 2 reputation.',
       imageUrl: '/assets/cards/events/base/city/ce-81-b-a.png',
     },
     optionB: {
-      choice: 'Claim it wasn’t you and leave quickly.',
+      choice: 'Claim it wasn\'t you and leave quickly.',
       outcome:
-        'You brusquely shake your head and wave • your hand away saying the man has the wrong person. His excited face immediately turns to one of disappointment. And audible sigh of dejection emerges from the crowd as you rush away. * “There s no need to be rude about it!* the dockworker yells at your back.\n\nLose 2 reputation.',
+        'You brusquely shake your head and wave your hand away saying the man has the wrong person. His excited face immediately turns to one of disappointment. And audible sigh of dejection emerges from the crowd as you rush away.\n\n"There\'s no need to be rude about it!" the dockworker yells at your back.\n\nLose 2 reputation.',
       imageUrl: '/assets/cards/events/base/city/ce-81-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-81-f.png',
