@@ -1353,17 +1353,17 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 65,
     text:
-      "In the middle of the night, you tire wakened by a hard knocking at your door. You answer and it takes you *\tv a second to recognize the man standing on the other side. t hose Oak relics you was look in for, the man J\t* says as he scratches a blister on the side of his lace. Some cut purses tried to sell them to me. I can take you to their place, but we gotta move fast, and I want a cut of the loot. ” You hurriedly agree and make your way to a ramshackle warehouse next to the old docks. ' This is it/' the man says. \"Looks like no one s V* home, though/",
+      "In the middle of the night, you are awakened by a hard knocking at your door. You answer and it takes you a second to recognize the man standing on the other side.\n\n\"Those Oak relics you was lookin' for,\" the man says as he scratches a blister on the side of his face. \"Some cut purses tried to sell them to me. I can take you to their place, but we gotta move fast, and I want a cut of the loot.\"\n\nYou hurriedly agree and make your way to a ramshackle warehouse next to the old docks.\n\n\"This is it,\" the man says. \"Looks like no one's home, though.\"",
     optionA: {
       choice: 'Raid the warehouse and recover the stolen goods.',
       outcome:
-        'You head into the warehouse and search, eventually finding a hidden cache of stolen goods. The thieves, however, are nowhere to be found. You think about waiting for them to return, but it s possible they have already been alerted to your presence. return to the sanctuary, where the priest is pleased to have the artifacts returned, but troubled that the thieves are still out there.\n\nGain 2 reputation.',
+        'You head into the warehouse and search, eventually finding a hidden cache of stolen goods. The thieves, however, are nowhere to be found. You think about waiting for them to return, but it s possible they have already been alerted to your presence. You return to the sanctuary, where the priest is pleased to have the artifacts returned, but troubled that the thieves are still out there.\n\nGain 2 reputation.',
       imageUrl: '/assets/cards/events/base/city/ce-65-b-a.png',
     },
     optionB: {
       choice: 'Wait until the thieves return so you can apprehend them.',
       outcome:
-        'You hide behind some barrels and wait for the thieves to return. It takes the rest of the night, but just as you are about to give up, two men approach the door. It ’s easy enough to get the drop on them, overpower them, and deliver them to the authorities. When you return the stolen artifacts to the sanctuary, the priest is incredibly pleased with your work.\n\nGain 1 prosperity.\n\nGain 2 reputation. «*■**: Gain 1 additional reputation.',
+        'You hide behind some barrels and wait for the thieves to return. It takes the rest of the night, but just as you are about to give up, two men approach the door. It\'s easy enough to get the drop on them, overpower them, and deliver them to the authorities. When you return the stolen artifacts to the sanctuary, the priest is incredibly pleased with your work.\n\nGain 1 prosperity.\n\nGain 2 reputation.\n\n{Saw}: Gain 1 additional reputation.',
       imageUrl: '/assets/cards/events/base/city/ce-65-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-65-f.png',
