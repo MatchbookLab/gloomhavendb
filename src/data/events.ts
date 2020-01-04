@@ -1505,7 +1505,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Follow the smelly old bandit.',
       outcome:
-        'Your curiosity gets the better of your judgment. You need to know the purpose of the device you found, so you follow Fish into a derelict shack where he pulls out a map of the area and lays it on a table. Fish directs you to pull out your rod and both you and he hold your respective rods over the table.\n\nA specific location on the map glows brightly ond Fish laughs. "See? I told ya, didn\'t I? Meet me there with your rod and we\'ll get rich!"\n\nUnlock "Lost Temple" 79 (K-12).\n\nParty Achievement: "Fish\'s Aid."',
+        'Your curiosity gets the better of your judgment. You need to know the purpose of the device you found, so you follow Fish into a derelict shack where he pulls out a map of the area and lays it on a table. Fish directs you to pull out your rod and both you and he hold your respective rods over the table.\n\nA specific location on the map glows brightly and Fish laughs. "See? I told ya, didn\'t I? Meet me there with your rod and we\'ll get rich!"\n\nUnlock "Lost Temple" 79 (K-12).\n\nParty Achievement: "Fish\'s Aid."',
       imageUrl: '/assets/cards/events/base/city/ce-72-b-a.png',
     },
     optionB: {
@@ -1522,17 +1522,17 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 73,
     text:
-      'You awake in your bed to sen- sation of someone shaking you, but when you look around, you see no one else in your room. Instead[ you see that it s the entire room that s shaking. Your thoughts immediately go to the crystal you found inside the mountain along the road[ You quickly search through your belongings and grab the crystal in your hand. The earth- quake immediately stops« C fearly this thing has some power and you need to deal with it before more damage is done.',
+      'You awake in your bed to sensation of someone shaking you, but when you look around, you see no one else in your room. Instead, you see that it\'s the entire room that\'s shaking.\n\nYour thoughts immediately go to the crystal you found inside the mountain along the road. You quickly search through your belongings and grab the crystal in your hand. The earthquake immediately stops.\n\nClearly this thing has some power and you need to deal with it before more damage is done.',
     optionA: {
       choice: 'Seek help from the University.',
       outcome:
-        "“Yes, very interesting, ' a bookish Quatryl says as he rolls the crystal over in his hand. “It seems os if this crystal is attuned to a specific location, and once removed, it begins vibrating until mountains and houses start falling down. I'd say you need to return it to its proper home. \\ \\ ith the proper tools — which I'll need help paying for — I should be able to triangulate that location for you.\n\nLose 5 collective gold.\n\nUnlock \"Crystalline Cave\" 84 (D-12).\n\nParty Achievement: \"Tremors.\"",
+        '"Yes, very interesting," a bookish Quatryl says as he rolls the crystal over in his hand. "It seems as if this crystal is attuned to a specific location, and once removed, it begins vibrating until mountains and houses start falling down. I\'d say you need to return it to its proper home. With the proper tools — which I\'ll need help paying for — I should be able to triangulate that location for you.\n\nLose 5 collective gold.\n\nUnlock "Crystalline Cave" 84 (D-12).\n\nParty Achievement: "Tremors."',
       imageUrl: '/assets/cards/events/base/city/ce-73-b-a.png',
     },
     optionB: {
       choice: 'Throw the crystal into the bay.',
       outcome:
-        'Not wanting to waste your time with the problem, you walk to the Jocks anJ throw the crystal into the bay. When you hear reports of harsher weather anJ larger waves hitting the Jocks, you try not to pay them any mind.\n\nLose 1 prosperity.',
+        'Not wanting to waste your time with the problem, you walk to the docks and throw the crystal into the bay. When you hear reports of harsher weather and larger waves hitting the docks, you try not to pay them any mind.\n\nLose 1 prosperity.',
       imageUrl: '/assets/cards/events/base/city/ce-73-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-73-f.png',
