@@ -975,17 +975,17 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 47,
     text:
-      'Walking near Gloomhaven Square, you see a peculiar scene. A group of guards is dragging along a VermUng in tattered robes toward the Ghost Fortress. Getting a little closer, you recognise the Mindthicf, "Hssss," she spits. *\'Why do you do this? I came to you! I tell you that this town is being poisoned, and you respond by imprisoning me?" “Well see what the Captain of the Guard has to say about this," one of her captors says. “Keep moving!"',
+      'Walking near Gloomhaven Square, you see a peculiar scene. A group of guards is dragging along a Vermling in tattered robes toward the Ghost Fortress. Getting a little closer, you recognise the Mindthief.\n\n"Hssss," she spits. "Why do you do this? I came to you! I tell you that this town is being poisoned, and you respond by imprisoning me?"\n\n"Well see what the Captain of the Guard has to say about this," one of her captors says. “Keep moving!"',
     optionA: {
       choice: 'Intervene with the guards and find out what is going on.',
       outcome:
-        "The guards took incredibly perturbed when • you step in front of them and ask that they lea ve the Mindthief to you. After some effort, tbev begrudgingly hand her over. The Mindthief thanks you. explaining that her colony in the sewers is being poisoned, and the poison is quickly migrating to the city's water supply. She says she’s tracked the source to a small cove along the Hook Coast.\n\nLose 1 reputation. Unlock Corrupted Cove (87) (1-9). Party Achievement: \"The Poison's Source.",
+        "The guards look incredibly perturbed when you step in front of them and ask that they leave the Mindthief to you. After some effort, they begrudgingly hand her over. The Mindthief thanks you, explaining that her colony in the sewers is being poisoned, and the poison is quickly migrating to the city's water supply. She says she’s tracked the source to a small cove along the Hook Coast.\n\nLose 1 reputation. Unlock Corrupted Cove 87 (I-9). Party Achievement: \"The Poison's Source.\"",
       imageUrl: '/assets/cards/events/base/city/ce-47-b-a.png',
     },
     optionB: {
-      choice: 'Let the guards continue their business and just continue with yours. /',
+      choice: 'Let the guards continue their business and just continue with yours.',
       outcome:
-        "The Mindthief flicks her tail and throws • insults around, but it doesn't seem to have any positive effect. She is led away and out of view. You get about your business, hoping that bit about the town being poisoned wasn t too serious.\n\nAdd City Event 63 to the deck.",
+        "The Mindthief flicks her tail and throws insults around, but it doesn't seem to have any positive effect. She is led away and out of view. You get about your business, hoping that bit about the town being poisoned wasn’t too serious.\n\nAdd City Event 63 to the deck.",
       imageUrl: '/assets/cards/events/base/city/ce-47-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-47-f.png',
