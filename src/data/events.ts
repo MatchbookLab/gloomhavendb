@@ -2439,7 +2439,7 @@ export const events: EventEntity[] = [
     type: EventType.Road,
     number: 36,
     text:
-      "Up abead, you see the path you are on leads into a dark and unfamiliar wood. It gives you an eerie feeling.\n\nAs you step closer, you can feel your skin crawl and it forces you to pause, you can't help, but think that this wood might best be avoided.",
+      "Up ahead, you see the path you are on leads into a dark and unfamiliar wood. It gives you an eerie feeling.\n\nAs you step closer, you can feel your skin crawl and it forces you to pause, you can't help, but think that this wood might best be avoided.",
     optionA: {
       choice: 'Continue down the path into the wood. You are not afraid.',
       outcome:
