@@ -28,7 +28,7 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 2,
     text:
-      'As the daylight fades, you find yourselves wandering through a half-crowded market street, browsing wares.\n\n"Hey! Over here!" You turn in the direction of the voice to see a filthy Vermling gesturing from a dark alley. "Yeah, you grim-looking chaps. I have something you might he interested in."\n\nThe Vermling holds out a piece of metal covered in sludge. "Found this in the sewer. Writing on it I don\'t understand, but I know it\'s valuable. You can have it for ten gold!"',
+      'As the daylight fades, you find yourselves wandering through a half-crowded market street, browsing wares.\n\n"Hey! Over here!" You turn in the direction of the voice to see a filthy Vermling gesturing from a dark alley. "Yeah, you grim-looking chaps. I have something you might be interested in."\n\nThe Vermling holds out a piece of metal covered in sludge. "Found this in the sewer. Writing on it I don\'t understand, but I know it\'s valuable. You can have it for ten gold!"',
     optionA: {
       choice: 'Pay for the thing. You never know.',
       outcome:
@@ -375,7 +375,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Agree to help with the rat infestation.',
       outcome:
-        'You smile broadly and ask the woman to lead you to her house. It is a ramshackle dwelling half sunk into the muddy foundation. And inside there are certainly a lot of rats. You kill as many as you can, but in her cellar you find a large hole leading to a section of sewer that recently collapsed, leaving the pests with nowhere else to go. The woman thanks you for at least helping her to he able to sleep tonight and hands you a few coins.\n\nGain 2 gold each.',
+        'You smile broadly and ask the woman to lead you to her house. It is a ramshackle dwelling half sunk into the muddy foundation. And inside there are certainly a lot of rats. You kill as many as you can, but in her cellar you find a large hole leading to a section of sewer that recently collapsed, leaving the pests with nowhere else to go. The woman thanks you for at least helping her to be able to sleep tonight and hands you a few coins.\n\nGain 2 gold each.',
       imageUrl: '/assets/cards/events/base/city/ce-18-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-18-f.png',
@@ -453,7 +453,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Further investigate the exchange between the men.',
       outcome:
-        'You subtly move in the direction of the men, monitoring their actions with your peripheral vision. You recognize the dark robes from the run-ins you have had with cultists in the area, and as you get closer, you become convinced that the vials being traded contain blood. You grab the men and cause a huge amount of commotion as you fight to drag them outside and foil their dealings. You are able to hand them off to the proper authorities, but it may he a while before you are allowed back in the Brown Door. The concert was ruined.\n\nGain 2 reputation.',
+        'You subtly move in the direction of the men, monitoring their actions with your peripheral vision. You recognize the dark robes from the run-ins you have had with cultists in the area, and as you get closer, you become convinced that the vials being traded contain blood. You grab the men and cause a huge amount of commotion as you fight to drag them outside and foil their dealings. You are able to hand them off to the proper authorities, but it may be a while before you are allowed back in the Brown Door. The concert was ruined.\n\nGain 2 reputation.',
       imageUrl: '/assets/cards/events/base/city/ce-22-b-a.png',
     },
     optionB: {
@@ -596,7 +596,7 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 29,
     text:
-      'You get word from a contact that there is trouble brewing down at the East Walls and decide to investigate.\n\nWhat you find is a large contingency of the city\'s Savvas workforce — the best builders you\'ll find anywhere — in open rebellion against the construction managers, demanding better pay for the specialized work they perform. "This city would he a lifeless pile of rocks without us!" one of the Savvas yells. "It\'s time we see some of its prosperity!"\n\nThe manager on the other side of the argument looks like a captured mouse, not sure at all how to get out of the situation.',
+      'You get word from a contact that there is trouble brewing down at the East Walls and decide to investigate.\n\nWhat you find is a large contingency of the city\'s Savvas workforce — the best builders you\'ll find anywhere — in open rebellion against the construction managers, demanding better pay for the specialized work they perform. "This city would be a lifeless pile of rocks without us!" one of the Savvas yells. "It\'s time we see some of its prosperity!"\n\nThe manager on the other side of the argument looks like a captured mouse, not sure at all how to get out of the situation.',
     optionA: {
       choice: 'Talk to the Savvas, appealing to their sense of duty and community.',
       outcome:
@@ -1416,11 +1416,11 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 68,
     text:
-      "You wake in the middle of the night to the sound of rushing water. In the corner ofyour room, you see a flood gushing out of the head of the Summoner's staff which you had previously picked up in your travels. You jump out of bed and splash through a growing puddle of water to investigate the staff, but you can't make any sense of it. ft seems to he materializing the water out of thin air, possibly channeling it from another plane of existence. You scratch your head, unsure of what to do next.",
+      "You wake in the middle of the night to the sound of rushing water. In the corner ofyour room, you see a flood gushing out of the head of the Summoner's staff which you had previously picked up in your travels. You jump out of bed and splash through a growing puddle of water to investigate the staff, but you can't make any sense of it. ft seems to be materializing the water out of thin air, possibly channeling it from another plane of existence. You scratch your head, unsure of what to do next.",
     optionA: {
       choice: 'Kind some way to get the water to stop gushing.',
       outcome:
-        '; You take a moment to attune yourself to the staff which you feel now has a direct link another plane. The water stops and you are left with an openga Unlock Plane of Water "(88)(D-l6}. Party Achievement: “Water Staff."\n\nOTHERWISE: You figure out how to work the staff but not before your entire room is flooded. The innkeeper will not he happy.\n\nLose 15 collective gold. Unlock "Plane of Water (8&(D-l6). Party Achievement: \'Water Staff."',
+        '; You take a moment to attune yourself to the staff which you feel now has a direct link another plane. The water stops and you are left with an openga Unlock Plane of Water "(88)(D-l6}. Party Achievement: “Water Staff."\n\nOTHERWISE: You figure out how to work the staff but not before your entire room is flooded. The innkeeper will not be happy.\n\nLose 15 collective gold. Unlock "Plane of Water (8&(D-l6). Party Achievement: \'Water Staff."',
       imageUrl: '/assets/cards/events/base/city/ce-68-b-a.png',
     },
     optionB: {
@@ -1458,7 +1458,7 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 70,
     text:
-      'You are wandering the Sink- ing Market looking for possible work when you are approached by a dirty-looking bov with a scar on his check. You greet him warmly. He has given you leads on a number of mercenary jobs and you re- cently helped him avoid a jail ceil. "I need some help, and I really don\'t know who else to turn to, " he begins. \'All of us here in (he Sinking Market are in a had way; Our houses are collapsing, our water is foul\\ and we den t even have enough money for food[ "We are dying here. and the city is doing nothing to help us. You have friends in high places, right? Please, there \'s gotta he someone you can talk to.',
+      'You are wandering the Sink- ing Market looking for possible work when you are approached by a dirty-looking bov with a scar on his check. You greet him warmly. He has given you leads on a number of mercenary jobs and you re- cently helped him avoid a jail ceil. "I need some help, and I really don\'t know who else to turn to, " he begins. \'All of us here in (he Sinking Market are in a had way; Our houses are collapsing, our water is foul\\ and we den t even have enough money for food[ "We are dying here. and the city is doing nothing to help us. You have friends in high places, right? Please, there \'s gotta be someone you can talk to.',
     optionA: {
       choice: 'Talk to some merchants about revital- izing the area.',
       outcome:
@@ -1505,13 +1505,13 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Follow the smelly old bandit.',
       outcome:
-        'Your curiosity gets the better of your judg- • ment. You need to know the purpose of the device you found, so you follow Fish into«) derelict shock where he pulls out a mop of the area ond lo vs it on o table. Fish directs you to pull out your rod ond both you ond he hold your respective rods over the toble. 4 specific location on the mop glows brightly ond Fish loughs. ‘See? I toldya. didn \'t I? Meet me there with your rod and we ll get rich!" Unlock Lost Temple (79)(K-I2). Party Achievement: "Fish\'s Aid.”',
+        'Your curiosity gets the better of your judg- • ment. You need to know the purpose of the device you found, so you follow Fish into«) derelict shock where he pulls out a map of the area ond lays it on o table. Fish directs you to pull out your rod ond both you and he hold your respective rods over the toble. 4 specific location on the mop glows brightly ond Fish loughs. ‘See? I toldya. didn \'t I? Meet me there with your rod and we ll get rich!" Unlock Lost Temple (79)(K-I2). Party Achievement: "Fish\'s Aid.”',
       imageUrl: '/assets/cards/events/base/city/ce-72-b-a.png',
     },
     optionB: {
       choice: 'Refuse to go with the man. This whole situation seems fishy.',
       outcome:
-        "This suspicious old man must have seen you in here before with the rod and fashioned some elaborate con to swindle you out of something. You won i be so easily fooled. There 's no he knows what the rod does when no one else in town does. Vbi/ push him away and go back to your drink.\n\nNo effect.",
+        "This suspicious old man must have seen you in here before with the rod and fashioned some elaborate con to swindle you out of something. You won i be so easily fooled. There's no he knows what the rod does when no one else in town does. Vbi/ push him away and go back to your drink.\n\nNo effect.",
       imageUrl: '/assets/cards/events/base/city/ce-72-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-72-f.png',
@@ -1526,7 +1526,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Seek help from the University.',
       outcome:
-        "“Yes, verv interesting, ' a bookish Quatryl says as he rolls the crystal over in his hand. “It seems os if this crystal is attuned to a specific location, and once removed, it begins vibrating until mountains and houses start falling down. I'd say you need to return it to its proper home. \\ \\ ith the proper tools — which I'll need help paying for — I should be able to triangulate that location for you.\n\nLose 5 collective gold. Unlock Crystalline Cave\" 84 (CM2:. Partv Achievement: \"Tremors.'",
+        "“Yes, very interesting, ' a bookish Quatryl says as he rolls the crystal over in his hand. “It seems os if this crystal is attuned to a specific location, and once removed, it begins vibrating until mountains and houses start falling down. I'd say you need to return it to its proper home. \\ \\ ith the proper tools — which I'll need help paying for — I should be able to triangulate that location for you.\n\nLose 5 collective gold. Unlock Crystalline Cave\" 84 (CM2:. Partv Achievement: \"Tremors.'",
       imageUrl: '/assets/cards/events/base/city/ce-73-b-a.png',
     },
     optionB: {
@@ -1606,7 +1606,7 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 77,
     text:
-      "*Well, well, well. If it isn't the most notorious band o( mercenar- , ♦*» ies in all of Gloomhaven. The guards looking to throw you in the Ghost Fortress yet, or are they on the payroll?' You turn around to see Red Nick, a well known fence, leaning up against the walk You've had certain dealings with him in the past. Fancy seeing you, actually he says. 7ve got a big job, and I figure if anyone wouldn ’t mind digging up graves, it would he you miscreants*\"",
+      "*Well, well, well. If it isn't the most notorious band o( mercenar- , ♦*» ies in all of Gloomhaven. The guards looking to throw you in the Ghost Fortress yet, or are they on the payroll?' You turn around to see Red Nick, a well known fence, leaning up against the walk You've had certain dealings with him in the past. Fancy seeing you, actually he says. 7ve got a big job, and I figure if anyone wouldn ’t mind digging up graves, it would be you miscreants*\"",
     optionA: {
       choice: 'Do the job.',
       outcome:
@@ -2659,7 +2659,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Forget about the rocks and continue on your journey.',
       outcome:
-        "You shake your head and move past the ridge. You have more important things to do than climb rocks. Still, you fed the pull of the site, even after it fades from view. You get the feeling that this won't he the last time you see it.\n\nNo effect.",
+        "You shake your head and move past the ridge. You have more important things to do than climb rocks. Still, you fed the pull of the site, even after it fades from view. You get the feeling that this won't be the last time you see it.\n\nNo effect.",
       imageUrl: '/assets/cards/events/base/road/re-46-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-46-f.png',
@@ -2680,7 +2680,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Kill the savage little beast.',
       outcome:
-        'You attack the Vermling anyway; despite his protests. It t urns out he wasn *t lying about his "brothers" nearby, though. As you wipe the blood from your blade, ten more of the little furry creatures jump out at youf brandishing small knives. They are not nearly as easy to dispatch.\n\nAll start scenario with {Poison}.\n\nAll start scenario with 2 damage.',
+        'You attack the Vermling anyway; despite his protests. It turns out he wasn\'t lying about his "brothers" nearby, though. As you wipe the blood from your blade, ten more of the little furry creatures jump out at youf brandishing small knives. They are not nearly as easy to dispatch.\n\nAll start scenario with {Poison}.\n\nAll start scenario with 2 damage.',
       imageUrl: '/assets/cards/events/base/road/re-47-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-47-f.png',
@@ -2758,13 +2758,13 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Investigate further.',
       outcome:
-        "You get closer to the pike. The skull looks pretty fresh There are still bits of decayed flesh attached to the bonef and flies buzz around it* You can see there is a small paper card stuck in its mouth so you caref ully reach in and pull it out. I he card is black and depicts a skull with blades running through it. Come to think of it you remember rumors of an assassins' guild that has been known to use the same imagery You get out of the area as quickly as you can.\n\nGain 1 collective “Black Card” (Item 129).",
+        "You get closer to the pike. The skull looks pretty fresh. There are still bits of decayed flesh attached to the bone, and flies buzz around it. You can see there is a small paper card stuck in its mouth so you carefully reach in and pull it out. The card is black and depicts a skull with blades running through it. Come to think of it you remember rumors of an assassins' guild that has been known to use the same imagery You get out of the area as quickly as you can.\n\nGain 1 collective “Black Card” (Item 129).",
       imageUrl: '/assets/cards/events/base/road/re-51-b-a.png',
     },
     optionB: {
       choice: 'Arm yourself and make a defensive retreat from the area.',
       outcome:
-        "You remember rumors of an assassins guild that places a skull on a pike outside the houses of'their victims before they strike. Fearing the worst, you pull out your weapons and survey t he scene as you back away from the pike. Everything looks clear, so you quickly get as far away from the area as possible. Perhaps the skull was not meant for you.\n\nNo effect.",
+        "You remember rumors of an assassins guild that places a skull on a pike outside the houses of'their victims before they strike. Fearing the worst, you pull out your weapons and survey the scene as you back away from the pike. Everything looks clear, so you quickly get as far away from the area as possible. Perhaps the skull was not meant for you.\n\nNo effect.",
       imageUrl: '/assets/cards/events/base/road/re-51-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-51-f.png',
@@ -2827,7 +2827,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Give detailed directions about the way out and hope that is sufficient.',
       outcome:
-        "W V\tf\tL/tar\triru mejig/ve precise directions on the easiest way out of the forest and back to the main road. The Soothsinger seems impressed and waves good-bye as she heads off.\n\nGain 1 reputation.\n\n : You gauge your bearings and\n\nOTHERWISE: You hem and haw and then give some vague directions back to the road' t he Soothsinger looks at you skeptically and heads off.\n\nAdd City Event 69 to the deck.",
+        "W V\tf\tL/tar\triru mejig/ve precise directions on the easiest way out of the forest and back to the main road. The Soothsinger seems impressed and waves good-bye as she heads off.\n\nGain 1 reputation.\n\n : You gauge your bearings and\n\nOTHERWISE: You hem and haw and then give some vague directions back to the road' the Soothsinger looks at you skeptically and heads off.\n\nAdd City Event 69 to the deck.",
       imageUrl: '/assets/cards/events/base/road/re-54-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-54-f.png',
@@ -2922,7 +2922,7 @@ export const events: EventEntity[] = [
     type: EventType.Road,
     number: 59,
     text:
-      'The\tair is especially humid and muggy as you walk towards your destination, but even that couldn’t explain the sight that greets you on the road. Directly in Iront of you, completely blocking the only available path, is a massive swarm of insects. There must he millions of them. >bt/ take a hesitant step forward and the bugs do not react. They are not concerned by your presence at all. — w    \t■&» ■». m« mwi',
+      'The\tair is especially humid and muggy as you walk towards your destination, but even that couldn’t explain the sight that greets you on the road. Directly in Iront of you, completely blocking the only available path, is a massive swarm of insects. There must be millions of them. >bt/ take a hesitant step forward and the bugs do not react. They are not concerned by your presence at all. — w    \t■&» ■». m« mwi',
     optionA: {
       choice: 'Cover yourself as best you can and try to walk through the swarm.',
       outcome:
@@ -3027,7 +3027,7 @@ export const events: EventEntity[] = [
     type: EventType.Road,
     number: 64,
     text:
-      'You move closer, and what you thought was a signpost turns out to he a human skull impaled on a spike. There is something sticking out of the skulls mouth. ^  — - ■ i ii HWW ■ *»-»■ ■* * — —■\t— ■ i ■<————',
+      'You move closer, and what you thought was a signpost turns out to be a human skull impaled on a spike. There is something sticking out of the skulls mouth. ^  — - ■ i ii HWW ■ *»-»■ ■* * — —■\t— ■ i ■<————',
     optionA: {
       choice: 'Investigate further.',
       outcome:
