@@ -996,17 +996,17 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 48,
     text:
-      'You are haggling over the price ot road rations with an irritating Valrath merchant when a messenger boy approaches you holding a note. "Sir, I have a pressing letter from an important Valrath Sunkeeper, "the messenger says. I was told to deliver it to you." You reach for it, but the messenger moves back a little. "Sir, this note has traveled a long distance to get to you. If you could, please pay a small fee to take possession of it."',
+      'You are haggling over the price of road rations with an irritating Valrath merchant when a messenger boy approaches you holding a note.\n\n"Sir, I have a pressing letter from an important Valrath Sunkeeper," the messenger says. "I was told to deliver it to you."\n\nYou reach for it, but the messenger moves back a little. "Sir, this note has traveled a long distance to get to you. If you could, please pay a small fee to take possession of it."',
     optionA: {
-      choice: 'Begrudgingly pay For the note.',
+      choice: 'Begrudgingly pay for the note.',
       outcome:
-        "PAY5 COLLECTIVE GOLD: You throw the kid a few coins and grab the note. Enclosed with the note is a small medallion engraved with the image of the sun. Apparently the Sunkeeper thinks the object may help you at some point in the future. The note doesn't say exactly how and the thing has no apparent use. You stow it away in your pack. Party Achievement: “Sun-Blessed.\n\nOTHERWISE: You reach into your pocket to pay the kid. but come up empty-handed. He slinks off in indignation.\n\nNo eflect.",
+        "PAY 5 COLLECTIVE GOLD: You throw the kid a few coins and grab the note. Enclosed with the note is a small medallion engraved with the image of the sun. Apparently the Sunkeeper thinks the object may help you at some point in the future. The note doesn't say exactly how and the thing has no apparent use. You stow it away in your pack.\n\nParty Achievement: \"Sun-Blessed.\".\n\nOTHERWISE: You reach into your pocket to pay the kid, but come up empty-handed. He slinks off in indignation.\n\nNo eflect.",
       imageUrl: '/assets/cards/events/base/city/ce-48-b-a.png',
     },
     optionB: {
-      choice: 'Refuse to pay for the note. /',
+      choice: 'Refuse to pay for the note.',
       outcome:
-        'You laugh in indignation and push the • messenger away. He opens his mouth to object, then thinks better of it and runs off. You turn back to bartering, now leveraging the proof of your extreme thriftiness against the merchant.\n\nGain 3 collective gold.',
+        'You laugh in indignation and push the messenger away. He opens his mouth to object, then thinks better of it and runs off. You turn back to bartering, now leveraging the proof of your extreme thriftiness against the merchant.\n\nGain 3 collective gold.',
       imageUrl: '/assets/cards/events/base/city/ce-48-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-48-f.png',
