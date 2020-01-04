@@ -2817,17 +2817,17 @@ export const events: EventEntity[] = [
     type: EventType.Road,
     number: 54,
     text:
-      "Deep inside a dense forest, you begin to hear the jangling of bells and see a small troupe of performers approaching you through the trees. 'Well, look who it is! * The small voice belongs to a garishly dressed female Qua try I with a lute and a feathered hat. fancy running into you out here. “This actually may be a stroke of luckf the Soothsingcr says. *You see, my compatriots and I seem to be a bit lost. We were beaded toward the Capital when my drummer said he knew a shortcut. Now here wc are in the middle of a forest without an inkling of a clue. I don't suppose you could find it in your heart to escort us back to the main road„ could you?",
+      'Deep inside a dense forest, you begin to hear the jangling of bells and see a small troupe of performers approaching you through the trees.\n\n"Well, look who it is!" The small voice belongs to a garishly dressed female Quatryl with a lute and a feathered hat. "Fancy running into you out here."\n\n"This actually may be a stroke of luck," the Soothsingcr says. "You see, my compatriots and I seem to be a bit lost. We were headed toward the Capital when my drummer said he knew a shortcut. Now here we are in the middle of a forest without an inkling of a clue. I don\'t suppose you could find it in your heart to escort us back to the main road, could you?"',
     optionA: {
       choice: 'Take the time to escort the troupe back out of the forest.',
       outcome:
-        "While escorting the Soothsinger and her troupe out of'the forest, you are able to catch up a bit. She is very happy now as a traveling performer, playing to sold out concerts across the land. When you reach the main road, you say your good-byes and then make the long trek back to where you were going.\n\nGain 1 reputation.\n\nDiscard 2 cards each.",
+        "While escorting the Soothsinger and her troupe out of the forest, you are able to catch up a bit. She is very happy now as a traveling performer, playing to sold out concerts across the land. When you reach the main road, you say your good-byes and then make the long trek back to where you were going.\n\nGain 1 reputation.\n\nDiscard 2 cards each.",
       imageUrl: '/assets/cards/events/base/road/re-54-b-a.png',
     },
     optionB: {
       choice: 'Give detailed directions about the way out and hope that is sufficient.',
       outcome:
-        "W V\tf\tL/tar\triru mejig/ve precise directions on the easiest way out of the forest and back to the main road. The Soothsinger seems impressed and waves good-bye as she heads off.\n\nGain 1 reputation.\n\n : You gauge your bearings and\n\nOTHERWISE: You hem and haw and then give some vague directions back to the road' the Soothsinger looks at you skeptically and heads off.\n\nAdd City Event 69 to the deck.",
+        "{LightningBolts} {TwoMinis} {PointyHead}: You gauge your bearings and then give precise directions on the easiest way out of the forest and back to the main road. The Soothsinger seems impressed and waves good-bye as she heads off.\n\nGain 1 reputation.\n\nOTHERWISE:You hem and haw and then give some vague directions back to the road. The Soothsinger looks at you skeptically and heads off.\n\nAdd City Event 69 to the deck.",
       imageUrl: '/assets/cards/events/base/road/re-54-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-54-f.png',
