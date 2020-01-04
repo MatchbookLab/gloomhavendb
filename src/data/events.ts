@@ -159,7 +159,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'The map docs look valuable. Decide to bargain for it.',
       outcome:
-        'PAY 20 (reputation < 10) or 15 (reputation > 9) COLLECTIVE GOLD: After some amount of haggling back and forth, you settle on a price and pay for the map. You recognize some of the landmarks and should be able to find this place of "untold treasure "by hiring a ship.\n\nUnlock "Sunken Vessel" 93 (N-17)\n\nParty Achievement: "A Map to Treasure."\n\nOTHERWISE: Despite your valiant efforts, you cannot get the merchant to lower his price to something you can afford.\n\nNo effect.',
+        'PAY 20 (reputation < 10) or 15 (reputation > 9) COLLECTIVE GOLD: After some amount of haggling back and forth, you settle on a price and pay for the map. You recognize some of the landmarks and should be able to find this place of "untold treasure "by hiring a ship.\n\nUnlock "Sunken Vessel" 93 (N-17).\n\nParty Achievement: "A Map to Treasure."\n\nOTHERWISE: Despite your valiant efforts, you cannot get the merchant to lower his price to something you can afford.\n\nNo effect.',
       imageUrl: '/assets/cards/events/base/city/ce-08-b-a.png',
     },
     optionB: {
@@ -642,7 +642,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Leave with the woman to help her find her missing daughter.',
       outcome:
-        'Once outside, the woman hands you a large pouch of gold. "My father saw the whole thing, but then he went mad and ran toward the Silent Bridge. Please find him and he\'ll help you find my daughter!"\n\nGain 20 collective gold.\n\nUnlock "Shadows Within" 83 (C-15)\n\nParty Achievement: "Bad Business."',
+        'Once outside, the woman hands you a large pouch of gold. "My father saw the whole thing, but then he went mad and ran toward the Silent Bridge. Please find him and he\'ll help you find my daughter!"\n\nGain 20 collective gold.\n\nUnlock "Shadows Within" 83 (C-15).\n\nParty Achievement: "Bad Business."',
       imageUrl: '/assets/cards/events/base/city/ce-31-b-a.png',
     },
     optionB: {
@@ -979,7 +979,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Intervene with the guards and find out what is going on.',
       outcome:
-        "The guards look incredibly perturbed when you step in front of them and ask that they leave the Mindthief to you. After some effort, they begrudgingly hand her over. The Mindthief thanks you, explaining that her colony in the sewers is being poisoned, and the poison is quickly migrating to the city's water supply. She says she’s tracked the source to a small cove along the Hook Coast.\n\nLose 1 reputation. Unlock Corrupted Cove 87 (I-9). Party Achievement: \"The Poison's Source.\"",
+        "The guards look incredibly perturbed when you step in front of them and ask that they leave the Mindthief to you. After some effort, they begrudgingly hand her over. The Mindthief thanks you, explaining that her colony in the sewers is being poisoned, and the poison is quickly migrating to the city's water supply. She says she’s tracked the source to a small cove along the Hook Coast.\n\nLose 1 reputation.\n\nUnlock \"Corrupted Cove\" 87 (I-9).\n\nParty Achievement: \"The Poison's Source.\"",
       imageUrl: '/assets/cards/events/base/city/ce-47-b-a.png',
     },
     optionB: {
@@ -1405,7 +1405,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Refuse to pay. You won\'t be strongarmed by anyone.',
       outcome:
-        'You laugh and wave your hand dismissively. I here \'s no way you will be paying such a large amount of money to these thugs. Unfortunately, the Inox is not amused. m " Then your payment will he blood! she says "Meet us in the back alley, and ivc \'ll see if "we can t come to terms. “ Unlock "Back Alley Brawi"(92 (C-14). Party Achievement: "Debt Collection.\'"',
+        'You laugh and wave your hand dismissively. I here \'s no way you will be paying such a large amount of money to these thugs. Unfortunately, the Inox is not amused. m " Then your payment will he blood! she says "Meet us in the back alley, and ivc \'ll see if "we can t come to terms.\n\nUnlock "Back Alley Brawi" 92 (C-14).\n\nParty Achievement: "Debt Collection."',
       imageUrl: '/assets/cards/events/base/city/ce-67-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-67-f.png',
@@ -1420,7 +1420,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Kind some way to get the water to stop gushing.',
       outcome:
-        '; You take a moment to attune yourself to the staff which you feel now has a direct link another plane. The water stops and you are left with an openga Unlock Plane of Water "(88)(D-l6}. Party Achievement: “Water Staff."\n\nOTHERWISE: You figure out how to work the staff but not before your entire room is flooded. The innkeeper will not be happy.\n\nLose 15 collective gold. Unlock "Plane of Water (8&(D-l6). Party Achievement: \'Water Staff."',
+        '; You take a moment to attune yourself to the staff which you feel now has a direct link another plane. The water stops and you are left with an open gate.\n\nUnlock "Plane of Water" 88 (D-l6).\n\nParty Achievement: "Water Staff."\n\nOTHERWISE: You figure out how to work the staff but not before your entire room is flooded. The innkeeper will not be happy.\n\nLose 15 collective gold.\n\nUnlock "Plane of Water" 88 (D-l6).\n\nParty Achievement: "Water Staff."',
       imageUrl: '/assets/cards/events/base/city/ce-68-b-a.png',
     },
     optionB: {
@@ -1505,7 +1505,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Follow the smelly old bandit.',
       outcome:
-        'Your curiosity gets the better of your judg- • ment. You need to know the purpose of the device you found, so you follow Fish into«) derelict shock where he pulls out a map of the area ond lays it on o table. Fish directs you to pull out your rod ond both you and he hold your respective rods over the toble. 4 specific location on the mop glows brightly ond Fish loughs. ‘See? I toldya. didn \'t I? Meet me there with your rod and we ll get rich!" Unlock Lost Temple (79)(K-I2). Party Achievement: "Fish\'s Aid.”',
+        'Your curiosity gets the better of your judg- • ment. You need to know the purpose of the device you found, so you follow Fish into«) derelict shock where he pulls out a map of the area ond lays it on o table. Fish directs you to pull out your rod ond both you and he hold your respective rods over the toble. 4 specific location on the mop glows brightly ond Fish loughs. ‘See? I toldya. didn \'t I? Meet me there with your rod and we ll get rich!\n\nUnlock "Lost Temple" 79 (K-I2).\n\nParty Achievement: "Fish\'s Aid."',
       imageUrl: '/assets/cards/events/base/city/ce-72-b-a.png',
     },
     optionB: {
@@ -1526,7 +1526,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Seek help from the University.',
       outcome:
-        "“Yes, very interesting, ' a bookish Quatryl says as he rolls the crystal over in his hand. “It seems os if this crystal is attuned to a specific location, and once removed, it begins vibrating until mountains and houses start falling down. I'd say you need to return it to its proper home. \\ \\ ith the proper tools — which I'll need help paying for — I should be able to triangulate that location for you.\n\nLose 5 collective gold. Unlock Crystalline Cave\" 84 (CM2:. Partv Achievement: \"Tremors.'",
+        "“Yes, very interesting, ' a bookish Quatryl says as he rolls the crystal over in his hand. “It seems os if this crystal is attuned to a specific location, and once removed, it begins vibrating until mountains and houses start falling down. I'd say you need to return it to its proper home. \\ \\ ith the proper tools — which I'll need help paying for — I should be able to triangulate that location for you.\n\nLose 5 collective gold.\n\nUnlock \"Crystalline Cave\" 84 (D-12).\n\nParty Achievement: \"Tremors.\"",
       imageUrl: '/assets/cards/events/base/city/ce-73-b-a.png',
     },
     optionB: {
@@ -1589,7 +1589,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Accept the drink.',
       outcome:
-        'REPUTATION > 14: “Excellent!Someone has been attacking my ships at sea and I need to get to the bottom of\'it. Come, I’ll tell you the details." Unlock Merchant Ship (74)0 ’4). Party Achievement: “High Sea Escort."\n\nOTHERWISE: "Oh. whoops."Gavin stammers. "From far away, you looked like someone else. Just ignore what I said.\' No elfect.',
+        'REPUTATION > 14: “Excellent!Someone has been attacking my ships at sea and I need to get to the bottom of\'it. Come, I’ll tell you the details.\n\nUnlock "Merchant Ship" 74 (I-14).\n\nParty Achievement: "High Sea Escort."\n\nOTHERWISE: "Oh. whoops."Gavin stammers. "From far away, you looked like someone else. Just ignore what I said.\n\nNo effect.',
       imageUrl: '/assets/cards/events/base/city/ce-76-b-a.png',
     },
     optionB: {
@@ -1631,7 +1631,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: "Accept the man's deal.",
       outcome:
-        'BThe sweaty man is ail too eager to give you ■ the details of where to find this nest. "One you clear the Vermlings and find the artifact, you should be able to locate a large stash of valuables in a pit back behind the main camp. Take whatever you want, just return the artifact to me." )ou smile and nod. After taking the valuables, you should be able to squeeze quite a bit ex- tra out of this fellow as well when you return. Unlock "Vermling Nest "(94)(F-I2)',
+        'The sweaty man is all too eager to give you the details of where to find this nest. "One you clear the Vermlings and find the artifact, you should be able to locate a large stash of valuables in a pit back behind the main camp. Take whatever you want, just return the artifact to me." )ou smile and nod. After taking the valuables, you should be able to squeeze quite a bit ex- tra out of this fellow as well when you return.\n\nUnlock "Vermling Nest " 94 (F-I2)',
       imageUrl: '/assets/cards/events/base/city/ce-78-b-a.png',
     },
     optionB: {
@@ -2716,13 +2716,13 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Claim allegiance to the military.',
       outcome:
-        'The armored men seem satisfied with your response and take their hands off their weapons. “Good to find some fellow patriots, ” the one in front says with a disturbing smile. "You know, we have a stronghold not far from here up in the mountains. Feel free to visit there if you ever get serious about your loyalties. ” Unlock "Vigil Keep*(8(}) (K-l).',
+        'The armored men seem satisfied with your response and take their hands off their weapons. “Good to find some fellow patriots, ” the one in front says with a disturbing smile. "You know, we have a stronghold not far from here up in the mountains. Feel free to visit there if you ever get serious about your loyalties.\n\nUnlock "Vigil Keep" 80 (K-1).',
       imageUrl: '/assets/cards/events/base/road/re-49-b-a.png',
     },
     optionB: {
       choice: 'Claim allegiance to the merchant guilds.',
       outcome:
-        'Well then, today \'s your unlucky day, the man in front says. “Because we of the Vigil make it a point to execute any and all commerce sympathizers we can find in this land[ * The men grimly draw swords and advance. After a hard battle, the survivors retreat, leaving you to pick through the corpses. Among the loot you find a map. Unlock "Vigil Keep\\8(j)(K-l).\n\nAll start scenario with 4 damage.\n\nGain 5 gold each.',
+        'Well then, today \'s your unlucky day, the man in front says. “Because we of the Vigil make it a point to execute any and all commerce sympathizers we can find in this land[ * The men grimly draw swords and advance. After a hard battle, the survivors retreat, leaving you to pick through the corpses. Among the loot you find a map.\n\nUnlock "Vigil Keep" 80 (K-1).\n\nAll start scenario with 4 damage.\n\nGain 5 gold each.',
       imageUrl: '/assets/cards/events/base/road/re-49-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-49-f.png',
