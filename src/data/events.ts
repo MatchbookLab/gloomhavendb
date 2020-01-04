@@ -1543,17 +1543,17 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 74,
     text:
-      '"Welcome to the Marvelous . _ » ami Magic Techno-Circus!* The Quatryl with a top hat you met on the road greets you as you enter (he circus tent. We always welcome our friends to come and see the wondrous sights! you wander around the pavilion for a while, looking at all signs for .>// manner of improbable creatures. Ultimately you will have to decide on «/ f* what to see first.',
+      '"Welcome to the Marvelous and Magic Techno-Circus!" The Quatryl with a top hat you met on the road greets you as you enter the circus tent. "We always welcome our friends to come and see the wondrous sights!"\n\nYou wander around the pavilion for a while, looking at all signs for manner of improbable creatures. Ultimately you will have to decide on what to see first.',
     optionA: {
-      choice: 'Go watch tlic dancing bean',
+      choice: 'Go watch the dancing bear.',
       outcome:
-        'You enter a smaller tent off the main one and come face-to-face with what is indeed a danc- ing bear. Its handler stands to the side, prod- ding it on occasion, while the bear stands on its hind two legs and shuffles back and forth. It is amusing until the handler prods the bear one too many times and the bear becomes enraged and attacks. You quickly jump into action and subdue the bear, saving the han- dler from getting mauled to death.\n\nGain 1 reputation.',
+        'You enter a smaller tent off the main one and come face-to-face with what is indeed a dancing bear. Its handler stands to the side, prodding it on occasion, while the bear stands on its hind two legs and shuffles back and forth. It is amusing until the handler prods the bear one too many times and the bear becomes enraged and attacks. You quickly jump into action and subdue the bear, saving the handler from getting mauled to death.\n\nGain 1 reputation.',
       imageUrl: '/assets/cards/events/base/city/ce-74-b-a.png',
     },
     optionB: {
-      choice: 'Visit the tamed fortune teller.',
+      choice: 'Visit the famed fortune-teller.',
       outcome:
-        'You enter the fortune-teller s tent and the old Orchid woman s expression immediately goes dark; She gestures you to sit at her tableT and when you do, she grabs your arm and looks deep into your eyes. *Your path is dark and cursed\\ There is a shadow around you — a Gloom. You must leave this place. Be rid of it before it con- sumes you* ml.\n\nAll start scenario with {Curse}.\n\nGain 2 experience each.',
+        'You enter the fortune-teller\'s tent and the old Orchid woman\'s expression immediately goes dark. She gestures you to sit at her table, and when you do, she grabs your arm and looks deep into your eyes.\n\n"Your path is dark and cursed. There is a shadow around you — a Gloom. You must leave this place. Be rid of it before it consumes you."\n\nAll start scenario with {Curse}.\n\nGain 2 experience each.',
       imageUrl: '/assets/cards/events/base/city/ce-74-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-74-f.png',
