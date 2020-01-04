@@ -1315,13 +1315,13 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Agree to help.',
       outcome:
-        'The Hook Coast is outside the walls of Gloomhaven and can he a dangerous place. And since this spread of poison, the city has become even more defenseless than normal. You hope you\'ll he able to find a solution to the problem quickly. Unlock Harried Village"(86 (D-15) -',
+        'The Hook Coast is outside the walls of Gloomhaven and can be a dangerous place. And since this spread of poison, the city has become even more defenseless than normal. You hope you\'ll be able to find a solution to the problem quickly.\n\nUnlock "Harried Village" 86 (D-15).',
       imageUrl: '/assets/cards/events/base/city/ce-63-b-a.png',
     },
     optionB: {
-      choice: 'Tell the captain to fix his own problem. /',
+      choice: 'Tell the captain to fix his own problem.',
       outcome:
-        'The Captain of the Guard sighs. * 7 really thought you were the ones for the job. What business could you possibly have that is more important than making sure this city is safe?" tf He holds up his hand. "No matter. Fine, ■ just get out of here! U c will deal with this ourselves."\n\nLose 1 prosperity.\n\nLose 1 reputation.',
+        'The Captain of the Guard sighs.\n\n"I really thought you were the ones for the job. What business could you possibly have that is more important than making sure this city is safe?"\n\nHe holds up his hand. "No matter. Fine, just get out of here! We will deal with this ourselves."\n\nLose 1 prosperity.\n\nLose 1 reputation.',
       imageUrl: '/assets/cards/events/base/city/ce-63-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-63-f.png',
