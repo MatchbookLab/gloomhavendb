@@ -1585,17 +1585,17 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 76,
     text:
-      'You are walking through the new docks when a well-dressed merchant Hags you down. • • Oh, my, what a fortuitous encounter, " he whispers as you approach, "May I buy you a drink? I have a very sensitive job for you, and I \'d like to avoid the prying eyes around us. The merchant, an iron dealer named Gavin, makes a gesture toward a large group of dock workers. “I can\'t trust anyone. Well, anyone ex- cept you of course',
+      'You are walking through the new docks when a well-dressed merchant flags you down.\n\n"Oh, my, what a fortuitous encounter," he whispers as you approach. "May I buy you a drink? I have a very sensitive job for you, and I \'d like to avoid the prying eyes around us."\n\nThe merchant, an iron dealer named Gavin, makes a gesture toward a large group of dock workers. "I can\'t trust anyone. Well, anyone except you of course."',
     optionA: {
       choice: 'Accept the drink.',
       outcome:
-        'REPUTATION > 14: “Excellent!Someone has been attacking my ships at sea and I need to get to the bottom of\'it. Come, I’ll tell you the details.\n\nUnlock "Merchant Ship" 74 (I-14).\n\nParty Achievement: "High Sea Escort."\n\nOTHERWISE: "Oh. whoops."Gavin stammers. "From far away, you looked like someone else. Just ignore what I said.\n\nNo effect.',
+        'REPUTATION > 14: "Excellent! Someone has been attacking my ships at sea and I need to get to the bottom of it. Come, I’ll tell you the details."\n\nUnlock "Merchant Ship" 74 (I-14).\n\nParty Achievement: "High Sea Escort."\n\nOTHERWISE: "Oh. whoops." Gavin stammers. "From far away, you looked like someone else. Just ignore what I said.\n\nNo effect.',
       imageUrl: '/assets/cards/events/base/city/ce-76-b-a.png',
     },
     optionB: {
       choice: 'Decline the suspicious offer and continue your business.',
       outcome:
-        'Gavin looks flabbergasted as you walk a way. "Who will protect my ships when there is no one to trust? I guess I\'ll just have to keep looking.\n\nNo effect.',
+        'Gavin looks flabbergasted as you walk away. "Who will protect my ships when there is no one to trust? I guess I\'ll just have to keep looking."\n\nNo effect.',
       imageUrl: '/assets/cards/events/base/city/ce-76-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-76-f.png',
