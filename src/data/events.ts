@@ -1399,7 +1399,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Pay off the thugs.',
       outcome:
-        "PAY 60 COLLECTIVE GOLD: You sigh • and hand over the Sawbones' debt, plus interest. Though it feels terrible, the thugs are satisfied and walk out the same way they came in. At least it is over now.\n\nNo effect.\n\nOTHERWISE: Seeing as how you don't have enough money, you decide pursue other options. Read outcome B.",
+        "PAY 60 COLLECTIVE GOLD: You sigh • and hand over the Sawbones' debt, plus interest. Though it feels terrible, the thugs are satisfied and walk out the same way they came in. At least it is over now.\n\nNo effect.\n\nOTHERWISE: Seeing as how you don't have enough money, you decide pursue other options.\n\nRead outcome B.",
       imageUrl: '/assets/cards/events/base/city/ce-67-b-a.png',
     },
     optionB: {
@@ -2275,7 +2275,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Sell the man a stamina potion.',
       outcome:
-        'PAY 1 COLLECTIVE "MINOR STAMINA POTION" (ITEM 013): After some oddly tense negotiations, you are able to agree upon a price. With one hand firmly on his sword hilt, the man grabs a coin pouch with the other hand and extends it toward you. You exchange goods and continue on your journey without further incident.\n\nGain 10 collective gold.\n\n{Scoundrel} {Saw} {MusicNote}: Gain 10 additional collective gold.\n\nOTHERWISE: Read outcome B.',
+        'PAY 1 COLLECTIVE "MINOR STAMINA POTION" (ITEM 013): After some oddly tense negotiations, you are able to agree upon a price. With one hand firmly on his sword hilt, the man grabs a coin pouch with the other hand and extends it toward you. You exchange goods and continue on your journey without further incident.\n\nGain 10 collective gold.\n\n{Scoundrel} {Saw} {MusicNote}: Gain 10 additional collective gold.\n\nOTHERWISE:\n\nRead outcome B.',
       imageUrl: '/assets/cards/events/base/road/re-28-b-a.png',
     },
     optionB: {
