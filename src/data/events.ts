@@ -1206,17 +1206,17 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 58,
     text:
-      '"There were fifty of them, / / * swear. Tearing my mates apart! You look over to the bar where a group of drunkards are all laughing at a disheveled man in the middle of a story; "And commanding them all riding atop a giant armored bear, there was a Vermling with a staff that shot lightning!0 At this the crowd erupts into more laughter, drowning out the rest of the mans story ‘ I his man\'s had too much to drink, I d say ridicules one of the crowd. “Vermlings riding bears! I thought I’d heard of everything!"',
+      '"There were fifty of them, I swear. Tearing my mates apart!"\n\nYou look over to the bar where a group of drunkards are all laughing at a disheveled man in the middle of a story.\n\n"And commanding them all riding atop a giant armored bear, there was a Vermling with a staff that shot lightning!"\n\nAt this the crowd erupts into more laughter, drowning out the rest of the man\'s story.\n\n"This man\'s had too much to drink, I\'d say," ridicules one of the crowd. "Vermlings riding bears! I thought I’d heard of everything!"',
     optionA: {
       choice: 'Join the crowd in laughing at the man.',
       outcome:
-        'You move closer and Join in on the fun. After a while, the man gives up and resigns himself to his glass. But his story provides entertainment for weeks.\n\nGain 1 reputation.',
+        'You move closer and join in on the fun. After a while, the man gives up and resigns himself to his glass. But his story provides entertainment for weeks.\n\nGain 1 reputation.',
       imageUrl: '/assets/cards/events/base/city/ce-58-b-a.png',
     },
     optionB: {
-      choice: 'Calm down the crowd and get more details from the man about the attack. /',
+      choice: 'Calm down the crowd and get more details from the man about the attack.',
       outcome:
-        'ft s not easy, but you quiet down the crowd and take the staggering man over to a secluded corner of the tavern to get the full story out of him. Apparently he was part of a group of ruffians working to harvest the Dagger Forest for wood. In the middle of their logging expedition, however, they were attacked by the Beast Tyrant and an army of forest animals. Though he ran off in the middle of the fightf the man swears he also heard the howl of angry spirits in the chaos„',
+        'It\'s not easy, but you quiet down the crowd and take the staggering man over to a secluded corner of the tavern to get the full story out of him. Apparently he was part of a group of ruffians working to harvest the Dagger Forest for wood. In the middle of their logging expedition, however, they were attacked by the Beast Tyrant and an army of forest animals. Though he ran off in the middle of the fight, the man swears he also heard the howl of angry spirits in the chaos.\n\nUnlock "Wild Melee" 91 (E-2).',
       imageUrl: '/assets/cards/events/base/city/ce-58-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-58-f.png',
