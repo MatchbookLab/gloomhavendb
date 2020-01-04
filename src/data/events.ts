@@ -1374,11 +1374,11 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 66,
     text:
-      "You head back to your rooms for the night when you see the Sawbones sitting in front of your doorstep, looking rather dejected. 7, uh, well, you see...” he stammers, 7 followed your advice. Chased my dreams and all that, but I ended up in debt to some rather unscrupulous people, fhey 've threatened to kill me if I don t pay them off, but, uh, but I simply don t have the money ” He hesitates. Seeing as how, uh, you bear some responsibility for setting me down this path, I was wondering if you d be willing to offer some assistance in getting me out of this mess?'",
+      "You head back to your rooms for the night when you see the Sawbones sitting in front of your doorstep, looking rather dejected.\n\n\"I, uh, well, you see...\" he stammers. \"I followed your advice. Chased my dreams and all that, but I ended up in debt to some rather unscrupulous people. They've threatened to kill me if I don't pay them off, but, uh, but I simply don't have the money.\"\n\nHe hesitates. \"Seeing as how, uh, you bear some responsibility for setting me down this path, I was wondering if you'd be willing to offer some assistance in getting me out of this mess?\"",
     optionA: {
       choice: "Offer to pay off the Sawbones' debt.",
       outcome:
-        'a PAY40 COLLECTIVE GOLD: It s a hefty * chunk of money, but the Sawbones is incredibly grateful. " This is wonderful! I knew I could count on you. This should be enough to put this mess behind me and finally allow me to live free.\' He hands you a potion and thanks you once again for all your help.\n\nGain 1 collective Super Healing Potion (Item 055).\n\nOTHERWISE: Read outcome B.',
+        'PAY 40 COLLECTIVE GOLD: It\'s a hefty chunk of money, but the Sawbones is incredibly grateful.\n\n"This is wonderful! I knew I could count on you. This should be enough to put this mess behind me and finally allow me to live free.\"\n\nHe hands you a potion and thanks you once again for all your help.\n\nGain 1 collective Super Healing Potion (Item 055).\n\nOTHERWISE: Read outcome B.',
       imageUrl: '/assets/cards/events/base/city/ce-66-b-a.png',
     },
     optionB: {
