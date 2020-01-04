@@ -2670,17 +2670,17 @@ export const events: EventEntity[] = [
     type: EventType.Road,
     number: 47,
     text:
-      '‘EEEEEEEeeeahh! \'* The Vermling drops his weapon and cowers. "No attack! A\\y brothers in the hushes say you had stink of citydwelling outcast on you. I wanted to be sure. * The Vermling waves his hands. It s not had! Just curious. Being stinky city dwelling outcast is fine. Please, dont hurt me!"',
+      'A single Vermling jumps out of the brush at you, surprising you briefly. Within moments, though, you have your weapons out and pressed against his throat.\n\n"EEEEEEEeeeahh!" The Vermling drops his weapon and cowers. "No attack! My brothers in the bushes say you had stink of city-dwelling outcast on you. I wanted to be sure."\n\nThe Vermling waves his hands. "It\' s not bad! Just curious. Being stinky city-dwelling outcast is fine. Please, don\'t hurt me!"',
     optionA: {
       choice: 'Move on, leaving the strange Vermling in peace.',
       outcome:
-        'r R \'Stink very faint " the Vermling continues as * you walk on. "Outcast no longer with your, but I still smell it!" He then jumps back into the brush. Vermlings are very odd creatures.\n\nNo effect.',
+        '"Stink very faint," the Vermling continues as you walk on. "Outcast no longer with you, but I still smell it!"\n\nHe then jumps back into the brush. Vermlings are very odd creatures.\n\nNo effect.',
       imageUrl: '/assets/cards/events/base/road/re-47-b-a.png',
     },
     optionB: {
       choice: 'Kill the savage little beast.',
       outcome:
-        'You attack the Vermling anyway; despite his protests. It turns out he wasn\'t lying about his "brothers" nearby, though. As you wipe the blood from your blade, ten more of the little furry creatures jump out at youf brandishing small knives. They are not nearly as easy to dispatch.\n\nAll start scenario with {Poison}.\n\nAll start scenario with 2 damage.',
+        'You attack the Vermling anyway; despite his protests. It turns out he wasn\'t lying about his "brothers" nearby, though. As you wipe the blood from your blade, ten more of the little furry creatures jump out at you, brandishing small knives. They are not nearly as easy to dispatch.\n\nAll start scenario with {Poison}.\n\nAll start scenario with 2 damage.',
       imageUrl: '/assets/cards/events/base/road/re-47-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-47-f.png',
