@@ -1143,17 +1143,17 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 55,
     text:
-      '\'Ah, they said I might find you here. A portly Valrath woman looks down at you as you are enjoying a cold beverage at the Sleeping Lion. "A group of wild-looking Orchids came to the Temple of Coin today hoping to engage in trade with the merchants of the city. One particularly dour-fooking one with a how said you lot would vouch for them. Mere always wary of traps and betrayal out here on the edge of the wilderness, but if you think these Orchids can be trusted, then the Merchant s Guild may consider opening trade with them,”',
+      '"Ah, they said I might find you here." A portly Valrath woman looks down at you as you are enjoying a cold beverage at the Sleeping Lion.\n\n"A group of wild-looking Orchids came to the Temple of Coin today hoping to engage in trade with the merchants of the city. One particularly dour-looking one with a bow said you lot would vouch for them.\n\n"Were always wary of traps and betrayal out here on the edge of the wilderness, but if you think these Orchids can be trusted, then the Merchant\'s Guild may consider opening trade with them."',
     optionA: {
-      choice: 'Vouch for the Orchids, i',
+      choice: 'Vouch for the Orchids.',
       outcome:
-        '11 ell, we\'ll take it under advisement. Personally, I don\'t even know why your opinion matters, but some people in the A ierchant 5 Guild seem to like you. "Anyway, feel free to get back to your life of consumption and murder."\n\nGain 1 prosperity.',
+        '"Well, we\'ll take it under advisement. Personally, I don\'t even know why your opinion matters, but some people in the Merchant\'s Guild seem to like you.\n\n"Anyway, feel free to get back to your life of consumption and murder."\n\nGain 1 prosperity.',
       imageUrl: '/assets/cards/events/base/city/ce-55-b-a.png',
     },
     optionB: {
-      choice: 'Advise against trading with the Orchids. /',
+      choice: 'Advise against trading with the Orchids.',
       outcome:
-        "The Valrath woman nods. 7 agree. Orchids • are not to be trusted. Personally. I thought you lacked the brains to make a proper decision, but I'm happy to be proven wrong.\n\nGain 1 reputation.",
+        "The Valrath woman nods. \"I agree. Orchids are not to be trusted. Personally, I thought you lacked the brains to make a proper decision, but I'm happy to be proven wrong.\n\nGain 1 reputation.",
       imageUrl: '/assets/cards/events/base/city/ce-55-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-55-f.png',
