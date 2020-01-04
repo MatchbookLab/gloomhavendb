@@ -1164,17 +1164,17 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 56,
     text:
-      'Looking for a little bit of variety, you bead down to the Brown Door as night falls. After some wait, you pass through the doors and are surprised to see the Sawbones sitting near the back of the room by himself. Considering this bar is about as seedy and corrupt as they come, it is just about the last place you would expect to find him, "I just...I don\'t know what to do now," the Sawbones confesses after you sit down. "Id like to join the sanctuary and lead a nice, quiet life, but after adventuring with all of you, that just doesn\'t seem fulfilling anymore." He shakes his head. 7 don\'t know. This life seems so boring now. What do you thinkP"',
+      'Looking for a little bit of variety, you head down to the Brown Door as night falls. After some wait, you pass through the doors and are surprised to see the Sawbones sitting near the back of the room by himself. Considering this bar is about as seedy and corrupt as they come, it is just about the last place you would expect to find him.\n\n"I just...I don\'t know what to do now," the Sawbones confesses after you sit down. "I\'d like to join the sanctuary and lead a nice, quiet life, but after adventuring with all of you, that just doesn\'t seem fulfilling anymore."\n\nHe shakes his head. "I don\'t know. This life seems so boring now. What do you think?"',
     optionA: {
       choice: 'Tell him that joining the sanctuary is the right thing to do.',
       outcome:
-        'B\'lguess you re right, “ he shrugs. 7iere s to * one fast night of freedom." He lifts his gfass andgulps down the contents. You follow his lead and the rest is a blur.\n\nGain 1 prosperity.',
+        '"I guess you re right," he shrugs. "Here\'s to one last night of freedom." He lifts his gfass and gulps down the contents. You follow his lead and the rest is a blur.\n\nGain 1 prosperity.',
       imageUrl: '/assets/cards/events/base/city/ce-56-b-a.png',
     },
     optionB: {
       choice: 'Tell him to follow his dreams.',
       outcome:
-        '*You re right! Vm in command of my own ■ life, and fm going to do what I want with it. Maybe IIIgo to the Capital and start my own business or something. Who knowsf He lifts his glass and looks at you. “To endless possibilities! The next rounds on me.\n\nAdd City Event 66 to the deck.',
+        '"You\'re right! I\'m in command of my own life, and I\'m going to do what I want with it. Maybe I\'ll go to the Capital and start my own business or something. Who knows?"\n\nHe lifts his glass and looks at you. "To endless possibilities! The next round\'s on me.\n\nAdd City Event 66 to the deck.',
       imageUrl: '/assets/cards/events/base/city/ce-56-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-56-f.png',
