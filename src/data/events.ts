@@ -1342,7 +1342,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Claim you want nothing to do with this and walk away.',
       outcome:
-        "The Sin-Ra Syndicate seems to think you have something to do with this,\" the Nightshroud yells at you as you leave. \"That's all that matters! They'll strike again, and I won't be there to protect you!\" You keep walking.\n\naAdd Road Event 64 to the deck.",
+        "The Sin-Ra Syndicate seems to think you have something to do with this,\" the Nightshroud yells at you as you leave. \"That's all that matters! They'll strike again, and I won't be there to protect you!\" You keep walking.\n\nAdd Road Event 64 to the deck.",
       imageUrl: '/assets/cards/events/base/city/ce-64-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-64-f.png',
