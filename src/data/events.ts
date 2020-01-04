@@ -2691,17 +2691,17 @@ export const events: EventEntity[] = [
     type: EventType.Road,
     number: 48,
     text:
-      'You see them long before they get close to you radiant balls of light blazing against the horizon. Sun Demons, As they approach, you prepare for an attackr, but the demons have other plans. They menace you with their glowing clawsr, but they would rather have information than kill you. "Where is the one you call a Sunkeeper?" one of them hisses. \' The Valrath neglects her duties, and now we must resolve matters personally * You press for further information, but the demons get angry *These are not your concerns! Tell us where she is or die at our hands!\'',
+      'You see them long before they get close to you — radiant balls of light blazing against the horizon.\n\nSun Demons.\n\nAs they approach, you prepare for an attack, but the demons have other plans. They menace you with their glowing claws, but they would rather have information than kill you.\n\n"Where is the one you call a Sunkeeper?" one of them hisses. "The Valrath neglects her duties, and now we must resolve matters personally."\n\nYou press for further information, but the demons get angry. "These are not your concerns! Tell us where she is or die at our hands!"',
     optionA: {
-      choice: 'Give them whatever information you can on the Sunkeepers whereabouts.',
+      choice: 'Give them whatever information you can on the Sunkeeper\'s whereabouts.',
       outcome:
-        "You're not sure exactly what happened to the Sunkceper after she left the party, but you tell the demons everything you know: They seem satished with your response and even offer a bitter thanks as they fly off to the west.\n\nAdd Road Event 61 to the deck.",
+        "You're not sure exactly what happened to the Sunkeeper after she left the party, but you tell the demons everything you know. They seem satisfied with your response and even offer a bitter thanks as they fly off to the west.\n\nAdd Road Event 61 to the deck.",
       imageUrl: '/assets/cards/events/base/road/re-48-b-a.png',
     },
     optionB: {
       choice: 'Attack the demons. There are a lot of them, but you do not take kindly to threats.',
       outcome:
-        'Without even speaking, you draw your weapons and attack. The demons are caught off guard, but they bounce back with great ferocity, ft is a long, brutal battle, and you continue on in your adventure greatly wounded and bloody.\n\nAll start scenario with {Muddle}.\n\nAll start scenario with {Wound}.\n\nAll start scenario with 3 damage.',
+        'Without even speaking, you draw your weapons and attack. The demons are caught off guard, but they bounce back with great ferocity. It is a long, brutal battle, and you continue on in your adventure greatly wounded and bloody.\n\nAll start scenario with {Muddle}.\n\nAll start scenario with {Wound}.\n\nAll start scenario with 3 damage.',
       imageUrl: '/assets/cards/events/base/road/re-48-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-48-f.png',
