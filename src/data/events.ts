@@ -1627,17 +1627,17 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 78,
     text:
-      'The scene is typical A nervous looking man stands in front of your table at the Sleeping lion. You eye him lazily until he speaks. 7 was, um, told you might be able to help me," he starts. 7 was in the Corpse wood conduct- ing some, uh, business, when my partners and I ivcrc attacked by Vermlings. I barely escaped with my life, but my partners weren\'t so lucky. One of them was carrying something valuable — an artifact we managed to find in our, uh, business. It s very important I get it back. I fol- lowed the Vermlings back to their nest, and I can assure you they have many valuables. I\'ll show you where it is, and you can take whatever you * . *• ■* want. Just bring me back the artifact."',
+      'The scene is typical. A nervous looking man stands in front of your table at the Sleeping lion. You eye him lazily until he speaks.\n\n"I was, um, told you might be able to help me," he starts. "I was in the Corpsewood conducting some, uh, business, when my partners and I were attacked by Vermlings. I barely escaped with my life, but my partners weren\'t so lucky.\n\n"One of them was carrying something valuable — an artifact we managed to find in our, uh, business. It s very important I get it back. I followed the Vermlings back to their nest, and I can assure you they have many valuables. I\'ll show you where it is, and you can take whatever you want. Just bring me back the artifact."',
     optionA: {
       choice: "Accept the man's deal.",
       outcome:
-        'The sweaty man is all too eager to give you the details of where to find this nest. "One you clear the Vermlings and find the artifact, you should be able to locate a large stash of valuables in a pit back behind the main camp. Take whatever you want, just return the artifact to me." )ou smile and nod. After taking the valuables, you should be able to squeeze quite a bit ex- tra out of this fellow as well when you return.\n\nUnlock "Vermling Nest " 94 (F-I2)',
+        'The sweaty man is all too eager to give you the details of where to find this nest.\n\n"Once you clear the Vermlings and find the artifact, you should be able to locate a large stash of valuables in a pit back behind the main camp. Take whatever you want, just return the artifact to me."\n\nYou smile and nod. After taking the valuables, you should be able to squeeze quite a bit extra out of this fellow as well when you return.\n\nUnlock "Vermling Nest" 94 (F-12)',
       imageUrl: '/assets/cards/events/base/city/ce-78-b-a.png',
     },
     optionB: {
       choice: 'Demand payment for the job up-front.',
       outcome:
-        '“Look...!, ah, don\'t have a whole lot of capital * right now, but I will give you everything I have once you get back with that artifact.“ You narrow your eyes at him. He coughs nervously and produces a small handful of coins. "All right, fine. Look, here. This is all I can offer you. Now can we get to the part where you go do your job? ”\n\nGain 5 collective gold.\n\nRead outcome A.',
+        '"Look...!, ah, don\'t have a whole lot of capital right now, but I will give you everything I have once you get back with that artifact."\n\nYou narrow your eyes at him. He coughs nervously and produces a small handful of coins.\n\n"All right, fine. Look, here. This is all I can offer you. Now can we get to the part where you go do your job?"\n\nGain 5 collective gold.\n\nRead outcome A.',
       imageUrl: '/assets/cards/events/base/city/ce-78-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-78-f.png',
