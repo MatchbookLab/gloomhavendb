@@ -2775,17 +2775,17 @@ export const events: EventEntity[] = [
     type: EventType.Road,
     number: 52,
     text:
-      'You smell the corpses before you see them, A group of five or so, spread across the road, flies buzzing around in a frenzy. 4s you get closer, you see the wretched, deformed looks on their faces and the boils covering their skin, You also see their crude armor and weapons likely a group of cutthroats. What is truly odd’ though, is that their weapons are out of their sheaths in the first place. It appears they went* engaged in battle when they suddenly succumbed to some horrible disease. You can think of at least one way that could have happened. Fine handiwork from the Plagueherald, «w WV',
+      'You smell the corpses before you see them. A group of five or so, spread across the road, flies buzzing around in a frenzy.\n\nAs you get closer, you see the wretched, deformed looks on their faces and the boils covering their skin. You also see their crude armor and weapons — likely a group of cutthroats.\n\nWhat is truly odd though, is that their weapons are out of their sheaths in the first place. It appears they were engaged in battle when they suddenly succumbed to some horrible disease.\n\nYou can think of at least one way that could have happened. Fine handiwork from the Plagueherald.',
     optionA: {
       choice: 'Leave the corpses alone.',
       outcome:
-        'Knowing better Own to get too close to the machinations of the Plaguehcrald, you keep a wide berth between you and the corpses and continue down the road.\n\nNo effect.',
+        'Knowing better than to get too close to the machinations of the Plaguehcrald, you keep a wide berth between you and the corpses and continue down the road.\n\nNo effect.',
       imageUrl: '/assets/cards/events/base/road/re-52-b-a.png',
     },
     optionB: {
       choice: 'Inspect the corpses for valuables.',
       outcome:
-        'You rifle through the corpses, grabbing stray • coins and valuables as you go. You make off with a good haul, but you start feeling sick as soon as you re done.\n\nAll start scenario with {Poison}.\n\nAll start scenario with {Curse}.\n\nGain 10 collective gold.',
+        'You rifle through the corpses, grabbing stray coins and valuables as you go. You make off with a good haul, but you start feeling sick as soon as you re done.\n\nAll start scenario with {Poison}.\n\nAll start scenario with {Curse}.\n\nGain 10 collective gold.',
       imageUrl: '/assets/cards/events/base/road/re-52-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-52-f.png',
