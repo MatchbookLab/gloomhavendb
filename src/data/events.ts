@@ -1564,17 +1564,17 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 75,
     text:
-      'Returning to Gloomhaven af- ter your latest outing, you are ap- proached by the Captain of the Guard at the city gates. “Ah, I was hoping I might catch you here soon- er or later," he says. 7 have still been receiving reports about large, flying lizards from the scouts. Tell me, have you gotten to the bottom of that situation yet?"',
+      'Returning to Gloomhaven after your latest outing, you are approached by the Captain of the Guard at the city gates.\n\n"Ah, I was hoping I might catch you here sooner or later," he says. "I have still been receiving reports about large, flying lizards from the scouts. Tell me, have you gotten to the bottom of that situation yet?"',
     optionA: {
       choice: 'Lie and say that you are still working on it.',
       outcome:
-        '"Oh, hmm...well, that\'s disappointing The Captain looks at you with dejected frustration. “Ifyou could, please look into the sightings as soon as you can. I d hate to think of some giant living creature attacking the city."\n\nLose 1 reputation.',
+        '"Oh, hmm...well, that\'s disappointing." The Captain looks at you with dejected frustration. "If you could, please look into the sightings as soon as you can. I\'d hate to think of some giant living creature attacking the city."\n\nLose 1 reputation.',
       imageUrl: '/assets/cards/events/base/city/ce-75-b-a.png',
     },
     optionB: {
       choice: 'Tell the Captain you decided not to kill the Elder Drake.',
       outcome:
-        '"Oh, my...well, okay." The Captain looks at you with stunned curiosity. "So there is a massive, fire-breathing drake up in the moun- tains, and you decided there was no reason to kill it? Interesting." The Captain wanders off. mumbling about needing to find better help.\n\nLose 2 reputation.',
+        '"Oh, my...well, okay." The Captain looks at you with stunned curiosity. "So there is a massive, fire-breathing drake up in the mountains, and you decided there was no reason to kill it? Interesting."\n\nThe Captain wanders off, mumbling about needing to find better help.\n\nLose 2 reputation.',
       imageUrl: '/assets/cards/events/base/city/ce-75-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-75-f.png',
