@@ -1080,17 +1080,17 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 52,
     text:
-      ")ou have been hearing rumors in the bars: a pox is spreading through Cioomhaven, affecting lower class citizens — street urchins and back- alley thugs. And then one night you see it: a Harrower dressed in a ragged green cloak holding a man do wn in tin alley as its swarm spreads out and consumes him. The man's screams are muffled as the insects skitter down his throats Killing monsters and demons is one thing, but the Plagueherald shouldn t be preying on people in the city. You approach it, intent on stopping its attack.",
+      "You have been hearing rumors in the bars: a pox is spreading through Gloomhaven, affecting lower class citizens — street urchins and back-alley thugs.\n\nAnd then one night you see it: a Harrower dressed in a ragged green cloak holding a man down in an alley as its swarm spreads out and consumes him. The man's screams are muffled as the insects skitter down his throats.\n\nKilling monsters and demons is one thing, but the Plagueherald shouldn't be preying on people in the city. You approach it, intent on stopping its attack.",
     optionA: {
       choice: 'Calmly explain the situation to the Plagueherald, imploring it to move on.',
       outcome:
-        'With the man dead at its feet, the Plagueherald makes a chittering sound that sounds almost like laughing. “You cannot see it, but this city needs to be cleansed. You will see. and you will thank me. At this, the Plagueherald bursts out into a massive swarm of insects and Hies up into the sky. The deaths continue, and new rumors start about how you are associated with the killer.\n\nLose 2 reputation.',
+        'With the man dead at its feet, the Plagueherald makes a chittering sound that sounds almost like laughing.\n\n"You cannot see it, but this city needs to be cleansed. You will see, and you will thank me."\n\n\At this, the Plagueherald bursts out into a massive swarm of insects and flies up into the sky.\n\nThe deaths continue, and new rumors start about how you are associated with the killer.\n\nLose 2 reputation.',
       imageUrl: '/assets/cards/events/base/city/ce-52-b-a.png',
     },
     optionB: {
       choice: 'Threaten the Plagueherald with retribution if it doesn’t stop attacking residents.',
       outcome:
-        'The Plaguehera/d recoils at your threat, genuinely concerned that you would attack it. But, the cleansing...the city isn\'t ready. " You shake your head, and the Harrower chitters in disappointment. " Very well, but you will be responsible when the Harbinger comes." It turns and floats ofT into the darkness.\n\nGain 1 prosperity.',
+        'The Plagueherald recoils at your threat, genuinely concerned that you would attack it.\n\n"But, the cleansing...the city isn\'t ready."\n\nYou shake your head, and the Harrower chitters in disappointment.\n\n"Very well, but you will be responsible when the Harbinger comes." It turns and floats off into the darkness.\n\nGain 1 prosperity.',
       imageUrl: '/assets/cards/events/base/city/ce-52-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-52-f.png',
