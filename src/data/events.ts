@@ -1153,7 +1153,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Advise against trading with the Orchids.',
       outcome:
-        "The Valrath woman nods. \"I agree. Orchids are not to be trusted. Personally, I thought you lacked the brains to make a proper decision, but I'm happy to be proven wrong.\n\nGain 1 reputation.",
+        "The Valrath woman nods. \"I agree. Orchids are not to be trusted. Personally, I thought you lacked the brains to make a proper decision, but I'm happy to be proven wrong.\"\n\nGain 1 reputation.",
       imageUrl: '/assets/cards/events/base/city/ce-55-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-55-f.png',
