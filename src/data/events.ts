@@ -1122,7 +1122,7 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 54,
     text:
-      'Posters spring up in town announcing the performance of a master Quatrvl musician and her merry band of performers. Looking closely at the image, you\'re pretty sure you recognize that foppish feathered hat.\n\nThe poster says the next show is tonight. You decide to attend for one purpose or another.',
+      'Posters spring up in town announcing the performance of a master Quatryl musician and her merry band of performers. Looking closely at the image, you\'re pretty sure you recognize that foppish feathered hat.\n\nThe poster says the next show is tonight. You decide to attend for one purpose or another.',
     optionA: {
       choice: 'Go to the show and cheer on the Soothsinger.',
       outcome:
