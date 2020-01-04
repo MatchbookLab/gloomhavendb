@@ -390,7 +390,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Attend the wedding with an expensive gift.',
       outcome:
-        'REPUTATION > 9, PAY 20 COLLECTIVE GOLD: You head to the New Market and find a magnificent vase to bring as a gift. When the father of the bride sees it, he declares it the most wonderful piece he\'s ever encountered. You are the talk of the town.\n\nGain 2 reputation.\n\nREPUTATION < 10, PAY 20 COLLECTIVE GOLD: You bring a very expensive vase as a gift, but you can\'t seem to catch the father of the bride\'s eve to present it at the right time.\n\nNo effect.\n\nOTHERWISE: Read outcome B.',
+        'REPUTATION > 9, PAY 20 COLLECTIVE GOLD: You head to the New Market and find a magnificent vase to bring as a gift. When the father of the bride sees it, he declares it the most wonderful piece he\'s ever encountered. You are the talk of the town.\n\nGain 2 reputation.\n\nREPUTATION < 10, PAY 20 COLLECTIVE GOLD: You bring a very expensive vase as a gift, but you can\'t seem to catch the father of the bride\'s eve to present it at the right time.\n\nNo effect.\n\nOTHERWISE:\n\nRead outcome B.',
       imageUrl: '/assets/cards/events/base/city/ce-19-b-a.png',
     },
     optionB: {
