@@ -1458,17 +1458,17 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 70,
     text:
-      'You are wandering the Sink- ing Market looking for possible work when you are approached by a dirty-looking bov with a scar on his check. You greet him warmly. He has given you leads on a number of mercenary jobs and you re- cently helped him avoid a jail ceil. "I need some help, and I really don\'t know who else to turn to, " he begins. \'All of us here in (he Sinking Market are in a had way; Our houses are collapsing, our water is foul\\ and we den t even have enough money for food[ "We are dying here. and the city is doing nothing to help us. You have friends in high places, right? Please, there \'s gotta be someone you can talk to.',
+      'You are wandering the Sinking Market looking for possible work when you are approached by a dirty-looking boy with a scar on his cheek.\n\nYou greet him warmly. He has given you leads on a number of mercenary jobs and you recently helped him avoid a jail cell.\n\n"I need some help, and I really don\'t know who else to turn to," he begins. "All of us here in the Sinking Market are in a bad way. Our houses are collapsing, our water is foul, and we don\'t even have enough money for food.\n\n"We are dying here, and the city is doing nothing to help us. You have friends in high places, right? Please, there\'s gotta be someone you can talk to.',
     optionA: {
-      choice: 'Talk to some merchants about revital- izing the area.',
+      choice: 'Talk to some merchants about revitalizing the area.',
       outcome:
-        "REPUTATION > 9: You head to the Coin # District and meet with a member of the merchant s guild you've had dealings with before. He looks at you skeptically, but says he will see what he can do about making the area more livable.\n\nGain 1 prosperity.\n\nOTHERWISE: Every merchant you try to talk to about the issue laughs you out of the room. Why help others when there is no prof- it in it for them?\n\nLose 1 reputation.",
+        "REPUTATION > 9: You head to the Coin District and meet with a member of the merchant s guild you've had dealings with before. He looks at you skeptically, but says he will see what he can do about making the area more livable.\n\nGain 1 prosperity.\n\nOTHERWISE: Every merchant you try to talk to about the issue laughs you out of the room. Why help others when there is no profit in it for them?\n\nLose 1 reputation.",
       imageUrl: '/assets/cards/events/base/city/ce-70-b-a.png',
     },
     optionB: {
       choice: "Regretfully explain that you don't have the power to effect change like this.",
       outcome:
-        'You explain that while you do have some • power in the town, the Sinking Market may be a lost cause. More and more of the district is sinking into the sea every day; as it has been doing for as long as the town has existed. You can t convince merchants to spend money on something that will one day be underwater.\n\nNo effect.',
+        'You explain that while you do have some power in the town, the Sinking Market may be a lost cause. More and more of the district is sinking into the sea every day; as it has been doing for as long as the town has existed. You can\'t convince merchants to spend money on something that will one day be underwater.\n\nNo effect.',
       imageUrl: '/assets/cards/events/base/city/ce-70-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-70-f.png',
