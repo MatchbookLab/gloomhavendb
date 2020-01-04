@@ -1669,17 +1669,17 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 80,
     text:
-      "As you prepare to leave the city on another journey, you are sud- denly surrounded by a large group of guards near the west gate. 'He hear you've been spreading rumors, one of them says. \"Claiming that the guards are causing the Vermling attacks on the city. That‘s some high-grade garbage you 're spewing. “My best friend died in the last Vermling raid!'’ another one veils. You got something smart to say about that? ”",
+      'As you prepare to leave the city on another journey, you are suddenly surrounded by a large group of guards near the west gate.\n\n"We hear you\'ve been spreading rumors," one of them says. "Claiming that the guards are causing the Vermling attacks on the city. That\'s some high-grade garbage you\'re spewing."\n\n"My best friend died in the last Vermling raid!" another one yells. "You got something smart to say about that?"',
     optionA: {
       choice: 'Attempt to calm down the guards and explain the situation.',
       outcome:
-        "if* Jj : You Adopt a serious tone and do your best to communicate dun you fuid nothing to do with what was written in the Town Records. You express remorse for their hardships, and, miraculously, the mob prow's calmer and disperses.\n\nNo effect.\n\nOTHERWISE: You laugh and claim that this is all some big misunderstanding. The guards don't see it that way, but your lack of aggression at least stops them from attacking you. They leave, grumbling threats.\n\nLose 1 reputation.",
+        "{Scoundrel} {Saw} {MusicNote}: You adopt a serious tone and do your best to communicate that you had nothing to do with what was written in the Town Records. You express remorse for their hardships, and, miraculously, the mob grows calmer and disperses.\n\nNo effect.\n\nOTHERWISE: You laugh and claim that this is all some big misunderstanding. The guards don't see it that way, but your lack of aggression at least stops them from attacking you. They leave, grumbling threats.\n\nLose 1 reputation.",
       imageUrl: '/assets/cards/events/base/city/ce-80-b-a.png',
     },
     optionB: {
       choice: 'The guards are not interested in a friendly discourse. Prepare to defend yourself.',
       outcome:
-        'Seeing the situation turning south, you waste no time pulling your weapons and prepare for an attack. The guards are more than happy to oblige. Luckily your foes sustain only some minor injuries in the time it takes for another squad of guards to arrive and break up the scuffle. They let you go on your wayf, but you can see the disdain in all of their eves.\n\nLose 2 reputation.',
+        'Seeing the situation turning south, you waste no time pulling your weapons and prepare for an attack. The guards are more than happy to oblige.\n\nLuckily your foes sustain only some minor injuries in the time it takes for another squad of guards to arrive and break up the scuffle. They let you go on your way, but you can see the disdain in all of their eyes.\n\nLose 2 reputation.',
       imageUrl: '/assets/cards/events/base/city/ce-80-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-80-f.png',
