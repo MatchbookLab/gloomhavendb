@@ -1462,7 +1462,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Talk to some merchants about revital- izing the area.',
       outcome:
-        "REPUTATION > 9: You head to the Coin # District and meet with a member of the merchant s guild you've had dealings with before. He looks at you skeptically, but says he will see what he can do about making the area more livable.\n\nGain 1 prosperity.\n\nOTHERWISE: Every merchant you try to talk to about the issue laughs you out of the room. Whv help others when there is no prof- it in it for them?\n\nLose 1 reputation.",
+        "REPUTATION > 9: You head to the Coin # District and meet with a member of the merchant s guild you've had dealings with before. He looks at you skeptically, but says he will see what he can do about making the area more livable.\n\nGain 1 prosperity.\n\nOTHERWISE: Every merchant you try to talk to about the issue laughs you out of the room. Why help others when there is no prof- it in it for them?\n\nLose 1 reputation.",
       imageUrl: '/assets/cards/events/base/city/ce-70-b-a.png',
     },
     optionB: {
@@ -1509,7 +1509,7 @@ export const events: EventEntity[] = [
       imageUrl: '/assets/cards/events/base/city/ce-72-b-a.png',
     },
     optionB: {
-      choice: 'Refuse to go with the man. This whole situation seems,.Jishv, /',
+      choice: 'Refuse to go with the man. This whole situation seems fishy.',
       outcome:
         "This suspicious old man must have seen you in here before with the rod and fashioned some elaborate con to swindle you out of something. You won i be so easily fooled. There 's no he knows what the rod does when no one else in town does. Vbi/ push him away and go back to your drink.\n\nNo effect.",
       imageUrl: '/assets/cards/events/base/city/ce-72-b-b.png',
@@ -2733,7 +2733,7 @@ export const events: EventEntity[] = [
     type: EventType.Road,
     number: 50,
     text:
-      'Up ahead of you, you see a staff7 stuck in the very center of the road pointing straight up out of the ground You get closer, and an odd sense of foreboding comes ove you. You recognize the staff as the one wielded hv the Summoner The fact that it now in front ofyou with w such a strange and ominous placement makes you very wary. You quickly look around, Lwt nothing else of note is in sight.',
+      'Up ahead of you, you see a staff7 stuck in the very center of the road pointing straight up out of the ground You get closer, and an odd sense of foreboding comes ove you. You recognize the staff as the one wielded by the Summoner The fact that it now in front ofyou with w such a strange and ominous placement makes you very wary. You quickly look around, Lwt nothing else of note is in sight.',
     optionA: {
       choice: 'Take the staff and move on.',
       outcome:
