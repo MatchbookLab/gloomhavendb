@@ -1437,17 +1437,17 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 69,
     text:
-      'You are rather surprised to walk into the Brown Door one night to see your old friend the Soothsinger playing a song on the corner stage. )bu are even more surprised when you get closer and discover the song is about you. It is a raucous talc about the time she met you in a forest and you gave her terrible directions — just the worst, most backward directions possible. Everyone in the crowd is tearing up with laughter as she eloquently describes your bumbling and ineptitude.',
+      'You are rather surprised to walk into the Brown Door one night to see your old friend the Soothsinger playing a song on the corner stage. You are even more surprised when you get closer and discover the song is about you.\n\nIt is a raucous talc about the time she met you in a forest and you gave her terrible directions — just the worst, most backward directions possible.\n\nEveryone in the crowd is tearing up with laughter as she eloquently describes your bumbling and ineptitude.',
     optionA: {
       choice: 'Embrace the joke and go with it.',
       outcome:
-        'You make your way to the front of the crowd and join in the fun. When the Soothsinger notices you in the crowd, she brings you up on stage for the chorus, ft s a lit tie embarrassing, but people are enjoying your positive attitude about it.\n\nGain 1 reputation.',
+        'You make your way to the front of the crowd and join in the fun. When the Soothsinger notices you in the crowd, she brings you up on stage for the chorus. It\'s a little embarrassing, but people are enjoying your positive attitude about it.\n\nGain 1 reputation.',
       imageUrl: '/assets/cards/events/base/city/ce-69-b-a.png',
     },
     optionB: {
       choice: 'Leave the bar before someone recognizes you.',
       outcome:
-        "You flee the bar to escape the tune, but it doesn't prove to be that simple. The next day, everyone on the street is humming the tune, They all seems to be looking at you and laughing. It 's a nightmare.\n\nLose 1 reputation.",
+        "You flee the bar to escape the tune, but it doesn't prove to be that simple. The next day, everyone on the street is humming the tune. They all seems to be looking at you and laughing. It's a nightmare.\n\nLose 1 reputation.",
       imageUrl: '/assets/cards/events/base/city/ce-69-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-69-f.png',
