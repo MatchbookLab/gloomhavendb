@@ -3111,17 +3111,17 @@ export const events: EventEntity[] = [
     type: EventType.Road,
     number: 68,
     text:
-      'Not too far down the main road f outside of Gloomhaven, you run across a merchant wagon headed into town.\t■ P H I-\tIT Bj B\tI ■ j j [S BJ^B II "Oh no...ah, mercenaries, I see," the merchant stammers as you approach, "Look, ah, I know the reputation of your like around Gloomhaven. Please, just take what you want and move on. I I don t want any trouble."',
+      'Not too far down the main road outside of Gloomhaven, you run across a merchant wagon headed into town.\n\n"Oh no...ah, mercenaries, I see," the merchant stammers as you approach, "Look, ah, I know the reputation of your like around Gloomhaven. Please, just take what you want and move on. I-I don t want any trouble."',
     optionA: {
       choice: 'Take what you want and move on.',
       outcome:
-        "Ihe merchant remains dead silent as you sift through his cart and pull out any valuables. There's not a whole lot in his wares, but the ease in which you are able to take what he has makes it all the sweeter. Once you are finished, you continue on your way and he continues on his.\n\nGain 10 gold each.",
+        "The merchant remains dead silent as you sift through his cart and pull out any valuables. There's not a whole lot in his wares, but the ease in which you are able to take what he has makes it all the sweeter.\n\nOnce you are finished, you continue on your way and he continues on his.\n\nGain 10 gold each.",
       imageUrl: '/assets/cards/events/base/road/re-68-b-a.png',
     },
     optionB: {
       choice: 'Calm the merchant and explain that not all mercenaries are bloodthirsty thieves.',
       outcome:
-        '"Oh, ah, really?" The merchant looks at you incredulously. “Well then, color me embarrassed. I sincerely apologize for my uneducated assumptions. Sometimes you just expect the worst traveling to such backwater locales. “I\'ll be sure to tell everyone I see that not everyone in Gloomhavcn is a criminal, he says as he rides off, tipping his hat to you.\n\nGain 2 reputation.',
+        '"Oh, ah, really?" The merchant looks at you incredulously. "Well then, color me embarrassed. I sincerely apologize for my uneducated assumptions. Sometimes you just expect the worst traveling to such backwater locales.\n\n"I\'ll be sure to tell everyone I see that not everyone in Gloomhaven is a criminal," he says as he rides off, tipping his hat to you.\n\nGain 2 reputation.',
       imageUrl: '/assets/cards/events/base/road/re-68-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-68-f.png',
