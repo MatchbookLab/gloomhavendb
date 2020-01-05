@@ -2943,17 +2943,17 @@ export const events: EventEntity[] = [
     type: EventType.Road,
     number: 60,
     text:
-      'You see smoke on the horizon expecting the worst♦ Sure enough, you approach the scene to ransacked caravan\tburned\\ pillaged, and stroyed by what appears to be Vermlings. You find one survivor among the victims who laments that when the Vermlings came upon them, one of the guards, a large Inox. seemed to throw aside his weapon and simply accept his fate. That s when you find the body of the Brute, torn and bloody among the wreckage. Seeing him this way; the fire gone from his eyes, he appears unnaturally small —fc—frilftll n^—mM—WMM—WWWPMWOMWWW',
+      'You see smoke on the horizon expecting the worst and sigh, expecting the worst. Sure enough, you approach the scene to find a ransacked caravan — burned, pillaged, and destroyed by what appears to be Vermlings.\n\nYou find one survivor among the victims who laments that when the Vermlings came upon them, one of the guards, a large Inox, seemed to throw aside his weapon and simply accept his fate.\n\nThat\'s when you find the body of the Brute, torn and bloody among the wreckage. Seeing him this way, the fire gone from his eyes, he appears unnaturally small.',
     optionA: {
       choice: 'Respectfully bury the dead and mourn their loss.',
       outcome:
-        "Though you didn't take the time to talk with the Brute earlier, now you take the time to bury his corpse and say a few words about his strength of body and character The survivor thanks you for your helpt and you continue on your way once more.\n\nGain 1 reputation.",
+        "Though you didn't take the time to talk with the Brute earlier, now you take the time to bury his corpse and say a few words about his strength of body and character. The survivor thanks you for your help, and you continue on your way once more.\n\nGain 1 reputation.",
       imageUrl: '/assets/cards/events/base/road/re-60-b-a.png',
     },
     optionB: {
       choice: 'Take what you can find and move on.',
       outcome:
-        'Near the corpse of the Brute, you find an axe, presumably the weapon he threw away There\'s really nothing else among the debris, so you wordlessly pick it up and move on.\n\nGain 1 collective "Battle-Axe" (Item 018).',
+        'Near the corpse of the Brute, you find an axe, presumably the weapon he threw away. There\'s really nothing else among the debris, so you wordlessly pick it up and move on.\n\nGain 1 collective "Battle-Axe" (Item 018).',
       imageUrl: '/assets/cards/events/base/road/re-60-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-60-f.png',
