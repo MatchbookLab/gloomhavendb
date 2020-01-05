@@ -3132,17 +3132,17 @@ export const events: EventEntity[] = [
     type: EventType.Road,
     number: 69,
     text:
-      'Walking a long*the trail, you are surprised by a group of demons who appear to your left, charging over a hill toward you. Something is off however. Their pace is slow, and they are significantly smaller than the demons you normally deal with. Hallway down the hill, the demons pause and take stock of you. Seeing you are far from easy prey, they turn around and begin to retreat.',
+      'Walking along the trail, you are surprised by a group of demons who appear to your left, charging over a hill toward you. Something is off, however. Their pace is slow, and they are significantly smaller than the demons you normally deal with.\n\nHalfway down the hill, the demons pause and take stock of you. Seeing you are far from easy prey, they turn around and begin to retreat.',
     optionA: {
       choice: 'Chase them down quickly and kill them.',
       outcome:
-        'a You roar and charge up the hill[ The demons * are no match for you r either in speed or in strength. You kill them quickly, but painfully\n\nGain 5 experience each.',
+        'You roar and charge up the hill. The demons are no match for you, either in speed or in strength. You kill them quickly, but painfully.\n\nGain 5 experience each.',
       imageUrl: '/assets/cards/events/base/road/re-69-b-a.png',
     },
     optionB: {
       choice: 'Follow them more slowly, attempting to discover where they came from.',
       outcome:
-        'You creep slowly to the crest of the hill, watching as the demons retreat to the south. You follow them, eventually arriving at a weak, fluctuating rift in a small, earthen cave. Having experienced enough planar manipulation in your travels, you are able to mutter a few incantations and close the rift, ft takes a lot out of you, but now there is one less way for demons to invade this plane.\n\nLose 1 {Check} each.\n\nGain 1 prosperity.',
+        'You creep slowly to the crest of the hill, watching as the demons retreat to the south. You follow them, eventually arriving at a weak, fluctuating rift in a small, earthen cave. Having experienced enough planar manipulation in your travels, you are able to mutter a few incantations and close the rift. It takes a lot out of you, but now there is one less way for demons to invade this plane.\n\nLose 1 {Check} each.\n\nGain 1 prosperity.',
       imageUrl: '/assets/cards/events/base/road/re-69-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-69-f.png',
