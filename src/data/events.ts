@@ -2901,17 +2901,17 @@ export const events: EventEntity[] = [
     type: EventType.Road,
     number: 58,
     text:
-      "Despite your best efforts, you find yourself lost in a forest. You thought you were taking a shortcut, but then you got turned around and lost your bearings. And just when you think things couldn t get worse, a wolf suddenly jumps out of the brush in front of you. Oddly; though, it doesn 't appear aggressive. It howls once and then slowly and deliberately begins to walk through the trees in front of you, as if expecting you to follow it.   w. mm",
+      "Despite your best efforts, you find yourself lost in a forest. You thought you were taking a shortcut, but then you got turned around and lost your bearings.\n\nAnd just when you think things couldn't get worse, a wolf suddenly jumps out of the brush in front of you. Oddly; though, it doesn't appear aggressive.\n\nIt howls once and then slowly and deliberately begins to walk through the trees in front of you, as if expecting you to follow it.",
     optionA: {
       choice: 'Follow the wolf.',
       outcome:
-        'Miraculously, following the wolf leads you right to the edge of the forest and back on track to your destination. The wolf howls once more and then bounds off back into the brush. You can t help, but wonder who might have sent that wolf to assist you.\n\nNo effect.',
+        'Miraculously, following the wolf leads you right to the edge of the forest and back on track to your destination. The wolf howls once more and then bounds off back into the brush. You can\'t help, but wonder who might have sent that wolf to assist you.\n\nNo effect.',
       imageUrl: '/assets/cards/events/base/road/re-58-b-a.png',
     },
     optionB: {
       choice: 'Find your own way through the forest.',
       outcome:
-        'Not willing to trusta wild animal, you ref use to go in the same direction as the wolf and continue down an ill-fated path of your own choosing. It doesn t go well, and by the time you emerge from the dense forest and find your bearings, you are exhausted.\n\nDiscard 3 cards each.',
+        'Not willing to trust a wild animal, you refuse to go in the same direction as the wolf and continue down an ill-fated path of your own choosing. It doesn\'t go well, and by the time you emerge from the dense forest and find your bearings, you are exhausted.\n\nDiscard 3 cards each.',
       imageUrl: '/assets/cards/events/base/road/re-58-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-58-f.png',
