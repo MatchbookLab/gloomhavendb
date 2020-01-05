@@ -2989,13 +2989,13 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Agree to help the Sun Demons.',
       outcome:
-        'You sigh and agree, warning them that this had better be the last time they ask you for a favor. They give you the location of the Sun Temple and implore you to hurry.\n\nUnlock \"Sun Temple\" 85 (M-3)',
+        'You sigh and agree, warning them that this had better be the last time they ask you for a favor. They give you the location of the Sun Temple and implore you to hurry.\n\nUnlock \"Sun Temple\" 85 (M-3).',
       imageUrl: '/assets/cards/events/base/road/re-62-b-a.png',
     },
     optionB: {
       choice: 'Attack the Sun Demons. It may be the only way to stop them from bothering you.',
       outcome:
-        'Without even speaking, you draw your weapons and attack. The demons are caught off guard, but they bounce back with great ferocity. It is a long, brutal battle, and you continue on in your adventure greatly wounded and bloody.\n\nAll start scenario with {Muddle}.\n\nAll start scenario with {Wound}/\n\nAll start scenario with 3 damage.',
+        'Without even speaking, you draw your weapons and attack. The demons are caught off guard, but they bounce back with great ferocity. It is a long, brutal battle, and you continue on in your adventure greatly wounded and bloody.\n\nAll start scenario with {Muddle}.\n\nAll start scenario with {Wound}.\n\nAll start scenario with 3 damage.',
       imageUrl: '/assets/cards/events/base/road/re-62-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-62-f.png',
