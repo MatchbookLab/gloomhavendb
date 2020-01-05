@@ -3048,11 +3048,11 @@ export const events: EventEntity[] = [
     type: EventType.Road,
     number: 65,
     text:
-      'As you crest a hill, you see a flock of carrion birds scatter to the east. They must have been feasting on something, so you decide to investigate. After a short walk, you come upon a mans corpse, badly decayed and mangled, lying in the dirt« His face is a bloody messf, but you do see a distinctive chain around his neck and recall the description the man from the Sleeping Lion gave you of his brother: This is very likely him.',
+      'As you crest a hill, you see a flock of carrion birds scatter to the east. They must have been feasting on something, so you decide to investigate.\n\nAfter a short walk, you come upon a man\'s corpse, badly decayed and mangled, lying in the dirt. His face is a bloody mess, but you do see a distinctive chain around his neck and recall the description the man from the Sleeping Lion gave you of his brother. This is very likely him.',
     optionA: {
       choice: 'Bury the man and bring the chain back to his brother.',
       outcome:
-        '1 Not wanting to tell the brother that you left the corpse out in the sun to rot, you take the time to Jig a hole and give it a proper burial. When you bring the chain back, the brother is understandably distraught, but he thanks you forgiving him closure about what happened.\n\nGain 2 reputation.',
+        'Not wanting to tell the brother that you left the corpse out in the sun to rot, you take the time to dig a hole and give it a proper burial.\n\nWhen you bring the chain back, the brother is understandably distraught, but he thanks you forgiving him closure about what happened.\n\nGain 2 reputation.',
       imageUrl: '/assets/cards/events/base/road/re-65-b-a.png',
     },
     optionB: {
