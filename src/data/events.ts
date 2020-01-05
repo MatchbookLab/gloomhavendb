@@ -3027,17 +3027,17 @@ export const events: EventEntity[] = [
     type: EventType.Road,
     number: 64,
     text:
-      'You move closer, and what you thought was a signpost turns out to be a human skull impaled on a spike. There is something sticking out of the skulls mouth. ^  — - ■ i ii HWW ■ *»-»■ ■* * — —■\t— ■ i ■<————',
+      'You reach a crossroads and deecide to rest for a bit. As you eat some of your rations, something sticking up out of the ground in the distance catches your attention.\n\nYou move closer, and what you thought was a signpost turns out to be a human skull impaled on a spike.\n\nThere is something sticking out of the skulls mouth.',
     optionA: {
       choice: 'Investigate further.',
       outcome:
-        'Against your better judgment; you approach the skull[ which looks suspiciously like the Sin-Ras calling cardl Sure enough, a group of dark-clad warriors appears before you from out of thin air. Wordlessly they draw their long, curved blades and attack* Caught by surprise, you don t fare well in the battle. You do fight them off, but in the end[ you are severely woundedexhausted, and demoralized.\n\nLose 1 {Check} each.\n\nDiscard 4 cards each.\n\nAll start scenario with 4 damage.',
+        'Against your better judgment, you approach the skull, which looks suspiciously like the Sin-Ras calling card. Sure enough, a group of dark-clad warriors appears before you from out of thin air. Wordlessly they draw their long, curved blades and attack. Caught by surprise, you don\'t fare well in the battle. You do fight them off, but in the end, you are severely wounded, exhausted, and demoralized.\n\nLose 1 {Check} each.\n\nDiscard 4 cards each.\n\nAll start scenario with 4 damage.',
       imageUrl: '/assets/cards/events/base/road/re-64-b-a.png',
     },
     optionB: {
       choice: 'Arm yourself and make a defensive retreat from the area.',
       outcome:
-        "Recognizing the pike as a symbol of the Sin-Ra Syndicate, you arm yourself and run from the area. Unfortunately you don't make it far before you see a number of black-clad assassins bearing down on you. You move into a defensive position and prepare for battle. The fight is arduous, but in the end[ the assassins are dead[ and you hope they don t come back.\n\nLose 1 {Check} each.\n\nDiscard 2 cards each.\n\nAll start scenario with 2 damage.",
+        "Recognizing the pike as a symbol of the Sin-Ra Syndicate, you arm yourself and run from the area. Unfortunately you don't make it far before you see a number of black-clad assassins bearing down on you. You move into a defensive position and prepare for battle. The fight is arduous, but in the end, the assassins are dead, and you hope they don t come back.\n\nLose 1 {Check} each.\n\nDiscard 2 cards each.\n\nAll start scenario with 2 damage.",
       imageUrl: '/assets/cards/events/base/road/re-64-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-64-f.png',
