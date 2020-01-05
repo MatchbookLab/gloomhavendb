@@ -3006,17 +3006,17 @@ export const events: EventEntity[] = [
     type: EventType.Road,
     number: 63,
     text:
-      'As you walk through some foothills, the ground suddenly shakes violently beneath you. Two massive demons built of earth and stone rise up in front of you, Today we shall feast on your flesh, foolish travelers!m fust as the demons take a step toward you, a massive ball of fire streaks through the air from behind and connects squarely with one of the demons, which erupts into a pillar of flame. Then lightning streaks toward the other, destroying one of its arms. Looking around, you see the old Savvas you met earlier, who continues to throw out powerful attacks until the demons are forced to retreat, “Well, fancy meeting you again!*',
+      'As you walk through some foothills, the ground suddenly shakes violently beneath you. Two massive demons built of earth and stone rise up in front of you.\n\n"Today we shall feast on your flesh, foolish travelers!"\n\nJust as the demons take a step toward you, a massive ball of fire streaks through the air from behind and connects squarely with one of the demons, which erupts into a pillar of flame. Then lightning streaks toward the other, destroying one of its arms.\n\nLooking around, you see the old Savvas you met earlier, who continues to throw out powerful attacks until the demons are forced to retreat.\n\n"Well, fancy meeting you again!"',
     optionA: {
       choice: 'Thank the Savvas for his timely assistance.',
       outcome:
-        '1Alorc and more demons around these parts these days. Stopping them from attacking travelers is becoming a time-intensive job, but at least it s fun." The Savvas smiles at you and then turns to leave. "Have a pleasant day!"\n\nNo effect.',
+        '"More and more demons around these parts these days. Stopping them from attacking travelers is becoming a time-intensive job, but at least it\'s fun."\n\nThe Savvas smiles at you and then turns to leave. "Have a pleasant day!"\n\nNo effect.',
       imageUrl: '/assets/cards/events/base/road/re-63-b-a.png',
     },
     optionB: {
       choice: 'Admonish the Savvas, claiming you could have handled the demons without his help.',
       outcome:
-        'The Savvas adopts a look of serious contemplation. “You are right, of course. I presumed to think that a lesser race would need my help, but l Forgot your dedication to growth and learning. I have made a grave mistake and must now beg your forgiveness. It holds out a small trinket toward you. Please, accept this with my apologies."\n\nGain 1 collective "Sun Earring" (Item 049).',
+        'The Savvas adopts a look of serious contemplation. "You are right, of course. I presumed to think that a lesser race would need my help, but I forgot your dedication to growth and learning. I have made a grave mistake and must now beg your forgiveness."\n\nIt holds out a small trinket toward you. "Please, accept this with my apologies."\n\nGain 1 collective "Sun Earring" (Item 049).',
       imageUrl: '/assets/cards/events/base/road/re-63-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-63-f.png',
