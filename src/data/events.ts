@@ -2922,17 +2922,17 @@ export const events: EventEntity[] = [
     type: EventType.Road,
     number: 59,
     text:
-      'The\tair is especially humid and muggy as you walk towards your destination, but even that couldn’t explain the sight that greets you on the road. Directly in Iront of you, completely blocking the only available path, is a massive swarm of insects. There must be millions of them. >bt/ take a hesitant step forward and the bugs do not react. They are not concerned by your presence at all. — w    \t■&» ■». m« mwi',
+      'The air is especially humid and muggy as you walk towards your destination, but even that couldn\'t explain the sight that greets you on the road.\n\nDirectly in front of you, completely blocking the only available path, is a massive swarm of insects. There must be millions of them.\n\nYou take a hesitant step forward and the bugs do not react. They are not concerned by your presence at all.',
     optionA: {
       choice: 'Cover yourself as best you can and try to walk through the swarm.',
       outcome:
-        'If you were to list the top ten worst moments • of your fife, this would probably be up there. You walk into the swarm and the insects are everywhere, biting and clawing at your flesh. You move as quickly as you can, emerging from the other side with your life intact, but your sanity in shambles. Oddly though, you also feel as though you were just in the presence of a powerful, divine force.\n\nAll start scenario with 2 damage.\n\nAll start scenario with {Poison}, {Muddle}, and {Bless}.',
+        'If you were to list the top ten worst moments of your fife, this would probably be up there. You walk into the swarm and the insects are everywhere, biting and clawing at your flesh. You move as quickly as you can, emerging from the other side with your life intact but your sanity in shambles. Oddly, though, you also feel as though you were just in the presence of a powerful, divine force.\n\nAll start scenario with 2 damage.\n\nAll start scenario with {Poison}, {Muddle}, and {Bless}.',
       imageUrl: '/assets/cards/events/base/road/re-59-b-a.png',
     },
     optionB: {
       choice: 'Use whatever you can to burn a path through the swarm.',
       outcome:
-        'It takes a monumental effort, but you are eventually able to disperse the cloud of insects enough to run through to the other side. As you do so, ho we vcr. you hear an odd voice among the buzzing, cursing you for your violent actions.\n\nDiscard 2 cards each.\n\nAll start scenario with {Curse}.',
+        'It takes a monumental effort, but you are eventually able to disperse the cloud of insects enough to run through to the other side. As you do so, however. you hear an odd voice among the buzzing, cursing you for your violent actions.\n\nDiscard 2 cards each.\n\nAll start scenario with {Curse}.',
       imageUrl: '/assets/cards/events/base/road/re-59-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-59-f.png',
