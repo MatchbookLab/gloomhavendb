@@ -3069,17 +3069,17 @@ export const events: EventEntity[] = [
     type: EventType.Road,
     number: 66,
     text:
-      'The first sign of the tnox raiding party was a cloud of dust on the horizon. vvja* so large, however, there was nowhere to run, City-dwelling scum!" one of the Inox in front calls out to you as you approach. "We march now to attack your city and wipe it from the face of this landl What do you say to that?” four ifrst thought, as you prepare for a fight. is that they will need a larger army. Before you can strike, though, the sky grows dark. You assume it is a cloud, but then look up to see a giant drake descending on you from above.  >*»■ <■ i i i m !■■■ ■v^vnii(<n Min i',
+      'The first sign of the Inox raiding party was a cloud of dust on the horizon. It was so large, however, there was nowhere to run.\n\n"City-dwelling scum!" one of the Inox in front calls out to you as you approach. "We march now to attack your city and wipe it from the face of this land. What do you say to that?"\n\nYour first thought, as you prepare for a fight, is that they will need a larger army. Before you can strike, though, the sky grows dark. You assume it is a cloud, but then look up to see a giant drake descending on you from above.',
     optionA: {
       choice: 'Take cover.',
       outcome:
-        ':\tl! You jump into a ditch and cover your head • just as the Elder Drake glides over the raiding party, breathing a heavy gout of flame into their midst. Those not incinerated scream and flee for their lives. The drake lands in front of you. "Intrepid adventurers! I hope I was able to offer you some aid against your aggressors. It really was my pleasure after all you have done for me. I hope you find some things of value among the corpses. It is my gift to you.\n\nGain 25 gold each.',
+        'You jump into a ditch and cover your head just as the Elder Drake glides over the raiding party, breathing a heavy gout of flame into their midst. Those not incinerated scream and flee for their lives. The drake lands in front of you.\n\n"Intrepid adventurers! I hope I was able to offer you some aid against your aggressors. It really was my pleasure after all you have done for me. I hope you find some things of value among the corpses. It is my gift to you."\n\nGain 25 gold each.',
       imageUrl: '/assets/cards/events/base/road/re-66-b-a.png',
     },
     optionB: {
       choice: 'Attack the Inox.',
       outcome:
-        'You attack the large group of Inox while they are distracted by giant creature above you. Things suddenly get very hot, however, when the drake begins spitting hre into the melee. The Inox scatter and you are suffering from severe burns when the Elder Drake lands in front of you. "My apologies, I was only trying to help.\n\nGain 25 gold each.\n\nAll start scenario with {Wound}.\n\nAll start scenario with 2 damage.',
+        'You attack the large group of Inox while they are distracted by the giant creature above you. Things suddenly get very hot, however, when the drake begins spitting fire into the melee. The Inox scatter and you are suffering from severe burns when the Elder Drake lands in front of you.\n\n"My apologies, I was only trying to help."\n\nGain 25 gold each.\n\nAll start scenario with {Wound}.\n\nAll start scenario with 2 damage.',
       imageUrl: '/assets/cards/events/base/road/re-66-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-66-f.png',
