@@ -2985,17 +2985,17 @@ export const events: EventEntity[] = [
     type: EventType.Road,
     number: 62,
     text:
-      'By now, the Sun Demons cut a very recognizable portrait against the horizon as they move toward you. You sincerely had hoped you were done with these creatures. h\t■\tf\t-m "We have urgent need of your assistance, one of them starts. *Night Demons have infested the Sun Temple* attempting to desecrate it and send the world into eternal darkness. "We have tried to stop them, but they are too fortified inside the temple. We regrettably need more $t rength. "Please, you cannot want an absence of a sun on this plane any less than we do. It would be disastrous.',
+      'By now, the Sun Demons cut a very recognizable portrait against the horizon as they move toward you. You sincerely had hoped you were done with these creatures.\n\n"We have urgent need of your assistance," one of them starts. "Night Demons have infested the Sun Temple, attempting to desecrate it and send the world into eternal darkness.\n\n"We have tried to stop them, but they are too fortified inside the temple. We regrettably need more strength.\n\n"Please, you cannot want an absence of a sun on this plane any less than we do. It would be disastrous.\"',
     optionA: {
-      choice: 'Agree to help the Sim Demons,',
+      choice: 'Agree to help the Sun Demons.',
       outcome:
-        'r 1 You sigh ami agree, warning them that this had better be the last time they ask you for a favor. They give you the location of the Sun Temple and implore you to hurry.',
+        'You sigh and agree, warning them that this had better be the last time they ask you for a favor. They give you the location of the Sun Temple and implore you to hurry.\n\nUnlock \"Sun Temple\" 85 (M-3)',
       imageUrl: '/assets/cards/events/base/road/re-62-b-a.png',
     },
     optionB: {
       choice: 'Attack the Sun Demons. It may be the only way to stop them from bothering you.',
       outcome:
-        'Without even speaking, you draw your weapons and attack. The demons are caught offguard, but they bounce back with great ferocity, ft is a long, brutal battle, and you continue on in your adventure greatly wounded and bloody.\n\nAll start scenario with {Muddle}.\n\nAll start scenario with {Wound}/\n\nAll start scenario with 3 damage.',
+        'Without even speaking, you draw your weapons and attack. The demons are caught off guard, but they bounce back with great ferocity. It is a long, brutal battle, and you continue on in your adventure greatly wounded and bloody.\n\nAll start scenario with {Muddle}.\n\nAll start scenario with {Wound}/\n\nAll start scenario with 3 damage.',
       imageUrl: '/assets/cards/events/base/road/re-62-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-62-f.png',
