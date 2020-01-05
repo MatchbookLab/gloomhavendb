@@ -2859,17 +2859,17 @@ export const events: EventEntity[] = [
     type: EventType.Road,
     number: 56,
     text:
-      'At first the man looks dead, with numerous open wounds and lying in a pool of blood in the dirt+ r then he coughs and whispers something unintelligible. The man looks pretty bad off likely attacked by some wild animal, but its possible he could be saved.',
+      'At first the man looks dead, with numerous open wounds and lying in a pool of blood in the dirt/\n\nBut then he coughs and whispers something unintelligible. The man looks pretty bad off, likely attacked by some wild animal, but it\'s possible he could be saved.',
     optionA: {
       choice: 'Help the wounded man as best you can.',
       outcome:
-        "■' ' ■ \"WKm*. ■' 4*.d .mm i ^ The nun's wounds actually look worse than they really are, and your time with the Sawbones has given you some experience in what to do. You hind the wounds to stop the bleeding and then give him something to eat. He lost a lot of blood, but after some nursing, he's able to stand and make his way back to Gloomhaven, thanking you profusely in the process.\n\nGain 1 reputation.",
+        "The man's wounds actually look worse than they really are, and your time with the Sawbones has given you some experience in what to do. You bind the wounds to stop the bleeding and then give him something to eat. He lost a lot of blood, but after some nursing, he's able to stand and make his way back to Gloomhaven, thanking you profusely in the process.\n\nGain 1 reputation.",
       imageUrl: '/assets/cards/events/base/road/re-56-b-a.png',
     },
     optionB: {
       choice: 'Let the man die and take his belongings.',
       outcome:
-        "You riffle through the man 's pockets as he speaks his last words. They're too soft to make out, but the tone is one of anger and disappointment. You make off with a decent amount of money and leave the corpse to rot.\n\nGain 3 gold each.",
+        "You riffle through the man's pockets as he speaks his last words. They're too soft to make out, but the tone is one of anger and disappointment. You make off with a decent amount of money and leave the corpse to rot.\n\nGain 3 gold each.",
       imageUrl: '/assets/cards/events/base/road/re-56-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-56-f.png',
