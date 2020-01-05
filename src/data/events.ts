@@ -2838,17 +2838,17 @@ export const events: EventEntity[] = [
     type: EventType.Road,
     number: 55,
     text:
-      'road. I • ■ m M\t.— One pafA looks clear and easy, but the other path is overgrown with thorns and re will likely get you to where yo  are gotng. The whole situation feels off, though — as if some one or something is watching you. Still a decision must be made. - - -w ■ ■ ■ ^^mmrnm ■ I ■ I .V&+W+4',
+      'You come to a fork in the road. One path looks clear and easy, but the other path is overgrown with thorns and nettles. Either one will likely get you to where you are going.\n\nThe whole situation feels off, though — as if someone or something is watching you.\n\nStill a decision must be made.',
     optionA: {
       choice: 'Take the clear path.',
       outcome:
-        'You walk down the dear path for a few minutes, and, just when you think the whole weird feeling was your imagination, a group of human bandits jumps out at you from the nearby brush. Before they can engage, however, an arrow suddenly spears the chest of the closest bandit, followed very quickly by a second. The bandits have paused to look around in panic when a third arrow flies into another bandit s skull. The bandits scatter and run off. You look around for the shooter, but no trace is found.\n\nNo effect.',
+        'You walk down the clear path for a few minutes, and, just when you think the whole weird feeling was your imagination, a group of human bandits jumps out at you from the nearby brush. Before they can engage, however, an arrow suddenly spears the chest of the closest bandit, followed very quickly by a second. The bandits have paused to look around in panic when a third arrow flies into another bandit\'s skull. The bandits scatter and run off. You look around for the shooter, but no trace is found.\n\nNo effect.',
       imageUrl: '/assets/cards/events/base/road/re-55-b-a.png',
     },
     optionB: {
       choice: 'Take the overgrown path.',
       outcome:
-        'The trek through the overgrown path is unpleasant. You are constantly getting pricked by sharp thorns covered in a strange sap. You think you recognize them f rom a previous foray into harsh, unforgiving foliage. Sure enough, you start feeling sick pretty soon after you emerge from the bushes.\n\nAll start scenario with {Poison}.',
+        'The trek through the overgrown path is unpleasant. You are constantly getting pricked by sharp thorns covered in a strange sap. You think you recognize them from a previous foray into harsh, unforgiving foliage. Sure enough, you start feeling sick pretty soon after you emerge from the bushes.\n\nAll start scenario with {Poison}.',
       imageUrl: '/assets/cards/events/base/road/re-55-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-55-f.png',
