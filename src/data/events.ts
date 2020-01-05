@@ -3090,17 +3090,17 @@ export const events: EventEntity[] = [
     type: EventType.Road,
     number: 67,
     text:
-      'Not too far down n* V rr miff $ VCIU outside of Gloomhaven, you run across a merchant wagon headed into town. A ht I was afraid for a second you might be banditsf" The merchant says. \' But now I see you are mercenaries from the town, correct?Most excellent! I have heard good things about the mercenaries of Gloomhaven, Hard to believe, coming from such a backwater place, but they are true, correct?* rim',
+      'Not too far down the main road outside of Gloomhaven, you run across a merchant wagon headed into town.\n\n"Ah, I was afraid for a second you might be bandits!" The merchant says. "But now I see you are mercenaries from the town, correct? Most excellent! I have heard good things about the mercenaries of Gloomhaven. Hard to believe, coming from such a backwater place, but they are true, correct?"',
     optionA: {
       choice: 'Demonstrate your virtue by offering to escort the merchant back to Gloomhaven.',
       outcome:
-        '“Ah, well...no, l don’t want to be a bother. But, I mean, yes, I can\'t pay you, though I\'d love the company. It is rather terrifying traveling the East Road by yourself." It is a relatively short journey back to town, but the merchant is very grateful. 7 am quite impressed, sirs. I ‘II be sure to tell everyone back in the capital that Gloomhaven is a safe place to do business."\n\nGain 1 prosperity.',
+        '"Ah, well...no, I don\'t want to be a bother. But, I mean, yes, I can\'t pay you, though I\'d love the company. It is rather terrifying traveling the East Road by yourself."\n\nIt is a relatively short journey back to town, but the merchant is very grateful. "I am quite impressed, sirs. I\'II be sure to tell everyone back in the capital that Gloomhaven is a safe place to do business."\n\nGain 1 prosperity.',
       imageUrl: '/assets/cards/events/base/road/re-67-b-a.png',
     },
     optionB: {
       choice: 'Demonstrate your lack of virtue by robbing the merchant.',
       outcome:
-        '"Well I just — I mean, I’d never...” the merchant trails ofTincredulously. “To think there are places in the world where such barbarism still exists. It boggles the mind. 7 m going to tell everyone back in the Capital what a horrible, backward shrrggggllg..." Blood bubbles up into his mouth as you slit his throat, making it very difficult for him to continue complaining.\n\nGain 20 gold each.',
+        '"Well I just — I mean, I\'d never..." the merchant trails of incredulously. "To think there are places in the world where such barbarism still exists. It boggles the mind.\n\n I\'m going to tell everyone back in the Capital what a horrible, backward shrrggggllg..." Blood bubbles up into his mouth as you slit his throat, making it very difficult for him to continue complaining.\n\nGain 20 gold each.',
       imageUrl: '/assets/cards/events/base/road/re-67-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-67-f.png',
