@@ -2880,17 +2880,17 @@ export const events: EventEntity[] = [
     type: EventType.Road,
     number: 57,
     text:
-      'fay are wandering through an abysmal tog, cursing the very tact you woke up this morningYou cant see two feet in front of your face and everything is just so cot and damp. Walking down what you think is the road, you nearfy bump into an elderly Savvas. ”Ah, how fortuitous is such a meeting," the Savvas says. *You look like the ones whom my protege worked with for some time. Normally I would not give the lesser races a second glance, but the master of elements must have seen something in you." It stretches its joints and looks around. 7 lmmr you must be having a rough time with this weather I could offer you something that may help.*',
+      'You are wandering through an abysmal fog, cursing the very fact you woke up this morning. You can\'t see two feet in front of your face and everything is just so cold and damp.\n\nWalking down what you think is the road, you nearly bump into an elderly Savvas.\n\n"Ah, how fortuitous is such a meeting," the Savvas says. "You look like the ones whom my protégé worked with for some time. Normally I would not give the lesser races a second glance, but the master of elements must have seen something in you."\n\nIt stretches its joints and looks around. "Hmm, you must be having a rough time with this weather I could offer you something that may help."',
     optionA: {
       choice: 'Accept the gift of the Savvas.',
       outcome:
-        'The Savvas concentrates and lays its hand on you. You suddenly Feel very warm and all the fog within ten feet of you dissipates. “There you go. That should make things easier. The effect should last for at least as long as the fog does. Have a pleasant day!"\n\nNo effect.',
+        'The Savvas concentrates and lays its hand on you. You suddenly feel very warm and all the fog within ten feet of you dissipates.\n\n"There you go. That should make things easier. The effect should last for at least as long as the fog does. Have a pleasant day!"\n\nNo effect.',
       imageUrl: '/assets/cards/events/base/road/re-57-b-a.png',
     },
     optionB: {
-      choice: 'Downplay your struggle and politely decline the Savvass offer.',
+      choice: 'Downplay your struggle and politely decline the Savvas\'s offer.',
       outcome:
-        "“Aht l seet ° the Savvas says. “You'd rather grow from an experience than take the easy way out. A noble path.* The Savvas slaps you on the back. 'Well, get to it, then! It s just fog after all. You'll survive.\"\n\nDiscard 2 cards each.\n\nAdd Road Event 63 to the deck.",
+        'Ah, 1 see," the Savvas says. "You\'d rather grow from an experience than take the easy way out. A noble path."\n\nThe Savvas slaps you on the back. "Well, get to it, then! It\'s just fog after all. You\'ll survive."\n\nDiscard 2 cards each.\n\nAdd Road Event 63 to the deck.',
       imageUrl: '/assets/cards/events/base/road/re-57-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-57-f.png',
