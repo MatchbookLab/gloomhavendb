@@ -2964,17 +2964,17 @@ export const events: EventEntity[] = [
     type: EventType.Road,
     number: 61,
     text:
-      'They are Sun Demons, perhaps the same ones who accosted you earlier That suspicion is confirmed when you get closer and see they are hovering around an armored Valrath woman bound to a tree, torturing her for information. Don \'t you see how important this is!" one of the demons says. "Give us the location of the templet" "Lies and tricks of a demon, * the Sunkeeper responds, " The temple is in no danger except from you.0 — ■ omini mi« mmmmmmi—miii    \t■■ ~\t■■ ■ ■■',
+      'You are heading through a small forest when you hear the sound of a woman screaming off to the west. You silently move closer, catching a glimpse of multiple radiant figures through the tress.\n\nThey are Sun Demons, perhaps the same ones who accosted you earlier. That suspicion is confirmed when you get closer and see they are hovering around an armored Valrath woman bound to a tree, torturing her for information.\n\n"Don\'t you see how important this is!" one of the demons says. "Give us the location of the temple!"\n\n"Lies and tricks of a demon," the Sunkeeper responds. "The temple is in no danger except from you."',
     optionA: {
       choice: 'Leave the scene quietly and return to your own business.',
       outcome:
-        '1 Not wanting to get involved, you simply move • on. Eventually the screams of the Sunkeeper fade away.\n\nAdd Road Event 62 to the deck.',
+        'Not wanting to get involved, you simply move on. Eventually the screams of the Sunkeeper fade away.\n\nAdd Road Event 62 to the deck.',
       imageUrl: '/assets/cards/events/base/road/re-61-b-a.png',
     },
     optionB: {
       choice: 'Attack the demons and free the Sunkeeper.',
       outcome:
-        "You charge out of the trees and attack the Sun Demons. Fueled by righteous indignation and a bit of guilt, you slay them all. The battle leaves you wounded, but the Sunkeeper happily mends your wounds once you free her '7hey seemed to think the Sun Temple is under attack by Night Demons, ” she says• 7 have no reason to believe them, but still\\ would you mind helping me look into it?",
+        "You charge out of the trees and attack the Sun Demons. Fueled by righteous indignation and a bit of guilt, you slay them all. The battle leaves you wounded, but the Sunkeeper happily mends your wounds once you free her.\n\n\"They seemed to think the Sun Temple is under attack by Night Demons,\" she says. \"I have no reason to believe them, but still, would you mind helping me look into it?\"\n\nUnlock \"Sun Temple\" 85 (M-3)",
       imageUrl: '/assets/cards/events/base/road/re-61-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/road/re-61-f.png',
