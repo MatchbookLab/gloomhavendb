@@ -70,7 +70,7 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 4,
     text:
-      'Having recently returned from your latest adventure, you are approached by a ratty-looking boy in tears.\n\n"Please, sirs, could you please help me with my cat? He went over there, and I’m afraid." The boy points a dirty finger at a decrepit, abandoned building. "I don\'t know what else to do."',
+      'Having recently returned from your latest adventure, you are approached by a ratty-looking boy in tears.\n\n"Please, sirs, could you please help me with my cat? He went over there, and I\'m afraid." The boy points a dirty finger at a decrepit, abandoned building. "I don\'t know what else to do."',
     optionA: {
       choice: 'Find a cat? You have more important things to do.',
       outcome:
@@ -747,13 +747,13 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Join the fray! These insults will not go unanswered!',
       outcome:
-        "{LightningBolts}: You break a chair over the man's back, kick him in the teeth, and then you really get into it. It's a bar brawl that could only be described as \"epic\" fueled by pure, raw rage. The carnage is extreme.\n\nGain 5 experience each.\n\nLose 2 reputation.\n\nOTHERWISE: You jump into the melee, breaking heads and chairs in equal measure. You’ve seen worse brawls, but the proprietor still isn’t very happy when it’s over.\n\nLose 1 reputation.",
+        "{LightningBolts}: You break a chair over the man's back, kick him in the teeth, and then you really get into it. It's a bar brawl that could only be described as \"epic\" fueled by pure, raw rage. The carnage is extreme.\n\nGain 5 experience each.\n\nLose 2 reputation.\n\nOTHERWISE: You jump into the melee, breaking heads and chairs in equal measure. You've seen worse brawls, but the proprietor still isn't very happy when it's over.\n\nLose 1 reputation.",
       imageUrl: '/assets/cards/events/base/city/ce-36-b-a.png',
     },
     optionB: {
       choice: 'Do your best to stop the fighting. This is a respectable establishment.',
       outcome:
-        '{LightningBolts}: You get up to calm down the room, but the Berserker has other ideas, laying into the man before you can get a word out. She goes into a furious rage, and there’s really not much to be done about it except pay what you can for the damages afterward.\n\nLose 10 collective gold.\n\nOTHERWISE: It takes some work, but you manage to calm down the Inox and buy off the rest of the room with some extra drinks. The proprietor looks positively relieved.\n\nGain 1 reputation.',
+        '{LightningBolts}: You get up to calm down the room, but the Berserker has other ideas, laying into the man before you can get a word out. She goes into a furious rage, and there\'s really not much to be done about it except pay what you can for the damages afterward.\n\nLose 10 collective gold.\n\nOTHERWISE: It takes some work, but you manage to calm down the Inox and buy off the rest of the room with some extra drinks. The proprietor looks positively relieved.\n\nGain 1 reputation.',
       imageUrl: '/assets/cards/events/base/city/ce-36-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-36-f.png',
@@ -768,11 +768,11 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Attempt to console and cheer up those affected by the attack.',
       outcome:
-        "{MusicNote}: The citizens are downtrodden, but the uncanny power of the Soothsinger’s music seems to lift their spirits considerably. Still far from cheerful, the people find new resolve in repairing the damage and rebuilding.\n\nGain 1 prosperity.\n\nOTHERWISE: The citizens view you with a cynical eye as you walk around, attempting to encourage them and lift their spirits. Despite the effort, it seems as though they are in a worse mood than when you arrived.\n\nLose 1 reputation.",
+        "{MusicNote}: The citizens are downtrodden, but the uncanny power of the Soothsinger's music seems to lift their spirits considerably. Still far from cheerful, the people find new resolve in repairing the damage and rebuilding.\n\nGain 1 prosperity.\n\nOTHERWISE: The citizens view you with a cynical eye as you walk around, attempting to encourage them and lift their spirits. Despite the effort, it seems as though they are in a worse mood than when you arrived.\n\nLose 1 reputation.",
       imageUrl: '/assets/cards/events/base/city/ce-37-b-a.png',
     },
     optionB: {
-      choice: 'Help repair the gate. You wouldn’t want another attack to further cripple the town.',
+      choice: 'Help repair the gate. You wouldn\'t want another attack to further cripple the town.',
       outcome:
         '{ThreeSpears} {Spellweaver} {Tinkerer} {Triangles} {Circles}: You set to work repairing the gate, and by the time night falls, it is at least functional. The downtrodden citizens are inspired by your work, and you have little doubt that the community will bounce bock with little permanent damage.\n\nGain 1 prosperity.\n\nOTHERWISE: You fiddle with the gate for a bit until it becomes clear that you are doing nothing to help. You decide to head back to your rooms instead and get some rest.\n\nNo effect.',
       imageUrl: '/assets/cards/events/base/city/ce-37-b-b.png',
@@ -849,11 +849,11 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 41,
     text:
-      'The Sinking Market is a varied area or decrepit huts and merchants unable to sell their wares anywhere else. It doesn\'t surprise you as you walk through to see a scraggly Vermling approach with a small sack.\n\n"A potion for the big, strong adventurers!" she says as she waves you down. “Help you in battle, it will!"\n\nYou are about to push her aside and keep walking when she pulls the potion out of the sack. It glows green in the daylight — an impressive, large flask of master craftsmanship.\n\n"Aha, I knew it catch your eye! How much you pay?"',
+      'The Sinking Market is a varied area or decrepit huts and merchants unable to sell their wares anywhere else. It doesn\'t surprise you as you walk through to see a scraggly Vermling approach with a small sack.\n\n"A potion for the big, strong adventurers!" she says as she waves you down. \"Help you in battle, it will!"\n\nYou are about to push her aside and keep walking when she pulls the potion out of the sack. It glows green in the daylight — an impressive, large flask of master craftsmanship.\n\n"Aha, I knew it catch your eye! How much you pay?"',
     optionA: {
       choice: 'Barter with the Vermling for the potion.',
       outcome:
-        '{TwoMinis}, PAY 10 COLLECTIVE GOLD: The Vermling knows it is valuable, but she is more interested in flirting with the Beast Tyrant. She is happy to sell the potion at a discount.\n\nGain 1 collective “Major Stamina Potion" (Item 034)\n\nPAY 25 COLLECTIVE GOLD: No amount of haggling can lower the Vermling\'s high price.\n\nGain 1 collective "Major Stamina Potion" (Item 034).\n\nOTHERWISE: The Vermling will not accept the tiny sum you offer. Maybe next time.',
+        '{TwoMinis}, PAY 10 COLLECTIVE GOLD: The Vermling knows it is valuable, but she is more interested in flirting with the Beast Tyrant. She is happy to sell the potion at a discount.\n\nGain 1 collective \"Major Stamina Potion" (Item 034)\n\nPAY 25 COLLECTIVE GOLD: No amount of haggling can lower the Vermling\'s high price.\n\nGain 1 collective "Major Stamina Potion" (Item 034).\n\nOTHERWISE: The Vermling will not accept the tiny sum you offer. Maybe next time.',
       imageUrl: '/assets/cards/events/base/city/ce-41-b-a.png',
     },
     optionB: {
@@ -870,11 +870,11 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 42,
     text:
-      'Walking near the West Gate, you are approached by a scrawny kid in a guard uniform, which is clearly too big for his small frame.\n\n"Hey, you all are famous!" he says with a big smile. "I worked as a caravan guard before I got this job. Met with a big Inox guy who always talked about you. He made you seem like the nicest, most amazing people."\n\nHis smile and excitement doesn’t waver. "Say, my detail is doing some work to repair the wall damage from the last Vermling attack. Would you mind helping us! It\'ll be fun!"',
+      'Walking near the West Gate, you are approached by a scrawny kid in a guard uniform, which is clearly too big for his small frame.\n\n"Hey, you all are famous!" he says with a big smile. "I worked as a caravan guard before I got this job. Met with a big Inox guy who always talked about you. He made you seem like the nicest, most amazing people."\n\nHis smile and excitement doesn\'t waver. "Say, my detail is doing some work to repair the wall damage from the last Vermling attack. Would you mind helping us! It\'ll be fun!"',
     optionA: {
       choice: 'Agree to help the presumptuous kid.',
       outcome:
-        "It's hard work, but the kid's enthusiasm is infectious. He wants to know all about your exploits and adventures, and he and his detail prove to be a great audience. By the end of the day, it hardly feels like you’ve worked at all.\n\nGain 1 prosperity.\n\nGain 1 reputation.",
+        "It's hard work, but the kid's enthusiasm is infectious. He wants to know all about your exploits and adventures, and he and his detail prove to be a great audience. By the end of the day, it hardly feels like you\'ve worked at all.\n\nGain 1 prosperity.\n\nGain 1 reputation.",
       imageUrl: '/assets/cards/events/base/city/ce-42-b-a.png',
     },
     optionB: {
@@ -891,7 +891,7 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 43,
     text:
-      'You return to your rooms for the evening to find a small note resting on the ground in front of your door.\n\nIt is from the Tinkerer, explaining that he has been pursuing further studies in flammable liquid delivery methods. He asks for your help in delivering to him a small robotic contraption that he absentmindedlv left behind in a secret stash under the floorboards of his old room.\n\nHe details the device’s location and gives an address to deliver it to some small village far to the northwest.',
+      'You return to your rooms for the evening to find a small note resting on the ground in front of your door.\n\nIt is from the Tinkerer, explaining that he has been pursuing further studies in flammable liquid delivery methods. He asks for your help in delivering to him a small robotic contraption that he absentmindedlv left behind in a secret stash under the floorboards of his old room.\n\nHe details the device\'s location and gives an address to deliver it to some small village far to the northwest.',
     optionA: {
       choice: 'Oblige the Tinkerer and send along the contraption.',
       outcome:
@@ -975,17 +975,17 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 47,
     text:
-      'Walking near Gloomhaven Square, you see a peculiar scene. A group of guards is dragging along a Vermling in tattered robes toward the Ghost Fortress. Getting a little closer, you recognise the Mindthief.\n\n"Hssss," she spits. "Why do you do this? I came to you! I tell you that this town is being poisoned, and you respond by imprisoning me?"\n\n"Well see what the Captain of the Guard has to say about this," one of her captors says. “Keep moving!"',
+      'Walking near Gloomhaven Square, you see a peculiar scene. A group of guards is dragging along a Vermling in tattered robes toward the Ghost Fortress. Getting a little closer, you recognise the Mindthief.\n\n"Hssss," she spits. "Why do you do this? I came to you! I tell you that this town is being poisoned, and you respond by imprisoning me?"\n\n"Well see what the Captain of the Guard has to say about this," one of her captors says. "Keep moving!"',
     optionA: {
       choice: 'Intervene with the guards and find out what is going on.',
       outcome:
-        "The guards look incredibly perturbed when you step in front of them and ask that they leave the Mindthief to you. After some effort, they begrudgingly hand her over. The Mindthief thanks you, explaining that her colony in the sewers is being poisoned, and the poison is quickly migrating to the city's water supply. She says she’s tracked the source to a small cove along the Hook Coast.\n\nLose 1 reputation.\n\nUnlock \"Corrupted Cove\" 87 (I-9).\n\nParty Achievement: \"The Poison's Source.\"",
+        "The guards look incredibly perturbed when you step in front of them and ask that they leave the Mindthief to you. After some effort, they begrudgingly hand her over. The Mindthief thanks you, explaining that her colony in the sewers is being poisoned, and the poison is quickly migrating to the city's water supply. She says she's tracked the source to a small cove along the Hook Coast.\n\nLose 1 reputation.\n\nUnlock \"Corrupted Cove\" 87 (I-9).\n\nParty Achievement: \"The Poison's Source.\"",
       imageUrl: '/assets/cards/events/base/city/ce-47-b-a.png',
     },
     optionB: {
       choice: 'Let the guards continue their business and just continue with yours.',
       outcome:
-        "The Mindthief flicks her tail and throws insults around, but it doesn't seem to have any positive effect. She is led away and out of view. You get about your business, hoping that bit about the town being poisoned wasn’t too serious.\n\nAdd City Event 63 to the deck.",
+        "The Mindthief flicks her tail and throws insults around, but it doesn't seem to have any positive effect. She is led away and out of view. You get about your business, hoping that bit about the town being poisoned wasn't too serious.\n\nAdd City Event 63 to the deck.",
       imageUrl: '/assets/cards/events/base/city/ce-47-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-47-f.png',
@@ -1088,7 +1088,7 @@ export const events: EventEntity[] = [
       imageUrl: '/assets/cards/events/base/city/ce-52-b-a.png',
     },
     optionB: {
-      choice: 'Threaten the Plagueherald with retribution if it doesn’t stop attacking residents.',
+      choice: 'Threaten the Plagueherald with retribution if it doesn\'t stop attacking residents.',
       outcome:
         'The Plagueherald recoils at your threat, genuinely concerned that you would attack it.\n\n"But, the cleansing...the city isn\'t ready."\n\nYou shake your head, and the Harrower chitters in disappointment.\n\n"Very well, but you will be responsible when the Harbinger comes." It turns and floats off into the darkness.\n\nGain 1 prosperity.',
       imageUrl: '/assets/cards/events/base/city/ce-52-b-b.png',
@@ -1206,7 +1206,7 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 58,
     text:
-      '"There were fifty of them, I swear. Tearing my mates apart!"\n\nYou look over to the bar where a group of drunkards are all laughing at a disheveled man in the middle of a story.\n\n"And commanding them all riding atop a giant armored bear, there was a Vermling with a staff that shot lightning!"\n\nAt this the crowd erupts into more laughter, drowning out the rest of the man\'s story.\n\n"This man\'s had too much to drink, I\'d say," ridicules one of the crowd. "Vermlings riding bears! I thought I’d heard of everything!"',
+      '"There were fifty of them, I swear. Tearing my mates apart!"\n\nYou look over to the bar where a group of drunkards are all laughing at a disheveled man in the middle of a story.\n\n"And commanding them all riding atop a giant armored bear, there was a Vermling with a staff that shot lightning!"\n\nAt this the crowd erupts into more laughter, drowning out the rest of the man\'s story.\n\n"This man\'s had too much to drink, I\'d say," ridicules one of the crowd. "Vermlings riding bears! I thought I\'d heard of everything!"',
     optionA: {
       choice: 'Join the crowd in laughing at the man.',
       outcome:
@@ -1300,7 +1300,7 @@ export const events: EventEntity[] = [
     optionB: {
       choice: 'Overpower the Scoundrel and deliver her to the city guards.',
       outcome:
-        "A look of horrid surprise flashes in the Scoundrel's eyes as you leap forward and throw her to the ground. She doesn’t even speak as you bind her arms and take her to the city guard. They thank you for your service, but their words aren’t much counter to the cold angry stare of the Scoundrel as she\'s taken away.\n\nGain 3 reputation.",
+        "A look of horrid surprise flashes in the Scoundrel's eyes as you leap forward and throw her to the ground. She doesn't even speak as you bind her arms and take her to the city guard. They thank you for your service, but their words aren't much counter to the cold angry stare of the Scoundrel as she\'s taken away.\n\nGain 3 reputation.",
       imageUrl: '/assets/cards/events/base/city/ce-62-b-b.png',
     },
     imageUrl: '/assets/cards/events/base/city/ce-62-f.png',
@@ -1589,7 +1589,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Accept the drink.',
       outcome:
-        'REPUTATION > 14: "Excellent! Someone has been attacking my ships at sea and I need to get to the bottom of it. Come, I’ll tell you the details."\n\nUnlock "Merchant Ship" 74 (I-14).\n\nParty Achievement: "High Sea Escort."\n\nOTHERWISE: "Oh. whoops." Gavin stammers. "From far away, you looked like someone else. Just ignore what I said.\n\nNo effect.',
+        'REPUTATION > 14: "Excellent! Someone has been attacking my ships at sea and I need to get to the bottom of it. Come, I\'ll tell you the details."\n\nUnlock "Merchant Ship" 74 (I-14).\n\nParty Achievement: "High Sea Escort."\n\nOTHERWISE: "Oh. whoops." Gavin stammers. "From far away, you looked like someone else. Just ignore what I said.\n\nNo effect.',
       imageUrl: '/assets/cards/events/base/city/ce-76-b-a.png',
     },
     optionB: {
@@ -2065,7 +2065,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Attempt to come to a peaceful resolution.',
       outcome:
-        'REPUTATION < -4: You begin to agree with the Inox that Gloomhaven is a blight on the land in need of cleansing, and the Inox seems to believe you. "Go in peace, then," the leader says. “And stay off my land."\n\nNo effect.\n\nOTHERWISE: You try to explain that you mean the Inox no ill will, but the leader eyes you skeptically. "Foul creature. I curse you and your kind! Run — get off my land and never come back!"\n\nAll start scenario with {Curse}.',
+        'REPUTATION < -4: You begin to agree with the Inox that Gloomhaven is a blight on the land in need of cleansing, and the Inox seems to believe you. "Go in peace, then," the leader says. "And stay off my land."\n\nNo effect.\n\nOTHERWISE: You try to explain that you mean the Inox no ill will, but the leader eyes you skeptically. "Foul creature. I curse you and your kind! Run — get off my land and never come back!"\n\nAll start scenario with {Curse}.',
       imageUrl: '/assets/cards/events/base/road/re-18-b-a.png',
     },
     optionB: {
@@ -2611,7 +2611,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Renew your efforts to slay the demons.',
       outcome:
-        'With the help of the mysterious firecaster, the battle turns and the demons are slain without much pain. Out of the darkness steps the familiar face of a female Orchid.\n\n"Sorry about that. I think they were looking for this." The Spell weaver holds up a black censer. "It\'s a good thing I ran into you, though. I could use your help."\n\nShe draws out a crude map. "Meet me here as soon as you can, and I’ll explain more."\n\nUnlock "Demonic Rift" 90 (J-7).',
+        'With the help of the mysterious firecaster, the battle turns and the demons are slain without much pain. Out of the darkness steps the familiar face of a female Orchid.\n\n"Sorry about that. I think they were looking for this." The Spell weaver holds up a black censer. "It\'s a good thing I ran into you, though. I could use your help."\n\nShe draws out a crude map. "Meet me here as soon as you can, and I\'ll explain more."\n\nUnlock "Demonic Rift" 90 (J-7).',
       imageUrl: '/assets/cards/events/base/road/re-44-b-a.png',
     },
     optionB: {
@@ -2628,7 +2628,7 @@ export const events: EventEntity[] = [
     type: EventType.Road,
     number: 45,
     text:
-      "Riding up on horses, a band of dirty, rough men quickly overtake and surround your group. They look hard and dangerous, and you immediately pull out your weapons as they approach.\n\nThen you hear a familiar laugh.\n\n\"Well, if it isn't my old crew.\" A woman in dark leather armor leaps off her horse to comes greet you. \"You know whatt boys? This lot gets a pass.\"\n\nShe winks at you and turns around. \"Plus, they’d probably kill you all if things turned ugly.\"\n\nJumping back onto her horse, the Scoundrel looks back at you. \"Well, it was nice seeing you. Just remember — you never saw me.\"",
+      "Riding up on horses, a band of dirty, rough men quickly overtake and surround your group. They look hard and dangerous, and you immediately pull out your weapons as they approach.\n\nThen you hear a familiar laugh.\n\n\"Well, if it isn't my old crew.\" A woman in dark leather armor leaps off her horse to comes greet you. \"You know whatt boys? This lot gets a pass.\"\n\nShe winks at you and turns around. \"Plus, they'd probably kill you all if things turned ugly.\"\n\nJumping back onto her horse, the Scoundrel looks back at you. \"Well, it was nice seeing you. Just remember — you never saw me.\"",
     optionA: {
       choice: 'Attack. Friend or not, those who prey on the weak should be brought to justice.',
       outcome:
@@ -2716,7 +2716,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Claim allegiance to the military.',
       outcome:
-        'The armored men seem satisfied with your response and take their hands off their weapons.\n\n"Good to find some fellow patriots,” the one in front says with a disturbing smile. "You know, we have a stronghold not far from here up in the mountains. Feel free to visit there if you ever get serious about your loyalties.\n\nUnlock "Vigil Keep" 80 (K-1).',
+        'The armored men seem satisfied with your response and take their hands off their weapons.\n\n"Good to find some fellow patriots," the one in front says with a disturbing smile. "You know, we have a stronghold not far from here up in the mountains. Feel free to visit there if you ever get serious about your loyalties.\n\nUnlock "Vigil Keep" 80 (K-1).',
       imageUrl: '/assets/cards/events/base/road/re-49-b-a.png',
     },
     optionB: {
@@ -2758,7 +2758,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Investigate further.',
       outcome:
-        "You get closer to the pike. The skull looks pretty fresh. There are still bits of decayed flesh attached to the bone, and flies buzz around it. You can see there is a small paper card stuck in its mouth so you carefully reach in and pull it out. The card is black and depicts a skull with blades running through it. Come to think of it you remember rumors of an assassins' guild that has been known to use the same imagery You get out of the area as quickly as you can.\n\nGain 1 collective “Black Card” (Item 129).",
+        "You get closer to the pike. The skull looks pretty fresh. There are still bits of decayed flesh attached to the bone, and flies buzz around it. You can see there is a small paper card stuck in its mouth so you carefully reach in and pull it out. The card is black and depicts a skull with blades running through it. Come to think of it you remember rumors of an assassins' guild that has been known to use the same imagery You get out of the area as quickly as you can.\n\nGain 1 collective \"Black Card\" (Item 129).",
       imageUrl: '/assets/cards/events/base/road/re-51-b-a.png',
     },
     optionB: {
