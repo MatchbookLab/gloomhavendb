@@ -138,7 +138,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Help the captain load his ship.',
       outcome:
-        'What was advertised as a few minutes turns out to be an hour or two as you lug large crates full of some foul-smelling liquid from a nearby warehouse into the hold of the ship, At least the captain is relieved that he\'ll be able to set sail on time, though. He gratefully pays you, but you can\'t help, but think that such menial labor might be beneath you.\n\nGain 5 gold each.\n\nReputation > 9: lose 1 reputation.\n\nReputation < -4: Gain 1 reputation.',
+        'What was advertised as a few minutes turns out to be an hour or two as you lug large crates full of some foul-smelling liquid from a nearby warehouse into the hold of the ship, At least the captain is relieved that he\'ll be able to set sail on time, though. He gratefully pays you, but you can\'t help, but think that such menial labor might be beneath you.\n\nGain 5 gold each.\n\nReputation > 9: Lose 1 reputation.\n\nReputation < -4: Gain 1 reputation.',
       imageUrl: '/assets/cards/events/base/city/ce-07-b-a.png',
     },
     optionB: {
