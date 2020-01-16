@@ -1336,7 +1336,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Stay and listen to what the Nightshroud has to say.',
       outcome:
-        'The Nightshroud kicks one of the corpses. " This is the Sin-Ra Syndicate, a group of assassins trying to gain a foothold in the region. I\'m trying to stop them, and somehow they found out you and I were friends. They decided to go after you as retribution. Lucky for you. I\'ve located their hideout, so were going to sneak in there and end this whole business once and for all.\n\nUnlock "Syndicate Hideout" 89 (C-17).\n\nParty Achievement: "Sin-Ra."',
+        'The Nightshroud kicks one of the corpses. "This is the Sin-Ra Syndicate, a group of assassins trying to gain a foothold in the region. I\'m trying to stop them, and somehow they found out you and I were friends. They decided to go after you as retribution. Lucky for you. I\'ve located their hideout, so were going to sneak in there and end this whole business once and for all."\n\nUnlock "Syndicate Hideout" 89 (C-17).\n\nParty Achievement: "Sin-Ra."',
       imageUrl: '/assets/cards/events/base/city/ce-64-b-a.png',
     },
     optionB: {
