@@ -1610,7 +1610,7 @@ export const events: EventEntity[] = [
     optionA: {
       choice: 'Do the job.',
       outcome:
-        'REPUTATION < -14 "That\'s the money-loving criminals I know and love! Come take a walk with me, and I\'ll explain how we can all get rich."\n\nUnlock "Overgrown Graveyard" 75 (G-12).\n\nParty Achievement: "Grave Job."\n\nOTHERWISE: "Oh, whoops," Nick stammers. "From the back you looked like...uh, never mind. Forget I said anything."\n\nNo effect.',
+        'REPUTATION < -14\n\n"That\'s the money-loving criminals I know and love! Come take a walk with me, and I\'ll explain how we can all get rich."\n\nUnlock "Overgrown Graveyard" 75 (G-12).\n\nParty Achievement: "Grave Job."\n\nOTHERWISE: "Oh, whoops," Nick stammers. "From the back you looked like...uh, never mind. Forget I said anything."\n\nNo effect.',
       imageUrl: '/assets/cards/events/base/city/ce-77-b-a.png',
     },
     optionB: {
