@@ -1690,7 +1690,7 @@ export const events: EventEntity[] = [
     type: EventType.City,
     number: 81,
     text:
-      '"Hey aren\'t you the mercenaries who stopped that weird tornado from destroying the city?"\n\nYou turn to see a dirty dock worker pointing at you with wonder in his eyes. What was that all about anyway?"\n\nMore people stop and stare at you. This has become and unfortunately common occurrence since the Gloom was destroyed. You have become something of a minor celebrity in Gloomhaven.',
+      '"Hey aren\'t you the mercenaries who stopped that weird tornado from destroying the city?"\n\nYou turn to see a dirty dock worker pointing at you with wonder in his eyes. "What was that all about anyway?"\n\nMore people stop and stare at you. This has become and unfortunately common occurrence since the Gloom was destroyed. You have become something of a minor celebrity in Gloomhaven.',
     optionA: {
       choice: 'Take the time to relate the story of what happened.',
       outcome:
