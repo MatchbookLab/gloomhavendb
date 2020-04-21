@@ -113,6 +113,10 @@ export class SecretShopComponent implements OnInit, AfterViewInit {
       63,
       74,
       76,
+      78,
+      82,
+      84,
+      85,
       89,
       93,
       97,
@@ -146,6 +150,8 @@ export class SecretShopComponent implements OnInit, AfterViewInit {
 
   ngAfterViewInit() {
     setTimeout(() => this.adjustHeaderHeight());
+    // temp hack
+    setTimeout(() => this.adjustHeaderHeight(), 1000);
   }
 
   @HostListener('window:resize')
