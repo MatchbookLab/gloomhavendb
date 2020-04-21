@@ -72,7 +72,7 @@ e2e:
     # run this on the runner host
     - eval $(dmport -i "$RUNNER_MACHINE_CONFIG")
     - echo "DOCKER_TAG -> $DOCKER_TAG"
-    - docker-compose -f docker-compose.yml -f docker-compose.test.yml run --rm e2e npm test -- --browser chrome
+    - docker-compose -f docker-compose.yml -f docker-compose.test.yml run --rm e2e npm test
   after_script:
     # run this on the runner host
     - eval $(dmport -i "$RUNNER_MACHINE_CONFIG")
