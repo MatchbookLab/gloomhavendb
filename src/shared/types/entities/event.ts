@@ -1,6 +1,6 @@
 import { EventType } from '../../constants/event-type';
 
-export interface Event {
+export interface EventCard {
   id?: number;
   number: number;
   type: EventType;

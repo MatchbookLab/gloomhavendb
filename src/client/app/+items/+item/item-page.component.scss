@@ -8,7 +8,7 @@
   text-align: right;
 }
 
-:host tc-popup-container ::ng-deep .popup-content {
+:host gdb-popup-container ::ng-deep .popup-content {
   max-width: 87%;
   overflow-x: scroll;
 }

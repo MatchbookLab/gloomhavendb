@@ -3,7 +3,10 @@ module.exports = {
     'ts-jest': {
       stringifyContentPathRegex: '\\.html$',
       tsConfig: '<rootDir>/tsconfig.spec.json',
-      astTransformers: [require.resolve('jest-preset-angular/InlineHtmlStripStylesTransformer')],
+      astTransformers: [
+        'jest-preset-angular/build/InlineFilesTransformer',
+        'jest-preset-angular/build/StripStylesTransformer'
+      ],
       diagnostics: true,
     },
   },
@@ -23,10 +26,9 @@ module.exports = {
   transformIgnorePatterns: [
     'node_modules/(?!@ngrx)',
   ],
-  testEnvironment: 'jest-environment-jsdom-thirteen',
   snapshotSerializers: [
-    require.resolve('jest-preset-angular/AngularSnapshotSerializer'),
-    require.resolve('jest-preset-angular/HTMLCommentSerializer'),
+    'jest-preset-angular/build/AngularSnapshotSerializer.js',
+    'jest-preset-angular/build/HTMLCommentSerializer.js',
   ],
   setupFilesAfterEnv: ['<rootDir>/setup-jest.ts'],
   rootDir: './',

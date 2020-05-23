@@ -2,16 +2,16 @@ import { Component } from '@angular/core';
 import { PopupRef } from '../popup-ref.class';
 
 @Component({
-  selector: 'tc-basic-popup',
+  selector: 'gdb-basic-popup',
   template: `
-    <tc-popup-container (backgroundClick)="close()" [isModal]="isModal">
+    <gdb-popup-container (backgroundClick)="close()" [isModal]="isModal">
       <div class="content">
         Popup Works!
         <div>
           <button type="button" class="btn" (click)="toggle()">Toggle. Is Modal: {{ isModal }}</button>
         </div>
       </div>
-    </tc-popup-container>
+    </gdb-popup-container>
   `,
   styles: [
     `

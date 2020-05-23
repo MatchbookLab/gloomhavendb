@@ -39,15 +39,17 @@ const URL_BASE = 'https://old.reddit.com/r/Gloomhaven/wiki/items/item_';
   };
 
   let items: ItemEntity[] = await Promise.all(
-    _.range(1, 151).map(async itemNo => {
+    _.range(1, 151).map(async (itemNo) => {
       const result: ItemLike & AltItemLike = await x(
         `${URL_BASE}${_.padStart(itemNo + '', 3, '0')}`,
         '.wiki',
+        // @ts-ignore
         matchers,
       );
 
       const item: ItemEntity = {
         number: itemNo,
+        // @ts-ignore
         cardNo: null,
         name: _.last(result.name.split(' — ')) || null,
         slot: determineSlot(result) || null,
@@ -68,10 +70,10 @@ const URL_BASE = 'https://old.reddit.com/r/Gloomhaven/wiki/items/item_';
     }),
   );
 
-  items = _.sortBy(items, item => item.number);
+  items = _.sortBy(items, (item) => item.number);
 
   await fs.promises.writeFile('./dump/items.json', JSON.stringify(items, null, 2), { encoding: 'utf-8' });
-})().catch(err => console.error(err));
+})().catch((err) => console.error(err));
 
 function determineLimit(item: ItemLike & AltItemLike): Limit {
   if (_.head((item.limit || item.limitAlt || '').split(' ')).toLowerCase() === 'spent') {

@@ -27,12 +27,15 @@ const controllers = {
 
 let sdkMethods = '';
 _.forEach(controllers, (controllerPath, className) => {
-  const sourceFile: SourceFile = project.addExistingSourceFile(controllerPath);
+  // const sourceFile: SourceFile = project.addExistingSourceFile(controllerPath);
+  const sourceFile: SourceFile = project.addSourceFileAtPath(controllerPath);
 
   const controller: ClassDeclaration = sourceFile.getClassOrThrow(className);
 
   const controllerBase: string = _.trim(
-    (<string[]>_.find(controller.getStructure().decorators, decorator => decorator.name === 'Controller').arguments)[0],
+    (<string[]>(
+      _.find(controller.getStructure().decorators, (decorator) => decorator.name === 'Controller').arguments
+    ))[0],
     `'`,
   );
 
@@ -43,7 +46,7 @@ _.forEach(controllers, (controllerPath, className) => {
       return;
     }
 
-    const routingDecorator = _.find(method.decorators, decorator =>
+    const routingDecorator = _.find(method.decorators, (decorator) =>
       _.includes(['Post', 'Put', 'Get', 'Delete'], decorator.name),
     );
     if (!routingDecorator) {
@@ -62,7 +65,7 @@ _.forEach(controllers, (controllerPath, className) => {
         return;
       }
 
-      (param.decorators || []).forEach(decorator => {
+      (param.decorators || []).forEach((decorator) => {
         if (decorator.name === 'Param') {
           paramMap[param.name] = _.trim((<string[]>decorator.arguments)[0], `'`);
         }
@@ -91,7 +94,7 @@ _.forEach(controllers, (controllerPath, className) => {
     const paramParts = _.compact(
       _.trim((<string[]>routingDecorator.arguments)[0], `'`)
         .split('/')
-        .map(p => {
+        .map((p) => {
           if (p[0] === ':') {
             return `\${${_.trim(p, `:`)}}`;
           }
@@ -145,9 +148,9 @@ _.forEach(controllers, (controllerPath, className) => {
   sdkMethods += `  ${slashes}\n  ${section}\n  ${slashes}\n${controllerMethods}\n\n`;
 });
 
-const entityFiles = fs.readdirSync(path.join(__dirname, '../shared/entities/')).filter(name => !name.match(/future/));
+const entityFiles = fs.readdirSync(path.join(__dirname, '../shared/entities/')).filter((name) => !name.match(/future/));
 const entityMap = _.fromPairs(
-  _.map(entityFiles, p => {
+  _.map(entityFiles, (p) => {
     const base = p.replace(/\.ts$/, '');
     let className = _.camelCase(base);
     _.capitalize(_.camelCase(base));
@@ -168,11 +171,11 @@ const baseMethods = `
     if (typeof data === 'string') {
       return \`\${queryParamName}=\${data}\`;
     }
-    
+
     if (Array.isArray(data)) {
       return data.map(d => \`\${queryParamName}[]=\${d}\`).join('&');
     }
-    
+
     // TODO better error message?
     throw new Error('Cannot turn data into query string');
   }

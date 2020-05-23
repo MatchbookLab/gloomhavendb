@@ -2,7 +2,7 @@ import { RandomScenarioEntity } from '../server/api/random-scenario/random-scena
 
 export const randomScenarios: RandomScenarioEntity[] = [
   {
-    id: 486,
+    id: '486',
     scenarioId: 67,
     imageUrl: null,
   },

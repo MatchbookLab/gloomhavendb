@@ -6,6 +6,7 @@ import * as _ from 'lodash';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 
+// TODO may not need this due to updates in Nest
 @Injectable()
 export class TransformInterceptor implements NestInterceptor {
   intercept(context: ExecutionContext, next: CallHandler<any>): Observable<any> {
@@ -16,13 +17,13 @@ export class TransformInterceptor implements NestInterceptor {
     if (request.query) {
       _.forEach(request.query, (val: any, key: string) => {
         if (val === 'true') {
-          request.query[key] = true;
+          request.query[key] = <any>true;
         } else if (val === 'false') {
-          request.query[key] = false;
+          request.query[key] = <any>false;
         }
       });
     }
 
-    return next.handle().pipe(map(data => classToPlain(data)));
+    return next.handle().pipe(map((data) => classToPlain(data)));
   }
 }

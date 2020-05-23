@@ -4,7 +4,7 @@ import { GloomhavenIcon } from '../../icon/icon.enum';
 import { PopupRef } from '../popup-ref.class';
 
 @Component({
-  selector: 'tc-icon-list-popup',
+  selector: 'gdb-icon-list-popup',
   templateUrl: './icon-list-popup.component.html',
   styleUrls: ['./icon-list-popup.component.scss'],
 })

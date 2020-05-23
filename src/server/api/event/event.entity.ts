@@ -1,12 +1,12 @@
-import { ApiModelProperty } from '@nestjs/swagger';
+import { ApiProperty } from '@nestjs/swagger';
 import { IsBoolean, IsEnum, IsNotEmpty, IsString, IsUrl, ValidateNested } from 'class-validator';
 import { Column, Entity, PrimaryGeneratedColumn, Unique } from 'typeorm';
 import { EventType } from '../../../shared/constants/event-type';
 import { props } from '../../../shared/util/props';
-import { Event, EventChoice } from '../../../shared/types/entities/event';
+import { EventCard, EventChoice } from '../../../shared/types/entities/event';
 
 export class EventChoiceEntity implements EventChoice {
-  @ApiModelProperty({
+  @ApiProperty({
     description: 'The matching choice text at the bottom of the front of the card.',
     example: 'You decide to join the fight.',
     required: true,
@@ -15,7 +15,7 @@ export class EventChoiceEntity implements EventChoice {
   @IsString()
   choice: string;
 
-  @ApiModelProperty({
+  @ApiProperty({
     description: 'The text of the outcome.',
     example: 'The fight did not go well... Take 2 damage.',
     required: true,
@@ -24,7 +24,7 @@ export class EventChoiceEntity implements EventChoice {
   @IsString()
   outcome: string;
 
-  @ApiModelProperty({
+  @ApiProperty({
     description: 'Image URL of half of the back of the card.',
     example: 'http://example.com/images/event-road-01-a.png',
     required: true,
@@ -37,9 +37,9 @@ export class EventChoiceEntity implements EventChoice {
 
 @Entity()
 @Unique(props<EventEntity>('number', 'type'))
-export class EventEntity implements Event {
+export class EventEntity implements EventCard {
   @PrimaryGeneratedColumn()
-  @ApiModelProperty({
+  @ApiProperty({
     description: 'An unique ID. Not directly used externally, use "number" instead.',
     example: 1,
     required: false,
@@ -49,13 +49,13 @@ export class EventEntity implements Event {
 
   // this is the item number and is *not* generated
   @Column()
-  @ApiModelProperty({ description: 'The event number.', example: 1, required: true })
+  @ApiProperty({ description: 'The event number.', example: 1, required: true })
   @IsNotEmpty() // @IsInt()
   // @Min(1)
   number: number;
 
   @Column()
-  @ApiModelProperty({
+  @ApiProperty({
     description: 'The event number. Overridden by endpoint you use.',
     example: EventType.Road,
     required: true,
@@ -66,7 +66,7 @@ export class EventEntity implements Event {
   type: EventType;
 
   @Column()
-  @ApiModelProperty({
+  @ApiProperty({
     description: 'The flavor text that sets up the event.',
     example: 'While enjoying drinks at the Sleeping Lion...',
     required: true,
@@ -76,19 +76,19 @@ export class EventEntity implements Event {
   text: string;
 
   @Column('json')
-  @ApiModelProperty({ description: 'Option A.', type: EventChoiceEntity })
+  @ApiProperty({ description: 'Option A.', type: EventChoiceEntity })
   @IsNotEmpty()
   @ValidateNested()
   optionA: EventChoiceEntity;
 
   @Column('json')
-  @ApiModelProperty({ description: 'Option B.', type: EventChoiceEntity })
+  @ApiProperty({ description: 'Option B.', type: EventChoiceEntity })
   @IsNotEmpty()
   @ValidateNested()
   optionB: EventChoiceEntity;
 
   @Column()
-  @ApiModelProperty({
+  @ApiProperty({
     description: 'A URL to a high quality scan of the front of the Event',
     required: true,
     example: 'http://example.com/images/event-road-01.png',
@@ -99,7 +99,7 @@ export class EventEntity implements Event {
   imageUrl: string; // image of the entire front
 
   @Column({ default: false })
-  @ApiModelProperty({
+  @ApiProperty({
     description: 'Whether or not the data in this event has been manually reviewed and verified.',
     default: false,
     example: false,

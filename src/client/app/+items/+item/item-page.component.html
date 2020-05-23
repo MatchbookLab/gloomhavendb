@@ -4,19 +4,19 @@
   <div class="nav">
     <div class="first-cell">
       <a *ngIf="item.number > 1" [routerLink]="['/items', item.number - 1]">
-        <fa-icon [icon]="'arrow-circle-left'"></fa-icon>
+        <fa-icon [icon]="prevIcon"></fa-icon>
         View Previous Item
       </a>
     </div>
     <div class="center-cell">
       <a [routerLink]="['/items']">
-        <fa-icon [icon]="'arrow-circle-up'"></fa-icon>
+        <fa-icon [icon]="upIcon"></fa-icon>
         View All Items
       </a>
     </div>
     <div class="last-cell">
       <a *ngIf="item.number < 150" [routerLink]="['/items', item.number + 1]">
-        <fa-icon [icon]="'arrow-circle-right'"></fa-icon>
+        <fa-icon [icon]="nextIcon"></fa-icon>
         View Next Item
       </a>
     </div>
@@ -33,12 +33,12 @@
 
     <p [style.visibility]="editable ? 'hidden' : 'visible'">
       <a (click)="editable = true">
-        <fa-icon [icon]="'wrench'"></fa-icon>
+        <fa-icon [icon]="fixIcon"></fa-icon>
         Suggest Fix</a
       >
       |
       <a (click)="reset()">
-        <fa-icon [icon]="'power-off'"></fa-icon>
+        <fa-icon [icon]="offIcon"></fa-icon>
         Reset Changes</a
       >
     </p>
@@ -57,18 +57,18 @@
           <td>{{ fix.updated | date: 'medium' }}</td>
           <td>
             <a (click)="loadSuggestedFix(fix.data)" class="pointer">
-              <fa-icon [icon]="'truck-loading'"></fa-icon>
+              <fa-icon [icon]="loadIcon"></fa-icon>
               Load Their Edits
             </a>
             |
             <a (click)="openPopup(fix.data)" class="pointer">
-              <fa-icon [icon]="'code-branch'"></fa-icon>
+              <fa-icon [icon]="diffIcon"></fa-icon>
               View Diff from Original
             </a>
             <ng-container *ngIf="isAdmin">
               |
               <a (click)="commitFix(fix)" class="pointer">
-                <fa-icon [icon]="'save'"></fa-icon>
+                <fa-icon [icon]="saveIcon"></fa-icon>
                 Commit Fix
               </a>
             </ng-container>
@@ -81,8 +81,8 @@
   <div class="content">
     <gdb-item (submit)="submitFix($event)" (cancel)="editable = false" [item]="item" [editable]="editable"></gdb-item>
 
-    <tc-popup-container *ngIf="showDiffPopup" (backgroundClick)="closePopup()" [isModal]="false">
+    <gdb-popup-container *ngIf="showDiffPopup" (backgroundClick)="closePopup()" [isModal]="false">
       <gdb-diff [objectA]="dbItem" [objectB]="diffToView"></gdb-diff>
-    </tc-popup-container>
+    </gdb-popup-container>
   </div>
 </div>

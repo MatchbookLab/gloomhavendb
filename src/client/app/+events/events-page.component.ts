@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
-import { Event } from '../../../shared/types/entities/event';
+import { faArrowCircleLeft } from '@fortawesome/free-solid-svg-icons';
+import { EventCard } from '../../../shared/types/entities/event';
 import { ResolvedDataService } from '../services/resolver/resolve.service';
 
 export interface EventsResolveData {
-  events: Event[];
+  events: EventCard[];
 }
 
 @Component({
@@ -13,7 +14,9 @@ export interface EventsResolveData {
   providers: [ResolvedDataService],
 })
 export class EventsPageComponent {
-  events: Event[];
+  backIcon = faArrowCircleLeft;
+
+  events: EventCard[];
 
   constructor(private resolvedDataService: ResolvedDataService<EventsResolveData>) {
     this.events = this.resolvedDataService.get('events');

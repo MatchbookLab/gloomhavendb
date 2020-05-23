@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { faArrowCircleLeft } from '@fortawesome/free-solid-svg-icons';
 import { Item } from '../../../shared/types/entities/item';
 import { ResolvedDataService } from '../services/resolver/resolve.service';
 
@@ -13,6 +14,8 @@ export interface ItemsResolveData {
   providers: [ResolvedDataService],
 })
 export class ItemsPageComponent {
+  backIcon = faArrowCircleLeft;
+
   showNames = false;
 
   items: Item[];

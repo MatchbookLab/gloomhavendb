@@ -1,6 +1,6 @@
 import { BattleGoal } from '../../../../shared/types/entities/battle-goal';
 import { Class } from '../../../../shared/types/entities/class';
-import { Event } from '../../../../shared/types/entities/event';
+import { EventCard } from '../../../../shared/types/entities/event';
 import { Item } from '../../../../shared/types/entities/item';
 import { MapLocation } from '../../../../shared/types/entities/map-location';
 import { PersonalGoals } from '../../../../shared/types/entities/personal-goals';
@@ -32,7 +32,9 @@ export class ApiService {
   //////////
 
   async getItems(numbers?: NumberList): Promise<Item[]> {
-    return this.httpClient.get<Item[]>(`/api/items`, { params: this.parametize({ numbers }) }).toPromise();
+    return this.httpClient
+      .get<Item[]>(`/api/items`, { params: this.parametize({ numbers }) })
+      .toPromise();
   }
 
   async findItem(number: string | number): Promise<Item> {
@@ -55,44 +57,44 @@ export class ApiService {
   // Event //
   ///////////
 
-  async getRoadEvents(): Promise<Event[]> {
-    return this.httpClient.get<Event[]>(`/api/events/road`).toPromise();
+  async getRoadEvents(): Promise<EventCard[]> {
+    return this.httpClient.get<EventCard[]>(`/api/events/road`).toPromise();
   }
 
-  async findRoadEvent(cardNo: string | number): Promise<Event> {
-    return this.httpClient.get<Event>(`/api/events/road/${cardNo}`).toPromise();
+  async findRoadEvent(cardNo: string | number): Promise<EventCard> {
+    return this.httpClient.get<EventCard>(`/api/events/road/${cardNo}`).toPromise();
   }
 
-  async createRoadEvent(event: Event): Promise<Event> {
-    return this.httpClient.post<Event>(`/api/events/road`, event).toPromise();
+  async createRoadEvent(event: EventCard): Promise<EventCard> {
+    return this.httpClient.post<EventCard>(`/api/events/road`, event).toPromise();
   }
 
-  async updateRoadEvent(cardNo: string | number, event: Event): Promise<Event> {
-    return this.httpClient.put<Event>(`/api/events/road/${cardNo}`, event).toPromise();
+  async updateRoadEvent(cardNo: string | number, event: EventCard): Promise<EventCard> {
+    return this.httpClient.put<EventCard>(`/api/events/road/${cardNo}`, event).toPromise();
   }
 
-  async deleteRoadEvent(cardNo: string | number): Promise<Event> {
-    return this.httpClient.delete<Event>(`/api/events/road/${cardNo}`).toPromise();
+  async deleteRoadEvent(cardNo: string | number): Promise<EventCard> {
+    return this.httpClient.delete<EventCard>(`/api/events/road/${cardNo}`).toPromise();
   }
 
-  async getCityEvents(): Promise<(Event)[]> {
-    return this.httpClient.get<(Event)[]>(`/api/events/city`).toPromise();
+  async getCityEvents(): Promise<EventCard[]> {
+    return this.httpClient.get<EventCard[]>(`/api/events/city`).toPromise();
   }
 
-  async findCityEvent(cardNo: string | number): Promise<Event> {
-    return this.httpClient.get<Event>(`/api/events/city/${cardNo}`).toPromise();
+  async findCityEvent(cardNo: string | number): Promise<EventCard> {
+    return this.httpClient.get<EventCard>(`/api/events/city/${cardNo}`).toPromise();
   }
 
-  async createCityEvent(event: Event): Promise<Event> {
-    return this.httpClient.post<Event>(`/api/events/city`, event).toPromise();
+  async createCityEvent(event: EventCard): Promise<EventCard> {
+    return this.httpClient.post<EventCard>(`/api/events/city`, event).toPromise();
   }
 
-  async updateCityEvent(cardNo: string | number, event: Event): Promise<Event> {
-    return this.httpClient.put<Event>(`/api/events/city/${cardNo}`, event).toPromise();
+  async updateCityEvent(cardNo: string | number, event: EventCard): Promise<EventCard> {
+    return this.httpClient.put<EventCard>(`/api/events/city/${cardNo}`, event).toPromise();
   }
 
-  async deleteCityEvent(cardNo: string | number): Promise<Event> {
-    return this.httpClient.delete<Event>(`/api/events/city/${cardNo}`).toPromise();
+  async deleteCityEvent(cardNo: string | number): Promise<EventCard> {
+    return this.httpClient.delete<EventCard>(`/api/events/city/${cardNo}`).toPromise();
   }
 
   ///////////////////
@@ -168,8 +170,8 @@ export class ApiService {
   private parametize(paramMap: {
     [paramName: string]: boolean | number | NumberList;
   }): { [paramName: string]: string | string[] } {
-    const stringifiedMap = mapValues(paramMap, v => (Array.isArray(v) ? v.map(av => av + '') : v + ''));
+    const stringifiedMap = mapValues(paramMap, (v) => (Array.isArray(v) ? v.map((av) => av + '') : v + ''));
     // remove undesirable values
-    return omitBy(stringifiedMap, v => isNil(v) || v === 'undefined' || v === 'null' || v === '');
+    return omitBy(stringifiedMap, (v) => isNil(v) || v === 'undefined' || v === 'null' || v === '');
   }
 }

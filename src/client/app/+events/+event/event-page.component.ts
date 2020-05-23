@@ -1,11 +1,21 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
+import {
+  faArrowCircleLeft,
+  faArrowCircleRight,
+  faArrowCircleUp,
+  faCodeBranch,
+  faPowerOff,
+  faSave,
+  faTruckLoading,
+  faWrench,
+} from '@fortawesome/free-solid-svg-icons';
 import { cloneDeep, isEqual } from 'lodash';
 import { Subscription } from 'rxjs';
 import { filter } from 'rxjs/operators';
 import { EventType } from '../../../../shared/constants/event-type';
 import { SuggestedFixType } from '../../../../shared/constants/suggested-fix-type';
-import { Event } from '../../../../shared/types/entities/event';
+import { EventCard } from '../../../../shared/types/entities/event';
 import { SuggestedFix } from '../../../../shared/types/entities/suggested-fix';
 import { ApiService } from '../../services/api/api.service';
 import { AuthService } from '../../services/auth/auth.service';
@@ -15,8 +25,8 @@ import { PopupService } from '../../shared/popup/popup.service';
 import { cleanIconCode } from '../../util/icon-codes';
 
 export interface EventResolveData {
-  event: Event;
-  suggestedFixes: SuggestedFix<Event>[];
+  event: EventCard;
+  suggestedFixes: SuggestedFix<EventCard>[];
 }
 
 @Component({
@@ -26,14 +36,23 @@ export interface EventResolveData {
   providers: [ResolvedDataService],
 })
 export class EventPageComponent implements OnInit, OnDestroy {
-  event: Event;
-  suggestedFixes: SuggestedFix<Event>[];
+  prevIcon = faArrowCircleLeft;
+  upIcon = faArrowCircleUp;
+  nextIcon = faArrowCircleRight;
+  fixIcon = faWrench;
+  offIcon = faPowerOff;
+  loadIcon = faTruckLoading;
+  diffIcon = faCodeBranch;
+  saveIcon = faSave;
+
+  event: EventCard;
+  suggestedFixes: SuggestedFix<EventCard>[];
 
   header: string;
   showDiffPopup: boolean;
-  diffToView: Event;
+  diffToView: EventCard;
 
-  dbEvent: Event;
+  dbEvent: EventCard;
 
   editable = false;
 
@@ -53,7 +72,7 @@ export class EventPageComponent implements OnInit, OnDestroy {
 
   ngOnInit() {
     this.routerSub = this.router.events
-      .pipe(filter(event => event instanceof NavigationEnd))
+      .pipe(filter((event) => event instanceof NavigationEnd))
       .subscribe(() => this.setupEvent());
 
     this.setupEvent();
@@ -83,14 +102,14 @@ export class EventPageComponent implements OnInit, OnDestroy {
     });
   }
 
-  openPopup(event: Event) {
+  openPopup(event: EventCard) {
     this.diffToView = event;
     this.showDiffPopup = true;
   }
 
-  async commitFix(fix: SuggestedFix<Event>) {
+  async commitFix(fix: SuggestedFix<EventCard>) {
     await this.api.commitFix({ id: fix.id });
-    this.suggestedFixes = await this.api.getMatchingSuggestedFixes<Event>(this.fixType, this.event.number + '');
+    this.suggestedFixes = await this.api.getMatchingSuggestedFixes<EventCard>(this.fixType, this.event.number + '');
   }
 
   closePopup() {
@@ -98,23 +117,23 @@ export class EventPageComponent implements OnInit, OnDestroy {
     this.showDiffPopup = false;
   }
 
-  loadSuggestedFix(event: Event) {
+  loadSuggestedFix(event: EventCard) {
     this.event = event;
   }
 
-  async submitFix(suggestedFix: SuggestedFix<Event>) {
+  async submitFix(suggestedFix: SuggestedFix<EventCard>) {
     this.editable = false;
 
     // TODO message for submitting same event
     const anyTheSame =
-      isEqual(suggestedFix.data, this.dbEvent) || this.suggestedFixes.some(sf => isEqual(sf.data, suggestedFix.data));
+      isEqual(suggestedFix.data, this.dbEvent) || this.suggestedFixes.some((sf) => isEqual(sf.data, suggestedFix.data));
 
     if (anyTheSame) {
       return;
     }
 
-    await this.api.suggestFix<Event>(suggestedFix);
-    this.suggestedFixes = await this.api.getMatchingSuggestedFixes<Event>(this.fixType, this.event.number + '');
+    await this.api.suggestFix<EventCard>(suggestedFix);
+    this.suggestedFixes = await this.api.getMatchingSuggestedFixes<EventCard>(this.fixType, this.event.number + '');
   }
 
   reset() {

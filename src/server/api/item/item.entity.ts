@@ -1,4 +1,4 @@
-import { ApiModelProperty } from '@nestjs/swagger';
+import { ApiProperty } from '@nestjs/swagger';
 import { IsBoolean, IsEnum, IsNotEmpty, IsNumber, IsString } from 'class-validator';
 import { Column, Entity, PrimaryColumn } from 'typeorm';
 import { ItemSource } from '../../../shared/constants/item-source';
@@ -10,7 +10,7 @@ import { Item } from '../../../shared/types/entities/item';
 export class ItemEntity implements Item {
   // this is the item number and is *not* generated
   @PrimaryColumn()
-  @ApiModelProperty({
+  @ApiProperty({
     description: 'The item number.',
     example: 1,
     required: true,
@@ -20,7 +20,7 @@ export class ItemEntity implements Item {
   number: number;
 
   @Column()
-  @ApiModelProperty({
+  @ApiProperty({
     description: 'The name of the item.',
     example: 'Hide Armor',
     required: true,
@@ -30,7 +30,7 @@ export class ItemEntity implements Item {
   name: string;
 
   @Column('enum', { enum: Slot })
-  @ApiModelProperty({
+  @ApiProperty({
     description: 'The slot where the item is equipped.',
     example: Slot.Body,
     required: true,
@@ -41,7 +41,7 @@ export class ItemEntity implements Item {
   slot: Slot;
 
   @Column()
-  @ApiModelProperty({
+  @ApiProperty({
     description: 'The price of the item.',
     example: 10,
     required: true,
@@ -51,7 +51,7 @@ export class ItemEntity implements Item {
   price: number;
 
   @Column()
-  @ApiModelProperty({
+  @ApiProperty({
     description: 'A text describing what the item does. Accepts "{IconName} Syntax."',
     example: 'On the next two sources of damage to you from attacks, gain Shield {Shield} 1.',
     required: true,
@@ -61,7 +61,7 @@ export class ItemEntity implements Item {
   text: string;
 
   @Column({ nullable: true /* hopefully temp */ })
-  @ApiModelProperty({
+  @ApiProperty({
     description: 'The number of items that are available.',
     example: 2,
     required: true,
@@ -71,7 +71,7 @@ export class ItemEntity implements Item {
   count: number;
 
   @Column('enum', { enum: Limit, nullable: true /* hopefully temp */ })
-  @ApiModelProperty({
+  @ApiProperty({
     description: 'The limitations to how the item is spent/consumed.',
     example: Limit.Spent,
     required: true,
@@ -82,7 +82,7 @@ export class ItemEntity implements Item {
   limit: Limit;
 
   @Column({ nullable: true })
-  @ApiModelProperty({
+  @ApiProperty({
     description: 'The number of uses/charges the item has.',
     example: 2,
     required: false,
@@ -91,7 +91,7 @@ export class ItemEntity implements Item {
   uses: number | null;
 
   @Column({ nullable: true })
-  @ApiModelProperty({
+  @ApiProperty({
     description: 'The number of -1 cards that must be added to the attack deck to equip.',
     example: 2,
     required: false,
@@ -100,7 +100,7 @@ export class ItemEntity implements Item {
   negativeCardsCount: number | null;
 
   @Column('enum', { enum: ItemSource, nullable: true /* hopefully temp */ })
-  @ApiModelProperty({
+  @ApiProperty({
     description: 'The source (type) where the item comes can be found. Used in combination with the source ID.',
     example: ItemSource.Prosperity,
     required: true,
@@ -111,7 +111,7 @@ export class ItemEntity implements Item {
   sourceType: ItemSource;
 
   @Column({ nullable: true })
-  @ApiModelProperty({
+  @ApiProperty({
     description:
       'A number that corresponds with the source type to determine where the item can be found. ' +
       'e.g. 1 means Prosperity 1 if source type is Prosperity or Scenario 1 if type is Scenario Reward. ' +
@@ -123,7 +123,7 @@ export class ItemEntity implements Item {
   sourceId: number | null;
 
   @Column()
-  @ApiModelProperty({
+  @ApiProperty({
     description: 'URL to a an image of the item.',
     example: 'https://gloomhavendb.com/assets/cards/items/1-14/hide-armor.png',
     required: true,
@@ -132,7 +132,7 @@ export class ItemEntity implements Item {
   imageUrl: string;
 
   @Column({ default: false })
-  @ApiModelProperty({
+  @ApiProperty({
     description: 'Whether the info has been verified (temporary field).',
     example: true,
     default: false,

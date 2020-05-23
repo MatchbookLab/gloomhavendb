@@ -1,5 +1,6 @@
 import { animate, style, transition, trigger } from '@angular/animations';
 import { AfterViewInit, Component, ElementRef, HostBinding, HostListener, OnInit, ViewChild } from '@angular/core';
+import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import { filter, maxBy, minBy, sortBy } from 'lodash';
 import { GloomhavenDB } from '../../../../sdk/generated/gloomhavendb.sdk';
 import { Slot } from '../../../../shared/constants/slot';
@@ -32,6 +33,8 @@ import { ScrollingService } from '../../services/scrolling/scrolling.service';
 })
 export class SecretShopComponent implements OnInit, AfterViewInit {
   @ViewChild('header', { static: true }) header: ElementRef<HTMLDivElement>;
+
+  searchIcon = faSearch;
 
   Slot = Slot;
   shopItems: Item[];

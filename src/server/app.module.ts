@@ -4,6 +4,7 @@ import { AngularUniversalModule } from '@nestjs/ng-universal';
 import { PassportModule } from '@nestjs/passport';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { join } from 'path';
+import { AppServerModule } from '../client/app/app.server.module';
 
 import { BattleGoalEntity } from './api/battle-goal/battle-goal.entity';
 import { ClassEntity } from './api/class/class.entity';
@@ -48,13 +49,14 @@ import { MailgunEmailer } from './services/emailer/mailgun.emailer';
 
 import { repositories } from './api/repositories';
 
-const angularUniversal = DEVELOPMENT_MODE
+const angularUniversal: any[] = DEVELOPMENT_MODE
   ? []
   : [
-      AngularUniversalModule.forRoot({
-        viewsPath: join(process.cwd(), 'dist/client'),
-        bundle: require(join(process.cwd(), 'dist/universal/main')),
-      }),
+      // AngularUniversalModule.forRoot({
+      //   viewsPath: join(process.cwd(), 'dist/client'),
+      //   bootstrap: AppServerModule,
+      //   // bundle: require(join(process.cwd(), 'dist/universal/main')),
+      // }),
     ];
 
 @Module({

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { faTimes } from '@fortawesome/free-solid-svg-icons';
 import { clone, random } from 'lodash';
 import { BattleGoal } from '../../../../shared/types/entities/battle-goal';
 import { ApiService } from '../../services/api/api.service';
@@ -15,6 +16,8 @@ enum StoreKey {
   styleUrls: ['./secret-battle-goals.component.scss'],
 })
 export class SecretBattleGoalsComponent implements OnInit {
+  closeIcon = faTimes;
+
   battleGoals: BattleGoal[];
 
   pickingBattleGoals: [BattleGoal?, BattleGoal?] = [];

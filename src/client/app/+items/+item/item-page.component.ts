@@ -1,8 +1,19 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
+import {
+  faArrowCircleLeft,
+  faArrowCircleRight,
+  faArrowCircleUp,
+  faCodeBranch,
+  faPowerOff,
+  faSave,
+  faTruckLoading,
+  faWrench,
+} from '@fortawesome/free-solid-svg-icons';
 import { cloneDeep, isEqual } from 'lodash';
 import { Subscription } from 'rxjs';
-import { filter, skip } from 'rxjs/operators';
+import { filter } from 'rxjs/operators';
+
 import { SuggestedFixType } from '../../../../shared/constants/suggested-fix-type';
 import { Item } from '../../../../shared/types/entities/item';
 import { SuggestedFix } from '../../../../shared/types/entities/suggested-fix';
@@ -25,6 +36,15 @@ export interface ItemResolveData {
   providers: [ResolvedDataService],
 })
 export class ItemPageComponent implements OnInit, OnDestroy {
+  prevIcon = faArrowCircleLeft;
+  upIcon = faArrowCircleUp;
+  nextIcon = faArrowCircleRight;
+  fixIcon = faWrench;
+  offIcon = faPowerOff;
+  loadIcon = faTruckLoading;
+  diffIcon = faCodeBranch;
+  saveIcon = faSave;
+
   item: Item;
   suggestedFixes: SuggestedFix<Item>[];
 
@@ -51,7 +71,7 @@ export class ItemPageComponent implements OnInit, OnDestroy {
 
   ngOnInit() {
     this.routerSub = this.router.events
-      .pipe(filter(event => event instanceof NavigationEnd))
+      .pipe(filter((event) => event instanceof NavigationEnd))
       .subscribe(() => this.setupItem());
 
     this.setupItem();
@@ -104,7 +124,7 @@ export class ItemPageComponent implements OnInit, OnDestroy {
 
     // TODO message for submitting same item
     const anyTheSame =
-      isEqual(suggestedFix.data, this.dbItem) || this.suggestedFixes.some(sf => isEqual(sf.data, suggestedFix.data));
+      isEqual(suggestedFix.data, this.dbItem) || this.suggestedFixes.some((sf) => isEqual(sf.data, suggestedFix.data));
 
     if (anyTheSame) {
       return;

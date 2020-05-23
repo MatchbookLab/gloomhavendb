@@ -2,21 +2,10 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { ActivatedRouteSnapshot, RouterModule, Routes } from '@angular/router';
-import { FaIconService, FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { library } from '@fortawesome/fontawesome-svg-core';
-import {
-  faArrowCircleLeft,
-  faArrowCircleRight,
-  faArrowCircleUp,
-  faCodeBranch,
-  faPowerOff,
-  faSave,
-  faTruckLoading,
-  faWrench,
-} from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { EventType } from '../../../../shared/constants/event-type';
 import { SuggestedFixType } from '../../../../shared/constants/suggested-fix-type';
-import { Event } from '../../../../shared/types/entities/event';
+import { EventCard } from '../../../../shared/types/entities/event';
 import { SuggestedFix } from '../../../../shared/types/entities/suggested-fix';
 import { ApiService } from '../../services/api/api.service';
 import { ResolveService, RouteResolvers } from '../../services/resolver/resolve.service';
@@ -55,8 +44,8 @@ const routes: Routes = [
         resolveService.factoryResolver({
           getStateId: (route: ActivatedRouteSnapshot) =>
             `suggested-fixes/events/${route.params['type']}/${route.params['number']}`,
-          getFreshData: (api: ApiService, route?: ActivatedRouteSnapshot): Promise<SuggestedFix<Event>[]> =>
-            api.getMatchingSuggestedFixes<Event>(
+          getFreshData: (api: ApiService, route?: ActivatedRouteSnapshot): Promise<SuggestedFix<EventCard>[]> =>
+            api.getMatchingSuggestedFixes<EventCard>(
               route.params['type'] === (<string>EventType.City).toLowerCase()
                 ? SuggestedFixType.CityEvent
                 : SuggestedFixType.RoadEvent,
@@ -71,7 +60,7 @@ const routes: Routes = [
         resolveService.factoryResolver({
           getStateId: (route?: ActivatedRouteSnapshot): string =>
             'event-' + route.params['type'] + route.params['number'],
-          getFreshData: (api: ApiService, route?: ActivatedRouteSnapshot): Promise<Event> =>
+          getFreshData: (api: ApiService, route?: ActivatedRouteSnapshot): Promise<EventCard> =>
             route.params['type'] === (<string>EventType.City).toLowerCase()
               ? api.findCityEvent(route.params['number'])
               : api.findRoadEvent(route.params['number']),
@@ -98,16 +87,4 @@ export class EventPageRouterModule {}
   ],
   declarations: [EventPageComponent],
 })
-export class EventPageModule {
-  constructor(private faIconService: FaIconService) {
-    this.faIconService.defaultPrefix = 'fas';
-    library.add(faWrench);
-    library.add(faTruckLoading);
-    library.add(faCodeBranch);
-    library.add(faPowerOff);
-    library.add(faArrowCircleLeft);
-    library.add(faArrowCircleUp);
-    library.add(faArrowCircleRight);
-    library.add(faSave);
-  }
-}
+export class EventPageModule {}

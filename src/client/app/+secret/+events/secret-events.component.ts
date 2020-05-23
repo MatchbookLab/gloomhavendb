@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { events } from '../../../../data/events';
 import { EventType } from '../../../../shared/constants/event-type';
-import { Event } from '../../../../shared/types/entities/event';
+import { EventCard } from '../../../../shared/types/entities/event';
 
 @Component({
   selector: 'gdb-secret-events',
@@ -9,7 +9,7 @@ import { Event } from '../../../../shared/types/entities/event';
   styleUrls: ['./secret-events.component.scss'],
 })
 export class SecretEventsComponent implements OnInit {
-  selectedEvent: Event = <Event>{
+  selectedEvent: EventCard = <EventCard>{
     optionA: {},
     optionB: {},
   };

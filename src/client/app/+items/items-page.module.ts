@@ -1,9 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { FaIconService, FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { faArrowCircleLeft } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { Item } from '../../../shared/types/entities/item';
 import { ApiService } from '../services/api/api.service';
 import { ROUTE_TITLE_PLACEHOLDER } from '../services/meta-tags/meta-tags.service';
@@ -33,7 +31,7 @@ const routes: BetterRoute<ItemRoutes>[] = [
   },
   {
     path: ItemRoutes.Item,
-    loadChildren: () => import('./+item/item-page.module').then(m => m.ItemPageModule),
+    loadChildren: () => import('./+item/item-page.module').then((m) => m.ItemPageModule),
     runGuardsAndResolvers: 'always',
     data: {
       title: ROUTE_TITLE_PLACEHOLDER,
@@ -62,9 +60,4 @@ export class ItemsPageRouterModule {}
   imports: [CommonModule, ItemsPageRouterModule, FontAwesomeModule, WipBannerModule],
   declarations: [ItemsPageComponent],
 })
-export class ItemsPageModule {
-  constructor(private faIconService: FaIconService) {
-    this.faIconService.defaultPrefix = 'fas';
-    library.add(faArrowCircleLeft);
-  }
-}
+export class ItemsPageModule {}

@@ -1,9 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { FaIconService, FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { faCheckCircle, faSearchMinus, faSearchPlus } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 import { SecretMapComponent } from './secret-map.component';
 
@@ -24,11 +22,4 @@ export class SecretMapRoutingModule {}
   imports: [CommonModule, RouterModule, SecretMapRoutingModule, FontAwesomeModule],
   declarations: [SecretMapComponent],
 })
-export class SecretMapModule {
-  constructor(private faIconService: FaIconService) {
-    this.faIconService.defaultPrefix = 'fas';
-    library.add(faSearchPlus);
-    library.add(faSearchMinus);
-    library.add(faCheckCircle);
-  }
-}
+export class SecretMapModule {}

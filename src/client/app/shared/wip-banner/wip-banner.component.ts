@@ -1,5 +1,6 @@
 import { trigger } from '@angular/animations';
 import { Component } from '@angular/core';
+import { faExclamationTriangle, faTimes } from '@fortawesome/free-solid-svg-icons';
 import { PlatformService } from '../../services/platform/platform.service';
 import { StorageKey, StorageService } from '../../services/storage/storage.service';
 import { toVoidTransition } from '../../util/transitions';
@@ -8,9 +9,9 @@ import { toVoidTransition } from '../../util/transitions';
   selector: 'gdb-wip-banner-component',
   template: `
     <div [@collapse] class="banner-alert" *ngIf="!dismissed">
-      <fa-icon [icon]="'exclamation-triangle'"></fa-icon>
+      <fa-icon [icon]="warningIcon"></fa-icon>
       <div>
-        <fa-icon (click)="dismiss()" class="pointer dismiss" [icon]="'times'"></fa-icon>
+        <fa-icon (click)="dismiss()" class="pointer dismiss" [icon]="closeIcon"></fa-icon>
         <div class="small-spacer">
           This site is still <em>very much</em> a work in progress. Consider it a pre-alpha and not ready for
           consumption.
@@ -22,6 +23,8 @@ import { toVoidTransition } from '../../util/transitions';
   animations: [trigger('collapse', [toVoidTransition])],
 })
 export class WipBannerComponent {
+  closeIcon = faTimes;
+  warningIcon = faExclamationTriangle;
   dismissed = true;
 
   constructor(platformService: PlatformService, private storageService: StorageService) {

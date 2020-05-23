@@ -2,22 +2,11 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { ActivatedRouteSnapshot, RouterModule, Routes } from '@angular/router';
-import { FaIconService, FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { library } from '@fortawesome/fontawesome-svg-core';
-import {
-  faArrowCircleLeft,
-  faArrowCircleRight,
-  faArrowCircleUp,
-  faCodeBranch,
-  faPowerOff,
-  faSave,
-  faTruckLoading,
-  faWrench,
-} from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { SuggestedFixType } from '../../../../shared/constants/suggested-fix-type';
 import { Item } from '../../../../shared/types/entities/item';
-import { ResolveService, RouteResolvers } from '../../services/resolver/resolve.service';
 import { ApiService } from '../../services/api/api.service';
+import { ResolveService, RouteResolvers } from '../../services/resolver/resolve.service';
 import { DiffModule } from '../../shared/diff/diff.module';
 import { IconModule } from '../../shared/icon/icon.module';
 import { ItemModule } from '../../shared/item/item.module';
@@ -82,16 +71,4 @@ export class ItemPageRouterModule {}
   ],
   declarations: [ItemPageComponent],
 })
-export class ItemPageModule {
-  constructor(private faIconService: FaIconService) {
-    this.faIconService.defaultPrefix = 'fas';
-    library.add(faWrench);
-    library.add(faTruckLoading);
-    library.add(faCodeBranch);
-    library.add(faPowerOff);
-    library.add(faArrowCircleLeft);
-    library.add(faArrowCircleUp);
-    library.add(faArrowCircleRight);
-    library.add(faSave);
-  }
-}
+export class ItemPageModule {}

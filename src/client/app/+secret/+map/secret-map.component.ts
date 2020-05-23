@@ -1,5 +1,6 @@
 import { style } from '@angular/animations';
 import { Component, HostBinding, HostListener, OnInit } from '@angular/core';
+import { faCheckCircle, faSearchMinus, faSearchPlus } from '@fortawesome/free-solid-svg-icons';
 import { assign, find, forEach } from 'lodash';
 import { MAP_SIZE, MAP_URL } from '../../../../shared/constants/map';
 import { MapLocation } from '../../../../shared/types/entities/map-location';
@@ -17,6 +18,10 @@ interface OurMapLocation extends MapLocation {
   styleUrls: ['./secret-map.component.scss'],
 })
 export class SecretMapComponent implements OnInit {
+  checkmarkIcon = faCheckCircle;
+  largerIcon = faSearchPlus;
+  smallerIcon = faSearchMinus;
+
   mapUrlCss = `url('${MAP_URL}')`;
   stickers: OurMapLocation[];
   focusedSticker: OurMapLocation;
@@ -341,7 +346,7 @@ export class SecretMapComponent implements OnInit {
       },
     ];
 
-    forEach(this.stickers, sticker => assign(sticker, find(onTheBoard, { number: sticker.number })));
+    forEach(this.stickers, (sticker) => assign(sticker, find(onTheBoard, { number: sticker.number })));
   }
 
   stickerClick(sticker: OurMapLocation) {

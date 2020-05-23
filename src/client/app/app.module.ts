@@ -10,6 +10,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule, BrowserTransferStateModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
+import { AngularSvgIconModule } from 'angular-svg-icon';
 import { PrebootModule } from 'preboot';
 import { Observable } from 'rxjs';
 
@@ -38,7 +39,7 @@ import { startsWith } from 'lodash';
         window.location.href = (route.data as any).externalUrl;
 
         // this prevents the component from flashing, and also allows "back" to work as expected
-        return new Promise(resolve => {});
+        return new Promise((resolve) => {});
       },
     },
     {
@@ -64,6 +65,8 @@ import { startsWith } from 'lodash';
       useFactory: (authService: AuthService): HttpInterceptor => ({
         intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
           const token = authService.getToken();
+
+          console.log(token, startsWith(req.url[0], '/api'));
 
           // TODO whitelisting may need updating if using remote API
           if (startsWith(req.url[0], '/api') && token) {

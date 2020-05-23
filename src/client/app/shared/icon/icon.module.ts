@@ -5,7 +5,7 @@ import { IconComponent } from './icon.component';
 const declareAndExport = [IconComponent];
 
 @NgModule({
-  imports: [AngularSvgIconModule],
+  imports: [AngularSvgIconModule.forRoot()],
   declarations: declareAndExport,
   exports: declareAndExport,
 })
