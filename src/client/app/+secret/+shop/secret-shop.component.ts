@@ -121,6 +121,7 @@ export class SecretShopComponent implements OnInit, AfterViewInit {
       74,
       76,
       78,
+      78,
       82,
       84,
       85,
@@ -149,8 +150,8 @@ export class SecretShopComponent implements OnInit, AfterViewInit {
 
     this.shopItems = await new GloomhavenDB().getItems(itemIds);
 
-    this.filters.price = this.maxPrice = maxBy(this.shopItems, item => item.price).price;
-    this.minPrice = minBy(this.shopItems, item => item.price).price;
+    this.filters.price = this.maxPrice = maxBy(this.shopItems, (item) => item.price).price;
+    this.minPrice = minBy(this.shopItems, (item) => item.price).price;
 
     this.filter();
   }
@@ -183,7 +184,7 @@ export class SecretShopComponent implements OnInit, AfterViewInit {
 
   setSort(sort?: keyof Item) {
     this.filters.sort = sort;
-    this.shownItems = sortBy(this.shownItems, item => item[this.filters.sort]);
+    this.shownItems = sortBy(this.shownItems, (item) => item[this.filters.sort]);
   }
 
   @HostListener('document:keydown.escape')
@@ -198,7 +199,7 @@ export class SecretShopComponent implements OnInit, AfterViewInit {
   }
 
   filter() {
-    const filteredItems = filter(this.shopItems, item => {
+    const filteredItems = filter(this.shopItems, (item) => {
       if (!(!this.filters.slot || item.slot === this.filters.slot)) {
         return false;
       }
@@ -210,6 +211,6 @@ export class SecretShopComponent implements OnInit, AfterViewInit {
       return item.price <= this.filters.price;
     });
 
-    this.shownItems = sortBy(filteredItems, item => item[this.filters.sort]);
+    this.shownItems = sortBy(filteredItems, (item) => item[this.filters.sort]);
   }
 }
