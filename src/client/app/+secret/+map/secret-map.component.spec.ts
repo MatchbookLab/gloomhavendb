@@ -8,9 +8,7 @@ describe('SecretMapComponent', () => {
   let component: SecretMapComponent;
   let fixture: ComponentFixture<SecretMapComponent>;
 
-  const config = TestBedHelper.createComponentConfig()
-    .addImports(SecretMapModule)
-    .getConfig();
+  const config = TestBedHelper.createComponentConfig().addImports(SecretMapModule).getConfig();
 
   TestBedHelper.autoConfigureTestingModule(config);
 

@@ -4,9 +4,7 @@ import { TestBedHelper } from '../../../test/test-bed.helper';
 import { ScrollingService } from './scrolling.service';
 
 describe('PauseScrollingService', () => {
-  const config = TestBedHelper.createComponentConfig()
-    .addProviders(ScrollingService)
-    .getConfig();
+  const config = TestBedHelper.createComponentConfig().addProviders(ScrollingService).getConfig();
 
   TestBedHelper.autoConfigureTestingModule(config);
 

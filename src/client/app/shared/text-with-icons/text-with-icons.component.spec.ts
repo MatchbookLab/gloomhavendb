@@ -8,9 +8,7 @@ describe('TextWithIconsComponent', () => {
   let component: TextWithIconsComponent;
   let fixture: ComponentFixture<TextWithIconsComponent>;
 
-  const config = TestBedHelper.createComponentConfig()
-    .addImports(TextWithIconsModule)
-    .getConfig();
+  const config = TestBedHelper.createComponentConfig().addImports(TextWithIconsModule).getConfig();
 
   TestBedHelper.autoConfigureTestingModule(config);
 

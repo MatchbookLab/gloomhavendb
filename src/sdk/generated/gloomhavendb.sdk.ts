@@ -23,7 +23,7 @@ export class GloomhavenDB {
     }
 
     if (Array.isArray(data)) {
-      return data.map(d => `${queryParamName}[]=${d}`).join('&');
+      return data.map((d) => `${queryParamName}[]=${d}`).join('&');
     }
 
     // TODO better error message?
@@ -37,40 +37,50 @@ export class GloomhavenDB {
   async getItems(numbers?: string | (string | number)[]): Promise<ItemEntity[]> {
     const queryParts: string[] = [];
     queryParts.push(this.queryStringize('numbers', numbers));
-    return (await fetch(`${this.baseUrl}/api/items?${queryParts.join('&')}`, {
-      method: 'get',
-      headers: { 'Content-Type': 'application/json' },
-    })).json();
+    return (
+      await fetch(`${this.baseUrl}/api/items?${queryParts.join('&')}`, {
+        method: 'get',
+        headers: { 'Content-Type': 'application/json' },
+      })
+    ).json();
   }
 
   async findItem(id: string | number): Promise<ItemEntity> {
-    return (await fetch(`${this.baseUrl}/api/items/${id}`, {
-      method: 'get',
-      headers: { 'Content-Type': 'application/json' },
-    })).json();
+    return (
+      await fetch(`${this.baseUrl}/api/items/${id}`, {
+        method: 'get',
+        headers: { 'Content-Type': 'application/json' },
+      })
+    ).json();
   }
 
   async createItem(item: ItemEntity): Promise<ItemEntity> {
-    return (await fetch(`${this.baseUrl}/api/items`, {
-      method: 'post',
-      body: JSON.stringify(item),
-      headers: { 'Content-Type': 'application/json' },
-    })).json();
+    return (
+      await fetch(`${this.baseUrl}/api/items`, {
+        method: 'post',
+        body: JSON.stringify(item),
+        headers: { 'Content-Type': 'application/json' },
+      })
+    ).json();
   }
 
   async updateItem(cardNo: string | number, item: ItemEntity): Promise<ItemEntity> {
-    return (await fetch(`${this.baseUrl}/api/items/${cardNo}`, {
-      method: 'put',
-      body: JSON.stringify(item),
-      headers: { 'Content-Type': 'application/json' },
-    })).json();
+    return (
+      await fetch(`${this.baseUrl}/api/items/${cardNo}`, {
+        method: 'put',
+        body: JSON.stringify(item),
+        headers: { 'Content-Type': 'application/json' },
+      })
+    ).json();
   }
 
   async deleteItem(cardNo: string | number): Promise<ItemEntity> {
-    return (await fetch(`${this.baseUrl}/api/items/${cardNo}`, {
-      method: 'delete',
-      headers: { 'Content-Type': 'application/json' },
-    })).json();
+    return (
+      await fetch(`${this.baseUrl}/api/items/${cardNo}`, {
+        method: 'delete',
+        headers: { 'Content-Type': 'application/json' },
+      })
+    ).json();
   }
 
   ///////////
@@ -78,76 +88,96 @@ export class GloomhavenDB {
   ///////////
 
   async getRoadEvents(): Promise<EventEntity[]> {
-    return (await fetch(`${this.baseUrl}/api/events/road`, {
-      method: 'get',
-      headers: { 'Content-Type': 'application/json' },
-    })).json();
+    return (
+      await fetch(`${this.baseUrl}/api/events/road`, {
+        method: 'get',
+        headers: { 'Content-Type': 'application/json' },
+      })
+    ).json();
   }
 
   async findRoadEvent(cardNo: string | number): Promise<EventEntity> {
-    return (await fetch(`${this.baseUrl}/api/events/road/${cardNo}`, {
-      method: 'get',
-      headers: { 'Content-Type': 'application/json' },
-    })).json();
+    return (
+      await fetch(`${this.baseUrl}/api/events/road/${cardNo}`, {
+        method: 'get',
+        headers: { 'Content-Type': 'application/json' },
+      })
+    ).json();
   }
 
   async createRoadEvent(event: EventEntity): Promise<EventEntity> {
-    return (await fetch(`${this.baseUrl}/api/events/road`, {
-      method: 'post',
-      body: JSON.stringify(event),
-      headers: { 'Content-Type': 'application/json' },
-    })).json();
+    return (
+      await fetch(`${this.baseUrl}/api/events/road`, {
+        method: 'post',
+        body: JSON.stringify(event),
+        headers: { 'Content-Type': 'application/json' },
+      })
+    ).json();
   }
 
   async updateRoadEvent(cardNo: string | number, event: EventEntity): Promise<EventEntity> {
-    return (await fetch(`${this.baseUrl}/api/events/road/${cardNo}`, {
-      method: 'put',
-      body: JSON.stringify(event),
-      headers: { 'Content-Type': 'application/json' },
-    })).json();
+    return (
+      await fetch(`${this.baseUrl}/api/events/road/${cardNo}`, {
+        method: 'put',
+        body: JSON.stringify(event),
+        headers: { 'Content-Type': 'application/json' },
+      })
+    ).json();
   }
 
   async deleteRoadEvent(cardNo: string | number): Promise<EventEntity> {
-    return (await fetch(`${this.baseUrl}/api/events/road/${cardNo}`, {
-      method: 'delete',
-      headers: { 'Content-Type': 'application/json' },
-    })).json();
+    return (
+      await fetch(`${this.baseUrl}/api/events/road/${cardNo}`, {
+        method: 'delete',
+        headers: { 'Content-Type': 'application/json' },
+      })
+    ).json();
   }
 
-  async getCityEvents(): Promise<(EventEntity)[]> {
-    return (await fetch(`${this.baseUrl}/api/events/city`, {
-      method: 'get',
-      headers: { 'Content-Type': 'application/json' },
-    })).json();
+  async getCityEvents(): Promise<EventEntity[]> {
+    return (
+      await fetch(`${this.baseUrl}/api/events/city`, {
+        method: 'get',
+        headers: { 'Content-Type': 'application/json' },
+      })
+    ).json();
   }
 
   async findCityEvent(cardNo: string | number): Promise<EventEntity> {
-    return (await fetch(`${this.baseUrl}/api/events/city/${cardNo}`, {
-      method: 'get',
-      headers: { 'Content-Type': 'application/json' },
-    })).json();
+    return (
+      await fetch(`${this.baseUrl}/api/events/city/${cardNo}`, {
+        method: 'get',
+        headers: { 'Content-Type': 'application/json' },
+      })
+    ).json();
   }
 
   async createCityEvent(event: EventEntity): Promise<EventEntity> {
-    return (await fetch(`${this.baseUrl}/api/events/city`, {
-      method: 'post',
-      body: JSON.stringify(event),
-      headers: { 'Content-Type': 'application/json' },
-    })).json();
+    return (
+      await fetch(`${this.baseUrl}/api/events/city`, {
+        method: 'post',
+        body: JSON.stringify(event),
+        headers: { 'Content-Type': 'application/json' },
+      })
+    ).json();
   }
 
   async updateCityEvent(cardNo: string | number, event: EventEntity): Promise<EventEntity> {
-    return (await fetch(`${this.baseUrl}/api/events/city/${cardNo}`, {
-      method: 'put',
-      body: JSON.stringify(event),
-      headers: { 'Content-Type': 'application/json' },
-    })).json();
+    return (
+      await fetch(`${this.baseUrl}/api/events/city/${cardNo}`, {
+        method: 'put',
+        body: JSON.stringify(event),
+        headers: { 'Content-Type': 'application/json' },
+      })
+    ).json();
   }
 
   async deleteCityEvent(cardNo: string | number): Promise<EventEntity> {
-    return (await fetch(`${this.baseUrl}/api/events/city/${cardNo}`, {
-      method: 'delete',
-      headers: { 'Content-Type': 'application/json' },
-    })).json();
+    return (
+      await fetch(`${this.baseUrl}/api/events/city/${cardNo}`, {
+        method: 'delete',
+        headers: { 'Content-Type': 'application/json' },
+      })
+    ).json();
   }
 }

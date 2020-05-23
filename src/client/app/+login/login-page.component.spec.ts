@@ -8,9 +8,7 @@ describe('LoginPageComponent', () => {
   let component: LoginPageComponent;
   let fixture: ComponentFixture<LoginPageComponent>;
 
-  const config = TestBedHelper.createComponentConfig()
-    .addImports(LoginPageModule)
-    .getConfig();
+  const config = TestBedHelper.createComponentConfig().addImports(LoginPageModule).getConfig();
 
   TestBedHelper.autoConfigureTestingModule(config);
 

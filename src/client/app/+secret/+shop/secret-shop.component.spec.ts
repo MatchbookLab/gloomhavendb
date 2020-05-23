@@ -8,9 +8,7 @@ describe('SecretShopComponent', () => {
   let component: SecretShopComponent;
   let fixture: ComponentFixture<SecretShopComponent>;
 
-  const config = TestBedHelper.createComponentConfig()
-    .addImports(SecretShopModule)
-    .getConfig();
+  const config = TestBedHelper.createComponentConfig().addImports(SecretShopModule).getConfig();
 
   TestBedHelper.autoConfigureTestingModule(config);
 

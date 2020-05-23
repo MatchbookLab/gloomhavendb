@@ -43,6 +43,6 @@ if (environment.hmr) {
   }
 } else {
   document.addEventListener('DOMContentLoaded', () => {
-    bootstrap().catch(err => console.log(err));
+    bootstrap().catch((err) => console.log(err));
   });
 }

@@ -107,14 +107,14 @@ export abstract class GdbControlComponent<ControlModel, InternalModel = ControlM
   ngOnInit() {
     this.control.statusChanges.pipe(
       distinctUntilChanged(),
-      tap(val => console.log('statusChanges', val)),
+      tap((val) => console.log('statusChanges', val)),
       takeUntil(this.destroyed$),
     );
 
     this.valueChanges$ = this.control.valueChanges.pipe(
       filter(() => !!this.propagateChange),
       distinctUntilChanged(),
-      tap(val => this.controlService.configChanges.stringValue.next(this.getStringValue(val))),
+      tap((val) => this.controlService.configChanges.stringValue.next(this.getStringValue(val))),
       takeUntil(this.destroyed$),
     );
 

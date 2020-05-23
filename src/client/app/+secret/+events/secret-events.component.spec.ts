@@ -8,9 +8,7 @@ describe('SecretBattleGoalsComponent', () => {
   let component: SecretEventsComponent;
   let fixture: ComponentFixture<SecretEventsComponent>;
 
-  const config = TestBedHelper.createComponentConfig()
-    .addImports(SecretEventsModule)
-    .getConfig();
+  const config = TestBedHelper.createComponentConfig().addImports(SecretEventsModule).getConfig();
 
   TestBedHelper.autoConfigureTestingModule(config);
 

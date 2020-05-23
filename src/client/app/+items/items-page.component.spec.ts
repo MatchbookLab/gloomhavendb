@@ -8,9 +8,7 @@ describe('ItemsPageComponent', () => {
   let component: ItemsPageComponent;
   let fixture: ComponentFixture<ItemsPageComponent>;
 
-  const config = TestBedHelper.createComponentConfig()
-    .addImports(ItemsPageModule)
-    .getConfig();
+  const config = TestBedHelper.createComponentConfig().addImports(ItemsPageModule).getConfig();
 
   TestBedHelper.autoConfigureTestingModule(config);
 

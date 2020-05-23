@@ -26,7 +26,7 @@ export class UserEntity implements User {
   @Column({ nullable: true })
   password: string | null;
 
-  @ManyToOne(() => RoleEntity, role => role.users)
+  @ManyToOne(() => RoleEntity, (role) => role.users)
   @JoinColumn()
   role: RoleEntity;
 

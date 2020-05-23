@@ -19,10 +19,11 @@ Promise.all(
           const eventLetter = type === EventType.City ? 'c' : 'r';
           const eventName = type === EventType.City ? 'city' : 'road';
 
-          const frontText: string = (await fs.promises.readFile(
-            path.join(__dirname, `./ocr/${eventLetter}e-${paddedNum}-f.txt`),
-            { encoding: `utf8` },
-          )).replace(/(\r\n|\n|\r)/g, ' ');
+          const frontText: string = (
+            await fs.promises.readFile(path.join(__dirname, `./ocr/${eventLetter}e-${paddedNum}-f.txt`), {
+              encoding: `utf8`,
+            })
+          ).replace(/(\r\n|\n|\r)/g, ' ');
 
           const [, flavorText, choiceA, choiceB] = frontText.match(/^(.*?)Option A[:;] (.*?)Option [BR8][:;](.*?)$/);
 
@@ -33,18 +34,22 @@ Promise.all(
             text: flavorText.trim(),
             optionA: {
               choice: choiceA.trim(),
-              outcome: (await fs.promises.readFile(path.join(__dirname, `./ocr/${eventLetter}e-${paddedNum}-b-a.txt`), {
-                encoding: `utf8`,
-              }))
+              outcome: (
+                await fs.promises.readFile(path.join(__dirname, `./ocr/${eventLetter}e-${paddedNum}-b-a.txt`), {
+                  encoding: `utf8`,
+                })
+              )
                 .replace(/(\r\n|\n|\r)/g, ' ')
                 .trim(),
               imageUrl: `/assets/cards/events/base/${eventName}/${eventLetter}e-${paddedNum}-b-a.png`,
             },
             optionB: {
               choice: choiceB.trim(),
-              outcome: (await fs.promises.readFile(path.join(__dirname, `./ocr/${eventLetter}e-${paddedNum}-b-b.txt`), {
-                encoding: `utf8`,
-              }))
+              outcome: (
+                await fs.promises.readFile(path.join(__dirname, `./ocr/${eventLetter}e-${paddedNum}-b-b.txt`), {
+                  encoding: `utf8`,
+                })
+              )
                 .replace(/(\r\n|\n|\r)/g, ' ')
                 .trim(),
               imageUrl: `/assets/cards/events/base/${eventName}/${eventLetter}e-${paddedNum}-b-b.png`,
@@ -64,7 +69,7 @@ Promise.all(
 )
   .then(() => {
     const str = `import { EventType } from '../shared/constants/event-type';\nimport { Event } from '../shared/entities/event';\n\nexport const events: Event[] = ${JSON.stringify(
-      _.sortBy(events, event => event.type + _.padStart(event.number + '', 2, '0')),
+      _.sortBy(events, (event) => event.type + _.padStart(event.number + '', 2, '0')),
       null,
       2,
     )}`
@@ -72,7 +77,7 @@ Promise.all(
       .replace(/"type": "City"/g, 'type: EventType.City');
     fs.writeFileSync(path.join(__dirname, '../../data/events-raw.ts'), str, { encoding: 'utf8' });
   })
-  .catch(err => {
+  .catch((err) => {
     console.error(err);
     console.log(events);
   });

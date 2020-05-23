@@ -14,7 +14,7 @@ export function nil2na(strings: TemplateStringsArray, ...keys: any[]): string {
 export function trimLines(str: string): string {
   return str
     .split('\n')
-    .map(s => s.trim())
+    .map((s) => s.trim())
     .join('\n')
     .trim();
 }

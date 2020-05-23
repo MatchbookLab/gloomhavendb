@@ -9,9 +9,7 @@ xdescribe('AppComponent', () => {
   let component: AppComponent;
   let fixture: ComponentFixture<AppComponent>;
 
-  const config = TestBedHelper.createComponentConfig()
-    .addImports(AppModule)
-    .getConfig();
+  const config = TestBedHelper.createComponentConfig().addImports(AppModule).getConfig();
 
   TestBedHelper.autoConfigureTestingModule(config);
 

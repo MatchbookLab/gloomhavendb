@@ -9,5 +9,5 @@ export class RoleEntity implements Role {
 
   @Column({ unique: true }) name: string;
 
-  @OneToMany(() => UserEntity, user => user.role) users: UserEntity[];
+  @OneToMany(() => UserEntity, (user) => user.role) users: UserEntity[];
 }

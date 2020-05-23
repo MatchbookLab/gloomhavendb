@@ -8,9 +8,7 @@ describe('NotFoundPageComponent', () => {
   let component: NotFoundPageComponent;
   let fixture: ComponentFixture<NotFoundPageComponent>;
 
-  const config = TestBedHelper.createComponentConfig()
-    .addImports(NotFoundPageModule)
-    .getConfig();
+  const config = TestBedHelper.createComponentConfig().addImports(NotFoundPageModule).getConfig();
 
   TestBedHelper.autoConfigureTestingModule(config);
 

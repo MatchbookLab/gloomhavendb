@@ -9,7 +9,7 @@ export class ScenarioEntity implements Scenario {
   @Column() name: string;
   @Column('json') location: MapGrid;
   @Column() imageUrl: string;
-  @ManyToMany(() => ScenarioEntity, scenario => scenario.id)
+  @ManyToMany(() => ScenarioEntity, (scenario) => scenario.id)
   @JoinTable()
   links: ScenarioEntity[];
   @Column() prerequisite: string;

@@ -8,9 +8,7 @@ describe('EventComponent', () => {
   let component: EventComponent;
   let fixture: ComponentFixture<EventComponent>;
 
-  const config = TestBedHelper.createComponentConfig()
-    .addImports(EventModule)
-    .getConfig();
+  const config = TestBedHelper.createComponentConfig().addImports(EventModule).getConfig();
 
   TestBedHelper.autoConfigureTestingModule(config);
 

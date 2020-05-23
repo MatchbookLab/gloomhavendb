@@ -7,9 +7,7 @@ describe('DiffComponent', () => {
   let component: DiffComponent;
   let fixture: ComponentFixture<DiffComponent>;
 
-  const config = TestBedHelper.createComponentConfig()
-    .addImports(DiffModule)
-    .getConfig();
+  const config = TestBedHelper.createComponentConfig().addImports(DiffModule).getConfig();
 
   TestBedHelper.autoConfigureTestingModule(config);
 

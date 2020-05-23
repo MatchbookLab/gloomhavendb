@@ -4,9 +4,7 @@ import { TestBedHelper } from '../../../test/test-bed.helper';
 import { PlatformService } from './platform.service';
 
 describe('PlatformService', () => {
-  const config = TestBedHelper.createComponentConfig()
-    .addProviders(PlatformService)
-    .getConfig();
+  const config = TestBedHelper.createComponentConfig().addProviders(PlatformService).getConfig();
 
   TestBedHelper.autoConfigureTestingModule(config);
 

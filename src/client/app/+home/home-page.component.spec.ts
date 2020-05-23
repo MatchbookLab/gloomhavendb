@@ -8,9 +8,7 @@ describe('HomePageComponent', () => {
   let component: HomePageComponent;
   let fixture: ComponentFixture<HomePageComponent>;
 
-  const config = TestBedHelper.createComponentConfig()
-    .addImports(HomePageModule)
-    .getConfig();
+  const config = TestBedHelper.createComponentConfig().addImports(HomePageModule).getConfig();
 
   TestBedHelper.autoConfigureTestingModule(config);
 

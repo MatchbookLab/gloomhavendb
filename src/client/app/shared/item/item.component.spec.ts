@@ -10,9 +10,7 @@ describe('ItemComponent', () => {
   let component: ItemComponent;
   let fixture: ComponentFixture<ItemComponent>;
 
-  const config = TestBedHelper.createComponentConfig()
-    .addImports(ItemModule)
-    .getConfig();
+  const config = TestBedHelper.createComponentConfig().addImports(ItemModule).getConfig();
 
   TestBedHelper.autoConfigureTestingModule(config);
 

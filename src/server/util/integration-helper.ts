@@ -28,7 +28,7 @@ export class IntegrationHelper {
         return;
       }
 
-      await new Promise(resolve => {
+      await new Promise((resolve) => {
         const checkFixture = () => {
           setTimeout(() => {
             if (sharedFixture) {
@@ -69,7 +69,7 @@ export class IntegrationHelper {
     });
 
     this.token = token;
-    this.interceptorId = this.axios.interceptors.request.use(conf => {
+    this.interceptorId = this.axios.interceptors.request.use((conf) => {
       conf.headers['Authorization'] = `Bearer ${this.token}`;
 
       return conf;
