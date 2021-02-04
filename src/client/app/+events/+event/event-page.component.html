@@ -3,7 +3,7 @@
 <div class="content">
   <div class="nav">
     <div class="first-cell">
-      <a *ngIf="event.number > 1" [routerLink]="[`/events/${event.type}`, event.number - 1]">
+      <a *ngIf="event.number > 1" [routerLink]="['/events', event.type, event.number - 1]">
         <fa-icon [icon]="prevIcon"></fa-icon>
         View Previous Event
       </a>
@@ -15,7 +15,7 @@
       </a>
     </div>
     <div class="last-cell">
-      <a *ngIf="event.number < 150" [routerLink]="[`/events/${event.type}`, event.number + 1]">
+      <a *ngIf="event.number < 150" [routerLink]="['/events', event.type, event.number + 1]">
         <fa-icon [icon]="nextIcon"></fa-icon>
         View Next Event
       </a>
