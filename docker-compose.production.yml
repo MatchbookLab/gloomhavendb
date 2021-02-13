@@ -8,10 +8,12 @@ services:
       - proxy
     environment:
       NODE_ENV: production
-      VIRTUAL_HOST: ${HOSTNAME}
-      VIRTUAL_PORT: 3000
-      LETSENCRYPT_HOST: ${HOSTNAME}
-      LETSENCRYPT_EMAIL: ${LETSENCRYPT_EMAIL}
+    labels:
+      traefik.docker.network: ${EXTERNAL_PROXY}
+      traefik.frontend.rule: Host:${HOSTNAME}
+      traefik.enable: true
+      traefik.port: 3000
+      traefik.http.middlewares.test-compress.compress: true
 
   database:
     restart: unless-stopped
