@@ -1751,7 +1751,7 @@ export const events: EventEntity[] = [
     type: EventType.Road,
     number: 3,
     text:
-      'You are feeling a tad hungry as you walk down the road. You are considering stopping for a meal when you come across a thicket of bushes covered in green berries.\n\nThe berries look delicious, but you hesitate. They could be poisonous.',
+      'You are feeling a tad hungry as you walk down the road. You are considering stopping for a meal when you come across a thicket of bushes covered in red berries.\n\nThe berries look delicious, but you hesitate. They could be poisonous.',
     optionA: {
       choice: 'Eat the berries.',
       outcome:
