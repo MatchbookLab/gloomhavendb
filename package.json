@@ -71,7 +71,7 @@
     "axios": "^0.19.2",
     "bcryptjs": "^2.4.3",
     "class-transformer": "^0.2.3",
-    "class-validator": "^0.12.2",
+    "class-validator": "^0.14.0",
     "compression": "^1.7.4",
     "core-js": "^3.6.5",
     "diff": "^4.0.2",
